@@ -61,13 +61,13 @@ namespace gtsco2.forms
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Controls.Add(this.evabtn);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton7);
             this.flowLayoutPanel1.Controls.Add(this.absbt);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton9);
             this.flowLayoutPanel1.Controls.Add(this.addabsbtn);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton7);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton8);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton9);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton10);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton11);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton12);
@@ -109,7 +109,7 @@ namespace gtsco2.forms
             this.absbt.Appearance.Options.UseBorderColor = true;
             this.absbt.Appearance.Options.UseFont = true;
             this.absbt.Appearance.Options.UseForeColor = true;
-            this.absbt.Location = new System.Drawing.Point(211, 3);
+            this.absbt.Location = new System.Drawing.Point(419, 3);
             this.absbt.Name = "absbt";
             this.absbt.Size = new System.Drawing.Size(202, 87);
             this.absbt.TabIndex = 2;
@@ -128,7 +128,7 @@ namespace gtsco2.forms
             this.addabsbtn.Appearance.Options.UseBorderColor = true;
             this.addabsbtn.Appearance.Options.UseFont = true;
             this.addabsbtn.Appearance.Options.UseForeColor = true;
-            this.addabsbtn.Location = new System.Drawing.Point(419, 3);
+            this.addabsbtn.Location = new System.Drawing.Point(3, 96);
             this.addabsbtn.Name = "addabsbtn";
             this.addabsbtn.Size = new System.Drawing.Size(202, 87);
             this.addabsbtn.TabIndex = 5;
@@ -147,7 +147,7 @@ namespace gtsco2.forms
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(627, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(211, 96);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(202, 87);
             this.simpleButton1.TabIndex = 0;
@@ -166,7 +166,7 @@ namespace gtsco2.forms
             this.simpleButton5.Appearance.Options.UseBorderColor = true;
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.Appearance.Options.UseForeColor = true;
-            this.simpleButton5.Location = new System.Drawing.Point(3, 96);
+            this.simpleButton5.Location = new System.Drawing.Point(419, 96);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(202, 87);
             this.simpleButton5.TabIndex = 4;
@@ -185,7 +185,7 @@ namespace gtsco2.forms
             this.simpleButton7.Appearance.Options.UseBorderColor = true;
             this.simpleButton7.Appearance.Options.UseFont = true;
             this.simpleButton7.Appearance.Options.UseForeColor = true;
-            this.simpleButton7.Location = new System.Drawing.Point(211, 96);
+            this.simpleButton7.Location = new System.Drawing.Point(211, 3);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(202, 87);
             this.simpleButton7.TabIndex = 6;
@@ -204,7 +204,7 @@ namespace gtsco2.forms
             this.simpleButton8.Appearance.Options.UseBorderColor = true;
             this.simpleButton8.Appearance.Options.UseFont = true;
             this.simpleButton8.Appearance.Options.UseForeColor = true;
-            this.simpleButton8.Location = new System.Drawing.Point(419, 96);
+            this.simpleButton8.Location = new System.Drawing.Point(627, 96);
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(202, 87);
             this.simpleButton8.TabIndex = 7;
@@ -223,7 +223,7 @@ namespace gtsco2.forms
             this.simpleButton9.Appearance.Options.UseBorderColor = true;
             this.simpleButton9.Appearance.Options.UseFont = true;
             this.simpleButton9.Appearance.Options.UseForeColor = true;
-            this.simpleButton9.Location = new System.Drawing.Point(627, 96);
+            this.simpleButton9.Location = new System.Drawing.Point(627, 3);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(202, 87);
             this.simpleButton9.TabIndex = 8;

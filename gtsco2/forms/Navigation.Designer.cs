@@ -80,7 +80,7 @@ namespace gtsco2.forms
             // 
             // evabtn
             // 
-            this.evabtn.Appearance.BackColor = System.Drawing.Color.Red;
+            this.evabtn.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.evabtn.Appearance.BackColor2 = System.Drawing.Color.Red;
             this.evabtn.Appearance.BorderColor = System.Drawing.Color.White;
             this.evabtn.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

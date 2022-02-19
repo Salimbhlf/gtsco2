@@ -118,7 +118,7 @@ namespace gtsco2.forms
             // 
             // addabsbtn
             // 
-            this.addabsbtn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.addabsbtn.Appearance.BackColor = System.Drawing.Color.Yellow;
             this.addabsbtn.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.addabsbtn.Appearance.BorderColor = System.Drawing.Color.White;
             this.addabsbtn.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

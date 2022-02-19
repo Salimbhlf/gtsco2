@@ -137,7 +137,7 @@ namespace gtsco2.forms
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Fuchsia;
             this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.Blue;
             this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.White;
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -80,7 +80,7 @@ namespace gtsco2.forms
             // 
             // evabtn
             // 
-            this.evabtn.Appearance.BackColor = System.Drawing.Color.Red;
+            this.evabtn.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.evabtn.Appearance.BackColor2 = System.Drawing.Color.Red;
             this.evabtn.Appearance.BorderColor = System.Drawing.Color.White;
             this.evabtn.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -118,7 +118,7 @@ namespace gtsco2.forms
             // 
             // addabsbtn
             // 
-            this.addabsbtn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.addabsbtn.Appearance.BackColor = System.Drawing.Color.Yellow;
             this.addabsbtn.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.addabsbtn.Appearance.BorderColor = System.Drawing.Color.White;
             this.addabsbtn.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -137,7 +137,7 @@ namespace gtsco2.forms
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Fuchsia;
             this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.Blue;
             this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.White;
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

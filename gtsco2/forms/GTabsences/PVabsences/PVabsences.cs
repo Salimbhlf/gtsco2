@@ -75,9 +75,9 @@ namespace gtsco2.forms.GTabsences.PVabsences
                 seccomboBox.ValueMember = "id";
 
                 var qur4 = from mod in shared.bd.Modules
-                           select new { id=mod.ID_Module, nom=mod.Designation_Module };
+                           select new { id = mod.ID_Module, nom = mod.Designation_Module };
 
-              
+
 
                 var qur5 = from ann in shared.bd.annee_scolaire
                            select new { id = ann.ID_Année_SCO, nom = (ann.disination + ann.Session_Année_SCO) };
@@ -85,9 +85,9 @@ namespace gtsco2.forms.GTabsences.PVabsences
                 anneecomboBox141.DisplayMember = "nom";
                 anneecomboBox141.ValueMember = "id";
 
-                 
 
-            }catch (Exception ex)
+
+            } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -121,20 +121,20 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
         private void spcomboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            try { 
-            int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
-            promocomboBox11.DataSource = null;
-            promocomboBox11.Items.Clear();
-            
-            var qur1 = from pr in shared.bd.Promoes
-                       join po in shared.bd.Opations on pr.ID_Option equals po.ID_Option
-                       join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
-                       where pr.ID_Option == sp
-                       select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+            try {
+                int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
+                promocomboBox11.DataSource = null;
+                promocomboBox11.Items.Clear();
 
-            promocomboBox11.DataSource = qur1.ToList();
-            promocomboBox11.DisplayMember = "nom";
-            promocomboBox11.ValueMember = "id";
+                var qur1 = from pr in shared.bd.Promoes
+                           join po in shared.bd.Opations on pr.ID_Option equals po.ID_Option
+                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                           where pr.ID_Option == sp
+                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+
+                promocomboBox11.DataSource = qur1.ToList();
+                promocomboBox11.DisplayMember = "nom";
+                promocomboBox11.ValueMember = "id";
 
             }
             catch (Exception ex)
@@ -164,12 +164,12 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
 
 
-                
+
 
 
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -180,12 +180,12 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
         private void panelControl1_Paint(object sender, PaintEventArgs e)
         {
-                    }
+        }
         int idsec;
         int idsem;
         int idannee;
-       DateTime datee;
-     
+        DateTime datee;
+
 
         string a;
         public void refrech()
@@ -194,10 +194,10 @@ namespace gtsco2.forms.GTabsences.PVabsences
             {
 
                 datee = dateEditdébut.DateTime;
-                
+
                 gridControl1.DataSource = null;
                 gridView1.Columns.Clear();
-                if (datee > new DateTime(1000,01,01))
+                if (datee > new DateTime(1000, 01, 01))
                 {
                     using (DataTable dt = new DataTable())
                     {
@@ -205,28 +205,26 @@ namespace gtsco2.forms.GTabsences.PVabsences
                         dt.Columns.Add("Numro_STG");
 
                         dt.Columns.Add("Nom_et_Prenom");
-                      
+
                         dt.Columns.Add("Absences_non_justfer");
                         dt.Columns.Add("Absences_justef");
-                        dt.Columns.Add("avertimo1");
-                        dt.Columns.Add("avertismo2");
-                        dt.Columns.Add("blam");
-                        dt.Columns.Add("exaclu");
+                        dt.Columns.Add("OBS");
+
 
                         idsec = int.Parse(seccomboBox.SelectedValue.ToString());
                         idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-                        
+
                         idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
 
                         var qure = from abs in shared.bd.Absences
                                    join stg in shared.bd.Stagiairs on abs.Num_STG equals stg.Num_STG
-                                   where stg.Section == idsec && abs.ID_Année_SCO == idannee && abs.ID_Semestre == idsec 
+                                   where stg.Section == idsec && abs.ID_Année_SCO == idannee && abs.ID_Semestre == idsec
 
                                    select new
                                    {
                                        Numro_STG = stg.Num_STG,
                                        Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                      
+
                                        number_Justfer = (shared.bd.Absences.Where(b => b.Num_STG == stg.Num_STG && b.Seance_1_ABS == true && b.Date_ABS >= dateEditdébut.DateTime && b.Date_ABS <= dateEditfin.DateTime && b.Absence_Justifer == true).Count()) +
                                       (shared.bd.Absences.Where(b => b.Num_STG == abs.Num_STG && b.Seance_2_ABS == true && b.Date_ABS >= dateEditdébut.DateTime && b.Date_ABS <= dateEditfin.DateTime && b.Absence_Justifer == true).Count()) +
                                       (shared.bd.Absences.Where(b => b.Num_STG == stg.Num_STG && b.Seance_3_ABS == true && b.Date_ABS >= dateEditdébut.DateTime && b.Date_ABS <= dateEditfin.DateTime && b.Absence_Justifer == true).Count()) +
@@ -244,8 +242,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
                                    };
 
-                        
-                            foreach (basededonne.Stagiair stg in shared.bd.Stagiairs)
+
+                        foreach (basededonne.Stagiair stg in shared.bd.Stagiairs)
                         {
 
                             if (stg.Section == idsec)
@@ -256,14 +254,14 @@ namespace gtsco2.forms.GTabsences.PVabsences
                                     if (row.Numro_STG == stg.Num_STG)
                                     {
                                         string avrt = "/";
-                                        string NBJ= "";
+                                        string NBJ = "";
                                         int st = row.number_a / 4;
-                                        double vt =(( double.Parse((row.number_a).ToString("#0.00"))/4)-st)*4 ;
+                                        double vt = ((double.Parse((row.number_a).ToString("#0.00")) / 4) - st) * 4;
 
-                                        if (vt == 0) {  NBJ= (st + "J "  ); }
+                                        if (vt == 0) { NBJ = (st + "J "); }
                                         else
                                         {
-                                             NBJ = (st + "J " + vt + "/4");
+                                            NBJ = (st + "J " + vt + "/4");
                                         }
 
                                         string jt;
@@ -275,22 +273,9 @@ namespace gtsco2.forms.GTabsences.PVabsences
                                         {
                                             jt = (jn + "J " + jv + "/4");
                                         }
-                                        if (st >=3&&st<5)
-                                        {
-                                            avrt = "avert1";
-                                        } else if(st>=5 && st<7) {
-                                            avrt = "avert2";
-                                        }
-                                        else if (st >= 7 && st < 9)
-                                        {
-                                            avrt = "blam";
-                                        }
-                                        else if (st >= 9)
-                                        {
-                                            avrt = "exclut";
-                                        }
+                                        avrt = Avert(st);
 
-                                        dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, NBJ , jt,avrt);
+                                        dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, NBJ, jt, avrt);
                                         a = "ez";
                                         a = "g";
                                         break;
@@ -319,31 +304,57 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
                     }
                 }
-            
+
 
                 else { MessageBox.Show("Ajouter nu date de jourer d'absoncer"); }
-                }
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        
-        
-        }
 
-        public void visablrtp()
+
+        }
+        // GINARTURE DES AVERITISMOS
+    
+         private string Avert(int nubrabs)
         {
             try
-
-            {
-               
+            { string r;
+                int av1 = int.Parse(av1textEdit1.Text);
+                int av2 = int.Parse(av2textEdit11.Text);
+                int balm = int.Parse(blmtextEdit12.Text);
+                int exl = int.Parse(exctextEdit13.Text);
+                if (nubrabs >= av1 && nubrabs < av2)
+                {  r= ("1er avert");
+                    return r;
+                    
+                }
+                else if (nubrabs >= av2 && nubrabs < balm)
+                {
+                    return ("2eme avert").ToString();
+                }
+                else if (nubrabs >= balm && nubrabs < exl)
+                {
+                    return "blam";
+                }
+                else if (nubrabs >=exl)
+                {
+                    return "exclut";
+                    
+                }
+                
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
+            return "/";
+
         }
+
+        
 
         public void edit()
         {
@@ -418,6 +429,14 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
         }
 
-        
+        private void seccomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void promocomboBox11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

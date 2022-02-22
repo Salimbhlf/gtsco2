@@ -997,7 +997,7 @@ namespace gtsco2.forms.PVfinal
                                     
 
                                   }; 
-                        string OB = "N";
+                        string OB = "f";
                         foreach (var quree in qur.ToList())
                         {
                             OB = "n";

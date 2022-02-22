@@ -33,11 +33,11 @@ namespace gtsco2.forms
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.evabtn = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.absbt = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             this.addabsbtn = new DevExpress.XtraEditors.SimpleButton();
+            this.absbt = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
@@ -60,12 +60,12 @@ namespace gtsco2.forms
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.evabtn);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton7);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton9);
             this.flowLayoutPanel1.Controls.Add(this.addabsbtn);
             this.flowLayoutPanel1.Controls.Add(this.absbt);
+            this.flowLayoutPanel1.Controls.Add(this.evabtn);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton7);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton9);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton8);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton10);
@@ -90,7 +90,7 @@ namespace gtsco2.forms
             this.evabtn.Appearance.Options.UseBorderColor = true;
             this.evabtn.Appearance.Options.UseFont = true;
             this.evabtn.Appearance.Options.UseForeColor = true;
-            this.evabtn.Location = new System.Drawing.Point(3, 3);
+            this.evabtn.Location = new System.Drawing.Point(419, 3);
             this.evabtn.Name = "evabtn";
             this.evabtn.Size = new System.Drawing.Size(202, 87);
             this.evabtn.TabIndex = 3;
@@ -109,31 +109,31 @@ namespace gtsco2.forms
             this.simpleButton7.Appearance.Options.UseBorderColor = true;
             this.simpleButton7.Appearance.Options.UseFont = true;
             this.simpleButton7.Appearance.Options.UseForeColor = true;
-            this.simpleButton7.Location = new System.Drawing.Point(211, 3);
+            this.simpleButton7.Location = new System.Drawing.Point(3, 96);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(202, 87);
             this.simpleButton7.TabIndex = 6;
             this.simpleButton7.Text = "Evaluation";
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
-            // absbt
+            // simpleButton5
             // 
-            this.absbt.Appearance.BackColor = System.Drawing.Color.Lime;
-            this.absbt.Appearance.BackColor2 = System.Drawing.Color.Lime;
-            this.absbt.Appearance.BorderColor = System.Drawing.Color.White;
-            this.absbt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.absbt.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.absbt.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.absbt.Appearance.Options.UseBackColor = true;
-            this.absbt.Appearance.Options.UseBorderColor = true;
-            this.absbt.Appearance.Options.UseFont = true;
-            this.absbt.Appearance.Options.UseForeColor = true;
-            this.absbt.Location = new System.Drawing.Point(211, 96);
-            this.absbt.Name = "absbt";
-            this.absbt.Size = new System.Drawing.Size(202, 87);
-            this.absbt.TabIndex = 2;
-            this.absbt.Text = "Absonces";
-            this.absbt.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.simpleButton5.Appearance.BackColor2 = System.Drawing.Color.Gray;
+            this.simpleButton5.Appearance.BorderColor = System.Drawing.Color.White;
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.simpleButton5.Appearance.Options.UseBackColor = true;
+            this.simpleButton5.Appearance.Options.UseBorderColor = true;
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.Appearance.Options.UseForeColor = true;
+            this.simpleButton5.Location = new System.Drawing.Point(627, 3);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(202, 87);
+            this.simpleButton5.TabIndex = 4;
+            this.simpleButton5.Text = "Evaluation";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton9
             // 
@@ -147,7 +147,7 @@ namespace gtsco2.forms
             this.simpleButton9.Appearance.Options.UseBorderColor = true;
             this.simpleButton9.Appearance.Options.UseFont = true;
             this.simpleButton9.Appearance.Options.UseForeColor = true;
-            this.simpleButton9.Location = new System.Drawing.Point(627, 3);
+            this.simpleButton9.Location = new System.Drawing.Point(211, 96);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(202, 87);
             this.simpleButton9.TabIndex = 8;
@@ -166,12 +166,31 @@ namespace gtsco2.forms
             this.addabsbtn.Appearance.Options.UseBorderColor = true;
             this.addabsbtn.Appearance.Options.UseFont = true;
             this.addabsbtn.Appearance.Options.UseForeColor = true;
-            this.addabsbtn.Location = new System.Drawing.Point(3, 96);
+            this.addabsbtn.Location = new System.Drawing.Point(3, 3);
             this.addabsbtn.Name = "addabsbtn";
             this.addabsbtn.Size = new System.Drawing.Size(202, 87);
             this.addabsbtn.TabIndex = 5;
             this.addabsbtn.Text = "Aouter les absoncs";
             this.addabsbtn.Click += new System.EventHandler(this.simpleButton6_Click);
+            // 
+            // absbt
+            // 
+            this.absbt.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.absbt.Appearance.BackColor2 = System.Drawing.Color.Lime;
+            this.absbt.Appearance.BorderColor = System.Drawing.Color.White;
+            this.absbt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absbt.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.absbt.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.absbt.Appearance.Options.UseBackColor = true;
+            this.absbt.Appearance.Options.UseBorderColor = true;
+            this.absbt.Appearance.Options.UseFont = true;
+            this.absbt.Appearance.Options.UseForeColor = true;
+            this.absbt.Location = new System.Drawing.Point(211, 3);
+            this.absbt.Name = "absbt";
+            this.absbt.Size = new System.Drawing.Size(202, 87);
+            this.absbt.TabIndex = 2;
+            this.absbt.Text = "Absonces";
+            this.absbt.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton1
             // 
@@ -191,25 +210,6 @@ namespace gtsco2.forms
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Evaluation";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.simpleButton5.Appearance.BackColor2 = System.Drawing.Color.Gray;
-            this.simpleButton5.Appearance.BorderColor = System.Drawing.Color.White;
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton5.Appearance.Options.UseBackColor = true;
-            this.simpleButton5.Appearance.Options.UseBorderColor = true;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Appearance.Options.UseForeColor = true;
-            this.simpleButton5.Location = new System.Drawing.Point(419, 3);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(202, 87);
-            this.simpleButton5.TabIndex = 4;
-            this.simpleButton5.Text = "Evaluation";
-            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton8
             // 

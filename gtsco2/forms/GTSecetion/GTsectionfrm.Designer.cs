@@ -34,6 +34,8 @@ namespace gtsco2.forms.GTSecetion
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl4 = new DevExpress.XtraLayout.LayoutControl();
+            this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
+            this.Sec1checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
@@ -50,8 +52,12 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem32 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem33 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem34 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.SeccheckEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.NUBEREF = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -68,6 +74,14 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
@@ -83,6 +97,8 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).BeginInit();
             this.layoutControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sec1checkEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
@@ -92,10 +108,14 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeccheckEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
@@ -105,6 +125,16 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
+            this.panelControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -119,23 +149,26 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1106, 613);
+            this.panelControl1.Size = new System.Drawing.Size(1120, 593);
             this.panelControl1.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.panelControl6, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelControl3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panelControl4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panelControl5, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 78);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 131F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1102, 533);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1116, 513);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -145,13 +178,15 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl6.Appearance.Options.UseBackColor = true;
             this.panelControl6.Controls.Add(this.layoutControl4);
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl6.Location = new System.Drawing.Point(590, 3);
+            this.panelControl6.Location = new System.Drawing.Point(602, 3);
             this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(509, 125);
+            this.panelControl6.Size = new System.Drawing.Size(511, 125);
             this.panelControl6.TabIndex = 4;
             // 
             // layoutControl4
             // 
+            this.layoutControl4.Controls.Add(this.checkEdit3);
+            this.layoutControl4.Controls.Add(this.Sec1checkEdit2);
             this.layoutControl4.Controls.Add(this.labelControl6);
             this.layoutControl4.Controls.Add(this.labelControl7);
             this.layoutControl4.Controls.Add(this.simpleButton6);
@@ -164,9 +199,27 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControl4.Margin = new System.Windows.Forms.Padding(1);
             this.layoutControl4.Name = "layoutControl4";
             this.layoutControl4.Root = this.layoutControlGroup3;
-            this.layoutControl4.Size = new System.Drawing.Size(505, 121);
+            this.layoutControl4.Size = new System.Drawing.Size(507, 121);
             this.layoutControl4.TabIndex = 0;
             this.layoutControl4.Text = "layoutControl4";
+            // 
+            // checkEdit3
+            // 
+            this.checkEdit3.Location = new System.Drawing.Point(107, 95);
+            this.checkEdit3.Name = "checkEdit3";
+            this.checkEdit3.Properties.Caption = "afficher les stagere son section";
+            this.checkEdit3.Size = new System.Drawing.Size(396, 20);
+            this.checkEdit3.StyleController = this.layoutControl4;
+            this.checkEdit3.TabIndex = 13;
+            // 
+            // Sec1checkEdit2
+            // 
+            this.Sec1checkEdit2.Location = new System.Drawing.Point(253, 29);
+            this.Sec1checkEdit2.Name = "Sec1checkEdit2";
+            this.Sec1checkEdit2.Properties.Caption = "";
+            this.Sec1checkEdit2.Size = new System.Drawing.Size(20, 20);
+            this.Sec1checkEdit2.StyleController = this.layoutControl4;
+            this.Sec1checkEdit2.TabIndex = 12;
             // 
             // labelControl6
             // 
@@ -185,10 +238,10 @@ namespace gtsco2.forms.GTSecetion
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Location = new System.Drawing.Point(83, 95);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(10, 19);
+            this.labelControl7.Size = new System.Drawing.Size(20, 19);
             this.labelControl7.StyleController = this.layoutControl4;
             this.labelControl7.TabIndex = 10;
-            this.labelControl7.Text = "0";
+            this.labelControl7.Text = "00";
             // 
             // simpleButton6
             // 
@@ -196,7 +249,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton6.Location = new System.Drawing.Point(4, 55);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton6.Size = new System.Drawing.Size(497, 36);
+            this.simpleButton6.Size = new System.Drawing.Size(499, 36);
             this.simpleButton6.StyleController = this.layoutControl4;
             this.simpleButton6.TabIndex = 5;
             this.simpleButton6.Text = "Actualise";
@@ -204,9 +257,9 @@ namespace gtsco2.forms.GTSecetion
             // spcomboBox113
             // 
             this.spcomboBox113.FormattingEnabled = true;
-            this.spcomboBox113.Location = new System.Drawing.Point(340, 4);
+            this.spcomboBox113.Location = new System.Drawing.Point(341, 4);
             this.spcomboBox113.Name = "spcomboBox113";
-            this.spcomboBox113.Size = new System.Drawing.Size(161, 21);
+            this.spcomboBox113.Size = new System.Drawing.Size(162, 21);
             this.spcomboBox113.TabIndex = 4;
             // 
             // promocomboBox114
@@ -220,9 +273,9 @@ namespace gtsco2.forms.GTSecetion
             // seccomboBox15
             // 
             this.seccomboBox15.FormattingEnabled = true;
-            this.seccomboBox15.Location = new System.Drawing.Point(340, 29);
+            this.seccomboBox15.Location = new System.Drawing.Point(364, 29);
             this.seccomboBox15.Name = "seccomboBox15";
-            this.seccomboBox15.Size = new System.Drawing.Size(161, 21);
+            this.seccomboBox15.Size = new System.Drawing.Size(139, 21);
             this.seccomboBox15.TabIndex = 4;
             // 
             // modecomboBox117
@@ -230,7 +283,7 @@ namespace gtsco2.forms.GTSecetion
             this.modecomboBox117.FormattingEnabled = true;
             this.modecomboBox117.Location = new System.Drawing.Point(91, 4);
             this.modecomboBox117.Name = "modecomboBox117";
-            this.modecomboBox117.Size = new System.Drawing.Size(158, 21);
+            this.modecomboBox117.Size = new System.Drawing.Size(159, 21);
             this.modecomboBox117.TabIndex = 4;
             // 
             // layoutControlGroup3
@@ -245,10 +298,12 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem31,
             this.layoutControlItem32,
             this.layoutControlItem33,
-            this.layoutControlItem34});
+            this.layoutControlItem34,
+            this.layoutControlItem8,
+            this.layoutControlItem9});
             this.layoutControlGroup3.Name = "Root";
             this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(505, 121);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(507, 121);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControlItem28
@@ -269,7 +324,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem29.CustomizationFormText = "sepcialite";
             this.layoutControlItem29.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem29.Name = "layoutControlItem6";
-            this.layoutControlItem29.Size = new System.Drawing.Size(249, 25);
+            this.layoutControlItem29.Size = new System.Drawing.Size(250, 25);
             this.layoutControlItem29.Text = "mode formation";
             this.layoutControlItem29.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -278,7 +333,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem30.Control = this.simpleButton6;
             this.layoutControlItem30.Location = new System.Drawing.Point(0, 51);
             this.layoutControlItem30.Name = "layoutControlItem7";
-            this.layoutControlItem30.Size = new System.Drawing.Size(501, 40);
+            this.layoutControlItem30.Size = new System.Drawing.Size(503, 40);
             this.layoutControlItem30.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem30.TextVisible = false;
             // 
@@ -287,7 +342,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleSeparator4.AllowHotTrack = false;
             this.simpleSeparator4.Location = new System.Drawing.Point(0, 50);
             this.simpleSeparator4.Name = "simpleSeparator1";
-            this.simpleSeparator4.Size = new System.Drawing.Size(501, 1);
+            this.simpleSeparator4.Size = new System.Drawing.Size(503, 1);
             // 
             // layoutControlItem31
             // 
@@ -303,16 +358,16 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem32.Control = this.labelControl7;
             this.layoutControlItem32.Location = new System.Drawing.Point(79, 91);
             this.layoutControlItem32.Name = "layoutControlItem11";
-            this.layoutControlItem32.Size = new System.Drawing.Size(422, 26);
+            this.layoutControlItem32.Size = new System.Drawing.Size(24, 26);
             this.layoutControlItem32.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem32.TextVisible = false;
             // 
             // layoutControlItem33
             // 
             this.layoutControlItem33.Control = this.spcomboBox113;
-            this.layoutControlItem33.Location = new System.Drawing.Point(249, 0);
+            this.layoutControlItem33.Location = new System.Drawing.Point(250, 0);
             this.layoutControlItem33.Name = "layoutControlItem1";
-            this.layoutControlItem33.Size = new System.Drawing.Size(252, 25);
+            this.layoutControlItem33.Size = new System.Drawing.Size(253, 25);
             this.layoutControlItem33.Text = "sepcialite";
             this.layoutControlItem33.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -321,11 +376,29 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem34.Control = this.seccomboBox15;
             this.layoutControlItem34.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem34.CustomizationFormText = "sepcialite";
-            this.layoutControlItem34.Location = new System.Drawing.Point(249, 25);
+            this.layoutControlItem34.Location = new System.Drawing.Point(273, 25);
             this.layoutControlItem34.Name = "layoutControlItem3";
-            this.layoutControlItem34.Size = new System.Drawing.Size(252, 25);
+            this.layoutControlItem34.Size = new System.Drawing.Size(230, 25);
             this.layoutControlItem34.Text = "section";
             this.layoutControlItem34.TextSize = new System.Drawing.Size(75, 13);
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.Sec1checkEdit2;
+            this.layoutControlItem8.Location = new System.Drawing.Point(249, 25);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(24, 25);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextVisible = false;
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.checkEdit3;
+            this.layoutControlItem9.Location = new System.Drawing.Point(103, 91);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(400, 26);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
             // 
             // panelControl3
             // 
@@ -335,11 +408,13 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(3, 3);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(509, 125);
+            this.panelControl3.Size = new System.Drawing.Size(510, 125);
             this.panelControl3.TabIndex = 2;
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.checkEdit1);
+            this.layoutControl1.Controls.Add(this.SeccheckEdit1);
             this.layoutControl1.Controls.Add(this.labelControl3);
             this.layoutControl1.Controls.Add(this.NUBEREF);
             this.layoutControl1.Controls.Add(this.simpleButton1);
@@ -352,9 +427,27 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(1);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(505, 121);
+            this.layoutControl1.Size = new System.Drawing.Size(506, 121);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // checkEdit1
+            // 
+            this.checkEdit1.Location = new System.Drawing.Point(107, 95);
+            this.checkEdit1.Name = "checkEdit1";
+            this.checkEdit1.Properties.Caption = "afficher les stagere son section";
+            this.checkEdit1.Size = new System.Drawing.Size(395, 20);
+            this.checkEdit1.StyleController = this.layoutControl1;
+            this.checkEdit1.TabIndex = 13;
+            // 
+            // SeccheckEdit1
+            // 
+            this.SeccheckEdit1.Location = new System.Drawing.Point(217, 29);
+            this.SeccheckEdit1.Name = "SeccheckEdit1";
+            this.SeccheckEdit1.Properties.Caption = "";
+            this.SeccheckEdit1.Size = new System.Drawing.Size(20, 20);
+            this.SeccheckEdit1.StyleController = this.layoutControl1;
+            this.SeccheckEdit1.TabIndex = 12;
             // 
             // labelControl3
             // 
@@ -373,10 +466,10 @@ namespace gtsco2.forms.GTSecetion
             this.NUBEREF.Appearance.Options.UseFont = true;
             this.NUBEREF.Location = new System.Drawing.Point(83, 95);
             this.NUBEREF.Name = "NUBEREF";
-            this.NUBEREF.Size = new System.Drawing.Size(10, 19);
+            this.NUBEREF.Size = new System.Drawing.Size(20, 19);
             this.NUBEREF.StyleController = this.layoutControl1;
             this.NUBEREF.TabIndex = 10;
-            this.NUBEREF.Text = "0";
+            this.NUBEREF.Text = "00";
             // 
             // simpleButton1
             // 
@@ -384,7 +477,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton1.Location = new System.Drawing.Point(4, 55);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton1.Size = new System.Drawing.Size(497, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(498, 36);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 5;
             this.simpleButton1.Text = "Actualise";
@@ -392,9 +485,9 @@ namespace gtsco2.forms.GTSecetion
             // spcomboBox1
             // 
             this.spcomboBox1.FormattingEnabled = true;
-            this.spcomboBox1.Location = new System.Drawing.Point(340, 4);
+            this.spcomboBox1.Location = new System.Drawing.Point(305, 4);
             this.spcomboBox1.Name = "spcomboBox1";
-            this.spcomboBox1.Size = new System.Drawing.Size(161, 21);
+            this.spcomboBox1.Size = new System.Drawing.Size(197, 21);
             this.spcomboBox1.TabIndex = 4;
             // 
             // promocomboBox11
@@ -402,15 +495,15 @@ namespace gtsco2.forms.GTSecetion
             this.promocomboBox11.FormattingEnabled = true;
             this.promocomboBox11.Location = new System.Drawing.Point(91, 29);
             this.promocomboBox11.Name = "promocomboBox11";
-            this.promocomboBox11.Size = new System.Drawing.Size(158, 21);
+            this.promocomboBox11.Size = new System.Drawing.Size(122, 21);
             this.promocomboBox11.TabIndex = 4;
             // 
             // seccomboBox
             // 
             this.seccomboBox.FormattingEnabled = true;
-            this.seccomboBox.Location = new System.Drawing.Point(340, 29);
+            this.seccomboBox.Location = new System.Drawing.Point(328, 29);
             this.seccomboBox.Name = "seccomboBox";
-            this.seccomboBox.Size = new System.Drawing.Size(161, 21);
+            this.seccomboBox.Size = new System.Drawing.Size(174, 21);
             this.seccomboBox.TabIndex = 4;
             // 
             // modecombobox17
@@ -418,7 +511,7 @@ namespace gtsco2.forms.GTSecetion
             this.modecombobox17.FormattingEnabled = true;
             this.modecombobox17.Location = new System.Drawing.Point(91, 4);
             this.modecombobox17.Name = "modecombobox17";
-            this.modecombobox17.Size = new System.Drawing.Size(158, 21);
+            this.modecombobox17.Size = new System.Drawing.Size(123, 21);
             this.modecombobox17.TabIndex = 4;
             // 
             // Root
@@ -433,10 +526,12 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem12,
             this.layoutControlItem11,
             this.layoutControlItem1,
-            this.layoutControlItem3});
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem5});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(505, 121);
+            this.Root.Size = new System.Drawing.Size(506, 121);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem2
@@ -446,7 +541,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem2.CustomizationFormText = "sepcialite";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 25);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(249, 25);
+            this.layoutControlItem2.Size = new System.Drawing.Size(213, 25);
             this.layoutControlItem2.Text = "promo";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -457,7 +552,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem6.CustomizationFormText = "sepcialite";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(249, 25);
+            this.layoutControlItem6.Size = new System.Drawing.Size(214, 25);
             this.layoutControlItem6.Text = "mode formation";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -466,7 +561,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem7.Control = this.simpleButton1;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 51);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(501, 40);
+            this.layoutControlItem7.Size = new System.Drawing.Size(502, 40);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -475,7 +570,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleSeparator1.AllowHotTrack = false;
             this.simpleSeparator1.Location = new System.Drawing.Point(0, 50);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(501, 1);
+            this.simpleSeparator1.Size = new System.Drawing.Size(502, 1);
             // 
             // layoutControlItem12
             // 
@@ -491,16 +586,16 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem11.Control = this.NUBEREF;
             this.layoutControlItem11.Location = new System.Drawing.Point(79, 91);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(422, 26);
+            this.layoutControlItem11.Size = new System.Drawing.Size(24, 26);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.spcomboBox1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(249, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(214, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(252, 25);
+            this.layoutControlItem1.Size = new System.Drawing.Size(288, 25);
             this.layoutControlItem1.Text = "sepcialite";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -509,11 +604,89 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem3.Control = this.seccomboBox;
             this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem3.CustomizationFormText = "sepcialite";
-            this.layoutControlItem3.Location = new System.Drawing.Point(249, 25);
+            this.layoutControlItem3.Location = new System.Drawing.Point(237, 25);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(252, 25);
+            this.layoutControlItem3.Size = new System.Drawing.Size(265, 25);
             this.layoutControlItem3.Text = "section";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(75, 13);
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.SeccheckEdit1;
+            this.layoutControlItem4.Location = new System.Drawing.Point(213, 25);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(24, 25);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.checkEdit1;
+            this.layoutControlItem5.Location = new System.Drawing.Point(103, 91);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(399, 26);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextVisible = false;
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Appearance.BackColor = System.Drawing.Color.White;
+            this.panelControl4.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.panelControl4.Appearance.BorderColor = System.Drawing.Color.White;
+            this.panelControl4.Appearance.Options.UseBackColor = true;
+            this.panelControl4.Appearance.Options.UseBorderColor = true;
+            this.panelControl4.Controls.Add(this.gridControl1);
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl4.Location = new System.Drawing.Point(3, 134);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(510, 376);
+            this.panelControl4.TabIndex = 5;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(2, 2);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(506, 372);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Appearance.BackColor = System.Drawing.Color.White;
+            this.panelControl5.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.panelControl5.Appearance.BorderColor = System.Drawing.Color.White;
+            this.panelControl5.Appearance.Options.UseBackColor = true;
+            this.panelControl5.Appearance.Options.UseBorderColor = true;
+            this.panelControl5.Controls.Add(this.gridControl2);
+            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl5.Location = new System.Drawing.Point(602, 134);
+            this.panelControl5.Name = "panelControl5";
+            this.panelControl5.Size = new System.Drawing.Size(511, 376);
+            this.panelControl5.TabIndex = 6;
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(2, 2);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(507, 372);
+            this.gridControl2.TabIndex = 0;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
             // 
             // panelControl2
             // 
@@ -523,7 +696,7 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(2, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1102, 76);
+            this.panelControl2.Size = new System.Drawing.Size(1116, 76);
             this.panelControl2.TabIndex = 0;
             // 
             // flowLayoutPanel2
@@ -538,7 +711,7 @@ namespace gtsco2.forms.GTSecetion
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1098, 72);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1112, 72);
             this.flowLayoutPanel2.TabIndex = 19;
             // 
             // simpleButton2
@@ -643,7 +816,7 @@ namespace gtsco2.forms.GTSecetion
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 613);
+            this.ClientSize = new System.Drawing.Size(1120, 593);
             this.Controls.Add(this.panelControl1);
             this.Name = "GTsectionfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -655,7 +828,8 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).EndInit();
             this.layoutControl4.ResumeLayout(false);
-            this.layoutControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sec1checkEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
@@ -665,10 +839,14 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeccheckEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
@@ -678,6 +856,16 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
+            this.panelControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -733,5 +921,19 @@ namespace gtsco2.forms.GTSecetion
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem32;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem33;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem34;
+        private DevExpress.XtraEditors.CheckEdit checkEdit3;
+        private DevExpress.XtraEditors.CheckEdit Sec1checkEdit2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.CheckEdit SeccheckEdit1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.PanelControl panelControl5;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
     }
 }

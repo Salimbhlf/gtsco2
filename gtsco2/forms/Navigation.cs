@@ -67,7 +67,12 @@ namespace gtsco2.forms
 
         private void simpleButton7_Click(object sender, EventArgs e)
         {
+           using( GTSecetion.GTsectionfrm frm = new GTSecetion.GTsectionfrm())
+            {
+                
+                frm.ShowDialog();
 
+            }
         }
 
         private void simpleButton8_Click(object sender, EventArgs e)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,8 @@ namespace gtsco2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+
             Application.Run(new forms.Navigation()) ;
         }
         

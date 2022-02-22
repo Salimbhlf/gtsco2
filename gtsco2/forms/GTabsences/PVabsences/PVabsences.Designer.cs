@@ -129,7 +129,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1017, 79);
+            this.panelControl1.Size = new System.Drawing.Size(1081, 79);
             this.panelControl1.TabIndex = 0;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
@@ -140,7 +140,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1013, 75);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1077, 75);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // simpleButton4
@@ -254,6 +254,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.spcomboBox1.DropDownHeight = 159;
             this.spcomboBox1.DropDownWidth = 100;
             this.spcomboBox1.FormattingEnabled = true;
+            this.spcomboBox1.IntegralHeight = false;
             this.spcomboBox1.Location = new System.Drawing.Point(109, 29);
             this.spcomboBox1.Name = "spcomboBox1";
             this.spcomboBox1.Size = new System.Drawing.Size(112, 21);
@@ -265,6 +266,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.promocomboBox11.DropDownHeight = 159;
             this.promocomboBox11.DropDownWidth = 100;
             this.promocomboBox11.FormattingEnabled = true;
+            this.promocomboBox11.IntegralHeight = false;
             this.promocomboBox11.Location = new System.Drawing.Point(109, 54);
             this.promocomboBox11.Name = "promocomboBox11";
             this.promocomboBox11.Size = new System.Drawing.Size(112, 21);
@@ -277,6 +279,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.seccomboBox.DropDownHeight = 159;
             this.seccomboBox.DropDownWidth = 100;
             this.seccomboBox.FormattingEnabled = true;
+            this.seccomboBox.IntegralHeight = false;
             this.seccomboBox.Location = new System.Drawing.Point(109, 79);
             this.seccomboBox.Name = "seccomboBox";
             this.seccomboBox.Size = new System.Drawing.Size(112, 21);
@@ -288,6 +291,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.smstcomboBox13.DropDownHeight = 159;
             this.smstcomboBox13.DropDownWidth = 100;
             this.smstcomboBox13.FormattingEnabled = true;
+            this.smstcomboBox13.IntegralHeight = false;
             this.smstcomboBox13.Location = new System.Drawing.Point(109, 104);
             this.smstcomboBox13.Name = "smstcomboBox13";
             this.smstcomboBox13.Size = new System.Drawing.Size(112, 21);
@@ -299,6 +303,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.modecombobox.DropDownHeight = 159;
             this.modecombobox.DropDownWidth = 89;
             this.modecombobox.FormattingEnabled = true;
+            this.modecombobox.IntegralHeight = false;
             this.modecombobox.Location = new System.Drawing.Point(109, 4);
             this.modecombobox.Name = "modecombobox";
             this.modecombobox.Size = new System.Drawing.Size(112, 21);
@@ -309,6 +314,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.anneecomboBox141.DropDownHeight = 159;
             this.anneecomboBox141.DropDownWidth = 100;
             this.anneecomboBox141.FormattingEnabled = true;
+            this.anneecomboBox141.IntegralHeight = false;
             this.anneecomboBox141.Location = new System.Drawing.Point(109, 129);
             this.anneecomboBox141.Name = "anneecomboBox141";
             this.anneecomboBox141.Size = new System.Drawing.Size(112, 21);
@@ -646,7 +652,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(229, 79);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(788, 547);
+            this.panelControl3.Size = new System.Drawing.Size(852, 547);
             this.panelControl3.TabIndex = 2;
             // 
             // gridControl1
@@ -655,7 +661,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.gridControl1.Location = new System.Drawing.Point(2, 2);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(784, 543);
+            this.gridControl1.Size = new System.Drawing.Size(848, 543);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -671,11 +677,12 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 626);
+            this.ClientSize = new System.Drawing.Size(1081, 626);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Name = "PVabsences";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PV des Absences";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

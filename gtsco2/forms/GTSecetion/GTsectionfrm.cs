@@ -85,6 +85,24 @@ namespace gtsco2.forms.GTSecetion
 
         }
 
+
+        public void refrach( int promo , int section, string condicine)
+        {
+
+            var qure = (from stg in shared.bd.Stagiairs
+                        where stg.ID_Promo == promo && stg.Section == section
+                        select new
+                        {
+                            Numro_STG = stg.Num_STG,
+                            Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                            Date_de_Naissance = stg.Date_de_Naissance
+                        }).ToList();
+            gridControl1.DataSource = qure;
+
+
+            
+        }
+
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -98,6 +116,13 @@ namespace gtsco2.forms.GTSecetion
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
+            int sec = int.Parse(seccomboBox.SelectedValue.ToString());
+            refrach(promo,sec);
         }
     }
 }

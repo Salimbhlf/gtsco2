@@ -90,6 +90,11 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -138,6 +143,7 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -162,6 +168,7 @@ namespace gtsco2.forms.GTSecetion
             this.tableLayoutPanel1.Controls.Add(this.panelControl3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelControl4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panelControl5, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 78);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -481,6 +488,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 5;
             this.simpleButton1.Text = "Actualise";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // spcomboBox1
             // 
@@ -808,7 +816,58 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton10.ShowToolTips = false;
             this.simpleButton10.Size = new System.Drawing.Size(79, 69);
             this.simpleButton10.TabIndex = 12;
-            this.simpleButton10.Text = "Actualise";
+            this.simpleButton10.Text = "Actualise\r\n";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.simpleButton12);
+            this.panel1.Controls.Add(this.simpleButton11);
+            this.panel1.Controls.Add(this.simpleButton5);
+            this.panel1.Controls.Add(this.simpleButton3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(519, 134);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(77, 376);
+            this.panel1.TabIndex = 7;
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(0, 0);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(77, 48);
+            this.simpleButton3.TabIndex = 0;
+            this.simpleButton3.Text = "simpleButton3";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.simpleButton5.Location = new System.Drawing.Point(0, 48);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(77, 48);
+            this.simpleButton5.TabIndex = 1;
+            this.simpleButton5.Text = "simpleButton5";
+            // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.simpleButton11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
+            this.simpleButton11.Location = new System.Drawing.Point(0, 96);
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(77, 48);
+            this.simpleButton11.TabIndex = 2;
+            this.simpleButton11.Text = "simpleButton11";
+            // 
+            // simpleButton12
+            // 
+            this.simpleButton12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.simpleButton12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton12.ImageOptions.Image")));
+            this.simpleButton12.Location = new System.Drawing.Point(0, 144);
+            this.simpleButton12.Name = "simpleButton12";
+            this.simpleButton12.Size = new System.Drawing.Size(77, 48);
+            this.simpleButton12.TabIndex = 3;
             // 
             // GTsectionfrm
             // 
@@ -869,6 +928,7 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -935,5 +995,10 @@ namespace gtsco2.forms.GTSecetion
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }

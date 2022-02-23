@@ -63,13 +63,6 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
     <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -166,12 +159,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\Formulaire\certficat\certificat_de_scolarite.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="forms\Formulaire\certficat\certificat_de_scolarite.Designer.cs">
-      <DependentUpon>certificat_de_scolarite.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\GSTnote\gtevalustion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,9 +209,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="forms\Formulaire\certficat\certificat_de_scolarite.resx">
-      <DependentUpon>certificat_de_scolarite.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="forms\GSTnote\gtevalustion.resx">
       <DependentUpon>gtevalustion.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,7 +233,7 @@
     <EmbeddedResource Include="forms\PVfinal\frmPVfinal.resx">
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

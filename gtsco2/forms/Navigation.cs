@@ -69,6 +69,7 @@ namespace gtsco2.forms
         {
            using( GTSecetion.GTsectionfrm frm = new GTSecetion.GTsectionfrm())
             {
+
                 
                 frm.ShowDialog();
 

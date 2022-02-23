@@ -86,7 +86,7 @@ namespace gtsco2.forms.GTSecetion
         }
 
 
-        public void refrach( int promo , int section, string condicine)
+        public void refrach( int promo , int section)
         {
 
             var qure = (from stg in shared.bd.Stagiairs

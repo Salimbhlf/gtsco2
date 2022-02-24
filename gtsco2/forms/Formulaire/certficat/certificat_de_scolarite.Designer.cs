@@ -96,7 +96,6 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrLabel2,
             this.xrLabel1});
             this.ReportHeader.HeightF = 960.7563F;
-            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel1

@@ -69,6 +69,7 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // Detail
             // 
+            this.Detail.Expanded = false;
             this.Detail.HeightF = 0F;
             this.Detail.Name = "Detail";
             // 
@@ -94,17 +95,19 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrLabel3,
             this.xrLabel2,
             this.xrLabel1});
-            this.ReportHeader.HeightF = 795.8749F;
+            this.ReportHeader.HeightF = 960.7563F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel1
             // 
+            this.xrLabel1.AutoWidth = true;
             this.xrLabel1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(3.178914E-05F, 21.83332F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 21.83332F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(649.9999F, 145.9166F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(679F, 145.9166F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = resources.GetString("xrLabel1.Text");

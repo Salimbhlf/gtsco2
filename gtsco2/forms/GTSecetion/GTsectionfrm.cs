@@ -86,21 +86,60 @@ namespace gtsco2.forms.GTSecetion
         }
 
 
-        public void refrach( int promo , int section)
-        {
+        public  object refrach( int promo , int section,bool sec , bool pro)
+        {object qure;
+            try
+            {
+                
 
-            var qure = (from stg in shared.bd.Stagiairs
-                        where stg.ID_Promo == promo && stg.Section == section
-                        select new
-                        {
-                            Numro_STG = stg.Num_STG,
-                            Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
-                            Date_de_Naissance = stg.Date_de_Naissance
-                        }).ToList();
-            gridControl1.DataSource = qure;
+                if (pro == false && sec == true)
+                {
+                    qure = (from stg in shared.bd.Stagiairs
+                            where stg.ID_Promo == promo && stg.Section == section
+                            select new
+                            {
+                                Numro_STG = stg.Num_STG,
+                                Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                Date_de_Naissance = stg.Date_de_Naissance
+                            }).ToList();
+                    return qure;
+                }
+                else if (pro == false && sec == false)
+                {
+                    qure = (from stg in shared.bd.Stagiairs
+                            where stg.ID_Promo == promo
+                            select new
+                            {
+                                Numro_STG = stg.Num_STG,
+                                Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                Date_de_Naissance = stg.Date_de_Naissance
+                            }).ToList();
+                    return qure;
+                }
+                else if (pro == true)
+                {
+                    qure = (from stg in shared.bd.Stagiairs
+                            where stg.ID_Promo == promo && stg.Section == null
+                            select new
+                            {
+                                Numro_STG = stg.Num_STG,
+                                Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                Date_de_Naissance = stg.Date_de_Naissance
+                            }).ToList();
+                    return qure;
+                }
+                
+            }
+            catch (Exception EX) { MessageBox.Show(EX.Message); }
+                          return qure = (from stg in shared.bd.Stagiairs
+                               
+                               select new
+                               {
+
+                               }).ToList();
 
 
-            
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -117,12 +156,54 @@ namespace gtsco2.forms.GTSecetion
         {
 
         }
-
+        // sarge les donne de gridview 1 a partire de la fonction REFRACH
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            try { 
             int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
             int sec = int.Parse(seccomboBox.SelectedValue.ToString());
-            refrach(promo,sec);
+            bool sec1 = Sec1checkEdit1.Checked;
+            bool pro1 = pro1checkEdit1.Checked;
+            gridControl1.DataSource= refrach(promo, sec,sec1,pro1);
+                gridView1.OptionsBehavior.ReadOnly = true;
+                NUBEREF.Text= gridView1.RowCount.ToString();
+            }
+            catch (Exception EX) { MessageBox.Show(EX.Message); }
+        }
+
+
+        public void lefttoright()
+        {
+            DataTable dt = gridControl2.DataSource as DataTable;
+            DataTable dr = gridView1.GetFocusedRow() as DataTable;
+            //foreach(DataRow dataR in dr.Rows) { 
+            //dt.Rows.Add(dataR);}
+            gridControl2.DataSource = dr;
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+           
+        }
+        // sarge les donnes de gridview 2 a partire de la fonction REFRACH
+        private void BTN2simpleButton6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+                int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
+                bool sec2 = Sec2checkEdit2.Checked;
+                bool pro2 = pro2checkEdit3.Checked;
+                gridControl2.DataSource = refrach(promo, sec, sec2, pro2);
+                gridView2.OptionsBehavior.ReadOnly = true;
+                NUBEREF2.Text = gridView2.RowCount.ToString();
+            }
+            catch(Exception EX) { MessageBox.Show(EX.Message); }
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            lefttoright();
         }
     }
 }

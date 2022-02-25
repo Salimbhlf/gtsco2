@@ -33,13 +33,13 @@ namespace gtsco2.forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.removeButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -113,53 +113,19 @@ namespace gtsco2.forms
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton6);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
             this.flowLayoutPanel1.Controls.Add(this.removeButton1);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
             this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton7);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(900, 75);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.AutoWidthInLayoutControl = true;
-            this.simpleButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
-            this.simpleButton4.Location = new System.Drawing.Point(3, 3);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton4.ShowToolTips = false;
-            this.simpleButton4.Size = new System.Drawing.Size(79, 69);
-            this.simpleButton4.TabIndex = 11;
-            this.simpleButton4.Text = "Actualise";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click_1);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.AutoWidthInLayoutControl = true;
-            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(88, 3);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton3.ShowToolTips = false;
-            this.simpleButton3.Size = new System.Drawing.Size(70, 69);
-            this.simpleButton3.TabIndex = 12;
-            this.simpleButton3.Text = "Modifer";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
             // 
             // simpleButton6
             // 
@@ -169,7 +135,7 @@ namespace gtsco2.forms
             this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
             this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton6.Location = new System.Drawing.Point(164, 3);
+            this.simpleButton6.Location = new System.Drawing.Point(3, 3);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton6.ShowToolTips = false;
@@ -177,6 +143,23 @@ namespace gtsco2.forms
             this.simpleButton6.TabIndex = 9;
             this.simpleButton6.Text = "Ajouter";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.AutoWidthInLayoutControl = true;
+            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.simpleButton3.Location = new System.Drawing.Point(81, 3);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton3.ShowToolTips = false;
+            this.simpleButton3.Size = new System.Drawing.Size(70, 69);
+            this.simpleButton3.TabIndex = 12;
+            this.simpleButton3.Text = "Modifer";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
             // 
             // removeButton1
             // 
@@ -186,13 +169,13 @@ namespace gtsco2.forms
             this.removeButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.removeButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("removeButton1.ImageOptions.Image")));
             this.removeButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.removeButton1.Location = new System.Drawing.Point(242, 3);
+            this.removeButton1.Location = new System.Drawing.Point(157, 3);
             this.removeButton1.Name = "removeButton1";
             this.removeButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.removeButton1.ShowToolTips = false;
-            this.removeButton1.Size = new System.Drawing.Size(78, 69);
+            this.removeButton1.Size = new System.Drawing.Size(87, 69);
             this.removeButton1.TabIndex = 6;
-            this.removeButton1.Text = "Supprime";
+            this.removeButton1.Text = "Supprimer";
             this.removeButton1.Click += new System.EventHandler(this.removeButton1_Click);
             // 
             // simpleButton5
@@ -203,7 +186,7 @@ namespace gtsco2.forms
             this.simpleButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton5.Location = new System.Drawing.Point(326, 3);
+            this.simpleButton5.Location = new System.Drawing.Point(250, 3);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton5.ShowToolTips = false;
@@ -220,7 +203,7 @@ namespace gtsco2.forms
             this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
             this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.closeButton7.Location = new System.Drawing.Point(412, 3);
+            this.closeButton7.Location = new System.Drawing.Point(336, 3);
             this.closeButton7.Name = "closeButton7";
             this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.closeButton7.ShowToolTips = false;
@@ -237,14 +220,31 @@ namespace gtsco2.forms
             this.simpleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(490, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(414, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton1.ShowToolTips = false;
             this.simpleButton1.Size = new System.Drawing.Size(80, 69);
             this.simpleButton1.TabIndex = 13;
-            this.simpleButton1.Text = "Enregistrer";
+            this.simpleButton1.Text = "Imprimer";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.AutoWidthInLayoutControl = true;
+            this.simpleButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton4.Location = new System.Drawing.Point(599, 3);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton4.ShowToolTips = false;
+            this.simpleButton4.Size = new System.Drawing.Size(90, 69);
+            this.simpleButton4.TabIndex = 11;
+            this.simpleButton4.Text = "Actualiser";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click_1);
             // 
             // panelControl2
             // 
@@ -274,6 +274,7 @@ namespace gtsco2.forms
             this.layoutControl1.Location = new System.Drawing.Point(2, 2);
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(1);
             this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(440, 328, 650, 400);
             this.layoutControl1.Root = this.Root;
             this.layoutControl1.Size = new System.Drawing.Size(184, 514);
             this.layoutControl1.TabIndex = 0;
@@ -306,7 +307,7 @@ namespace gtsco2.forms
             this.avenrtp.EditValue = true;
             this.avenrtp.Location = new System.Drawing.Point(4, 179);
             this.avenrtp.Name = "avenrtp";
-            this.avenrtp.Properties.Caption = "Avon Ratrapage";
+            this.avenrtp.Properties.Caption = "Avant Ratrapage";
             this.avenrtp.Size = new System.Drawing.Size(176, 20);
             this.avenrtp.StyleController = this.layoutControl1;
             this.avenrtp.TabIndex = 6;
@@ -314,14 +315,14 @@ namespace gtsco2.forms
             // 
             // simpleButton2
             // 
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(4, 204);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton2.Size = new System.Drawing.Size(176, 36);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "Actualise";
+            this.simpleButton2.Text = "Affichage des notes";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // spcomboBox1
@@ -419,7 +420,7 @@ namespace gtsco2.forms
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 25);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem1.Text = "sepcialite";
+            this.layoutControlItem1.Text = "Spécialité";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlItem2
@@ -430,7 +431,7 @@ namespace gtsco2.forms
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 50);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem2.Text = "promo";
+            this.layoutControlItem2.Text = "Promo";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlItem3
@@ -441,7 +442,7 @@ namespace gtsco2.forms
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 75);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem3.Text = "section";
+            this.layoutControlItem3.Text = "Section";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlItem4
@@ -452,7 +453,7 @@ namespace gtsco2.forms
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 100);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem4.Text = "Semester";
+            this.layoutControlItem4.Text = "Semestre";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlItem5
@@ -474,7 +475,7 @@ namespace gtsco2.forms
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem6.Text = "mode formation";
+            this.layoutControlItem6.Text = "Mode formation";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlItem7
@@ -566,13 +567,13 @@ namespace gtsco2.forms
             this.simpleButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
             this.simpleButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton7.Location = new System.Drawing.Point(576, 3);
+            this.simpleButton7.Location = new System.Drawing.Point(500, 3);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton7.ShowToolTips = false;
-            this.simpleButton7.Size = new System.Drawing.Size(80, 69);
+            this.simpleButton7.Size = new System.Drawing.Size(93, 69);
             this.simpleButton7.TabIndex = 14;
-            this.simpleButton7.Text = "Enregistrer";
+            this.simpleButton7.Text = "Aperçu";
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
             // form

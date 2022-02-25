@@ -352,9 +352,9 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell9.StylePriority.UseBackColor = false;
             this.xrTableCell9.StylePriority.UseFont = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
-            this.xrTableCell9.Text = "Numero_STG";
+            this.xrTableCell9.Text = "Numero stagiaire";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell9.Weight = 1.2047148110617627D;
+            this.xrTableCell9.Weight = 1.3216039260885717D;
             // 
             // xrTableCell10
             // 
@@ -365,9 +365,9 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell10.StylePriority.UseBackColor = false;
             this.xrTableCell10.StylePriority.UseFont = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
-            this.xrTableCell10.Text = "Num Prenom";
+            this.xrTableCell10.Text = "Nom / Prenom";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell10.Weight = 1.6009205307856618D;
+            this.xrTableCell10.Weight = 1.4840314157588528D;
             // 
             // xrTableCell11
             // 
@@ -378,7 +378,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell11.StylePriority.UseBackColor = false;
             this.xrTableCell11.StylePriority.UseFont = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
-            this.xrTableCell11.Text = "control 1";
+            this.xrTableCell11.Text = "Control 1";
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell11.Weight = 1.0164766343058986D;
             // 
@@ -404,7 +404,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell13.StylePriority.UseBackColor = false;
             this.xrTableCell13.StylePriority.UseFont = false;
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
-            this.xrTableCell13.Text = "examine";
+            this.xrTableCell13.Text = "Examen";
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell13.Weight = 1.0346935503090509D;
             // 
@@ -417,7 +417,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell14.StylePriority.UseBackColor = false;
             this.xrTableCell14.StylePriority.UseFont = false;
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
-            this.xrTableCell14.Text = "ratrapage";
+            this.xrTableCell14.Text = "Rattrapage";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell14.Weight = 0.92539439699435233D;
             // 
@@ -444,7 +444,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel5.SizeF = new System.Drawing.SizeF(62.50003F, 23F);
             this.xrLabel5.StylePriority.UseFont = false;
             this.xrLabel5.StylePriority.UseTextAlignment = false;
-            this.xrLabel5.Text = "section:";
+            this.xrLabel5.Text = "Section:";
             this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel4
@@ -470,7 +470,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel3.SizeF = new System.Drawing.SizeF(84.375F, 23F);
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
-            this.xrLabel3.Text = "Specialite:";
+            this.xrLabel3.Text = "Spécialité";
             this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel2
@@ -483,7 +483,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel2.SizeF = new System.Drawing.SizeF(111.4583F, 23F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
-            this.xrLabel2.Text = "annee scoalire:";
+            this.xrLabel2.Text = "Année scolaire";
             this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel1
@@ -493,10 +493,10 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(163.5417F, 28.20832F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(181.2501F, 28.20832F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "ficher de note";
+            this.xrLabel1.Text = "Ficher de notes";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // ReportFooter

@@ -103,7 +103,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrLabel19.AutoWidth = true;
             this.xrLabel19.CanShrink = true;
             this.xrLabel19.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(390.625F, 782.0433F);
+            this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(390.625F, 937.7563F);
             this.xrLabel19.Multiline = true;
             this.xrLabel19.Name = "xrLabel19";
             this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -119,7 +119,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrLabel18.AutoWidth = true;
             this.xrLabel18.CanShrink = true;
             this.xrLabel18.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(9.999992F, 745.6684F);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(9.999974F, 837.3351F);
             this.xrLabel18.Multiline = true;
             this.xrLabel18.Name = "xrLabel18";
             this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -135,7 +135,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrLabel17.AutoWidth = true;
             this.xrLabel17.CanShrink = true;
             this.xrLabel17.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(9.999992F, 709.1267F);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(9.999974F, 774.7517F);
             this.xrLabel17.Multiline = true;
             this.xrLabel17.Name = "xrLabel17";
             this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -379,7 +379,6 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel2.SizeF = new System.Drawing.SizeF(236.4583F, 23.00002F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
@@ -394,7 +393,6 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrLabel1.SizeF = new System.Drawing.SizeF(679F, 145.9166F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;

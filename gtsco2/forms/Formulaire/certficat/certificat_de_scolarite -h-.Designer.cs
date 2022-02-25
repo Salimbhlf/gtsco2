@@ -458,7 +458,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "اللقب:";
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell11.Weight = 2.0293694068156913D;
+            this.xrTableCell11.Weight = 1.6255047175189952D;
             // 
             // xrTableCell12
             // 
@@ -471,7 +471,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "الاســـــم:";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell12.Weight = 1.7688347530316504D;
+            this.xrTableCell12.Weight = 2.1726994423283466D;
             // 
             // xrTableCell52
             // 
@@ -747,7 +747,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.Text = "إلـــى:";
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell6.Weight = 3.9511826882565035D;
+            this.xrTableCell6.Weight = 3.1648584809517466D;
             // 
             // xrTableCell8
             // 
@@ -760,7 +760,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.Text = "مــــدة التكـــوين من:";
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell8.Weight = 3.4439233447495079D;
+            this.xrTableCell8.Weight = 4.2302475520542648D;
             // 
             // xrTableCell16
             // 
@@ -830,7 +830,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell4.StylePriority.UseTextAlignment = false;
             this.xrTableCell4.Text = "إلـــى:";
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell4.Weight = 4.62455407794439D;
+            this.xrTableCell4.Weight = 3.7042218515556984D;
             // 
             // xrTableCell31
             // 
@@ -841,7 +841,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell31.StylePriority.UseTextAlignment = false;
             this.xrTableCell31.Text = "من:";
             this.xrTableCell31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell31.Weight = 1.905812611904266D;
+            this.xrTableCell31.Weight = 2.4517725456097619D;
             // 
             // xrTableCell22
             // 
@@ -854,7 +854,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
             this.xrTableCell22.Text = "الـســـداســي:";
             this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell22.Weight = 2.1250301264874163D;
+            this.xrTableCell22.Weight = 2.4994024191706123D;
             // 
             // xrTableCell19
             // 

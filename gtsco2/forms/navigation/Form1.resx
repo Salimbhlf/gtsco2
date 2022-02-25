@@ -159,7 +159,7 @@
         GGRJiYdMnxmDLCnxkOnzbkNJC2oq6UBNJR2oqaTC7Vn/AnLDheNHNGQZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="tileItemFrame3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAhQSURBVHhe7Zzfa5ZlHMY98MADwQMPPPVAEDzyD/CgZagFI7MoYgcrQiqKkSKZ/SAWZuWPMsFB
@@ -200,7 +200,7 @@
         GGRJiYdMnxmDLCnxkOnzbkNJC2oq6UBNJR2oqaTC7Vn/AnLDheNHNGQZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="tileItemFrame1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAhQSURBVHhe7Zzfa5ZlHMY98MADwQMPPPVAEDzyD/CgZagFI7MoYgcrQiqKkSKZ/SAWZuWPMsFB

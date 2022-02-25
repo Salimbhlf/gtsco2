@@ -91,7 +91,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
-            this.Detail.HeightF = 26.91663F;
+            this.Detail.HeightF = 25F;
             this.Detail.Name = "Detail";
             // 
             // xrTable1
@@ -123,7 +123,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             // 
             this.xrTableCell7.BackColor = System.Drawing.Color.Silver;
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumCount()")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRecordNumber()")});
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
@@ -546,7 +546,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.objectDataSource1.DataSource = typeof(gtsco2.forms.eva);
             this.objectDataSource1.Name = "objectDataSource1";
             // 
-            // aReport1
+            // Report1note
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,

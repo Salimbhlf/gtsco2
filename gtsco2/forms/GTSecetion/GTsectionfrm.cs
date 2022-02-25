@@ -174,11 +174,8 @@ namespace gtsco2.forms.GTSecetion
 
         public void lefttoright()
         {
-            DataTable dt = gridControl2.DataSource as DataTable;
-            DataTable dr = gridView1.GetFocusedRow() as DataTable;
-            //foreach(DataRow dataR in dr.Rows) { 
-            //dt.Rows.Add(dataR);}
-            gridControl2.DataSource = dr;
+           DataTable dt= gridControl1.DataSource as DataTable;
+            gridControl2.DataSource = dt;
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)

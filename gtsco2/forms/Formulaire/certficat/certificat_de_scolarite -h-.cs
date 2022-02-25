@@ -13,5 +13,9 @@ namespace gtsco2.forms.Formulaire.certficat
             InitializeComponent();
         }
 
+        private void xrTableCell83_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        {
+
+        }
     }
 }

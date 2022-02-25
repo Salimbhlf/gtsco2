@@ -128,18 +128,24 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // TopMargin
             // 
+            this.TopMargin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.TopMargin.HeightF = 50F;
             this.TopMargin.Name = "TopMargin";
+            this.TopMargin.StylePriority.UseFont = false;
             // 
             // BottomMargin
             // 
+            this.BottomMargin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.BottomMargin.HeightF = 50F;
             this.BottomMargin.Name = "BottomMargin";
+            this.BottomMargin.StylePriority.UseFont = false;
             // 
             // Detail
             // 
+            this.Detail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.Detail.HeightF = 3.125F;
             this.Detail.Name = "Detail";
+            this.Detail.StylePriority.UseFont = false;
             // 
             // ReportHeader
             // 
@@ -149,10 +155,12 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTable3,
             this.xrTable2,
             this.xrTable1});
+            this.ReportHeader.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReportHeader.HeightF = 1721.408F;
             this.ReportHeader.Name = "ReportHeader";
             this.ReportHeader.StylePriority.UseBorderDashStyle = false;
             this.ReportHeader.StylePriority.UseBorders = false;
+            this.ReportHeader.StylePriority.UseFont = false;
             this.ReportHeader.StylePriority.UseTextAlignment = false;
             this.ReportHeader.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
@@ -176,33 +184,42 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell1,
             this.xrTableCell23,
             this.xrTableCell44});
+            this.xrTableRow1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow1.Name = "xrTableRow1";
+            this.xrTableRow1.StylePriority.UseFont = false;
             this.xrTableRow1.Weight = 1D;
             // 
             // xrTableCell1
             // 
             this.xrTableCell1.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
+            this.xrTableCell1.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrTableCell1.StylePriority.UseBorders = false;
+            this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.Text = "شهـــــــــــادة مدرسيــــــة";
             this.xrTableCell1.Weight = 3.4406938082166194D;
             // 
             // xrTableCell23
             // 
             this.xrTableCell23.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell23.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell23.Multiline = true;
             this.xrTableCell23.Name = "xrTableCell23";
             this.xrTableCell23.StylePriority.UseBorders = false;
+            this.xrTableCell23.StylePriority.UseFont = false;
             this.xrTableCell23.Weight = 0.15219125819549229D;
             // 
             // xrTableCell44
             // 
             this.xrTableCell44.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell44.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell44.Multiline = true;
             this.xrTableCell44.Name = "xrTableCell44";
             this.xrTableCell44.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrTableCell44.StylePriority.UseBorders = false;
+            this.xrTableCell44.StylePriority.UseFont = false;
             this.xrTableCell44.Text = "شهـــــــــــادة مدرسيــــــة";
             this.xrTableCell44.Weight = 3.5130946943504822D;
             // 
@@ -225,15 +242,22 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell45,
             this.xrTableCell13,
             this.xrTableCell46});
+            this.xrTableRow15.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow15.Name = "xrTableRow15";
+            this.xrTableRow15.StylePriority.UseFont = false;
             this.xrTableRow15.Weight = 1D;
             // 
             // xrTableCell45
             // 
             this.xrTableCell45.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
+            this.xrTableCell45.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell45.Multiline = true;
             this.xrTableCell45.Name = "xrTableCell45";
+            this.xrTableCell45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 10, 0, 100F);
+            this.xrTableCell45.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrTableCell45.StylePriority.UseBorders = false;
+            this.xrTableCell45.StylePriority.UseFont = false;
+            this.xrTableCell45.StylePriority.UsePadding = false;
             this.xrTableCell45.StylePriority.UseTextAlignment = false;
             this.xrTableCell45.Text = resources.GetString("xrTableCell45.Text");
             this.xrTableCell45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -243,10 +267,12 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             this.xrTableCell13.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrTableCell13.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell13.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell13.Multiline = true;
             this.xrTableCell13.Name = "xrTableCell13";
             this.xrTableCell13.StylePriority.UseBorderDashStyle = false;
             this.xrTableCell13.StylePriority.UseBorders = false;
+            this.xrTableCell13.StylePriority.UseFont = false;
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell13.Weight = 0.096712390695465444D;
@@ -255,10 +281,15 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             this.xrTableCell46.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrTableCell46.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell46.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell46.Multiline = true;
             this.xrTableCell46.Name = "xrTableCell46";
+            this.xrTableCell46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 10, 0, 100F);
+            this.xrTableCell46.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrTableCell46.StylePriority.UseBorderDashStyle = false;
             this.xrTableCell46.StylePriority.UseBorders = false;
+            this.xrTableCell46.StylePriority.UseFont = false;
+            this.xrTableCell46.StylePriority.UsePadding = false;
             this.xrTableCell46.StylePriority.UseTextAlignment = false;
             this.xrTableCell46.Text = resources.GetString("xrTableCell46.Text");
             this.xrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -299,16 +330,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell9,
             this.xrTableCell47,
             this.xrTableCell49});
+            this.xrTableRow16.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow16.Name = "xrTableRow16";
+            this.xrTableRow16.StylePriority.UseFont = false;
             this.xrTableRow16.Weight = 0.14285714409246322D;
             // 
             // xrTableCell9
             // 
             this.xrTableCell9.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell9.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell9.Multiline = true;
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell9.StylePriority.UseBorders = false;
+            this.xrTableCell9.StylePriority.UseFont = false;
             this.xrTableCell9.StylePriority.UsePadding = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "الرقم          /  م ت /";
@@ -318,9 +353,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell47
             // 
             this.xrTableCell47.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell47.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell47.Multiline = true;
             this.xrTableCell47.Name = "xrTableCell47";
             this.xrTableCell47.StylePriority.UseBorders = false;
+            this.xrTableCell47.StylePriority.UseFont = false;
             this.xrTableCell47.StylePriority.UseTextAlignment = false;
             this.xrTableCell47.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell47.Weight = 0.23989694478618451D;
@@ -328,15 +365,17 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell49
             // 
             this.xrTableCell49.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell49.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell49.Multiline = true;
             this.xrTableCell49.Name = "xrTableCell49";
             this.xrTableCell49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell49.StylePriority.UseBorders = false;
+            this.xrTableCell49.StylePriority.UseFont = false;
             this.xrTableCell49.StylePriority.UsePadding = false;
             this.xrTableCell49.StylePriority.UseTextAlignment = false;
             this.xrTableCell49.Text = "الرقم          /  م ت /";
             this.xrTableCell49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell49.Weight = 5.5378042669615528D;
+            this.xrTableCell49.Weight = 5.5378042469381539D;
             // 
             // xrTableRow5
             // 
@@ -344,17 +383,21 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell21,
             this.xrTableCell48,
             this.xrTableCell25});
+            this.xrTableRow5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow5.Name = "xrTableRow5";
+            this.xrTableRow5.StylePriority.UseFont = false;
             this.xrTableRow5.Weight = 0.14285714409246322D;
             // 
             // xrTableCell21
             // 
             this.xrTableCell21.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell21.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell21.Multiline = true;
             this.xrTableCell21.Name = "xrTableCell21";
             this.xrTableCell21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell21.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrTableCell21.StylePriority.UseBorders = false;
+            this.xrTableCell21.StylePriority.UseFont = false;
             this.xrTableCell21.StylePriority.UsePadding = false;
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.Text = "إن مديـــــر(ة) المعهــــد يشهــــد بأن  المتمهـــــــن (ة)";
@@ -364,9 +407,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell48
             // 
             this.xrTableCell48.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell48.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell48.Multiline = true;
             this.xrTableCell48.Name = "xrTableCell48";
             this.xrTableCell48.StylePriority.UseBorders = false;
+            this.xrTableCell48.StylePriority.UseFont = false;
             this.xrTableCell48.StylePriority.UseTextAlignment = false;
             this.xrTableCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell48.Weight = 0.23875641019798843D;
@@ -374,16 +419,18 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell25
             // 
             this.xrTableCell25.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell25.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell25.Multiline = true;
             this.xrTableCell25.Name = "xrTableCell25";
             this.xrTableCell25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell25.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
             this.xrTableCell25.StylePriority.UseBorders = false;
+            this.xrTableCell25.StylePriority.UseFont = false;
             this.xrTableCell25.StylePriority.UsePadding = false;
             this.xrTableCell25.StylePriority.UseTextAlignment = false;
             this.xrTableCell25.Text = "إن مديـــــر(ة) المعهــــد يشهــــد بأن  المتمهـــــــن (ة)";
             this.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell25.Weight = 5.511307553344432D;
+            this.xrTableCell25.Weight = 5.5113075334168178D;
             // 
             // xrTableRow3
             // 
@@ -393,16 +440,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell52,
             this.xrTableCell14,
             this.xrTableCell15});
+            this.xrTableRow3.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow3.Name = "xrTableRow3";
+            this.xrTableRow3.StylePriority.UseFont = false;
             this.xrTableRow3.Weight = 0.14285714409246322D;
             // 
             // xrTableCell11
             // 
             this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell11.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell11.StylePriority.UseBorders = false;
+            this.xrTableCell11.StylePriority.UseFont = false;
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "اللقب:";
@@ -411,9 +462,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // xrTableCell12
             // 
+            this.xrTableCell12.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
+            this.xrTableCell12.StylePriority.UseFont = false;
             this.xrTableCell12.StylePriority.UsePadding = false;
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "الاســـــم:";
@@ -423,9 +476,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell52
             // 
             this.xrTableCell52.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell52.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell52.Multiline = true;
             this.xrTableCell52.Name = "xrTableCell52";
             this.xrTableCell52.StylePriority.UseBorders = false;
+            this.xrTableCell52.StylePriority.UseFont = false;
             this.xrTableCell52.StylePriority.UseTextAlignment = false;
             this.xrTableCell52.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell52.Weight = 0.16800396006650775D;
@@ -433,10 +488,12 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell14
             // 
             this.xrTableCell14.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell14.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell14.StylePriority.UseBorders = false;
+            this.xrTableCell14.StylePriority.UseFont = false;
             this.xrTableCell14.StylePriority.UsePadding = false;
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "اللقب:";
@@ -446,15 +503,17 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell15
             // 
             this.xrTableCell15.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell15.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell15.Multiline = true;
             this.xrTableCell15.Name = "xrTableCell15";
             this.xrTableCell15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell15.StylePriority.UseBorders = false;
+            this.xrTableCell15.StylePriority.UseFont = false;
             this.xrTableCell15.StylePriority.UsePadding = false;
             this.xrTableCell15.StylePriority.UseTextAlignment = false;
             this.xrTableCell15.Text = "الاســـــم:";
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell15.Weight = 2.168411765959454D;
+            this.xrTableCell15.Weight = 2.1684117519370418D;
             // 
             // xrTableRow4
             // 
@@ -462,16 +521,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell17,
             this.xrTableCell18,
             this.xrTableCell20});
+            this.xrTableRow4.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow4.Name = "xrTableRow4";
+            this.xrTableRow4.StylePriority.UseFont = false;
             this.xrTableRow4.Weight = 0.14285714409246322D;
             // 
             // xrTableCell17
             // 
             this.xrTableCell17.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell17.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
             this.xrTableCell17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell17.StylePriority.UseBorders = false;
+            this.xrTableCell17.StylePriority.UseFont = false;
             this.xrTableCell17.StylePriority.UsePadding = false;
             this.xrTableCell17.StylePriority.UseTextAlignment = false;
             this.xrTableCell17.Text = "تاريخ ومكان الازدياد:";
@@ -481,23 +544,27 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell18
             // 
             this.xrTableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell18.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.StylePriority.UseBorders = false;
+            this.xrTableCell18.StylePriority.UseFont = false;
             this.xrTableCell18.Weight = 0.15833300377709358D;
             // 
             // xrTableCell20
             // 
             this.xrTableCell20.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell20.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
             this.xrTableCell20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell20.StylePriority.UseBorders = false;
+            this.xrTableCell20.StylePriority.UseFont = false;
             this.xrTableCell20.StylePriority.UsePadding = false;
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
             this.xrTableCell20.Text = "تاريخ ومكان الازدياد:";
             this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell20.Weight = 3.6549444089095524D;
+            this.xrTableCell20.Weight = 3.65494439569413D;
             // 
             // xrTableRow6
             // 
@@ -505,16 +572,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell27,
             this.xrTableCell53,
             this.xrTableCell30});
+            this.xrTableRow6.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow6.Name = "xrTableRow6";
+            this.xrTableRow6.StylePriority.UseFont = false;
             this.xrTableRow6.Weight = 0.14285714409246322D;
             // 
             // xrTableCell27
             // 
             this.xrTableCell27.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell27.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
             this.xrTableCell27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell27.StylePriority.UseBorders = false;
+            this.xrTableCell27.StylePriority.UseFont = false;
             this.xrTableCell27.StylePriority.UsePadding = false;
             this.xrTableCell27.StylePriority.UseTextAlignment = false;
             this.xrTableCell27.Text = "مسجل (ة) تحت رقم:";
@@ -524,23 +595,27 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell53
             // 
             this.xrTableCell53.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell53.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell53.Multiline = true;
             this.xrTableCell53.Name = "xrTableCell53";
             this.xrTableCell53.StylePriority.UseBorders = false;
+            this.xrTableCell53.StylePriority.UseFont = false;
             this.xrTableCell53.Weight = 0.15859464225635889D;
             // 
             // xrTableCell30
             // 
             this.xrTableCell30.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell30.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
             this.xrTableCell30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell30.StylePriority.UseBorders = false;
+            this.xrTableCell30.StylePriority.UseFont = false;
             this.xrTableCell30.StylePriority.UsePadding = false;
             this.xrTableCell30.StylePriority.UseTextAlignment = false;
             this.xrTableCell30.Text = "مسجل (ة) تحت رقم:";
             this.xrTableCell30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell30.Weight = 3.6609180211890595D;
+            this.xrTableCell30.Weight = 3.6609180079520285D;
             // 
             // xrTableRow7
             // 
@@ -548,16 +623,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell32,
             this.xrTableCell33,
             this.xrTableCell35});
+            this.xrTableRow7.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow7.Name = "xrTableRow7";
+            this.xrTableRow7.StylePriority.UseFont = false;
             this.xrTableRow7.Weight = 0.14285714409246322D;
             // 
             // xrTableCell32
             // 
             this.xrTableCell32.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell32.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
             this.xrTableCell32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell32.StylePriority.UseBorders = false;
+            this.xrTableCell32.StylePriority.UseFont = false;
             this.xrTableCell32.StylePriority.UsePadding = false;
             this.xrTableCell32.StylePriority.UseTextAlignment = false;
             this.xrTableCell32.Text = "يتابع تكوينا في اختصاص :";
@@ -567,23 +646,27 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell33
             // 
             this.xrTableCell33.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell33.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell33.Multiline = true;
             this.xrTableCell33.Name = "xrTableCell33";
             this.xrTableCell33.StylePriority.UseBorders = false;
+            this.xrTableCell33.StylePriority.UseFont = false;
             this.xrTableCell33.Weight = 0.23923177533938311D;
             // 
             // xrTableCell35
             // 
             this.xrTableCell35.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell35.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
             this.xrTableCell35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell35.StylePriority.UseBorders = false;
+            this.xrTableCell35.StylePriority.UseFont = false;
             this.xrTableCell35.StylePriority.UsePadding = false;
             this.xrTableCell35.StylePriority.UseTextAlignment = false;
             this.xrTableCell35.Text = "يتابع تكوينا في اختصاص :";
             this.xrTableCell35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell35.Weight = 5.5222584211104859D;
+            this.xrTableCell35.Weight = 5.5222584011432714D;
             // 
             // xrTableRow8
             // 
@@ -591,16 +674,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell3,
             this.xrTableCell57,
             this.xrTableCell5});
+            this.xrTableRow8.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow8.Name = "xrTableRow8";
+            this.xrTableRow8.StylePriority.UseFont = false;
             this.xrTableRow8.Weight = 0.14285714409246322D;
             // 
             // xrTableCell3
             // 
             this.xrTableCell3.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell3.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell3.StylePriority.UseBorders = false;
+            this.xrTableCell3.StylePriority.UseFont = false;
             this.xrTableCell3.StylePriority.UsePadding = false;
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.Text = "نمــــــــــــــط التكويــــــن :               التمهــين";
@@ -610,9 +697,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell57
             // 
             this.xrTableCell57.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell57.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell57.Multiline = true;
             this.xrTableCell57.Name = "xrTableCell57";
             this.xrTableCell57.StylePriority.UseBorders = false;
+            this.xrTableCell57.StylePriority.UseFont = false;
             this.xrTableCell57.StylePriority.UseTextAlignment = false;
             this.xrTableCell57.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell57.Weight = 0.35749390495950628D;
@@ -620,15 +709,17 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell5
             // 
             this.xrTableCell5.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell5.StylePriority.UseBorders = false;
+            this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
             this.xrTableCell5.Text = "نمــــــــــــــط التكويــــــن :               التمهــين";
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell5.Weight = 8.2523947490695235D;
+            this.xrTableCell5.Weight = 8.2523947192308054D;
             // 
             // xrTableRow9
             // 
@@ -638,16 +729,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell16,
             this.xrTableCell26,
             this.xrTableCell10});
+            this.xrTableRow9.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow9.Name = "xrTableRow9";
+            this.xrTableRow9.StylePriority.UseFont = false;
             this.xrTableRow9.Weight = 0.14285714409246322D;
             // 
             // xrTableCell6
             // 
             this.xrTableCell6.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell6.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell6.StylePriority.UseBorders = false;
+            this.xrTableCell6.StylePriority.UseFont = false;
             this.xrTableCell6.StylePriority.UsePadding = false;
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.Text = "إلـــى:";
@@ -656,9 +751,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // xrTableCell8
             // 
+            this.xrTableCell8.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
+            this.xrTableCell8.StylePriority.UseFont = false;
             this.xrTableCell8.StylePriority.UsePadding = false;
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.Text = "مــــدة التكـــوين من:";
@@ -668,9 +765,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell16
             // 
             this.xrTableCell16.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell16.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.StylePriority.UseBorders = false;
+            this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.StylePriority.UseTextAlignment = false;
             this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell16.Weight = 0.32709362195837466D;
@@ -678,10 +777,12 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell26
             // 
             this.xrTableCell26.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell26.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell26.Multiline = true;
             this.xrTableCell26.Name = "xrTableCell26";
             this.xrTableCell26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell26.StylePriority.UseBorders = false;
+            this.xrTableCell26.StylePriority.UseFont = false;
             this.xrTableCell26.StylePriority.UsePadding = false;
             this.xrTableCell26.StylePriority.UseTextAlignment = false;
             this.xrTableCell26.Text = "إلـــى:";
@@ -691,15 +792,17 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell10
             // 
             this.xrTableCell10.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell10.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
             this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell10.StylePriority.UseBorders = false;
+            this.xrTableCell10.StylePriority.UseFont = false;
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "مــــدة التكـــوين من:";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell10.Weight = 4.2218970768407909D;
+            this.xrTableCell10.Weight = 4.22189704953915D;
             // 
             // xrTableRow10
             // 
@@ -711,15 +814,19 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell24,
             this.xrTableCell34,
             this.xrTableCell29});
+            this.xrTableRow10.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow10.Name = "xrTableRow10";
+            this.xrTableRow10.StylePriority.UseFont = false;
             this.xrTableRow10.Weight = 0.14285714409246322D;
             // 
             // xrTableCell4
             // 
             this.xrTableCell4.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell4.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.StylePriority.UseBorders = false;
+            this.xrTableCell4.StylePriority.UseFont = false;
             this.xrTableCell4.StylePriority.UseTextAlignment = false;
             this.xrTableCell4.Text = "إلـــى:";
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -727,8 +834,10 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // xrTableCell31
             // 
+            this.xrTableCell31.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
+            this.xrTableCell31.StylePriority.UseFont = false;
             this.xrTableCell31.StylePriority.UseTextAlignment = false;
             this.xrTableCell31.Text = "من:";
             this.xrTableCell31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -736,9 +845,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // xrTableCell22
             // 
+            this.xrTableCell22.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
             this.xrTableCell22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
+            this.xrTableCell22.StylePriority.UseFont = false;
             this.xrTableCell22.StylePriority.UsePadding = false;
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
             this.xrTableCell22.Text = "الـســـداســي:";
@@ -748,9 +859,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell19
             // 
             this.xrTableCell19.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell19.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
             this.xrTableCell19.StylePriority.UseBorders = false;
+            this.xrTableCell19.StylePriority.UseFont = false;
             this.xrTableCell19.StylePriority.UseTextAlignment = false;
             this.xrTableCell19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell19.Weight = 0.38284121080317457D;
@@ -758,9 +871,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell24
             // 
             this.xrTableCell24.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell24.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
             this.xrTableCell24.StylePriority.UseBorders = false;
+            this.xrTableCell24.StylePriority.UseFont = false;
             this.xrTableCell24.StylePriority.UseTextAlignment = false;
             this.xrTableCell24.Text = "إلـــى:";
             this.xrTableCell24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -768,8 +883,10 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // xrTableCell34
             // 
+            this.xrTableCell34.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
+            this.xrTableCell34.StylePriority.UseFont = false;
             this.xrTableCell34.StylePriority.UseTextAlignment = false;
             this.xrTableCell34.Text = "من:";
             this.xrTableCell34.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -778,15 +895,17 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell29
             // 
             this.xrTableCell29.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell29.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
             this.xrTableCell29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell29.StylePriority.UseBorders = false;
+            this.xrTableCell29.StylePriority.UseFont = false;
             this.xrTableCell29.StylePriority.UsePadding = false;
             this.xrTableCell29.StylePriority.UseTextAlignment = false;
             this.xrTableCell29.Text = "الـســـداســي:";
             this.xrTableCell29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell29.Weight = 2.55351746598415D;
+            this.xrTableCell29.Weight = 2.5535174340296902D;
             // 
             // xrTableRow11
             // 
@@ -794,16 +913,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell36,
             this.xrTableCell58,
             this.xrTableCell41});
+            this.xrTableRow11.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow11.Name = "xrTableRow11";
+            this.xrTableRow11.StylePriority.UseFont = false;
             this.xrTableRow11.Weight = 0.14285714409246322D;
             // 
             // xrTableCell36
             // 
             this.xrTableCell36.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell36.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
             this.xrTableCell36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell36.StylePriority.UseBorders = false;
+            this.xrTableCell36.StylePriority.UseFont = false;
             this.xrTableCell36.StylePriority.UsePadding = false;
             this.xrTableCell36.StylePriority.UseTextAlignment = false;
             this.xrTableCell36.Text = "السنة التكوينيـــــــة:";
@@ -813,9 +936,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell58
             // 
             this.xrTableCell58.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell58.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell58.Multiline = true;
             this.xrTableCell58.Name = "xrTableCell58";
             this.xrTableCell58.StylePriority.UseBorders = false;
+            this.xrTableCell58.StylePriority.UseFont = false;
             this.xrTableCell58.StylePriority.UseTextAlignment = false;
             this.xrTableCell58.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell58.Weight = 0.61273658726386326D;
@@ -823,15 +948,17 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell41
             // 
             this.xrTableCell41.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell41.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell41.Multiline = true;
             this.xrTableCell41.Name = "xrTableCell41";
             this.xrTableCell41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell41.StylePriority.UseBorders = false;
+            this.xrTableCell41.StylePriority.UseFont = false;
             this.xrTableCell41.StylePriority.UsePadding = false;
             this.xrTableCell41.StylePriority.UseTextAlignment = false;
             this.xrTableCell41.Text = "السنة التكوينيـــــــة:";
             this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell41.Weight = 14.144370693897946D;
+            this.xrTableCell41.Weight = 14.14437064275522D;
             // 
             // xrTableRow12
             // 
@@ -839,15 +966,19 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell37,
             this.xrTableCell28,
             this.xrTableCell38});
+            this.xrTableRow12.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow12.Name = "xrTableRow12";
+            this.xrTableRow12.StylePriority.UseFont = false;
             this.xrTableRow12.Weight = 0.14285714409246322D;
             // 
             // xrTableCell37
             // 
             this.xrTableCell37.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell37.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
             this.xrTableCell37.StylePriority.UseBorders = false;
+            this.xrTableCell37.StylePriority.UseFont = false;
             this.xrTableCell37.StylePriority.UseTextAlignment = false;
             this.xrTableCell37.Text = "                                       حررت بحسين داي في:";
             this.xrTableCell37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -856,9 +987,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell28
             // 
             this.xrTableCell28.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell28.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell28.Multiline = true;
             this.xrTableCell28.Name = "xrTableCell28";
             this.xrTableCell28.StylePriority.UseBorders = false;
+            this.xrTableCell28.StylePriority.UseFont = false;
             this.xrTableCell28.StylePriority.UseTextAlignment = false;
             this.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell28.Weight = 0.61207327172538939D;
@@ -866,13 +999,15 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell38
             // 
             this.xrTableCell38.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell38.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
             this.xrTableCell38.StylePriority.UseBorders = false;
+            this.xrTableCell38.StylePriority.UseFont = false;
             this.xrTableCell38.StylePriority.UseTextAlignment = false;
             this.xrTableCell38.Text = "                                     حررت بحسين داي في:";
             this.xrTableCell38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell38.Weight = 14.128661479193555D;
+            this.xrTableCell38.Weight = 14.12866142810757D;
             // 
             // xrTableRow13
             // 
@@ -880,15 +1015,19 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell39,
             this.xrTableCell54,
             this.xrTableCell40});
+            this.xrTableRow13.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow13.Name = "xrTableRow13";
+            this.xrTableRow13.StylePriority.UseFont = false;
             this.xrTableRow13.Weight = 0.14285714409246322D;
             // 
             // xrTableCell39
             // 
             this.xrTableCell39.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell39.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
             this.xrTableCell39.StylePriority.UseBorders = false;
+            this.xrTableCell39.StylePriority.UseFont = false;
             this.xrTableCell39.StylePriority.UseTextAlignment = false;
             this.xrTableCell39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell39.Weight = 13.83748709682453D;
@@ -896,9 +1035,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell54
             // 
             this.xrTableCell54.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell54.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell54.Multiline = true;
             this.xrTableCell54.Name = "xrTableCell54";
             this.xrTableCell54.StylePriority.UseBorders = false;
+            this.xrTableCell54.StylePriority.UseFont = false;
             this.xrTableCell54.StylePriority.UseTextAlignment = false;
             this.xrTableCell54.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell54.Weight = 0.61205503484473667D;
@@ -906,12 +1047,14 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell40
             // 
             this.xrTableCell40.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell40.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell40.Multiline = true;
             this.xrTableCell40.Name = "xrTableCell40";
             this.xrTableCell40.StylePriority.UseBorders = false;
+            this.xrTableCell40.StylePriority.UseFont = false;
             this.xrTableCell40.StylePriority.UseTextAlignment = false;
             this.xrTableCell40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell40.Weight = 14.128679427779524D;
+            this.xrTableCell40.Weight = 14.12867937669354D;
             // 
             // xrTableRow2
             // 
@@ -919,15 +1062,19 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell2,
             this.xrTableCell59,
             this.xrTableCell7});
+            this.xrTableRow2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow2.Name = "xrTableRow2";
+            this.xrTableRow2.StylePriority.UseFont = false;
             this.xrTableRow2.Weight = 0.14285714409246322D;
             // 
             // xrTableCell2
             // 
             this.xrTableCell2.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StylePriority.UseBorders = false;
+            this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "                                                                  إمضاء المدير(ة)" +
     "";
@@ -937,9 +1084,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell59
             // 
             this.xrTableCell59.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell59.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell59.Multiline = true;
             this.xrTableCell59.Name = "xrTableCell59";
             this.xrTableCell59.StylePriority.UseBorders = false;
+            this.xrTableCell59.StylePriority.UseFont = false;
             this.xrTableCell59.StylePriority.UseTextAlignment = false;
             this.xrTableCell59.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell59.Weight = 0.61275292228297307D;
@@ -947,13 +1096,15 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell7
             // 
             this.xrTableCell7.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell7.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.StylePriority.UseBorders = false;
+            this.xrTableCell7.StylePriority.UseFont = false;
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
             this.xrTableCell7.Text = "                                                               إمضاء المدير(ة)";
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell7.Weight = 14.144354358878836D;
+            this.xrTableCell7.Weight = 14.14435430773611D;
             // 
             // xrTableRow17
             // 
@@ -961,15 +1112,19 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell50,
             this.xrTableCell55,
             this.xrTableCell51});
+            this.xrTableRow17.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow17.Name = "xrTableRow17";
+            this.xrTableRow17.StylePriority.UseFont = false;
             this.xrTableRow17.Weight = 0.14285714409246322D;
             // 
             // xrTableCell50
             // 
             this.xrTableCell50.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell50.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell50.Multiline = true;
             this.xrTableCell50.Name = "xrTableCell50";
             this.xrTableCell50.StylePriority.UseBorders = false;
+            this.xrTableCell50.StylePriority.UseFont = false;
             this.xrTableCell50.StylePriority.UseTextAlignment = false;
             this.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell50.Weight = 13.83748709682453D;
@@ -977,9 +1132,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell55
             // 
             this.xrTableCell55.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell55.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell55.Multiline = true;
             this.xrTableCell55.Name = "xrTableCell55";
             this.xrTableCell55.StylePriority.UseBorders = false;
+            this.xrTableCell55.StylePriority.UseFont = false;
             this.xrTableCell55.StylePriority.UseTextAlignment = false;
             this.xrTableCell55.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell55.Weight = 0.61205340315510348D;
@@ -987,12 +1144,14 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell51
             // 
             this.xrTableCell51.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell51.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell51.Multiline = true;
             this.xrTableCell51.Name = "xrTableCell51";
             this.xrTableCell51.StylePriority.UseBorders = false;
+            this.xrTableCell51.StylePriority.UseFont = false;
             this.xrTableCell51.StylePriority.UseTextAlignment = false;
             this.xrTableCell51.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell51.Weight = 14.128681059469157D;
+            this.xrTableCell51.Weight = 14.128681008383172D;
             // 
             // xrTableRow14
             // 
@@ -1000,16 +1159,20 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell42,
             this.xrTableCell56,
             this.xrTableCell43});
+            this.xrTableRow14.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow14.Name = "xrTableRow14";
+            this.xrTableRow14.StylePriority.UseFont = false;
             this.xrTableRow14.Weight = 0.14285714409246322D;
             // 
             // xrTableCell42
             // 
             this.xrTableCell42.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell42.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
             this.xrTableCell42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell42.StylePriority.UseBorders = false;
+            this.xrTableCell42.StylePriority.UseFont = false;
             this.xrTableCell42.StylePriority.UsePadding = false;
             this.xrTableCell42.StylePriority.UseTextAlignment = false;
             this.xrTableCell42.Text = "لا تسلم إلا نسخة واحدة من هذه الشهادة";
@@ -1019,9 +1182,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell56
             // 
             this.xrTableCell56.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell56.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell56.Multiline = true;
             this.xrTableCell56.Name = "xrTableCell56";
             this.xrTableCell56.StylePriority.UseBorders = false;
+            this.xrTableCell56.StylePriority.UseFont = false;
             this.xrTableCell56.StylePriority.UseTextAlignment = false;
             this.xrTableCell56.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell56.Weight = 0.61205246768256227D;
@@ -1029,15 +1194,17 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell43
             // 
             this.xrTableCell43.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell43.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell43.Multiline = true;
             this.xrTableCell43.Name = "xrTableCell43";
             this.xrTableCell43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 20, 0, 0, 100F);
             this.xrTableCell43.StylePriority.UseBorders = false;
+            this.xrTableCell43.StylePriority.UseFont = false;
             this.xrTableCell43.StylePriority.UsePadding = false;
             this.xrTableCell43.StylePriority.UseTextAlignment = false;
             this.xrTableCell43.Text = "لا تسلم إلا نسخة واحدة من هذه الشهادة";
             this.xrTableCell43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell43.Weight = 14.128682283236381D;
+            this.xrTableCell43.Weight = 14.128682232150396D;
             // 
             // xrTableRow18
             // 
@@ -1045,15 +1212,19 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell60,
             this.xrTableCell61,
             this.xrTableCell62});
+            this.xrTableRow18.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow18.Name = "xrTableRow18";
+            this.xrTableRow18.StylePriority.UseFont = false;
             this.xrTableRow18.Weight = 0.09968388782107164D;
             // 
             // xrTableCell60
             // 
             this.xrTableCell60.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell60.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell60.Multiline = true;
             this.xrTableCell60.Name = "xrTableCell60";
             this.xrTableCell60.StylePriority.UseBorders = false;
+            this.xrTableCell60.StylePriority.UseFont = false;
             this.xrTableCell60.StylePriority.UseTextAlignment = false;
             this.xrTableCell60.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell60.Weight = 5.4236700537368474D;
@@ -1061,9 +1232,11 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell61
             // 
             this.xrTableCell61.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell61.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell61.Multiline = true;
             this.xrTableCell61.Name = "xrTableCell61";
             this.xrTableCell61.StylePriority.UseBorders = false;
+            this.xrTableCell61.StylePriority.UseFont = false;
             this.xrTableCell61.StylePriority.UseTextAlignment = false;
             this.xrTableCell61.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell61.Weight = 0.23989950298084684D;
@@ -1071,12 +1244,14 @@ namespace gtsco2.forms.Formulaire.certficat
             // xrTableCell62
             // 
             this.xrTableCell62.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell62.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell62.Multiline = true;
             this.xrTableCell62.Name = "xrTableCell62";
             this.xrTableCell62.StylePriority.UseBorders = false;
+            this.xrTableCell62.StylePriority.UseFont = false;
             this.xrTableCell62.StylePriority.UseTextAlignment = false;
             this.xrTableCell62.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell62.Weight = 5.5378029878642216D;
+            this.xrTableCell62.Weight = 5.5378029678408227D;
             // 
             // xrTableRow19
             // 
@@ -1084,31 +1259,39 @@ namespace gtsco2.forms.Formulaire.certficat
             this.xrTableCell63,
             this.xrTableCell64,
             this.xrTableCell65});
+            this.xrTableRow19.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableRow19.Name = "xrTableRow19";
+            this.xrTableRow19.StylePriority.UseFont = false;
             this.xrTableRow19.Weight = 1.5412451171875001D;
             // 
             // xrTableCell63
             // 
             this.xrTableCell63.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell63.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell63.Multiline = true;
             this.xrTableCell63.Name = "xrTableCell63";
             this.xrTableCell63.StylePriority.UseBorders = false;
+            this.xrTableCell63.StylePriority.UseFont = false;
             this.xrTableCell63.Weight = 3.44069380821662D;
             // 
             // xrTableCell64
             // 
             this.xrTableCell64.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell64.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell64.Multiline = true;
             this.xrTableCell64.Name = "xrTableCell64";
             this.xrTableCell64.StylePriority.UseBorders = false;
+            this.xrTableCell64.StylePriority.UseFont = false;
             this.xrTableCell64.Weight = 0.15219044675567006D;
             // 
             // xrTableCell65
             // 
             this.xrTableCell65.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell65.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.xrTableCell65.Multiline = true;
             this.xrTableCell65.Name = "xrTableCell65";
             this.xrTableCell65.StylePriority.UseBorders = false;
+            this.xrTableCell65.StylePriority.UseFont = false;
             this.xrTableCell65.Weight = 3.5130955057903046D;
             // 
             // XtraReport1
@@ -1118,6 +1301,7 @@ namespace gtsco2.forms.Formulaire.certficat
             this.BottomMargin,
             this.Detail,
             this.ReportHeader});
+            this.DisplayName = "Certificat de scolarité";
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(50, 50, 50, 50);

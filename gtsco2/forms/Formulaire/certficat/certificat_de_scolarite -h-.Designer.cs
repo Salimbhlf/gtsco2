@@ -142,6 +142,7 @@ namespace gtsco2.forms.Formulaire.certficat
             // 
             // Detail
             // 
+            this.Detail.Expanded = false;
             this.Detail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.Detail.HeightF = 3.125F;
             this.Detail.Name = "Detail";

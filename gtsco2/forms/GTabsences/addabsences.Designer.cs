@@ -32,11 +32,10 @@ namespace gtsco2.forms.GTabsences
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addabsences));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.removeButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.removeButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -112,85 +111,16 @@ namespace gtsco2.forms.GTabsences
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton6);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
-            this.flowLayoutPanel1.Controls.Add(this.removeButton1);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton6);
+            this.flowLayoutPanel1.Controls.Add(this.removeButton1);
             this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(900, 75);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // simpleButton6
-            // 
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.AutoWidthInLayoutControl = true;
-            this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton6.Location = new System.Drawing.Point(3, 3);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton6.ShowToolTips = false;
-            this.simpleButton6.Size = new System.Drawing.Size(72, 69);
-            this.simpleButton6.TabIndex = 9;
-            this.simpleButton6.Text = "Ajouter";
-            this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.AutoWidthInLayoutControl = true;
-            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(81, 3);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton3.ShowToolTips = false;
-            this.simpleButton3.Size = new System.Drawing.Size(70, 69);
-            this.simpleButton3.TabIndex = 11;
-            this.simpleButton3.Text = "Modifer";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
-            // 
-            // removeButton1
-            // 
-            this.removeButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeButton1.Appearance.Options.UseFont = true;
-            this.removeButton1.AutoWidthInLayoutControl = true;
-            this.removeButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.removeButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("removeButton1.ImageOptions.Image")));
-            this.removeButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.removeButton1.Location = new System.Drawing.Point(157, 3);
-            this.removeButton1.Name = "removeButton1";
-            this.removeButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.removeButton1.ShowToolTips = false;
-            this.removeButton1.Size = new System.Drawing.Size(88, 69);
-            this.removeButton1.TabIndex = 6;
-            this.removeButton1.Text = "Supprimer";
-            this.removeButton1.Click += new System.EventHandler(this.removeButton1_Click);
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.AutoWidthInLayoutControl = true;
-            this.simpleButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton5.Location = new System.Drawing.Point(251, 3);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton5.ShowToolTips = false;
-            this.simpleButton5.Size = new System.Drawing.Size(80, 69);
-            this.simpleButton5.TabIndex = 8;
-            this.simpleButton5.Text = "Enregistrer";
-            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton1
             // 
@@ -200,14 +130,65 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(337, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(3, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton1.ShowToolTips = false;
-            this.simpleButton1.Size = new System.Drawing.Size(93, 69);
+            this.simpleButton1.Size = new System.Drawing.Size(177, 69);
             this.simpleButton1.TabIndex = 12;
-            this.simpleButton1.Text = "Actualiser";
+            this.simpleButton1.Text = "Affichage du tableau";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.AutoWidthInLayoutControl = true;
+            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton3.Location = new System.Drawing.Point(186, 3);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton3.ShowToolTips = false;
+            this.simpleButton3.Size = new System.Drawing.Size(142, 69);
+            this.simpleButton3.TabIndex = 11;
+            this.simpleButton3.Text = "Activer la \r\nmodification";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.AutoWidthInLayoutControl = true;
+            this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton6.Location = new System.Drawing.Point(334, 3);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton6.ShowToolTips = false;
+            this.simpleButton6.Size = new System.Drawing.Size(101, 69);
+            this.simpleButton6.TabIndex = 9;
+            this.simpleButton6.Text = "Enregsitrer ";
+            this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
+            // 
+            // removeButton1
+            // 
+            this.removeButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton1.Appearance.Options.UseFont = true;
+            this.removeButton1.AutoWidthInLayoutControl = true;
+            this.removeButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.removeButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("removeButton1.ImageOptions.Image")));
+            this.removeButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.removeButton1.Location = new System.Drawing.Point(441, 3);
+            this.removeButton1.Name = "removeButton1";
+            this.removeButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.removeButton1.ShowToolTips = false;
+            this.removeButton1.Size = new System.Drawing.Size(88, 69);
+            this.removeButton1.TabIndex = 6;
+            this.removeButton1.Text = "Supprimer";
+            this.removeButton1.Click += new System.EventHandler(this.removeButton1_Click);
             // 
             // closeButton7
             // 
@@ -217,7 +198,7 @@ namespace gtsco2.forms.GTabsences
             this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
             this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.closeButton7.Location = new System.Drawing.Point(436, 3);
+            this.closeButton7.Location = new System.Drawing.Point(535, 3);
             this.closeButton7.Name = "closeButton7";
             this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.closeButton7.ShowToolTips = false;
@@ -552,7 +533,7 @@ namespace gtsco2.forms.GTabsences
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Name = "addabsences";
-            this.Text = "Form1";
+            this.Text = "Ajout des absences";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -617,7 +598,6 @@ namespace gtsco2.forms.GTabsences
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton removeButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton closeButton7;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

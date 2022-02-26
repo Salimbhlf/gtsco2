@@ -282,8 +282,12 @@ namespace gtsco2.forms.GTabsences
                 }
             
 
-                else { MessageBox.Show("Ajouter nu date de jourer d'absoncer"); }
+                else { MessageBox.Show("Veuillez selectioné une date d'absence"); }
                 }
+
+
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -333,84 +337,108 @@ namespace gtsco2.forms.GTabsences
             {
                 DataTable dt = gridControl1.DataSource as DataTable;
 
-                
-                    if (dt.Rows.Count != 0)
+                int z = 1;
+                if (dt.Rows.Count != 0)
+                {
+                    foreach (DataRow row in dt.Rows)
                     {
-                        foreach (DataRow row in dt.Rows)
+
+                        basededonne.Absence ev = new basededonne.Absence();
+
+
+
+                        ev.ID_Année_SCO = idannee;
+
+                        ev.Num_STG = row["Numro_STG"].ToString();
+                        ev.ID_Semestre = idsem;
+
+
+                        if (row["Seance_1"].ToString() != null)
                         {
-
-                            basededonne.Absence ev = new basededonne.Absence();
-
-
-
-                            ev.ID_Année_SCO = idannee;
-
-                            ev.Num_STG = row["Numro_STG"].ToString();
-                            ev.ID_Semestre = idsem;
-
-
-                            if (row["Seance_1"].ToString() != null)
-                            {
-                                ev.Seance_1_ABS = bool.Parse(row["Seance_1"].ToString());
-                            }
-                            if (row["Seance_2"].ToString() != null)
-                            {
-                                ev.Seance_2_ABS = bool.Parse(row["Seance_2"].ToString());
-                            }
-                            if (row["Seance_3"].ToString() != null)
-                            {
-                                ev.Seance_3_ABS = bool.Parse(row["Seance_3"].ToString());
-                            }
-                            if (row["Seance_4"].ToString() != null)
-                            { 
-                                ev.Seance_4_ABS = bool.Parse(row["Seance_4"].ToString());
-                            }
-                            if (row["Absonce_Justfer"].ToString() != null)
-                            {
-                                ev.Absence_Justifer = bool.Parse(row["Absonce_Justfer"].ToString());
-                            }
-                            if ((row["Justfiction"].ToString()) != "")
-                            {
-                                ev.Justif_ABS = row["Justfiction"].ToString();
-                            }
-
-                            ev.Date_ABS = datee;
-                            
-
-                               
-                            //shared.bd.SaveChanges();
-
-                            try
-                            {
-                                if ( shared.bd.Absences.First(a => a.Num_STG == ev.Num_STG && a.ID_Année_SCO == ev.ID_Année_SCO && a.ID_Semestre == ev.ID_Semestre && a.Date_ABS == ev.Date_ABS ) != null)
-                                {
-                                    var eb = shared.bd.Absences.First(a => a.Num_STG == ev.Num_STG && a.ID_Année_SCO == ev.ID_Année_SCO && a.ID_Semestre == ev.ID_Semestre && a.Date_ABS == ev.Date_ABS);
-                                    ev.ID_Absence = eb.ID_Absence;
-                                   
-                                    //shared.bd.Entry(ev).State = System.Data.Entity.EntityState.Modified;
-                                    shared.bd.Absences.AddOrUpdate(ev);
-
-                                }
-                                else
-                                {
-                                    
-                                }
-
-                            }
-                            catch 
-                            {
-                                
-                                shared.bd.Absences.Add(ev);
-
-                                
-                            }
+                            ev.Seance_1_ABS = bool.Parse(row["Seance_1"].ToString());
                         }
-                        MessageBox.Show("les lines son bien eté Ajouter");
-                    }
-                    else { MessageBox.Show("equne valuer existe sur le tablou"); }
-                
-            }catch(Exception ex)
+                        if (row["Seance_2"].ToString() != null)
+                        {
+                            ev.Seance_2_ABS = bool.Parse(row["Seance_2"].ToString());
+                        }
+                        if (row["Seance_3"].ToString() != null)
+                        {
+                            ev.Seance_3_ABS = bool.Parse(row["Seance_3"].ToString());
+                        }
+                        if (row["Seance_4"].ToString() != null)
+                        {
+                            ev.Seance_4_ABS = bool.Parse(row["Seance_4"].ToString());
+                        }
+                        if (row["Absonce_Justfer"].ToString() != null)
+                        {
+                            ev.Absence_Justifer = bool.Parse(row["Absonce_Justfer"].ToString());
+                        }
+                        if ((row["Justfiction"].ToString()) != "")
+                        {
+                            ev.Justif_ABS = row["Justfiction"].ToString();
+                        }
+
+                        ev.Date_ABS = datee;
+
+
+
+                        //shared.bd.SaveChanges();
+
+                        try
+                        {
+                            if (shared.bd.Absences.First(a => a.Num_STG == ev.Num_STG && a.ID_Année_SCO == ev.ID_Année_SCO && a.ID_Semestre == ev.ID_Semestre && a.Date_ABS == ev.Date_ABS) != null)
                             {
+                                var eb = shared.bd.Absences.First(a => a.Num_STG == ev.Num_STG && a.ID_Année_SCO == ev.ID_Année_SCO && a.ID_Semestre == ev.ID_Semestre && a.Date_ABS == ev.Date_ABS);
+                                ev.ID_Absence = eb.ID_Absence;
+
+                                //shared.bd.Entry(ev).State = System.Data.Entity.EntityState.Modified;
+                                shared.bd.Absences.AddOrUpdate(ev);
+                                z = 2;
+
+                            }
+                            else
+                            {
+
+                            }
+
+                        }
+                        catch
+                        {
+                            z = 3;
+
+                            shared.bd.Absences.Add(ev);
+
+                            
+                        }
+                    }
+                    if (z == 1)
+                    {
+                        MessageBox.Show(" Aucune valeur n'a été enregitré!");
+                        
+                    }
+                    else if (z == 2)
+                    {
+                        save();
+                        MessageBox.Show("Modifications enregitré avec succés!");
+                       
+                    }
+                    else if (z == 3)
+                    {    save();
+                        MessageBox.Show("Ajout enregitré avec succés!");
+                       
+                    }
+
+                 
+                }
+                else { MessageBox.Show("Aucune informations n'existe sur le tableau"); }
+
+            }
+            catch (NullReferenceException ){
+                MessageBox.Show("Afficher puis appliqué des modification sur le tableau,  pour ensuite enregistré vos informations");
+                
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString());
             }
 
@@ -426,7 +454,7 @@ namespace gtsco2.forms.GTabsences
             
           
                 shared.bd.SaveChanges();
-                MessageBox.Show("Bien Enrgistre ");
+            
             }
             catch (Exception se)
             {
@@ -445,8 +473,11 @@ namespace gtsco2.forms.GTabsences
 
                 if (dt.Rows.Count > 0)
                 {
-                    DialogResult r = MessageBox.Show("vous est sur de le supprimer!", "", MessageBoxButtons.YesNo);
+
+
+                    DialogResult r = MessageBox.Show("Vous etes sur le point de supprimer toutes les données enregitré dans le tableau d'absonce de la date : " + datee, "", MessageBoxButtons.YesNo);
                     if (r == DialogResult.Yes)
+
                     {
                         try
                         {
@@ -457,23 +488,28 @@ namespace gtsco2.forms.GTabsences
                                 ev.Date_ABS = datee ;
                                 ev.ID_Année_SCO = idannee;
                                 ev.ID_Semestre = idsem;
-                                MessageBox.Show("ok");
+                               
                                 var en = shared.bd.Absences.First(a => a.Num_STG == ev.Num_STG && a.ID_Année_SCO == ev.ID_Année_SCO && a.Date_ABS == ev.Date_ABS && a.ID_Semestre == ev.ID_Semestre);
                                 shared.bd.Absences.Remove(en);
 
                             }
+                            save();
                             refrech();
-                            MessageBox.Show(" les lins sont bien  supprimer");
+                            MessageBox.Show("Les données ont été supprimé avec succés");
+                            
                         }
-                        catch (Exception ex) { MessageBox.Show(ex.Message); }
+                        catch (Exception ex) { MessageBox.Show(ex.ToString()) ; }
                     }
                     
                 }
-                else { MessageBox.Show("Aucun élément existe pour le supprimer"); }
+                else { MessageBox.Show("Le tableau ne contient aucune donnée à supprimer!"); }
 
 
             }
-            catch  (Exception ex) { MessageBox.Show(ex.Message);}
+
+            catch (NullReferenceException ) { MessageBox.Show("Veuillez affichez votre tableau pour supprimer son contenue! "); }
+
+            catch  (Exception ex) { MessageBox.Show(ex.ToString());}
 
         }
 
@@ -482,17 +518,12 @@ namespace gtsco2.forms.GTabsences
         private void simpleButton6_Click(object sender, EventArgs e)
         {
             add();
+           
         }
 
-        private void simpleButton5_Click(object sender, EventArgs e)
-        {
-            save();
-        }
+    
 
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            edit();
-        }
+        
 
         private void avenrtp_CheckedChanged(object sender, EventArgs e)
         {
@@ -502,27 +533,19 @@ namespace gtsco2.forms.GTabsences
         private void removeButton1_Click(object sender, EventArgs e)
         {
             delite();
+            
         }
 
-        private void simpleButton4_Click(object sender, EventArgs e)
-        {
-            refrech();
-        }
+     
 
         private void closeButton7_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {

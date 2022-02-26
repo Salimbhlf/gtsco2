@@ -344,7 +344,7 @@ namespace gtsco2.forms
                             {
                                 ev.Control_1 = float.Parse(row["Control1"].ToString());
                             }
-                            if (row["Control1"].ToString() != "")
+                            if (row["Control2"].ToString() != "")
                             {
                                 ev.Control_2 = float.Parse(row["Control2"].ToString());
                             }
@@ -407,10 +407,10 @@ namespace gtsco2.forms
 
         public void vprint()
         {
-            //try
-            //{
+            try
+            {
 
-            List<eva> listeva = new List<eva>();
+                List<eva> listeva = new List<eva>();
             listeva.Clear();
 
             DataTable dt = gridControl1.DataSource as DataTable;
@@ -482,8 +482,8 @@ namespace gtsco2.forms
             }
 
 
-            //}
-            //catch (Exception ex){ MessageBox.Show(ex.Message); }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
 
         }
 

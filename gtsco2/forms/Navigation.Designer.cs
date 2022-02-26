@@ -29,6 +29,7 @@ namespace gtsco2.forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Navigation));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.addabsbtn = new DevExpress.XtraEditors.SimpleButton();
@@ -90,11 +91,14 @@ namespace gtsco2.forms
             this.addabsbtn.Appearance.Options.UseBorderColor = true;
             this.addabsbtn.Appearance.Options.UseFont = true;
             this.addabsbtn.Appearance.Options.UseForeColor = true;
+            this.addabsbtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addabsbtn.ImageOptions.Image")));
             this.addabsbtn.Location = new System.Drawing.Point(3, 3);
             this.addabsbtn.Name = "addabsbtn";
             this.addabsbtn.Size = new System.Drawing.Size(202, 87);
             this.addabsbtn.TabIndex = 5;
-            this.addabsbtn.Text = "Saisir les absences";
+            this.addabsbtn.Text = "Saisie \r\ndes absences";
+            this.addabsbtn.ToolTip = "Mentionné le nombre de séances absenté par jour";
+            this.addabsbtn.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
             this.addabsbtn.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // absbt
@@ -109,11 +113,14 @@ namespace gtsco2.forms
             this.absbt.Appearance.Options.UseBorderColor = true;
             this.absbt.Appearance.Options.UseFont = true;
             this.absbt.Appearance.Options.UseForeColor = true;
+            this.absbt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("absbt.ImageOptions.Image")));
             this.absbt.Location = new System.Drawing.Point(211, 3);
             this.absbt.Name = "absbt";
             this.absbt.Size = new System.Drawing.Size(202, 87);
             this.absbt.TabIndex = 2;
-            this.absbt.Text = "Affichage des absences";
+            this.absbt.Text = "Affichage \r\ndes absences";
+            this.absbt.ToolTip = "Calculer et afficher le nombre et les sanctions d\'absences";
+            this.absbt.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
             this.absbt.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // evabtn
@@ -128,11 +135,14 @@ namespace gtsco2.forms
             this.evabtn.Appearance.Options.UseBorderColor = true;
             this.evabtn.Appearance.Options.UseFont = true;
             this.evabtn.Appearance.Options.UseForeColor = true;
+            this.evabtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("evabtn.ImageOptions.Image")));
             this.evabtn.Location = new System.Drawing.Point(419, 3);
             this.evabtn.Name = "evabtn";
             this.evabtn.Size = new System.Drawing.Size(202, 87);
             this.evabtn.TabIndex = 3;
-            this.evabtn.Text = "Evaluation";
+            this.evabtn.Text = "Affichage \r\ndes moyennes";
+            this.evabtn.ToolTip = "Calculer et afficher les moyennes d\'une section";
+            this.evabtn.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
             this.evabtn.Click += new System.EventHandler(this.evabtn_Click);
             // 
             // simpleButton5
@@ -147,11 +157,14 @@ namespace gtsco2.forms
             this.simpleButton5.Appearance.Options.UseBorderColor = true;
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.Appearance.Options.UseForeColor = true;
+            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.Location = new System.Drawing.Point(627, 3);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(202, 87);
             this.simpleButton5.TabIndex = 4;
-            this.simpleButton5.Text = "Evaluation";
+            this.simpleButton5.Text = "Affichage \r\ndes notes /module\r\n";
+            this.simpleButton5.ToolTip = "Afficher et visualiser les notes d\'une section";
+            this.simpleButton5.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton7

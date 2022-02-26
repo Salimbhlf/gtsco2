@@ -33,11 +33,11 @@ namespace gtsco2.forms.GTabsences
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.removeButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -59,12 +59,12 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.date_abssonce = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -86,12 +86,12 @@ namespace gtsco2.forms.GTabsences
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_abssonce)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -141,57 +141,6 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton6.Text = "Ajouter";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
-            // removeButton1
-            // 
-            this.removeButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeButton1.Appearance.Options.UseFont = true;
-            this.removeButton1.AutoWidthInLayoutControl = true;
-            this.removeButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.removeButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("removeButton1.ImageOptions.Image")));
-            this.removeButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.removeButton1.Location = new System.Drawing.Point(157, 3);
-            this.removeButton1.Name = "removeButton1";
-            this.removeButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.removeButton1.ShowToolTips = false;
-            this.removeButton1.Size = new System.Drawing.Size(78, 69);
-            this.removeButton1.TabIndex = 6;
-            this.removeButton1.Text = "Supprime";
-            this.removeButton1.Click += new System.EventHandler(this.removeButton1_Click);
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.AutoWidthInLayoutControl = true;
-            this.simpleButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton5.Location = new System.Drawing.Point(241, 3);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton5.ShowToolTips = false;
-            this.simpleButton5.Size = new System.Drawing.Size(80, 69);
-            this.simpleButton5.TabIndex = 8;
-            this.simpleButton5.Text = "Enregistrer";
-            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
-            // 
-            // closeButton7
-            // 
-            this.closeButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton7.Appearance.Options.UseFont = true;
-            this.closeButton7.AutoWidthInLayoutControl = true;
-            this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
-            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.closeButton7.Location = new System.Drawing.Point(412, 3);
-            this.closeButton7.Name = "closeButton7";
-            this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.closeButton7.ShowToolTips = false;
-            this.closeButton7.Size = new System.Drawing.Size(72, 69);
-            this.closeButton7.TabIndex = 10;
-            this.closeButton7.Text = "Close";
-            this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click);
-            // 
             // simpleButton3
             // 
             this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,6 +158,40 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton3.Text = "Modifer";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
             // 
+            // removeButton1
+            // 
+            this.removeButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton1.Appearance.Options.UseFont = true;
+            this.removeButton1.AutoWidthInLayoutControl = true;
+            this.removeButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.removeButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("removeButton1.ImageOptions.Image")));
+            this.removeButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.removeButton1.Location = new System.Drawing.Point(157, 3);
+            this.removeButton1.Name = "removeButton1";
+            this.removeButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.removeButton1.ShowToolTips = false;
+            this.removeButton1.Size = new System.Drawing.Size(88, 69);
+            this.removeButton1.TabIndex = 6;
+            this.removeButton1.Text = "Supprimer";
+            this.removeButton1.Click += new System.EventHandler(this.removeButton1_Click);
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.AutoWidthInLayoutControl = true;
+            this.simpleButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton5.Location = new System.Drawing.Point(251, 3);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton5.ShowToolTips = false;
+            this.simpleButton5.Size = new System.Drawing.Size(80, 69);
+            this.simpleButton5.TabIndex = 8;
+            this.simpleButton5.Text = "Enregistrer";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,14 +200,31 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(327, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(337, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton1.ShowToolTips = false;
-            this.simpleButton1.Size = new System.Drawing.Size(79, 69);
+            this.simpleButton1.Size = new System.Drawing.Size(93, 69);
             this.simpleButton1.TabIndex = 12;
-            this.simpleButton1.Text = "Actualise";
+            this.simpleButton1.Text = "Actualiser";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // closeButton7
+            // 
+            this.closeButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton7.Appearance.Options.UseFont = true;
+            this.closeButton7.AutoWidthInLayoutControl = true;
+            this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
+            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.closeButton7.Location = new System.Drawing.Point(436, 3);
+            this.closeButton7.Name = "closeButton7";
+            this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.closeButton7.ShowToolTips = false;
+            this.closeButton7.Size = new System.Drawing.Size(72, 69);
+            this.closeButton7.TabIndex = 10;
+            this.closeButton7.Text = "Fermer";
+            this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click);
             // 
             // panelControl2
             // 
@@ -301,7 +301,7 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton2.Size = new System.Drawing.Size(176, 36);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "Actualise";
+            this.simpleButton2.Text = "VALIDER";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // spcomboBox1
@@ -460,17 +460,6 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.anneecomboBox141;
-            this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem8.CustomizationFormText = "sepcialite";
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem8.Text = "Annee Scolaire";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(75, 13);
-            // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.avenrtp;
@@ -513,6 +502,17 @@ namespace gtsco2.forms.GTabsences
             this.date_abssonce.Size = new System.Drawing.Size(180, 24);
             this.date_abssonce.Text = "Date d\'absence";
             this.date_abssonce.TextSize = new System.Drawing.Size(75, 13);
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.anneecomboBox141;
+            this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem8.CustomizationFormText = "sepcialite";
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(180, 25);
+            this.layoutControlItem8.Text = "Annee Scolaire";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(75, 13);
             // 
             // panelControl3
             // 
@@ -571,12 +571,12 @@ namespace gtsco2.forms.GTabsences
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_abssonce)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

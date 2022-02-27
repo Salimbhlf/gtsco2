@@ -1,6 +1,10 @@
-﻿using gtsco2.classe;
+﻿using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Views.Grid;
+using gtsco2.classe;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -86,58 +90,84 @@ namespace gtsco2.forms.GTSecetion
         }
 
 
-        public  object refrach( int promo , int section,bool sec , bool pro)
-        {object qure;
+        public  DataTable refrach( int promo , int section,bool sec , bool pro)
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Numro_STG");
+            dt.Columns.Add("Nom et prenom");
+            dt.Columns.Add("Date de Naissance");
             try
             {
                 
 
                 if (pro == false && sec == true)
                 {
-                    qure = (from stg in shared.bd.Stagiairs
-                            where stg.ID_Promo == promo && stg.Section == section
-                            select new
-                            {
-                                Numro_STG = stg.Num_STG,
-                                Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                Date_de_Naissance = stg.Date_de_Naissance
-                            }).ToList();
-                    return qure;
+                    
+                    var qurz = from stg in shared.bd.Stagiairs
+                               where stg.ID_Promo == promo && stg.Section == section
+                               select new
+                               {
+                                   Numro_STG = stg.Num_STG,
+                                   Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                   Date_de_Naissance = stg.Date_de_Naissance
+                               };
+                    
+                    foreach ( var row in qurz.ToList())
+                    {
+                        dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, row.Date_de_Naissance);
+                    }
+                    
+                    return dt;
+                    
                 }
                 else if (pro == false && sec == false)
                 {
-                    qure = (from stg in shared.bd.Stagiairs
+                   var qurf = (from stg in shared.bd.Stagiairs
                             where stg.ID_Promo == promo
                             select new
                             {
                                 Numro_STG = stg.Num_STG,
                                 Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
                                 Date_de_Naissance = stg.Date_de_Naissance
-                            }).ToList();
-                    return qure;
+                            } ).ToList();
+                    foreach (var row in qurf.ToList())
+                    {
+                        dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, row.Date_de_Naissance);
+                    }
+
+                    return dt;
                 }
                 else if (pro == true)
                 {
-                    qure = (from stg in shared.bd.Stagiairs
-                            where stg.ID_Promo == promo && stg.Section == null
-                            select new
-                            {
-                                Numro_STG = stg.Num_STG,
-                                Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                Date_de_Naissance = stg.Date_de_Naissance
-                            }).ToList();
-                    return qure;
+                    var qure = from stg in shared.bd.Stagiairs
+                              where stg.ID_Promo == promo && stg.Section == null
+                              select new
+                              {
+                                  Numro_STG = stg.Num_STG,
+                                  Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                  Date_de_Naissance = stg.Date_de_Naissance
+                              };
+                    foreach (var row in qure.ToList())
+                    {
+                        dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, row.Date_de_Naissance);
+                    }
+
+                    return dt;
                 }
                 
             }
             catch (Exception EX) { MessageBox.Show(EX.Message); }
-                          return qure = (from stg in shared.bd.Stagiairs
-                               
-                               select new
-                               {
+            var qur = (from stg in shared.bd.Stagiairs
 
-                               }).ToList();
+                           select new
+                           {
 
+                           }) ;
+           
+
+            return dt;
+
+           
 
 
         }
@@ -174,8 +204,60 @@ namespace gtsco2.forms.GTSecetion
 
         public void lefttoright()
         {
-           DataTable dt= gridControl1.DataSource as DataTable;
-            gridControl2.DataSource = dt;
+            try
+            {if (promocomboBox11.SelectedValue.ToString() == promocomboBox114.SelectedValue.ToString())
+                {
+
+                    DataTable dt = gridControl2.DataSource as DataTable;
+                    if (gridView1.OptionsSelection.MultiSelectMode == GridMultiSelectMode.CheckBoxRowSelect)
+                    {
+                        foreach (int i in gridView1.GetSelectedRows())
+                        {
+                            //Recuperation de l'index de la ligne selectionnée
+                            int IndexLigne = gridView1.GetRowHandle(i);
+
+                            //ou même récupérer la ligne pour en faire ce que tu veux
+                            DataRow rows = gridView1.GetDataRow(IndexLigne);
+                            if (dt != null) {
+                                dt.Rows.Add(rows[0], rows[1], rows[2]);
+                            gridView1.DeleteRow(IndexLigne);
+                            }
+                            else{MessageBox.Show("selection la section donne que vous voule effactue le stg "); }
+                        }
+                    }
+                }
+                else { MessageBox.Show("selection des section  de la meme promo sur le diex tablo"); }
+            }catch(NullReferenceException)
+            {
+                
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+          
+
+
+
+        }
+        public void righttolet()
+        {
+            DataTable dt = gridControl1.DataSource as DataTable;
+            if (gridView2.OptionsSelection.MultiSelectMode == GridMultiSelectMode.CheckBoxRowSelect)
+            {
+                foreach (int i in gridView2.GetSelectedRows())
+                {
+                    //Recuperation de l'index de la ligne selectionnée
+                    int IndexLigne = gridView2.GetRowHandle(i);
+
+                    //ou même récupérer la ligne pour en faire ce que tu veux
+                    DataRow rows = gridView2.GetDataRow(IndexLigne);
+
+                    dt.Rows.Add(rows[0], rows[1], rows[2]);
+                    gridView2.DeleteRow(IndexLigne);
+                }
+            }
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
@@ -201,6 +283,11 @@ namespace gtsco2.forms.GTSecetion
         private void simpleButton5_Click(object sender, EventArgs e)
         {
             lefttoright();
+        }
+
+        private void simpleButton3_Click_1(object sender, EventArgs e)
+        {
+            righttolet();
         }
     }
 }

@@ -63,8 +63,8 @@ namespace gtsco2.forms
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Controls.Add(this.addabsbtn);
             this.flowLayoutPanel1.Controls.Add(this.absbt);
-            this.flowLayoutPanel1.Controls.Add(this.evabtn);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
+            this.flowLayoutPanel1.Controls.Add(this.evabtn);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton7);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton9);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
@@ -91,14 +91,28 @@ namespace gtsco2.forms
             this.addabsbtn.Appearance.Options.UseBorderColor = true;
             this.addabsbtn.Appearance.Options.UseFont = true;
             this.addabsbtn.Appearance.Options.UseForeColor = true;
+            this.addabsbtn.AppearanceHovered.BackColor = System.Drawing.Color.Black;
+            this.addabsbtn.AppearanceHovered.BackColor2 = System.Drawing.Color.Black;
+            this.addabsbtn.AppearanceHovered.BorderColor = System.Drawing.Color.Black;
+            this.addabsbtn.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addabsbtn.AppearanceHovered.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.addabsbtn.AppearanceHovered.ForeColor = System.Drawing.Color.Black;
+            this.addabsbtn.AppearanceHovered.Options.UseBackColor = true;
+            this.addabsbtn.AppearanceHovered.Options.UseBorderColor = true;
+            this.addabsbtn.AppearanceHovered.Options.UseFont = true;
+            this.addabsbtn.AppearanceHovered.Options.UseForeColor = true;
+            this.addabsbtn.AppearanceHovered.Options.UseImage = true;
+            this.addabsbtn.AppearanceHovered.Options.UseTextOptions = true;
             this.addabsbtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("addabsbtn.ImageOptions.Image")));
             this.addabsbtn.Location = new System.Drawing.Point(3, 3);
             this.addabsbtn.Name = "addabsbtn";
+            this.addabsbtn.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
             this.addabsbtn.Size = new System.Drawing.Size(202, 87);
             this.addabsbtn.TabIndex = 5;
             this.addabsbtn.Text = "Saisie \r\ndes absences";
             this.addabsbtn.ToolTip = "Mentionné le nombre de séances absenté par jour";
             this.addabsbtn.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.addabsbtn.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.addabsbtn.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // absbt
@@ -113,14 +127,23 @@ namespace gtsco2.forms
             this.absbt.Appearance.Options.UseBorderColor = true;
             this.absbt.Appearance.Options.UseFont = true;
             this.absbt.Appearance.Options.UseForeColor = true;
+            this.absbt.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absbt.AppearanceHovered.Options.UseBackColor = true;
+            this.absbt.AppearanceHovered.Options.UseBorderColor = true;
+            this.absbt.AppearanceHovered.Options.UseFont = true;
+            this.absbt.AppearanceHovered.Options.UseForeColor = true;
+            this.absbt.AppearanceHovered.Options.UseImage = true;
+            this.absbt.AppearanceHovered.Options.UseTextOptions = true;
             this.absbt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("absbt.ImageOptions.Image")));
             this.absbt.Location = new System.Drawing.Point(211, 3);
             this.absbt.Name = "absbt";
+            this.absbt.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
             this.absbt.Size = new System.Drawing.Size(202, 87);
             this.absbt.TabIndex = 2;
             this.absbt.Text = "Affichage \r\ndes absences";
             this.absbt.ToolTip = "Calculer et afficher le nombre et les sanctions d\'absences";
             this.absbt.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.absbt.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.absbt.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // evabtn
@@ -135,8 +158,15 @@ namespace gtsco2.forms
             this.evabtn.Appearance.Options.UseBorderColor = true;
             this.evabtn.Appearance.Options.UseFont = true;
             this.evabtn.Appearance.Options.UseForeColor = true;
+            this.evabtn.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evabtn.AppearanceHovered.Options.UseBackColor = true;
+            this.evabtn.AppearanceHovered.Options.UseBorderColor = true;
+            this.evabtn.AppearanceHovered.Options.UseFont = true;
+            this.evabtn.AppearanceHovered.Options.UseForeColor = true;
+            this.evabtn.AppearanceHovered.Options.UseImage = true;
+            this.evabtn.AppearanceHovered.Options.UseTextOptions = true;
             this.evabtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("evabtn.ImageOptions.Image")));
-            this.evabtn.Location = new System.Drawing.Point(419, 3);
+            this.evabtn.Location = new System.Drawing.Point(627, 3);
             this.evabtn.Name = "evabtn";
             this.evabtn.Size = new System.Drawing.Size(202, 87);
             this.evabtn.TabIndex = 3;
@@ -147,9 +177,9 @@ namespace gtsco2.forms
             // 
             // simpleButton5
             // 
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.simpleButton5.Appearance.BackColor2 = System.Drawing.Color.Gray;
-            this.simpleButton5.Appearance.BorderColor = System.Drawing.Color.White;
+            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.Turquoise;
+            this.simpleButton5.Appearance.BackColor2 = System.Drawing.Color.Black;
+            this.simpleButton5.Appearance.BorderColor = System.Drawing.SystemColors.WindowText;
             this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton5.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.Black;
@@ -157,12 +187,19 @@ namespace gtsco2.forms
             this.simpleButton5.Appearance.Options.UseBorderColor = true;
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.Appearance.Options.UseForeColor = true;
+            this.simpleButton5.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton5.AppearanceHovered.Options.UseBorderColor = true;
+            this.simpleButton5.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton5.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton5.AppearanceHovered.Options.UseImage = true;
+            this.simpleButton5.AppearanceHovered.Options.UseTextOptions = true;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.simpleButton5.Location = new System.Drawing.Point(627, 3);
+            this.simpleButton5.Location = new System.Drawing.Point(419, 3);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(202, 87);
             this.simpleButton5.TabIndex = 4;
-            this.simpleButton5.Text = "Affichage \r\ndes notes /module\r\n";
+            this.simpleButton5.Text = "Saisie \r\ndes notes ";
             this.simpleButton5.ToolTip = "Afficher et visualiser les notes d\'une section";
             this.simpleButton5.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
@@ -302,6 +339,8 @@ namespace gtsco2.forms
             // 
             // Navigation
             // 
+            this.Appearance.BackColor = System.Drawing.Color.Black;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 450);

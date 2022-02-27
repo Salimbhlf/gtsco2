@@ -67,6 +67,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.date_abssonce = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -76,7 +77,6 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -108,6 +108,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             ((System.ComponentModel.ISupportInitialize)(this.date_abssonce)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
@@ -118,7 +119,6 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -147,17 +147,20 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton4.AutoWidthInLayoutControl = true;
             this.simpleButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.simpleButton4.Location = new System.Drawing.Point(3, 3);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton4.ShowToolTips = false;
-            this.simpleButton4.Size = new System.Drawing.Size(79, 69);
+            this.simpleButton4.Size = new System.Drawing.Size(199, 69);
             this.simpleButton4.TabIndex = 7;
-            this.simpleButton4.Text = "Affichage";
+            this.simpleButton4.Text = "Affichage du tableau";
+            this.simpleButton4.ToolTip = "Afficher le tableau aprés avoir definit les informations";
+            this.simpleButton4.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.simpleButton4.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // closeButton7
@@ -167,14 +170,14 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.closeButton7.AutoWidthInLayoutControl = true;
             this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
-            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.closeButton7.Location = new System.Drawing.Point(88, 3);
+            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.closeButton7.Location = new System.Drawing.Point(208, 3);
             this.closeButton7.Name = "closeButton7";
             this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.closeButton7.ShowToolTips = false;
-            this.closeButton7.Size = new System.Drawing.Size(72, 69);
+            this.closeButton7.Size = new System.Drawing.Size(185, 69);
             this.closeButton7.TabIndex = 10;
-            this.closeButton7.Text = "Fermer";
+            this.closeButton7.Text = "Fermer la fenêtre";
             this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click);
             // 
             // panelControl2
@@ -246,7 +249,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.simpleButton2.Size = new System.Drawing.Size(261, 36);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "AFFICHAGE DES ABSENCES";
+            this.simpleButton2.Text = "VALIDER";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // spcomboBox1
@@ -567,6 +570,14 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlGroup3.Size = new System.Drawing.Size(265, 191);
             this.layoutControlGroup3.Text = "Règles de sanctions sur l\'absence";
             // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 96);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(255, 63);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.av1textEdit1;
@@ -664,14 +675,6 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 96);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(255, 63);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // PVabsences
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -684,7 +687,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.Controls.Add(this.panelControl1);
             this.Name = "PVabsences";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PV des Absences";
+            this.Text = "Affichage des Absences";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -692,7 +695,6 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            this.layoutControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditdébut.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditdébut.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditfin.Properties.CalendarTimeProperties)).EndInit();
@@ -717,6 +719,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             ((System.ComponentModel.ISupportInitialize)(this.date_abssonce)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
@@ -727,7 +730,6 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
 
         }

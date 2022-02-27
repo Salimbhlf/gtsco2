@@ -99,20 +99,6 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
 
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
@@ -306,7 +292,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
                 }
 
 
-                else { MessageBox.Show("Ajouter nu date de jourer d'absoncer"); }
+                else { MessageBox.Show("Veuillez mentionnez pèriode de comptabilisation des absences"); }
             }
             catch (Exception ex)
             {
@@ -384,30 +370,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
        
 
-        private void simpleButton6_Click(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void simpleButton5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void avenrtp_CheckedChanged(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void removeButton1_Click(object sender, EventArgs e)
-        {
-          
-        }
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
@@ -419,15 +382,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             Close();
         }
 
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void seccomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {

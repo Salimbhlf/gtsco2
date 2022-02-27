@@ -379,7 +379,19 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
         private void closeButton7_Click(object sender, EventArgs e)
         {
-            Close();
+
+            DialogResult res = MessageBox.Show("Fermer la fenêtre? ", "Fermeture de la fenêtre", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                
+                Close();
+
+            }
+            else
+            {
+                
+
+            }
         }
 
 

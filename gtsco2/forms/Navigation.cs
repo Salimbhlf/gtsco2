@@ -55,13 +55,16 @@ namespace gtsco2.forms
         private void simpleButton5_Click(object sender, EventArgs e)
         {
             form ev = new form();
+            ev.refrech();
             ev.ShowDialog();
+            
 
         }
 
         private void simpleButton6_Click(object sender, EventArgs e)
         {
             GTabsences.addabsences ab = new GTabsences.addabsences();
+           
             ab.ShowDialog();
         }
 

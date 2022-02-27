@@ -385,15 +385,17 @@ namespace gtsco2.forms
                             }
                            
                         }
+                      
                         if (s == "b")
                         {
-                            MessageBox.Show("les information son bien ajouter vous clicks sur enrigitres pour le suvgaredi");
+                            MessageBox.Show(" Données mise à jours avec succès ");
                         }
-                        else {
-                            MessageBox.Show("les information son bien modifer vous clicks sur enrigitres pour le suvgaredi");
+                        else
+                        {
+                            MessageBox.Show("Données mise à jours avec succès");
                         }
                     }
-                    else { MessageBox.Show("equne valuer existe sur le tablou"); }
+                    else { MessageBox.Show("Affichez d'abord le tableau pour ensuite ajouter des données"); }
                 }
             }
             catch (Exception ex)
@@ -465,10 +467,10 @@ namespace gtsco2.forms
                     spe = qur.spelite;
                 }
 
+                  
 
 
-
-                string idane = anneecomboBox141.Text;
+                    string idane = anneecomboBox141.Text;
                 string sec = seccomboBox.Text;
                 string mod = modulcomboBox14.Text;
                 string pro = promocomboBox11.Text;
@@ -495,7 +497,7 @@ namespace gtsco2.forms
             {
 
                 shared.bd.SaveChanges();
-                MessageBox.Show("Bien Enrgistre ");
+                //MessageBox.Show("Données enregistré ");
             }
             catch (Exception se)
             {
@@ -514,7 +516,7 @@ namespace gtsco2.forms
 
                 if (dt.Rows.Count > 0)
                 {
-                    DialogResult r = MessageBox.Show("vous est sur de le supprimer!", "", MessageBoxButtons.YesNo);
+                    DialogResult r = MessageBox.Show("Vous êtes sur le point de supprimer toutes les données ", "", MessageBoxButtons.YesNo);
                     if (r == DialogResult.Yes)
                     {
                         try
@@ -531,12 +533,17 @@ namespace gtsco2.forms
                                 shared.bd.Evaluations.Remove(en);
 
                             }
+                           
+                            save();
                             refrech();
+                            MessageBox.Show("Les données ont été supprimé avec succés");
+                            
                         }
-                        catch (Exception ex) { MessageBox.Show(ex.Message); }
+                        catch (Exception ex) { MessageBox.Show(" Le tableau ne contient aucune donnée!"); }
+                        refrech();
                     }
                 }
-                else { MessageBox.Show("Aucun élément existe pour le supprimer"); }
+                else { MessageBox.Show("Aucune donnée à supprimer"); }
             }
             catch { }
 
@@ -547,16 +554,7 @@ namespace gtsco2.forms
         private void simpleButton6_Click(object sender, EventArgs e)
         {
             add();
-        }
-
-        private void simpleButton5_Click(object sender, EventArgs e)
-        {
             save();
-        }
-
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            edit();
         }
 
         private void avenrtp_CheckedChanged(object sender, EventArgs e)
@@ -569,25 +567,27 @@ namespace gtsco2.forms
             delite();
         }
 
-        private void simpleButton4_Click(object sender, EventArgs e)
-        {
-            refrech();
-        }
-
+      
         private void closeButton7_Click(object sender, EventArgs e)
         {
-            Close();
+            
+            DialogResult res = MessageBox.Show("Sauvgardé et fermé la fenêtre? ", "Fermeture de la fenêtre", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                add();
+                save();                            
+                Close();
+                
+            }
+            else
+            {
+                MessageBox.Show("Donnée non sauvgarder, la fenêtre va se fermé ");
+                Close();
+               
+            }
         }
 
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void simpleButton3_Click_1(object sender, EventArgs e)
         {
@@ -606,7 +606,16 @@ namespace gtsco2.forms
 
         private void simpleButton7_Click(object sender, EventArgs e)
         {
+            add();
+            //save();
+            //refrech();    
+            
             vprint();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     public class eva
@@ -625,3 +634,4 @@ namespace gtsco2.forms
         public string Rattarpage { get; set; }
     }
 }
+

@@ -475,7 +475,7 @@ namespace gtsco2.forms.GTabsences
                 {
 
 
-                    DialogResult r = MessageBox.Show("Vous etes sur le point de supprimer toutes les données enregitré dans le tableau d'absonce de la date : " + datee, "", MessageBoxButtons.YesNo);
+                    DialogResult r = MessageBox.Show("Vous etes sur le point de supprimer toutes les données enregistrées à la date : " + datee, "", MessageBoxButtons.YesNo);
                     if (r == DialogResult.Yes)
 
                     {
@@ -496,9 +496,11 @@ namespace gtsco2.forms.GTabsences
                             save();
                             refrech();
                             MessageBox.Show("Les données ont été supprimé avec succés");
-                            
+
                         }
-                        catch (Exception ex) { MessageBox.Show(ex.ToString()) ; }
+                        catch (Exception ex) { MessageBox.Show(" Le tableau ne contient aucune donnée!"); }
+                        refrech();
+                    
                     }
                     
                 }
@@ -540,12 +542,26 @@ namespace gtsco2.forms.GTabsences
 
         private void closeButton7_Click(object sender, EventArgs e)
         {
-            Close();
+
+            DialogResult res = MessageBox.Show("Sauvegarder et fermer la fenêtre? ", "Fermeture de la fenêtre", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                add();
+                save();
+                Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Donnée non sauvgarder, la fenêtre va se fermé ");
+                Close();
+
+            }
         }
 
-        
 
-    
+
+
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {

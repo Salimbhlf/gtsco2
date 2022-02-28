@@ -107,7 +107,9 @@ namespace gtsco2.forms
 
         private void evabtn_Click(object sender, EventArgs e)
         {
+            
             PVfinal.FrmPVfinal fr = new PVfinal.FrmPVfinal();
+            fr.refrech();
             fr.ShowDialog();
         }
     }

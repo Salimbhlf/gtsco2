@@ -1060,17 +1060,9 @@ namespace gtsco2.forms.PVfinal
             gridControl1.ShowRibbonPrintPreview();
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void avenrtp_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void removeButton1_Click(object sender, EventArgs e)
         {
 
         }
@@ -1083,22 +1075,21 @@ namespace gtsco2.forms.PVfinal
         private void closeButton7_Click(object sender, EventArgs e)
         {
 
+            DialogResult res = MessageBox.Show("Fermer la fenêtre? ", "Fermeture de la fenêtre", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+
+                Close();
+
+            }
+            else
+            {
+
+
+            }
         }
 
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void ECTF()
-        {
-
-        }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -1106,6 +1097,16 @@ namespace gtsco2.forms.PVfinal
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio3_CheckedChanged(object sender, EventArgs e)
         {
 
         }

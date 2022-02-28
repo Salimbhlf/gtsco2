@@ -36,7 +36,6 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.removeButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -67,6 +66,8 @@ namespace gtsco2.forms.GTabsences
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -115,6 +116,7 @@ namespace gtsco2.forms.GTabsences
             this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
             this.flowLayoutPanel1.Controls.Add(this.removeButton1);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton6);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
             this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
@@ -194,25 +196,6 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton6.TabIndex = 9;
             this.simpleButton6.Text = "Enregsitrer\r\n le tableau";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
-            // 
-            // closeButton7
-            // 
-            this.closeButton7.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.False;
-            this.closeButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton7.Appearance.Options.UseFont = true;
-            this.closeButton7.AutoWidthInLayoutControl = true;
-            this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
-            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.closeButton7.Location = new System.Drawing.Point(616, 3);
-            this.closeButton7.Name = "closeButton7";
-            this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.closeButton7.Size = new System.Drawing.Size(125, 69);
-            this.closeButton7.TabIndex = 10;
-            this.closeButton7.Text = "Fermer\r\nla fenêtre";
-            this.closeButton7.ToolTip = "Vous devez enregistré vos changement avant fermé  cette fenetre ";
-            this.closeButton7.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
-            this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click);
             // 
             // panelControl2
             // 
@@ -529,6 +512,42 @@ namespace gtsco2.forms.GTabsences
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // simpleButton4
+            // 
+            this.simpleButton4.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.AutoWidthInLayoutControl = true;
+            this.simpleButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.simpleButton4.Location = new System.Drawing.Point(616, 3);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton4.Size = new System.Drawing.Size(125, 69);
+            this.simpleButton4.TabIndex = 10;
+            this.simpleButton4.Text = "Imprimer";
+            this.simpleButton4.ToolTip = "Vous devez enregistré vos changement avant fermé  cette fenetre ";
+            this.simpleButton4.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.simpleButton4.Click += new System.EventHandler(this.closeButton7_Click);
+            // 
+            // closeButton7
+            // 
+            this.closeButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton7.Appearance.Options.UseFont = true;
+            this.closeButton7.AutoWidthInLayoutControl = true;
+            this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
+            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.closeButton7.Location = new System.Drawing.Point(747, 3);
+            this.closeButton7.Name = "closeButton7";
+            this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.closeButton7.ShowToolTips = false;
+            this.closeButton7.Size = new System.Drawing.Size(106, 69);
+            this.closeButton7.TabIndex = 13;
+            this.closeButton7.Text = "Fermer";
+            this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click_1);
+            // 
             // addabsences
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -605,12 +624,13 @@ namespace gtsco2.forms.GTabsences
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton removeButton1;
-        private DevExpress.XtraEditors.SimpleButton closeButton7;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private DevExpress.XtraLayout.LayoutControlItem date_abssonce;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton closeButton7;
     }
 }

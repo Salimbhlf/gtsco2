@@ -99,20 +99,7 @@ namespace gtsco2.forms.GTabsences
 
 
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+ 
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
@@ -381,6 +368,7 @@ namespace gtsco2.forms.GTabsences
                         ev.Date_ABS = datee;
 
 
+                
 
                         //shared.bd.SaveChanges();
 
@@ -413,29 +401,31 @@ namespace gtsco2.forms.GTabsences
                     }
                     if (z == 1)
                     {
-                        MessageBox.Show(" Aucune valeur n'a été enregitré!");
+                        MessageBox.Show(" Aucune valeur n'a été enregistrée!");
                         
                     }
                     else if (z == 2)
                     {
                         save();
-                        MessageBox.Show("Modifications enregitré avec succés!");
+                        MessageBox.Show("Modifications enregistrées avec succés!");
                        
                     }
                     else if (z == 3)
                     {    save();
-                        MessageBox.Show("Ajout enregitré avec succés!");
+                        MessageBox.Show("Mise à jour enregistrée avec succés!");
                        
                     }
 
                  
                 }
-                else { MessageBox.Show("Aucune informations n'existe sur le tableau"); }
+                else { MessageBox.Show("Aucune information n'existe sur le tableau"); }
 
             }
-            catch (NullReferenceException ){
-                MessageBox.Show("Afficher puis appliqué des modification sur le tableau,  pour ensuite enregistré vos informations");
-                
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Affichez puis appliquez des modifications sur le tableau, pour ensuite enregistré vos informations");
+
+
             }
             catch (Exception ex)
             {
@@ -542,21 +532,8 @@ namespace gtsco2.forms.GTabsences
 
         private void closeButton7_Click(object sender, EventArgs e)
         {
-
-            DialogResult res = MessageBox.Show("Sauvegarder et fermer la fenêtre? ", "Fermeture de la fenêtre", MessageBoxButtons.YesNo);
-            if (res == DialogResult.Yes)
-            {
-                add();
-                save();
-                Close();
-
-            }
-            else
-            {
-                MessageBox.Show("Donnée non sauvgarder, la fenêtre va se fermé ");
-                Close();
-
-            }
+            add();            
+            gridControl1.ShowPrintPreview();
         }
 
 
@@ -571,6 +548,24 @@ namespace gtsco2.forms.GTabsences
         private void simpleButton3_Click_1(object sender, EventArgs e)
         {
             edit();
+        }
+
+        private void closeButton7_Click_1(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Sauvgardé et fermé la fenêtre? ", "Fermeture de la fenêtre", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                add();
+                save();
+                Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Donnée non sauvgarder, la fenêtre va se fermé ");
+                Close();
+
+            }
         }
     }
 }

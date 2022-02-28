@@ -497,7 +497,7 @@ namespace gtsco2.forms
             {
 
                 shared.bd.SaveChanges();
-                //MessageBox.Show("Données enregistré ");
+                //MessageBox.Show("Données enregistrées ");
             }
             catch (Exception se)
             {

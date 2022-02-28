@@ -186,21 +186,7 @@ namespace gtsco2.forms.GTSecetion
         {
 
         }
-        // sarge les donne de gridview 1 a partire de la fonction REFRACH
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            try { 
-            int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
-            int sec = int.Parse(seccomboBox.SelectedValue.ToString());
-            bool sec1 = Sec1checkEdit1.Checked;
-            bool pro1 = pro1checkEdit1.Checked;
-            gridControl1.DataSource= refrach(promo, sec,sec1,pro1);
-                gridView1.OptionsBehavior.ReadOnly = true;
-                NUBEREF.Text= gridView1.RowCount.ToString();
-            }
-            catch (Exception EX) { MessageBox.Show(EX.Message); }
-        }
-
+      
 
         public void lefttoright()
         {
@@ -333,72 +319,124 @@ namespace gtsco2.forms.GTSecetion
 
 
 
-        public void save()
+        public void save1()
         {
+            try {
+                int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
+                int sec = int.Parse(seccomboBox.SelectedValue.ToString());
+                bool sec1 = Sec1checkEdit1.Checked;
+                bool pro1 = pro1checkEdit1.Checked;
+                DataTable tbsv = gridControl1.DataSource as DataTable;
+                if (tbsv != null)
+                {
+                    if (pro1 == false && sec1 == true)
+                    {
+                        DialogResult r = MessageBox.Show("vous voules suvagred les stagiairs sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo);
+                        if (r == DialogResult.Yes)
+                        {
+
+                            foreach (DataRow row in tbsv.Rows)
+                            {
+
+                                string ab = row[0].ToString();
+
+                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
+                                shared.bd.Stagiairs.AddOrUpdate(stg);
+                                shared.bd.SaveChanges();
+                            }
+                        }
+                    }
+                    else if (pro1 == true && sec1 == false)
+                    {
+                        DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo  " + promocomboBox11.Text + "  et un section anonim ", "", MessageBoxButtons.YesNo);
+                        if (r == DialogResult.Yes)
+                        {
+
+                            foreach (DataRow row in tbsv.Rows)
+                            {
+
+                                string ab = row[0].ToString();
+
+                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                stg.Section = null;
+                                shared.bd.Stagiairs.AddOrUpdate(stg);
+                                shared.bd.SaveChanges();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
+                    }
+                }
+                else { MessageBox.Show("vous nave effcutau aucone aupiration pour le sevgarede"); }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
+        public void save2()
+        {
+            try{ 
             int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
             int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
-            bool sec1 = Sec1checkEdit1.Checked;
-            bool pro1 = pro1checkEdit1.Checked;
-            DataTable tbsv = gridControl1.DataSource as DataTable;
-            if (pro1 == false && sec1 == true)
-            {
-                DialogResult r = MessageBox.Show("vous voules suvagred les stagiairs sur la section: "+seccomboBox.Text+"de la promo:"+promocomboBox11.Text+"", "", MessageBoxButtons.YesNo);
-                if (r == DialogResult.Yes)
+            bool sec1 = Sec2checkEdit2.Checked;
+            bool pro1 = pro2checkEdit3.Checked;
+            DataTable tbsv = gridControl2.DataSource as DataTable;
+                if (tbsv != null)
                 {
-
-                    foreach (DataRow row in tbsv.Rows)
+                    if (pro1 == false && sec1 == true)
                     {
+                        DialogResult r = MessageBox.Show("vous voules suvagred les stagiairs sur la section: " + seccomboBox15.Text + " de la promo: " + promocomboBox114.Text + "", "", MessageBoxButtons.YesNo);
+                        if (r == DialogResult.Yes)
+                        {
 
-                        string ab = row[0].ToString();
+                            foreach (DataRow row in tbsv.Rows)
+                            {
 
-                        var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
-                        stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
-                        shared.bd.Stagiairs.AddOrUpdate(stg);
-                        shared.bd.SaveChanges();
+                                string ab = row[0].ToString();
+
+                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
+                                shared.bd.Stagiairs.AddOrUpdate(stg);
+                                shared.bd.SaveChanges();
+                            }
+                        }
+                    }
+                    else if (pro1 == true && sec1 == false)
+                    {
+                        DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo" + promocomboBox114.Text + "et un section anonim ", "", MessageBoxButtons.YesNo);
+                        if (r == DialogResult.Yes)
+                        {
+
+                            foreach (DataRow row in tbsv.Rows)
+                            {
+
+                                string ab = row[0].ToString();
+
+                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                stg.Section = null;
+                                shared.bd.Stagiairs.AddOrUpdate(stg);
+                                shared.bd.SaveChanges();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
                     }
                 }
-            }else if(pro1 == true && sec1 == false)
-            {
-                DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo" +  promocomboBox11.Text + "et un section anonim ", "", MessageBoxButtons.YesNo);
-                if (r == DialogResult.Yes)
-                {
-
-                    foreach (DataRow row in tbsv.Rows)
-                    {
-
-                        string ab = row[0].ToString();
-
-                        var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
-                        stg.Section = null;
-                        shared.bd.Stagiairs.AddOrUpdate(stg);
-                        shared.bd.SaveChanges();
-                    }
-                }
-            }else
-            {
-                MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
+                else { MessageBox.Show("vous nave effcutau aucone aupiration pour le sevgarede"); }
+                MessageBox.Show("bien enrgistre");
             }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
            
         }
-        // sarge les donnes de gridview 2 a partire de la fonction REFRACH
-        private void BTN2simpleButton6_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
-                int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
-                bool sec2 = Sec2checkEdit2.Checked;
-                bool pro2 = pro2checkEdit3.Checked;
-                gridControl2.DataSource = refrach(promo, sec, sec2, pro2);
-                gridView2.OptionsBehavior.ReadOnly = true;
-                NUBEREF2.Text = gridView2.RowCount.ToString();
-            }
-            catch(Exception EX) { MessageBox.Show(EX.Message); }
-        }
+      
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
@@ -410,9 +448,47 @@ namespace gtsco2.forms.GTSecetion
             righttolet();
         }
 
-        private void simpleButton7_Click(object sender, EventArgs e)
+        
+
+        private void simpleButton6_Click(object sender, EventArgs e)
         {
-            save();
+            save1();
+        }
+
+        private void simpleButton71_Click(object sender, EventArgs e)
+        {
+            save2();
+        }
+        // sarge les donne de gridview 1 a partire de la fonction REFRACH
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
+                int sec = int.Parse(seccomboBox.SelectedValue.ToString());
+                bool sec1 = Sec1checkEdit1.Checked;
+                bool pro1 = pro1checkEdit1.Checked;
+                gridControl1.DataSource = refrach(promo, sec, sec1, pro1);
+                gridView1.OptionsBehavior.ReadOnly = true;
+                NUBEREF.Text = gridView1.RowCount.ToString();
+            }
+            catch (Exception EX) { MessageBox.Show(EX.Message); }
+
+        }
+        // sarge les donnes de gridview 2 a partire de la fonction REFRACH
+        private void simpleButton72_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+                int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
+                bool sec2 = Sec2checkEdit2.Checked;
+                bool pro2 = pro2checkEdit3.Checked;
+                gridControl2.DataSource = refrach(promo, sec, sec2, pro2);
+                gridView2.OptionsBehavior.ReadOnly = true;
+                NUBEREF2.Text = gridView2.RowCount.ToString();
+            }
+            catch (Exception EX) { MessageBox.Show(EX.Message); }
         }
     }
 }

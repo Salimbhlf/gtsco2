@@ -343,8 +343,8 @@ namespace gtsco2.forms.GTSecetion
                                 var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
                                 stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
                                 shared.bd.Stagiairs.AddOrUpdate(stg);
-                                shared.bd.SaveChanges();
-                            }
+                                
+                            }shared.bd.SaveChanges();
                         }
                     }
                     else if (pro1 == true && sec1 == false)
@@ -361,8 +361,8 @@ namespace gtsco2.forms.GTSecetion
                                 var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
                                 stg.Section = null;
                                 shared.bd.Stagiairs.AddOrUpdate(stg);
-                                shared.bd.SaveChanges();
-                            }
+                                
+                            }shared.bd.SaveChanges();
                         }
                     }
                     else
@@ -371,14 +371,16 @@ namespace gtsco2.forms.GTSecetion
                     }
                 }
                 else { MessageBox.Show("vous nave effcutau aucone aupiration pour le sevgarede"); }
+                MessageBox.Show("bien enrgistre");
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         public void save2()
         {
-            try{ 
-            int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+            try
+            {
+                int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
             int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
             bool sec1 = Sec2checkEdit2.Checked;
             bool pro1 = pro2checkEdit3.Checked;
@@ -397,10 +399,10 @@ namespace gtsco2.forms.GTSecetion
                                 string ab = row[0].ToString();
 
                                 var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
-                                stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
+                                stg.Section = int.Parse(seccomboBox15.SelectedValue.ToString());
                                 shared.bd.Stagiairs.AddOrUpdate(stg);
-                                shared.bd.SaveChanges();
-                            }
+                                
+                            }shared.bd.SaveChanges();
                         }
                     }
                     else if (pro1 == true && sec1 == false)
@@ -417,8 +419,8 @@ namespace gtsco2.forms.GTSecetion
                                 var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
                                 stg.Section = null;
                                 shared.bd.Stagiairs.AddOrUpdate(stg);
-                                shared.bd.SaveChanges();
-                            }
+                               
+                            } shared.bd.SaveChanges();
                         }
                     }
                     else

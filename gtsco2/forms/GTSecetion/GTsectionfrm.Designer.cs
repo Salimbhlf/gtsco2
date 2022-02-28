@@ -914,6 +914,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton7.Size = new System.Drawing.Size(80, 69);
             this.simpleButton7.TabIndex = 8;
             this.simpleButton7.Text = "Enregistrer";
+            this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
             // simpleButton8
             // 

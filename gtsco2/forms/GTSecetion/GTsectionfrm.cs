@@ -211,6 +211,7 @@ namespace gtsco2.forms.GTSecetion
                     DataTable dt = gridControl2.DataSource as DataTable;
                     if (gridView1.OptionsSelection.MultiSelectMode == GridMultiSelectMode.CheckBoxRowSelect)
                     {
+                        List<int> ab = new List<int>();
                         foreach (int i in gridView1.GetSelectedRows())
                         {
                             //Recuperation de l'index de la ligne selectionnée
@@ -218,15 +219,42 @@ namespace gtsco2.forms.GTSecetion
 
                             //ou même récupérer la ligne pour en faire ce que tu veux
                             DataRow rows = gridView1.GetDataRow(IndexLigne);
-                            if (dt != null) {
+                            if (dt != null)
+                            {
                                 dt.Rows.Add(rows[0], rows[1], rows[2]);
-                            gridView1.DeleteRow(IndexLigne);
+                                ab.Add(IndexLigne);
+
                             }
-                            else{MessageBox.Show("selection la section donne que vous voule effactue le stg "); }
+                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg ");
+                                break;
+                            }
                         }
+                       for (int i =ab.Count()-1;i>=0;i--)
+                        {
+                            //Recuperation de l'index de la ligne selectionnée
+                            int IndexLigne = gridView1.GetRowHandle(ab[i]);
+
+                            //ou même récupérer la ligne pour en faire ce que tu veux
+                            DataRow rows = gridView1.GetDataRow(IndexLigne);
+                            if (dt != null)
+                            {
+                                gridView1.DeleteRow(IndexLigne);
+
+                            }
+                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg ");
+                                break;
+                            }
+
+                        }
+                        NUBEREF.Text= gridView1.DataRowCount.ToString() ;
+                        NUBEREF2.Text = gridView2.DataRowCount.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
+
                     }
                 }
-                else { MessageBox.Show("selection des section  de la meme promo sur le diex tablo"); }
             }catch(NullReferenceException)
             {
                 
@@ -243,20 +271,112 @@ namespace gtsco2.forms.GTSecetion
         }
         public void righttolet()
         {
-            DataTable dt = gridControl1.DataSource as DataTable;
-            if (gridView2.OptionsSelection.MultiSelectMode == GridMultiSelectMode.CheckBoxRowSelect)
+            try
             {
-                foreach (int i in gridView2.GetSelectedRows())
+                if (promocomboBox11.SelectedValue.ToString() == promocomboBox114.SelectedValue.ToString())
                 {
-                    //Recuperation de l'index de la ligne selectionnée
-                    int IndexLigne = gridView2.GetRowHandle(i);
 
-                    //ou même récupérer la ligne pour en faire ce que tu veux
-                    DataRow rows = gridView2.GetDataRow(IndexLigne);
+                    DataTable dt = gridControl1.DataSource as DataTable;
+                    if (gridView2.OptionsSelection.MultiSelectMode == GridMultiSelectMode.CheckBoxRowSelect)
+                    {
+                        List<int> ab = new List<int>();
+                        foreach (int i in gridView2.GetSelectedRows())
+                        {
+                            //Recuperation de l'index de la ligne selectionnée
+                            int IndexLigne = gridView2.GetRowHandle(i);
 
-                    dt.Rows.Add(rows[0], rows[1], rows[2]);
-                    gridView2.DeleteRow(IndexLigne);
+                            //ou même récupérer la ligne pour en faire ce que tu veux
+                            DataRow rows = gridView2.GetDataRow(IndexLigne);
+                            if (dt != null)
+                            {
+                                dt.Rows.Add(rows[0], rows[1], rows[2]);
+                                ab.Add(IndexLigne);
+
+                            }
+                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg "); }
+                        }
+                        for (int i = ab.Count() - 1; i >= 0; i--)
+                        {
+                            //Recuperation de l'index de la ligne selectionnée
+                            int IndexLigne = gridView2.GetRowHandle(ab[i]);
+
+                          
+                            if (dt != null)
+                            {
+                                gridView2.DeleteRow(IndexLigne);
+
+                            }
+                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg ");
+                                break;
+                            }
+
+                        }
+                        NUBEREF.Text = gridView1.DataRowCount.ToString();
+                        NUBEREF2.Text = gridView2.DataRowCount.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
+
+                    }
                 }
+            }
+            catch (NullReferenceException)
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+
+        public void save()
+        {
+            int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+            int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
+            bool sec1 = Sec1checkEdit1.Checked;
+            bool pro1 = pro1checkEdit1.Checked;
+            DataTable tbsv = gridControl1.DataSource as DataTable;
+            if (pro1 == false && sec1 == true)
+            {
+                DialogResult r = MessageBox.Show("vous voules suvagred les stagiairs sur la section: "+seccomboBox.Text+"de la promo:"+promocomboBox11.Text+"", "", MessageBoxButtons.YesNo);
+                if (r == DialogResult.Yes)
+                {
+
+                    foreach (DataRow row in tbsv.Rows)
+                    {
+
+                        string ab = row[0].ToString();
+
+                        var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                        stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
+                        shared.bd.Stagiairs.AddOrUpdate(stg);
+                        shared.bd.SaveChanges();
+                    }
+                }
+            }else if(pro1 == true && sec1 == false)
+            {
+                DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo" +  promocomboBox11.Text + "et un section anonim ", "", MessageBoxButtons.YesNo);
+                if (r == DialogResult.Yes)
+                {
+
+                    foreach (DataRow row in tbsv.Rows)
+                    {
+
+                        string ab = row[0].ToString();
+
+                        var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                        stg.Section = null;
+                        shared.bd.Stagiairs.AddOrUpdate(stg);
+                        shared.bd.SaveChanges();
+                    }
+                }
+            }else
+            {
+                MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
             }
         }
 
@@ -288,6 +408,11 @@ namespace gtsco2.forms.GTSecetion
         private void simpleButton3_Click_1(object sender, EventArgs e)
         {
             righttolet();
+        }
+
+        private void simpleButton7_Click(object sender, EventArgs e)
+        {
+            save();
         }
     }
 }

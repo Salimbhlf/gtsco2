@@ -196,6 +196,12 @@
     <Compile Include="forms\GTabsences\addabsences.Designer.cs">
       <DependentUpon>addabsences.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\Formlaire_saisie_absence.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\Formlaire_saisie_absence.Designer.cs">
+      <DependentUpon>Formlaire_saisie_absence.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\GTabsences\PVabsences\PVabsences.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\GTabsences\addabsences.resx">
       <DependentUpon>addabsences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\Formlaire_saisie_absence.resx">
+      <DependentUpon>Formlaire_saisie_absence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\GTabsences\PVabsences\PVabsences.resx">
       <DependentUpon>PVabsences.cs</DependentUpon>

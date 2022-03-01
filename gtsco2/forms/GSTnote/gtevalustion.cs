@@ -608,9 +608,9 @@ namespace gtsco2.forms
 
         private void simpleButton7_Click(object sender, EventArgs e)
         {
-            add();
-            save();
-            //refrech();
+            //add();
+            //save();
+            ////refrech();
 
             vprint();
         }

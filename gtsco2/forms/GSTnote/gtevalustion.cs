@@ -537,7 +537,7 @@ namespace gtsco2.forms
                             save();
                             refrech();
                             MessageBox.Show("Les données ont été supprimé avec succés");
-                            
+
                         }
                         catch (Exception ex) { MessageBox.Show(" Le tableau ne contient aucune donnée!"); }
                         refrech();
@@ -575,8 +575,10 @@ namespace gtsco2.forms
             if (res == DialogResult.Yes)
             {
                 add();
-                save();                            
+                save();
+                
                 Close();
+                
                 
             }
             else
@@ -607,9 +609,9 @@ namespace gtsco2.forms
         private void simpleButton7_Click(object sender, EventArgs e)
         {
             add();
-            //save();
-            //refrech();    
-            
+            save();
+            //refrech();
+
             vprint();
         }
 

@@ -325,7 +325,7 @@ namespace gtsco2.forms.GTabsences
                 DataTable dt = gridControl1.DataSource as DataTable;
 
                 int z = 1;
-                if (dt.Rows.Count != 0)
+                if (dt!=null&& dt.Rows.Count != 0)
                 {
                     foreach (DataRow row in dt.Rows)
                     {

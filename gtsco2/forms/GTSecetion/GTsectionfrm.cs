@@ -211,7 +211,7 @@ namespace gtsco2.forms.GTSecetion
                                 ab.Add(IndexLigne);
 
                             }
-                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg ");
+                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ");
                                 break;
                             }
                         }
@@ -227,7 +227,7 @@ namespace gtsco2.forms.GTSecetion
                                 gridView1.DeleteRow(IndexLigne);
 
                             }
-                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg ");
+                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ");
                                 break;
                             }
 
@@ -237,7 +237,9 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else
                     {
-                        MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
+
+                        MessageBox.Show("Veuillez sélectionner la même promos sur les 2 tableaux");
+                        //MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
 
                     }
                 }
@@ -279,7 +281,10 @@ namespace gtsco2.forms.GTSecetion
                                 ab.Add(IndexLigne);
 
                             }
-                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg "); }
+                            else { 
+                                
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! "); }
+                            //MessageBox.Show("selection la section donne que vous voule effactue le stg ");
                         }
                         for (int i = ab.Count() - 1; i >= 0; i--)
                         {
@@ -292,8 +297,13 @@ namespace gtsco2.forms.GTSecetion
                                 gridView2.DeleteRow(IndexLigne);
 
                             }
-                            else { MessageBox.Show("selection la section donne que vous voule effactue le stg ");
+                            else {
+
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ");
                                 break;
+
+                                //MessageBox.Show("selection la section donne que vous voule effactue le stg ");
+                                //break;
                             }
 
                         }
@@ -302,7 +312,9 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else
                     {
-                        MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
+
+                        MessageBox.Show("Veuillez sélectionner la même promos sur les 2 tableaux");
+                        //MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
 
                     }
                 }
@@ -331,7 +343,7 @@ namespace gtsco2.forms.GTSecetion
                 {
                     if (pro1 == false && sec1 == true)
                     {
-                        DialogResult r = MessageBox.Show("vous voules suvagred les stagiairs sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo);
+                        DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ce (s) stagiaire (s) sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo);
                         if (r == DialogResult.Yes)
                         {
 
@@ -349,7 +361,11 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else if (pro1 == true && sec1 == false)
                     {
-                        DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo  " + promocomboBox11.Text + "  et un section anonim ", "", MessageBoxButtons.YesNo);
+
+
+                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos  " + promocomboBox11.Text + "  mais sans section  ", "", MessageBoxButtons.YesNo);
+                    
+                            //DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo  " + promocomboBox11.Text + "  et un section anonim ", "", MessageBoxButtons.YesNo);
                         if (r == DialogResult.Yes)
                         {
 
@@ -367,11 +383,13 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else
                     {
-                        MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
+                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section  ");
+
+                        //MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
                     }
                 }
-                else { MessageBox.Show("vous nave effcutau aucone aupiration pour le sevgarede"); }
-                MessageBox.Show("bien enrgistre");
+                else { MessageBox.Show("Aucun changement à enregistrer"); }
+                MessageBox.Show("Données enregistrées avec succès");
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
@@ -389,7 +407,7 @@ namespace gtsco2.forms.GTSecetion
                 {
                     if (pro1 == false && sec1 == true)
                     {
-                        DialogResult r = MessageBox.Show("vous voules suvagred les stagiairs sur la section: " + seccomboBox15.Text + " de la promo: " + promocomboBox114.Text + "", "", MessageBoxButtons.YesNo);
+                        DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ces stagiaires sur la section: " + seccomboBox15.Text + " de la promo: " + promocomboBox114.Text + "", "", MessageBoxButtons.YesNo);
                         if (r == DialogResult.Yes)
                         {
 
@@ -407,7 +425,7 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else if (pro1 == true && sec1 == false)
                     {
-                        DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo" + promocomboBox114.Text + "et un section anonim ", "", MessageBoxButtons.YesNo);
+                        DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos" + promocomboBox114.Text + "et un section anonim ", "", MessageBoxButtons.YesNo);
                         if (r == DialogResult.Yes)
                         {
 
@@ -425,11 +443,11 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else
                     {
-                        MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
+                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section");
                     }
                 }
-                else { MessageBox.Show("vous nave effcutau aucone aupiration pour le sevgarede"); }
-                MessageBox.Show("bien enrgistre");
+                else { MessageBox.Show("Aucun changement à enregistrer"); }
+                MessageBox.Show("Données enregistrées avec succès");
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
@@ -491,6 +509,11 @@ namespace gtsco2.forms.GTSecetion
                 NUBEREF2.Text = gridView2.RowCount.ToString();
             }
             catch (Exception EX) { MessageBox.Show(EX.Message); }
+        }
+
+        private void seccomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

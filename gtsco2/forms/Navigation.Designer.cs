@@ -34,8 +34,8 @@ namespace gtsco2.forms
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.addabsbtn = new DevExpress.XtraEditors.SimpleButton();
             this.absbt = new DevExpress.XtraEditors.SimpleButton();
-            this.evabtn = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.evabtn = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -146,35 +146,6 @@ namespace gtsco2.forms
             this.absbt.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.absbt.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
-            // evabtn
-            // 
-            this.evabtn.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.evabtn.Appearance.BackColor2 = System.Drawing.Color.Red;
-            this.evabtn.Appearance.BorderColor = System.Drawing.Color.White;
-            this.evabtn.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evabtn.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.evabtn.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.evabtn.Appearance.Options.UseBackColor = true;
-            this.evabtn.Appearance.Options.UseBorderColor = true;
-            this.evabtn.Appearance.Options.UseFont = true;
-            this.evabtn.Appearance.Options.UseForeColor = true;
-            this.evabtn.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evabtn.AppearanceHovered.Options.UseBackColor = true;
-            this.evabtn.AppearanceHovered.Options.UseBorderColor = true;
-            this.evabtn.AppearanceHovered.Options.UseFont = true;
-            this.evabtn.AppearanceHovered.Options.UseForeColor = true;
-            this.evabtn.AppearanceHovered.Options.UseImage = true;
-            this.evabtn.AppearanceHovered.Options.UseTextOptions = true;
-            this.evabtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("evabtn.ImageOptions.Image")));
-            this.evabtn.Location = new System.Drawing.Point(627, 3);
-            this.evabtn.Name = "evabtn";
-            this.evabtn.Size = new System.Drawing.Size(202, 87);
-            this.evabtn.TabIndex = 3;
-            this.evabtn.Text = "Affichage \r\ndes moyennes";
-            this.evabtn.ToolTip = "Calculer et afficher les moyennes d\'une section";
-            this.evabtn.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
-            this.evabtn.Click += new System.EventHandler(this.evabtn_Click);
-            // 
             // simpleButton5
             // 
             this.simpleButton5.Appearance.BackColor = System.Drawing.Color.Turquoise;
@@ -204,6 +175,35 @@ namespace gtsco2.forms
             this.simpleButton5.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
+            // evabtn
+            // 
+            this.evabtn.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.evabtn.Appearance.BackColor2 = System.Drawing.Color.Red;
+            this.evabtn.Appearance.BorderColor = System.Drawing.Color.White;
+            this.evabtn.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evabtn.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.evabtn.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.evabtn.Appearance.Options.UseBackColor = true;
+            this.evabtn.Appearance.Options.UseBorderColor = true;
+            this.evabtn.Appearance.Options.UseFont = true;
+            this.evabtn.Appearance.Options.UseForeColor = true;
+            this.evabtn.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evabtn.AppearanceHovered.Options.UseBackColor = true;
+            this.evabtn.AppearanceHovered.Options.UseBorderColor = true;
+            this.evabtn.AppearanceHovered.Options.UseFont = true;
+            this.evabtn.AppearanceHovered.Options.UseForeColor = true;
+            this.evabtn.AppearanceHovered.Options.UseImage = true;
+            this.evabtn.AppearanceHovered.Options.UseTextOptions = true;
+            this.evabtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("evabtn.ImageOptions.Image")));
+            this.evabtn.Location = new System.Drawing.Point(627, 3);
+            this.evabtn.Name = "evabtn";
+            this.evabtn.Size = new System.Drawing.Size(202, 87);
+            this.evabtn.TabIndex = 3;
+            this.evabtn.Text = "Affichage \r\ndes moyennes";
+            this.evabtn.ToolTip = "Calculer et afficher les moyennes d\'une section";
+            this.evabtn.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.evabtn.Click += new System.EventHandler(this.evabtn_Click);
+            // 
             // simpleButton7
             // 
             this.simpleButton7.Appearance.BackColor = System.Drawing.Color.Indigo;
@@ -216,11 +216,22 @@ namespace gtsco2.forms
             this.simpleButton7.Appearance.Options.UseBorderColor = true;
             this.simpleButton7.Appearance.Options.UseFont = true;
             this.simpleButton7.Appearance.Options.UseForeColor = true;
+            this.simpleButton7.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
+            this.simpleButton7.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton7.AppearanceHovered.Options.UseBorderColor = true;
+            this.simpleButton7.AppearanceHovered.Options.UseFont = true;
+            this.simpleButton7.AppearanceHovered.Options.UseForeColor = true;
+            this.simpleButton7.AppearanceHovered.Options.UseImage = true;
+            this.simpleButton7.AppearanceHovered.Options.UseTextOptions = true;
+            this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
             this.simpleButton7.Location = new System.Drawing.Point(3, 96);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(202, 87);
             this.simpleButton7.TabIndex = 6;
-            this.simpleButton7.Text = "Evaluation";
+            this.simpleButton7.Text = "Gestion des \r\nsections";
+            this.simpleButton7.ToolTip = "Afficher et transférer les stagiaires entre les sections et les promos";
+            this.simpleButton7.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.simpleButton7.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
             // simpleButton9
@@ -346,7 +357,7 @@ namespace gtsco2.forms
             this.ClientSize = new System.Drawing.Size(841, 450);
             this.Controls.Add(this.panelControl1);
             this.Name = "Navigation";
-            this.Text = "Navigation";
+            this.Text = "Menu de navigation";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

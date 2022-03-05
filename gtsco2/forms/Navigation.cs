@@ -112,10 +112,5 @@ namespace gtsco2.forms
             fr.refrech();
             fr.ShowDialog();
         }
-
-        private void Navigation_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -54,7 +54,7 @@ namespace gtsco2.forms
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(841, 450);
+            this.panelControl1.Size = new System.Drawing.Size(420, 562);
             this.panelControl1.TabIndex = 0;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
@@ -75,7 +75,7 @@ namespace gtsco2.forms
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(837, 446);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(416, 558);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -166,13 +166,14 @@ namespace gtsco2.forms
             this.simpleButton5.AppearanceHovered.Options.UseImage = true;
             this.simpleButton5.AppearanceHovered.Options.UseTextOptions = true;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.simpleButton5.Location = new System.Drawing.Point(419, 3);
+            this.simpleButton5.Location = new System.Drawing.Point(3, 96);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(202, 87);
             this.simpleButton5.TabIndex = 4;
             this.simpleButton5.Text = "Saisie \r\ndes notes ";
             this.simpleButton5.ToolTip = "Afficher et visualiser les notes d\'une section";
             this.simpleButton5.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.simpleButton5.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // evabtn
@@ -195,13 +196,14 @@ namespace gtsco2.forms
             this.evabtn.AppearanceHovered.Options.UseImage = true;
             this.evabtn.AppearanceHovered.Options.UseTextOptions = true;
             this.evabtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("evabtn.ImageOptions.Image")));
-            this.evabtn.Location = new System.Drawing.Point(627, 3);
+            this.evabtn.Location = new System.Drawing.Point(211, 96);
             this.evabtn.Name = "evabtn";
             this.evabtn.Size = new System.Drawing.Size(202, 87);
             this.evabtn.TabIndex = 3;
             this.evabtn.Text = "Affichage \r\ndes moyennes";
             this.evabtn.ToolTip = "Calculer et afficher les moyennes d\'une section";
             this.evabtn.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
+            this.evabtn.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.evabtn.Click += new System.EventHandler(this.evabtn_Click);
             // 
             // simpleButton7
@@ -224,7 +226,7 @@ namespace gtsco2.forms
             this.simpleButton7.AppearanceHovered.Options.UseImage = true;
             this.simpleButton7.AppearanceHovered.Options.UseTextOptions = true;
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
-            this.simpleButton7.Location = new System.Drawing.Point(3, 96);
+            this.simpleButton7.Location = new System.Drawing.Point(3, 189);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(202, 87);
             this.simpleButton7.TabIndex = 6;
@@ -246,7 +248,7 @@ namespace gtsco2.forms
             this.simpleButton9.Appearance.Options.UseBorderColor = true;
             this.simpleButton9.Appearance.Options.UseFont = true;
             this.simpleButton9.Appearance.Options.UseForeColor = true;
-            this.simpleButton9.Location = new System.Drawing.Point(211, 96);
+            this.simpleButton9.Location = new System.Drawing.Point(211, 189);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(202, 87);
             this.simpleButton9.TabIndex = 8;
@@ -265,7 +267,7 @@ namespace gtsco2.forms
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(419, 96);
+            this.simpleButton1.Location = new System.Drawing.Point(3, 282);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(202, 87);
             this.simpleButton1.TabIndex = 0;
@@ -284,7 +286,7 @@ namespace gtsco2.forms
             this.simpleButton8.Appearance.Options.UseBorderColor = true;
             this.simpleButton8.Appearance.Options.UseFont = true;
             this.simpleButton8.Appearance.Options.UseForeColor = true;
-            this.simpleButton8.Location = new System.Drawing.Point(627, 96);
+            this.simpleButton8.Location = new System.Drawing.Point(211, 282);
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(202, 87);
             this.simpleButton8.TabIndex = 7;
@@ -303,7 +305,7 @@ namespace gtsco2.forms
             this.simpleButton10.Appearance.Options.UseBorderColor = true;
             this.simpleButton10.Appearance.Options.UseFont = true;
             this.simpleButton10.Appearance.Options.UseForeColor = true;
-            this.simpleButton10.Location = new System.Drawing.Point(3, 189);
+            this.simpleButton10.Location = new System.Drawing.Point(3, 375);
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.Size = new System.Drawing.Size(202, 87);
             this.simpleButton10.TabIndex = 9;
@@ -322,7 +324,7 @@ namespace gtsco2.forms
             this.simpleButton11.Appearance.Options.UseBorderColor = true;
             this.simpleButton11.Appearance.Options.UseFont = true;
             this.simpleButton11.Appearance.Options.UseForeColor = true;
-            this.simpleButton11.Location = new System.Drawing.Point(211, 189);
+            this.simpleButton11.Location = new System.Drawing.Point(211, 375);
             this.simpleButton11.Name = "simpleButton11";
             this.simpleButton11.Size = new System.Drawing.Size(202, 87);
             this.simpleButton11.TabIndex = 10;
@@ -341,7 +343,7 @@ namespace gtsco2.forms
             this.simpleButton12.Appearance.Options.UseBorderColor = true;
             this.simpleButton12.Appearance.Options.UseFont = true;
             this.simpleButton12.Appearance.Options.UseForeColor = true;
-            this.simpleButton12.Location = new System.Drawing.Point(419, 189);
+            this.simpleButton12.Location = new System.Drawing.Point(3, 468);
             this.simpleButton12.Name = "simpleButton12";
             this.simpleButton12.Size = new System.Drawing.Size(202, 87);
             this.simpleButton12.TabIndex = 11;
@@ -351,13 +353,21 @@ namespace gtsco2.forms
             // Navigation
             // 
             this.Appearance.BackColor = System.Drawing.Color.Black;
+            this.Appearance.BackColor2 = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 450);
+            this.ClientSize = new System.Drawing.Size(420, 562);
             this.Controls.Add(this.panelControl1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoubleBuffered = true;
+            this.MaximumSize = new System.Drawing.Size(422, 594);
+            this.MinimumSize = new System.Drawing.Size(422, 594);
             this.Name = "Navigation";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu de navigation";
+            this.Load += new System.EventHandler(this.Navigation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

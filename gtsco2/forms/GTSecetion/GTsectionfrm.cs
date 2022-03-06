@@ -191,8 +191,10 @@ namespace gtsco2.forms.GTSecetion
         public void lefttoright()
         {
             try
-            {if (promocomboBox11.SelectedValue.ToString() == promocomboBox114.SelectedValue.ToString())
+            {
+                if (gridView1.GetSelectedRows().Count() > 0)
                 {
+
 
                     DataTable dt = gridControl2.DataSource as DataTable;
                     if (gridView1.OptionsSelection.MultiSelectMode == GridMultiSelectMode.CheckBoxRowSelect)
@@ -211,11 +213,11 @@ namespace gtsco2.forms.GTSecetion
                                 ab.Add(IndexLigne);
 
                             }
-                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ");
+                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de droite ");
                                 break;
                             }
                         }
-                       for (int i =ab.Count()-1;i>=0;i--)
+                        for (int i = ab.Count() - 1; i >= 0; i--)
                         {
                             //Recuperation de l'index de la ligne selectionnée
                             int IndexLigne = gridView1.GetRowHandle(ab[i]);
@@ -232,7 +234,7 @@ namespace gtsco2.forms.GTSecetion
                             }
 
                         }
-                        NUBEREF.Text= gridView1.DataRowCount.ToString() ;
+                        NUBEREF.Text = gridView1.DataRowCount.ToString();
                         NUBEREF2.Text = gridView2.DataRowCount.ToString();
                     }
                     else
@@ -243,7 +245,13 @@ namespace gtsco2.forms.GTSecetion
 
                     }
                 }
-            }catch(NullReferenceException)
+                else {
+                    MessageBox.Show("Veuillez selectionner les informations que vous souhaitez afficher ensuite affichez le tableau de droite puis cocher la case correspondante au stagiaire que vous voulez transferer");
+                        }
+
+            }
+
+            catch(NullReferenceException)
             {
                 
             }catch(Exception ex)
@@ -261,7 +269,7 @@ namespace gtsco2.forms.GTSecetion
         {
             try
             {
-                if (promocomboBox11.SelectedValue.ToString() == promocomboBox114.SelectedValue.ToString())
+                if (gridView2.GetSelectedRows().Count() > 0)
                 {
 
                     DataTable dt = gridControl1.DataSource as DataTable;
@@ -283,7 +291,7 @@ namespace gtsco2.forms.GTSecetion
                             }
                             else { 
                                 
-                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! "); }
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de gauche "); }
                             //MessageBox.Show("selection la section donne que vous voule effactue le stg ");
                         }
                         for (int i = ab.Count() - 1; i >= 0; i--)
@@ -317,6 +325,10 @@ namespace gtsco2.forms.GTSecetion
                         //MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
 
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Veuillez selectionner les informations que vous souhaitez afficher ensuite affichez le tableau de gauche puis cocher la case correspondante au stagiaire que vous voulez transferer");
                 }
             }
             catch (NullReferenceException)
@@ -383,7 +395,7 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else
                     {
-                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' enregistrer uniquement les stagiaires sans section ou   ");
+                        //MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' enregistrer uniquement les stagiaires sans section ou   ");
 
                         //MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
                     }
@@ -443,7 +455,7 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else
                     {
-                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section");
+                        //MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section");
                     }
                 }
                 else { MessageBox.Show("Aucun changement à enregistrer"); }
@@ -551,6 +563,16 @@ namespace gtsco2.forms.GTSecetion
             {
                 pro2checkEdit3.Checked = false;
             }
+        }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            gridView1.ShowRibbonPrintPreview(); 
+        }
+
+        private void simpleButton7_Click(object sender, EventArgs e)
+        {
+            gridView2.ShowRibbonPrintPreview ();
         }
     }
 }

@@ -539,7 +539,7 @@ namespace gtsco2.forms
                             MessageBox.Show("Les données ont été supprimé avec succés");
 
                         }
-                        catch (Exception ex) { MessageBox.Show(" Le tableau ne contient aucune donnée!"); }
+                        catch (Exception) { MessageBox.Show(" Le tableau ne contient aucune donnée!"); }
                         refrech();
                     }
                 }

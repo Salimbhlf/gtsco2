@@ -72,6 +72,7 @@ namespace gtsco2.forms
             this.flowLayoutPanel1.Controls.Add(this.simpleButton10);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton11);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton12);
+            this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -228,7 +229,7 @@ namespace gtsco2.forms
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(202, 87);
             this.simpleButton7.TabIndex = 6;
-            this.simpleButton7.Text = "Gestion des \r\nsections";
+            this.simpleButton7.Text = "Gestion promos \r\net sections";
             this.simpleButton7.ToolTip = "Afficher et transférer les stagiaires entre les sections et les promos";
             this.simpleButton7.ToolTipAnchor = DevExpress.Utils.ToolTipAnchor.Cursor;
             this.simpleButton7.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;

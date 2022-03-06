@@ -488,7 +488,9 @@ namespace gtsco2.forms.GTabsences
                             MessageBox.Show("Les données ont été supprimé avec succés");
 
                         }
-                        catch (Exception ex) { MessageBox.Show(" Le tableau ne contient aucune donnée!"); }
+                        catch (NullReferenceException) { MessageBox.Show(" Le tableau ne contient aucune donnée!"); }
+                        catch (Exception ex) { MessageBox.Show(ex.Message); }
+
                         refrech();
                     
                     }

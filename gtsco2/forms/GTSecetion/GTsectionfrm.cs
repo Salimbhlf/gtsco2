@@ -383,7 +383,7 @@ namespace gtsco2.forms.GTSecetion
                     }
                     else
                     {
-                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section  ");
+                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' enregistrer uniquement les stagiaires sans section ou   ");
 
                         //MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
                     }
@@ -514,6 +514,43 @@ namespace gtsco2.forms.GTSecetion
         private void seccomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void GTsectionfrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sec1checkEdit1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Sec1checkEdit1.Checked == true)
+            {
+                pro1checkEdit1.Checked = false;
+            }
+        }
+
+        private void pro1checkEdit1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(pro1checkEdit1.Checked == true)
+            {
+                Sec1checkEdit1.Checked = false;
+            }
+        }
+
+        private void pro2checkEdit3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (pro2checkEdit3.Checked == true)
+            {
+                Sec2checkEdit2.Checked = false;
+            }
+        }
+
+        private void Sec2checkEdit2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Sec2checkEdit2.Checked ==true)
+            {
+                pro2checkEdit3.Checked = false;
+            }
         }
     }
 }

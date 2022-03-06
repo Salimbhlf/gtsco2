@@ -87,6 +87,7 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -98,7 +99,6 @@ namespace gtsco2.forms.GTSecetion
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -144,6 +144,7 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -155,7 +156,6 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -249,6 +249,7 @@ namespace gtsco2.forms.GTSecetion
             this.pro2checkEdit3.Size = new System.Drawing.Size(396, 20);
             this.pro2checkEdit3.StyleController = this.layoutControl4;
             this.pro2checkEdit3.TabIndex = 13;
+            this.pro2checkEdit3.CheckedChanged += new System.EventHandler(this.pro2checkEdit3_CheckedChanged);
             // 
             // Sec2checkEdit2
             // 
@@ -258,6 +259,7 @@ namespace gtsco2.forms.GTSecetion
             this.Sec2checkEdit2.Size = new System.Drawing.Size(21, 20);
             this.Sec2checkEdit2.StyleController = this.layoutControl4;
             this.Sec2checkEdit2.TabIndex = 12;
+            this.Sec2checkEdit2.CheckedChanged += new System.EventHandler(this.Sec2checkEdit2_CheckedChanged);
             // 
             // labelControl6
             // 
@@ -583,6 +585,7 @@ namespace gtsco2.forms.GTSecetion
             this.pro1checkEdit1.Size = new System.Drawing.Size(395, 20);
             this.pro1checkEdit1.StyleController = this.layoutControl1;
             this.pro1checkEdit1.TabIndex = 13;
+            this.pro1checkEdit1.CheckedChanged += new System.EventHandler(this.pro1checkEdit1_CheckedChanged);
             // 
             // Sec1checkEdit1
             // 
@@ -592,6 +595,7 @@ namespace gtsco2.forms.GTSecetion
             this.Sec1checkEdit1.Size = new System.Drawing.Size(20, 20);
             this.Sec1checkEdit1.StyleController = this.layoutControl1;
             this.Sec1checkEdit1.TabIndex = 12;
+            this.Sec1checkEdit1.CheckedChanged += new System.EventHandler(this.Sec1checkEdit1_CheckedChanged);
             // 
             // labelControl3
             // 
@@ -816,6 +820,11 @@ namespace gtsco2.forms.GTSecetion
             this.gridView1.OptionsSelection.MultiSelect = true;
             this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             // 
+            // gridView3
+            // 
+            this.gridView3.GridControl = this.gridControl1;
+            this.gridView3.Name = "gridView3";
+            // 
             // panelControl5
             // 
             this.panelControl5.Appearance.BackColor = System.Drawing.Color.White;
@@ -930,11 +939,6 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
-            // gridView3
-            // 
-            this.gridView3.GridControl = this.gridControl1;
-            this.gridView3.Name = "gridView3";
-            // 
             // GTsectionfrm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -946,6 +950,7 @@ namespace gtsco2.forms.GTSecetion
             this.Name = "GTsectionfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion des sections";
+            this.Load += new System.EventHandler(this.GTsectionfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -991,6 +996,7 @@ namespace gtsco2.forms.GTSecetion
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
@@ -1002,7 +1008,6 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             this.ResumeLayout(false);
 
         }

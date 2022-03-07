@@ -40,7 +40,11 @@ namespace gtsco2.forms
 
         private void simpleButton9_Click(object sender, EventArgs e)
         {
-
+           
+                Cursor = Cursors.WaitCursor; // change cursor to hourglass type
+               
+                Cursor = Cursors.Arrow; // change cursor to normal type
+            
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
@@ -72,7 +76,10 @@ namespace gtsco2.forms
         {
            using( GTSecetion.GTsectionfrm frm = new GTSecetion.GTsectionfrm())
             {
+
                 
+                
+
                 frm.ShowDialog();
 
             }

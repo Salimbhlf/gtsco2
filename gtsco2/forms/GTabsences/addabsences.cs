@@ -535,7 +535,7 @@ namespace gtsco2.forms.GTabsences
         private void closeButton7_Click(object sender, EventArgs e)
         {
             add();            
-            gridControl1.ShowPrintPreview();
+            gridControl1.ShowRibbonPrintPreview();
         }
 
 

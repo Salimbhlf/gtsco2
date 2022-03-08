@@ -183,7 +183,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
                 gridControl1.DataSource = null;
                 gridView1.Columns.Clear();
-                if (datee > new DateTime(1000, 01, 01))
+                if (datee > new DateTime(1000, 01, 01) )
                 {
                     using (DataTable dt = new DataTable())
                     {
@@ -191,7 +191,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
                         dt.Columns.Add("Numro_STG");
 
                         dt.Columns.Add("Nom_et_Prenom");
-
+                        dt.Columns.Add("Nombre_dabsences_par_séance");
                         dt.Columns.Add("Absences_non_justfer");
                         dt.Columns.Add("Absences_justef");
                         dt.Columns.Add("OBS");
@@ -239,6 +239,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
                                 {
                                     if (row.Numro_STG == stg.Num_STG)
                                     {
+                                        string absseance = (row.number_Justfer + row.number_a).ToString();
                                         string avrt = "/";
                                         string NBJ = "";
                                         int st = row.number_a / 4;
@@ -261,7 +262,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
                                         }
                                         avrt = Avert(st);
 
-                                        dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, NBJ, jt, avrt);
+                                        dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom,absseance, NBJ, jt, avrt);
                                         a = "ez";
                                         a = "g";
                                         break;
@@ -395,6 +396,22 @@ namespace gtsco2.forms.GTabsences.PVabsences
         }
 
 
+        public void printPvABS()
+        {
+
+            string idsec = seccomboBox.Text;
+            string idsem = smstcomboBox13.Text;
+            string promo = promocomboBox11.Text;
+            string sp = spcomboBox1.Text;
+           string idannee = anneecomboBox141.Text;
+            DateTime dateeD = dateEditdébut.DateTime;
+            DateTime dateeF = dateEditdébut.DateTime;
+            object dt = gridControl1.DataSource;
+            Formlaire_saisie_absence.etat_absence.reportabsonce.print(dt,idsec,idsem,dateeD,dateeF,promo ,sp);
+
+
+        }
+
 
         private void seccomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -404,6 +421,12 @@ namespace gtsco2.forms.GTabsences.PVabsences
         private void promocomboBox11_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            printPvABS();
+            
         }
     }
 }

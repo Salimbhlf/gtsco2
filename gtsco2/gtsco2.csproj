@@ -166,10 +166,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\Formulaire\Add_abbsence\Etat d%27absence.cs">
+    <Compile Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\etat_absence\Etat d%27absence.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="forms\Formulaire\Add_abbsence\Etat d%27absence.Designer.cs">
+    <Compile Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\etat_absence\Etat d%27absence.Designer.cs">
       <DependentUpon>Etat d%27absence.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Formulaire\certficat\certificat_de_scolarite.cs">
@@ -246,7 +246,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="forms\Formulaire\Add_abbsence\Etat d%27absence.resx">
+    <EmbeddedResource Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\etat_absence\Etat d%27absence.resx">
       <DependentUpon>Etat d%27absence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Formulaire\certficat\certificat_de_scolarite.resx">

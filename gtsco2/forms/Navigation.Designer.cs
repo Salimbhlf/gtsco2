@@ -43,7 +43,6 @@ namespace gtsco2.forms
             this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
-            this.progressPanel1 = new DevExpress.XtraWaitForm.ProgressPanel();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -73,7 +72,6 @@ namespace gtsco2.forms
             this.flowLayoutPanel1.Controls.Add(this.simpleButton10);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton11);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton12);
-            this.flowLayoutPanel1.Controls.Add(this.progressPanel1);
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
@@ -351,17 +349,6 @@ namespace gtsco2.forms
             this.simpleButton12.Text = "Evaluation";
             this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
             // 
-            // progressPanel1
-            // 
-            this.progressPanel1.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.progressPanel1.Appearance.Options.UseBackColor = true;
-            this.progressPanel1.Location = new System.Drawing.Point(3, 282);
-            this.progressPanel1.Name = "progressPanel1";
-            this.progressPanel1.Size = new System.Drawing.Size(246, 66);
-            this.progressPanel1.TabIndex = 12;
-            this.progressPanel1.Text = "progressPanel1";
-            this.progressPanel1.Visible = false;
-            // 
             // Navigation
             // 
             this.Appearance.BackColor = System.Drawing.Color.Black;
@@ -394,6 +381,5 @@ namespace gtsco2.forms
         private DevExpress.XtraEditors.SimpleButton simpleButton10;
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
-        private DevExpress.XtraWaitForm.ProgressPanel progressPanel1;
     }
 }

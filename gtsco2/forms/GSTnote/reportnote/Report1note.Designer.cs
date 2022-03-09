@@ -147,7 +147,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.Text = "xrTableCell1";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell1.Weight = 2.3286390210099324D;
+            this.xrTableCell1.Weight = 2.5956574034203941D;
             // 
             // xrTableCell2
             // 
@@ -160,7 +160,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "xrTableCell2";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell2.Weight = 3.0944836387540886D;
+            this.xrTableCell2.Weight = 2.8274652563436269D;
             // 
             // xrTableCell3
             // 
@@ -354,7 +354,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "Numero stagiaire";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell9.Weight = 1.3216039260885717D;
+            this.xrTableCell9.Weight = 1.3428549783293036D;
             // 
             // xrTableCell10
             // 
@@ -367,7 +367,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "Nom / Prenom";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell10.Weight = 1.4840314157588528D;
+            this.xrTableCell10.Weight = 1.4627803635181211D;
             // 
             // xrTableCell11
             // 

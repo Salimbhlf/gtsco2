@@ -405,7 +405,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             string sp = spcomboBox1.Text;
            string idannee = anneecomboBox141.Text;
             DateTime dateeD = dateEditdébut.DateTime;
-            DateTime dateeF = dateEditdébut.DateTime;
+            DateTime dateeF = dateEditfin.DateTime;
             object dt = gridControl1.DataSource;
             Formlaire_saisie_absence.etat_absence.reportabsonce.print(dt,idsec,idsem,dateeD,dateeF,promo ,sp);
 

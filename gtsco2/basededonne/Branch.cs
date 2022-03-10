@@ -22,6 +22,9 @@ namespace gtsco2.basededonne
         [StringLength(30)]
         public string Designation_Branche { get; set; }
 
+        [StringLength(30)]
+        public string Designation_Branche_ar { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Specialite> Specialites { get; set; }
     }

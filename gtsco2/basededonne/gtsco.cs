@@ -14,29 +14,30 @@ namespace gtsco2.basededonne
 
         public virtual DbSet<Absence> Absences { get; set; }
         public virtual DbSet<annee_scolaire> annee_scolaire { get; set; }
+        public virtual DbSet<Avenant_contrat_prorogation> Avenant_contrat_prorogation { get; set; }
         public virtual DbSet<Branch> Branches { get; set; }
+        public virtual DbSet<Code_Postal> Code_Postal { get; set; }
+        public virtual DbSet<Commune> Communes { get; set; }
         public virtual DbSet<Contract_avenant_changement> Contract_avenant_changement { get; set; }
-        public virtual DbSet<Contrat_changement_employeur> Contrat_changement_employeur { get; set; }
         public virtual DbSet<Decision> Decisions { get; set; }
         public virtual DbSet<Employeur> Employeurs { get; set; }
+        public virtual DbSet<Enseignant> Enseignants { get; set; }
         public virtual DbSet<Etablissement> Etablissements { get; set; }
         public virtual DbSet<Evaluation> Evaluations { get; set; }
         public virtual DbSet<Maitre_Apprentissage> Maitre_Apprentissage { get; set; }
         public virtual DbSet<Mode_formation> Mode_formation { get; set; }
         public virtual DbSet<Module> Modules { get; set; }
-        public virtual DbSet<Opation> Opations { get; set; }
+        public virtual DbSet<Option> Options { get; set; }
         public virtual DbSet<Proce_verbal_delibation> Proce_verbal_delibation { get; set; }
-        public virtual DbSet<prof> profs { get; set; }
         public virtual DbSet<Promo> Promoes { get; set; }
         public virtual DbSet<Section> Sections { get; set; }
         public virtual DbSet<Semestre> Semestres { get; set; }
-        public virtual DbSet<semestre_annee> semestre_annee { get; set; }
-        public virtual DbSet<soiver_stg> soiver_stg { get; set; }
         public virtual DbSet<Specialite> Specialites { get; set; }
         public virtual DbSet<Stagiair> Stagiairs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<Suiver_stagiaire> Suiver_stagiaire { get; set; }
         public virtual DbSet<Transferer> Transferers { get; set; }
         public virtual DbSet<tuteur> tuteurs { get; set; }
+        public virtual DbSet<Willaya> Willayas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -49,7 +50,7 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<annee_scolaire>()
-                .Property(e => e.disination)
+                .Property(e => e.Designation)
                 .IsUnicode(false);
 
             modelBuilder.Entity<annee_scolaire>()
@@ -59,13 +60,12 @@ namespace gtsco2.basededonne
             modelBuilder.Entity<annee_scolaire>()
                 .HasMany(e => e.Evaluations)
                 .WithRequired(e => e.annee_scolaire)
+                .HasForeignKey(e => e.ID_Semestre)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<annee_scolaire>()
-                .HasMany(e => e.semestre_annee)
-                .WithRequired(e => e.annee_scolaire)
-                .HasForeignKey(e => e.id_annee_sco)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<Avenant_contrat_prorogation>()
+                .Property(e => e.Num_stg)
+                .IsUnicode(false);
 
             modelBuilder.Entity<Branch>()
                 .Property(e => e.Code_Branche)
@@ -80,12 +80,36 @@ namespace gtsco2.basededonne
                 .WithOptional(e => e.Branch)
                 .HasForeignKey(e => e.ID_Branche);
 
-            modelBuilder.Entity<Contract_avenant_changement>()
-                .Property(e => e.num_stg)
+            modelBuilder.Entity<Code_Postal>()
+                .Property(e => e.Post_adresse)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Contrat_changement_employeur>()
-                .Property(e => e.Num_stg)
+            modelBuilder.Entity<Code_Postal>()
+                .HasMany(e => e.Employeurs)
+                .WithOptional(e => e.Code_Postal)
+                .HasForeignKey(e => e.Code_Postal_Emp);
+
+            modelBuilder.Entity<Code_Postal>()
+                .HasMany(e => e.Etablissements)
+                .WithOptional(e => e.Code_Postal)
+                .HasForeignKey(e => e.Code_Postal_EATB);
+
+            modelBuilder.Entity<Code_Postal>()
+                .HasMany(e => e.Stagiairs)
+                .WithOptional(e => e.Code_Postal1)
+                .HasForeignKey(e => e.Code_postal);
+
+            modelBuilder.Entity<Commune>()
+                .Property(e => e.Daira_name)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Commune>()
+                .HasMany(e => e.Maitre_Apprentissage)
+                .WithOptional(e => e.Commune)
+                .HasForeignKey(e => e.Commune_Maitre_Apprentissage);
+
+            modelBuilder.Entity<Contract_avenant_changement>()
+                .Property(e => e.num_stg)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Decision>()
@@ -109,15 +133,15 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<Employeur>()
+                .Property(e => e.Nom_Emp_ar)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Employeur>()
                 .Property(e => e.Statut_Emp)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Employeur>()
                 .Property(e => e.Adresse_Emp)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Employeur>()
-                .Property(e => e.Commune_Emp)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Employeur>()
@@ -133,13 +157,36 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<Employeur>()
-                .HasMany(e => e.Contract_avenant_changement)
+                .HasMany(e => e.Avenant_contrat_prorogation)
                 .WithRequired(e => e.Employeur)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Employeur>()
-                .HasMany(e => e.Contrat_changement_employeur)
+                .HasMany(e => e.Contract_avenant_changement)
                 .WithRequired(e => e.Employeur)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Enseignant>()
+                .Property(e => e.Nom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Enseignant>()
+                .Property(e => e.prenom)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Enseignant>()
+                .Property(e => e.Specialite)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Enseignant>()
+                .HasMany(e => e.Evaluations)
+                .WithOptional(e => e.Enseignant1)
+                .HasForeignKey(e => e.Enseignant);
+
+            modelBuilder.Entity<Enseignant>()
+                .HasMany(e => e.Suiver_stagiaire)
+                .WithRequired(e => e.Enseignant1)
+                .HasForeignKey(e => e.Enseignant)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Etablissement>()
@@ -148,10 +195,6 @@ namespace gtsco2.basededonne
 
             modelBuilder.Entity<Etablissement>()
                 .Property(e => e.Mail_ETAB)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Etablissement>()
-                .Property(e => e.Commune_ETAB)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Etablissement>()
@@ -197,19 +240,7 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<Maitre_Apprentissage>()
-                .Property(e => e.Commune_Maitre_Apprentissage)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Maitre_Apprentissage>()
-                .Property(e => e.Daira_Maitre_Apprentissage)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Maitre_Apprentissage>()
-                .Property(e => e.Wilaya_Maitre_Apprentissage)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Maitre_Apprentissage>()
-                .Property(e => e.Mail_Maitre_Apprentissage)
+                .Property(e => e.E_Mail_Maitre_Apprentissage)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Mode_formation>()
@@ -219,6 +250,11 @@ namespace gtsco2.basededonne
             modelBuilder.Entity<Mode_formation>()
                 .Property(e => e.Désignation_Mode_Formation)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<Mode_formation>()
+                .HasMany(e => e.Enseignants)
+                .WithOptional(e => e.Mode_formation1)
+                .HasForeignKey(e => e.Mode_Formation);
 
             modelBuilder.Entity<Mode_formation>()
                 .HasMany(e => e.Promoes)
@@ -234,31 +270,13 @@ namespace gtsco2.basededonne
                 .WithRequired(e => e.Module)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Opation>()
+            modelBuilder.Entity<Option>()
                 .Property(e => e.Code_Option)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Opation>()
+            modelBuilder.Entity<Option>()
                 .Property(e => e.Designation_Option)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<prof>()
-                .Property(e => e.nom)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<prof>()
-                .Property(e => e.prenom)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<prof>()
-                .Property(e => e.spesalite)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<prof>()
-                .HasMany(e => e.soiver_stg)
-                .WithRequired(e => e.prof1)
-                .HasForeignKey(e => e.prof)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Promo>()
                 .Property(e => e.Code_Promo)
@@ -287,23 +305,10 @@ namespace gtsco2.basededonne
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Semestre>()
-                .HasMany(e => e.semestre_annee)
-                .WithRequired(e => e.Semestre)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Semestre>()
-                .HasMany(e => e.soiver_stg)
+                .HasMany(e => e.Suiver_stagiaire)
                 .WithRequired(e => e.Semestre1)
                 .HasForeignKey(e => e.semestre)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<soiver_stg>()
-                .Property(e => e.num_stg)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<soiver_stg>()
-                .Property(e => e.OBSERV_FORMAT)
-                .IsUnicode(false);
 
             modelBuilder.Entity<Specialite>()
                 .Property(e => e.Code_SP)
@@ -318,7 +323,7 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<Specialite>()
-                .HasMany(e => e.Opations)
+                .HasMany(e => e.Options)
                 .WithOptional(e => e.Specialite1)
                 .HasForeignKey(e => e.Specialite);
 
@@ -335,19 +340,19 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<Stagiair>()
-                .Property(e => e.Lieu_Naissance)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Stagiair>()
                 .Property(e => e.Adresse)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Stagiair>()
-                .Property(e => e.Commune)
+                .Property(e => e.Sexe)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Stagiair>()
-                .Property(e => e.Sexe)
+                .Property(e => e.Nationalité_STG)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Stagiair>()
+                .Property(e => e.Observation_handicape)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Stagiair>()
@@ -387,20 +392,16 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<Stagiair>()
-                .Property(e => e.Nationalité_STG)
+                .Property(e => e.Num_Diplome_STG)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Stagiair>()
-                .Property(e => e.Num_Diplom_STG)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Stagiair>()
-                .HasMany(e => e.Contract_avenant_changement)
+                .HasMany(e => e.Avenant_contrat_prorogation)
                 .WithRequired(e => e.Stagiair)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Stagiair>()
-                .HasMany(e => e.Contrat_changement_employeur)
+                .HasMany(e => e.Contract_avenant_changement)
                 .WithRequired(e => e.Stagiair)
                 .WillCascadeOnDelete(false);
 
@@ -410,7 +411,7 @@ namespace gtsco2.basededonne
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Stagiair>()
-                .HasMany(e => e.soiver_stg)
+                .HasMany(e => e.Suiver_stagiaire)
                 .WithRequired(e => e.Stagiair)
                 .WillCascadeOnDelete(false);
 
@@ -418,6 +419,14 @@ namespace gtsco2.basededonne
                 .HasMany(e => e.Transferers)
                 .WithRequired(e => e.Stagiair)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Suiver_stagiaire>()
+                .Property(e => e.num_stg)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Suiver_stagiaire>()
+                .Property(e => e.OBSERV_FORMAT)
+                .IsUnicode(false);
 
             modelBuilder.Entity<Transferer>()
                 .Property(e => e.num_stg)
@@ -428,7 +437,7 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<Transferer>()
-                .Property(e => e.prinom_directeur)
+                .Property(e => e.prenom_directeur)
                 .IsUnicode(false);
 
             modelBuilder.Entity<tuteur>()
@@ -440,16 +449,21 @@ namespace gtsco2.basededonne
                 .IsUnicode(false);
 
             modelBuilder.Entity<tuteur>()
-                .Property(e => e.aderisse)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<tuteur>()
-                .Property(e => e.comunne)
+                .Property(e => e.adresse)
                 .IsUnicode(false);
 
             modelBuilder.Entity<tuteur>()
                 .Property(e => e.telephone)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<Willaya>()
+                .Property(e => e.Wilaya_name__fr_)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Willaya>()
+                .HasMany(e => e.Communes)
+                .WithOptional(e => e.Willaya)
+                .HasForeignKey(e => e.Code_Willaya);
         }
     }
 }

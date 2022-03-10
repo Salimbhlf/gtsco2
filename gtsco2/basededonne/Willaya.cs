@@ -6,28 +6,28 @@ namespace gtsco2.basededonne
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("prof")]
-    public partial class prof
+    [Table("Willaya")]
+    public partial class Willaya
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public prof()
+        public Willaya()
         {
-            soiver_stg = new HashSet<soiver_stg>();
+            Communes = new HashSet<Commune>();
         }
 
         [Key]
-        public int id_prof { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Wilaya_Code { get; set; }
 
+        [Column("Wilaya_name _ar")]
         [StringLength(50)]
-        public string nom { get; set; }
+        public string Wilaya_name__ar { get; set; }
 
+        [Column("Wilaya_name _fr]")]
         [StringLength(50)]
-        public string prenom { get; set; }
-
-        [StringLength(50)]
-        public string spesalite { get; set; }
+        public string Wilaya_name__fr_ { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<soiver_stg> soiver_stg { get; set; }
+        public virtual ICollection<Commune> Communes { get; set; }
     }
 }

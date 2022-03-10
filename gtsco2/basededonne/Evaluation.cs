@@ -29,6 +29,8 @@ namespace gtsco2.basededonne
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID_Module { get; set; }
 
+        public int? Enseignant { get; set; }
+
         public double? Control_1 { get; set; }
 
         public double? Control_2 { get; set; }
@@ -37,7 +39,13 @@ namespace gtsco2.basededonne
 
         public double? Rattrapage { get; set; }
 
+        public double? Moyenne_Module_AvRt { get; set; }
+
+        public double? Moyenne_Module_ApRt { get; set; }
+
         public virtual annee_scolaire annee_scolaire { get; set; }
+
+        public virtual Enseignant Enseignant1 { get; set; }
 
         public virtual Module Module { get; set; }
 

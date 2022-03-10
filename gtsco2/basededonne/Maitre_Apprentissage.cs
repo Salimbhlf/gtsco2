@@ -34,31 +34,26 @@ namespace gtsco2.basededonne
         [StringLength(30)]
         public string Poste_Maitre_Apprentissage { get; set; }
 
-        public int? Ancienté_Métier_Maitre_Apprentissage { get; set; }
+        public int? Anciennté_Métier_Maitre_Apprentissage { get; set; }
 
-        public int? Ancienté_Entriprise_Maitre_Apprentissage { get; set; }
+        public int? Anciennté_Entriprise_Maitre_Apprentissage { get; set; }
 
         [StringLength(3)]
         public string Ayant_Suivie_Stage { get; set; }
 
-        public int? Nbr_Stgiaire_Former { get; set; }
+        public int? Nbr_Stagiaire_Former { get; set; }
 
         [StringLength(80)]
         public string Adresse_Maitre_Apprentissage { get; set; }
 
-        [StringLength(40)]
-        public string Commune_Maitre_Apprentissage { get; set; }
-
-        [StringLength(40)]
-        public string Daira_Maitre_Apprentissage { get; set; }
+        public int? Commune_Maitre_Apprentissage { get; set; }
 
         [StringLength(30)]
-        public string Wilaya_Maitre_Apprentissage { get; set; }
-
-        [StringLength(30)]
-        public string Mail_Maitre_Apprentissage { get; set; }
+        public string E_Mail_Maitre_Apprentissage { get; set; }
 
         public int? Tel_Maitre_Apprentissage { get; set; }
+
+        public virtual Commune Commune { get; set; }
 
         public virtual Employeur Employeur { get; set; }
 

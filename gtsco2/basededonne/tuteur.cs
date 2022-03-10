@@ -25,12 +25,9 @@ namespace gtsco2.basededonne
         public string prenom { get; set; }
 
         [StringLength(50)]
-        public string aderisse { get; set; }
+        public string adresse { get; set; }
 
         public int? code_postal { get; set; }
-
-        [StringLength(50)]
-        public string comunne { get; set; }
 
         [StringLength(50)]
         public string telephone { get; set; }

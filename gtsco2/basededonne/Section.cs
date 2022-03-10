@@ -28,7 +28,7 @@ namespace gtsco2.basededonne
 
         public virtual Mode_formation Mode_formation { get; set; }
 
-        public virtual Opation Opation { get; set; }
+        public virtual Option Option { get; set; }
 
         public virtual Promo Promo { get; set; }
 

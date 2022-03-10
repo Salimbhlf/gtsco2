@@ -13,14 +13,14 @@ namespace gtsco2.basededonne
         {
             Absences = new HashSet<Absence>();
             Evaluations = new HashSet<Evaluation>();
-            semestre_annee = new HashSet<semestre_annee>();
         }
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID_Année_SCO { get; set; }
 
         [StringLength(50)]
-        public string disination { get; set; }
+        public string Designation { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? DATE_D_Année_SCO { get; set; }
@@ -36,8 +36,5 @@ namespace gtsco2.basededonne
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Evaluation> Evaluations { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<semestre_annee> semestre_annee { get; set; }
     }
 }

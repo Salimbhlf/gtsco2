@@ -6,11 +6,10 @@ namespace gtsco2.basededonne
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Opation")]
-    public partial class Opation
+    public partial class Option
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Opation()
+        public Option()
         {
             Modules = new HashSet<Module>();
             Promoes = new HashSet<Promo>();
@@ -25,6 +24,9 @@ namespace gtsco2.basededonne
 
         [StringLength(50)]
         public string Designation_Option { get; set; }
+
+        [StringLength(50)]
+        public string Designation_Option_ar { get; set; }
 
         public int? Specialite { get; set; }
 

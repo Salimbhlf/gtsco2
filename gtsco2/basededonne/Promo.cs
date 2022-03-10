@@ -26,6 +26,9 @@ namespace gtsco2.basededonne
         [StringLength(30)]
         public string Diplome { get; set; }
 
+        [StringLength(50)]
+        public string Diplome_ar { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime? DATE_D_Formation { get; set; }
 
@@ -41,7 +44,7 @@ namespace gtsco2.basededonne
 
         public virtual Mode_formation Mode_formation { get; set; }
 
-        public virtual Opation Opation { get; set; }
+        public virtual Option Option { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Section> Sections { get; set; }

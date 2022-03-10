@@ -13,11 +13,11 @@ namespace gtsco2.basededonne
         public Stagiair()
         {
             Absences = new HashSet<Absence>();
+            Avenant_contrat_prorogation = new HashSet<Avenant_contrat_prorogation>();
             Contract_avenant_changement = new HashSet<Contract_avenant_changement>();
-            Contrat_changement_employeur = new HashSet<Contrat_changement_employeur>();
             Decisions = new HashSet<Decision>();
             Evaluations = new HashSet<Evaluation>();
-            soiver_stg = new HashSet<soiver_stg>();
+            Suiver_stagiaire = new HashSet<Suiver_stagiaire>();
             Transferers = new HashSet<Transferer>();
         }
 
@@ -29,24 +29,39 @@ namespace gtsco2.basededonne
         public string Nom { get; set; }
 
         [StringLength(25)]
+        public string Nom_ar { get; set; }
+
+        [StringLength(25)]
         public string Prenom { get; set; }
+
+        [StringLength(25)]
+        public string Prenom_ar { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? Date_de_Naissance { get; set; }
 
-        [StringLength(40)]
-        public string Lieu_Naissance { get; set; }
+        public int? Lieu_Naissance { get; set; }
 
         [StringLength(80)]
         public string Adresse { get; set; }
 
-        public int? Code_postal { get; set; }
+        [StringLength(80)]
+        public string Adresse_ar { get; set; }
 
-        [StringLength(50)]
-        public string Commune { get; set; }
+        public int? Code_postal { get; set; }
 
         [StringLength(5)]
         public string Sexe { get; set; }
+
+        public bool? Etranger { get; set; }
+
+        [StringLength(25)]
+        public string Nationalité_STG { get; set; }
+
+        public bool? Handicape { get; set; }
+
+        [StringLength(100)]
+        public string Observation_handicape { get; set; }
 
         public int? Telephone { get; set; }
 
@@ -58,13 +73,25 @@ namespace gtsco2.basededonne
         public string Nivo_SCO { get; set; }
 
         [StringLength(25)]
+        public string Nivo_SCO_ar { get; set; }
+
+        [StringLength(25)]
         public string Prenom_Père_STG { get; set; }
+
+        [StringLength(25)]
+        public string Prenom_Père_STG_ar { get; set; }
 
         [StringLength(25)]
         public string Nom_Mère_STG { get; set; }
 
         [StringLength(25)]
+        public string Nom_Mère_STG_ar { get; set; }
+
+        [StringLength(25)]
         public string Prenom_Mère_STG { get; set; }
+
+        [StringLength(25)]
+        public string Prenom_Mère_STG_ar { get; set; }
 
         public int? Nbr_Frère_STG { get; set; }
 
@@ -80,11 +107,8 @@ namespace gtsco2.basededonne
         [StringLength(25)]
         public string Profession_Mère_STG { get; set; }
 
-        [StringLength(25)]
-        public string Nationalité_STG { get; set; }
-
         [StringLength(20)]
-        public string Num_Diplom_STG { get; set; }
+        public string Num_Diplome_STG { get; set; }
 
         public int? ID_Emp { get; set; }
 
@@ -100,16 +124,6 @@ namespace gtsco2.basededonne
 
         public int? ID_ETAB { get; set; }
 
-        public int? Num_Avenant_Cont_Prorogation { get; set; }
-
-        public int? Num_Validation_Cont_Prorogation { get; set; }
-
-        [Column(TypeName = "date")]
-        public DateTime? Date_D_Prorgation { get; set; }
-
-        [Column(TypeName = "date")]
-        public DateTime? Date_F_Prorogation { get; set; }
-
         public int? Section { get; set; }
 
         public int? id_tuteur { get; set; }
@@ -123,10 +137,12 @@ namespace gtsco2.basededonne
         public virtual ICollection<Absence> Absences { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Contract_avenant_changement> Contract_avenant_changement { get; set; }
+        public virtual ICollection<Avenant_contrat_prorogation> Avenant_contrat_prorogation { get; set; }
+
+        public virtual Code_Postal Code_Postal1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Contrat_changement_employeur> Contrat_changement_employeur { get; set; }
+        public virtual ICollection<Contract_avenant_changement> Contract_avenant_changement { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Decision> Decisions { get; set; }
@@ -144,10 +160,10 @@ namespace gtsco2.basededonne
 
         public virtual Section Section1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<soiver_stg> soiver_stg { get; set; }
-
         public virtual tuteur tuteur { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Suiver_stagiaire> Suiver_stagiaire { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Transferer> Transferers { get; set; }

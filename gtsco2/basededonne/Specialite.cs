@@ -12,7 +12,7 @@ namespace gtsco2.basededonne
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Specialite()
         {
-            Opations = new HashSet<Opation>();
+            Options = new HashSet<Option>();
         }
 
         [Key]
@@ -24,12 +24,17 @@ namespace gtsco2.basededonne
         [StringLength(50)]
         public string Designation_SP { get; set; }
 
+        [StringLength(50)]
+        public string Designation_SP_AR { get; set; }
+
+        public int? Niveau_qualification { get; set; }
+
         [StringLength(15)]
         public string ID_Branche { get; set; }
 
         public virtual Branch Branch { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Opation> Opations { get; set; }
+        public virtual ICollection<Option> Options { get; set; }
     }
 }

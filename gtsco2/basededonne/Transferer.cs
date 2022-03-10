@@ -23,7 +23,7 @@ namespace gtsco2.basededonne
         public string nom_directeur { get; set; }
 
         [StringLength(50)]
-        public string prinom_directeur { get; set; }
+        public string prenom_directeur { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? date_transfert { get; set; }

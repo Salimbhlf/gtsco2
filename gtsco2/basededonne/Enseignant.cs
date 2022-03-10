@@ -6,29 +6,37 @@ namespace gtsco2.basededonne
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Semestre")]
-    public partial class Semestre
+    [Table("Enseignant")]
+    public partial class Enseignant
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Semestre()
+        public Enseignant()
         {
-            Absences = new HashSet<Absence>();
-            Decisions = new HashSet<Decision>();
             Evaluations = new HashSet<Evaluation>();
             Suiver_stagiaire = new HashSet<Suiver_stagiaire>();
         }
 
         [Key]
-        public int ID_Semestre { get; set; }
+        public int id_Enseignant { get; set; }
 
-        [StringLength(25)]
-        public string Designation_Semestre { get; set; }
+        [StringLength(50)]
+        public string Nom { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Absence> Absences { get; set; }
+        [StringLength(50)]
+        public string Nom_ar { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Decision> Decisions { get; set; }
+        [StringLength(50)]
+        public string prenom { get; set; }
+
+        [StringLength(50)]
+        public string Prenom_ar { get; set; }
+
+        [StringLength(50)]
+        public string Specialite { get; set; }
+
+        public int? Mode_Formation { get; set; }
+
+        public virtual Mode_formation Mode_formation1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Evaluation> Evaluations { get; set; }

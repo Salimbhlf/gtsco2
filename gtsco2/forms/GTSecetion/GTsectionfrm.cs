@@ -45,7 +45,7 @@ namespace gtsco2.forms.GTSecetion
             modecombobox17.ValueMember = dt.Columns[0].ColumnName;
 
 
-            var qur = from sp in shared.bd.Opations select new { id = sp.ID_Option, nom = sp.Code_Option };
+            var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
 
             spcomboBox1.DataSource = qur.ToList();
             spcomboBox1.DisplayMember = "nom";
@@ -56,7 +56,7 @@ namespace gtsco2.forms.GTSecetion
             spcomboBox113.ValueMember = "id";
 
             var qur1 = from pr in shared.bd.Promoes
-                       join po in shared.bd.Opations on pr.ID_Option equals po.ID_Option
+                       join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
                        join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
                        select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
 
@@ -71,7 +71,7 @@ namespace gtsco2.forms.GTSecetion
 
 
             var qur3 = from sec in shared.bd.Sections
-                       join po in shared.bd.Opations on sec.ID_Option equals po.ID_Option
+                       join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
                        join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
                        join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
                        select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };

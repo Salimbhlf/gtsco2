@@ -137,30 +137,31 @@
   <ItemGroup>
     <Compile Include="basededonne\Absence.cs" />
     <Compile Include="basededonne\annee_scolaire.cs" />
+    <Compile Include="basededonne\Avenant_contrat_prorogation.cs" />
     <Compile Include="basededonne\Branch.cs" />
+    <Compile Include="basededonne\Code_Postal.cs" />
+    <Compile Include="basededonne\Commune.cs" />
     <Compile Include="basededonne\Contract_avenant_changement.cs" />
-    <Compile Include="basededonne\Contrat_changement_employeur.cs" />
     <Compile Include="basededonne\Decision.cs" />
     <Compile Include="basededonne\Employeur.cs" />
+    <Compile Include="basededonne\Enseignant.cs" />
     <Compile Include="basededonne\Etablissement.cs" />
     <Compile Include="basededonne\Evaluation.cs" />
     <Compile Include="basededonne\gtsco.cs" />
     <Compile Include="basededonne\Maitre_Apprentissage.cs" />
     <Compile Include="basededonne\Mode_formation.cs" />
     <Compile Include="basededonne\Module.cs" />
-    <Compile Include="basededonne\Opation.cs" />
+    <Compile Include="basededonne\Option.cs" />
     <Compile Include="basededonne\Proce_verbal_delibation.cs" />
-    <Compile Include="basededonne\prof.cs" />
     <Compile Include="basededonne\Promo.cs" />
     <Compile Include="basededonne\Section.cs" />
     <Compile Include="basededonne\Semestre.cs" />
-    <Compile Include="basededonne\semestre_annee.cs" />
-    <Compile Include="basededonne\soiver_stg.cs" />
     <Compile Include="basededonne\Specialite.cs" />
     <Compile Include="basededonne\Stagiair.cs" />
-    <Compile Include="basededonne\sysdiagram.cs" />
+    <Compile Include="basededonne\Suiver_stagiaire.cs" />
     <Compile Include="basededonne\Transferer.cs" />
     <Compile Include="basededonne\tuteur.cs" />
+    <Compile Include="basededonne\Willaya.cs" />
     <Compile Include="classe\shared.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

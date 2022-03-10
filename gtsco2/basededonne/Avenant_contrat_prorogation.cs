@@ -6,7 +6,7 @@ namespace gtsco2.basededonne
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Contrat_changement_employeur
+    public partial class Avenant_contrat_prorogation
     {
         [Key]
         [Column(Order = 0)]
@@ -22,6 +22,8 @@ namespace gtsco2.basededonne
 
         [Column(TypeName = "date")]
         public DateTime? date_validation_cont_proro { get; set; }
+
+        public int? Duree { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? date_dbt_proro { get; set; }

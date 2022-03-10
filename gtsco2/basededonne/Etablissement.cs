@@ -20,8 +20,11 @@ namespace gtsco2.basededonne
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID_ETAB { get; set; }
 
-        [StringLength(25)]
+        [StringLength(100)]
         public string Nom_ETAB { get; set; }
+
+        [StringLength(100)]
+        public string Nom_ETAB_ar { get; set; }
 
         public int? Tél_ETAB { get; set; }
 
@@ -32,11 +35,13 @@ namespace gtsco2.basededonne
 
         public int? Code_Postal_EATB { get; set; }
 
-        [StringLength(40)]
-        public string Commune_ETAB { get; set; }
-
         [StringLength(80)]
         public string Adresse_ETAB { get; set; }
+
+        [StringLength(80)]
+        public string Adresse_ETAB_ar { get; set; }
+
+        public virtual Code_Postal Code_Postal { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Stagiair> Stagiairs { get; set; }

@@ -30,6 +30,6 @@ namespace gtsco2.basededonne
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Evaluation> Evaluations { get; set; }
 
-        public virtual Opation Opation { get; set; }
+        public virtual Option Option { get; set; }
     }
 }

@@ -12,8 +12,8 @@ namespace gtsco2.basededonne
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Employeur()
         {
+            Avenant_contrat_prorogation = new HashSet<Avenant_contrat_prorogation>();
             Contract_avenant_changement = new HashSet<Contract_avenant_changement>();
-            Contrat_changement_employeur = new HashSet<Contrat_changement_employeur>();
             Maitre_Apprentissage = new HashSet<Maitre_Apprentissage>();
             Stagiairs = new HashSet<Stagiair>();
         }
@@ -27,8 +27,11 @@ namespace gtsco2.basededonne
         [StringLength(6)]
         public string Nature_Emp { get; set; }
 
-        [StringLength(25)]
+        [StringLength(50)]
         public string Nom_Emp { get; set; }
+
+        [StringLength(50)]
+        public string Nom_Emp_ar { get; set; }
 
         [StringLength(25)]
         public string Statut_Emp { get; set; }
@@ -36,10 +39,10 @@ namespace gtsco2.basededonne
         [StringLength(80)]
         public string Adresse_Emp { get; set; }
 
-        public int? Code_Postal_Emp { get; set; }
+        [StringLength(80)]
+        public string Adresse_Emp_ar { get; set; }
 
-        [StringLength(50)]
-        public string Commune_Emp { get; set; }
+        public int? Code_Postal_Emp { get; set; }
 
         public int? Tel_Emp { get; set; }
 
@@ -55,10 +58,12 @@ namespace gtsco2.basededonne
         public string Secteur_Activité_Emp { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Contract_avenant_changement> Contract_avenant_changement { get; set; }
+        public virtual ICollection<Avenant_contrat_prorogation> Avenant_contrat_prorogation { get; set; }
+
+        public virtual Code_Postal Code_Postal { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Contrat_changement_employeur> Contrat_changement_employeur { get; set; }
+        public virtual ICollection<Contract_avenant_changement> Contract_avenant_changement { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Maitre_Apprentissage> Maitre_Apprentissage { get; set; }

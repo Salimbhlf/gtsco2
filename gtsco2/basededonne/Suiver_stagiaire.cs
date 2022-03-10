@@ -6,7 +6,7 @@ namespace gtsco2.basededonne
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class soiver_stg
+    public partial class Suiver_stagiaire
     {
         [Key]
         [Column(Order = 0)]
@@ -16,7 +16,7 @@ namespace gtsco2.basededonne
         [Key]
         [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int prof { get; set; }
+        public int Enseignant { get; set; }
 
         [Key]
         [Column(Order = 2)]
@@ -29,7 +29,7 @@ namespace gtsco2.basededonne
         [StringLength(50)]
         public string OBSERV_FORMAT { get; set; }
 
-        public virtual prof prof1 { get; set; }
+        public virtual Enseignant Enseignant1 { get; set; }
 
         public virtual Semestre Semestre1 { get; set; }
 

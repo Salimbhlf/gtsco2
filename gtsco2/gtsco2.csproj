@@ -175,6 +175,12 @@
     <Compile Include="forms\Fenêtre connexion.Designer.cs">
       <DependentUpon>Fenêtre connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\GSTnote\reportNoteAvicMoy\Report1noteAvicMoy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\GSTnote\reportNoteAvicMoy\Report1noteAvicMoy.Designer.cs">
+      <DependentUpon>Report1noteAvicMoy.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\etat_absence\Etat d%27absence.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -257,6 +263,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\Fenêtre connexion.resx">
       <DependentUpon>Fenêtre connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\GSTnote\reportNoteAvicMoy\Report1noteAvicMoy.resx">
+      <DependentUpon>Report1noteAvicMoy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\GTabsences\PVabsences\Formlaire_saisie_absence\etat_absence\Etat d%27absence.resx">
       <DependentUpon>Etat d%27absence.cs</DependentUpon>

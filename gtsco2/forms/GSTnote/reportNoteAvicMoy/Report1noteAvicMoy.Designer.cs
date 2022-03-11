@@ -1,7 +1,7 @@
 ﻿
-namespace gtsco2.forms.GSTnote.reportnote
+namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
 {
-    partial class Report1note
+    partial class Report1noteAvicMoy
     {
         /// <summary>
         /// Required designer variable.
@@ -37,13 +37,17 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.cellnumrostg = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Cell2numetprenom = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Cell3control1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Cell4control2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Cell5exam = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Cell17moyAVenR = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Cellratrapage = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Cell18moynaprer = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
@@ -57,7 +61,9 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell15 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
@@ -71,10 +77,8 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.pSECTION = new DevExpress.XtraReports.Parameters.Parameter();
             this.pAnnee = new DevExpress.XtraReports.Parameters.Parameter();
             this.pModule = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
-            this.pEnseignant = new DevExpress.XtraReports.Parameters.Parameter();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
+            this.pEnseignant = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
@@ -106,19 +110,21 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(710.0001F, 25F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(710F, 25F);
             this.xrTable1.StylePriority.UseBorders = false;
             // 
             // xrTableRow1
             // 
             this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell7,
-            this.xrTableCell1,
-            this.xrTableCell2,
-            this.xrTableCell3,
-            this.xrTableCell4,
-            this.xrTableCell5,
-            this.xrTableCell6});
+            this.cellnumrostg,
+            this.Cell2numetprenom,
+            this.Cell3control1,
+            this.Cell4control2,
+            this.Cell5exam,
+            this.Cell17moyAVenR,
+            this.Cellratrapage,
+            this.Cell18moynaprer});
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 11.5D;
             // 
@@ -139,75 +145,97 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell7.Weight = 0.78814544349817028D;
             // 
-            // xrTableCell1
+            // cellnumrostg
             // 
-            this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.cellnumrostg.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Numro_STG]")});
-            this.xrTableCell1.Multiline = true;
-            this.xrTableCell1.Name = "xrTableCell1";
-            this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
-            this.xrTableCell1.StylePriority.UsePadding = false;
-            this.xrTableCell1.StylePriority.UseTextAlignment = false;
-            this.xrTableCell1.Text = "xrTableCell1";
-            this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell1.Weight = 2.5956574034203941D;
+            this.cellnumrostg.Multiline = true;
+            this.cellnumrostg.Name = "cellnumrostg";
+            this.cellnumrostg.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
+            this.cellnumrostg.StylePriority.UsePadding = false;
+            this.cellnumrostg.StylePriority.UseTextAlignment = false;
+            this.cellnumrostg.Text = "cellnumrostg";
+            this.cellnumrostg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.cellnumrostg.Weight = 2.2131807257074012D;
             // 
-            // xrTableCell2
+            // Cell2numetprenom
             // 
-            this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.Cell2numetprenom.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Nom_Prenom]")});
-            this.xrTableCell2.Multiline = true;
-            this.xrTableCell2.Name = "xrTableCell2";
-            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
-            this.xrTableCell2.StylePriority.UsePadding = false;
-            this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            this.xrTableCell2.Text = "xrTableCell2";
-            this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell2.Weight = 2.8274652563436269D;
+            this.Cell2numetprenom.Multiline = true;
+            this.Cell2numetprenom.Name = "Cell2numetprenom";
+            this.Cell2numetprenom.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
+            this.Cell2numetprenom.StylePriority.UsePadding = false;
+            this.Cell2numetprenom.StylePriority.UseTextAlignment = false;
+            this.Cell2numetprenom.Text = "Cell2numetprenom";
+            this.Cell2numetprenom.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.Cell2numetprenom.Weight = 3.8625777830872803D;
             // 
-            // xrTableCell3
+            // Cell3control1
             // 
-            this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.Cell3control1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Control_1]")});
-            this.xrTableCell3.Multiline = true;
-            this.xrTableCell3.Name = "xrTableCell3";
-            this.xrTableCell3.StylePriority.UseTextAlignment = false;
-            this.xrTableCell3.Text = "xrTableCell3";
-            this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell3.Weight = 1.9647890792813085D;
+            this.Cell3control1.Multiline = true;
+            this.Cell3control1.Name = "Cell3control1";
+            this.Cell3control1.StylePriority.UseTextAlignment = false;
+            this.Cell3control1.Text = "Cell3control1";
+            this.Cell3control1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.Cell3control1.Weight = 2D;
             // 
-            // xrTableCell4
+            // Cell4control2
             // 
-            this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.Cell4control2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Control_2]")});
-            this.xrTableCell4.Multiline = true;
-            this.xrTableCell4.Name = "xrTableCell4";
-            this.xrTableCell4.StylePriority.UseTextAlignment = false;
-            this.xrTableCell4.Text = "xrTableCell4";
-            this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell4.Weight = 2.0352093733486663D;
+            this.Cell4control2.Multiline = true;
+            this.Cell4control2.Name = "Cell4control2";
+            this.Cell4control2.StylePriority.UseTextAlignment = false;
+            this.Cell4control2.Text = "Cell4control2";
+            this.Cell4control2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.Cell4control2.Weight = 1.5662973319808655D;
             // 
-            // xrTableCell5
+            // Cell5exam
             // 
-            this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.Cell5exam.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Exam]")});
-            this.xrTableCell5.Multiline = true;
-            this.xrTableCell5.Name = "xrTableCell5";
-            this.xrTableCell5.StylePriority.UseTextAlignment = false;
-            this.xrTableCell5.Text = "xrTableCell5";
-            this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell5.Weight = 2.000001031580017D;
+            this.Cell5exam.Multiline = true;
+            this.Cell5exam.Name = "Cell5exam";
+            this.Cell5exam.StylePriority.UseTextAlignment = false;
+            this.Cell5exam.Text = "Cell5exam";
+            this.Cell5exam.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.Cell5exam.Weight = 1.8225744094680723D;
             // 
-            // xrTableCell6
+            // Cell17moyAVenR
             // 
-            this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.Cell17moyAVenR.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[MoyAvenR]")});
+            this.Cell17moyAVenR.Multiline = true;
+            this.Cell17moyAVenR.Name = "Cell17moyAVenR";
+            this.Cell17moyAVenR.StylePriority.UseTextAlignment = false;
+            this.Cell17moyAVenR.Text = "Cell17moyAVenR";
+            this.Cell17moyAVenR.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.Cell17moyAVenR.Weight = 2.000001031580017D;
+            // 
+            // Cellratrapage
+            // 
+            this.Cellratrapage.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Rattarpage]")});
-            this.xrTableCell6.Multiline = true;
-            this.xrTableCell6.Name = "xrTableCell6";
-            this.xrTableCell6.StylePriority.UseTextAlignment = false;
-            this.xrTableCell6.Text = "xrTableCell6";
-            this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell6.Weight = 1.7887324125278172D;
+            this.Cellratrapage.Multiline = true;
+            this.Cellratrapage.Name = "Cellratrapage";
+            this.Cellratrapage.StylePriority.UseTextAlignment = false;
+            this.Cellratrapage.Text = "Cellratrapage";
+            this.Cellratrapage.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.Cellratrapage.Weight = 2.0543161916331609D;
+            // 
+            // Cell18moynaprer
+            // 
+            this.Cell18moynaprer.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[MoyApresR]")});
+            this.Cell18moynaprer.Multiline = true;
+            this.Cell18moynaprer.Name = "Cell18moynaprer";
+            this.Cell18moynaprer.StylePriority.UseTextAlignment = false;
+            this.Cell18moynaprer.Text = "Cell18moynaprer";
+            this.Cell18moynaprer.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.Cell18moynaprer.Weight = 1.5231486334224735D;
             // 
             // PageHeader
             // 
@@ -229,16 +257,45 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.PageHeader.HeightF = 149.9584F;
             this.PageHeader.Name = "PageHeader";
             // 
+            // xrLabel11
+            // 
+            this.xrLabel11.Font = new System.Drawing.Font("Arial", 11F);
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(414.643F, 88.62503F);
+            this.xrLabel11.Multiline = true;
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(93.27374F, 23.00001F);
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.StylePriority.UseTextAlignment = false;
+            this.xrLabel11.Text = "Enseignant:";
+            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel12
+            // 
+            this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?pEnseignant")});
+            this.xrLabel12.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(507.9167F, 88.625F);
+            this.xrLabel12.Multiline = true;
+            this.xrLabel12.Name = "xrLabel12";
+            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
+            this.xrLabel12.SizeF = new System.Drawing.SizeF(181.1609F, 23F);
+            this.xrLabel12.StylePriority.UseFont = false;
+            this.xrLabel12.StylePriority.UsePadding = false;
+            this.xrLabel12.StylePriority.UseTextAlignment = false;
+            this.xrLabel12.Text = "xrLabel13";
+            this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // xrLabel13
             // 
             this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?pModule")});
             this.xrLabel13.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(250.6251F, 88.62503F);
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(477.143F, 65.62502F);
             this.xrLabel13.Multiline = true;
             this.xrLabel13.Name = "xrLabel13";
             this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
-            this.xrLabel13.SizeF = new System.Drawing.SizeF(164.0178F, 23F);
+            this.xrLabel13.SizeF = new System.Drawing.SizeF(211.9345F, 23F);
             this.xrLabel13.StylePriority.UseFont = false;
             this.xrLabel13.StylePriority.UsePadding = false;
             this.xrLabel13.StylePriority.UseTextAlignment = false;
@@ -250,7 +307,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?pSECTION")});
             this.xrLabel10.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(407.9167F, 65.62502F);
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(250.6251F, 88.625F);
             this.xrLabel10.Multiline = true;
             this.xrLabel10.Name = "xrLabel10";
             this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
@@ -314,12 +371,12 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 124.9584F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 111.6251F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(710F, 25F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(710F, 38.33335F);
             this.xrTable2.StylePriority.UseBorders = false;
             // 
             // xrTableRow2
@@ -331,7 +388,9 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell11,
             this.xrTableCell12,
             this.xrTableCell13,
-            this.xrTableCell14});
+            this.xrTableCell16,
+            this.xrTableCell14,
+            this.xrTableCell15});
             this.xrTableRow2.Name = "xrTableRow2";
             this.xrTableRow2.Weight = 1D;
             // 
@@ -359,7 +418,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "Numero stagiaire";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell9.Weight = 1.3428549783293036D;
+            this.xrTableCell9.Weight = 1.1265403861861918D;
             // 
             // xrTableCell10
             // 
@@ -372,7 +431,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "Nom / Prenom";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell10.Weight = 1.4627803635181211D;
+            this.xrTableCell10.Weight = 1.9745584636055675D;
             // 
             // xrTableCell11
             // 
@@ -385,7 +444,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "Control 1";
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell11.Weight = 1.0164766343058986D;
+            this.xrTableCell11.Weight = 1.0011864828567547D;
             // 
             // xrTableCell12
             // 
@@ -398,7 +457,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "control 2";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell12.Weight = 1.0529094272865172D;
+            this.xrTableCell12.Weight = 0.80069487402831663D;
             // 
             // xrTableCell13
             // 
@@ -411,7 +470,20 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.Text = "Examen";
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell13.Weight = 1.0346935503090509D;
+            this.xrTableCell13.Weight = 1.0067347470720607D;
+            // 
+            // xrTableCell16
+            // 
+            this.xrTableCell16.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell16.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell16.Multiline = true;
+            this.xrTableCell16.Name = "xrTableCell16";
+            this.xrTableCell16.StylePriority.UseBackColor = false;
+            this.xrTableCell16.StylePriority.UseFont = false;
+            this.xrTableCell16.StylePriority.UseTextAlignment = false;
+            this.xrTableCell16.Text = "Moyenne";
+            this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell16.Weight = 0.92539439699435233D;
             // 
             // xrTableCell14
             // 
@@ -424,12 +496,25 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "Rattrapage";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell14.Weight = 0.92539439699435233D;
+            this.xrTableCell14.Weight = 1.0721519625079117D;
+            // 
+            // xrTableCell15
+            // 
+            this.xrTableCell15.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell15.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell15.Multiline = true;
+            this.xrTableCell15.Name = "xrTableCell15";
+            this.xrTableCell15.StylePriority.UseBackColor = false;
+            this.xrTableCell15.StylePriority.UseFont = false;
+            this.xrTableCell15.StylePriority.UseTextAlignment = false;
+            this.xrTableCell15.Text = "Moyenne";
+            this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell15.Weight = 0.778636831480793D;
             // 
             // xrLabel6
             // 
             this.xrLabel6.Font = new System.Drawing.Font("Arial", 11F);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(188.125F, 88.62503F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(414.643F, 65.62502F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -442,7 +527,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             // xrLabel5
             // 
             this.xrLabel5.Font = new System.Drawing.Font("Arial", 11F);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(345.4166F, 65.62502F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(188.125F, 88.625F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -546,46 +631,17 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.pModule.Description = "Parameter1";
             this.pModule.Name = "pModule";
             // 
-            // xrLabel11
+            // objectDataSource1
             // 
-            this.xrLabel11.Font = new System.Drawing.Font("Arial", 11F);
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(414.643F, 88.62503F);
-            this.xrLabel11.Multiline = true;
-            this.xrLabel11.Name = "xrLabel11";
-            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(93.27374F, 23.00001F);
-            this.xrLabel11.StylePriority.UseFont = false;
-            this.xrLabel11.StylePriority.UseTextAlignment = false;
-            this.xrLabel11.Text = "Enseignant:";
-            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel12
-            // 
-            this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?pEnseignant")});
-            this.xrLabel12.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(507.9167F, 88.625F);
-            this.xrLabel12.Multiline = true;
-            this.xrLabel12.Name = "xrLabel12";
-            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
-            this.xrLabel12.SizeF = new System.Drawing.SizeF(181.1609F, 23F);
-            this.xrLabel12.StylePriority.UseFont = false;
-            this.xrLabel12.StylePriority.UsePadding = false;
-            this.xrLabel12.StylePriority.UseTextAlignment = false;
-            this.xrLabel12.Text = "xrLabel13";
-            this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.objectDataSource1.DataSource = typeof(gtsco2.forms.eva);
+            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // pEnseignant
             // 
             this.pEnseignant.Description = "pEnseignant";
             this.pEnseignant.Name = "pEnseignant";
             // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataSource = typeof(gtsco2.forms.eva);
-            this.objectDataSource1.Name = "objectDataSource1";
-            // 
-            // Report1note
+            // Report1noteAvicMoy
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
@@ -621,12 +677,12 @@ namespace gtsco2.forms.GSTnote.reportnote
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell6;
+        private DevExpress.XtraReports.UI.XRTableCell cellnumrostg;
+        private DevExpress.XtraReports.UI.XRTableCell Cell2numetprenom;
+        private DevExpress.XtraReports.UI.XRTableCell Cell3control1;
+        private DevExpress.XtraReports.UI.XRTableCell Cell4control2;
+        private DevExpress.XtraReports.UI.XRTableCell Cell5exam;
+        private DevExpress.XtraReports.UI.XRTableCell Cellratrapage;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
@@ -658,5 +714,9 @@ namespace gtsco2.forms.GSTnote.reportnote
         private DevExpress.XtraReports.UI.XRLabel xrLabel11;
         private DevExpress.XtraReports.UI.XRLabel xrLabel12;
         private DevExpress.XtraReports.Parameters.Parameter pEnseignant;
+        private DevExpress.XtraReports.UI.XRTableCell Cell17moyAVenR;
+        private DevExpress.XtraReports.UI.XRTableCell Cell18moynaprer;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell16;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell15;
     }
 }

@@ -43,6 +43,7 @@ namespace gtsco2.forms
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.comboBox1Enseignant = new System.Windows.Forms.ComboBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.NUBEREF = new DevExpress.XtraEditors.LabelControl();
             this.avenrtp = new DevExpress.XtraEditors.CheckEdit();
@@ -68,6 +69,7 @@ namespace gtsco2.forms
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -93,6 +95,7 @@ namespace gtsco2.forms
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -285,6 +288,7 @@ namespace gtsco2.forms
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.comboBox1Enseignant);
             this.layoutControl1.Controls.Add(this.labelControl3);
             this.layoutControl1.Controls.Add(this.NUBEREF);
             this.layoutControl1.Controls.Add(this.avenrtp);
@@ -305,6 +309,14 @@ namespace gtsco2.forms
             this.layoutControl1.Size = new System.Drawing.Size(184, 514);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // comboBox1Enseignant
+            // 
+            this.comboBox1Enseignant.FormattingEnabled = true;
+            this.comboBox1Enseignant.Location = new System.Drawing.Point(91, 179);
+            this.comboBox1Enseignant.Name = "comboBox1Enseignant";
+            this.comboBox1Enseignant.Size = new System.Drawing.Size(89, 21);
+            this.comboBox1Enseignant.TabIndex = 12;
             // 
             // labelControl3
             // 
@@ -331,7 +343,7 @@ namespace gtsco2.forms
             // avenrtp
             // 
             this.avenrtp.EditValue = true;
-            this.avenrtp.Location = new System.Drawing.Point(4, 179);
+            this.avenrtp.Location = new System.Drawing.Point(4, 204);
             this.avenrtp.Name = "avenrtp";
             this.avenrtp.Properties.Caption = "Avant Ratrapage";
             this.avenrtp.Size = new System.Drawing.Size(176, 20);
@@ -342,7 +354,7 @@ namespace gtsco2.forms
             // simpleButton2
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(4, 204);
+            this.simpleButton2.Location = new System.Drawing.Point(4, 229);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton2.Size = new System.Drawing.Size(176, 36);
@@ -400,6 +412,8 @@ namespace gtsco2.forms
             this.modecombobox.Name = "modecombobox";
             this.modecombobox.Size = new System.Drawing.Size(89, 21);
             this.modecombobox.TabIndex = 4;
+            
+            this.modecombobox.SelectionChangeCommitted += new System.EventHandler(this.modecombobox_SelectionChangeCommitted);
             // 
             // anneecomboBox141
             // 
@@ -426,7 +440,8 @@ namespace gtsco2.forms
             this.layoutControlItem9,
             this.simpleSeparator1,
             this.layoutControlItem12,
-            this.layoutControlItem11});
+            this.layoutControlItem11,
+            this.layoutControlItem10});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
             this.Root.Size = new System.Drawing.Size(184, 514);
@@ -435,9 +450,9 @@ namespace gtsco2.forms
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 240);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 265);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(180, 247);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(180, 222);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
@@ -507,7 +522,7 @@ namespace gtsco2.forms
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.simpleButton2;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 200);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 225);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(180, 40);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
@@ -527,7 +542,7 @@ namespace gtsco2.forms
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.avenrtp;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 175);
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 200);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.Size = new System.Drawing.Size(180, 24);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
@@ -536,7 +551,7 @@ namespace gtsco2.forms
             // simpleSeparator1
             // 
             this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(0, 199);
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 224);
             this.simpleSeparator1.Name = "simpleSeparator1";
             this.simpleSeparator1.Size = new System.Drawing.Size(180, 1);
             // 
@@ -557,6 +572,15 @@ namespace gtsco2.forms
             this.layoutControlItem11.Size = new System.Drawing.Size(101, 23);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
+            // 
+            // layoutControlItem10
+            // 
+            this.layoutControlItem10.Control = this.comboBox1Enseignant;
+            this.layoutControlItem10.Location = new System.Drawing.Point(0, 175);
+            this.layoutControlItem10.Name = "layoutControlItem10";
+            this.layoutControlItem10.Size = new System.Drawing.Size(180, 25);
+            this.layoutControlItem10.Text = "Enseignant";
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(75, 13);
             // 
             // panelControl3
             // 
@@ -619,6 +643,7 @@ namespace gtsco2.forms
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -669,5 +694,7 @@ namespace gtsco2.forms
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private System.Windows.Forms.ComboBox comboBox1Enseignant;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
     }
 }

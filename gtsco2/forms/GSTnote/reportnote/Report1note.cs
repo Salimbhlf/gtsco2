@@ -15,8 +15,9 @@ namespace gtsco2.forms.GSTnote.reportnote
           
         }
 
-        public void load(string anne, string sp, string promo , string section, string module, List<forms.eva> data)
+        public void load(string anne, string sp, string promo , string section, string module, List<forms.eva> data,string ens)
         {
+            pEnseignant.Value = ens;
             pAnnee.Value = anne;
             pModule.Value = module;
             pPromo.Value = promo;

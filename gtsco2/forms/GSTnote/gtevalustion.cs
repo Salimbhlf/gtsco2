@@ -22,67 +22,97 @@ namespace gtsco2.forms
 
             try
             {
-
-                List<basededonne.Mode_formation> list = shared.bd.Mode_formation.ToList();
-
-                DataTable dt = new DataTable();
-                dt.Columns.Add("id");
-                dt.Columns.Add("disc");
-
-                foreach (basededonne.Mode_formation ro in list)
+                try
                 {
-                    dt.Rows.Add(ro.Code_Mode_Formation, ro.Désignation_Mode_Formation);
+                    var qure = from mod in shared.bd.Mode_formation select new { id = mod.ID_Mode_Formation, nom = mod.Désignation_Mode_Formation };
+
+                   
+
+                    modecombobox.DataSource = qure.ToList();
+                    modecombobox.DisplayMember = "nom";
+                    modecombobox.ValueMember = "id";
                 }
-                modecombobox.DataSource = dt;
-                modecombobox.DisplayMember = dt.Columns[1].ColumnName;
-                modecombobox.ValueMember = dt.Columns[0].ColumnName;
+                catch { }
 
 
-                var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
+                try
+                {
+                    var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
 
-                spcomboBox1.DataSource = qur.ToList();
-                spcomboBox1.DisplayMember = "nom";
-                spcomboBox1.ValueMember = "id";
+                    spcomboBox1.DataSource = qur.ToList();
+                    spcomboBox1.DisplayMember = "nom";
+                    spcomboBox1.ValueMember = "id";
+                }
+                catch { }
 
-                var qur1 = from pr in shared.bd.Promoes
-                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
-                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
-                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+                try
+                {
+                    var qur1 = from pr in shared.bd.Promoes
+                               join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                               select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
 
-                promocomboBox11.DataSource = qur1.ToList();
-                promocomboBox11.DisplayMember = "nom";
-                promocomboBox11.ValueMember = "id";
+                    promocomboBox11.DataSource = qur1.ToList();
+                    promocomboBox11.DisplayMember = "nom";
+                    promocomboBox11.ValueMember = "id";
+                }
+                catch { }
 
-                var qur2 = from sec in shared.bd.Semestres select new { id = sec.ID_Semestre, nom = sec.Designation_Semestre };
+                try
+                {
+                    var qur2 = from sec in shared.bd.Semestres select new { id = sec.ID_Semestre, nom = sec.Designation_Semestre };
 
 
-                smstcomboBox13.DataSource = qur2.ToList();
-                smstcomboBox13.DisplayMember = "nom";
-                smstcomboBox13.ValueMember = "id";
+                    smstcomboBox13.DataSource = qur2.ToList();
+                    smstcomboBox13.DisplayMember = "nom";
+                    smstcomboBox13.ValueMember = "id";
+                }
+                catch { }
 
-                var qur3 = from sec in shared.bd.Sections
-                           join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
-                           join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
-                           join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
-                           select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
+                try
+                {
+                    var qur3 = from sec in shared.bd.Sections
+                               join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
+                               join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
+                               select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
 
-                seccomboBox.DataSource = qur3.ToList();
-                seccomboBox.DisplayMember = "nom";
-                seccomboBox.ValueMember = "id";
+                    seccomboBox.DataSource = qur3.ToList();
+                    seccomboBox.DisplayMember = "nom";
+                    seccomboBox.ValueMember = "id";
+                }
+                catch { }
 
-                var qur4 = from mod in shared.bd.Modules
-                           select new { id = mod.ID_Module, nom = mod.Designation_Module };
+                try
+                {
+                    var qur4 = from mod in shared.bd.Modules
+                               select new { id = mod.ID_Module, nom = mod.Designation_Module };
 
-                modulcomboBox14.DataSource = qur4.ToList();
-                modulcomboBox14.DisplayMember = "nom";
-                modulcomboBox14.ValueMember = "id";
+                    modulcomboBox14.DataSource = qur4.ToList();
+                    modulcomboBox14.DisplayMember = "nom";
+                    modulcomboBox14.ValueMember = "id";
+                }
+                catch { }
 
-                var qur5 = from ann in shared.bd.annee_scolaire
-                           select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) };
-                anneecomboBox141.DataSource = qur5.ToList();
-                anneecomboBox141.DisplayMember = "nom";
-                anneecomboBox141.ValueMember = "id";
+                try
+                {
+                    var qur5 = from ann in shared.bd.annee_scolaire
+                               select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) };
+                    anneecomboBox141.DataSource = qur5.ToList();
+                    anneecomboBox141.DisplayMember = "nom";
+                    anneecomboBox141.ValueMember = "id";
+                }
+                catch { }
 
+                try
+                {
+                    var qur6 = from ens in shared.bd.Enseignants
+                               select new { id = ens.id_Enseignant, nom = (ens.Nom + " " + ens.prenom) };
+                    comboBox1Enseignant.DataSource = qur6.ToList();
+                    comboBox1Enseignant.DisplayMember = "nom";
+                    comboBox1Enseignant.ValueMember = "id";
+                }
+                catch { }
 
 
             }
@@ -121,24 +151,29 @@ namespace gtsco2.forms
         private void spcomboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
             try
-            {
-                int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
-                promocomboBox11.DataSource = null;
-                promocomboBox11.Items.Clear();
+            {int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
+                try
+                {
+                    
+                    promocomboBox11.DataSource = null;
+                    promocomboBox11.Items.Clear();
 
-                var qur1 = from pr in shared.bd.Promoes
-                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
-                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
-                           where pr.ID_Option == sp
-                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+                    var qur1 = from pr in shared.bd.Promoes
+                               join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                               where pr.ID_Option == sp
+                               select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
 
-                promocomboBox11.DataSource = qur1.ToList();
-                promocomboBox11.DisplayMember = "nom";
-                promocomboBox11.ValueMember = "id";
-
-                modulcomboBox14.DataSource = null;
-                modulcomboBox14.Items.Clear();
-
+                    promocomboBox11.DataSource = qur1.ToList();
+                    promocomboBox11.DisplayMember = "nom";
+                    promocomboBox11.ValueMember = "id";
+                }
+                catch { }
+                try
+                {
+                    modulcomboBox14.DataSource = null;
+                    modulcomboBox14.Items.Clear();
+                
 
                 var qur4 = from mod in shared.bd.Modules
                            where mod.ID_Option == sp
@@ -147,6 +182,8 @@ namespace gtsco2.forms
                 modulcomboBox14.DataSource = qur4.ToList();
                 modulcomboBox14.DisplayMember = "nom";
                 modulcomboBox14.ValueMember = "id";
+                }
+                catch { }
             }
             catch (Exception ex)
             {
@@ -223,7 +260,7 @@ namespace gtsco2.forms
                                 join stg in shared.bd.Stagiairs on evalue.Num_STG equals stg.Num_STG
                                 where stg.Section == idsec && evalue.ID_Module == idmod && evalue.ID_Semestre == idsem && evalue.ID_Année_SCO == idannee
 
-                                select new { Numro_STG = stg.Num_STG, Nom_et_Prenom = (stg.Nom + " " + stg.Prenom), Control1 = evalue.Control_1, Control2 = evalue.Control_2, Exam = evalue.Exam, Rattrapage = evalue.Rattrapage }).ToList();
+                                select new { Numro_STG = stg.Num_STG, Nom_et_Prenom = (stg.Nom + " " + stg.Prenom), Control1 = evalue.Control_1, Control2 = evalue.Control_2, Exam = evalue.Exam, Rattrapage = evalue.Rattrapage, evalue.Enseignant }).ToList();
                     string a = "r";
                     foreach (basededonne.Stagiair stg in shared.bd.Stagiairs)
                     {
@@ -235,7 +272,13 @@ namespace gtsco2.forms
                             {
                                 if (rege.Numro_STG == stg.Num_STG)
                                 {
+                                  
                                     dt.Rows.Add(rege.Numro_STG, rege.Nom_et_Prenom, rege.Control1, rege.Control2, rege.Exam, rege.Rattrapage);
+                                    try
+                                    {
+                                        comboBox1Enseignant.SelectedValue = rege.Enseignant;
+                                    }
+                                    catch { }
                                     a = "g";
                                     break;
                                 }
@@ -347,7 +390,11 @@ namespace gtsco2.forms
                             ev.ID_Module = idmod;
                             ev.Num_STG = row["Numro_STG"].ToString();
                             ev.ID_Semestre = idsem;
-
+                            if (comboBox1Enseignant.SelectedValue != null)
+                            {
+                                ev.Enseignant = int.Parse(comboBox1Enseignant.SelectedValue.ToString());
+                            }
+                            
 
                             if (row["Control1"].ToString() != "" )
                             {
@@ -462,7 +509,7 @@ namespace gtsco2.forms
 
 
             if (dt != null)
-            {
+            {  
                 foreach (DataRow row in dt.Rows)
                 {
                     eva ev = new eva();
@@ -485,6 +532,17 @@ namespace gtsco2.forms
                     {
                         ev.Rattarpage = row["Rattrapage"].ToString();
                     }
+                    if(dt.Columns.Count > 6)
+                        {
+                            if (row["moyenne_avr"].ToString() != "")
+                            {
+                                ev.Exam = row["moyenne_avr"].ToString();
+                            }
+                            if (row["moyenne_apres_r"].ToString() != "")
+                            {
+                                ev.Rattarpage = row["moyenne_apres_r"].ToString();
+                            }
+                        }
 
                     listeva.Add(ev);
 
@@ -503,27 +561,36 @@ namespace gtsco2.forms
                 var qure = (from op in shared.bd.Options
                             join sp in shared.bd.Specialites on op.Specialite equals sp.ID_Specialité
                             where op.ID_Option == spd
-                            select new { spelite = (sp.Designation_SP + " option " + op.Designation_Option) });
+                            select new { spelite = (sp.Designation_SP + " option: " + op.Designation_Option) });
                 string spe = "";
                 foreach (var qur in qure.ToList())
                 {
                     spe = qur.spelite;
                 }
 
-                  
 
 
+                    string ens = comboBox1Enseignant.Text;
                     string idane = anneecomboBox141.Text;
                 string sec = seccomboBox.Text;
                 string mod = modulcomboBox14.Text;
                 string pro = promocomboBox11.Text;
-                using (print.documintview frm = new print.documintview())
-                {
-                    frm.printdata(idane, spe, pro, sec, mod, listeva);
-                    frm.ShowDialog();
+                //using (print.documintview frm = new print.documintview())
+                //{
+                //    frm.printdata(idane, spe, pro, sec, mod, listeva,ens);
+                //    frm.ShowDialog();
                 
                
-                }
+                //}
+                GSTnote.reportNoteAvicMoy.Report1noteAvicMoy.load(idane, spe, pro, sec, mod, listeva, ens);
+                        
+
+                        
+                        
+
+
+                        
+                    
             }
 
 
@@ -757,6 +824,32 @@ namespace gtsco2.forms
         {
             AffichagheNoteAvicMoyenne();
         }
+
+        private void modecombobox_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            try
+            {
+
+            
+            int selcted = int.Parse(modecombobox.SelectedValue.ToString());
+
+                comboBox1Enseignant.DataSource = null;
+                comboBox1Enseignant.Items.Clear();
+                var qur6 = from ens in shared.bd.Enseignants
+                       where ens.Mode_Formation ==selcted
+                       select new { id = ens.id_Enseignant, nom = (ens.Nom + " " + ens.prenom) };
+            comboBox1Enseignant.DataSource = qur6.ToList();
+            comboBox1Enseignant.DisplayMember = "nom";
+            comboBox1Enseignant.ValueMember = "id";
+            }catch
+            {
+               
+            }
+
+           
+        }
+
+        
     }
     public class eva
     {
@@ -770,6 +863,10 @@ namespace gtsco2.forms
         public string Control_2 { get; set; }
 
         public string Exam { get; set; }
+
+        public string MoyAvenR { get; set; }
+
+        public string MoyApresR { get; set; }
 
         public string Rattarpage { get; set; }
     }

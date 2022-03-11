@@ -60,7 +60,7 @@ namespace gtsco2.basededonne
             modelBuilder.Entity<annee_scolaire>()
                 .HasMany(e => e.Evaluations)
                 .WithRequired(e => e.annee_scolaire)
-                .HasForeignKey(e => e.ID_Semestre)
+                .HasForeignKey(e => e.ID_Année_SCO)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Avenant_contrat_prorogation>()

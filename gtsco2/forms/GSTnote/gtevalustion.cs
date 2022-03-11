@@ -210,10 +210,10 @@ namespace gtsco2.forms
                     dt.Columns.Add("Numro_STG");
 
                     dt.Columns.Add("Nom_et_Prenom");
-                    dt.Columns.Add("Control1");
-                    dt.Columns.Add("Control2");
-                    dt.Columns.Add("Exam");
-                    dt.Columns.Add("Rattrapage");
+                    dt.Columns.Add("Control1",typeof(double));
+                    dt.Columns.Add("Control2",typeof(double));
+                    dt.Columns.Add("Exam",typeof(double));
+                    dt.Columns.Add("Rattrapage",typeof(double));
 
                     idsec = int.Parse(seccomboBox.SelectedValue.ToString());
                     idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
@@ -280,11 +280,20 @@ namespace gtsco2.forms
                 {
                     if (avenrtp.Checked == true)
                     {
+                        if(gridView1.Columns.Count > 6)
+                        {
+                            gridView1.Columns["moyenne_apres_r"].Visible = false;
+                        }
 
                         gridView1.Columns["Rattrapage"].Visible = false;
 
                     }
-                    else { gridView1.Columns["Rattrapage"].Visible = true; }
+                    else {
+                        if (gridView1.Columns.Count > 6)
+                        {
+                            gridView1.Columns["moyenne_apres_r"].Visible = true;
+                        }
+                        gridView1.Columns["Rattrapage"].Visible = true; }
                 }
             }
             catch (Exception ex)
@@ -340,7 +349,7 @@ namespace gtsco2.forms
                             ev.ID_Semestre = idsem;
 
 
-                            if (row["Control1"].ToString() != "")
+                            if (row["Control1"].ToString() != "" )
                             {
                                 ev.Control_1 = float.Parse(row["Control1"].ToString());
                             }
@@ -352,15 +361,44 @@ namespace gtsco2.forms
                             {
                                 ev.Exam = float.Parse(row["Exam"].ToString());
                             }
-                            if (avenrtp.Checked == false)
-                            {
+                            
                                 if (row["Rattrapage"].ToString() != "")
                                 {
                                     ev.Rattrapage = float.Parse(row["Rattrapage"].ToString());
                                 }
+
+                            //calcule de la moyenne de module
+
+                            if (ev.Control_1 != null && ev.Control_2 != null && ev.Exam != null && ev.Rattrapage != null)
+                            {
+
+                                ev.Moyenne_Module_AvRt = (double)((ev.Control_2 + ev.Control_1 + ev.Exam) / 4);
+
+
+                                ev.Moyenne_Module_ApRt = (double)((ev.Control_2 + ev.Control_1 + Math.Max((double)ev.Exam, (double)ev.Rattrapage)) / 4);
+
+
+                            }
+                            else if (ev.Control_1 != null && ev.Control_2 == null && ev.Exam != null && ev.Rattrapage != null)
+                            {
+                                ev.Moyenne_Module_AvRt = (double)((ev.Control_1 + ev.Exam) / 3);
+
+
+                                ev.Moyenne_Module_ApRt = (double)((ev.Control_1 + Math.Max((double)ev.Exam, (double)ev.Rattrapage)) / 3);
+
+                            }
+                            else if (ev.Control_1 != null && ev.Control_2 == null && ev.Exam != null && ev.Rattrapage == null)
+                            {
+                                ev.Moyenne_Module_AvRt = (double)((ev.Control_1 + ev.Exam) / 3);
+                            }
+                            else if (ev.Control_1 != null && ev.Control_2 != null && ev.Exam != null && ev.Rattrapage == null)
+                            {
+                                ev.Moyenne_Module_AvRt = (double)((ev.Control_2 + ev.Control_1 + ev.Exam) / 4);
+
+
                             }
 
-                          
+
                             try
                             {
                                 
@@ -371,6 +409,7 @@ namespace gtsco2.forms
                                     //shared.bd.Entry(ev).State = System.Data.Entity.EntityState.Modified;
                                     shared.bd.Evaluations.AddOrUpdate(ev);
                                     s = "m";
+                                    
                                 }
                                 else
                                 {
@@ -382,17 +421,21 @@ namespace gtsco2.forms
                                 
                                 shared.bd.Evaluations.Add(ev);
                                 s = "b";
+                                
+                                
                             }
                            
                         }
                       
                         if (s == "b")
                         {
-                            MessageBox.Show(" Données mise à jours avec succès ");
+                            MessageBox.Show(" Données Enregistres avec succès ");//donnne enregistre
+                            
                         }
                         else
                         {
                             MessageBox.Show("Données mise à jours avec succès");
+                            
                         }
                     }
                     else { MessageBox.Show("Affichez d'abord le tableau pour ensuite ajouter des données"); }
@@ -489,7 +532,97 @@ namespace gtsco2.forms
 
         }
 
+        // affichage des note avic lure moyenne
+        public void AffichagheNoteAvicMoyenne()
+        {
+            try
+            {
+                gridControl1.DataSource = null;
+                gridView1.Columns.Clear();
+                using (DataTable dt = new DataTable())
+                {
+                    dt.Columns.Add("Numro_STG");
 
+                    dt.Columns.Add("Nom_et_Prenom");
+                    dt.Columns.Add("Control1", typeof(double));
+                    dt.Columns.Add("Control2",typeof(double));
+                    dt.Columns.Add("Exam", typeof(double));
+                    dt.Columns.Add("moyenne_avr", typeof(double));
+                    dt.Columns.Add("Rattrapage", typeof(double));
+                    dt.Columns.Add("moyenne_apres_r", typeof(double));
+
+                    idsec = int.Parse(seccomboBox.SelectedValue.ToString());
+                    idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
+                    idmod = int.Parse(modulcomboBox14.SelectedValue.ToString());
+                    idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
+                    var reqe = (from evalue in shared.bd.Evaluations
+                                join stg in shared.bd.Stagiairs on evalue.Num_STG equals stg.Num_STG
+                                where stg.Section == idsec && evalue.ID_Module == idmod && evalue.ID_Semestre == idsem && evalue.ID_Année_SCO == idannee
+
+                                select new
+                                {
+                                    Numro_STG = stg.Num_STG,
+                                    Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                    Control1 = evalue.Control_1,
+                                    Control2 = evalue.Control_2,
+                                    Exam = evalue.Exam,
+                                    Rattrapage = evalue.Rattrapage,
+                                     evalue.Moyenne_Module_AvRt,
+                                     evalue.Moyenne_Module_ApRt
+                                }).ToList();
+                    string a = "r";
+
+
+                    foreach (basededonne.Stagiair stg in shared.bd.Stagiairs)
+                    {
+
+                        if (stg.Section == idsec)
+                        {
+
+                            foreach (var rege in reqe.ToList())
+                            {
+                                if (rege.Numro_STG == stg.Num_STG)
+                                {
+
+                                    dt.Rows.Add(rege.Numro_STG, rege.Nom_et_Prenom, rege.Control1, rege.Control2, rege.Exam, rege.Moyenne_Module_AvRt, rege.Rattrapage, rege.Moyenne_Module_ApRt);
+                                    a = "g";
+                                    break;
+
+                                }
+                                else
+                                {
+                                    a = "f";
+                                }
+                            }
+                            if (a == "f" || reqe.Count == 0)
+                            {
+                                dt.Rows.Add(stg.Num_STG, (stg.Nom + " " + stg.Prenom));
+                            }
+                        }
+                    }
+                    
+                        NUBEREF.Text = dt.Rows.Count.ToString();
+                        gridControl1.DataSource = dt;
+                        visablrtp();
+                        if (a == "g")
+                        {
+                            gridView1.OptionsBehavior.ReadOnly = true;
+                        }
+                        else
+                        {
+                            edit();
+
+                        }
+
+                    }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+     
 
         public void save()
         {
@@ -618,6 +751,11 @@ namespace gtsco2.forms
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            AffichagheNoteAvicMoyenne();
         }
     }
     public class eva

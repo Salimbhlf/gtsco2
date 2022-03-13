@@ -33,6 +33,18 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence
 
 
             xrTableCell46.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "Nom_et_Prenom"));
+            for(int A = 1; A < 10; A++) {
+                if(xrTableRow3.Cells[A].Text ==null)
+            xrTableRow3.DeleteCell(xrTableRow3.Cells[A]);}
+            //xrTableRow3.DeleteCell(xrTableRow3.Cells[5]);
+            //xrTableRow3.DeleteCell(xrTableRow3.Cells[6]);
+            //xrTableRow3.DeleteCell(xrTableRow3.Cells[7]);
+            //xrTableRow3.DeleteCell(xrTableRow3.Cells[8]);
+            //xrTableRow3.DeleteCell(xrTableRow3.Cells[9]); xrTableRow3.DeleteCell(xrTableRow3.Cells[10]);
+
+
+
+
         }
 
         public static void  load(DateTime dated, DateTime datef, string sem, string section, string promo, string jour1, string jour2, object data)

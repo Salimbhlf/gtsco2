@@ -104,9 +104,9 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence
             this.pSECTION = new DevExpress.XtraReports.Parameters.Parameter();
             this.pAnnee = new DevExpress.XtraReports.Parameters.Parameter();
             this.pModule = new DevExpress.XtraReports.Parameters.Parameter();
-            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.pDated = new DevExpress.XtraReports.Parameters.Parameter();
             this.pDatef = new DevExpress.XtraReports.Parameters.Parameter();
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
@@ -197,7 +197,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence
             // 
             this.xrTableCell45.BackColor = System.Drawing.Color.Silver;
             this.xrTableCell45.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRecordNumber(1)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRecordNumber()\n")});
             this.xrTableCell45.Multiline = true;
             this.xrTableCell45.Name = "xrTableCell45";
             this.xrTableCell45.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
@@ -889,13 +889,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence
             // 
             // pModule
             // 
-            this.pModule.Description = "Parameter1";
             this.pModule.Name = "pModule";
-            // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataSource = typeof(gtsco2.forms.eva);
-            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // pDated
             // 
@@ -910,6 +904,11 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence
             this.pDatef.Name = "pDatef";
             this.pDatef.Type = typeof(System.DateTime);
             this.pDatef.ValueInfo = "2022-03-13";
+            // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(gtsco2.forms.eva);
+            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // Formlaire_saisie_absence
             // 

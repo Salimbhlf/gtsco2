@@ -1,5 +1,5 @@
 ﻿
-namespace gtsco2.forms.GSTnote.formilaredesabsonce
+namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
 {
     partial class frmforimolierdesabsonce
     {
@@ -70,7 +70,7 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(950, 84, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(445, 142);
+            this.layoutControl1.Size = new System.Drawing.Size(486, 145);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -83,20 +83,20 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateDEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateDEdit1.Size = new System.Drawing.Size(208, 20);
+            this.dateDEdit1.Size = new System.Drawing.Size(228, 20);
             this.dateDEdit1.StyleController = this.layoutControl1;
             this.dateDEdit1.TabIndex = 4;
             // 
             // dateFEdit2
             // 
             this.dateFEdit2.EditValue = null;
-            this.dateFEdit2.Location = new System.Drawing.Point(224, 28);
+            this.dateFEdit2.Location = new System.Drawing.Point(244, 28);
             this.dateFEdit2.Name = "dateFEdit2";
             this.dateFEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateFEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateFEdit2.Size = new System.Drawing.Size(209, 20);
+            this.dateFEdit2.Size = new System.Drawing.Size(230, 20);
             this.dateFEdit2.StyleController = this.layoutControl1;
             this.dateFEdit2.TabIndex = 5;
             // 
@@ -113,13 +113,13 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             "marc",
             "land",
             "Jud"});
-            this.comboBoxjour1.Size = new System.Drawing.Size(208, 20);
+            this.comboBoxjour1.Size = new System.Drawing.Size(228, 20);
             this.comboBoxjour1.StyleController = this.layoutControl1;
             this.comboBoxjour1.TabIndex = 6;
             // 
             // comboBoxjour2
             // 
-            this.comboBoxjour2.Location = new System.Drawing.Point(224, 68);
+            this.comboBoxjour2.Location = new System.Drawing.Point(244, 68);
             this.comboBoxjour2.Name = "comboBoxjour2";
             this.comboBoxjour2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -130,16 +130,16 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             "marc",
             "land",
             "Jud"});
-            this.comboBoxjour2.Size = new System.Drawing.Size(209, 20);
+            this.comboBoxjour2.Size = new System.Drawing.Size(230, 20);
             this.comboBoxjour2.StyleController = this.layoutControl1;
             this.comboBoxjour2.TabIndex = 7;
             // 
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(224, 92);
+            this.simpleButton1.Location = new System.Drawing.Point(244, 92);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(209, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(230, 36);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 8;
             this.simpleButton1.Text = "Imprime";
@@ -156,7 +156,7 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             this.layoutControlItem2,
             this.layoutControlItem5});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(445, 142);
+            this.Root.Size = new System.Drawing.Size(486, 145);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -164,7 +164,7 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             this.layoutControlItem1.Control = this.dateDEdit1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(212, 40);
+            this.layoutControlItem1.Size = new System.Drawing.Size(232, 40);
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 13);
             // 
@@ -173,34 +173,34 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             this.layoutControlItem3.Control = this.comboBoxjour1;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 40);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(212, 82);
+            this.layoutControlItem3.Size = new System.Drawing.Size(232, 85);
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(93, 13);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.comboBoxjour2;
-            this.layoutControlItem4.Location = new System.Drawing.Point(212, 40);
+            this.layoutControlItem4.Location = new System.Drawing.Point(232, 40);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(213, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(234, 40);
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(93, 13);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.dateFEdit2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(212, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(232, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(213, 40);
+            this.layoutControlItem2.Size = new System.Drawing.Size(234, 40);
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(93, 13);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.simpleButton1;
-            this.layoutControlItem5.Location = new System.Drawing.Point(212, 80);
+            this.layoutControlItem5.Location = new System.Drawing.Point(232, 80);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(213, 42);
+            this.layoutControlItem5.Size = new System.Drawing.Size(234, 45);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
@@ -208,12 +208,14 @@ namespace gtsco2.forms.GSTnote.formilaredesabsonce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 142);
+            this.ClientSize = new System.Drawing.Size(486, 145);
             this.Controls.Add(this.layoutControl1);
+            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmforimolierdesabsonce.IconOptions.LargeImage")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmforimolierdesabsonce";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmforimolierdesabsonce";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dateDEdit1.Properties.CalendarTimeProperties)).EndInit();

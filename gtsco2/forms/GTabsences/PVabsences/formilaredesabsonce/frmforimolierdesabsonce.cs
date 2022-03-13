@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace gtsco2.forms.GSTnote.formilaredesabsonce
+namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
 {
-    public partial class frmforimolierdesabsonce : Form
+    public partial class frmforimolierdesabsonce : DevExpress.XtraEditors.XtraForm
     {
         public frmforimolierdesabsonce()
         {

@@ -599,6 +599,19 @@ namespace gtsco2.forms
 
         }
 
+        public void printForm_SaiseAbsonce()
+        {
+            string pro = promocomboBox11.Text;
+            string sec = seccomboBox.Text;
+            string semestre = smstcomboBox13.Text;
+
+            GSTnote.formilaredesabsonce.frmforimolierdesabsonce frm = new GSTnote.formilaredesabsonce.frmforimolierdesabsonce();
+
+            frm.print(gridControl1.DataSource,sec,semestre,pro );
+            frm.ShowDialog();
+
+        }
+
         // affichage des note avic lure moyenne
         public void AffichagheNoteAvicMoyenne()
         {
@@ -849,7 +862,10 @@ namespace gtsco2.forms
            
         }
 
-        
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+            printForm_SaiseAbsonce();
+        }
     }
     public class eva
     {

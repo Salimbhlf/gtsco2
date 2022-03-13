@@ -73,6 +73,7 @@ namespace gtsco2.forms
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -110,7 +111,7 @@ namespace gtsco2.forms
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(970, 79);
+            this.panelControl1.Size = new System.Drawing.Size(1090, 79);
             this.panelControl1.TabIndex = 0;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
@@ -124,10 +125,11 @@ namespace gtsco2.forms
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
             this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton8);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(966, 75);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1086, 75);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -412,7 +414,6 @@ namespace gtsco2.forms
             this.modecombobox.Name = "modecombobox";
             this.modecombobox.Size = new System.Drawing.Size(89, 21);
             this.modecombobox.TabIndex = 4;
-            
             this.modecombobox.SelectionChangeCommitted += new System.EventHandler(this.modecombobox_SelectionChangeCommitted);
             // 
             // anneecomboBox141
@@ -590,7 +591,7 @@ namespace gtsco2.forms
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(188, 79);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(782, 518);
+            this.panelControl3.Size = new System.Drawing.Size(902, 518);
             this.panelControl3.TabIndex = 2;
             // 
             // gridControl1
@@ -599,7 +600,7 @@ namespace gtsco2.forms
             this.gridControl1.Location = new System.Drawing.Point(2, 2);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(778, 514);
+            this.gridControl1.Size = new System.Drawing.Size(898, 514);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -609,13 +610,30 @@ namespace gtsco2.forms
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton8.Appearance.Options.UseFont = true;
+            this.simpleButton8.AutoWidthInLayoutControl = true;
+            this.simpleButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
+            this.simpleButton8.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton8.Location = new System.Drawing.Point(967, 3);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton8.ShowToolTips = false;
+            this.simpleButton8.Size = new System.Drawing.Size(72, 69);
+            this.simpleButton8.TabIndex = 16;
+            this.simpleButton8.Text = "formilare";
+            this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
+            // 
             // form
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 597);
+            this.ClientSize = new System.Drawing.Size(1090, 597);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
@@ -696,5 +714,6 @@ namespace gtsco2.forms
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private System.Windows.Forms.ComboBox comboBox1Enseignant;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
     }
 }

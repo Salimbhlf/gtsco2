@@ -17,7 +17,7 @@ namespace gtsco2.forms.print
         {
             InitializeComponent();
         }
-        public void printdata(string anne, string sp, string promo, string section, string module, List<eva> data)
+        public void printdata(string anne, string sp, string promo, string section, string module, List<eva> data,string ens)
         {
             GSTnote.reportnote.Report1note report1 = new GSTnote.reportnote.Report1note();
            
@@ -29,7 +29,7 @@ namespace gtsco2.forms.print
 
 
             }
-            report1.load(anne, sp, promo, section, module, data);
+            report1.load(anne, sp, promo, section, module, data,ens);
             report1.DataSource = data;
             this.documentViewer1.DocumentSource = report1;
             report1.CreateDocument();

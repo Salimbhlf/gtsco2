@@ -44,7 +44,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence
                 p.Visible = false;
 
 
-            rpt.ShowRibbonDesignerDialog();
+            rpt.ShowRibbonPreview();
 
 
 

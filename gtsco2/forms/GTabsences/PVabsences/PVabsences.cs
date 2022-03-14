@@ -428,5 +428,23 @@ namespace gtsco2.forms.GTabsences.PVabsences
             printPvABS();
             
         }
+        public void printForm_SaiseAbsonce()
+        {
+            string pro = promocomboBox11.Text;
+            string sec = seccomboBox.Text;
+            string semestre = smstcomboBox13.Text;
+
+            formilaredesabsonce.frmforimolierdesabsonce frm = new formilaredesabsonce.frmforimolierdesabsonce();
+
+            frm.print(gridControl1.DataSource, sec, semestre, pro);
+            
+            frm.ShowDialog();
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            printForm_SaiseAbsonce();
+        }
     }
 }

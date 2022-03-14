@@ -497,7 +497,7 @@ namespace gtsco2.forms
 
         }
 
-        public void vprint()
+        public void vprint( int btn)
         {
             try
             {
@@ -575,15 +575,21 @@ namespace gtsco2.forms
                 string sec = seccomboBox.Text;
                 string mod = modulcomboBox14.Text;
                 string pro = promocomboBox11.Text;
-                //using (print.documintview frm = new print.documintview())
-                //{
-                //    frm.printdata(idane, spe, pro, sec, mod, listeva,ens);
-                //    frm.ShowDialog();
-                
-               
-                //}
-                GSTnote.reportNoteAvicMoy.Report1noteAvicMoy.load(idane, spe, pro, sec, mod, listeva, ens);
-                        
+
+                    if (btn == 1)
+                    {
+                        using (print.documintview frm = new print.documintview())
+                        {
+                            frm.printdata(idane, spe, pro, sec, mod, listeva, ens);
+                            frm.ShowDialog();
+
+
+                        }
+                    }
+                    else
+                    {
+                        GSTnote.reportNoteAvicMoy.Report1noteAvicMoy.load(idane, spe, pro, sec, mod, listeva, ens);
+                    }
 
                         
                         
@@ -598,6 +604,8 @@ namespace gtsco2.forms
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
         }
+
+       
 
         // affichage des note avic lure moyenne
         public void AffichagheNoteAvicMoyenne()
@@ -812,7 +820,7 @@ namespace gtsco2.forms
             //save();
             ////refrech();
 
-            vprint();
+            vprint(1);
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -849,7 +857,15 @@ namespace gtsco2.forms
            
         }
 
-        
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+            vprint(2);
+        }
+
+        private void simpleButton9_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
     public class eva
     {

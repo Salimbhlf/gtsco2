@@ -177,6 +177,12 @@
     <Compile Include="forms\Fenêtre connexion.Designer.cs">
       <DependentUpon>Fenêtre connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\GTabsences\PVabsences\formilaredesabsonce\frmforimolierdesabsonce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\GTabsences\PVabsences\formilaredesabsonce\frmforimolierdesabsonce.Designer.cs">
+      <DependentUpon>frmforimolierdesabsonce.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\GSTnote\reportNoteAvicMoy\Report1noteAvicMoy.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -265,6 +271,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\Fenêtre connexion.resx">
       <DependentUpon>Fenêtre connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\GTabsences\PVabsences\formilaredesabsonce\frmforimolierdesabsonce.resx">
+      <DependentUpon>frmforimolierdesabsonce.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\GSTnote\reportNoteAvicMoy\Report1noteAvicMoy.resx">
       <DependentUpon>Report1noteAvicMoy.cs</DependentUpon>

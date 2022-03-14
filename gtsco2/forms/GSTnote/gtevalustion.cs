@@ -37,7 +37,10 @@ namespace gtsco2.forms
 
                 try
                 {
-                    var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
+                    var  qur = from op in shared.bd.Options
+                                   join sp in shared.bd.Specialites on op.Specialite equals sp.ID_Specialité
+
+                                   select new { id = op.ID_Option, nom = (sp.Designation_SP + " option: " + op.Designation_Option) };
 
                     spcomboBox1.DataSource = qur.ToList();
                     spcomboBox1.DisplayMember = "nom";
@@ -536,11 +539,11 @@ namespace gtsco2.forms
                         {
                             if (row["moyenne_avr"].ToString() != "")
                             {
-                                ev.Exam = row["moyenne_avr"].ToString();
+                                ev.MoyAvenR = row["moyenne_avr"].ToString();
                             }
                             if (row["moyenne_apres_r"].ToString() != "")
                             {
-                                ev.Rattarpage = row["moyenne_apres_r"].ToString();
+                                ev.MoyApresR = row["moyenne_apres_r"].ToString();
                             }
                         }
 

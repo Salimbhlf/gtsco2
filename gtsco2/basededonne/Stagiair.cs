@@ -141,6 +141,8 @@ namespace gtsco2.basededonne
 
         public virtual Code_Postal Code_Postal1 { get; set; }
 
+        public virtual Commune Commune { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Contract_avenant_changement> Contract_avenant_changement { get; set; }
 

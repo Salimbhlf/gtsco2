@@ -14,13 +14,15 @@ namespace gtsco2.basededonne
         {
             Code_Postal = new HashSet<Code_Postal>();
             Maitre_Apprentissage = new HashSet<Maitre_Apprentissage>();
+            Stagiairs = new HashSet<Stagiair>();
         }
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Commune_id { get; set; }
 
-        [MaxLength(50)]
-        public byte[] Commune_name { get; set; }
+        [StringLength(50)]
+        public string Commune_name { get; set; }
 
         [StringLength(50)]
         public string Commune_name_ar { get; set; }
@@ -40,5 +42,8 @@ namespace gtsco2.basededonne
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Maitre_Apprentissage> Maitre_Apprentissage { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Stagiair> Stagiairs { get; set; }
     }
 }

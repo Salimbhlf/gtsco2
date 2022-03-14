@@ -12,6 +12,7 @@ namespace gtsco2.basededonne
         {
         }
 
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<Absence> Absences { get; set; }
         public virtual DbSet<annee_scolaire> annee_scolaire { get; set; }
         public virtual DbSet<Avenant_contrat_prorogation> Avenant_contrat_prorogation { get; set; }
@@ -35,6 +36,7 @@ namespace gtsco2.basededonne
         public virtual DbSet<Specialite> Specialites { get; set; }
         public virtual DbSet<Stagiair> Stagiairs { get; set; }
         public virtual DbSet<Suiver_stagiaire> Suiver_stagiaire { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Transferer> Transferers { get; set; }
         public virtual DbSet<tuteur> tuteurs { get; set; }
         public virtual DbSet<Willaya> Willayas { get; set; }
@@ -60,7 +62,6 @@ namespace gtsco2.basededonne
             modelBuilder.Entity<annee_scolaire>()
                 .HasMany(e => e.Evaluations)
                 .WithRequired(e => e.annee_scolaire)
-                .HasForeignKey(e => e.ID_Année_SCO)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Avenant_contrat_prorogation>()
@@ -100,6 +101,10 @@ namespace gtsco2.basededonne
                 .HasForeignKey(e => e.Code_postal);
 
             modelBuilder.Entity<Commune>()
+                .Property(e => e.Commune_name)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Commune>()
                 .Property(e => e.Daira_name)
                 .IsUnicode(false);
 
@@ -107,6 +112,11 @@ namespace gtsco2.basededonne
                 .HasMany(e => e.Maitre_Apprentissage)
                 .WithOptional(e => e.Commune)
                 .HasForeignKey(e => e.Commune_Maitre_Apprentissage);
+
+            modelBuilder.Entity<Commune>()
+                .HasMany(e => e.Stagiairs)
+                .WithOptional(e => e.Commune)
+                .HasForeignKey(e => e.Lieu_Naissance);
 
             modelBuilder.Entity<Contract_avenant_changement>()
                 .Property(e => e.num_stg)

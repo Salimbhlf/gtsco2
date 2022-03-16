@@ -153,6 +153,7 @@
     <Compile Include="basededonne\Mode_formation.cs" />
     <Compile Include="basededonne\Module.cs" />
     <Compile Include="basededonne\Option.cs" />
+    <Compile Include="basededonne\PARTICIPE.cs" />
     <Compile Include="basededonne\Proce_verbal_delibation.cs" />
     <Compile Include="basededonne\Promo.cs" />
     <Compile Include="basededonne\Section.cs" />

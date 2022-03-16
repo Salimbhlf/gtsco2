@@ -14,6 +14,7 @@ namespace gtsco2.basededonne
         {
             Evaluations = new HashSet<Evaluation>();
             Suiver_stagiaire = new HashSet<Suiver_stagiaire>();
+            PARTICIPEs = new HashSet<PARTICIPE>();
         }
 
         [Key]
@@ -32,9 +33,20 @@ namespace gtsco2.basededonne
         public string Prenom_ar { get; set; }
 
         [StringLength(50)]
+        public string Niveau { get; set; }
+
+        [StringLength(50)]
+        public string Poste { get; set; }
+
+        [StringLength(50)]
+        public string Poste_ar { get; set; }
+
+        [StringLength(50)]
         public string Specialite { get; set; }
 
         public int? Mode_Formation { get; set; }
+
+
 
         public virtual Mode_formation Mode_formation1 { get; set; }
 
@@ -43,5 +55,8 @@ namespace gtsco2.basededonne
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Suiver_stagiaire> Suiver_stagiaire { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PARTICIPE> PARTICIPEs { get; set; }
     }
 }

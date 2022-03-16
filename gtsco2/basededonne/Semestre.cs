@@ -15,6 +15,7 @@ namespace gtsco2.basededonne
             Absences = new HashSet<Absence>();
             Decisions = new HashSet<Decision>();
             Evaluations = new HashSet<Evaluation>();
+            Sections = new HashSet<Section>();
             Suiver_stagiaire = new HashSet<Suiver_stagiaire>();
         }
 
@@ -32,6 +33,9 @@ namespace gtsco2.basededonne
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Evaluation> Evaluations { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Section> Sections { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Suiver_stagiaire> Suiver_stagiaire { get; set; }

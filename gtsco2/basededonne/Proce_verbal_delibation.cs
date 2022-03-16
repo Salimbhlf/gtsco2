@@ -12,6 +12,7 @@ namespace gtsco2.basededonne
         public Proce_verbal_delibation()
         {
             Decisions = new HashSet<Decision>();
+            PARTICIPEs = new HashSet<PARTICIPE>();
         }
 
         [Key]
@@ -24,5 +25,8 @@ namespace gtsco2.basededonne
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Decision> Decisions { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PARTICIPE> PARTICIPEs { get; set; }
     }
 }

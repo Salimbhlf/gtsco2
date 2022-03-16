@@ -8,7 +8,7 @@ namespace gtsco2.basededonne
     public partial class gtsco : DbContext
     {
         public gtsco()
-            : base("name=gtsco")
+            : base("name=gtsco1")
         {
         }
 
@@ -29,6 +29,7 @@ namespace gtsco2.basededonne
         public virtual DbSet<Mode_formation> Mode_formation { get; set; }
         public virtual DbSet<Module> Modules { get; set; }
         public virtual DbSet<Option> Options { get; set; }
+        public virtual DbSet<PARTICIPE> PARTICIPEs { get; set; }
         public virtual DbSet<Proce_verbal_delibation> Proce_verbal_delibation { get; set; }
         public virtual DbSet<Promo> Promoes { get; set; }
         public virtual DbSet<Section> Sections { get; set; }
@@ -199,6 +200,11 @@ namespace gtsco2.basededonne
                 .HasForeignKey(e => e.Enseignant)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<Enseignant>()
+                .HasMany(e => e.PARTICIPEs)
+                .WithRequired(e => e.Enseignant)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<Etablissement>()
                 .Property(e => e.Nom_ETAB)
                 .IsUnicode(false);
@@ -288,6 +294,15 @@ namespace gtsco2.basededonne
                 .Property(e => e.Designation_Option)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<PARTICIPE>()
+                .Property(e => e.Qualite)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Proce_verbal_delibation>()
+                .HasMany(e => e.PARTICIPEs)
+                .WithRequired(e => e.Proce_verbal_delibation)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<Promo>()
                 .Property(e => e.Code_Promo)
                 .IsUnicode(false);
@@ -313,6 +328,11 @@ namespace gtsco2.basededonne
                 .HasMany(e => e.Evaluations)
                 .WithRequired(e => e.Semestre)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Semestre>()
+                .HasMany(e => e.Sections)
+                .WithOptional(e => e.Semestre)
+                .HasForeignKey(e => e.Semestre_en_coure);
 
             modelBuilder.Entity<Semestre>()
                 .HasMany(e => e.Suiver_stagiaire)

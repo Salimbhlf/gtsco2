@@ -44,7 +44,7 @@ namespace gtsco2.forms.PVfinal
             this.radio2 = new System.Windows.Forms.RadioButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.NUBEREF = new DevExpress.XtraEditors.LabelControl();
-            this.avenrtp = new DevExpress.XtraEditors.CheckEdit();
+            this.chikdeavenrtp = new DevExpress.XtraEditors.CheckEdit();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.spcomboBox1 = new System.Windows.Forms.ComboBox();
             this.promocomboBox11 = new System.Windows.Forms.ComboBox();
@@ -80,7 +80,7 @@ namespace gtsco2.forms.PVfinal
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avenrtp.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chikdeavenrtp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -199,7 +199,7 @@ namespace gtsco2.forms.PVfinal
             this.layoutControl1.Controls.Add(this.radio2);
             this.layoutControl1.Controls.Add(this.labelControl3);
             this.layoutControl1.Controls.Add(this.NUBEREF);
-            this.layoutControl1.Controls.Add(this.avenrtp);
+            this.layoutControl1.Controls.Add(this.chikdeavenrtp);
             this.layoutControl1.Controls.Add(this.simpleButton2);
             this.layoutControl1.Controls.Add(this.spcomboBox1);
             this.layoutControl1.Controls.Add(this.promocomboBox11);
@@ -289,16 +289,16 @@ namespace gtsco2.forms.PVfinal
             this.NUBEREF.TabIndex = 10;
             this.NUBEREF.Text = "0";
             // 
-            // avenrtp
+            // chikdeavenrtp
             // 
-            this.avenrtp.EditValue = true;
-            this.avenrtp.Location = new System.Drawing.Point(4, 154);
-            this.avenrtp.Name = "avenrtp";
-            this.avenrtp.Properties.Caption = "Avant ratrapage";
-            this.avenrtp.Size = new System.Drawing.Size(278, 20);
-            this.avenrtp.StyleController = this.layoutControl1;
-            this.avenrtp.TabIndex = 6;
-            this.avenrtp.CheckedChanged += new System.EventHandler(this.avenrtp_CheckedChanged);
+            this.chikdeavenrtp.EditValue = true;
+            this.chikdeavenrtp.Location = new System.Drawing.Point(4, 154);
+            this.chikdeavenrtp.Name = "chikdeavenrtp";
+            this.chikdeavenrtp.Properties.Caption = "Avant ratrapage";
+            this.chikdeavenrtp.Size = new System.Drawing.Size(278, 20);
+            this.chikdeavenrtp.StyleController = this.layoutControl1;
+            this.chikdeavenrtp.TabIndex = 6;
+            this.chikdeavenrtp.CheckedChanged += new System.EventHandler(this.avenrtp_CheckedChanged);
             // 
             // simpleButton2
             // 
@@ -444,7 +444,7 @@ namespace gtsco2.forms.PVfinal
             // 
             // layoutControlItem9
             // 
-            this.layoutControlItem9.Control = this.avenrtp;
+            this.layoutControlItem9.Control = this.chikdeavenrtp;
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 150);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.Size = new System.Drawing.Size(282, 24);
@@ -596,7 +596,7 @@ namespace gtsco2.forms.PVfinal
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.avenrtp.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chikdeavenrtp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -645,7 +645,7 @@ namespace gtsco2.forms.PVfinal
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private System.Windows.Forms.ComboBox anneecomboBox141;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraEditors.CheckEdit avenrtp;
+        private DevExpress.XtraEditors.CheckEdit chikdeavenrtp;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
         private DevExpress.XtraEditors.LabelControl labelControl3;

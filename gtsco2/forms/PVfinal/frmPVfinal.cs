@@ -208,7 +208,128 @@ namespace gtsco2.forms.PVfinal
 
         }
 
+        public void loadmoye()
+        {
+            try { 
+            idsec = int.Parse(seccomboBox.SelectedValue.ToString());
+            }
+            catch { MessageBox.Show("auccune section selicatione"); }
+            try { 
+            idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
+            }
+            catch { MessageBox.Show("auccune semmestre selicatione"); }
+            try { 
+            idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
+            }
+            catch { MessageBox.Show("auccune annnee selicatione"); }
+            var qure = from eva in shared.bd.Evaluations
+                       join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
+                       join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
+                       join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
+                       where eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
+                       select new
+                       {
+                           Numro_STG = eva.Num_STG,
 
+                           Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
+                           mynav = eva.Moyenne_Module_AvRt,
+                           mynap = eva.Moyenne_Module_ApRt,
+                           modul.coefficient_Module,
+                           module = ("Matiére: " + modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module)
+
+                       };
+            //declarationde la table
+            DataTable dt = new DataTable();
+            dt.Clear();
+            gridControl1.DataSource = null;
+            gridView1.Columns.Clear();
+            int tcon = 0;
+            //cration des colouns de datatable
+            foreach (var qr in qure.ToList())
+            {
+                if (dt.Columns.Count <= 0)
+                {
+                    dt.Columns.Add("Numro_STG");
+                    dt.Columns.Add("Nom_Et_Prnom");
+                    dt.Columns.Add(qr.module, typeof(double));
+                    tcon += int.Parse(qr.coefficient_Module.ToString());
+                }
+                else
+                {
+                    int x = 0;
+                    foreach (DataColumn dc in dt.Columns)
+                    {
+                        if (dc.ColumnName == qr.module)
+                        {
+                            x += 2;
+
+                        }
+
+                    }
+                    if (x == 0)
+                    {
+                        dt.Columns.Add(qr.module,typeof(double));
+                        tcon += int.Parse(qr.coefficient_Module.ToString());
+                    }
+                }
+            }
+            //cration des colonne des module 
+            // et l'ajouter des line
+            foreach (var qres in qure)
+            {
+                var r = dt.Rows.Count;
+                foreach (DataRow dro in dt.Rows)
+                {
+                    if (dro[0].ToString() == qres.Numro_STG.ToString())
+                    {
+                        if (chikdeavenrtp.Checked == true)
+                        {
+                            dro[qres.module] = qres.mynav;
+                            r += 1;
+                        }
+                        else
+                        {
+                            dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                            r += 1;
+                        }
+
+                    }
+                }
+                if (dt.Rows.Count <= 0 || r == dt.Rows.Count)
+                {
+                    DataRow dro;
+                    dro = dt.NewRow();
+
+                    dro[0] = qres.Numro_STG;
+                    dro[1] = qres.Nom_Et_Prenom;
+
+                    if (chikdeavenrtp.Checked == true)
+                    {
+                        dro[qres.module] = qres.mynav;
+                       
+                    }
+                    else
+                    {
+                        dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                        
+                    }
+
+                    dt.Rows.Add(dro);
+                }
+
+            }
+            dt.Columns.Add("MG");
+            dt.Columns.Add("OPS");
+
+            gridControl1.DataSource = dt;
+
+
+
+
+        }
+
+
+                
 
 
 
@@ -1069,7 +1190,7 @@ namespace gtsco2.forms.PVfinal
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
-            refrech();
+            loadmoye();
         }
 
         private void closeButton7_Click(object sender, EventArgs e)

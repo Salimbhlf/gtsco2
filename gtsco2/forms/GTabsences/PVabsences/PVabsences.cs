@@ -313,21 +313,21 @@ namespace gtsco2.forms.GTabsences.PVabsences
                 int balm = int.Parse(blmtextEdit12.Text);
                 int exl = int.Parse(exctextEdit13.Text);
                 if (nubrabs >= av1 && nubrabs < av2)
-                {  r= ("1er avert");
+                {  r= ("Avertissement 1");
                     return r;
                     
                 }
                 else if (nubrabs >= av2 && nubrabs < balm)
                 {
-                    return ("2eme avert").ToString();
+                    return ("Avertissement 2").ToString();
                 }
-                else if (nubrabs >= balm && nubrabs < exl)
+                else if (nubrabs >= balm && nubrabs <= exl)
                 {
-                    return "blam";
+                    return "Blâme avant exclusion  ";
                 }
-                else if (nubrabs >=exl)
+                else if (nubrabs >exl)
                 {
-                    return "exclut";
+                    return "Exclusion définitive";
                     
                 }
                 

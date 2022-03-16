@@ -258,17 +258,20 @@ namespace gtsco2.forms
                     {
                         idsec = int.Parse(seccomboBox.SelectedValue.ToString());
                     }
-                    catch { }
+                    catch (Exception ex ){ MessageBox.Show(ex.Message); }
 
                     try
                     {
-                        idsem = int.Parse(smstcomboBox13.SelectedValue.ToString()); } catch { }
+                        idsem = int.Parse(smstcomboBox13.SelectedValue.ToString()); }
+                    catch (Exception ex) { MessageBox.Show(ex.Message); }
                     try
                     {
-                        idmod = int.Parse(modulcomboBox14.SelectedValue.ToString()); } catch { }
+                        idmod = int.Parse(modulcomboBox14.SelectedValue.ToString()); }
+                    catch (Exception ex) { MessageBox.Show(ex.Message); }
                     try
                     {
-                        idannee = int.Parse(anneecomboBox141.SelectedValue.ToString()); } catch { }
+                        idannee = int.Parse(anneecomboBox141.SelectedValue.ToString()); }
+                    catch (Exception ex) { MessageBox.Show(ex.Message); }
                     var reqe = (from evalue in shared.bd.Evaluations
                                 join stg in shared.bd.Stagiairs on evalue.Num_STG equals stg.Num_STG
                                 where stg.Section == idsec && evalue.ID_Module == idmod && evalue.ID_Semestre == idsem && evalue.ID_Année_SCO == idannee

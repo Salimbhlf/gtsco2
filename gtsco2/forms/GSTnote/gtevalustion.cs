@@ -254,11 +254,21 @@ namespace gtsco2.forms
                     dt.Columns.Add("Control2",typeof(double));
                     dt.Columns.Add("Exam",typeof(double));
                     dt.Columns.Add("Rattrapage",typeof(double));
+                    try
+                    {
+                        idsec = int.Parse(seccomboBox.SelectedValue.ToString());
+                    }
+                    catch { }
 
-                    idsec = int.Parse(seccomboBox.SelectedValue.ToString());
-                    idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-                    idmod = int.Parse(modulcomboBox14.SelectedValue.ToString());
-                    idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
+                    try
+                    {
+                        idsem = int.Parse(smstcomboBox13.SelectedValue.ToString()); } catch { }
+                    try
+                    {
+                        idmod = int.Parse(modulcomboBox14.SelectedValue.ToString()); } catch { }
+                    try
+                    {
+                        idannee = int.Parse(anneecomboBox141.SelectedValue.ToString()); } catch { }
                     var reqe = (from evalue in shared.bd.Evaluations
                                 join stg in shared.bd.Stagiairs on evalue.Num_STG equals stg.Num_STG
                                 where stg.Section == idsec && evalue.ID_Module == idmod && evalue.ID_Semestre == idsem && evalue.ID_Année_SCO == idannee
@@ -424,8 +434,11 @@ namespace gtsco2.forms
 
                                 ev.Moyenne_Module_AvRt = (double)((ev.Control_2 + ev.Control_1 + ev.Exam) / 4);
 
-
-                                ev.Moyenne_Module_ApRt = (double)((ev.Control_2 + ev.Control_1 + Math.Max((double)ev.Exam, (double)ev.Rattrapage)) / 4);
+                                if (radio1avin.Checked == true)
+                                {
+                                    ev.Moyenne_Module_ApRt = (double)((ev.Control_2 + ev.Control_1 + Math.Max((double)ev.Exam, ((double)ev.Rattrapage * 2))) / 4);
+                                }
+                                else { ev.Moyenne_Module_ApRt =  Math.Max((double)ev.Moyenne_Module_AvRt, (double)ev.Rattrapage ); }
 
 
                             }
@@ -433,9 +446,13 @@ namespace gtsco2.forms
                             {
                                 ev.Moyenne_Module_AvRt = (double)((ev.Control_1 + ev.Exam) / 3);
 
-
-                                ev.Moyenne_Module_ApRt = (double)((ev.Control_1 + Math.Max((double)ev.Exam, (double)ev.Rattrapage)) / 3);
-
+                                if (radio1avin.Checked == true)
+                                {
+                                    ev.Moyenne_Module_ApRt = (double)((ev.Control_1 + Math.Max((double)ev.Exam, ((double)ev.Rattrapage * 2))) / 3);
+                                }
+                                else {
+                                    ev.Moyenne_Module_ApRt = Math.Max((double)ev.Moyenne_Module_AvRt, (double)ev.Rattrapage);
+                                }
                             }
                             else if (ev.Control_1 != null && ev.Control_2 == null && ev.Exam != null && ev.Rattrapage == null)
                             {
@@ -868,6 +885,11 @@ namespace gtsco2.forms
         private void simpleButton9_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void radio1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
     public class eva

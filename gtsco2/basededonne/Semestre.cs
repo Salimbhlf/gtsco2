@@ -25,6 +25,9 @@ namespace gtsco2.basededonne
         [StringLength(25)]
         public string Designation_Semestre { get; set; }
 
+        [StringLength(50)]
+        public string Designation_Semestre_ar { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Absence> Absences { get; set; }
 

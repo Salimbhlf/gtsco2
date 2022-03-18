@@ -22,113 +22,56 @@
         /// the contents of this method with the code editor.
         /// </summary>
 		private void InitializeComponent() {
-			this.components = new System.ComponentModel.Container();
-			this.gridControl = new DevExpress.XtraGrid.GridControl();
+            this.components = new System.ComponentModel.Container();
+            this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-			this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
-			this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.bbiNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
-			this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
-			this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.evaluationCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evaluationCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             this.SuspendLayout();
-			// 
-            // ribbonControl
             // 
-            this.ribbonControl.ExpandCollapseItem.Id = 0;
-            this.ribbonControl.MaxItemId = 14;
-            this.ribbonControl.Name = "ribbonControl";
-			this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-			this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {this.bbiPrintPreview, this.bsiRecordsCount});
-																DevExpress.XtraBars.BarButtonItem bbiNew = new DevExpress.XtraBars.BarButtonItem();
-			bbiNew.Caption = "New";
-			bbiNew.Name = "bbiNew";
-			bbiNew.ImageUri.Uri = "New";
-						this.ribbonControl.Items.Add(bbiNew);
-								DevExpress.XtraBars.BarButtonItem bbiEdit = new DevExpress.XtraBars.BarButtonItem();
-			bbiEdit.Caption = "Edit";
-			bbiEdit.Name = "bbiEdit";
-			bbiEdit.ImageUri.Uri = "Edit";
-						this.ribbonControl.Items.Add(bbiEdit);
-								DevExpress.XtraBars.BarButtonItem bbiDelete = new DevExpress.XtraBars.BarButtonItem();
-			bbiDelete.Caption = "Delete";
-			bbiDelete.Name = "bbiDelete";
-			bbiDelete.ImageUri.Uri = "Delete";
-						this.ribbonControl.Items.Add(bbiDelete);
-										DevExpress.XtraBars.BarButtonItem bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
-			bbiRefresh.Caption = "Refresh";
-			bbiRefresh.Name = "bbiRefresh";
-			bbiRefresh.ImageUri.Uri = "Refresh";
-						this.ribbonControl.Items.Add(bbiRefresh);
-	
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
-			this.ribbonPage1.MergeOrder = 0;
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Home";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
-            this.ribbonPageGroup1.Text = "Evaluation Tasks";
-								this.ribbonPageGroup1.ItemLinks.Add(bbiNew);
-			this.ribbonPageGroup1.ItemLinks.Add(bbiEdit);
-			this.ribbonPageGroup1.ItemLinks.Add(bbiDelete);
-					this.ribbonPageGroup1.ItemLinks.Add(bbiRefresh);
-	
-			// 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Print and Export";
-			this.ribbonPageGroup2.AllowTextClipping = false;
-			this.ribbonPageGroup2.ShowCaptionButton = false;
-			// 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.ItemLinks.Add(this.bsiRecordsCount);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbonControl;
-			// 
-            // bbiPrintPreview
-            // 
-            this.bbiPrintPreview.Caption = "Print Preview";
-            this.bbiPrintPreview.ImageUri.Uri = "Preview";
-            this.bbiPrintPreview.Name = "bbiPrintPreview";
-			// 
-            // barStaticItem1
-            // 
-            this.bsiRecordsCount.Caption = "RECORDS : 2";
-            this.bsiRecordsCount.Name = "bsiRecordsCount";
-            this.bsiRecordsCount.TextAlignment = System.Drawing.StringAlignment.Near;
-			// 
             // gridControl
             // 
+            this.gridControl.DataSource = this.evaluationCollectionViewBindingSource;
             this.gridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl.Location = new System.Drawing.Point(5, 116);
+            this.gridControl.Location = new System.Drawing.Point(0, 126);
             this.gridControl.MainView = this.gridView;
             this.gridControl.MenuManager = this.ribbonControl;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(779, 311);
+            this.gridControl.Size = new System.Drawing.Size(1022, 610);
             this.gridControl.TabIndex = 2;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
@@ -136,136 +79,274 @@
             // gridView
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10,
+            this.gridColumn11,
+            this.gridColumn12,
+            this.gridColumn13,
+            this.gridColumn14,
+            this.gridColumn15,
+            this.gridColumn16});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-			this.evaluationCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.evaluationCollectionViewBindingSource.DataSource = typeof(gtsco2.basededonne.Evaluation);
-			this.gridControl.DataSource = evaluationCollectionViewBindingSource;
-
-			DevExpress.XtraGrid.Extensions.PopulateColumnsParameters parameters = new DevExpress.XtraGrid.Extensions.PopulateColumnsParameters();
-						//
-			//annee_scolaire
-			//
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters annee_scolairePopulateColumnParameters = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            annee_scolairePopulateColumnParameters.FieldName = "annee_scolaire";
-            annee_scolairePopulateColumnParameters.Path = "annee_scolaire.Designation";
-			parameters.CustomColumnParameters.Add(annee_scolairePopulateColumnParameters);
-						DevExpress.XtraGrid.Extensions.PopulateColumnParameters annee_scolairePopulateColumnParameters_NotGenerate = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            annee_scolairePopulateColumnParameters_NotGenerate.FieldName = "ID_Année_SCO";
-		    annee_scolairePopulateColumnParameters_NotGenerate.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(annee_scolairePopulateColumnParameters_NotGenerate);
-									//
-			//Enseignant1
-			//
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters Enseignant1PopulateColumnParameters = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            Enseignant1PopulateColumnParameters.FieldName = "Enseignant1";
-            Enseignant1PopulateColumnParameters.Path = "Enseignant1.Nom";
-			parameters.CustomColumnParameters.Add(Enseignant1PopulateColumnParameters);
-						DevExpress.XtraGrid.Extensions.PopulateColumnParameters Enseignant1PopulateColumnParameters_NotGenerate = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            Enseignant1PopulateColumnParameters_NotGenerate.FieldName = "Enseignant";
-		    Enseignant1PopulateColumnParameters_NotGenerate.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(Enseignant1PopulateColumnParameters_NotGenerate);
-									//
-			//Module
-			//
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters ModulePopulateColumnParameters = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            ModulePopulateColumnParameters.FieldName = "Module";
-            ModulePopulateColumnParameters.Path = "Module.Designation_Module";
-			parameters.CustomColumnParameters.Add(ModulePopulateColumnParameters);
-						DevExpress.XtraGrid.Extensions.PopulateColumnParameters ModulePopulateColumnParameters_NotGenerate = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            ModulePopulateColumnParameters_NotGenerate.FieldName = "ID_Module";
-		    ModulePopulateColumnParameters_NotGenerate.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(ModulePopulateColumnParameters_NotGenerate);
-									//
-			//Semestre
-			//
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters SemestrePopulateColumnParameters = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            SemestrePopulateColumnParameters.FieldName = "Semestre";
-            SemestrePopulateColumnParameters.Path = "Semestre.Designation_Semestre";
-			parameters.CustomColumnParameters.Add(SemestrePopulateColumnParameters);
-						DevExpress.XtraGrid.Extensions.PopulateColumnParameters SemestrePopulateColumnParameters_NotGenerate = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            SemestrePopulateColumnParameters_NotGenerate.FieldName = "ID_Semestre";
-		    SemestrePopulateColumnParameters_NotGenerate.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(SemestrePopulateColumnParameters_NotGenerate);
-									//
-			//Stagiair
-			//
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters StagiairPopulateColumnParameters = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            StagiairPopulateColumnParameters.FieldName = "Stagiair";
-            StagiairPopulateColumnParameters.Path = "Stagiair.Num_STG";
-			parameters.CustomColumnParameters.Add(StagiairPopulateColumnParameters);
-						DevExpress.XtraGrid.Extensions.PopulateColumnParameters StagiairPopulateColumnParameters_NotGenerate = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            StagiairPopulateColumnParameters_NotGenerate.FieldName = "Num_STG";
-		    StagiairPopulateColumnParameters_NotGenerate.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(StagiairPopulateColumnParameters_NotGenerate);
-						 
-				
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters annee_scolairePopulateColumnParameters_NotVisible = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            annee_scolairePopulateColumnParameters_NotVisible.FieldName = "annee_scolaire";
-		    annee_scolairePopulateColumnParameters_NotVisible.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(annee_scolairePopulateColumnParameters_NotVisible);
-				
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters Enseignant1PopulateColumnParameters_NotVisible = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            Enseignant1PopulateColumnParameters_NotVisible.FieldName = "Enseignant1";
-		    Enseignant1PopulateColumnParameters_NotVisible.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(Enseignant1PopulateColumnParameters_NotVisible);
-				
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters ModulePopulateColumnParameters_NotVisible = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            ModulePopulateColumnParameters_NotVisible.FieldName = "Module";
-		    ModulePopulateColumnParameters_NotVisible.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(ModulePopulateColumnParameters_NotVisible);
-				
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters SemestrePopulateColumnParameters_NotVisible = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            SemestrePopulateColumnParameters_NotVisible.FieldName = "Semestre";
-		    SemestrePopulateColumnParameters_NotVisible.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(SemestrePopulateColumnParameters_NotVisible);
-				
-			DevExpress.XtraGrid.Extensions.PopulateColumnParameters StagiairPopulateColumnParameters_NotVisible = new DevExpress.XtraGrid.Extensions.PopulateColumnParameters();
-            StagiairPopulateColumnParameters_NotVisible.FieldName = "Stagiair";
-		    StagiairPopulateColumnParameters_NotVisible.ColumnVisible = false;
-			parameters.CustomColumnParameters.Add(StagiairPopulateColumnParameters_NotVisible);
-						this.gridView.PopulateColumns(typeof(gtsco2.basededonne.Evaluation),parameters);
-			// 
-            // popupMenu1
             // 
-								this.popupMenu.ItemLinks.Add(bbiNew);
-			this.popupMenu.ItemLinks.Add(bbiEdit);
-			this.popupMenu.ItemLinks.Add(bbiDelete);
-					this.popupMenu.ItemLinks.Add(bbiRefresh);
-	
-            this.popupMenu.Name = "popupMenu";
-            this.popupMenu.Ribbon = this.ribbonControl;
-		    // 
+            // gridColumn1
+            // 
+            this.gridColumn1.FieldName = "Num_STG";
+            this.gridColumn1.Name = "gridColumn1";
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.FieldName = "ID_Semestre";
+            this.gridColumn2.Name = "gridColumn2";
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.FieldName = "ID_Année_SCO";
+            this.gridColumn3.Name = "gridColumn3";
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.FieldName = "ID_Module";
+            this.gridColumn4.Name = "gridColumn4";
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.FieldName = "Enseignant";
+            this.gridColumn5.Name = "gridColumn5";
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.FieldName = "Control_1";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 0;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.FieldName = "Control_2";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 1;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.FieldName = "Exam";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 2;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.FieldName = "Rattrapage";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 3;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.FieldName = "Moyenne_Module_AvRt";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 4;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.FieldName = "Moyenne_Module_ApRt";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 5;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.FieldName = "annee_scolaire.Designation";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 6;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.FieldName = "Enseignant1.Nom";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.Visible = true;
+            this.gridColumn13.VisibleIndex = 7;
+            // 
+            // gridColumn14
+            // 
+            this.gridColumn14.FieldName = "Module.Designation_Module";
+            this.gridColumn14.Name = "gridColumn14";
+            this.gridColumn14.Visible = true;
+            this.gridColumn14.VisibleIndex = 8;
+            // 
+            // gridColumn15
+            // 
+            this.gridColumn15.FieldName = "Semestre.Designation_Semestre";
+            this.gridColumn15.Name = "gridColumn15";
+            this.gridColumn15.Visible = true;
+            this.gridColumn15.VisibleIndex = 9;
+            // 
+            // gridColumn16
+            // 
+            this.gridColumn16.FieldName = "Stagiair.Num_STG";
+            this.gridColumn16.Name = "gridColumn16";
+            this.gridColumn16.Visible = true;
+            this.gridColumn16.VisibleIndex = 10;
+            // 
+            // ribbonControl
+            // 
+            this.ribbonControl.ExpandCollapseItem.Id = 0;
+            this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl.ExpandCollapseItem,
+            this.bbiPrintPreview,
+            this.bsiRecordsCount,
+            this.bbiNew,
+            this.bbiEdit,
+            this.bbiDelete,
+            this.bbiRefresh,
+            this.ribbonControl.SearchEditItem});
+            this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl.MaxItemId = 20;
+            this.ribbonControl.Name = "ribbonControl";
+            this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1});
+            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
+            this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl.Size = new System.Drawing.Size(1022, 126);
+            this.ribbonControl.StatusBar = this.ribbonStatusBar;
+            this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
+            this.ribbonPage1.MergeOrder = 0;
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Home";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiNew);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiEdit);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Evaluation Tasks";
+            // 
+            // bbiNew
+            // 
+            this.bbiNew.Caption = "New";
+            this.bbiNew.Id = 16;
+            this.bbiNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiNew.Name = "bbiNew";
+            // 
+            // bbiEdit
+            // 
+            this.bbiEdit.Caption = "Edit";
+            this.bbiEdit.Id = 17;
+            this.bbiEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiEdit.Name = "bbiEdit";
+            // 
+            // bbiDelete
+            // 
+            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Id = 18;
+            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDelete.Name = "bbiDelete";
+            // 
+            // bbiRefresh
+            // 
+            this.bbiRefresh.Caption = "Refresh";
+            this.bbiRefresh.Id = 19;
+            this.bbiRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiRefresh.Name = "bbiRefresh";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.AllowTextClipping = false;
+            this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Print and Export";
+            // 
+            // bbiPrintPreview
+            // 
+            this.bbiPrintPreview.Caption = "Print Preview";
+            this.bbiPrintPreview.Id = 14;
+            this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
+            this.bbiPrintPreview.Name = "bbiPrintPreview";
+            // 
+            // bsiRecordsCount
+            // 
+            this.bsiRecordsCount.Caption = "RECORDS : 2";
+            this.bsiRecordsCount.Id = 15;
+            this.bsiRecordsCount.Name = "bsiRecordsCount";
+            // 
+            // evaluationCollectionViewBindingSource
+            // 
+            this.evaluationCollectionViewBindingSource.DataSource = typeof(gtsco2.basededonne.Evaluation);
+            // 
             // mvvmContext
             // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "New", this.bbiNew),
+            DevExpress.Utils.MVVM.BindingExpression.CreateParameterizedCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "Edit", "SelectedEntity", this.bbiEdit),
+            DevExpress.Utils.MVVM.BindingExpression.CreateParameterizedCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "Delete", "SelectedEntity", this.bbiDelete),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "Refresh", this.bbiRefresh)});
             this.mvvmContext.ContainerControl = this;
-            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel);
-								this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "New", bbiNew));
-			this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateParameterizedCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "Edit", "SelectedEntity", bbiEdit));
-			this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateParameterizedCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "Delete", "SelectedEntity", bbiDelete));
-					this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel), "Refresh", bbiRefresh));
-	
-			this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
+            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
             DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.Default, this.gridControl)});
-			//
-			//EvaluationCollectionView
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.EvaluationCollectionViewModel);
+            // 
+            // ribbonStatusBar
+            // 
+            this.ribbonStatusBar.ItemLinks.Add(this.bsiRecordsCount);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 709);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbonControl;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1022, 27);
+            // 
+            // popupMenu
+            // 
+            this.popupMenu.ItemLinks.Add(this.bbiNew);
+            this.popupMenu.ItemLinks.Add(this.bbiEdit);
+            this.popupMenu.ItemLinks.Add(this.bbiDelete);
+            this.popupMenu.ItemLinks.Add(this.bbiRefresh);
+            this.popupMenu.Name = "popupMenu";
+            this.popupMenu.Ribbon = this.ribbonControl;
+            // 
+            // EvaluationCollectionView
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.ribbonStatusBar);
+            this.ClientSize = new System.Drawing.Size(1022, 736);
+            this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.gridControl);
-			this.Controls.Add(this.ribbonControl);
-			this.Size = new System.Drawing.Size(1024, 768);
+            this.Controls.Add(this.ribbonControl);
             this.Name = "EvaluationCollectionView";
-			((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
+            this.Text = "Evaluation";
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.evaluationCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.popupMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
 		}
 		
         #endregion
@@ -282,5 +363,25 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-	}
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
+        private DevExpress.XtraBars.BarButtonItem bbiNew;
+        private DevExpress.XtraBars.BarButtonItem bbiEdit;
+        private DevExpress.XtraBars.BarButtonItem bbiDelete;
+        private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+    }
 }

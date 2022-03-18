@@ -92,5 +92,32 @@ namespace gtsco2.forms.Pageprancipel
         {
             opfrm(new mvvm.Views.annee_scolaireCollectionView.annee_scolaireCollectionView());
         }
+
+        private void barButtonItem1Soiver_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.Suiver_stagiaireCollectionView.Suiver_stagiaireCollectionView());
+        }
+
+        private void barButtonItem1Employeur_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.EmployeurCollectionView.EmployeurCollectionView());
+        }
+
+        private void barButtonItemMaitre_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.Maitre_ApprentissageCollectionView.Maitre_ApprentissageCollectionView());
+        }
+
+       
+
+        private void barButtonItem1Evaluation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.EvaluationCollectionView.EvaluationCollectionView());
+        }
+
+        private void barButtonItem1ABS_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.AbsenceCollectionView.AbsenceCollectionView());
+        }
     }
 }

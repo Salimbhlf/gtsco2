@@ -19,7 +19,8 @@ namespace gtsco2.forms
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            
+            PageParncipel.FormPrancipel fr = new PageParncipel.FormPrancipel();
+            fr.ShowDialog();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -87,7 +88,8 @@ namespace gtsco2.forms
 
         private void simpleButton8_Click(object sender, EventArgs e)
         {
-
+            Pageprancipel.FrmPrancipal fr = new Pageprancipel.FrmPrancipal();
+            fr.ShowDialog();
         }
 
         private void simpleButton10_Click(object sender, EventArgs e)

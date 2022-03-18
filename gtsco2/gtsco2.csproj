@@ -72,11 +72,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1.DataModel, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1.DataModel.EF6, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1.ViewModel, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Pdf.v21.1.Drawing, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -111,12 +129,14 @@
       <HintPath>..\..\..\..\..\source\repos\materileske\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
@@ -256,6 +276,12 @@
     <Compile Include="forms\navigation\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Pageprancipel\FrmPrancipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Pageprancipel\FrmPrancipal.Designer.cs">
+      <DependentUpon>FrmPrancipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\print\documintview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +293,398 @@
     </Compile>
     <Compile Include="forms\PVfinal\frmPVfinal.Designer.cs">
       <DependentUpon>frmPVfinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Common\CollectionViewModel.cs" />
+    <Compile Include="mvvm\Common\EntitiesViewModel.cs" />
+    <Compile Include="mvvm\Common\ReadOnlyCollectionViewModel.cs" />
+    <Compile Include="mvvm\Common\SingleObjectViewModel.cs" />
+    <Compile Include="mvvm\gtscoDataModel\gtscoUnitOfWork.cs" />
+    <Compile Include="mvvm\gtscoDataModel\IgtscoUnitOfWork.cs" />
+    <Compile Include="mvvm\gtscoDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="mvvm\ViewModels\Absence\AbsenceCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Absence\AbsenceViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\annee_scolaire\annee_scolaireCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\annee_scolaire\annee_scolaireViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Avenant_contrat_prorogation\Avenant_contrat_prorogationCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Avenant_contrat_prorogation\Avenant_contrat_prorogationViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Branch\BranchCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Branch\BranchViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Code_Postal\Code_PostalCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Code_Postal\Code_PostalViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Commune\CommuneCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Commune\CommuneViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Contract_avenant_changement\Contract_avenant_changementCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Contract_avenant_changement\Contract_avenant_changementViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Decision\DecisionCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Decision\DecisionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Employeur\EmployeurCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Employeur\EmployeurViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Enseignant\EnseignantCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Enseignant\EnseignantViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Etablissement\EtablissementCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Etablissement\EtablissementViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Evaluation\EvaluationCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Evaluation\EvaluationViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\gtscoViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Maitre_Apprentissage\Maitre_ApprentissageCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Maitre_Apprentissage\Maitre_ApprentissageViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Mode_formation\Mode_formationCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Mode_formation\Mode_formationViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Module\ModuleCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Module\ModuleViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Option\OptionCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Option\OptionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\PARTICIPE\PARTICIPECollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\PARTICIPE\PARTICIPEViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Proce_verbal_delibation\Proce_verbal_delibationCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Proce_verbal_delibation\Proce_verbal_delibationViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Promo\PromoCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Promo\PromoViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Section\SectionCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Section\SectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Semestre\SemestreCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Semestre\SemestreViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Specialite\SpecialiteCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Specialite\SpecialiteViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Stagiair\StagiairCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Stagiair\StagiairViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Suiver_stagiaire\Suiver_stagiaireCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Suiver_stagiaire\Suiver_stagiaireViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Transferer\TransfererCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Transferer\TransfererViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\tuteur\tuteurCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\tuteur\tuteurViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Willaya\WillayaCollectionViewModel.cs" />
+    <Compile Include="mvvm\ViewModels\Willaya\WillayaViewModel.cs" />
+    <Compile Include="mvvm\Views\Absence\AbsenceCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Absence\AbsenceCollectionView.designer.cs">
+      <DependentUpon>AbsenceCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Absence\AbsenceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Absence\AbsenceView.designer.cs">
+      <DependentUpon>AbsenceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\annee_scolaire\annee_scolaireCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\annee_scolaire\annee_scolaireCollectionView.designer.cs">
+      <DependentUpon>annee_scolaireCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\annee_scolaire\annee_scolaireView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\annee_scolaire\annee_scolaireView.designer.cs">
+      <DependentUpon>annee_scolaireView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Avenant_contrat_prorogation\Avenant_contrat_prorogationCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Avenant_contrat_prorogation\Avenant_contrat_prorogationCollectionView.designer.cs">
+      <DependentUpon>Avenant_contrat_prorogationCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Avenant_contrat_prorogation\Avenant_contrat_prorogationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Avenant_contrat_prorogation\Avenant_contrat_prorogationView.designer.cs">
+      <DependentUpon>Avenant_contrat_prorogationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Branch\BranchCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Branch\BranchCollectionView.designer.cs">
+      <DependentUpon>BranchCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Branch\BranchView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Branch\BranchView.designer.cs">
+      <DependentUpon>BranchView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Code_Postal\Code_PostalCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Code_Postal\Code_PostalCollectionView.designer.cs">
+      <DependentUpon>Code_PostalCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Code_Postal\Code_PostalView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Code_Postal\Code_PostalView.designer.cs">
+      <DependentUpon>Code_PostalView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Commune\CommuneCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Commune\CommuneCollectionView.designer.cs">
+      <DependentUpon>CommuneCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Commune\CommuneView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Commune\CommuneView.designer.cs">
+      <DependentUpon>CommuneView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Contract_avenant_changement\Contract_avenant_changementCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Contract_avenant_changement\Contract_avenant_changementCollectionView.designer.cs">
+      <DependentUpon>Contract_avenant_changementCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Contract_avenant_changement\Contract_avenant_changementView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Contract_avenant_changement\Contract_avenant_changementView.designer.cs">
+      <DependentUpon>Contract_avenant_changementView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Decision\DecisionCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Decision\DecisionCollectionView.designer.cs">
+      <DependentUpon>DecisionCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Decision\DecisionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Decision\DecisionView.designer.cs">
+      <DependentUpon>DecisionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Employeur\EmployeurCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Employeur\EmployeurCollectionView.designer.cs">
+      <DependentUpon>EmployeurCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Employeur\EmployeurView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Employeur\EmployeurView.designer.cs">
+      <DependentUpon>EmployeurView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Enseignant\EnseignantCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Enseignant\EnseignantCollectionView.designer.cs">
+      <DependentUpon>EnseignantCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Enseignant\EnseignantView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Enseignant\EnseignantView.designer.cs">
+      <DependentUpon>EnseignantView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Etablissement\EtablissementCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Etablissement\EtablissementCollectionView.designer.cs">
+      <DependentUpon>EtablissementCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Etablissement\EtablissementView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Etablissement\EtablissementView.designer.cs">
+      <DependentUpon>EtablissementView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Evaluation\EvaluationCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Evaluation\EvaluationCollectionView.designer.cs">
+      <DependentUpon>EvaluationCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Evaluation\EvaluationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Evaluation\EvaluationView.designer.cs">
+      <DependentUpon>EvaluationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\gtscoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\gtscoView.designer.cs">
+      <DependentUpon>gtscoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Maitre_Apprentissage\Maitre_ApprentissageCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Maitre_Apprentissage\Maitre_ApprentissageCollectionView.designer.cs">
+      <DependentUpon>Maitre_ApprentissageCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Maitre_Apprentissage\Maitre_ApprentissageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Maitre_Apprentissage\Maitre_ApprentissageView.designer.cs">
+      <DependentUpon>Maitre_ApprentissageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Mode_formation\Mode_formationCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Mode_formation\Mode_formationCollectionView.designer.cs">
+      <DependentUpon>Mode_formationCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Mode_formation\Mode_formationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Mode_formation\Mode_formationView.designer.cs">
+      <DependentUpon>Mode_formationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Module\ModuleCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Module\ModuleCollectionView.designer.cs">
+      <DependentUpon>ModuleCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Module\ModuleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Module\ModuleView.designer.cs">
+      <DependentUpon>ModuleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Option\OptionCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Option\OptionCollectionView.designer.cs">
+      <DependentUpon>OptionCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Option\OptionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Option\OptionView.designer.cs">
+      <DependentUpon>OptionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\PARTICIPE\PARTICIPECollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\PARTICIPE\PARTICIPECollectionView.designer.cs">
+      <DependentUpon>PARTICIPECollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\PARTICIPE\PARTICIPEView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\PARTICIPE\PARTICIPEView.designer.cs">
+      <DependentUpon>PARTICIPEView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Proce_verbal_delibation\Proce_verbal_delibationCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Proce_verbal_delibation\Proce_verbal_delibationCollectionView.designer.cs">
+      <DependentUpon>Proce_verbal_delibationCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Proce_verbal_delibation\Proce_verbal_delibationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Proce_verbal_delibation\Proce_verbal_delibationView.designer.cs">
+      <DependentUpon>Proce_verbal_delibationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Promo\PromoCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Promo\PromoCollectionView.designer.cs">
+      <DependentUpon>PromoCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Promo\PromoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Promo\PromoView.designer.cs">
+      <DependentUpon>PromoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Section\SectionCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Section\SectionCollectionView.designer.cs">
+      <DependentUpon>SectionCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Section\SectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Section\SectionView.designer.cs">
+      <DependentUpon>SectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Semestre\SemestreCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Semestre\SemestreCollectionView.designer.cs">
+      <DependentUpon>SemestreCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Semestre\SemestreView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Semestre\SemestreView.designer.cs">
+      <DependentUpon>SemestreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Specialite\SpecialiteCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Specialite\SpecialiteCollectionView.designer.cs">
+      <DependentUpon>SpecialiteCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Specialite\SpecialiteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Specialite\SpecialiteView.designer.cs">
+      <DependentUpon>SpecialiteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Stagiair\StagiairCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Stagiair\StagiairCollectionView.designer.cs">
+      <DependentUpon>StagiairCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Stagiair\StagiairView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Stagiair\StagiairView.designer.cs">
+      <DependentUpon>StagiairView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Suiver_stagiaire\Suiver_stagiaireCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Suiver_stagiaire\Suiver_stagiaireCollectionView.designer.cs">
+      <DependentUpon>Suiver_stagiaireCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Suiver_stagiaire\Suiver_stagiaireView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Suiver_stagiaire\Suiver_stagiaireView.designer.cs">
+      <DependentUpon>Suiver_stagiaireView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Transferer\TransfererCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Transferer\TransfererCollectionView.designer.cs">
+      <DependentUpon>TransfererCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Transferer\TransfererView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Transferer\TransfererView.designer.cs">
+      <DependentUpon>TransfererView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\tuteur\tuteurCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\tuteur\tuteurCollectionView.designer.cs">
+      <DependentUpon>tuteurCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\tuteur\tuteurView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\tuteur\tuteurView.designer.cs">
+      <DependentUpon>tuteurView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Willaya\WillayaCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Willaya\WillayaCollectionView.designer.cs">
+      <DependentUpon>WillayaCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\Views\Willaya\WillayaView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\Views\Willaya\WillayaView.designer.cs">
+      <DependentUpon>WillayaView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -312,6 +730,9 @@
     <EmbeddedResource Include="forms\navigation\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\Pageprancipel\FrmPrancipal.resx">
+      <DependentUpon>FrmPrancipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\print\documintview.resx">
       <DependentUpon>documintview.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +740,42 @@
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="mvvm\Views\Absence\AbsenceCollectionView.resx">
+      <DependentUpon>AbsenceCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\annee_scolaire\annee_scolaireCollectionView.resx">
+      <DependentUpon>annee_scolaireCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Branch\BranchCollectionView.resx">
+      <DependentUpon>BranchCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Enseignant\EnseignantCollectionView.resx">
+      <DependentUpon>EnseignantCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Mode_formation\Mode_formationCollectionView.resx">
+      <DependentUpon>Mode_formationCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Module\ModuleCollectionView.resx">
+      <DependentUpon>ModuleCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Option\OptionCollectionView.resx">
+      <DependentUpon>OptionCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Promo\PromoCollectionView.resx">
+      <DependentUpon>PromoCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Section\SectionCollectionView.resx">
+      <DependentUpon>SectionCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Semestre\SemestreCollectionView.resx">
+      <DependentUpon>SemestreCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Specialite\SpecialiteCollectionView.resx">
+      <DependentUpon>SpecialiteCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Stagiair\StagiairCollectionView.resx">
+      <DependentUpon>StagiairCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

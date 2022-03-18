@@ -254,24 +254,17 @@ namespace gtsco2.forms
                     dt.Columns.Add("Control2",typeof(double));
                     dt.Columns.Add("Exam",typeof(double));
                     dt.Columns.Add("Rattrapage",typeof(double));
-                    try
-                    {
+                    if(seccomboBox.SelectedValue.ToString()!=null)
                         idsec = int.Parse(seccomboBox.SelectedValue.ToString());
-                    }
-                    catch (Exception ex ){ MessageBox.Show(ex.Message); }
 
-                    try
-                    {
-                        idsem = int.Parse(smstcomboBox13.SelectedValue.ToString()); }
-                    catch (Exception ex) { MessageBox.Show(ex.Message); }
-                    try
-                    {
-                        idmod = int.Parse(modulcomboBox14.SelectedValue.ToString()); }
-                    catch (Exception ex) { MessageBox.Show(ex.Message); }
-                    try
-                    {
-                        idannee = int.Parse(anneecomboBox141.SelectedValue.ToString()); }
-                    catch (Exception ex) { MessageBox.Show(ex.Message); }
+
+                    if (smstcomboBox13.SelectedValue.ToString() != null)
+                        idsem = int.Parse(smstcomboBox13.SelectedValue.ToString()); 
+                if (modecombobox.SelectedValue.ToString() != null)
+                    idmod = int.Parse(modulcomboBox14.SelectedValue.ToString()); 
+                     if (anneecomboBox141.SelectedValue.ToString() != null)
+                idannee = int.Parse(anneecomboBox141.SelectedValue.ToString()); 
+                    
                     var reqe = (from evalue in shared.bd.Evaluations
                                 join stg in shared.bd.Stagiairs on evalue.Num_STG equals stg.Num_STG
                                 where stg.Section == idsec && evalue.ID_Module == idmod && evalue.ID_Semestre == idsem && evalue.ID_Année_SCO == idannee

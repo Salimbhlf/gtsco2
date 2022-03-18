@@ -289,7 +289,7 @@ namespace gtsco2.forms
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(202, 87);
             this.simpleButton8.TabIndex = 7;
-            this.simpleButton8.Text = "Evaluation";
+            this.simpleButton8.Text = "Page prancipale";
             this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
             // 
             // simpleButton10

@@ -17,20 +17,9 @@ namespace gtsco2.forms
             InitializeComponent();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-          
-        }
+        
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelControl1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
@@ -93,7 +82,8 @@ namespace gtsco2.forms
 
         private void simpleButton10_Click(object sender, EventArgs e)
         {
-
+            navigation.Form1 fr = new navigation.Form1();
+            fr.ShowDialog();
         }
 
         private void simpleButton11_Click(object sender, EventArgs e)

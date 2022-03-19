@@ -27,10 +27,10 @@ namespace gtsco2.basededonne
         [StringLength(6)]
         public string Nature_Emp { get; set; }
 
-        [StringLength(50)]
+        [StringLength(80)]
         public string Nom_Emp { get; set; }
 
-        [StringLength(50)]
+        [StringLength(80)]
         public string Nom_Emp_ar { get; set; }
 
         [StringLength(25)]
@@ -67,7 +67,7 @@ namespace gtsco2.basededonne
 
         public bool Existance_une_structure_de_formation { get; set; }
 
-        [StringLength(50)]
+        [StringLength(150)]
         public string Nom_et_prenom_et_fonction_de_responsble_de_la_steucture { get; set; }
 
 

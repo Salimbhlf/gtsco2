@@ -49,6 +49,7 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItemMaitre = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1Evaluation = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1ABS = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -97,16 +98,19 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Employeur,
             this.barButtonItemMaitre,
             this.barButtonItem1Evaluation,
-            this.barButtonItem1ABS});
+            this.barButtonItem1ABS,
+            this.barButtonItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 18;
+            this.ribbonControl1.MaxItemId = 19;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3});
+            this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem1);
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
             this.ribbonControl1.Size = new System.Drawing.Size(972, 153);
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // barButtonItemstgiaire
             // 
@@ -257,10 +261,19 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.barButtonItem1ABS.Caption = "Absence";
             this.barButtonItem1ABS.Id = 17;
-            this.barButtonItem1ABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1ABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1ABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.Image")));
+            this.barButtonItem1ABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.LargeImage")));
             this.barButtonItem1ABS.Name = "barButtonItem1ABS";
             this.barButtonItem1ABS.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1ABS_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "barButtonItem1";
+            this.barButtonItem1.Id = 18;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -470,5 +483,6 @@ namespace gtsco2.forms.Pageprancipel
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1Evaluation;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1ABS;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }

@@ -143,9 +143,7 @@ namespace gtsco2.basededonne
                 .Property(e => e.Nom_Emp)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Employeur>()
-                .Property(e => e.Nom_Emp_ar)
-                .IsUnicode(false);
+            
 
             modelBuilder.Entity<Employeur>()
                 .Property(e => e.Statut_Emp)

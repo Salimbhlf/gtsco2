@@ -15,7 +15,10 @@ namespace gtsco2.forms.Pageprancipel
         public FrmPrancipal()
         {
             InitializeComponent();
+            //opfrm(new forms.navigation.Form1());
+              
         }
+        
 
         public void opfrm(Form fs)
         {
@@ -118,6 +121,16 @@ namespace gtsco2.forms.Pageprancipel
         private void barButtonItem1ABS_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             opfrm(new mvvm.Views.AbsenceCollectionView.AbsenceCollectionView());
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new navigation.Form1());
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

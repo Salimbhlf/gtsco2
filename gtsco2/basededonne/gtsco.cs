@@ -8,11 +8,10 @@ namespace gtsco2.basededonne
     public partial class gtsco : DbContext
     {
         public gtsco()
-            : base("name=gtsco1")
+            : base("name=gtsco")
         {
         }
 
-        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<Absence> Absences { get; set; }
         public virtual DbSet<annee_scolaire> annee_scolaire { get; set; }
         public virtual DbSet<Avenant_contrat_prorogation> Avenant_contrat_prorogation { get; set; }
@@ -64,6 +63,11 @@ namespace gtsco2.basededonne
                 .HasMany(e => e.Evaluations)
                 .WithRequired(e => e.annee_scolaire)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<annee_scolaire>()
+                .HasMany(e => e.Sections)
+                .WithOptional(e => e.annee_scolaire)
+                .HasForeignKey(e => e.Annee_secolir_en_coure);
 
             modelBuilder.Entity<Avenant_contrat_prorogation>()
                 .Property(e => e.Num_stg)
@@ -143,8 +147,6 @@ namespace gtsco2.basededonne
                 .Property(e => e.Nom_Emp)
                 .IsUnicode(false);
 
-            
-
             modelBuilder.Entity<Employeur>()
                 .Property(e => e.Statut_Emp)
                 .IsUnicode(false);
@@ -193,14 +195,14 @@ namespace gtsco2.basededonne
                 .HasForeignKey(e => e.Enseignant);
 
             modelBuilder.Entity<Enseignant>()
-                .HasMany(e => e.Suiver_stagiaire)
-                .WithRequired(e => e.Enseignant1)
-                .HasForeignKey(e => e.Enseignant)
+                .HasMany(e => e.PARTICIPEs)
+                .WithRequired(e => e.Enseignant)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Enseignant>()
-                .HasMany(e => e.PARTICIPEs)
-                .WithRequired(e => e.Enseignant)
+                .HasMany(e => e.Suiver_stagiaire)
+                .WithRequired(e => e.Enseignant1)
+                .HasForeignKey(e => e.Enseignant)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Etablissement>()

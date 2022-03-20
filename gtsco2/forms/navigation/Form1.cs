@@ -22,36 +22,37 @@ namespace gtsco2.forms.navigation
 
         }
 
-        private void tileItem11_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        public void overirform(Form frm)
         {
             forms.Pageprancipel.FrmPrancipal fr = new forms.Pageprancipel.FrmPrancipal();
-            //fr.opfrm(new forms.navigation.Form1());
-            //fr.opfrm(new mvvm.Views.StagiairCollectionView.StagiairCollectionView());
-            bool rz = false;foreach (Form f in Application.OpenForms)
+            bool rz = false;
+            foreach (Form f in Application.OpenForms)
             {
-                
+
                 if (fr.Text == f.Text)
                 {
-                    fr.opfrm(new mvvm.Views.StagiairCollectionView.StagiairCollectionView());
+                    fr.opfrm(frm);
                     rz = true;
                     break;
                 }
 
-                
+
             }
             if (rz == false)
-                {
-                    fr.Show();
+            {
+                fr.Show();
                 this.Close();
                 forms.navigation.Form1 nf = new forms.navigation.Form1();
                 nf.MdiParent = forms.Pageprancipel.FrmPrancipal.ActiveForm;
                 nf.Show();
-                fr.opfrm(new mvvm.Views.StagiairCollectionView.StagiairCollectionView());
+                fr.opfrm(frm);
 
-                
+            }
+        }
 
-
-                }
+        private void tileItem11_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            overirform(new mvvm.Views.StagiairCollectionView.StagiairCollectionView());
             //fr.ShowDialog();
         }
     }

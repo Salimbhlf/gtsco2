@@ -70,10 +70,6 @@ namespace gtsco2.basededonne
         [StringLength(150)]
         public string Nom_et_prenom_et_fonction_de_responsble_de_la_steucture { get; set; }
 
-
-
-
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Avenant_contrat_prorogation> Avenant_contrat_prorogation { get; set; }
 

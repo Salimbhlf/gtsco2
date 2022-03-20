@@ -149,8 +149,7 @@ namespace gtsco2.mvvm.gtscoDataModel {
         /// <summary>
         /// The C__MigrationHistory entities repository.
         /// </summary>
-		IRepository<C__MigrationHistory, Tuple<string, string>> C__MigrationHistory { get; }
-        
+		
         /// <summary>
         /// The sysdiagram entities repository.
         /// </summary>

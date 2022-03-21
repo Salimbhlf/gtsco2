@@ -57,22 +57,18 @@ namespace gtsco2.basededonne
         [StringLength(50)]
         public string Secteur_Activité_Emp { get; set; }
 
-        public int Effectif_Trv { get; set; }
+        public int? Effectif_Trv { get; set; }
 
-        public int Effectif_apt { get; set; }
+        public int? Effectif_apt { get; set; }
 
-        public int Quota_max { get; set; }
+        public int? Quota_max { get; set; }
 
-        public int Qouta_MIN { get; set; }
+        public int? Qouta_MIN { get; set; }
 
-        public bool Existance_une_structure_de_formation { get; set; }
+        public bool? Existance_une_structure_de_formation { get; set; }
 
         [StringLength(150)]
         public string Nom_et_prenom_et_fonction_de_responsble_de_la_steucture { get; set; }
-
-
-
-
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Avenant_contrat_prorogation> Avenant_contrat_prorogation { get; set; }

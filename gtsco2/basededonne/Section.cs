@@ -28,15 +28,19 @@ namespace gtsco2.basededonne
 
         public int? Semestre_en_coure { get; set; }
 
+        public int? Annee_secolir_en_coure { get; set; }
+
+        public virtual annee_scolaire annee_scolaire { get; set; }
+
         public virtual Mode_formation Mode_formation { get; set; }
 
         public virtual Option Option { get; set; }
 
         public virtual Promo Promo { get; set; }
 
+        public virtual Semestre Semestre { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Stagiair> Stagiairs { get; set; }
-
-        public virtual Semestre Semestre { get; set; }
     }
 }

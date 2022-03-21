@@ -13,8 +13,8 @@ namespace gtsco2.basededonne
         public Enseignant()
         {
             Evaluations = new HashSet<Evaluation>();
-            Suiver_stagiaire = new HashSet<Suiver_stagiaire>();
             PARTICIPEs = new HashSet<PARTICIPE>();
+            Suiver_stagiaire = new HashSet<Suiver_stagiaire>();
         }
 
         [Key]
@@ -46,17 +46,15 @@ namespace gtsco2.basededonne
 
         public int? Mode_Formation { get; set; }
 
-
-
         public virtual Mode_formation Mode_formation1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Evaluation> Evaluations { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Suiver_stagiaire> Suiver_stagiaire { get; set; }
+        public virtual ICollection<PARTICIPE> PARTICIPEs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PARTICIPE> PARTICIPEs { get; set; }
+        public virtual ICollection<Suiver_stagiaire> Suiver_stagiaire { get; set; }
     }
 }

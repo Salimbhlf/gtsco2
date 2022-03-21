@@ -13,6 +13,7 @@ namespace gtsco2.basededonne
         {
             Absences = new HashSet<Absence>();
             Evaluations = new HashSet<Evaluation>();
+            Sections = new HashSet<Section>();
         }
 
         [Key]
@@ -36,5 +37,8 @@ namespace gtsco2.basededonne
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Evaluation> Evaluations { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Section> Sections { get; set; }
     }
 }

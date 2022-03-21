@@ -162,7 +162,6 @@
     <Compile Include="basededonne\Code_Postal.cs" />
     <Compile Include="basededonne\Commune.cs" />
     <Compile Include="basededonne\Contract_avenant_changement.cs" />
-    <Compile Include="basededonne\C__MigrationHistory.cs" />
     <Compile Include="basededonne\Decision.cs" />
     <Compile Include="basededonne\Employeur.cs" />
     <Compile Include="basededonne\Enseignant.cs" />
@@ -770,11 +769,17 @@
     <EmbeddedResource Include="mvvm\Views\Option\OptionCollectionView.resx">
       <DependentUpon>OptionCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\PARTICIPE\PARTICIPEView.resx">
+      <DependentUpon>PARTICIPEView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Promo\PromoCollectionView.resx">
       <DependentUpon>PromoCollectionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Section\SectionCollectionView.resx">
       <DependentUpon>SectionCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Section\SectionView.resx">
+      <DependentUpon>SectionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Semestre\SemestreCollectionView.resx">
       <DependentUpon>SemestreCollectionView.cs</DependentUpon>

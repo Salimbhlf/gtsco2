@@ -124,9 +124,7 @@ namespace gtsco2.mvvm.gtscoDataModel {
             get { return GetRepository(x => x.Set<tuteur>(), (tuteur x) => x.id_tuteur); }
         }
 
-        IRepository<C__MigrationHistory, Tuple<string, string>> IgtscoUnitOfWork.C__MigrationHistory {
-            get { return GetRepository(x => x.Set<C__MigrationHistory>(), (C__MigrationHistory x) => Tuple.Create(x.MigrationId, x.ContextKey)); }
-        }
+       
 
         IRepository<sysdiagram, int> IgtscoUnitOfWork.sysdiagrams {
             get { return GetRepository(x => x.Set<sysdiagram>(), (sysdiagram x) => x.diagram_id); }

@@ -22,194 +22,372 @@
         /// the contents of this method with the code editor.
         /// </summary>
 		private void InitializeComponent() {
-			this.components = new System.ComponentModel.Container();
-			this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-			this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-			this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
-			this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-			this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.components = new System.ComponentModel.Container();
+            this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.pARTICIPEViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.EnseignantLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.EnseignantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Proce_verbal_delibationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.Proce_verbal_delibationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.EnseignantLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ItemForid_Enseignant = new DevExpress.XtraLayout.LayoutControlItem();
+            this.Proce_verbal_delibationLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ItemForID_PV_Délibiration = new DevExpress.XtraLayout.LayoutControlItem();
+            this.QualiteTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForQualite = new DevExpress.XtraLayout.LayoutControlItem();
+            this.Qualite_arTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForQualite_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
-									this.EnseignantLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
-			this.EnseignantBindingSource = new System.Windows.Forms.BindingSource(this.components);
-						this.Proce_verbal_delibationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
-			this.Proce_verbal_delibationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			 
-			this.SuspendLayout();
-			// 
+            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
+            this.dataLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pARTICIPEViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseignantLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseignantBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseignantLookUpEditView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForid_Enseignant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationLookUpEditView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_PV_Délibiration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QualiteTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForQualite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Qualite_arTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForQualite_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataLayoutControl1
+            // 
+            this.dataLayoutControl1.AllowCustomization = false;
+            this.dataLayoutControl1.Controls.Add(this.EnseignantLookUpEdit);
+            this.dataLayoutControl1.Controls.Add(this.Proce_verbal_delibationLookUpEdit);
+            this.dataLayoutControl1.Controls.Add(this.QualiteTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.Qualite_arTextEdit);
+            this.dataLayoutControl1.DataSource = this.pARTICIPEViewBindingSource;
+            this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
+            this.dataLayoutControl1.Name = "dataLayoutControl1";
+            this.dataLayoutControl1.Root = this.layoutControlGroup1;
+            this.dataLayoutControl1.Size = new System.Drawing.Size(613, 233);
+            this.dataLayoutControl1.TabIndex = 0;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(613, 233);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // pARTICIPEViewBindingSource
+            // 
+            this.pARTICIPEViewBindingSource.DataSource = typeof(gtsco2.basededonne.PARTICIPE);
+            // 
+            // EnseignantLookUpEdit
+            // 
+            this.EnseignantLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pARTICIPEViewBindingSource, "id_Enseignant", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.EnseignantLookUpEdit.Location = new System.Drawing.Point(112, 12);
+            this.EnseignantLookUpEdit.Name = "EnseignantLookUpEdit";
+            this.EnseignantLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.EnseignantLookUpEdit.Properties.DataSource = this.EnseignantBindingSource;
+            this.EnseignantLookUpEdit.Properties.DisplayMember = "Nom";
+            this.EnseignantLookUpEdit.Properties.PopupView = this.EnseignantLookUpEditView;
+            this.EnseignantLookUpEdit.Properties.ValueMember = "id_Enseignant";
+            this.EnseignantLookUpEdit.Size = new System.Drawing.Size(489, 20);
+            this.EnseignantLookUpEdit.StyleController = this.dataLayoutControl1;
+            this.EnseignantLookUpEdit.TabIndex = 4;
+            // 
+            // EnseignantBindingSource
+            // 
+            this.EnseignantBindingSource.DataSource = typeof(gtsco2.basededonne.Enseignant);
+            // 
+            // Proce_verbal_delibationLookUpEdit
+            // 
+            this.Proce_verbal_delibationLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pARTICIPEViewBindingSource, "ID_PV_Délibiration", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Proce_verbal_delibationLookUpEdit.Location = new System.Drawing.Point(112, 36);
+            this.Proce_verbal_delibationLookUpEdit.Name = "Proce_verbal_delibationLookUpEdit";
+            this.Proce_verbal_delibationLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.Proce_verbal_delibationLookUpEdit.Properties.DataSource = this.Proce_verbal_delibationBindingSource;
+            this.Proce_verbal_delibationLookUpEdit.Properties.DisplayMember = "ID_PV_Délibiration";
+            this.Proce_verbal_delibationLookUpEdit.Properties.PopupView = this.Proce_verbal_delibationLookUpEditView;
+            this.Proce_verbal_delibationLookUpEdit.Properties.ValueMember = "ID_PV_Délibiration";
+            this.Proce_verbal_delibationLookUpEdit.Size = new System.Drawing.Size(489, 20);
+            this.Proce_verbal_delibationLookUpEdit.StyleController = this.dataLayoutControl1;
+            this.Proce_verbal_delibationLookUpEdit.TabIndex = 5;
+            // 
+            // Proce_verbal_delibationBindingSource
+            // 
+            this.Proce_verbal_delibationBindingSource.DataSource = typeof(gtsco2.basededonne.Proce_verbal_delibation);
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForid_Enseignant,
+            this.ItemForID_PV_Délibiration,
+            this.ItemForQualite,
+            this.ItemForQualite_ar});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(593, 213);
+            // 
+            // EnseignantLookUpEditView
+            // 
+            this.EnseignantLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.EnseignantLookUpEditView.Name = "EnseignantLookUpEditView";
+            this.EnseignantLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.EnseignantLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // ItemForid_Enseignant
+            // 
+            this.ItemForid_Enseignant.Control = this.EnseignantLookUpEdit;
+            this.ItemForid_Enseignant.Location = new System.Drawing.Point(0, 0);
+            this.ItemForid_Enseignant.Name = "ItemForid_Enseignant";
+            this.ItemForid_Enseignant.Size = new System.Drawing.Size(593, 24);
+            this.ItemForid_Enseignant.Text = "id_Enseignant";
+            this.ItemForid_Enseignant.TextSize = new System.Drawing.Size(88, 13);
+            // 
+            // Proce_verbal_delibationLookUpEditView
+            // 
+            this.Proce_verbal_delibationLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.Proce_verbal_delibationLookUpEditView.Name = "Proce_verbal_delibationLookUpEditView";
+            this.Proce_verbal_delibationLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.Proce_verbal_delibationLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // ItemForID_PV_Délibiration
+            // 
+            this.ItemForID_PV_Délibiration.Control = this.Proce_verbal_delibationLookUpEdit;
+            this.ItemForID_PV_Délibiration.Location = new System.Drawing.Point(0, 24);
+            this.ItemForID_PV_Délibiration.Name = "ItemForID_PV_Délibiration";
+            this.ItemForID_PV_Délibiration.Size = new System.Drawing.Size(593, 24);
+            this.ItemForID_PV_Délibiration.Text = "ID_PV_Délibiration";
+            this.ItemForID_PV_Délibiration.TextSize = new System.Drawing.Size(88, 13);
+            // 
+            // QualiteTextEdit
+            // 
+            this.QualiteTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pARTICIPEViewBindingSource, "Qualite", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.QualiteTextEdit.Location = new System.Drawing.Point(112, 60);
+            this.QualiteTextEdit.Name = "QualiteTextEdit";
+            this.QualiteTextEdit.Size = new System.Drawing.Size(489, 20);
+            this.QualiteTextEdit.StyleController = this.dataLayoutControl1;
+            this.QualiteTextEdit.TabIndex = 6;
+            // 
+            // ItemForQualite
+            // 
+            this.ItemForQualite.Control = this.QualiteTextEdit;
+            this.ItemForQualite.Location = new System.Drawing.Point(0, 48);
+            this.ItemForQualite.Name = "ItemForQualite";
+            this.ItemForQualite.Size = new System.Drawing.Size(593, 24);
+            this.ItemForQualite.Text = "Qualite";
+            this.ItemForQualite.TextSize = new System.Drawing.Size(88, 13);
+            // 
+            // Qualite_arTextEdit
+            // 
+            this.Qualite_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.pARTICIPEViewBindingSource, "Qualite_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Qualite_arTextEdit.Location = new System.Drawing.Point(112, 84);
+            this.Qualite_arTextEdit.Name = "Qualite_arTextEdit";
+            this.Qualite_arTextEdit.Size = new System.Drawing.Size(489, 20);
+            this.Qualite_arTextEdit.StyleController = this.dataLayoutControl1;
+            this.Qualite_arTextEdit.TabIndex = 7;
+            // 
+            // ItemForQualite_ar
+            // 
+            this.ItemForQualite_ar.Control = this.Qualite_arTextEdit;
+            this.ItemForQualite_ar.Location = new System.Drawing.Point(0, 72);
+            this.ItemForQualite_ar.Name = "ItemForQualite_ar";
+            this.ItemForQualite_ar.Size = new System.Drawing.Size(593, 141);
+            this.ItemForQualite_ar.Text = "Qualite_ar";
+            this.ItemForQualite_ar.TextSize = new System.Drawing.Size(88, 13);
+            // 
+            // mvvmContext
+            // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Save", this.bbiSave),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "SaveAndClose", this.bbiSaveAndClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "SaveAndNew", this.bbiSaveAndNew),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Reset", this.bbiReset),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Delete", this.bbiDelete),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Close", this.bbiClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "SaveLayout", this.bbiSaveLayout),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "ResetLayout", this.bbiResetLayout)});
+            this.mvvmContext.ContainerControl = this;
+            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
+            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
+            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel);
+            // 
+            // bbiSave
+            // 
+            this.bbiSave.Caption = "Save";
+            this.bbiSave.Id = 2;
+            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSave.Name = "bbiSave";
+            // 
+            // bbiSaveAndClose
+            // 
+            this.bbiSaveAndClose.Caption = "Save And Close";
+            this.bbiSaveAndClose.Id = 3;
+            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
+            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
+            // 
+            // bbiSaveAndNew
+            // 
+            this.bbiSaveAndNew.Caption = "Save And New";
+            this.bbiSaveAndNew.Id = 4;
+            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
+            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
+            // 
+            // bbiReset
+            // 
+            this.bbiReset.Caption = "Reset Changes";
+            this.bbiReset.Id = 5;
+            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiReset.Name = "bbiReset";
+            // 
+            // bbiDelete
+            // 
+            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Id = 6;
+            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDelete.Name = "bbiDelete";
+            // 
+            // bbiClose
+            // 
+            this.bbiClose.Caption = "Close";
+            this.bbiClose.Id = 7;
+            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
+            this.bbiClose.Name = "bbiClose";
+            // 
+            // bbiSaveLayout
+            // 
+            this.bbiSaveLayout.Caption = "Save Layout";
+            this.bbiSaveLayout.Id = 8;
+            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSaveLayout.Name = "bbiSaveLayout";
+            // 
+            // bbiResetLayout
+            // 
+            this.bbiResetLayout.Caption = "Reset Layout";
+            this.bbiResetLayout.Id = 9;
+            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiResetLayout.Name = "bbiResetLayout";
+            // 
             // mainRibbonControl
             // 
             this.mainRibbonControl.ExpandCollapseItem.Id = 0;
-			this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {this.bbiCustomize});
+            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.mainRibbonControl.ExpandCollapseItem,
+            this.bbiCustomize,
+            this.bbiSave,
+            this.bbiSaveAndClose,
+            this.bbiSaveAndNew,
+            this.bbiReset,
+            this.bbiDelete,
+            this.bbiClose,
+            this.bbiSaveLayout,
+            this.bbiResetLayout,
+            this.mainRibbonControl.SearchEditItem});
+            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.mainRibbonControl.MaxItemId = 10;
             this.mainRibbonControl.Name = "mainRibbonControl";
-			this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {this.mainRibbonPage});
+            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonControl.Size = new System.Drawing.Size(613, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-						DevExpress.XtraBars.BarButtonItem bbiSave = new DevExpress.XtraBars.BarButtonItem();
-			bbiSave.Caption = "Save";
-			bbiSave.Name = "bbiSave";
-			bbiSave.ImageUri.Uri = "Save";
-			this.mainRibbonControl.Items.Add(bbiSave);
-						DevExpress.XtraBars.BarButtonItem bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
-			bbiSaveAndClose.Caption = "Save And Close";
-			bbiSaveAndClose.Name = "bbiSaveAndClose";
-			bbiSaveAndClose.ImageUri.Uri = "SaveAndClose";
-			this.mainRibbonControl.Items.Add(bbiSaveAndClose);
-						DevExpress.XtraBars.BarButtonItem bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
-			bbiSaveAndNew.Caption = "Save And New";
-			bbiSaveAndNew.Name = "bbiSaveAndNew";
-			bbiSaveAndNew.ImageUri.Uri = "SaveAndNew";
-			this.mainRibbonControl.Items.Add(bbiSaveAndNew);
-						DevExpress.XtraBars.BarButtonItem bbiReset = new DevExpress.XtraBars.BarButtonItem();
-			bbiReset.Caption = "Reset Changes";
-			bbiReset.Name = "bbiReset";
-			bbiReset.ImageUri.Uri = "Reset";
-			this.mainRibbonControl.Items.Add(bbiReset);
-						DevExpress.XtraBars.BarButtonItem bbiDelete = new DevExpress.XtraBars.BarButtonItem();
-			bbiDelete.Caption = "Delete";
-			bbiDelete.Name = "bbiDelete";
-			bbiDelete.ImageUri.Uri = "Delete";
-			this.mainRibbonControl.Items.Add(bbiDelete);
-						DevExpress.XtraBars.BarButtonItem bbiClose = new DevExpress.XtraBars.BarButtonItem();
-			bbiClose.Caption = "Close";
-			bbiClose.Name = "bbiClose";
-			bbiClose.ImageUri.Uri = "Close";
-			this.mainRibbonControl.Items.Add(bbiClose);
-						DevExpress.XtraBars.BarButtonItem bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
-			bbiSaveLayout.Caption = "Save Layout";
-			bbiSaveLayout.Name = "bbiSaveLayout";
-			bbiSaveLayout.ImageUri.Uri = "Save";
-			this.mainRibbonControl.Items.Add(bbiSaveLayout);
-						DevExpress.XtraBars.BarButtonItem bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
-			bbiResetLayout.Caption = "Reset Layout";
-			bbiResetLayout.Name = "bbiResetLayout";
-			bbiResetLayout.ImageUri.Uri = "Reset";
-			this.mainRibbonControl.Items.Add(bbiResetLayout);
-			            // 
+            // 
+            // bbiCustomize
+            // 
+            this.bbiCustomize.Caption = "Customize";
+            this.bbiCustomize.Id = 1;
+            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
+            this.bbiCustomize.Name = "bbiCustomize";
+            // 
             // mainRibbonPage
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
             this.ribbonPageGroupLayout});
+            this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
             this.mainRibbonPage.Text = "Home";
-			this.mainRibbonPage.MergeOrder = 0;
             // 
             // mainRibbonPageGroup
             // 
             this.mainRibbonPageGroup.AllowTextClipping = false;
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiSave);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiSaveAndClose);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiSaveAndNew);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiReset);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiDelete);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiClose);
-			            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.ShowCaptionButton = false;
+            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
+            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
             this.mainRibbonPageGroup.Text = "PARTICIPE Tasks";
-			// 
+            // 
             // ribbonPageGroupLayout
-            //
-			this.ribbonPageGroupLayout.AllowTextClipping = false; 
-			this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
-						this.ribbonPageGroupLayout.ItemLinks.Add(bbiSaveLayout);
-						this.ribbonPageGroupLayout.ItemLinks.Add(bbiResetLayout);
-			            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
+            // 
+            this.ribbonPageGroupLayout.AllowTextClipping = false;
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
+            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Layout";
-			// 
-            // bbiCustomize
             // 
-            this.bbiCustomize.Caption = "Customize";
-            this.bbiCustomize.ImageUri.Uri = "Customization";
-            this.bbiCustomize.Name = "bbiCustomize";
-			// 
-            // layoutControlGroup1
+            // PARTICIPEView
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.TextVisible = false;
-			// 
-            // dataLayoutControl1
-            // 
-            this.dataLayoutControl1.AllowCustomization = false;
-			this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dataLayoutControl1.Root = this.layoutControlGroup1;
-			this.pARTICIPEViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.pARTICIPEViewBindingSource.DataSource = typeof(gtsco2.basededonne.PARTICIPE);
-			this.dataLayoutControl1.DataSource = pARTICIPEViewBindingSource;
-			//
-			//Create GridControls
-			//
-			DevExpress.XtraDataLayout.RetrieveFieldsParameters parameters = new DevExpress.XtraDataLayout.RetrieveFieldsParameters();
-           	parameters.DataSourceUpdateMode = System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged;
-									//
-			//EnseignantLookUpEdit
-			//
-			this.EnseignantBindingSource.DataSource = typeof(gtsco2.basededonne.Enseignant);
-			this.EnseignantLookUpEdit.Properties.ValueMember = "id_Enseignant"; 
-			this.EnseignantLookUpEdit.Properties.DisplayMember = "Nom";
-			this.EnseignantLookUpEdit.Properties.DataSource = this.EnseignantBindingSource;
-			this.EnseignantLookUpEdit.Name = "EnseignantLookUpEdit";
-			this.EnseignantLookUpEdit.DataBindings.Add("EditValue", pARTICIPEViewBindingSource, "id_Enseignant", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged);
-			DevExpress.XtraDataLayout.RetrieveFieldParameters EnseignantLookUpEditRetrieveFieldParameters = new DevExpress.XtraDataLayout.RetrieveFieldParameters();
-            EnseignantLookUpEditRetrieveFieldParameters.FieldName = "id_Enseignant";
-            EnseignantLookUpEditRetrieveFieldParameters.ControlForField = this.EnseignantLookUpEdit;
-			parameters.CustomListParameters.Add(EnseignantLookUpEditRetrieveFieldParameters);
-			DevExpress.XtraDataLayout.RetrieveFieldParameters EnseignantLookUpEditRetrieveFieldParameters_NotGenerate = new DevExpress.XtraDataLayout.RetrieveFieldParameters();
-		    EnseignantLookUpEditRetrieveFieldParameters_NotGenerate.FieldName = "Enseignant";
-		    EnseignantLookUpEditRetrieveFieldParameters_NotGenerate.GenerateField = false;
-			parameters.CustomListParameters.Add(EnseignantLookUpEditRetrieveFieldParameters_NotGenerate);
-						//
-			//Proce_verbal_delibationLookUpEdit
-			//
-			this.Proce_verbal_delibationBindingSource.DataSource = typeof(gtsco2.basededonne.Proce_verbal_delibation);
-			this.Proce_verbal_delibationLookUpEdit.Properties.ValueMember = "ID_PV_Délibiration"; 
-			this.Proce_verbal_delibationLookUpEdit.Properties.DisplayMember = "ID_PV_Délibiration";
-			this.Proce_verbal_delibationLookUpEdit.Properties.DataSource = this.Proce_verbal_delibationBindingSource;
-			this.Proce_verbal_delibationLookUpEdit.Name = "Proce_verbal_delibationLookUpEdit";
-			this.Proce_verbal_delibationLookUpEdit.DataBindings.Add("EditValue", pARTICIPEViewBindingSource, "ID_PV_Délibiration", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged);
-			DevExpress.XtraDataLayout.RetrieveFieldParameters Proce_verbal_delibationLookUpEditRetrieveFieldParameters = new DevExpress.XtraDataLayout.RetrieveFieldParameters();
-            Proce_verbal_delibationLookUpEditRetrieveFieldParameters.FieldName = "ID_PV_Délibiration";
-            Proce_verbal_delibationLookUpEditRetrieveFieldParameters.ControlForField = this.Proce_verbal_delibationLookUpEdit;
-			parameters.CustomListParameters.Add(Proce_verbal_delibationLookUpEditRetrieveFieldParameters);
-			DevExpress.XtraDataLayout.RetrieveFieldParameters Proce_verbal_delibationLookUpEditRetrieveFieldParameters_NotGenerate = new DevExpress.XtraDataLayout.RetrieveFieldParameters();
-		    Proce_verbal_delibationLookUpEditRetrieveFieldParameters_NotGenerate.FieldName = "Proce_verbal_delibation";
-		    Proce_verbal_delibationLookUpEditRetrieveFieldParameters_NotGenerate.GenerateField = false;
-			parameters.CustomListParameters.Add(Proce_verbal_delibationLookUpEditRetrieveFieldParameters_NotGenerate);
-			 
-			//
-			//call RetrieveFields
-			//
-            this.dataLayoutControl1.RetrieveFields(parameters);
-			// 
-            // mvvmContext
-            // 
-            this.mvvmContext.ContainerControl = this;
-            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel);
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Save", bbiSave));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "SaveAndClose", bbiSaveAndClose));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "SaveAndNew", bbiSaveAndNew));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Reset", bbiReset));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Delete", bbiDelete));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "Close", bbiClose));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "SaveLayout", bbiSaveLayout));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PARTICIPEViewModel), "ResetLayout", bbiResetLayout));
-					    this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
-            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
-			//
-			//PARTICIPEView
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.Controls.Add(this.dataLayoutControl1);
-			this.Controls.Add(this.mainRibbonControl);
-			this.Size = new System.Drawing.Size(1024, 768);
+            this.Controls.Add(this.mainRibbonControl);
             this.Name = "PARTICIPEView";
-						this.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(613, 359);
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
+            this.dataLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pARTICIPEViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseignantLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseignantBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnseignantLookUpEditView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForid_Enseignant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationLookUpEditView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_PV_Délibiration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QualiteTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForQualite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Qualite_arTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForQualite_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 		
         #endregion
@@ -227,6 +405,22 @@
 		private System.Windows.Forms.BindingSource EnseignantBindingSource;
 				private DevExpress.XtraEditors.GridLookUpEdit Proce_verbal_delibationLookUpEdit;
 		private System.Windows.Forms.BindingSource Proce_verbal_delibationBindingSource;
-		 
-	}
+        private DevExpress.XtraGrid.Views.Grid.GridView EnseignantLookUpEditView;
+        private DevExpress.XtraGrid.Views.Grid.GridView Proce_verbal_delibationLookUpEditView;
+        private DevExpress.XtraEditors.TextEdit QualiteTextEdit;
+        private DevExpress.XtraEditors.TextEdit Qualite_arTextEdit;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForid_Enseignant;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForID_PV_Délibiration;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForQualite;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForQualite_ar;
+        private DevExpress.XtraBars.BarButtonItem bbiSave;
+        private DevExpress.XtraBars.BarButtonItem bbiSaveAndClose;
+        private DevExpress.XtraBars.BarButtonItem bbiSaveAndNew;
+        private DevExpress.XtraBars.BarButtonItem bbiReset;
+        private DevExpress.XtraBars.BarButtonItem bbiDelete;
+        private DevExpress.XtraBars.BarButtonItem bbiClose;
+        private DevExpress.XtraBars.BarButtonItem bbiSaveLayout;
+        private DevExpress.XtraBars.BarButtonItem bbiResetLayout;
+    }
 }

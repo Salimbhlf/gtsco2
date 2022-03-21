@@ -44,12 +44,28 @@ namespace gtsco2.forms.Formulaire.certficat
                            date_dF = promo.DATE_D_Formation,
                            date_finF = promo.Date_F_Formation,
                            semestre = sem.Designation_Semestre_ar,
-                           data_dube_sem = anne.DATE_D_Année_SCO,
+                           date_dube_sem = anne.DATE_D_Année_SCO,
                            date_fin_sem =anne.Date_F_Année_SCO,
-                           annnee_scolaire =anne.Designation
+                           annee_scolaire =anne.Designation
                        };
 
 
+            foreach(var row in qure.ToList())
+            {
+                Numrostg.Value = row.Numro;
+                nom.Value = row.nom;
+                prenom.Value = row.prenom;
+                dateniss.Value = row.date_niss;
+                lieuniss.Value = row.lieu_niss;
+                specalite.Value = row.sp;
+                dateDfromation.Value = row.date_dF;
+                dateFformation.Value = row.date_finF;
+                sememstr.Value = row.semestre;
+                dateDubeSem.Value = row.date_dube_sem;
+                DateFInsem.Value = row.date_fin_sem;
+                Anneescoliar.Value = row.annee_scolaire;
+
+            }
 
         }
     }

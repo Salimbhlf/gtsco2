@@ -769,6 +769,9 @@
     <EmbeddedResource Include="mvvm\Views\Option\OptionCollectionView.resx">
       <DependentUpon>OptionCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\PARTICIPE\PARTICIPEView.resx">
+      <DependentUpon>PARTICIPEView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Promo\PromoCollectionView.resx">
       <DependentUpon>PromoCollectionView.cs</DependentUpon>
     </EmbeddedResource>

@@ -229,6 +229,7 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Module.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem1Module.ItemAppearance.Disabled.Options.UseFont = true;
             this.barButtonItem1Module.Name = "barButtonItem1Module";
+            this.barButtonItem1Module.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1Module_ItemClick);
             // 
             // barButtonItem1Employeur
             // 

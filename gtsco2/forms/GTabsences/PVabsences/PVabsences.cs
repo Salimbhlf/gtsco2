@@ -42,7 +42,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
                 modecombobox.ValueMember = dt.Columns[0].ColumnName;
 
 
-                var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
+                var qur = from op in shared.bd.Options join sp in shared.bd.Specialites on op.Specialite equals sp.ID_Specialité select new { id = op.ID_Option, nom = sp.Designation_SP + " Option: " + op.Designation_Option };
 
                 spcomboBox1.DataSource = qur.ToList();
                 spcomboBox1.DisplayMember = "nom";

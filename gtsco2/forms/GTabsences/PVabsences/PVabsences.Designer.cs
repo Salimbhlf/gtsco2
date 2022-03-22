@@ -281,6 +281,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // simpleButton2
             // 
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
             this.simpleButton2.Location = new System.Drawing.Point(4, 288);
             this.simpleButton2.Name = "simpleButton2";
@@ -293,7 +295,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // spcomboBox1
             // 
-            this.spcomboBox1.DropDownHeight = 159;
+            this.spcomboBox1.DropDownHeight = 200;
             this.spcomboBox1.DropDownWidth = 100;
             this.spcomboBox1.FormattingEnabled = true;
             this.spcomboBox1.IntegralHeight = false;
@@ -451,6 +453,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // layoutControlItem1
             // 
+            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem1.Control = this.spcomboBox1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 50);
             this.layoutControlItem1.Name = "layoutControlItem1";
@@ -462,6 +466,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // layoutControlItem2
             // 
+            this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem2.Control = this.promocomboBox11;
             this.layoutControlItem2.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem2.CustomizationFormText = "sepcialite";
@@ -475,6 +481,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // layoutControlItem3
             // 
+            this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem3.Control = this.seccomboBox;
             this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem3.CustomizationFormText = "sepcialite";
@@ -488,6 +496,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // layoutControlItem6
             // 
+            this.layoutControlItem6.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem6.Control = this.modecombobox;
             this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem6.CustomizationFormText = "sepcialite";
@@ -564,6 +574,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // date_abssonce1
             // 
+            this.date_abssonce1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.date_abssonce1.AppearanceItemCaption.Options.UseFont = true;
             this.date_abssonce1.Control = this.dateEditfin;
             this.date_abssonce1.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.date_abssonce1.CustomizationFormText = "date_abssonce";
@@ -576,6 +588,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // date_abssonce
             // 
+            this.date_abssonce.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.date_abssonce.AppearanceItemCaption.Options.UseFont = true;
             this.date_abssonce.Control = this.dateEditdébut;
             this.date_abssonce.Location = new System.Drawing.Point(0, 0);
             this.date_abssonce.Name = "date_abssonce";
@@ -662,6 +676,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // layoutControlItem4
             // 
+            this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem4.Control = this.smstcomboBox13;
             this.layoutControlItem4.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem4.CustomizationFormText = "sepcialite";
@@ -675,6 +691,8 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // 
             // layoutControlItem8
             // 
+            this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem8.Control = this.anneecomboBox141;
             this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem8.CustomizationFormText = "sepcialite";

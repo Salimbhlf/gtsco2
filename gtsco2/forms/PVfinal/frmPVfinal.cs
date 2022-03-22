@@ -338,7 +338,7 @@ namespace gtsco2.forms.PVfinal
                 }
 
             }
-            dt.Columns.Add("MG");
+            dt.Columns.Add("MG",typeof(double));
             dt.Columns.Add("OPS");
             //calucle de la moynne ginarale et affictation des ops
 
@@ -375,6 +375,7 @@ namespace gtsco2.forms.PVfinal
             }
             NUBEREF.Text = dt.Rows.Count.ToString();
             gridControl1.DataSource = dt;
+            gridView1.OptionsBehavior.ReadOnly = true;
 
 
 

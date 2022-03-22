@@ -42,11 +42,12 @@ namespace gtsco2.forms.GTabsences
                 modecombobox.ValueMember = dt.Columns[0].ColumnName;
 
 
-                var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
+                var qur = from op in shared.bd.Options join sp in shared.bd.Specialites on op.Specialite equals sp.ID_Specialité select new { id = op.ID_Option, nom = sp.Designation_SP + " Option: " + op.Designation_Option };
 
                 spcomboBox1.DataSource = qur.ToList();
                 spcomboBox1.DisplayMember = "nom";
                 spcomboBox1.ValueMember = "id";
+
 
                 var qur1 = from pr in shared.bd.Promoes
                            join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
@@ -74,20 +75,28 @@ namespace gtsco2.forms.GTabsences
                 seccomboBox.DisplayMember = "nom";
                 seccomboBox.ValueMember = "id";
 
-                var qur4 = from mod in shared.bd.Modules
-                           select new { id=mod.ID_Module, nom=mod.Designation_Module };
-
               
 
-                var qur5 = from ann in shared.bd.annee_scolaire
-                           select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) };
-                anneecomboBox141.DataSource = qur5.ToList();
-                anneecomboBox141.DisplayMember = "nom";
-                anneecomboBox141.ValueMember = "id";
 
-                 
+                try
+                {
+                    var qur5 = (from ann in shared.bd.annee_scolaire
+                                select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) }).ToList();
+                    DataTable table = new DataTable();
+                    table.Columns.Add("nom");
+                    table.Columns.Add("id");
 
-            }catch (Exception ex)
+                    for (int i = qur5.Count - 1; i >= 0; i--)
+                        table.Rows.Add(qur5[i].nom, qur5[i].id);
+
+                    anneecomboBox141.DataSource = table;
+                    anneecomboBox141.DisplayMember = "nom";
+                    anneecomboBox141.ValueMember = "id";
+                }
+                catch { }
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

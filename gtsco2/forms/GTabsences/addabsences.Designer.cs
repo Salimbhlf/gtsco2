@@ -36,6 +36,8 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.removeButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -66,8 +68,6 @@ namespace gtsco2.forms.GTabsences
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -197,321 +197,6 @@ namespace gtsco2.forms.GTabsences
             this.simpleButton6.Text = "Enregsitrer\r\n le tableau";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
-            // panelControl2
-            // 
-            this.panelControl2.Appearance.BackColor = System.Drawing.Color.White;
-            this.panelControl2.Appearance.Options.UseBackColor = true;
-            this.panelControl2.Controls.Add(this.layoutControl1);
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelControl2.Location = new System.Drawing.Point(0, 79);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(188, 518);
-            this.panelControl2.TabIndex = 1;
-            // 
-            // layoutControl1
-            // 
-            this.layoutControl1.Controls.Add(this.labelControl3);
-            this.layoutControl1.Controls.Add(this.NUBEREF);
-            this.layoutControl1.Controls.Add(this.avenrtp);
-            this.layoutControl1.Controls.Add(this.simpleButton2);
-            this.layoutControl1.Controls.Add(this.spcomboBox1);
-            this.layoutControl1.Controls.Add(this.promocomboBox11);
-            this.layoutControl1.Controls.Add(this.seccomboBox);
-            this.layoutControl1.Controls.Add(this.smstcomboBox13);
-            this.layoutControl1.Controls.Add(this.modecombobox);
-            this.layoutControl1.Controls.Add(this.anneecomboBox141);
-            this.layoutControl1.Controls.Add(this.dateEdit1);
-            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(2, 2);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(1);
-            this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(184, 514);
-            this.layoutControl1.TabIndex = 0;
-            this.layoutControl1.Text = "layoutControl1";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(4, 491);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(75, 19);
-            this.labelControl3.StyleController = this.layoutControl1;
-            this.labelControl3.TabIndex = 11;
-            this.labelControl3.Text = "EFICTIF :";
-            // 
-            // NUBEREF
-            // 
-            this.NUBEREF.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUBEREF.Appearance.Options.UseFont = true;
-            this.NUBEREF.Location = new System.Drawing.Point(83, 491);
-            this.NUBEREF.Name = "NUBEREF";
-            this.NUBEREF.Size = new System.Drawing.Size(10, 19);
-            this.NUBEREF.StyleController = this.layoutControl1;
-            this.NUBEREF.TabIndex = 10;
-            this.NUBEREF.Text = "0";
-            // 
-            // avenrtp
-            // 
-            this.avenrtp.EditValue = true;
-            this.avenrtp.Location = new System.Drawing.Point(4, 178);
-            this.avenrtp.Name = "avenrtp";
-            this.avenrtp.Properties.Caption = "Avant rattrapage";
-            this.avenrtp.Size = new System.Drawing.Size(176, 20);
-            this.avenrtp.StyleController = this.layoutControl1;
-            this.avenrtp.TabIndex = 6;
-            this.avenrtp.CheckedChanged += new System.EventHandler(this.avenrtp_CheckedChanged);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(4, 203);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton2.Size = new System.Drawing.Size(176, 36);
-            this.simpleButton2.StyleController = this.layoutControl1;
-            this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "VALIDER";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
-            // 
-            // spcomboBox1
-            // 
-            this.spcomboBox1.FormattingEnabled = true;
-            this.spcomboBox1.Location = new System.Drawing.Point(91, 54);
-            this.spcomboBox1.Name = "spcomboBox1";
-            this.spcomboBox1.Size = new System.Drawing.Size(89, 21);
-            this.spcomboBox1.TabIndex = 4;
-            this.spcomboBox1.SelectionChangeCommitted += new System.EventHandler(this.spcomboBox1_SelectionChangeCommitted);
-            // 
-            // promocomboBox11
-            // 
-            this.promocomboBox11.FormattingEnabled = true;
-            this.promocomboBox11.Location = new System.Drawing.Point(91, 79);
-            this.promocomboBox11.Name = "promocomboBox11";
-            this.promocomboBox11.Size = new System.Drawing.Size(89, 21);
-            this.promocomboBox11.TabIndex = 4;
-            this.promocomboBox11.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox11_SelectionChangeCommitted);
-            // 
-            // seccomboBox
-            // 
-            this.seccomboBox.FormattingEnabled = true;
-            this.seccomboBox.Location = new System.Drawing.Point(91, 104);
-            this.seccomboBox.Name = "seccomboBox";
-            this.seccomboBox.Size = new System.Drawing.Size(89, 21);
-            this.seccomboBox.TabIndex = 4;
-            // 
-            // smstcomboBox13
-            // 
-            this.smstcomboBox13.FormattingEnabled = true;
-            this.smstcomboBox13.Location = new System.Drawing.Point(91, 129);
-            this.smstcomboBox13.Name = "smstcomboBox13";
-            this.smstcomboBox13.Size = new System.Drawing.Size(89, 21);
-            this.smstcomboBox13.TabIndex = 4;
-            // 
-            // modecombobox
-            // 
-            this.modecombobox.FormattingEnabled = true;
-            this.modecombobox.Location = new System.Drawing.Point(91, 29);
-            this.modecombobox.Name = "modecombobox";
-            this.modecombobox.Size = new System.Drawing.Size(89, 21);
-            this.modecombobox.TabIndex = 4;
-            // 
-            // anneecomboBox141
-            // 
-            this.anneecomboBox141.FormattingEnabled = true;
-            this.anneecomboBox141.Location = new System.Drawing.Point(91, 4);
-            this.anneecomboBox141.Name = "anneecomboBox141";
-            this.anneecomboBox141.Size = new System.Drawing.Size(89, 21);
-            this.anneecomboBox141.TabIndex = 4;
-            // 
-            // dateEdit1
-            // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(91, 154);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(89, 20);
-            this.dateEdit1.StyleController = this.layoutControl1;
-            this.dateEdit1.TabIndex = 12;
-            // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.emptySpaceItem1,
-            this.layoutControlItem1,
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem4,
-            this.layoutControlItem6,
-            this.layoutControlItem7,
-            this.layoutControlItem9,
-            this.simpleSeparator1,
-            this.layoutControlItem12,
-            this.layoutControlItem11,
-            this.date_abssonce,
-            this.layoutControlItem8});
-            this.Root.Name = "Root";
-            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(184, 514);
-            this.Root.TextVisible = false;
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 239);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(180, 248);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.spcomboBox1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 50);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem1.Text = "Spécialité ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.promocomboBox11;
-            this.layoutControlItem2.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem2.CustomizationFormText = "sepcialite";
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 75);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem2.Text = "Promo";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(75, 13);
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.seccomboBox;
-            this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem3.CustomizationFormText = "sepcialite";
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 100);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem3.Text = "Section";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(75, 13);
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.smstcomboBox13;
-            this.layoutControlItem4.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem4.CustomizationFormText = "sepcialite";
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 125);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem4.Text = "Semestre";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(75, 13);
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.modecombobox;
-            this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem6.CustomizationFormText = "sepcialite";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 25);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem6.Text = "Mode formation";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(75, 13);
-            // 
-            // layoutControlItem7
-            // 
-            this.layoutControlItem7.Control = this.simpleButton2;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 199);
-            this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(180, 40);
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem7.TextVisible = false;
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.avenrtp;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 174);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(180, 24);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
-            // 
-            // simpleSeparator1
-            // 
-            this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(0, 198);
-            this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(180, 1);
-            // 
-            // layoutControlItem12
-            // 
-            this.layoutControlItem12.Control = this.labelControl3;
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 487);
-            this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(79, 23);
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem12.TextVisible = false;
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.Control = this.NUBEREF;
-            this.layoutControlItem11.Location = new System.Drawing.Point(79, 487);
-            this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(101, 23);
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem11.TextVisible = false;
-            // 
-            // date_abssonce
-            // 
-            this.date_abssonce.Control = this.dateEdit1;
-            this.date_abssonce.Location = new System.Drawing.Point(0, 150);
-            this.date_abssonce.Name = "date_abssonce";
-            this.date_abssonce.Size = new System.Drawing.Size(180, 24);
-            this.date_abssonce.Text = "Date d\'absence";
-            this.date_abssonce.TextSize = new System.Drawing.Size(75, 13);
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.anneecomboBox141;
-            this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem8.CustomizationFormText = "sepcialite";
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(180, 25);
-            this.layoutControlItem8.Text = "Annee Scolaire";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(75, 13);
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.Appearance.BackColor = System.Drawing.Color.White;
-            this.panelControl3.Appearance.Options.UseBackColor = true;
-            this.panelControl3.Controls.Add(this.gridControl1);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl3.Location = new System.Drawing.Point(188, 79);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(716, 518);
-            this.panelControl3.TabIndex = 2;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(2, 2);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(712, 514);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            // 
             // simpleButton4
             // 
             this.simpleButton4.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.False;
@@ -547,6 +232,340 @@ namespace gtsco2.forms.GTabsences
             this.closeButton7.TabIndex = 13;
             this.closeButton7.Text = "Fermer";
             this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click_1);
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Appearance.BackColor = System.Drawing.Color.White;
+            this.panelControl2.Appearance.Options.UseBackColor = true;
+            this.panelControl2.Controls.Add(this.layoutControl1);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl2.Location = new System.Drawing.Point(0, 79);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(254, 518);
+            this.panelControl2.TabIndex = 1;
+            // 
+            // layoutControl1
+            // 
+            this.layoutControl1.Controls.Add(this.labelControl3);
+            this.layoutControl1.Controls.Add(this.NUBEREF);
+            this.layoutControl1.Controls.Add(this.avenrtp);
+            this.layoutControl1.Controls.Add(this.simpleButton2);
+            this.layoutControl1.Controls.Add(this.spcomboBox1);
+            this.layoutControl1.Controls.Add(this.promocomboBox11);
+            this.layoutControl1.Controls.Add(this.seccomboBox);
+            this.layoutControl1.Controls.Add(this.smstcomboBox13);
+            this.layoutControl1.Controls.Add(this.modecombobox);
+            this.layoutControl1.Controls.Add(this.anneecomboBox141);
+            this.layoutControl1.Controls.Add(this.dateEdit1);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Location = new System.Drawing.Point(2, 2);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(1);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.Root;
+            this.layoutControl1.Size = new System.Drawing.Size(250, 514);
+            this.layoutControl1.TabIndex = 0;
+            this.layoutControl1.Text = "layoutControl1";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(4, 491);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(75, 19);
+            this.labelControl3.StyleController = this.layoutControl1;
+            this.labelControl3.TabIndex = 11;
+            this.labelControl3.Text = "EFICTIF :";
+            // 
+            // NUBEREF
+            // 
+            this.NUBEREF.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUBEREF.Appearance.Options.UseFont = true;
+            this.NUBEREF.Location = new System.Drawing.Point(83, 491);
+            this.NUBEREF.Name = "NUBEREF";
+            this.NUBEREF.Size = new System.Drawing.Size(10, 19);
+            this.NUBEREF.StyleController = this.layoutControl1;
+            this.NUBEREF.TabIndex = 10;
+            this.NUBEREF.Text = "0";
+            // 
+            // avenrtp
+            // 
+            this.avenrtp.EditValue = true;
+            this.avenrtp.Location = new System.Drawing.Point(4, 178);
+            this.avenrtp.Name = "avenrtp";
+            this.avenrtp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.avenrtp.Properties.Appearance.Options.UseFont = true;
+            this.avenrtp.Properties.Caption = "Avant rattrapage";
+            this.avenrtp.Size = new System.Drawing.Size(242, 20);
+            this.avenrtp.StyleController = this.layoutControl1;
+            this.avenrtp.TabIndex = 6;
+            this.avenrtp.CheckedChanged += new System.EventHandler(this.avenrtp_CheckedChanged);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.simpleButton2.Location = new System.Drawing.Point(4, 203);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton2.Size = new System.Drawing.Size(242, 36);
+            this.simpleButton2.StyleController = this.layoutControl1;
+            this.simpleButton2.TabIndex = 5;
+            this.simpleButton2.Text = "VALIDER";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // spcomboBox1
+            // 
+            this.spcomboBox1.DropDownWidth = 200;
+            this.spcomboBox1.FormattingEnabled = true;
+            this.spcomboBox1.Location = new System.Drawing.Point(106, 54);
+            this.spcomboBox1.Name = "spcomboBox1";
+            this.spcomboBox1.Size = new System.Drawing.Size(140, 21);
+            this.spcomboBox1.TabIndex = 4;
+            this.spcomboBox1.SelectionChangeCommitted += new System.EventHandler(this.spcomboBox1_SelectionChangeCommitted);
+            // 
+            // promocomboBox11
+            // 
+            this.promocomboBox11.FormattingEnabled = true;
+            this.promocomboBox11.Location = new System.Drawing.Point(106, 79);
+            this.promocomboBox11.Name = "promocomboBox11";
+            this.promocomboBox11.Size = new System.Drawing.Size(140, 21);
+            this.promocomboBox11.TabIndex = 4;
+            this.promocomboBox11.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox11_SelectionChangeCommitted);
+            // 
+            // seccomboBox
+            // 
+            this.seccomboBox.FormattingEnabled = true;
+            this.seccomboBox.Location = new System.Drawing.Point(106, 104);
+            this.seccomboBox.Name = "seccomboBox";
+            this.seccomboBox.Size = new System.Drawing.Size(140, 21);
+            this.seccomboBox.TabIndex = 4;
+            // 
+            // smstcomboBox13
+            // 
+            this.smstcomboBox13.FormattingEnabled = true;
+            this.smstcomboBox13.Location = new System.Drawing.Point(106, 129);
+            this.smstcomboBox13.Name = "smstcomboBox13";
+            this.smstcomboBox13.Size = new System.Drawing.Size(140, 21);
+            this.smstcomboBox13.TabIndex = 4;
+            // 
+            // modecombobox
+            // 
+            this.modecombobox.FormattingEnabled = true;
+            this.modecombobox.Location = new System.Drawing.Point(106, 29);
+            this.modecombobox.Name = "modecombobox";
+            this.modecombobox.Size = new System.Drawing.Size(140, 21);
+            this.modecombobox.TabIndex = 4;
+            // 
+            // anneecomboBox141
+            // 
+            this.anneecomboBox141.FormattingEnabled = true;
+            this.anneecomboBox141.Location = new System.Drawing.Point(106, 4);
+            this.anneecomboBox141.Name = "anneecomboBox141";
+            this.anneecomboBox141.Size = new System.Drawing.Size(140, 21);
+            this.anneecomboBox141.TabIndex = 4;
+            // 
+            // dateEdit1
+            // 
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(106, 154);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Size = new System.Drawing.Size(140, 20);
+            this.dateEdit1.StyleController = this.layoutControl1;
+            this.dateEdit1.TabIndex = 12;
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.emptySpaceItem1,
+            this.layoutControlItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem6,
+            this.layoutControlItem7,
+            this.layoutControlItem9,
+            this.simpleSeparator1,
+            this.layoutControlItem12,
+            this.layoutControlItem11,
+            this.date_abssonce,
+            this.layoutControlItem8});
+            this.Root.Name = "Root";
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
+            this.Root.Size = new System.Drawing.Size(250, 514);
+            this.Root.TextVisible = false;
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 239);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(246, 248);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem1.Control = this.spcomboBox1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 50);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(246, 25);
+            this.layoutControlItem1.Text = "Spécialité ";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(90, 13);
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem2.Control = this.promocomboBox11;
+            this.layoutControlItem2.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem2.CustomizationFormText = "sepcialite";
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 75);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(246, 25);
+            this.layoutControlItem2.Text = "Promo";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(90, 13);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem3.Control = this.seccomboBox;
+            this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem3.CustomizationFormText = "sepcialite";
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 100);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(246, 25);
+            this.layoutControlItem3.Text = "Section";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(90, 13);
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem4.Control = this.smstcomboBox13;
+            this.layoutControlItem4.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem4.CustomizationFormText = "sepcialite";
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 125);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(246, 25);
+            this.layoutControlItem4.Text = "Semestre";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(90, 13);
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem6.Control = this.modecombobox;
+            this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem6.CustomizationFormText = "sepcialite";
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 25);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(246, 25);
+            this.layoutControlItem6.Text = "Mode formation";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(90, 13);
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.simpleButton2;
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 199);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(246, 40);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem7.TextVisible = false;
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.avenrtp;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 174);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(246, 24);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
+            // 
+            // simpleSeparator1
+            // 
+            this.simpleSeparator1.AllowHotTrack = false;
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 198);
+            this.simpleSeparator1.Name = "simpleSeparator1";
+            this.simpleSeparator1.Size = new System.Drawing.Size(246, 1);
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.Control = this.labelControl3;
+            this.layoutControlItem12.Location = new System.Drawing.Point(0, 487);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.Size = new System.Drawing.Size(79, 23);
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem12.TextVisible = false;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.NUBEREF;
+            this.layoutControlItem11.Location = new System.Drawing.Point(79, 487);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(167, 23);
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem11.TextVisible = false;
+            // 
+            // date_abssonce
+            // 
+            this.date_abssonce.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.date_abssonce.AppearanceItemCaption.Options.UseFont = true;
+            this.date_abssonce.Control = this.dateEdit1;
+            this.date_abssonce.Location = new System.Drawing.Point(0, 150);
+            this.date_abssonce.Name = "date_abssonce";
+            this.date_abssonce.Size = new System.Drawing.Size(246, 24);
+            this.date_abssonce.Text = "Date d\'absence";
+            this.date_abssonce.TextSize = new System.Drawing.Size(90, 13);
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem8.Control = this.anneecomboBox141;
+            this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem8.CustomizationFormText = "sepcialite";
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(246, 25);
+            this.layoutControlItem8.Text = "Annee Scolaire";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(90, 13);
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Appearance.BackColor = System.Drawing.Color.White;
+            this.panelControl3.Appearance.Options.UseBackColor = true;
+            this.panelControl3.Controls.Add(this.gridControl1);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl3.Location = new System.Drawing.Point(254, 79);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(650, 518);
+            this.panelControl3.TabIndex = 2;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(2, 2);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(646, 514);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // addabsences
             // 

@@ -37,11 +37,6 @@ namespace gtsco2.forms.PVfinal
             this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.radio4 = new System.Windows.Forms.RadioButton();
-            this.radio1 = new System.Windows.Forms.RadioButton();
-            this.radio5 = new System.Windows.Forms.RadioButton();
-            this.radio3 = new System.Windows.Forms.RadioButton();
-            this.radio2 = new System.Windows.Forms.RadioButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.NUBEREF = new DevExpress.XtraEditors.LabelControl();
             this.chikdeavenrtp = new DevExpress.XtraEditors.CheckEdit();
@@ -62,11 +57,6 @@ namespace gtsco2.forms.PVfinal
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -91,11 +81,6 @@ namespace gtsco2.forms.PVfinal
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
@@ -192,11 +177,6 @@ namespace gtsco2.forms.PVfinal
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.radio4);
-            this.layoutControl1.Controls.Add(this.radio1);
-            this.layoutControl1.Controls.Add(this.radio5);
-            this.layoutControl1.Controls.Add(this.radio3);
-            this.layoutControl1.Controls.Add(this.radio2);
             this.layoutControl1.Controls.Add(this.labelControl3);
             this.layoutControl1.Controls.Add(this.NUBEREF);
             this.layoutControl1.Controls.Add(this.chikdeavenrtp);
@@ -216,56 +196,6 @@ namespace gtsco2.forms.PVfinal
             this.layoutControl1.Size = new System.Drawing.Size(286, 514);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // radio4
-            // 
-            this.radio4.Location = new System.Drawing.Point(4, 266);
-            this.radio4.Name = "radio4";
-            this.radio4.Size = new System.Drawing.Size(278, 25);
-            this.radio4.TabIndex = 17;
-            this.radio4.Text = "(Control1 + Control2 + Rattrapage)/4 ";
-            this.radio4.UseVisualStyleBackColor = true;
-            // 
-            // radio1
-            // 
-            this.radio1.Checked = true;
-            this.radio1.Location = new System.Drawing.Point(4, 179);
-            this.radio1.Name = "radio1";
-            this.radio1.Size = new System.Drawing.Size(278, 25);
-            this.radio1.TabIndex = 16;
-            this.radio1.TabStop = true;
-            this.radio1.Text = "(Control1 + Control2 +Examen)/4 ";
-            this.radio1.UseVisualStyleBackColor = true;
-            this.radio1.CheckedChanged += new System.EventHandler(this.radio1_CheckedChanged);
-            // 
-            // radio5
-            // 
-            this.radio5.Location = new System.Drawing.Point(4, 295);
-            this.radio5.Name = "radio5";
-            this.radio5.Size = new System.Drawing.Size(278, 25);
-            this.radio5.TabIndex = 15;
-            this.radio5.Text = "(Control1 + (Examen ou rattrapage))/3";
-            this.radio5.UseVisualStyleBackColor = true;
-            // 
-            // radio3
-            // 
-            this.radio3.Location = new System.Drawing.Point(4, 237);
-            this.radio3.Name = "radio3";
-            this.radio3.Size = new System.Drawing.Size(278, 25);
-            this.radio3.TabIndex = 14;
-            this.radio3.Text = "(Control1 + Control2 + (Examen ou rattrapage))/4 ";
-            this.radio3.UseVisualStyleBackColor = true;
-            this.radio3.CheckedChanged += new System.EventHandler(this.radio3_CheckedChanged);
-            // 
-            // radio2
-            // 
-            this.radio2.Location = new System.Drawing.Point(4, 208);
-            this.radio2.Name = "radio2";
-            this.radio2.Size = new System.Drawing.Size(278, 25);
-            this.radio2.TabIndex = 13;
-            this.radio2.Text = "(Control 1 + Examen) /3";
-            this.radio2.UseVisualStyleBackColor = true;
-            this.radio2.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // labelControl3
             // 
@@ -294,16 +224,19 @@ namespace gtsco2.forms.PVfinal
             this.chikdeavenrtp.EditValue = true;
             this.chikdeavenrtp.Location = new System.Drawing.Point(4, 154);
             this.chikdeavenrtp.Name = "chikdeavenrtp";
+            this.chikdeavenrtp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.chikdeavenrtp.Properties.Appearance.Options.UseFont = true;
             this.chikdeavenrtp.Properties.Caption = "Avant ratrapage";
             this.chikdeavenrtp.Size = new System.Drawing.Size(278, 20);
             this.chikdeavenrtp.StyleController = this.layoutControl1;
             this.chikdeavenrtp.TabIndex = 6;
-            this.chikdeavenrtp.CheckedChanged += new System.EventHandler(this.avenrtp_CheckedChanged);
             // 
             // simpleButton2
             // 
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(4, 324);
+            this.simpleButton2.Location = new System.Drawing.Point(4, 179);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton2.Size = new System.Drawing.Size(278, 36);
@@ -315,51 +248,51 @@ namespace gtsco2.forms.PVfinal
             // spcomboBox1
             // 
             this.spcomboBox1.FormattingEnabled = true;
-            this.spcomboBox1.Location = new System.Drawing.Point(91, 54);
+            this.spcomboBox1.Location = new System.Drawing.Point(106, 54);
             this.spcomboBox1.Name = "spcomboBox1";
-            this.spcomboBox1.Size = new System.Drawing.Size(191, 21);
+            this.spcomboBox1.Size = new System.Drawing.Size(176, 21);
             this.spcomboBox1.TabIndex = 4;
             this.spcomboBox1.SelectionChangeCommitted += new System.EventHandler(this.spcomboBox1_SelectionChangeCommitted);
             // 
             // promocomboBox11
             // 
             this.promocomboBox11.FormattingEnabled = true;
-            this.promocomboBox11.Location = new System.Drawing.Point(91, 79);
+            this.promocomboBox11.Location = new System.Drawing.Point(106, 79);
             this.promocomboBox11.Name = "promocomboBox11";
-            this.promocomboBox11.Size = new System.Drawing.Size(191, 21);
+            this.promocomboBox11.Size = new System.Drawing.Size(176, 21);
             this.promocomboBox11.TabIndex = 4;
             this.promocomboBox11.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox11_SelectionChangeCommitted);
             // 
             // seccomboBox
             // 
             this.seccomboBox.FormattingEnabled = true;
-            this.seccomboBox.Location = new System.Drawing.Point(91, 104);
+            this.seccomboBox.Location = new System.Drawing.Point(106, 104);
             this.seccomboBox.Name = "seccomboBox";
-            this.seccomboBox.Size = new System.Drawing.Size(191, 21);
+            this.seccomboBox.Size = new System.Drawing.Size(176, 21);
             this.seccomboBox.TabIndex = 4;
             // 
             // smstcomboBox13
             // 
             this.smstcomboBox13.FormattingEnabled = true;
-            this.smstcomboBox13.Location = new System.Drawing.Point(91, 129);
+            this.smstcomboBox13.Location = new System.Drawing.Point(106, 129);
             this.smstcomboBox13.Name = "smstcomboBox13";
-            this.smstcomboBox13.Size = new System.Drawing.Size(191, 21);
+            this.smstcomboBox13.Size = new System.Drawing.Size(176, 21);
             this.smstcomboBox13.TabIndex = 4;
             // 
             // modecombobox
             // 
             this.modecombobox.FormattingEnabled = true;
-            this.modecombobox.Location = new System.Drawing.Point(91, 29);
+            this.modecombobox.Location = new System.Drawing.Point(106, 29);
             this.modecombobox.Name = "modecombobox";
-            this.modecombobox.Size = new System.Drawing.Size(191, 21);
+            this.modecombobox.Size = new System.Drawing.Size(176, 21);
             this.modecombobox.TabIndex = 4;
             // 
             // anneecomboBox141
             // 
             this.anneecomboBox141.FormattingEnabled = true;
-            this.anneecomboBox141.Location = new System.Drawing.Point(91, 4);
+            this.anneecomboBox141.Location = new System.Drawing.Point(106, 4);
             this.anneecomboBox141.Name = "anneecomboBox141";
-            this.anneecomboBox141.Size = new System.Drawing.Size(191, 21);
+            this.anneecomboBox141.Size = new System.Drawing.Size(176, 21);
             this.anneecomboBox141.TabIndex = 4;
             // 
             // Root
@@ -376,11 +309,6 @@ namespace gtsco2.forms.PVfinal
             this.simpleSeparator1,
             this.layoutControlItem12,
             this.layoutControlItem11,
-            this.layoutControlItem10,
-            this.layoutControlItem5,
-            this.layoutControlItem13,
-            this.layoutControlItem14,
-            this.layoutControlItem15,
             this.emptySpaceItem1,
             this.layoutControlItem8,
             this.layoutControlItem7});
@@ -391,15 +319,19 @@ namespace gtsco2.forms.PVfinal
             // 
             // layoutControlItem1
             // 
+            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem1.Control = this.spcomboBox1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 50);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(282, 25);
             this.layoutControlItem1.Text = "Spécialité";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(90, 13);
             // 
             // layoutControlItem2
             // 
+            this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem2.Control = this.promocomboBox11;
             this.layoutControlItem2.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem2.CustomizationFormText = "sepcialite";
@@ -407,10 +339,12 @@ namespace gtsco2.forms.PVfinal
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(282, 25);
             this.layoutControlItem2.Text = "Promo";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(75, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(90, 13);
             // 
             // layoutControlItem3
             // 
+            this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem3.Control = this.seccomboBox;
             this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem3.CustomizationFormText = "sepcialite";
@@ -418,10 +352,12 @@ namespace gtsco2.forms.PVfinal
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(282, 25);
             this.layoutControlItem3.Text = "Section";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(75, 13);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(90, 13);
             // 
             // layoutControlItem4
             // 
+            this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem4.Control = this.smstcomboBox13;
             this.layoutControlItem4.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem4.CustomizationFormText = "sepcialite";
@@ -429,10 +365,12 @@ namespace gtsco2.forms.PVfinal
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(282, 25);
             this.layoutControlItem4.Text = "Semestre";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(75, 13);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(90, 13);
             // 
             // layoutControlItem6
             // 
+            this.layoutControlItem6.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem6.Control = this.modecombobox;
             this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem6.CustomizationFormText = "sepcialite";
@@ -440,7 +378,7 @@ namespace gtsco2.forms.PVfinal
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(282, 25);
             this.layoutControlItem6.Text = "Mode formation";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(75, 13);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(90, 13);
             // 
             // layoutControlItem9
             // 
@@ -476,61 +414,18 @@ namespace gtsco2.forms.PVfinal
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.radio2;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 204);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(282, 29);
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem10.TextVisible = false;
-            // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.Control = this.radio3;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 233);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(282, 29);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextVisible = false;
-            // 
-            // layoutControlItem13
-            // 
-            this.layoutControlItem13.Control = this.radio5;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 291);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(282, 29);
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem13.TextVisible = false;
-            // 
-            // layoutControlItem14
-            // 
-            this.layoutControlItem14.Control = this.radio1;
-            this.layoutControlItem14.Location = new System.Drawing.Point(0, 175);
-            this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(282, 29);
-            this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem14.TextVisible = false;
-            // 
-            // layoutControlItem15
-            // 
-            this.layoutControlItem15.Control = this.radio4;
-            this.layoutControlItem15.Location = new System.Drawing.Point(0, 262);
-            this.layoutControlItem15.Name = "layoutControlItem15";
-            this.layoutControlItem15.Size = new System.Drawing.Size(282, 29);
-            this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem15.TextVisible = false;
-            // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 360);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 215);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(282, 127);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(282, 272);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem8
             // 
+            this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem8.Control = this.anneecomboBox141;
             this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem8.CustomizationFormText = "sepcialite";
@@ -538,12 +433,14 @@ namespace gtsco2.forms.PVfinal
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(282, 25);
             this.layoutControlItem8.Text = "Annee Scolaire";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(75, 13);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(90, 13);
             // 
             // layoutControlItem7
             // 
+            this.layoutControlItem7.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem7.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem7.Control = this.simpleButton2;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 320);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 175);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(282, 40);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
@@ -570,7 +467,6 @@ namespace gtsco2.forms.PVfinal
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -608,11 +504,6 @@ namespace gtsco2.forms.PVfinal
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
@@ -659,15 +550,5 @@ namespace gtsco2.forms.PVfinal
         private DevExpress.XtraEditors.SimpleButton closeButton7;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private System.Windows.Forms.RadioButton radio2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private System.Windows.Forms.RadioButton radio4;
-        private System.Windows.Forms.RadioButton radio1;
-        private System.Windows.Forms.RadioButton radio5;
-        private System.Windows.Forms.RadioButton radio3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
     }
 }

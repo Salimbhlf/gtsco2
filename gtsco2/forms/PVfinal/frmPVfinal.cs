@@ -22,63 +22,83 @@ namespace gtsco2.forms.PVfinal
 
             try
             {
-
-                List<basededonne.Mode_formation> list = shared.bd.Mode_formation.ToList();
-
-                DataTable dt = new DataTable();
-                dt.Columns.Add("id");
-                dt.Columns.Add("disc");
-
-                foreach (basededonne.Mode_formation ro in list)
+                try
                 {
-                    dt.Rows.Add(ro.Code_Mode_Formation, ro.Désignation_Mode_Formation);
+
+                    List<basededonne.Mode_formation> list = shared.bd.Mode_formation.ToList();
+
+                    DataTable dt = new DataTable();
+                    dt.Columns.Add("id");
+                    dt.Columns.Add("disc");
+
+                    foreach (basededonne.Mode_formation ro in list)
+                    {
+                        dt.Rows.Add(ro.Code_Mode_Formation, ro.Désignation_Mode_Formation);
+                    }
+                    modecombobox.DataSource = dt;
+                    modecombobox.DisplayMember = dt.Columns[1].ColumnName;
+                    modecombobox.ValueMember = dt.Columns[0].ColumnName;
                 }
-                modecombobox.DataSource = dt;
-                modecombobox.DisplayMember = dt.Columns[1].ColumnName;
-                modecombobox.ValueMember = dt.Columns[0].ColumnName;
+                catch { }
+                try
+                {
+
+                    var qur = from op in shared.bd.Options join sp in shared.bd.Specialites on op.Specialite equals sp.ID_Specialité select new { id = op.ID_Option, nom = sp.Designation_SP + " Option: " + op.Designation_Option };
+
+                    spcomboBox1.DataSource = qur.ToList();
+                    spcomboBox1.DisplayMember = "nom";
+                    spcomboBox1.ValueMember = "id";
+
+                    var qur1 = from pr in shared.bd.Promoes
+                               join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                               select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+
+                    promocomboBox11.DataSource = qur1.ToList();
+                    promocomboBox11.DisplayMember = "nom";
+                    promocomboBox11.ValueMember = "id";
+                }
+                catch { }
+                try
+                {
+
+                    var qur2 = from sec in shared.bd.Semestres select new { id = sec.ID_Semestre, nom = sec.Designation_Semestre };
 
 
-                var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
+                    smstcomboBox13.DataSource = qur2.ToList();
+                    smstcomboBox13.DisplayMember = "nom";
+                    smstcomboBox13.ValueMember = "id";
 
-                spcomboBox1.DataSource = qur.ToList();
-                spcomboBox1.DisplayMember = "nom";
-                spcomboBox1.ValueMember = "id";
+                    var qur3 = from sec in shared.bd.Sections
+                               join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
+                               join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
+                               select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
 
-                var qur1 = from pr in shared.bd.Promoes
-                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
-                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
-                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+                    seccomboBox.DataSource = qur3.ToList();
+                    seccomboBox.DisplayMember = "nom";
+                    seccomboBox.ValueMember = "id";
 
-                promocomboBox11.DataSource = qur1.ToList();
-                promocomboBox11.DisplayMember = "nom";
-                promocomboBox11.ValueMember = "id";
+                }
+                catch { }
 
-                var qur2 = from sec in shared.bd.Semestres select new { id = sec.ID_Semestre, nom = sec.Designation_Semestre };
+                try
+                {
+                    var qur5 = (from ann in shared.bd.annee_scolaire
+                                select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) }).ToList();
+                    DataTable table = new DataTable();
+                    table.Columns.Add("nom");
+                    table.Columns.Add("id");
 
+                    for (int i = qur5.Count - 1; i >= 0; i--)
+                        table.Rows.Add(qur5[i].nom, qur5[i].id);
 
-                smstcomboBox13.DataSource = qur2.ToList();
-                smstcomboBox13.DisplayMember = "nom";
-                smstcomboBox13.ValueMember = "id";
+                    anneecomboBox141.DataSource = table;
+                    anneecomboBox141.DisplayMember = "nom";
+                    anneecomboBox141.ValueMember = "id";
 
-                var qur3 = from sec in shared.bd.Sections
-                           join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
-                           join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
-                           join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
-                           select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
-
-                seccomboBox.DataSource = qur3.ToList();
-                seccomboBox.DisplayMember = "nom";
-                seccomboBox.ValueMember = "id";
-
-
-
-                var qur5 = from ann in shared.bd.annee_scolaire
-                           select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) };
-                anneecomboBox141.DataSource = qur5.ToList();
-                anneecomboBox141.DisplayMember = "nom";
-                anneecomboBox141.ValueMember = "id";
-
-
+                }
+                catch { }
 
             }
             catch (Exception ex)
@@ -93,20 +113,11 @@ namespace gtsco2.forms.PVfinal
 
 
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
 
-        }
+        
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
@@ -185,17 +196,7 @@ namespace gtsco2.forms.PVfinal
         {
             try
             {
-                if (radio1.Checked == true) { cncnex1(); }
-                else if (radio2.Checked == true)
-                {
-                    cntexm2();
-                }
-                else if (radio3.Checked == true)
-                {
-                    cntcntexmorrtp3();
-                }
-                else if (radio4.Checked == true) { cntcntrtp4(); }
-                else if (radio5.Checked == true) { contexmourtp5(); }
+                loadmoye();
             }
             catch (Exception ex)
             {
@@ -213,18 +214,17 @@ namespace gtsco2.forms.PVfinal
         
         public void loadmoye()
         {
-            try { 
+            if (seccomboBox.SelectedValue != null) { 
             idsec = int.Parse(seccomboBox.SelectedValue.ToString());
             }
-            catch { MessageBox.Show("auccune section selicatione"); }
-            try { 
+            else {MessageBox.Show("auccune section selicatione"); }
+          if(smstcomboBox13.SelectedValue!=null)
             idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-            }
-            catch { MessageBox.Show("auccune semmestre selicatione"); }
-            try { 
+            else { MessageBox.Show("auccune semmestre selicatione"); }
+            if(anneecomboBox141.SelectedValue!=null) { 
             idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
             }
-            catch { MessageBox.Show("auccune annnee selicatione"); }
+            else { MessageBox.Show("auccune annnee selicatione"); }
             var qure = from eva in shared.bd.Evaluations
                        join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
                        join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
@@ -373,7 +373,7 @@ namespace gtsco2.forms.PVfinal
                     rowstg["OPS"] = "Admis";
                 }
             }
-
+            NUBEREF.Text = dt.Rows.Count.ToString();
             gridControl1.DataSource = dt;
 
 
@@ -387,847 +387,12 @@ namespace gtsco2.forms.PVfinal
 
 
 
-        public void cncnex1()
-        {
-            try { 
+      
 
-            idsec = int.Parse(seccomboBox.SelectedValue.ToString());
-            idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
 
-            idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
+       
 
-            var qure = from eva in shared.bd.Evaluations
-                       join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                       join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                       join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                       where eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                       select new
-                       {
-                           Numro_STG = eva.Num_STG,
-
-                           Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                           myn = ((eva.Control_1 + eva.Control_2 + eva.Exam) / 4),
-                           modul.coefficient_Module,
-                           module = ("Matiére: "+modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module)
-
-                       };
-            DataTable dt = new DataTable();
-            dt.Clear();
-            gridControl1.DataSource = null;
-            gridView1.Columns.Clear();
-            int tcon = 0;
-            foreach (var qr in qure.ToList())
-            {
-                if (dt.Columns.Count <= 0)
-                {
-                    dt.Columns.Add("Numro_STG");
-                    dt.Columns.Add("Nom_Et_Prnom");
-                    dt.Columns.Add(qr.module);
-                    tcon += int.Parse(qr.coefficient_Module.ToString());
-                }
-                else
-                {
-                    int x = 0;
-                    foreach (DataColumn dc in dt.Columns)
-                    {
-                        if (dc.ColumnName == qr.module)
-                        {
-                            x += 2;
-
-                        }
-
-                    }
-                    if (x == 0)
-                    {
-                        dt.Columns.Add(qr.module);
-                        tcon += int.Parse(qr.coefficient_Module.ToString());
-                    }
-                }
-            }
-            foreach (var qres in qure)
-            {
-                var r = dt.Rows.Count;
-                foreach (DataRow dro in dt.Rows)
-                {
-                    if (dro[0].ToString() == qres.Numro_STG.ToString())
-                    {
-
-                        dro[qres.module] = qres.myn;
-                        r += 1;
-
-
-                    }
-                    else
-                    {
-
-
-
-                    }
-
-
-                }
-                if (dt.Rows.Count <= 0 || r == dt.Rows.Count)
-                {
-                    DataRow dro;
-                    dro = dt.NewRow();
-
-                    dro[0] = qres.Numro_STG;
-                    dro[1] = qres.Nom_Et_Prenom;
-                    dro[qres.module.ToString()] = qres.myn;
-                    dt.Rows.Add(dro);
-                }
-
-            }
-            dt.Columns.Add("MG");
-            int i = 1;
-            if (dt.Rows != null)
-            {
-                foreach (DataRow row in dt.Rows)
-                {
-                    var a = row[0].ToString();
-                    i += 1;
-                    int mcof = 0;
-                    float tmyn = 0;
-                    float mg = 0;
-
-
-                    var qur = from eva in shared.bd.Evaluations
-                              join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                              join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                              join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                              where eva.Num_STG == a && eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                              select new
-                              {
-                                  Numro_STG = eva.Num_STG,
-
-                                  Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                  myn = (((eva.Control_1 + eva.Control_2 + eva.Exam) / 4) * modul.coefficient_Module),
-                                  modul.coefficient_Module,
-                                  module = (modul.Designation_Module + " (" + modul.Note_Elim_Module + ")")
-
-                              };
-                    foreach (var quree in qur.ToList())
-                    {
-                        
-                        if (quree.myn.ToString() != "")
-                        {
-                            mcof += int.Parse(quree.coefficient_Module.ToString());
-                            tmyn += float.Parse(quree.myn.ToString());
-                        }
-
-                    }
-                    mg = tmyn / mcof;
-                    row["MG"] = mg;
-
-                }
-
-            }
-
-            gridControl1.DataSource = null;
-            gridControl1.DataSource = dt;
-                gridView1.OptionsBehavior.ReadOnly = true;
-                NUBEREF.Text = dt.Rows.Count.ToString();
-        }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-}
-
-
-        // con1 + exm /3
-        public void cntexm2()
-        {
-            try { 
-            idsec = int.Parse(seccomboBox.SelectedValue.ToString());
-            idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-
-            idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
-
-                var qure = from eva in shared.bd.Evaluations
-                           join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                           join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                           join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                           where eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                           select new
-                           {
-                               Numro_STG = eva.Num_STG,
-
-                               Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                               myn = ((eva.Control_1 + eva.Exam) / 3),
-                               modul.coefficient_Module,
-                               module = ("Matiére: " + modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module) 
-
-                       };
-            DataTable dt = new DataTable();
-            dt.Clear();
-            gridControl1.DataSource = null;
-            gridView1.Columns.Clear();
-            int tcon = 0;
-            foreach (var qr in qure.ToList())
-            {
-                if (dt.Columns.Count <= 0)
-                {
-                    dt.Columns.Add("Numro_STG");
-                    dt.Columns.Add("Nom_Et_Prnom");
-                    dt.Columns.Add(qr.module);
-                    tcon += int.Parse(qr.coefficient_Module.ToString());
-                }
-                else
-                {
-                    int x = 0;
-                    foreach (DataColumn dc in dt.Columns)
-                    {
-                        if (dc.ColumnName == qr.module)
-                        {
-                            x += 2;
-
-                        }
-
-                    }
-                    if (x == 0)
-                    {
-                        dt.Columns.Add(qr.module);
-                        tcon += int.Parse(qr.coefficient_Module.ToString());
-                    }
-                }
-            }
-            foreach (var qres in qure)
-            {
-                var r = dt.Rows.Count;
-                foreach (DataRow dro in dt.Rows)
-                {
-                    if (dro[0].ToString() == qres.Numro_STG.ToString())
-                    {
-
-                        dro[qres.module] = qres.myn;
-                        r += 1;
-
-
-                    }
-                    else
-                    {
-
-
-
-                    }
-
-
-                }
-                if (dt.Rows.Count <= 0 || r == dt.Rows.Count)
-                {
-                    DataRow dro;
-                    dro = dt.NewRow();
-
-                    dro[0] = qres.Numro_STG;
-                    dro[1] = qres.Nom_Et_Prenom;
-                    dro[qres.module.ToString()] = qres.myn;
-                    dt.Rows.Add(dro);
-                }
-
-            }
-            dt.Columns.Add("MG");
-            int i = 1;
-            if (dt.Rows != null)
-            {
-                foreach (DataRow row in dt.Rows)
-                {
-                    var a = row[0].ToString();
-                    i += 1;
-                    int mcof = 0;
-                    float tmyn = 0;
-                    float mg = 0;
-
-
-                    var qur = from eva in shared.bd.Evaluations
-                              join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                              join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                              join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                              where eva.Num_STG == a && eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                              select new
-                              {
-                                  Numro_STG = eva.Num_STG,
-
-                                  Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                  myn = (((eva.Control_1 + eva.Exam) / 3) * modul.coefficient_Module),
-                                  modul.coefficient_Module,
-                                  module = ("Matiére: " + modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module)
-
-                              };
-                    foreach (var quree in qur.ToList())
-                    {
-                       
-                        if (quree.myn.ToString() != "")
-                        {
-                            mcof += int.Parse(quree.coefficient_Module.ToString());
-                            tmyn += float.Parse(quree.myn.ToString());
-                        }
-
-                    }
-                    mg = tmyn / mcof;
-                    row["MG"] = mg;
-
-                }
-            
-        }
-
-            gridControl1.DataSource = null;
-            gridControl1.DataSource = dt;
-            NUBEREF.Text = dt.Rows.Count.ToString();
-            }catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        // cont1 + cont2 +(exm or rtp)/4
-        public void cntcntexmorrtp3()
-        {
-            try
-            {
-                idsec = int.Parse(seccomboBox.SelectedValue.ToString());
-                idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-
-                idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
-
-                var qure = from eva in shared.bd.Evaluations
-                           join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                           join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                           join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                           where eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                           select new
-                           {
-                               Numro_STG = eva.Num_STG,
-
-                               Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                               cnt1 = eva.Control_1,
-                               cont2= eva.Control_2,
-                               exm = eva.Exam,
-                               rat = eva.Rattrapage,
-                               conff = modul.coefficient_Module,
-                               
-                               module = ("Matiére: " + modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module)
-
-                           };
-                DataTable dt = new DataTable();
-                dt.Clear();
-                gridControl1.DataSource = null;
-                gridView1.Columns.Clear();
-                int tcon = 0;
-
-                foreach (var qr in qure.ToList())
-                {
-                    if (dt.Columns.Count <= 0)
-                    {
-                        dt.Columns.Add("Numro_STG");
-                        dt.Columns.Add("Nom_Et_Prnom");
-                        dt.Columns.Add(qr.module);
-                        tcon += int.Parse(qr.conff.ToString());
-                    }
-                    else
-                    {
-                        int x = 0;
-                        foreach (DataColumn dc in dt.Columns)
-                        {
-                            if (dc.ColumnName == qr.module)
-                            {
-                                x += 2;
-
-                            }
-
-                        }
-                        if (x == 0)
-                        {
-                            dt.Columns.Add(qr.module);
-                            tcon += int.Parse(qr.conff.ToString());
-                        }
-                    }
-                }
-                foreach (var qres in qure)
-                {
-                    var r = dt.Rows.Count;
-                    foreach (DataRow dro in dt.Rows)
-                    {
-                        if (dro[0].ToString() == qres.Numro_STG.ToString())
-                        {
-                            float rat = 0;
-                            if (qres.rat.ToString() != "")
-                            {
-                                rat = float.Parse(qres.rat.ToString());
-                            }
-                            dro[qres.module] = ((qres.cnt1 + qres.cont2+float.Parse(maxa(rat.ToString(), qres.exm.ToString()))) / 4);
-                            r += 1;
-
-
-                        }
-                        else
-                        {
-
-
-
-                        }
-
-
-                    }
-                    if (dt.Rows.Count <= 0 || r == dt.Rows.Count)
-                    {
-                        DataRow dro;
-                        dro = dt.NewRow();
-
-                        dro[0] = qres.Numro_STG;
-                        dro[1] = qres.Nom_Et_Prenom;
-                        float rat = 0;
-                        if (qres.rat.ToString() != "")
-                        {
-                            rat = float.Parse(qres.rat.ToString());
-                        }
-                        dro[qres.module] = ((qres.cnt1 + qres.cont2 + float.Parse(maxa(rat.ToString(), qres.exm.ToString()))) / 4);
-
-                        dt.Rows.Add(dro);
-                    }
-
-                }
-                dt.Columns.Add("MG");
-                int i = 1;
-                if (dt.Rows != null)
-                {
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        var a = row[0].ToString();
-                        i += 1;
-                        int mcof = 0;
-                        float tmyn = 0;
-                        float mg = 0;
-
-
-                        var qur = from eva in shared.bd.Evaluations
-                                  join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                                  join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                                  join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                                  where eva.Num_STG == a && eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                                  select new
-                                  {
-                                      Numro_STG = eva.Num_STG,
-
-                                      Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                      cnt1 = eva.Control_1,
-                                      cnt2 =eva.Control_2,
-                                      exm = eva.Exam,
-                                      rat = eva.Rattrapage,
-                                      conff =modul.coefficient_Module,
-                                 };
-                        foreach (var quree in qur.ToList())
-                        {
-
-                            if (quree.cnt1.ToString() != "" || quree.exm.ToString() != ""||quree.cnt2.ToString()!="")
-                            {
-                                float cont = float.Parse(quree.cnt1.ToString());
-                                float cont2 = float.Parse(quree.cnt2.ToString());
-                                float exm = float.Parse(quree.exm.ToString());
-                                float rat = 0;
-                                if (quree.rat.ToString() != "")
-                                {
-                                    rat = float.Parse(quree.rat.ToString());
-                                }
-
-                                float max = float.Parse(maxa(exm.ToString(), rat.ToString()));
-
-                                mcof += int.Parse(quree.conff.ToString());
-                                tmyn += (((cont + max+cont2) / 4) * float.Parse(quree.conff.ToString()));
-                            }
-                            
-
-                        }
-                        mg = tmyn / mcof;
-                        row["MG"] = mg;
-
-                    }
-
-                }
-
-                gridControl1.DataSource = null;
-                gridControl1.DataSource = dt;
-                gridView1.OptionsBehavior.ReadOnly = true;
-                NUBEREF.Text = dt.Rows.Count.ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-
-
-        public  string maxa(string a,string b)
-        { float z = float.Parse(a);
-            float n = float.Parse(b);
-            if (z >= n)
-            {
-                return (z.ToString());
-
-            }
-            else
-            {
-                return (n.ToString());
-            }
-        }
-
-         //cnt1+cnt2+rtp/4
-
-        public void cntcntrtp4()
-        {
-            try
-            {
-                idsec = int.Parse(seccomboBox.SelectedValue.ToString());
-                idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-
-                idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
-
-                var qure = from eva in shared.bd.Evaluations
-                           join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                           join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                           join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                           where eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                           select new
-                           {
-                               Numro_STG = eva.Num_STG,
-
-                               Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                               myn = ((eva.Control_1 + eva.Control_2 + eva.Rattrapage) / 4),
-                               modul.coefficient_Module,
-                               module = ("Matiére: " + modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module)
-
-                           };
-                DataTable dt = new DataTable();
-                dt.Clear();
-                gridControl1.DataSource = null;
-                gridView1.Columns.Clear();
-                int tcon = 0;
-                foreach (var qr in qure.ToList())
-                {
-                    if (dt.Columns.Count <= 0)
-                    {
-                        dt.Columns.Add("Numro_STG");
-                        dt.Columns.Add("Nom_Et_Prnom");
-                        dt.Columns.Add(qr.module);
-                        tcon += int.Parse(qr.coefficient_Module.ToString());
-                    }
-                    else
-                    {
-                        int x = 0;
-                        foreach (DataColumn dc in dt.Columns)
-                        {
-                            if (dc.ColumnName == qr.module)
-                            {
-                                x += 2;
-
-                            }
-
-                        }
-                        if (x == 0)
-                        {
-                            dt.Columns.Add(qr.module);
-                            tcon += int.Parse(qr.coefficient_Module.ToString());
-                        }
-                    }
-                }
-                foreach (var qres in qure)
-                {
-                    var r = dt.Rows.Count;
-                    foreach (DataRow dro in dt.Rows)
-                    {
-                        if (dro[0].ToString() == qres.Numro_STG.ToString())
-                        {
-
-                            dro[qres.module] = qres.myn;
-                            r += 1;
-
-
-                        }
-                        else
-                        {
-
-
-
-                        }
-
-
-                    }
-                    if (dt.Rows.Count <= 0 || r == dt.Rows.Count)
-                    {
-                        DataRow dro;
-                        dro = dt.NewRow();
-
-                        dro[0] = qres.Numro_STG;
-                        dro[1] = qres.Nom_Et_Prenom;
-                        dro[qres.module.ToString()] = qres.myn;
-                        dt.Rows.Add(dro);
-                    }
-
-                }
-                dt.Columns.Add("MG");
-                int i = 1;
-                if (dt.Rows != null)
-                {
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        var a = row[0].ToString();
-                        i += 1;
-                        int mcof = 0;
-                        float tmyn = 0;
-                        float mg = 0;
-
-
-                        var qur = from eva in shared.bd.Evaluations
-                                  join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                                  join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                                  join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                                  where eva.Num_STG == a && eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                                  select new
-                                  {
-                                      Numro_STG = eva.Num_STG,
-
-                                      Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                      myn = (((eva.Control_1 + eva.Control_2 + eva.Rattrapage) / 4) * modul.coefficient_Module),
-                                      modul.coefficient_Module,
-                                      module = (modul.Designation_Module + " (" + modul.Note_Elim_Module + ")")
-
-                                  };
-                        foreach (var quree in qur.ToList())
-                        {
-                          
-                            if (quree.myn.ToString() != "")
-                            {
-                                mcof += int.Parse(quree.coefficient_Module.ToString());
-                                tmyn += float.Parse(quree.myn.ToString());
-                            }
-
-                        }
-                        mg = tmyn / mcof;
-                        row["MG"] = mg;
-
-                    }
-
-                }
-
-                gridControl1.DataSource = null;
-                gridControl1.DataSource = dt;
-                gridView1.OptionsBehavior.ReadOnly = true;
-                NUBEREF.Text = dt.Rows.Count.ToString();
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        // con1+rtp ou exm / 3
-
-        public void contexmourtp5()
-
-        {
-            try
-            {
-                idsec = int.Parse(seccomboBox.SelectedValue.ToString());
-                idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-
-                idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
-
-                var qure = from eva in shared.bd.Evaluations
-                           join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                           join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                           join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                           where eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                           select new
-                           {
-                               Numro_STG = eva.Num_STG,
-
-                               Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                              
-                              cnt1 = eva.Control_1,
-                              exm = eva.Exam,
-                              rat = eva.Rattrapage,
-
-
-                               modul.coefficient_Module,
-                               module = ("Matiére: " + modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module)
-
-                           };
-                DataTable dt = new DataTable();
-                dt.Clear();
-                gridControl1.DataSource = null;
-                gridView1.Columns.Clear();
-                int tcon = 0;
-                foreach (var qr in qure.ToList())
-                {
-                    if (dt.Columns.Count <= 0)
-                    {
-                        dt.Columns.Add("Numro_STG");
-                        dt.Columns.Add("Nom_Et_Prnom");
-                        dt.Columns.Add(qr.module);
-                        tcon += int.Parse(qr.coefficient_Module.ToString());
-                    }
-                    else
-                    {
-                        int x = 0;
-                        foreach (DataColumn dc in dt.Columns)
-                        {
-                            if (dc.ColumnName == qr.module)
-                            {
-                                x += 2;
-
-                            }
-
-                        }
-                        if (x == 0)
-                        {
-                            dt.Columns.Add(qr.module);
-                            tcon += int.Parse(qr.coefficient_Module.ToString());
-                        }
-                    }
-                }
-                foreach (var qres in qure)
-                {
-                    var r = dt.Rows.Count;
-                    foreach (DataRow dro in dt.Rows)
-                    {
-                        if (dro[0].ToString() == qres.Numro_STG.ToString())
-                        {
-                            float rat = 0;
-                            if (qres.rat.ToString() != "")
-                            {
-                                rat = float.Parse(qres.rat.ToString());
-                            }
-
-                            dro[qres.module] = ((qres.cnt1 + float.Parse(maxa(rat.ToString(),qres.exm.ToString())))/3);
-                            r += 1;
-
-
-                        }
-                        else
-                        {
-
-
-
-                        }
-
-
-                    }
-                    if (dt.Rows.Count <= 0 || r == dt.Rows.Count)
-                    {
-                        DataRow dro;
-                        dro = dt.NewRow();
-
-                        dro[0] = qres.Numro_STG;
-                        dro[1] = qres.Nom_Et_Prenom;
-                        float rat = 0;
-                        if(qres.rat.ToString()!= "")
-                        {
-                            rat = float.Parse(qres.rat.ToString());
-                        }
-                        dro[qres.module.ToString()] = ((qres.cnt1 + float.Parse(maxa(rat.ToString(), qres.exm.ToString()))) / 3);
-                        dt.Rows.Add(dro);
-                    }
-
-                }
-
-                dt.Columns.Add("MG");
-                dt.Columns.Add("OBS");
-                int i = 1;
-                if (dt.Rows != null)
-                {
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        var a = row[0].ToString();
-                        i += 1;
-                        int mcof = 0;
-                        float tmyn = 0;
-                        float mg = 0;
-                        float tmynE = 0;
-                        int confs = 0;
-
-
-                        var qur = from eva in shared.bd.Evaluations
-                                  join stg in shared.bd.Stagiairs on eva.Num_STG equals stg.Num_STG
-                                  join modul in shared.bd.Modules on eva.ID_Module equals modul.ID_Module
-                                  join anne in shared.bd.annee_scolaire on eva.ID_Année_SCO equals anne.ID_Année_SCO
-                                  where eva.Num_STG == a && eva.ID_Semestre == idsem && eva.ID_Année_SCO == idannee && stg.Section == idsec
-
-                                  select new
-                                  {
-                                      Numro_STG = eva.Num_STG,
-
-                                      Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                      cnt1 = eva.Control_1,
-                                      exm = eva.Exam,
-                                      rat = eva.Rattrapage,
-                                      conff=modul.coefficient_Module
-                                    
-
-                                  }; 
-                        string OB = "f";
-                        foreach (var quree in qur.ToList())
-                        {
-                            OB = "n";
-                            if (quree.cnt1.ToString() != "" && quree.exm.ToString() != "")
-                            {
-                                float cont = float.Parse(quree.cnt1.ToString());
-                                float exm = float.Parse(quree.exm.ToString());
-                                float rat = 0;
-                                if (quree.rat.ToString() != "")
-                                {
-                                    rat = float.Parse(quree.rat.ToString());
-                                }
-
-                                float max = float.Parse(maxa(exm.ToString(), rat.ToString()));
-
-                                confs = int.Parse(quree.conff.ToString());
-                                mcof += confs;   
-                                tmynE = (((cont + max) / 3)*float.Parse(quree.conff.ToString()));
-                                tmyn += tmynE;
-                                if (tmynE < confs)
-                                {
-                                    OB = "r";
-                                }
-                                
-                            }
-
-
-                        }
-                       
-                       mg = tmyn / mcof;
-                        row["MG"] = mg;
-                        if(OB=="r"|| mg < 10)
-                        {
-                            row["OBS"] = "RAT";
-                        }
-                        else { row["OBS"] = "ADM"; }
-
-                    }
-
-                }
-
-                gridControl1.DataSource = null;
-                gridControl1.DataSource = dt;
-                gridView1.OptionsBehavior.ReadOnly = true;
-                NUBEREF.Text = dt.Rows.Count.ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void simpleButton6_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
@@ -1236,10 +401,7 @@ namespace gtsco2.forms.PVfinal
 
 
 
-        private void avenrtp_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
@@ -1265,25 +427,13 @@ namespace gtsco2.forms.PVfinal
 
 
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
+      
 
-        }
+       
 
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
+      
 
-        }
-
-        private void radio1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radio3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+      
         //chonge la color de cell solen le ceoffiation 
         private void gridView1_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
         {

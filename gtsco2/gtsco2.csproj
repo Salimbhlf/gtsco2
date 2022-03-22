@@ -745,6 +745,9 @@
     <EmbeddedResource Include="mvvm\Views\annee_scolaire\annee_scolaireCollectionView.resx">
       <DependentUpon>annee_scolaireCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Avenant_contrat_prorogation\Avenant_contrat_prorogationCollectionView.resx">
+      <DependentUpon>Avenant_contrat_prorogationCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Branch\BranchCollectionView.resx">
       <DependentUpon>BranchCollectionView.cs</DependentUpon>
     </EmbeddedResource>

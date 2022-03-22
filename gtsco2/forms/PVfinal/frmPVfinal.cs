@@ -1,7 +1,9 @@
-﻿using gtsco2.classe;
+﻿using DevExpress.XtraGrid;
+using gtsco2.classe;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -207,7 +209,8 @@ namespace gtsco2.forms.PVfinal
 
 
         }
-
+        public DataTable conff;
+        
         public void loadmoye()
         {
             try { 
@@ -234,7 +237,8 @@ namespace gtsco2.forms.PVfinal
                            Nom_Et_Prenom = (stg.Nom + " " + stg.Prenom),
                            mynav = eva.Moyenne_Module_AvRt,
                            mynap = eva.Moyenne_Module_ApRt,
-                           modul.coefficient_Module,
+                          coefficient_Module= modul.coefficient_Module,
+                           notelm = modul.Note_Elim_Module,
                            module = ("Matiére: " + modul.Designation_Module + " Note Elim: " + modul.Note_Elim_Module + " Coeff: " + modul.coefficient_Module)
 
                        };
@@ -244,6 +248,11 @@ namespace gtsco2.forms.PVfinal
             gridControl1.DataSource = null;
             gridView1.Columns.Clear();
             int tcon = 0;
+            conff = new DataTable();
+            conff.Columns.Add("nommodule");
+            conff.Columns.Add("coeff");
+            conff.Columns.Add("notelm");
+
             //cration des colouns de datatable
             foreach (var qr in qure.ToList())
             {
@@ -252,6 +261,8 @@ namespace gtsco2.forms.PVfinal
                     dt.Columns.Add("Numro_STG");
                     dt.Columns.Add("Nom_Et_Prnom");
                     dt.Columns.Add(qr.module, typeof(double));
+                    
+                    conff.Rows.Add(qr.module, qr.coefficient_Module, qr.notelm);
                     tcon += int.Parse(qr.coefficient_Module.ToString());
                 }
                 else
@@ -270,6 +281,7 @@ namespace gtsco2.forms.PVfinal
                     {
                         dt.Columns.Add(qr.module,typeof(double));
                         tcon += int.Parse(qr.coefficient_Module.ToString());
+                        conff.Rows.Add(qr.module, qr.coefficient_Module,qr.notelm);
                     }
                 }
             }
@@ -320,6 +332,36 @@ namespace gtsco2.forms.PVfinal
             }
             dt.Columns.Add("MG");
             dt.Columns.Add("OPS");
+            //calucle de la moynne ginarale et affictation des ops
+
+            foreach(DataRow rowstg in dt.Rows)
+            {
+                double moyne = 0;
+                int cooff = 0;
+                bool rat = false;
+                foreach (DataRow coof in conff.Rows)
+                {
+                    moyne += (double)((double)(rowstg[coof[0].ToString()])* int.Parse(coof[1].ToString()));
+                    cooff += int.Parse(coof[1].ToString());
+                    if (int.Parse(coof[2].ToString())> (double)(rowstg[coof[0].ToString()]))
+                    {
+                        rat = true;
+                    }
+
+                }
+                rowstg["MG"] = (moyne / cooff);
+                if ( rat==true ||float.Parse(rowstg["MG"].ToString())<10)
+                {
+                    if (chikdeavenrtp.Checked == true)
+                    {
+                        rowstg["OPS"] = "Ret";
+                    }
+                }
+                else
+                {
+                    rowstg["OPS"] = "Admis";
+                }
+            }
 
             gridControl1.DataSource = dt;
 
@@ -329,8 +371,8 @@ namespace gtsco2.forms.PVfinal
         }
 
 
-                
 
+        
 
 
 
@@ -1231,5 +1273,35 @@ namespace gtsco2.forms.PVfinal
         {
 
         }
+        //chonge la color de cell solen le ceoffiation 
+        private void gridView1_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
+        {
+            try
+            {
+                foreach (DataRow row in conff.Rows)
+                {
+                    if ((e.Column).ToString() == row[0].ToString())
+                    {
+                        var conn = float.Parse(row[2].ToString());
+                        var valeu = float.Parse(e.CellValue.ToString());
+                        if (valeu < conn)
+                        {
+                            e.Appearance.BackColor = Color.FromArgb(0xD2, 0xFD, 0x91);
+                            e.Appearance.Font = new Font(e.Appearance.Font.FontFamily, e.Appearance.Font.Size, FontStyle.Bold);
+                        }
+                    }
+                }
+            }
+            catch { }
+            //if (e.Column == gridView1.Columns[3])
+            //{
+            //    var age = float.Parse(e.CellValue.ToString());
+            //    if (age > 10)
+            //        e.Appearance.BackColor = Color.Red;
+            //    else
+            //        e.Appearance.BackColor = Color.FromArgb(0xD2, 0xFD, 0x91);
+            //}
+        }
     }
 }
+

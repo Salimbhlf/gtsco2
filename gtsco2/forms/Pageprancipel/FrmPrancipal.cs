@@ -137,5 +137,40 @@ namespace gtsco2.forms.Pageprancipel
         {
             opfrm(new mvvm.Views.ModuleCollectionView.ModuleCollectionView());
         }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.EnseignantCollectionView.EnseignantCollectionView());
+        }
+
+        private void barButtonItem8Titeur_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.tuteurCollectionView.tuteurCollectionView());
+        }
+
+        private void barButtonItem9Etablissement_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.EtablissementCollectionView.EtablissementCollectionView());
+        }
+
+        private void barButtonItem8ContractAvnCHongment_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.Contract_avenant_changementCollectionView.Contract_avenant_changementCollectionView());
+        }
+
+        private void barButtonItem9AvenantProrgation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.Avenant_contrat_prorogationCollectionView.Avenant_contrat_prorogationCollectionView());
+        }
+
+        private void barButtonItem8ProceVerbale_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.Proce_verbal_delibationCollectionView.Proce_verbal_delibationCollectionView());
+        }
+
+        private void barButtonItem9ParticpePV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.PARTICIPECollectionView.PARTICIPECollectionView());
+        }
     }
 }

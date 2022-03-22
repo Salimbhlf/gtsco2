@@ -292,20 +292,24 @@ namespace gtsco2.forms.PVfinal
                 var r = dt.Rows.Count;
                 foreach (DataRow dro in dt.Rows)
                 {
-                    if (dro[0].ToString() == qres.Numro_STG.ToString())
+                    try
                     {
-                        if (chikdeavenrtp.Checked == true)
+                        if (dro[0].ToString() == qres.Numro_STG.ToString())
                         {
-                            dro[qres.module] = qres.mynav;
-                            r += 1;
-                        }
-                        else
-                        {
-                            dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
-                            r += 1;
-                        }
+                            if (chikdeavenrtp.Checked == true)
+                            {
+                                dro[qres.module] = qres.mynav;
+                                r += 1;
+                            }
+                            else
+                            {
+                                dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                                r += 1;
+                            }
 
+                        }
                     }
+                    catch { }
                 }
                 if (dt.Rows.Count <= 0 || r == dt.Rows.Count)
                 {
@@ -317,12 +321,16 @@ namespace gtsco2.forms.PVfinal
 
                     if (chikdeavenrtp.Checked == true)
                     {
+                        if ( qres.mynav != null)
                         dro[qres.module] = qres.mynav;
-                       
+                        else MessageBox.Show("pas de moy de d'exmaine");
+
                     }
                     else
                     {
-                        dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                        if (qres.mynap != null)
+                            dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                        else MessageBox.Show("pas de moy de ratrpage");
                         
                     }
 
@@ -341,13 +349,16 @@ namespace gtsco2.forms.PVfinal
                 bool rat = false;
                 foreach (DataRow coof in conff.Rows)
                 {
-                    moyne += (double)((double)(rowstg[coof[0].ToString()])* int.Parse(coof[1].ToString()));
-                    cooff += int.Parse(coof[1].ToString());
-                    if (int.Parse(coof[2].ToString())> (double)(rowstg[coof[0].ToString()]))
+                    try
                     {
-                        rat = true;
+                        moyne += (double)((double)(rowstg[coof[0].ToString()]) * int.Parse(coof[1].ToString()));
+                        cooff += int.Parse(coof[1].ToString());
+                        if (int.Parse(coof[2].ToString()) > (double)(rowstg[coof[0].ToString()]))
+                        {
+                            rat = true;
+                        }
                     }
-
+                    catch { }
                 }
                 rowstg["MG"] = (moyne / cooff);
                 if ( rat==true ||float.Parse(rowstg["MG"].ToString())<10)

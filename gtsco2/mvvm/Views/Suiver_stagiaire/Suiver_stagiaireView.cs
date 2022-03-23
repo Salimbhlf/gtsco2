@@ -28,5 +28,15 @@ namespace gtsco2.mvvm.Views.Suiver_stagiaireView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void StagiairLookUpEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Semestre1LookUpEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

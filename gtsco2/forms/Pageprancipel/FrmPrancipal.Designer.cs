@@ -50,17 +50,37 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Evaluation = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1ABS = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
+            this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
+            this.barButtonItem8Enesignant = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9Etablissement = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8Titeur = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8ContractAvnCHongment = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9AvenantProrgation = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8ProceVerbale = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9ParticpePV = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
@@ -73,26 +93,6 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
-            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem8Enesignant = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem9Etablissement = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem8Titeur = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem8ContractAvnCHongment = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9AvenantProrgation = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem8ProceVerbale = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9ParticpePV = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
@@ -173,7 +173,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1PvNote
             // 
-            this.barButtonItem1PvNote.Caption = "Gestion des moyennes par section";
+            this.barButtonItem1PvNote.Caption = "P.V \r\nd\'évaluation/ section";
             this.barButtonItem1PvNote.Id = 3;
             this.barButtonItem1PvNote.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1PvNote.ImageOptions.Image")));
             this.barButtonItem1PvNote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1PvNote.ImageOptions.LargeImage")));
@@ -182,7 +182,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItemAddABS
             // 
-            this.barButtonItemAddABS.Caption = "Ajouter Des Absonce";
+            this.barButtonItemAddABS.Caption = "Saisie des absences";
             this.barButtonItemAddABS.Id = 4;
             this.barButtonItemAddABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddABS.ImageOptions.Image")));
             this.barButtonItemAddABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddABS.ImageOptions.LargeImage")));
@@ -191,7 +191,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItemPvAbs
             // 
-            this.barButtonItemPvAbs.Caption = "PV D\'absonce";
+            this.barButtonItemPvAbs.Caption = "P.V d\'absences";
             this.barButtonItemPvAbs.Id = 5;
             this.barButtonItemPvAbs.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemPvAbs.ImageOptions.Image")));
             this.barButtonItemPvAbs.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemPvAbs.ImageOptions.LargeImage")));
@@ -292,7 +292,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1Evaluation
             // 
-            this.barButtonItem1Evaluation.Caption = "Gffichage des moyennes des stagiaires";
+            this.barButtonItem1Evaluation.Caption = "Affichage globale \r\ndes évaluations";
             this.barButtonItem1Evaluation.Id = 16;
             this.barButtonItem1Evaluation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Evaluation.ImageOptions.Image")));
             this.barButtonItem1Evaluation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Evaluation.ImageOptions.LargeImage")));
@@ -301,7 +301,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1ABS
             // 
-            this.barButtonItem1ABS.Caption = "Absence";
+            this.barButtonItem1ABS.Caption = "Affichage globale \r\ndes absence";
             this.barButtonItem1ABS.Id = 17;
             this.barButtonItem1ABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.Image")));
             this.barButtonItem1ABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.LargeImage")));
@@ -316,6 +316,74 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // skinPaletteRibbonGalleryBarItem1
+            // 
+            this.skinPaletteRibbonGalleryBarItem1.Caption = "skinPaletteRibbonGalleryBarItem1";
+            this.skinPaletteRibbonGalleryBarItem1.Id = 20;
+            this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
+            // 
+            // skinPaletteDropDownButtonItem1
+            // 
+            this.skinPaletteDropDownButtonItem1.Id = 21;
+            this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
+            // 
+            // barButtonItem8Enesignant
+            // 
+            this.barButtonItem8Enesignant.Caption = "Enesignant";
+            this.barButtonItem8Enesignant.Id = 22;
+            this.barButtonItem8Enesignant.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Enesignant.ImageOptions.SvgImage")));
+            this.barButtonItem8Enesignant.Name = "barButtonItem8Enesignant";
+            this.barButtonItem8Enesignant.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
+            // 
+            // barButtonItem9Etablissement
+            // 
+            this.barButtonItem9Etablissement.Caption = "Etablissement";
+            this.barButtonItem9Etablissement.Id = 23;
+            this.barButtonItem9Etablissement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9Etablissement.ImageOptions.Image")));
+            this.barButtonItem9Etablissement.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9Etablissement.ImageOptions.LargeImage")));
+            this.barButtonItem9Etablissement.Name = "barButtonItem9Etablissement";
+            this.barButtonItem9Etablissement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9Etablissement_ItemClick);
+            // 
+            // barButtonItem8Titeur
+            // 
+            this.barButtonItem8Titeur.Caption = "Titeur";
+            this.barButtonItem8Titeur.Id = 24;
+            this.barButtonItem8Titeur.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Titeur.ImageOptions.SvgImage")));
+            this.barButtonItem8Titeur.Name = "barButtonItem8Titeur";
+            this.barButtonItem8Titeur.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Titeur_ItemClick);
+            // 
+            // barButtonItem8ContractAvnCHongment
+            // 
+            this.barButtonItem8ContractAvnCHongment.Caption = "Contract avenant de Chongement";
+            this.barButtonItem8ContractAvnCHongment.Id = 25;
+            this.barButtonItem8ContractAvnCHongment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ContractAvnCHongment.ImageOptions.Image")));
+            this.barButtonItem8ContractAvnCHongment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ContractAvnCHongment.ImageOptions.LargeImage")));
+            this.barButtonItem8ContractAvnCHongment.Name = "barButtonItem8ContractAvnCHongment";
+            this.barButtonItem8ContractAvnCHongment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8ContractAvnCHongment_ItemClick);
+            // 
+            // barButtonItem9AvenantProrgation
+            // 
+            this.barButtonItem9AvenantProrgation.Caption = "Avenant de Prorogation";
+            this.barButtonItem9AvenantProrgation.Id = 26;
+            this.barButtonItem9AvenantProrgation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9AvenantProrgation.ImageOptions.Image")));
+            this.barButtonItem9AvenantProrgation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9AvenantProrgation.ImageOptions.LargeImage")));
+            this.barButtonItem9AvenantProrgation.Name = "barButtonItem9AvenantProrgation";
+            this.barButtonItem9AvenantProrgation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9AvenantProrgation_ItemClick);
+            // 
+            // barButtonItem8ProceVerbale
+            // 
+            this.barButtonItem8ProceVerbale.Caption = "Proce verbal delibartion";
+            this.barButtonItem8ProceVerbale.Id = 27;
+            this.barButtonItem8ProceVerbale.Name = "barButtonItem8ProceVerbale";
+            this.barButtonItem8ProceVerbale.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8ProceVerbale_ItemClick);
+            // 
+            // barButtonItem9ParticpePV
+            // 
+            this.barButtonItem9ParticpePV.Caption = "Participe eu Proce verbale";
+            this.barButtonItem9ParticpePV.Id = 28;
+            this.barButtonItem9ParticpePV.Name = "barButtonItem9ParticpePV";
+            this.barButtonItem9ParticpePV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9ParticpePV_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -341,14 +409,14 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1PvNote);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1Evaluation);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Evaluation";
+            this.ribbonPageGroup2.Text = "Gestion des évaluation";
             // 
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup3.ImageOptions.Image")));
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1ABS);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemAddABS);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemPvAbs);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1ABS);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "absonse";
             // 
@@ -358,6 +426,12 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem1Soiver);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Enseignant suiver";
+            // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem8Titeur);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            this.ribbonPageGroup17.Text = "ribbonPageGroup17";
             // 
             // ribbonPage2
             // 
@@ -401,6 +475,73 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItemMaitre);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            // 
+            // ribbonPageGroup18
+            // 
+            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem8ContractAvnCHongment);
+            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem9AvenantProrgation);
+            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
+            this.ribbonPageGroup18.Text = "ribbonPageGroup18";
+            // 
+            // ribbonPage4
+            // 
+            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13,
+            this.ribbonPageGroup14});
+            this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Text = "ribbonPage4";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            this.ribbonPageGroup12.Text = "ribbonPageGroup12";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.skinPaletteDropDownButtonItem1);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            this.ribbonPageGroup13.Text = "ribbonPageGroup13";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
+            // 
+            // ribbonPage5
+            // 
+            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup15,
+            this.ribbonPageGroup16});
+            this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Text = "ribbonPage5";
+            // 
+            // ribbonPageGroup15
+            // 
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem8Enesignant);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            this.ribbonPageGroup15.Text = "ribbonPageGroup15";
+            // 
+            // ribbonPageGroup16
+            // 
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem9Etablissement);
+            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
+            this.ribbonPageGroup16.Text = "ribbonPageGroup16";
+            // 
+            // ribbonPage6
+            // 
+            this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup19});
+            this.ribbonPage6.Name = "ribbonPage6";
+            this.ribbonPage6.Text = "ribbonPage6";
+            // 
+            // ribbonPageGroup19
+            // 
+            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem8ProceVerbale);
+            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem9ParticpePV);
+            this.ribbonPageGroup19.Name = "ribbonPageGroup19";
+            this.ribbonPageGroup19.Text = "ribbonPageGroup19";
             // 
             // barButtonItem2
             // 
@@ -498,147 +639,6 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem7.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem7.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem7.Name = "barButtonItem7";
-            // 
-            // ribbonPage4
-            // 
-            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup12,
-            this.ribbonPageGroup13,
-            this.ribbonPageGroup14});
-            this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "ribbonPage4";
-            // 
-            // ribbonPageGroup12
-            // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
-            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            this.ribbonPageGroup12.Text = "ribbonPageGroup12";
-            // 
-            // skinPaletteRibbonGalleryBarItem1
-            // 
-            this.skinPaletteRibbonGalleryBarItem1.Caption = "skinPaletteRibbonGalleryBarItem1";
-            this.skinPaletteRibbonGalleryBarItem1.Id = 20;
-            this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
-            // 
-            // ribbonPageGroup13
-            // 
-            this.ribbonPageGroup13.ItemLinks.Add(this.skinPaletteDropDownButtonItem1);
-            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            this.ribbonPageGroup13.Text = "ribbonPageGroup13";
-            // 
-            // skinPaletteDropDownButtonItem1
-            // 
-            this.skinPaletteDropDownButtonItem1.Id = 21;
-            this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
-            // 
-            // ribbonPageGroup14
-            // 
-            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
-            // 
-            // ribbonPage5
-            // 
-            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup15,
-            this.ribbonPageGroup16});
-            this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "ribbonPage5";
-            // 
-            // ribbonPageGroup15
-            // 
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem8Enesignant);
-            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            this.ribbonPageGroup15.Text = "ribbonPageGroup15";
-            // 
-            // barButtonItem8Enesignant
-            // 
-            this.barButtonItem8Enesignant.Caption = "Enesignant";
-            this.barButtonItem8Enesignant.Id = 22;
-            this.barButtonItem8Enesignant.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
-            this.barButtonItem8Enesignant.Name = "barButtonItem8Enesignant";
-            this.barButtonItem8Enesignant.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
-            // 
-            // ribbonPageGroup16
-            // 
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem9Etablissement);
-            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
-            this.ribbonPageGroup16.Text = "ribbonPageGroup16";
-            // 
-            // barButtonItem9Etablissement
-            // 
-            this.barButtonItem9Etablissement.Caption = "Etablissement";
-            this.barButtonItem9Etablissement.Id = 23;
-            this.barButtonItem9Etablissement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.barButtonItem9Etablissement.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.barButtonItem9Etablissement.Name = "barButtonItem9Etablissement";
-            this.barButtonItem9Etablissement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9Etablissement_ItemClick);
-            // 
-            // ribbonPageGroup17
-            // 
-            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem8Titeur);
-            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
-            this.ribbonPageGroup17.Text = "ribbonPageGroup17";
-            // 
-            // barButtonItem8Titeur
-            // 
-            this.barButtonItem8Titeur.Caption = "Titeur";
-            this.barButtonItem8Titeur.Id = 24;
-            this.barButtonItem8Titeur.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage1")));
-            this.barButtonItem8Titeur.Name = "barButtonItem8Titeur";
-            this.barButtonItem8Titeur.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Titeur_ItemClick);
-            // 
-            // ribbonPageGroup18
-            // 
-            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem8ContractAvnCHongment);
-            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem9AvenantProrgation);
-            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
-            this.ribbonPageGroup18.Text = "ribbonPageGroup18";
-            // 
-            // barButtonItem8ContractAvnCHongment
-            // 
-            this.barButtonItem8ContractAvnCHongment.Caption = "Contract avenant de Chongement";
-            this.barButtonItem8ContractAvnCHongment.Id = 25;
-            this.barButtonItem8ContractAvnCHongment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.barButtonItem8ContractAvnCHongment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
-            this.barButtonItem8ContractAvnCHongment.Name = "barButtonItem8ContractAvnCHongment";
-            this.barButtonItem8ContractAvnCHongment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8ContractAvnCHongment_ItemClick);
-            // 
-            // barButtonItem9AvenantProrgation
-            // 
-            this.barButtonItem9AvenantProrgation.Caption = "Avenant de Prorogation";
-            this.barButtonItem9AvenantProrgation.Id = 26;
-            this.barButtonItem9AvenantProrgation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image1")));
-            this.barButtonItem9AvenantProrgation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage1")));
-            this.barButtonItem9AvenantProrgation.Name = "barButtonItem9AvenantProrgation";
-            this.barButtonItem9AvenantProrgation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9AvenantProrgation_ItemClick);
-            // 
-            // ribbonPage6
-            // 
-            this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup19});
-            this.ribbonPage6.Name = "ribbonPage6";
-            this.ribbonPage6.Text = "ribbonPage6";
-            // 
-            // ribbonPageGroup19
-            // 
-            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem8ProceVerbale);
-            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem9ParticpePV);
-            this.ribbonPageGroup19.Name = "ribbonPageGroup19";
-            this.ribbonPageGroup19.Text = "ribbonPageGroup19";
-            // 
-            // barButtonItem8ProceVerbale
-            // 
-            this.barButtonItem8ProceVerbale.Caption = "Proce verbal delibartion";
-            this.barButtonItem8ProceVerbale.Id = 27;
-            this.barButtonItem8ProceVerbale.Name = "barButtonItem8ProceVerbale";
-            this.barButtonItem8ProceVerbale.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8ProceVerbale_ItemClick);
-            // 
-            // barButtonItem9ParticpePV
-            // 
-            this.barButtonItem9ParticpePV.Caption = "Participe eu Proce verbale";
-            this.barButtonItem9ParticpePV.Id = 28;
-            this.barButtonItem9ParticpePV.Name = "barButtonItem9ParticpePV";
-            this.barButtonItem9ParticpePV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9ParticpePV_ItemClick);
             // 
             // FrmPrancipal
             // 

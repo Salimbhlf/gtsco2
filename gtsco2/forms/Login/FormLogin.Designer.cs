@@ -186,6 +186,7 @@ namespace gtsco2.forms.Login
             this.panel5.TabIndex = 7;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.panel5.MouseHover += new System.EventHandler(this.panel5_MouseHover);
             // 
             // separatorControl2
             // 
@@ -207,7 +208,9 @@ namespace gtsco2.forms.Login
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit2.Size = new System.Drawing.Size(25, 25);
             this.pictureEdit2.TabIndex = 10;
+            this.pictureEdit2.EditValueChanged += new System.EventHandler(this.pictureEdit2_EditValueChanged);
             this.pictureEdit2.Click += new System.EventHandler(this.pictureEdit2_Click);
+            this.pictureEdit2.MouseHover += new System.EventHandler(this.pictureEdit2_MouseHover);
             // 
             // textEdit2
             // 
@@ -225,6 +228,7 @@ namespace gtsco2.forms.Login
             this.textEdit2.Size = new System.Drawing.Size(338, 26);
             this.textEdit2.TabIndex = 2;
             this.textEdit2.Enter += new System.EventHandler(this.textEdit2_Enter);
+            this.textEdit2.MouseHover += new System.EventHandler(this.textEdit2_MouseHover);
             // 
             // button2
             // 
@@ -287,8 +291,7 @@ namespace gtsco2.forms.Login
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.textEdit1.Size = new System.Drawing.Size(338, 26);
             this.textEdit1.TabIndex = 2;
-            this.textEdit1.Validating += new System.ComponentModel.CancelEventHandler(this.textEdit1_Validating);
-            this.textEdit1.Validated += new System.EventHandler(this.textEdit1_Validated);
+            this.textEdit1.Enter += new System.EventHandler(this.textEdit1_Enter);
             // 
             // label2
             // 

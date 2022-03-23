@@ -56,7 +56,6 @@ namespace gtsco2.forms
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(841, 450);
             this.panelControl1.TabIndex = 0;
-         
             // 
             // flowLayoutPanel1
             // 
@@ -78,7 +77,6 @@ namespace gtsco2.forms
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(837, 446);
             this.flowLayoutPanel1.TabIndex = 0;
-           
             // 
             // addabsbtn
             // 
@@ -271,7 +269,6 @@ namespace gtsco2.forms
             this.simpleButton1.Size = new System.Drawing.Size(202, 87);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Evaluation";
-     
             // 
             // simpleButton8
             // 
@@ -346,7 +343,7 @@ namespace gtsco2.forms
             this.simpleButton12.Name = "simpleButton12";
             this.simpleButton12.Size = new System.Drawing.Size(202, 87);
             this.simpleButton12.TabIndex = 11;
-            this.simpleButton12.Text = "Evaluation";
+            this.simpleButton12.Text = "login";
             this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
             // 
             // Navigation

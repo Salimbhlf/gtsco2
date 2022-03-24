@@ -86,10 +86,9 @@ namespace gtsco2.forms.Login
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(29, 372);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(280, 24);
+            this.label6.Size = new System.Drawing.Size(282, 24);
             this.label6.TabIndex = 10;
-            this.label6.Text = "de Technicien Supérieurde";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Text = "De Technicien Supérieurde";
             // 
             // label5
             // 
@@ -98,9 +97,9 @@ namespace gtsco2.forms.Login
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(54, 331);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 24);
+            this.label5.Size = new System.Drawing.Size(234, 24);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Assure des Formations";
+            this.label5.Text = "Assure Des Formations";
             // 
             // label4
             // 
@@ -122,7 +121,7 @@ namespace gtsco2.forms.Login
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(304, 24);
             this.label3.TabIndex = 7;
-            this.label3.Text = "de Formation professionnelle";
+            this.label3.Text = "De Formation Professionnelle";
             // 
             // label1
             // 
@@ -131,9 +130,9 @@ namespace gtsco2.forms.Login
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(29, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 24);
+            this.label1.Size = new System.Drawing.Size(287, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "L’institut National Spécialisé";
+            this.label1.Text = "L’Institut National Spécialisé";
             // 
             // pictureBox1
             // 
@@ -154,25 +153,26 @@ namespace gtsco2.forms.Login
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button1);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(351, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(399, 530);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // checkEdit1
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(211, 329);
+            this.checkEdit1.Location = new System.Drawing.Point(188, 329);
             this.checkEdit1.Name = "checkEdit1";
             this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.checkEdit1.Properties.Appearance.Options.UseFont = true;
             this.checkEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.checkEdit1.Properties.Caption = "Affichez votre mot de passe";
-            this.checkEdit1.Size = new System.Drawing.Size(176, 21);
+            this.checkEdit1.Size = new System.Drawing.Size(200, 21);
             this.checkEdit1.TabIndex = 8;
+            this.checkEdit1.CheckedChanged += new System.EventHandler(this.checkEdit1_CheckedChanged);
             // 
             // panel5
             // 
@@ -180,20 +180,20 @@ namespace gtsco2.forms.Login
             this.panel5.Controls.Add(this.separatorControl2);
             this.panel5.Controls.Add(this.pictureEdit2);
             this.panel5.Controls.Add(this.textEdit2);
-            this.panel5.Location = new System.Drawing.Point(-1, 268);
+            this.panel5.Location = new System.Drawing.Point(7, 268);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(400, 45);
+            this.panel5.Size = new System.Drawing.Size(380, 45);
             this.panel5.TabIndex = 7;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            this.panel5.MouseHover += new System.EventHandler(this.panel5_MouseHover);
+            this.panel5.MouseEnter += new System.EventHandler(this.panel5_MouseEnter);
+            this.panel5.MouseLeave += new System.EventHandler(this.panel5_MouseLeave);
             // 
             // separatorControl2
             // 
-            this.separatorControl2.BackColor = System.Drawing.SystemColors.Control;
+            this.separatorControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.separatorControl2.Location = new System.Drawing.Point(34, 32);
             this.separatorControl2.Name = "separatorControl2";
-            this.separatorControl2.Size = new System.Drawing.Size(354, 3);
+            this.separatorControl2.Size = new System.Drawing.Size(334, 2);
             this.separatorControl2.TabIndex = 11;
             // 
             // pictureEdit2
@@ -208,12 +208,12 @@ namespace gtsco2.forms.Login
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit2.Size = new System.Drawing.Size(25, 25);
             this.pictureEdit2.TabIndex = 10;
-            this.pictureEdit2.EditValueChanged += new System.EventHandler(this.pictureEdit2_EditValueChanged);
             this.pictureEdit2.Click += new System.EventHandler(this.pictureEdit2_Click);
             this.pictureEdit2.MouseHover += new System.EventHandler(this.pictureEdit2_MouseHover);
             // 
             // textEdit2
             // 
+            this.textEdit2.EditValue = "Mote de passe";
             this.textEdit2.Location = new System.Drawing.Point(42, 7);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
@@ -223,12 +223,12 @@ namespace gtsco2.forms.Login
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
             this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit2.Properties.PasswordChar = '*';
             this.textEdit2.Properties.UseSystemPasswordChar = true;
-            this.textEdit2.Size = new System.Drawing.Size(338, 26);
+            this.textEdit2.Size = new System.Drawing.Size(317, 26);
             this.textEdit2.TabIndex = 2;
             this.textEdit2.Enter += new System.EventHandler(this.textEdit2_Enter);
-            this.textEdit2.MouseHover += new System.EventHandler(this.textEdit2_MouseHover);
+            this.textEdit2.MouseEnter += new System.EventHandler(this.textEdit2_MouseEnter);
+            this.textEdit2.MouseLeave += new System.EventHandler(this.textEdit2_MouseLeave);
             // 
             // button2
             // 
@@ -236,13 +236,12 @@ namespace gtsco2.forms.Login
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(5, 412);
+            this.button2.Location = new System.Drawing.Point(13, 412);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(382, 35);
+            this.button2.Size = new System.Drawing.Size(374, 35);
             this.button2.TabIndex = 6;
             this.button2.Text = "Se Connectez";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -250,18 +249,20 @@ namespace gtsco2.forms.Login
             this.panel3.Controls.Add(this.separatorControl1);
             this.panel3.Controls.Add(this.pictureEdit1);
             this.panel3.Controls.Add(this.textEdit1);
-            this.panel3.Location = new System.Drawing.Point(-1, 210);
+            this.panel3.Location = new System.Drawing.Point(7, 210);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(400, 45);
+            this.panel3.Size = new System.Drawing.Size(381, 45);
             this.panel3.TabIndex = 5;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
+            this.panel3.MouseEnter += new System.EventHandler(this.panel3_MouseEnter);
+            this.panel3.MouseLeave += new System.EventHandler(this.panel3_MouseLeave);
             // 
             // separatorControl1
             // 
-            this.separatorControl1.BackColor = System.Drawing.SystemColors.Control;
+            this.separatorControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.separatorControl1.Location = new System.Drawing.Point(34, 32);
             this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(354, 3);
+            this.separatorControl1.Size = new System.Drawing.Size(335, 2);
             this.separatorControl1.TabIndex = 9;
             // 
             // pictureEdit1
@@ -280,8 +281,10 @@ namespace gtsco2.forms.Login
             // 
             // textEdit1
             // 
+            this.textEdit1.EditValue = "Nom D\'Utillisateur";
             this.textEdit1.Location = new System.Drawing.Point(42, 7);
             this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.AccessibleDescription = "";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
@@ -289,9 +292,11 @@ namespace gtsco2.forms.Login
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(338, 26);
+            this.textEdit1.Size = new System.Drawing.Size(317, 26);
             this.textEdit1.TabIndex = 2;
             this.textEdit1.Enter += new System.EventHandler(this.textEdit1_Enter);
+            this.textEdit1.MouseEnter += new System.EventHandler(this.textEdit1_MouseEnter);
+            this.textEdit1.MouseLeave += new System.EventHandler(this.textEdit1_MouseLeave);
             // 
             // label2
             // 
@@ -306,6 +311,7 @@ namespace gtsco2.forms.Login
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.button1.Location = new System.Drawing.Point(359, 0);

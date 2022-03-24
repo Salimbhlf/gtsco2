@@ -17,35 +17,18 @@ namespace gtsco2.forms.Login
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+       
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void pictureEdit2_Click(object sender, EventArgs e)
         {
@@ -70,34 +53,12 @@ namespace gtsco2.forms.Login
         private void panel3_Click(object sender, EventArgs e)
         {
             textEdit1.Focus();
+            
         }
 
         
 
-        private void textEdit1_Validated(object sender, EventArgs e)
-        {
-            textEdit1.BackColor = Color.White;
-            textEdit2.BackColor = System.Drawing.SystemColors.Control;
-            panel3.BackColor = Color.White;
-            panel5.BackColor = System.Drawing.SystemColors.Control;
-            pictureEdit1.BackColor = Color.White;
-            pictureEdit2.BackColor = System.Drawing.SystemColors.Control;
-            separatorControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            separatorControl2.BackColor = System.Drawing.SystemColors.Control;
-        }
 
-        private void textEdit1_Validating(object sender, CancelEventArgs e)
-        {
-
-            textEdit1.BackColor = Color.White;
-            textEdit2.BackColor = System.Drawing.SystemColors.Control;
-            panel3.BackColor = Color.White;
-            panel5.BackColor = System.Drawing.SystemColors.Control;
-            pictureEdit1.BackColor = Color.White;
-            pictureEdit2.BackColor = System.Drawing.SystemColors.Control;
-            separatorControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            separatorControl2.BackColor = System.Drawing.SystemColors.Control;
-        }
 
         private void textEdit2_Enter(object sender, EventArgs e)
         {
@@ -107,21 +68,11 @@ namespace gtsco2.forms.Login
             panel3.BackColor = System.Drawing.SystemColors.Control;
             pictureEdit2.BackColor = Color.White;
             pictureEdit1.BackColor = System.Drawing.SystemColors.Control;
-            separatorControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            separatorControl1.BackColor = System.Drawing.SystemColors.Control;
+            textEdit2.SelectAll();
+
         }
 
-        private void textEdit2_MouseHover(object sender, EventArgs e)
-        {
-            textEdit2.BackColor = Color.White;
-            
-            panel5.BackColor = Color.White;
-            
-            pictureEdit2.BackColor = Color.White;
-            
-            separatorControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            
-        }
+      
 
         private void textEdit1_Enter(object sender, EventArgs e)
         {
@@ -131,26 +82,13 @@ namespace gtsco2.forms.Login
             panel5.BackColor = System.Drawing.SystemColors.Control;
             pictureEdit1.BackColor = Color.White;
             pictureEdit2.BackColor = System.Drawing.SystemColors.Control;
-            separatorControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            separatorControl2.BackColor = System.Drawing.SystemColors.Control;
+
+            textEdit1.SelectAll();
         }
 
-        private void panel5_MouseHover(object sender, EventArgs e)
-        {
-            textEdit2.BackColor = Color.White;
+       
 
-            panel5.BackColor = Color.White;
-
-            pictureEdit2.BackColor = Color.White;
-
-            separatorControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-
-        }
-
-        private void pictureEdit2_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void pictureEdit2_MouseHover(object sender, EventArgs e)
         {
@@ -160,8 +98,123 @@ namespace gtsco2.forms.Login
 
             pictureEdit2.BackColor = Color.White;
 
-            separatorControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+           
+        }
+
+        
+
+        private void panel5_MouseEnter(object sender, EventArgs e)
+        {
+            textEdit2.BackColor = Color.White;
+
+            panel5.BackColor = Color.White;
+
+            pictureEdit2.BackColor = Color.White;
+
+            
+        }
+
+        private void panel5_MouseLeave(object sender, EventArgs e)
+        {
+            if (textEdit2.ContainsFocus == false)
+            {
+                textEdit2.BackColor = System.Drawing.SystemColors.Control;
+
+                panel5.BackColor = System.Drawing.SystemColors.Control;
+
+                pictureEdit2.BackColor = System.Drawing.SystemColors.Control;
+
+                 }
+        }
+
+        private void textEdit2_MouseLeave(object sender, EventArgs e)
+        {
+            if (textEdit2.ContainsFocus == false)
+            {
+                textEdit2.BackColor = System.Drawing.SystemColors.Control;
+
+                panel5.BackColor = System.Drawing.SystemColors.Control;
+
+                pictureEdit2.BackColor = System.Drawing.SystemColors.Control;
+
+                     }
+        }
+
+        private void panel3_MouseEnter(object sender, EventArgs e)
+        {
+            textEdit1.BackColor = Color.White;
+            
+            panel3.BackColor = Color.White;
+           
+            pictureEdit1.BackColor = Color.White;
+           
+           
+            
+        }
+
+    
+
+        private void textEdit1_MouseEnter(object sender, EventArgs e)
+        {
+            textEdit1.BackColor = Color.White;
+          
+            panel3.BackColor = Color.White;
+            
+            pictureEdit1.BackColor = Color.White;
+           
+            
+            
+        }
+
+        private void textEdit1_MouseLeave(object sender, EventArgs e)
+        {
+            if (textEdit1.ContainsFocus == false)
+            {
+                textEdit1.BackColor = System.Drawing.SystemColors.Control; ;
+
+                panel3.BackColor = System.Drawing.SystemColors.Control; ;
+
+                pictureEdit1.BackColor = System.Drawing.SystemColors.Control; ;
+
+                
+            }
+        }
+
+        
+
+        private void panel3_MouseLeave(object sender, EventArgs e)
+        {
+            if (textEdit1.ContainsFocus == false)
+            {
+                textEdit1.BackColor = System.Drawing.SystemColors.Control; ;
+
+                panel3.BackColor = System.Drawing.SystemColors.Control; ;
+
+                pictureEdit1.BackColor = System.Drawing.SystemColors.Control;
+            }
+           
+        }
+
+        private void textEdit2_MouseEnter(object sender, EventArgs e)
+        {
+            textEdit2.BackColor = Color.White;
+
+            panel5.BackColor = Color.White;
+
+            pictureEdit2.BackColor = Color.White;
+
+            
 
         }
+
+        private void checkEdit1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkEdit1.Checked == true)
+                textEdit2.Properties.UseSystemPasswordChar = false;
+            else
+                textEdit2.Properties.UseSystemPasswordChar = true;
+        }
+
+       
     }
 }

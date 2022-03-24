@@ -185,7 +185,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1PvNote
             // 
-            this.barButtonItem1PvNote.Caption = "Gestion des moyennes par section";
+            this.barButtonItem1PvNote.Caption = "P.V \r\nd\'évaluation/ section";
             this.barButtonItem1PvNote.Id = 3;
             this.barButtonItem1PvNote.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1PvNote.ImageOptions.Image")));
             this.barButtonItem1PvNote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1PvNote.ImageOptions.LargeImage")));
@@ -194,7 +194,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItemAddABS
             // 
-            this.barButtonItemAddABS.Caption = "Ajouter Des Absonce";
+            this.barButtonItemAddABS.Caption = "Saisie des absences";
             this.barButtonItemAddABS.Id = 4;
             this.barButtonItemAddABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddABS.ImageOptions.Image")));
             this.barButtonItemAddABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddABS.ImageOptions.LargeImage")));
@@ -203,7 +203,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItemPvAbs
             // 
-            this.barButtonItemPvAbs.Caption = "PV D\'absonce";
+            this.barButtonItemPvAbs.Caption = "P.V d\'absences";
             this.barButtonItemPvAbs.Id = 5;
             this.barButtonItemPvAbs.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemPvAbs.ImageOptions.Image")));
             this.barButtonItemPvAbs.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemPvAbs.ImageOptions.LargeImage")));
@@ -304,7 +304,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1Evaluation
             // 
-            this.barButtonItem1Evaluation.Caption = "Gffichage des moyennes des stagiaires";
+            this.barButtonItem1Evaluation.Caption = "Affichage globale \r\ndes évaluations";
             this.barButtonItem1Evaluation.Id = 16;
             this.barButtonItem1Evaluation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Evaluation.ImageOptions.Image")));
             this.barButtonItem1Evaluation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Evaluation.ImageOptions.LargeImage")));
@@ -313,7 +313,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1ABS
             // 
-            this.barButtonItem1ABS.Caption = "Absence";
+            this.barButtonItem1ABS.Caption = "Affichage globale \r\ndes absence";
             this.barButtonItem1ABS.Id = 17;
             this.barButtonItem1ABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.Image")));
             this.barButtonItem1ABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.LargeImage")));
@@ -452,14 +452,14 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1PvNote);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1Evaluation);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Evaluation";
+            this.ribbonPageGroup2.Text = "Gestion des évaluation";
             // 
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup3.ImageOptions.Image")));
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1ABS);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemAddABS);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemPvAbs);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1ABS);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "absonse";
             // 

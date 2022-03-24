@@ -172,5 +172,15 @@ namespace gtsco2.forms.Pageprancipel
         {
             opfrm(new mvvm.Views.PARTICIPECollectionView.PARTICIPECollectionView());
         }
+
+        private void barButtonItem8Promo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.PromoCollectionView.PromoCollectionView()); 
+        }
+
+        private void barButtonItem8Section_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.PARTICIPECollectionView.PARTICIPECollectionView());
+        }
     }
 }

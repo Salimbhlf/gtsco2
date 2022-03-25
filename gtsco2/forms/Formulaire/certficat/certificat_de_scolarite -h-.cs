@@ -8,9 +8,9 @@ using System.Linq;
 
 namespace gtsco2.forms.Formulaire.certficat
 {
-    public partial class XtraReport1 : DevExpress.XtraReports.UI.XtraReport
+    public partial class ReportCertficat : DevExpress.XtraReports.UI.XtraReport
     {
-        public XtraReport1()
+        public ReportCertficat()
         {
             InitializeComponent();
         }
@@ -18,6 +18,21 @@ namespace gtsco2.forms.Formulaire.certficat
         private void xrTableCell83_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
         {
 
+        }
+
+        public static void  printCertficat(string Num_stg)
+        {
+            ReportCertficat rpt = new ReportCertficat();
+
+            rpt.load(Num_stg);
+            foreach (DevExpress.XtraReports.Parameters.Parameter p in rpt.Parameters)
+                p.Visible = false;
+
+
+
+
+            rpt.ShowRibbonPreview();
+            
         }
 
         public void load(string Num_stg)
@@ -66,6 +81,8 @@ namespace gtsco2.forms.Formulaire.certficat
                 Anneescoliar.Value = row.annee_scolaire;
 
             }
+
+           
 
         }
     }

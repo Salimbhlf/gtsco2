@@ -93,7 +93,8 @@ namespace gtsco2.forms
 
         private void simpleButton12_Click(object sender, EventArgs e)
         {
-
+            Login.FormLogin frm = new Login.FormLogin();
+            frm.Show();
         }
 
         private void addevabtn_Click(object sender, EventArgs e)

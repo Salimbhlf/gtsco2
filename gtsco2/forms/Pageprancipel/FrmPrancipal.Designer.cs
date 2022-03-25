@@ -51,7 +51,6 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1ABS = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
             this.barButtonItem8Enesignant = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9Etablissement = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8Titeur = new DevExpress.XtraBars.BarButtonItem();
@@ -59,6 +58,11 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem9AvenantProrgation = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8ProceVerbale = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9ParticpePV = new DevExpress.XtraBars.BarButtonItem();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.barButtonItem8Promo = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8Section = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -68,6 +72,8 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -94,6 +100,7 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
@@ -124,16 +131,19 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1ABS,
             this.barButtonItem1,
             this.skinPaletteRibbonGalleryBarItem1,
-            this.skinPaletteDropDownButtonItem1,
             this.barButtonItem8Enesignant,
             this.barButtonItem9Etablissement,
             this.barButtonItem8Titeur,
             this.barButtonItem8ContractAvnCHongment,
             this.barButtonItem9AvenantProrgation,
             this.barButtonItem8ProceVerbale,
-            this.barButtonItem9ParticpePV});
+            this.barButtonItem9ParticpePV,
+            this.skinRibbonGalleryBarItem1,
+            this.barButtonItem8Promo,
+            this.barButtonItem8Section,
+            this.barEditItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 29;
+            this.ribbonControl1.MaxItemId = 35;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -143,8 +153,10 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage5,
             this.ribbonPage6});
             this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem1);
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemFontEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
-            this.ribbonControl1.Size = new System.Drawing.Size(972, 169);
+            this.ribbonControl1.Size = new System.Drawing.Size(972, 153);
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // barButtonItemstgiaire
@@ -323,11 +335,6 @@ namespace gtsco2.forms.Pageprancipel
             this.skinPaletteRibbonGalleryBarItem1.Id = 20;
             this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
             // 
-            // skinPaletteDropDownButtonItem1
-            // 
-            this.skinPaletteDropDownButtonItem1.Id = 21;
-            this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
-            // 
             // barButtonItem8Enesignant
             // 
             this.barButtonItem8Enesignant.Caption = "Enesignant";
@@ -385,6 +392,42 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem9ParticpePV.Name = "barButtonItem9ParticpePV";
             this.barButtonItem9ParticpePV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9ParticpePV_ItemClick);
             // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 29;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
+            // 
+            // barButtonItem8Promo
+            // 
+            this.barButtonItem8Promo.Caption = "Promo";
+            this.barButtonItem8Promo.Id = 30;
+            this.barButtonItem8Promo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Promo.ImageOptions.SvgImage")));
+            this.barButtonItem8Promo.Name = "barButtonItem8Promo";
+            this.barButtonItem8Promo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Promo_ItemClick);
+            // 
+            // barButtonItem8Section
+            // 
+            this.barButtonItem8Section.Caption = "Section";
+            this.barButtonItem8Section.Id = 31;
+            this.barButtonItem8Section.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Section.ImageOptions.SvgImage")));
+            this.barButtonItem8Section.Name = "barButtonItem8Section";
+            this.barButtonItem8Section.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Section_ItemClick);
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemFontEdit1;
+            this.barEditItem1.Id = 32;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemFontEdit1
+            // 
+            this.repositoryItemFontEdit1.AutoHeight = false;
+            this.repositoryItemFontEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -437,7 +480,9 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5,
-            this.ribbonPageGroup6});
+            this.ribbonPageGroup6,
+            this.ribbonPageGroup20,
+            this.ribbonPageGroup21});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
@@ -455,6 +500,18 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem5Anne);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem1Module);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            // 
+            // ribbonPageGroup20
+            // 
+            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Promo);
+            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Section);
+            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
+            // 
+            // ribbonPageGroup21
+            // 
+            this.ribbonPageGroup21.ItemLinks.Add(this.barEditItem1);
+            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
+            this.ribbonPageGroup21.Text = "ribbonPageGroup21";
             // 
             // ribbonPage3
             // 
@@ -489,8 +546,9 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup12,
             this.ribbonPageGroup13,
             this.ribbonPageGroup14});
+            this.ribbonPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
             this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "ribbonPage4";
+            this.ribbonPage4.Text = "Parmitre";
             // 
             // ribbonPageGroup12
             // 
@@ -500,7 +558,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPageGroup13
             // 
-            this.ribbonPageGroup13.ItemLinks.Add(this.skinPaletteDropDownButtonItem1);
+            this.ribbonPageGroup13.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             this.ribbonPageGroup13.Text = "ribbonPageGroup13";
             // 
@@ -653,6 +711,7 @@ namespace gtsco2.forms.Pageprancipel
             this.Text = "FrmPrancipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
@@ -706,7 +765,6 @@ namespace gtsco2.forms.Pageprancipel
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem1;
-        private DevExpress.XtraBars.SkinPaletteDropDownButtonItem skinPaletteDropDownButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8Enesignant;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
@@ -725,5 +783,12 @@ namespace gtsco2.forms.Pageprancipel
         private DevExpress.XtraBars.BarButtonItem barButtonItem9ParticpePV;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8Promo;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8Section;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemFontEdit repositoryItemFontEdit1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
     }
 }

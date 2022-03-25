@@ -263,6 +263,12 @@
     <Compile Include="forms\GTSecetion\GTsectionfrm.Designer.cs">
       <DependentUpon>GTsectionfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Login\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Login\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Navigation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,12 @@
     </Compile>
     <Compile Include="forms\navigation\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\navigation\frmNavigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\navigation\frmNavigation.Designer.cs">
+      <DependentUpon>frmNavigation.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Pageprancipel\FrmPrancipal.cs">
       <SubType>Form</SubType>
@@ -687,6 +699,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\image_viber_2022-03-23_19-13-58-552.png" />
     <EmbeddedResource Include="forms\Fenêtre connexion.resx">
       <DependentUpon>Fenêtre connexion.cs</DependentUpon>
     </EmbeddedResource>
@@ -723,11 +736,17 @@
     <EmbeddedResource Include="forms\GTSecetion\GTsectionfrm.resx">
       <DependentUpon>GTsectionfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\Login\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Navigation.resx">
       <DependentUpon>Navigation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\navigation\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\navigation\frmNavigation.resx">
+      <DependentUpon>frmNavigation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Pageprancipel\FrmPrancipal.resx">
       <DependentUpon>FrmPrancipal.cs</DependentUpon>
@@ -745,17 +764,29 @@
     <EmbeddedResource Include="mvvm\Views\annee_scolaire\annee_scolaireCollectionView.resx">
       <DependentUpon>annee_scolaireCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Avenant_contrat_prorogation\Avenant_contrat_prorogationCollectionView.resx">
+      <DependentUpon>Avenant_contrat_prorogationCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Branch\BranchCollectionView.resx">
       <DependentUpon>BranchCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Branch\BranchView.resx">
+      <DependentUpon>BranchView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Employeur\EmployeurCollectionView.resx">
       <DependentUpon>EmployeurCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Employeur\EmployeurView.resx">
+      <DependentUpon>EmployeurView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Enseignant\EnseignantCollectionView.resx">
       <DependentUpon>EnseignantCollectionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Evaluation\EvaluationCollectionView.resx">
       <DependentUpon>EvaluationCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Evaluation\EvaluationView.resx">
+      <DependentUpon>EvaluationView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Maitre_Apprentissage\Maitre_ApprentissageCollectionView.resx">
       <DependentUpon>Maitre_ApprentissageCollectionView.cs</DependentUpon>
@@ -813,6 +844,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

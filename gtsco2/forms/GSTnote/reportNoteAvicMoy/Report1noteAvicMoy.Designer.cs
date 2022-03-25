@@ -202,7 +202,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.Cell5exam.StylePriority.UseTextAlignment = false;
             this.Cell5exam.Text = "Cell5exam";
             this.Cell5exam.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.Cell5exam.Weight = 1.8225744094680723D;
+            this.Cell5exam.Weight = 1.956675525208005D;
             // 
             // Cell17moyAVenR
             // 
@@ -213,7 +213,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.Cell17moyAVenR.StylePriority.UseTextAlignment = false;
             this.Cell17moyAVenR.Text = "Cell17moyAVenR";
             this.Cell17moyAVenR.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.Cell17moyAVenR.Weight = 2.000001031580017D;
+            this.Cell17moyAVenR.Weight = 1.8658999158400842D;
             // 
             // Cellratrapage
             // 

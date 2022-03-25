@@ -213,5 +213,11 @@ namespace gtsco2.mvvm.Views.StagiairView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			forms.Formulaire.certficat.ReportCertficat.printCertficat(Num_STGTextEdit.Text);
+			
+		}
     }
 }

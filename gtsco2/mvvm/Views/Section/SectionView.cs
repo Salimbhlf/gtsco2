@@ -66,5 +66,10 @@ namespace gtsco2.mvvm.Views.SectionView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void Mode_formationLookUpEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

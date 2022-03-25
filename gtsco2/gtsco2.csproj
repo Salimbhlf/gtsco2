@@ -803,8 +803,14 @@
     <EmbeddedResource Include="mvvm\Views\PARTICIPE\PARTICIPEView.resx">
       <DependentUpon>PARTICIPEView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Proce_verbal_delibation\Proce_verbal_delibationView.resx">
+      <DependentUpon>Proce_verbal_delibationView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Promo\PromoCollectionView.resx">
       <DependentUpon>PromoCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Promo\PromoView.resx">
+      <DependentUpon>PromoView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Section\SectionCollectionView.resx">
       <DependentUpon>SectionCollectionView.cs</DependentUpon>
@@ -815,8 +821,14 @@
     <EmbeddedResource Include="mvvm\Views\Semestre\SemestreCollectionView.resx">
       <DependentUpon>SemestreCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Semestre\SemestreView.resx">
+      <DependentUpon>SemestreView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Specialite\SpecialiteCollectionView.resx">
       <DependentUpon>SpecialiteCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Specialite\SpecialiteView.resx">
+      <DependentUpon>SpecialiteView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Stagiair\StagiairCollectionView.resx">
       <DependentUpon>StagiairCollectionView.cs</DependentUpon>
@@ -829,6 +841,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Suiver_stagiaire\Suiver_stagiaireView.resx">
       <DependentUpon>Suiver_stagiaireView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Transferer\TransfererView.resx">
+      <DependentUpon>TransfererView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\tuteur\tuteurView.resx">
       <DependentUpon>tuteurView.cs</DependentUpon>

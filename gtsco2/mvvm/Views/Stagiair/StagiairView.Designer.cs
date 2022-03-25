@@ -274,8 +274,6 @@
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForid_tuteur = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForAbsences = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -288,6 +286,8 @@
             this.ItemForEvaluations = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForSuiver_stagiaire = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForNum_STG = new DevExpress.XtraLayout.LayoutControlItem();
@@ -342,6 +342,9 @@
             this.Suiver_stagiairePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).BeginInit();
@@ -445,8 +448,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
@@ -459,6 +460,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).BeginInit();
@@ -600,12 +603,14 @@
             this.bbiDelete,
             this.bbiClose,
             this.bbiSaveLayout,
-            this.bbiResetLayout});
+            this.bbiResetLayout,
+            this.barButtonItem4});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 10;
+            this.mainRibbonControl.MaxItemId = 11;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.mainRibbonPage});
+            this.mainRibbonPage,
+            this.ribbonPage1});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.mainRibbonControl.Size = new System.Drawing.Size(1024, 129);
@@ -2857,26 +2862,6 @@
             this.layoutControlGroup9});
             this.tabbedControlGroup1.Text = "Tabs";
             // 
-            // layoutControlGroup9
-            // 
-            this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForTransferers});
-            this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup9.Name = "autoGroupForTransferers";
-            this.layoutControlGroup9.Size = new System.Drawing.Size(980, 165);
-            this.layoutControlGroup9.Text = "Transferts";
-            // 
-            // ItemForTransferers
-            // 
-            this.ItemForTransferers.Control = this.TransferersXtraUserControl;
-            this.ItemForTransferers.Location = new System.Drawing.Point(0, 0);
-            this.ItemForTransferers.Name = "ItemForTransferers";
-            this.ItemForTransferers.Size = new System.Drawing.Size(980, 165);
-            this.ItemForTransferers.StartNewLine = true;
-            this.ItemForTransferers.Text = "Transferers";
-            this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForTransferers.TextVisible = false;
-            // 
             // layoutControlGroup3
             // 
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -2996,6 +2981,26 @@
             this.ItemForSuiver_stagiaire.Text = "Suiver_stagiaire";
             this.ItemForSuiver_stagiaire.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForSuiver_stagiaire.TextVisible = false;
+            // 
+            // layoutControlGroup9
+            // 
+            this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForTransferers});
+            this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup9.Name = "autoGroupForTransferers";
+            this.layoutControlGroup9.Size = new System.Drawing.Size(980, 165);
+            this.layoutControlGroup9.Text = "Transferts";
+            // 
+            // ItemForTransferers
+            // 
+            this.ItemForTransferers.Control = this.TransferersXtraUserControl;
+            this.ItemForTransferers.Location = new System.Drawing.Point(0, 0);
+            this.ItemForTransferers.Name = "ItemForTransferers";
+            this.ItemForTransferers.Size = new System.Drawing.Size(980, 165);
+            this.ItemForTransferers.StartNewLine = true;
+            this.ItemForTransferers.Text = "Transferers";
+            this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForTransferers.TextVisible = false;
             // 
             // tabbedControlGroup2
             // 
@@ -3553,6 +3558,28 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "ribbonPage1";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Certficat Scolireti";
+            this.barButtonItem4.Id = 10;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            // 
             // StagiairView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3672,8 +3699,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
@@ -3686,6 +3711,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).EndInit();
@@ -4063,5 +4090,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }

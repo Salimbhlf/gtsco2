@@ -776,8 +776,20 @@
     <EmbeddedResource Include="mvvm\Views\Branch\BranchView.resx">
       <DependentUpon>BranchView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Code_Postal\Code_PostalView.resx">
+      <DependentUpon>Code_PostalView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Commune\CommuneView.resx">
+      <DependentUpon>CommuneView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Contract_avenant_changement\Contract_avenant_changementView.resx">
+      <DependentUpon>Contract_avenant_changementView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Decision\DecisionCollectionView.resx">
       <DependentUpon>DecisionCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Decision\DecisionView.resx">
+      <DependentUpon>DecisionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Employeur\EmployeurCollectionView.resx">
       <DependentUpon>EmployeurCollectionView.cs</DependentUpon>

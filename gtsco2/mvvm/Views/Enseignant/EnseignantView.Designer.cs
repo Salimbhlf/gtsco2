@@ -418,7 +418,7 @@
             // 
             // bbiCustomize
             // 
-            this.bbiCustomize.Caption = "Customize";
+            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
             this.bbiCustomize.Id = 1;
             this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
             this.bbiCustomize.Name = "bbiCustomize";
@@ -430,7 +430,7 @@
             this.ribbonPageGroupLayout});
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "Home";
+            this.mainRibbonPage.Text = "Fichier ";
             // 
             // mainRibbonPageGroup
             // 
@@ -443,46 +443,46 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Enseignant Tasks";
+            this.mainRibbonPageGroup.Text = "Gestion des Enseignants";
             // 
             // bbiSave
             // 
-            this.bbiSave.Caption = "Save";
+            this.bbiSave.Caption = "Enregistrer ";
             this.bbiSave.Id = 2;
             this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
             this.bbiSave.Name = "bbiSave";
             // 
             // bbiSaveAndClose
             // 
-            this.bbiSaveAndClose.Caption = "Save And Close";
+            this.bbiSaveAndClose.Caption = "Enregistrer et fermer";
             this.bbiSaveAndClose.Id = 3;
             this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
             this.bbiSaveAndClose.Name = "bbiSaveAndClose";
             // 
             // bbiSaveAndNew
             // 
-            this.bbiSaveAndNew.Caption = "Save And New";
+            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
             this.bbiSaveAndNew.Id = 4;
             this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
             this.bbiSaveAndNew.Name = "bbiSaveAndNew";
             // 
             // bbiReset
             // 
-            this.bbiReset.Caption = "Reset Changes";
+            this.bbiReset.Caption = "Annuler les changements ";
             this.bbiReset.Id = 5;
             this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
             this.bbiReset.Name = "bbiReset";
             // 
             // bbiDelete
             // 
-            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Caption = "Supprimer ";
             this.bbiDelete.Id = 6;
             this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiDelete.Name = "bbiDelete";
             // 
             // bbiClose
             // 
-            this.bbiClose.Caption = "Close";
+            this.bbiClose.Caption = "Fermer ";
             this.bbiClose.Id = 7;
             this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
             this.bbiClose.Name = "bbiClose";
@@ -494,18 +494,18 @@
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
-            this.ribbonPageGroupLayout.Text = "Layout";
+            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
             // 
             // bbiSaveLayout
             // 
-            this.bbiSaveLayout.Caption = "Save Layout";
+            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
             this.bbiSaveLayout.Id = 8;
             this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
             this.bbiSaveLayout.Name = "bbiSaveLayout";
             // 
             // bbiResetLayout
             // 
-            this.bbiResetLayout.Caption = "Reset Layout";
+            this.bbiResetLayout.Caption = "Annuler la personnalisation";
             this.bbiResetLayout.Id = 9;
             this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
             this.bbiResetLayout.Name = "bbiResetLayout";
@@ -695,7 +695,8 @@
             // Mode_formation1LookUpEdit
             // 
             this.Mode_formation1LookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Mode_Formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Mode_formation1LookUpEdit.Location = new System.Drawing.Point(104, 228);
+            this.Mode_formation1LookUpEdit.EditValue = "";
+            this.Mode_formation1LookUpEdit.Location = new System.Drawing.Point(181, 228);
             this.Mode_formation1LookUpEdit.MenuManager = this.mainRibbonControl;
             this.Mode_formation1LookUpEdit.Name = "Mode_formation1LookUpEdit";
             this.Mode_formation1LookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -704,7 +705,7 @@
             this.Mode_formation1LookUpEdit.Properties.DisplayMember = "Code_Mode_Formation";
             this.Mode_formation1LookUpEdit.Properties.PopupView = this.Mode_formation1LookUpEditView;
             this.Mode_formation1LookUpEdit.Properties.ValueMember = "ID_Mode_Formation";
-            this.Mode_formation1LookUpEdit.Size = new System.Drawing.Size(908, 20);
+            this.Mode_formation1LookUpEdit.Size = new System.Drawing.Size(831, 20);
             this.Mode_formation1LookUpEdit.StyleController = this.dataLayoutControl1;
             this.Mode_formation1LookUpEdit.TabIndex = 13;
             // 
@@ -735,7 +736,7 @@
             // id_EnseignantTextEdit
             // 
             this.id_EnseignantTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "id_Enseignant", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.id_EnseignantTextEdit.Location = new System.Drawing.Point(104, 12);
+            this.id_EnseignantTextEdit.Location = new System.Drawing.Point(181, 12);
             this.id_EnseignantTextEdit.MenuManager = this.mainRibbonControl;
             this.id_EnseignantTextEdit.Name = "id_EnseignantTextEdit";
             this.id_EnseignantTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -743,7 +744,7 @@
             this.id_EnseignantTextEdit.Properties.Mask.EditMask = "N0";
             this.id_EnseignantTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.id_EnseignantTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.id_EnseignantTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.id_EnseignantTextEdit.Size = new System.Drawing.Size(831, 20);
             this.id_EnseignantTextEdit.StyleController = this.dataLayoutControl1;
             this.id_EnseignantTextEdit.TabIndex = 4;
             // 
@@ -753,16 +754,16 @@
             this.ItemForid_Enseignant.Location = new System.Drawing.Point(0, 0);
             this.ItemForid_Enseignant.Name = "ItemForid_Enseignant";
             this.ItemForid_Enseignant.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForid_Enseignant.Text = "id_Enseignant";
-            this.ItemForid_Enseignant.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForid_Enseignant.Text = "Numéro de l\'enseignant";
+            this.ItemForid_Enseignant.TextSize = new System.Drawing.Size(157, 13);
             // 
             // NomTextEdit
             // 
             this.NomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Nom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.NomTextEdit.Location = new System.Drawing.Point(104, 36);
+            this.NomTextEdit.Location = new System.Drawing.Point(181, 36);
             this.NomTextEdit.MenuManager = this.mainRibbonControl;
             this.NomTextEdit.Name = "NomTextEdit";
-            this.NomTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.NomTextEdit.Size = new System.Drawing.Size(831, 20);
             this.NomTextEdit.StyleController = this.dataLayoutControl1;
             this.NomTextEdit.TabIndex = 5;
             // 
@@ -772,16 +773,16 @@
             this.ItemForNom.Location = new System.Drawing.Point(0, 24);
             this.ItemForNom.Name = "ItemForNom";
             this.ItemForNom.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForNom.Text = "Nom";
-            this.ItemForNom.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForNom.Text = "Nom de l\'enseignant";
+            this.ItemForNom.TextSize = new System.Drawing.Size(157, 13);
             // 
             // Nom_arTextEdit
             // 
             this.Nom_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Nom_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_arTextEdit.Location = new System.Drawing.Point(104, 60);
+            this.Nom_arTextEdit.Location = new System.Drawing.Point(181, 60);
             this.Nom_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_arTextEdit.Name = "Nom_arTextEdit";
-            this.Nom_arTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.Nom_arTextEdit.Size = new System.Drawing.Size(831, 20);
             this.Nom_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_arTextEdit.TabIndex = 6;
             // 
@@ -791,16 +792,16 @@
             this.ItemForNom_ar.Location = new System.Drawing.Point(0, 48);
             this.ItemForNom_ar.Name = "ItemForNom_ar";
             this.ItemForNom_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForNom_ar.Text = "Nom_ar";
-            this.ItemForNom_ar.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForNom_ar.Text = "Nom de l\'enseignant en arabe";
+            this.ItemForNom_ar.TextSize = new System.Drawing.Size(157, 13);
             // 
             // prenomTextEdit
             // 
             this.prenomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "prenom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.prenomTextEdit.Location = new System.Drawing.Point(104, 84);
+            this.prenomTextEdit.Location = new System.Drawing.Point(181, 84);
             this.prenomTextEdit.MenuManager = this.mainRibbonControl;
             this.prenomTextEdit.Name = "prenomTextEdit";
-            this.prenomTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.prenomTextEdit.Size = new System.Drawing.Size(831, 20);
             this.prenomTextEdit.StyleController = this.dataLayoutControl1;
             this.prenomTextEdit.TabIndex = 7;
             // 
@@ -810,16 +811,16 @@
             this.ItemForprenom.Location = new System.Drawing.Point(0, 72);
             this.ItemForprenom.Name = "ItemForprenom";
             this.ItemForprenom.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForprenom.Text = "prenom";
-            this.ItemForprenom.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForprenom.Text = "Prénom de l\'enseignant";
+            this.ItemForprenom.TextSize = new System.Drawing.Size(157, 13);
             // 
             // Prenom_arTextEdit
             // 
             this.Prenom_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Prenom_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Prenom_arTextEdit.Location = new System.Drawing.Point(104, 108);
+            this.Prenom_arTextEdit.Location = new System.Drawing.Point(181, 108);
             this.Prenom_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Prenom_arTextEdit.Name = "Prenom_arTextEdit";
-            this.Prenom_arTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.Prenom_arTextEdit.Size = new System.Drawing.Size(831, 20);
             this.Prenom_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Prenom_arTextEdit.TabIndex = 8;
             // 
@@ -829,16 +830,16 @@
             this.ItemForPrenom_ar.Location = new System.Drawing.Point(0, 96);
             this.ItemForPrenom_ar.Name = "ItemForPrenom_ar";
             this.ItemForPrenom_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForPrenom_ar.Text = "Prenom_ar";
-            this.ItemForPrenom_ar.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForPrenom_ar.Text = "Prenom de l\'enseignant en arabe";
+            this.ItemForPrenom_ar.TextSize = new System.Drawing.Size(157, 13);
             // 
             // NiveauTextEdit
             // 
             this.NiveauTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Niveau", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.NiveauTextEdit.Location = new System.Drawing.Point(104, 132);
+            this.NiveauTextEdit.Location = new System.Drawing.Point(181, 132);
             this.NiveauTextEdit.MenuManager = this.mainRibbonControl;
             this.NiveauTextEdit.Name = "NiveauTextEdit";
-            this.NiveauTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.NiveauTextEdit.Size = new System.Drawing.Size(831, 20);
             this.NiveauTextEdit.StyleController = this.dataLayoutControl1;
             this.NiveauTextEdit.TabIndex = 9;
             // 
@@ -848,16 +849,16 @@
             this.ItemForNiveau.Location = new System.Drawing.Point(0, 120);
             this.ItemForNiveau.Name = "ItemForNiveau";
             this.ItemForNiveau.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForNiveau.Text = "Niveau";
-            this.ItemForNiveau.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForNiveau.Text = "Niveau de l\'enseignant";
+            this.ItemForNiveau.TextSize = new System.Drawing.Size(157, 13);
             // 
             // PosteTextEdit
             // 
             this.PosteTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Poste", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.PosteTextEdit.Location = new System.Drawing.Point(104, 156);
+            this.PosteTextEdit.Location = new System.Drawing.Point(181, 156);
             this.PosteTextEdit.MenuManager = this.mainRibbonControl;
             this.PosteTextEdit.Name = "PosteTextEdit";
-            this.PosteTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.PosteTextEdit.Size = new System.Drawing.Size(831, 20);
             this.PosteTextEdit.StyleController = this.dataLayoutControl1;
             this.PosteTextEdit.TabIndex = 10;
             // 
@@ -867,16 +868,16 @@
             this.ItemForPoste.Location = new System.Drawing.Point(0, 144);
             this.ItemForPoste.Name = "ItemForPoste";
             this.ItemForPoste.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForPoste.Text = "Poste";
-            this.ItemForPoste.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForPoste.Text = "Poste de l\'enseignant";
+            this.ItemForPoste.TextSize = new System.Drawing.Size(157, 13);
             // 
             // Poste_arTextEdit
             // 
             this.Poste_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Poste_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Poste_arTextEdit.Location = new System.Drawing.Point(104, 180);
+            this.Poste_arTextEdit.Location = new System.Drawing.Point(181, 180);
             this.Poste_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Poste_arTextEdit.Name = "Poste_arTextEdit";
-            this.Poste_arTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.Poste_arTextEdit.Size = new System.Drawing.Size(831, 20);
             this.Poste_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Poste_arTextEdit.TabIndex = 11;
             // 
@@ -886,16 +887,16 @@
             this.ItemForPoste_ar.Location = new System.Drawing.Point(0, 168);
             this.ItemForPoste_ar.Name = "ItemForPoste_ar";
             this.ItemForPoste_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForPoste_ar.Text = "Poste_ar";
-            this.ItemForPoste_ar.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForPoste_ar.Text = "Poste de l\'enseignant en arabe";
+            this.ItemForPoste_ar.TextSize = new System.Drawing.Size(157, 13);
             // 
             // SpecialiteTextEdit
             // 
             this.SpecialiteTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Specialite", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.SpecialiteTextEdit.Location = new System.Drawing.Point(104, 204);
+            this.SpecialiteTextEdit.Location = new System.Drawing.Point(181, 204);
             this.SpecialiteTextEdit.MenuManager = this.mainRibbonControl;
             this.SpecialiteTextEdit.Name = "SpecialiteTextEdit";
-            this.SpecialiteTextEdit.Size = new System.Drawing.Size(908, 20);
+            this.SpecialiteTextEdit.Size = new System.Drawing.Size(831, 20);
             this.SpecialiteTextEdit.StyleController = this.dataLayoutControl1;
             this.SpecialiteTextEdit.TabIndex = 12;
             // 
@@ -905,8 +906,8 @@
             this.ItemForSpecialite.Location = new System.Drawing.Point(0, 192);
             this.ItemForSpecialite.Name = "ItemForSpecialite";
             this.ItemForSpecialite.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForSpecialite.Text = "Specialite";
-            this.ItemForSpecialite.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForSpecialite.Text = "Spécialité de l\'enseignant";
+            this.ItemForSpecialite.TextSize = new System.Drawing.Size(157, 13);
             // 
             // Mode_formation1LookUpEditView
             // 
@@ -921,8 +922,8 @@
             this.ItemForMode_Formation.Location = new System.Drawing.Point(0, 216);
             this.ItemForMode_Formation.Name = "ItemForMode_Formation";
             this.ItemForMode_Formation.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForMode_Formation.Text = "Mode_Formation";
-            this.ItemForMode_Formation.TextSize = new System.Drawing.Size(80, 13);
+            this.ItemForMode_Formation.Text = "Mode de formation";
+            this.ItemForMode_Formation.TextSize = new System.Drawing.Size(157, 13);
             // 
             // ItemForEvaluations
             // 
@@ -974,7 +975,7 @@
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "autoGroupForPARTICIPEs";
             this.layoutControlGroup4.Size = new System.Drawing.Size(980, 335);
-            this.layoutControlGroup4.Text = "PARTICIPEs";
+            this.layoutControlGroup4.Text = "Participants ";
             // 
             // ItemForSuiver_stagiaire
             // 
@@ -994,7 +995,7 @@
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "autoGroupForSuiver_stagiaire";
             this.layoutControlGroup5.Size = new System.Drawing.Size(980, 335);
-            this.layoutControlGroup5.Text = "Suiver_stagiaire";
+            this.layoutControlGroup5.Text = "Suivies des stagiaires";
             // 
             // mvvmContext
             // 
@@ -1032,7 +1033,7 @@
             // 
             // bbiEvaluationsNew
             // 
-            this.bbiEvaluationsNew.Caption = "New";
+            this.bbiEvaluationsNew.Caption = "Ajouter";
             this.bbiEvaluationsNew.Id = 0;
             this.bbiEvaluationsNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiEvaluationsNew.Name = "bbiEvaluationsNew";
@@ -1040,7 +1041,7 @@
             // 
             // bbiEvaluationsEdit
             // 
-            this.bbiEvaluationsEdit.Caption = "Edit";
+            this.bbiEvaluationsEdit.Caption = "Modifier ";
             this.bbiEvaluationsEdit.Id = 1;
             this.bbiEvaluationsEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiEvaluationsEdit.Name = "bbiEvaluationsEdit";
@@ -1048,7 +1049,7 @@
             // 
             // bbiEvaluationsDelete
             // 
-            this.bbiEvaluationsDelete.Caption = "Delete";
+            this.bbiEvaluationsDelete.Caption = "Supprimer";
             this.bbiEvaluationsDelete.Id = 2;
             this.bbiEvaluationsDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiEvaluationsDelete.Name = "bbiEvaluationsDelete";
@@ -1056,7 +1057,7 @@
             // 
             // bbiEvaluationsRefresh
             // 
-            this.bbiEvaluationsRefresh.Caption = "Refresh";
+            this.bbiEvaluationsRefresh.Caption = "Acctualiser ";
             this.bbiEvaluationsRefresh.Id = 3;
             this.bbiEvaluationsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiEvaluationsRefresh.Name = "bbiEvaluationsRefresh";
@@ -1070,7 +1071,7 @@
             this.EvaluationsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.EvaluationsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsEdit, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsDelete),
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsRefresh)});
             this.EvaluationsBar.OptionsBar.AllowQuickCustomization = false;
@@ -1139,7 +1140,7 @@
             // 
             // bbiPARTICIPEsNew
             // 
-            this.bbiPARTICIPEsNew.Caption = "New";
+            this.bbiPARTICIPEsNew.Caption = "Ajouter";
             this.bbiPARTICIPEsNew.Id = 0;
             this.bbiPARTICIPEsNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiPARTICIPEsNew.Name = "bbiPARTICIPEsNew";
@@ -1147,7 +1148,7 @@
             // 
             // bbiPARTICIPEsEdit
             // 
-            this.bbiPARTICIPEsEdit.Caption = "Edit";
+            this.bbiPARTICIPEsEdit.Caption = "Modifier ";
             this.bbiPARTICIPEsEdit.Id = 1;
             this.bbiPARTICIPEsEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiPARTICIPEsEdit.Name = "bbiPARTICIPEsEdit";
@@ -1155,7 +1156,7 @@
             // 
             // bbiPARTICIPEsDelete
             // 
-            this.bbiPARTICIPEsDelete.Caption = "Delete";
+            this.bbiPARTICIPEsDelete.Caption = "Supprimer";
             this.bbiPARTICIPEsDelete.Id = 2;
             this.bbiPARTICIPEsDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiPARTICIPEsDelete.Name = "bbiPARTICIPEsDelete";
@@ -1163,7 +1164,7 @@
             // 
             // bbiPARTICIPEsRefresh
             // 
-            this.bbiPARTICIPEsRefresh.Caption = "Refresh";
+            this.bbiPARTICIPEsRefresh.Caption = "Actualiser";
             this.bbiPARTICIPEsRefresh.Id = 3;
             this.bbiPARTICIPEsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiPARTICIPEsRefresh.Name = "bbiPARTICIPEsRefresh";
@@ -1246,7 +1247,7 @@
             // 
             // bbiSuiver_stagiaireNew
             // 
-            this.bbiSuiver_stagiaireNew.Caption = "New";
+            this.bbiSuiver_stagiaireNew.Caption = "Ajouter ";
             this.bbiSuiver_stagiaireNew.Id = 0;
             this.bbiSuiver_stagiaireNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiSuiver_stagiaireNew.Name = "bbiSuiver_stagiaireNew";
@@ -1254,7 +1255,7 @@
             // 
             // bbiSuiver_stagiaireEdit
             // 
-            this.bbiSuiver_stagiaireEdit.Caption = "Edit";
+            this.bbiSuiver_stagiaireEdit.Caption = "Modifier ";
             this.bbiSuiver_stagiaireEdit.Id = 1;
             this.bbiSuiver_stagiaireEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiSuiver_stagiaireEdit.Name = "bbiSuiver_stagiaireEdit";
@@ -1262,7 +1263,7 @@
             // 
             // bbiSuiver_stagiaireDelete
             // 
-            this.bbiSuiver_stagiaireDelete.Caption = "Delete";
+            this.bbiSuiver_stagiaireDelete.Caption = "Supprimer";
             this.bbiSuiver_stagiaireDelete.Id = 2;
             this.bbiSuiver_stagiaireDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiSuiver_stagiaireDelete.Name = "bbiSuiver_stagiaireDelete";
@@ -1270,7 +1271,7 @@
             // 
             // bbiSuiver_stagiaireRefresh
             // 
-            this.bbiSuiver_stagiaireRefresh.Caption = "Refresh";
+            this.bbiSuiver_stagiaireRefresh.Caption = "Actualiser ";
             this.bbiSuiver_stagiaireRefresh.Id = 3;
             this.bbiSuiver_stagiaireRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiSuiver_stagiaireRefresh.Name = "bbiSuiver_stagiaireRefresh";

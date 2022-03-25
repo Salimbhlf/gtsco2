@@ -180,7 +180,7 @@ namespace gtsco2.forms.Pageprancipel
 
         private void barButtonItem8Section_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            opfrm(new mvvm.Views.PARTICIPECollectionView.PARTICIPECollectionView());
+            opfrm(new mvvm.Views.SectionCollectionView.SectionCollectionView());
         }
     }
 }

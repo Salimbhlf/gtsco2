@@ -761,6 +761,9 @@
     <EmbeddedResource Include="mvvm\Views\Absence\AbsenceCollectionView.resx">
       <DependentUpon>AbsenceCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Absence\AbsenceView.resx">
+      <DependentUpon>AbsenceView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\annee_scolaire\annee_scolaireCollectionView.resx">
       <DependentUpon>annee_scolaireCollectionView.cs</DependentUpon>
     </EmbeddedResource>

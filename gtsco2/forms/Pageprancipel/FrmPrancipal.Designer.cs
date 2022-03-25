@@ -31,6 +31,28 @@ namespace gtsco2.forms.Pageprancipel
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrancipal));
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem5 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem5 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem6 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Skins.SkinPaddingEdges skinPaddingEdges1 = new DevExpress.Skins.SkinPaddingEdges();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemstgiaire = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemAddnote = new DevExpress.XtraBars.BarButtonItem();
@@ -61,7 +83,6 @@ namespace gtsco2.forms.Pageprancipel
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.barButtonItem8Promo = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8Section = new DevExpress.XtraBars.BarButtonItem();
-            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -73,7 +94,6 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -140,8 +160,7 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem9ParticpePV,
             this.skinRibbonGalleryBarItem1,
             this.barButtonItem8Promo,
-            this.barButtonItem8Section,
-            this.barEditItem1});
+            this.barButtonItem8Section});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 35;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -156,7 +175,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemFontEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
-            this.ribbonControl1.Size = new System.Drawing.Size(972, 153);
+            this.ribbonControl1.Size = new System.Drawing.Size(998, 153);
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // barButtonItemstgiaire
@@ -180,6 +199,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItemAddnote.Id = 2;
             this.barButtonItemAddnote.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddnote.ImageOptions.Image")));
             this.barButtonItemAddnote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddnote.ImageOptions.LargeImage")));
+            this.barButtonItemAddnote.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItemAddnote.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItemAddnote.Name = "barButtonItemAddnote";
             this.barButtonItemAddnote.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAddnote_ItemClick);
             // 
@@ -189,6 +210,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1PvNote.Id = 3;
             this.barButtonItem1PvNote.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1PvNote.ImageOptions.Image")));
             this.barButtonItem1PvNote.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1PvNote.ImageOptions.LargeImage")));
+            this.barButtonItem1PvNote.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1PvNote.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1PvNote.Name = "barButtonItem1PvNote";
             this.barButtonItem1PvNote.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1PvNote_ItemClick);
             // 
@@ -198,6 +221,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItemAddABS.Id = 4;
             this.barButtonItemAddABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddABS.ImageOptions.Image")));
             this.barButtonItemAddABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemAddABS.ImageOptions.LargeImage")));
+            this.barButtonItemAddABS.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItemAddABS.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItemAddABS.Name = "barButtonItemAddABS";
             this.barButtonItemAddABS.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAddABS_ItemClick);
             // 
@@ -207,6 +232,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItemPvAbs.Id = 5;
             this.barButtonItemPvAbs.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemPvAbs.ImageOptions.Image")));
             this.barButtonItemPvAbs.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemPvAbs.ImageOptions.LargeImage")));
+            this.barButtonItemPvAbs.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItemPvAbs.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItemPvAbs.Name = "barButtonItemPvAbs";
             this.barButtonItemPvAbs.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemPvAbs_ItemClick);
             // 
@@ -270,6 +297,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Soiver.Id = 12;
             this.barButtonItem1Soiver.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Soiver.ImageOptions.Image")));
             this.barButtonItem1Soiver.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Soiver.ImageOptions.LargeImage")));
+            this.barButtonItem1Soiver.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1Soiver.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1Soiver.Name = "barButtonItem1Soiver";
             this.barButtonItem1Soiver.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1Soiver_ItemClick);
             // 
@@ -308,6 +337,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Evaluation.Id = 16;
             this.barButtonItem1Evaluation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Evaluation.ImageOptions.Image")));
             this.barButtonItem1Evaluation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Evaluation.ImageOptions.LargeImage")));
+            this.barButtonItem1Evaluation.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1Evaluation.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1Evaluation.Name = "barButtonItem1Evaluation";
             this.barButtonItem1Evaluation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1Evaluation_ItemClick);
             // 
@@ -317,6 +348,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1ABS.Id = 17;
             this.barButtonItem1ABS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.Image")));
             this.barButtonItem1ABS.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1ABS.ImageOptions.LargeImage")));
+            this.barButtonItem1ABS.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1ABS.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1ABS.Name = "barButtonItem1ABS";
             this.barButtonItem1ABS.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1ABS_ItemClick);
             // 
@@ -332,8 +365,74 @@ namespace gtsco2.forms.Pageprancipel
             // skinPaletteRibbonGalleryBarItem1
             // 
             this.skinPaletteRibbonGalleryBarItem1.Caption = "skinPaletteRibbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            this.skinPaletteRibbonGalleryBarItem1.Gallery.AllowHtmlText = true;
+            this.skinPaletteRibbonGalleryBarItem1.Gallery.ColumnCount = 4;
+            galleryItemGroup1.Caption = "General";
+            galleryItem1.Caption = "Default";
+            galleryItem1.Checked = true;
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            toolTipItem1.Text = "Default";
+            superToolTip1.Items.Add(toolTipItem1);
+            galleryItem1.SuperTip = superToolTip1;
+            galleryItem1.Tag = "DefaultSkinPalette";
+            galleryItem1.Value = "DefaultSkinPalette";
+            galleryItem2.Caption = "Blue Dark";
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            toolTipItem2.Text = "Blue Dark";
+            superToolTip2.Items.Add(toolTipItem2);
+            galleryItem2.SuperTip = superToolTip2;
+            galleryItem2.Tag = "Blue Dark";
+            galleryItem2.Value = "Blue Dark";
+            galleryItem3.Caption = "Pine Light";
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            toolTipItem3.Text = "Pine Light";
+            superToolTip3.Items.Add(toolTipItem3);
+            galleryItem3.SuperTip = superToolTip3;
+            galleryItem3.Tag = "Pine Light";
+            galleryItem3.Value = "Pine Light";
+            galleryItem4.Caption = "Pine Dark";
+            galleryItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            toolTipItem4.Text = "Pine Dark";
+            superToolTip4.Items.Add(toolTipItem4);
+            galleryItem4.SuperTip = superToolTip4;
+            galleryItem4.Tag = "Pine Dark";
+            galleryItem4.Value = "Pine Dark";
+            galleryItem5.Caption = "Violet Light";
+            galleryItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            toolTipItem5.Text = "Violet Light";
+            superToolTip5.Items.Add(toolTipItem5);
+            galleryItem5.SuperTip = superToolTip5;
+            galleryItem5.Tag = "Violet Light";
+            galleryItem5.Value = "Violet Light";
+            galleryItem6.Caption = "Violet Dark";
+            galleryItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            toolTipItem6.Text = "Violet Dark";
+            superToolTip6.Items.Add(toolTipItem6);
+            galleryItem6.SuperTip = superToolTip6;
+            galleryItem6.Tag = "Violet Dark";
+            galleryItem6.Value = "Violet Dark";
+            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem1,
+            galleryItem2,
+            galleryItem3,
+            galleryItem4,
+            galleryItem5,
+            galleryItem6});
+            this.skinPaletteRibbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup1});
+            this.skinPaletteRibbonGalleryBarItem1.Gallery.ImageSize = new System.Drawing.Size(80, 56);
+            this.skinPaletteRibbonGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
+            this.skinPaletteRibbonGalleryBarItem1.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.Stretch;
+            this.skinPaletteRibbonGalleryBarItem1.Gallery.MinimumColumnCount = 2;
             this.skinPaletteRibbonGalleryBarItem1.Id = 20;
+            this.skinPaletteRibbonGalleryBarItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("skinPaletteRibbonGalleryBarItem1.ImageOptions.SvgImage")));
             this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
+            toolTipItem7.Text = "Default";
+            superToolTip7.Items.Add(toolTipItem7);
+            this.skinPaletteRibbonGalleryBarItem1.SuperTip = superToolTip7;
             // 
             // barButtonItem8Enesignant
             // 
@@ -357,6 +456,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem8Titeur.Caption = "Titeur";
             this.barButtonItem8Titeur.Id = 24;
             this.barButtonItem8Titeur.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Titeur.ImageOptions.SvgImage")));
+            this.barButtonItem8Titeur.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem8Titeur.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem8Titeur.Name = "barButtonItem8Titeur";
             this.barButtonItem8Titeur.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Titeur_ItemClick);
             // 
@@ -395,7 +496,21 @@ namespace gtsco2.forms.Pageprancipel
             // skinRibbonGalleryBarItem1
             // 
             this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            this.skinRibbonGalleryBarItem1.Gallery.AllowHoverImages = true;
+            this.skinRibbonGalleryBarItem1.Gallery.ColumnCount = 4;
+            this.skinRibbonGalleryBarItem1.Gallery.FixedHoverImageSize = false;
+            this.skinRibbonGalleryBarItem1.Gallery.ImageSize = new System.Drawing.Size(16, 16);
+            this.skinRibbonGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
+            this.skinRibbonGalleryBarItem1.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.Squeeze;
+            this.skinRibbonGalleryBarItem1.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Top;
+            skinPaddingEdges1.Left = 8;
+            skinPaddingEdges1.Right = 8;
+            this.skinRibbonGalleryBarItem1.Gallery.ItemImagePadding = skinPaddingEdges1;
             this.skinRibbonGalleryBarItem1.Id = 29;
+            this.skinRibbonGalleryBarItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("skinRibbonGalleryBarItem1.ImageOptions.SvgImage")));
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
             // barButtonItem8Promo
@@ -413,13 +528,6 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem8Section.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Section.ImageOptions.SvgImage")));
             this.barButtonItem8Section.Name = "barButtonItem8Section";
             this.barButtonItem8Section.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Section_ItemClick);
-            // 
-            // barEditItem1
-            // 
-            this.barEditItem1.Caption = "barEditItem1";
-            this.barEditItem1.Edit = this.repositoryItemFontEdit1;
-            this.barEditItem1.Id = 32;
-            this.barEditItem1.Name = "barEditItem1";
             // 
             // repositoryItemFontEdit1
             // 
@@ -448,6 +556,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPageGroup2
             // 
+            this.ribbonPageGroup2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup2.ImageOptions.Image")));
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemAddnote);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1PvNote);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1Evaluation);
@@ -474,15 +583,13 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem8Titeur);
             this.ribbonPageGroup17.Name = "ribbonPageGroup17";
-            this.ribbonPageGroup17.Text = "ribbonPageGroup17";
             // 
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5,
             this.ribbonPageGroup6,
-            this.ribbonPageGroup20,
-            this.ribbonPageGroup21});
+            this.ribbonPageGroup20});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
@@ -506,12 +613,6 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Promo);
             this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Section);
             this.ribbonPageGroup20.Name = "ribbonPageGroup20";
-            // 
-            // ribbonPageGroup21
-            // 
-            this.ribbonPageGroup21.ItemLinks.Add(this.barEditItem1);
-            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
-            this.ribbonPageGroup21.Text = "ribbonPageGroup21";
             // 
             // ribbonPage3
             // 
@@ -554,13 +655,11 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.ribbonPageGroup12.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            this.ribbonPageGroup12.Text = "ribbonPageGroup12";
             // 
             // ribbonPageGroup13
             // 
             this.ribbonPageGroup13.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            this.ribbonPageGroup13.Text = "ribbonPageGroup13";
             // 
             // ribbonPageGroup14
             // 
@@ -702,7 +801,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 550);
+            this.ClientSize = new System.Drawing.Size(998, 550);
             this.Controls.Add(this.ribbonControl1);
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("FrmPrancipal.IconOptions.LargeImage")));
             this.IsMdiContainer = true;
@@ -787,8 +886,6 @@ namespace gtsco2.forms.Pageprancipel
         private DevExpress.XtraBars.BarButtonItem barButtonItem8Promo;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8Section;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
-        private DevExpress.XtraBars.BarEditItem barEditItem1;
         private DevExpress.XtraEditors.Repository.RepositoryItemFontEdit repositoryItemFontEdit1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
     }
 }

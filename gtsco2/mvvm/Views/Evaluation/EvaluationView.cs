@@ -32,5 +32,10 @@ namespace gtsco2.mvvm.Views.EvaluationView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void Enseignant1LookUpEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

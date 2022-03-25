@@ -799,6 +799,12 @@
     <EmbeddedResource Include="mvvm\Views\Suiver_stagiaire\Suiver_stagiaireView.resx">
       <DependentUpon>Suiver_stagiaireView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\tuteur\tuteurView.resx">
+      <DependentUpon>tuteurView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Willaya\WillayaView.resx">
+      <DependentUpon>WillayaView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

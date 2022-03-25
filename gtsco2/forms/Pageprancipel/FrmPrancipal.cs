@@ -182,5 +182,10 @@ namespace gtsco2.forms.Pageprancipel
         {
             opfrm(new mvvm.Views.SectionCollectionView.SectionCollectionView());
         }
+
+        private void barButtonItem8_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.DecisionCollectionView.DecisionCollectionView());
+        }
     }
 }

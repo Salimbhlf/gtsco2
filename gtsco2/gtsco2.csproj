@@ -776,6 +776,9 @@
     <EmbeddedResource Include="mvvm\Views\Branch\BranchView.resx">
       <DependentUpon>BranchView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Decision\DecisionCollectionView.resx">
+      <DependentUpon>DecisionCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Employeur\EmployeurCollectionView.resx">
       <DependentUpon>EmployeurCollectionView.cs</DependentUpon>
     </EmbeddedResource>

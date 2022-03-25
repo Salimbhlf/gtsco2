@@ -83,7 +83,7 @@ namespace gtsco2.forms.Pageprancipel
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.barButtonItem8Promo = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8Section = new DevExpress.XtraBars.BarButtonItem();
-            this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -107,6 +107,8 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
@@ -160,17 +162,18 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem9ParticpePV,
             this.skinRibbonGalleryBarItem1,
             this.barButtonItem8Promo,
-            this.barButtonItem8Section});
+            this.barButtonItem8Section,
+            this.barButtonItem8});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 35;
+            this.ribbonControl1.MaxItemId = 36;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3,
-            this.ribbonPage4,
             this.ribbonPage5,
-            this.ribbonPage6});
+            this.ribbonPage6,
+            this.ribbonPage4});
             this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem1);
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemFontEdit1});
@@ -188,7 +191,7 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItemstgiaire.ItemAppearance.Hovered.Options.UseFont = true;
             this.barButtonItemstgiaire.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItemstgiaire.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItemstgiaire.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barButtonItemstgiaire.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItemstgiaire.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.barButtonItemstgiaire.Name = "barButtonItemstgiaire";
             this.barButtonItemstgiaire.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemstgiaire_ItemClick);
@@ -243,15 +246,20 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Bronch.Id = 6;
             this.barButtonItem1Bronch.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Bronch.ImageOptions.Image")));
             this.barButtonItem1Bronch.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Bronch.ImageOptions.LargeImage")));
+            this.barButtonItem1Bronch.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1Bronch.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1Bronch.Name = "barButtonItem1Bronch";
             this.barButtonItem1Bronch.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1Bronch_ItemClick);
             // 
             // barButtonItem5Specailite
             // 
+            this.barButtonItem5Specailite.AllowRightClickInMenu = false;
             this.barButtonItem5Specailite.Caption = "Specialite";
             this.barButtonItem5Specailite.Id = 7;
             this.barButtonItem5Specailite.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.Image")));
             this.barButtonItem5Specailite.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.LargeImage")));
+            this.barButtonItem5Specailite.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem5Specailite.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem5Specailite.Name = "barButtonItem5Specailite";
             this.barButtonItem5Specailite.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5Specailite_ItemClick);
             // 
@@ -261,6 +269,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem6Option.Id = 8;
             this.barButtonItem6Option.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.Image")));
             this.barButtonItem6Option.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.LargeImage")));
+            this.barButtonItem6Option.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem6Option.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem6Option.Name = "barButtonItem6Option";
             this.barButtonItem6Option.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6Option_ItemClick);
             // 
@@ -270,6 +280,10 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItemModeF.Id = 9;
             this.barButtonItemModeF.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemModeF.ImageOptions.Image")));
             this.barButtonItemModeF.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemModeF.ImageOptions.LargeImage")));
+            this.barButtonItemModeF.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItemModeF.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItemModeF.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItemModeF.ItemInMenuAppearance.Hovered.Options.UseFont = true;
             this.barButtonItemModeF.Name = "barButtonItemModeF";
             this.barButtonItemModeF.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemModeF_ItemClick);
             // 
@@ -279,6 +293,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Semestre.Id = 10;
             this.barButtonItem1Semestre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Semestre.ImageOptions.Image")));
             this.barButtonItem1Semestre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Semestre.ImageOptions.LargeImage")));
+            this.barButtonItem1Semestre.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1Semestre.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1Semestre.Name = "barButtonItem1Semestre";
             this.barButtonItem1Semestre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1Semestre_ItemClick);
             // 
@@ -288,6 +304,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem5Anne.Id = 11;
             this.barButtonItem5Anne.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Anne.ImageOptions.Image")));
             this.barButtonItem5Anne.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Anne.ImageOptions.LargeImage")));
+            this.barButtonItem5Anne.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem5Anne.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem5Anne.Name = "barButtonItem5Anne";
             this.barButtonItem5Anne.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5Anne_ItemClick);
             // 
@@ -310,6 +328,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Module.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Module.ImageOptions.LargeImage")));
             this.barButtonItem1Module.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem1Module.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barButtonItem1Module.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1Module.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1Module.Name = "barButtonItem1Module";
             this.barButtonItem1Module.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1Module_ItemClick);
             // 
@@ -319,6 +339,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem1Employeur.Id = 14;
             this.barButtonItem1Employeur.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Employeur.ImageOptions.Image")));
             this.barButtonItem1Employeur.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Employeur.ImageOptions.LargeImage")));
+            this.barButtonItem1Employeur.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem1Employeur.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1Employeur.Name = "barButtonItem1Employeur";
             this.barButtonItem1Employeur.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1Employeur_ItemClick);
             // 
@@ -328,6 +350,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItemMaitre.Id = 15;
             this.barButtonItemMaitre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemMaitre.ImageOptions.Image")));
             this.barButtonItemMaitre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemMaitre.ImageOptions.LargeImage")));
+            this.barButtonItemMaitre.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItemMaitre.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItemMaitre.Name = "barButtonItemMaitre";
             this.barButtonItemMaitre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemMaitre_ItemClick);
             // 
@@ -439,6 +463,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem8Enesignant.Caption = "Enesignant";
             this.barButtonItem8Enesignant.Id = 22;
             this.barButtonItem8Enesignant.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Enesignant.ImageOptions.SvgImage")));
+            this.barButtonItem8Enesignant.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem8Enesignant.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem8Enesignant.Name = "barButtonItem8Enesignant";
             this.barButtonItem8Enesignant.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
@@ -448,6 +474,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem9Etablissement.Id = 23;
             this.barButtonItem9Etablissement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9Etablissement.ImageOptions.Image")));
             this.barButtonItem9Etablissement.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9Etablissement.ImageOptions.LargeImage")));
+            this.barButtonItem9Etablissement.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem9Etablissement.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem9Etablissement.Name = "barButtonItem9Etablissement";
             this.barButtonItem9Etablissement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9Etablissement_ItemClick);
             // 
@@ -467,6 +495,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem8ContractAvnCHongment.Id = 25;
             this.barButtonItem8ContractAvnCHongment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ContractAvnCHongment.ImageOptions.Image")));
             this.barButtonItem8ContractAvnCHongment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ContractAvnCHongment.ImageOptions.LargeImage")));
+            this.barButtonItem8ContractAvnCHongment.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem8ContractAvnCHongment.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem8ContractAvnCHongment.Name = "barButtonItem8ContractAvnCHongment";
             this.barButtonItem8ContractAvnCHongment.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8ContractAvnCHongment_ItemClick);
             // 
@@ -476,6 +506,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem9AvenantProrgation.Id = 26;
             this.barButtonItem9AvenantProrgation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9AvenantProrgation.ImageOptions.Image")));
             this.barButtonItem9AvenantProrgation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9AvenantProrgation.ImageOptions.LargeImage")));
+            this.barButtonItem9AvenantProrgation.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem9AvenantProrgation.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem9AvenantProrgation.Name = "barButtonItem9AvenantProrgation";
             this.barButtonItem9AvenantProrgation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9AvenantProrgation_ItemClick);
             // 
@@ -483,6 +515,10 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.barButtonItem8ProceVerbale.Caption = "Proce verbal delibartion";
             this.barButtonItem8ProceVerbale.Id = 27;
+            this.barButtonItem8ProceVerbale.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ProceVerbale.ImageOptions.Image")));
+            this.barButtonItem8ProceVerbale.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ProceVerbale.ImageOptions.LargeImage")));
+            this.barButtonItem8ProceVerbale.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem8ProceVerbale.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem8ProceVerbale.Name = "barButtonItem8ProceVerbale";
             this.barButtonItem8ProceVerbale.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8ProceVerbale_ItemClick);
             // 
@@ -490,6 +526,10 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.barButtonItem9ParticpePV.Caption = "Participe eu Proce verbale";
             this.barButtonItem9ParticpePV.Id = 28;
+            this.barButtonItem9ParticpePV.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9ParticpePV.ImageOptions.Image")));
+            this.barButtonItem9ParticpePV.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9ParticpePV.ImageOptions.LargeImage")));
+            this.barButtonItem9ParticpePV.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem9ParticpePV.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem9ParticpePV.Name = "barButtonItem9ParticpePV";
             this.barButtonItem9ParticpePV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9ParticpePV_ItemClick);
             // 
@@ -518,6 +558,8 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem8Promo.Caption = "Promo";
             this.barButtonItem8Promo.Id = 30;
             this.barButtonItem8Promo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Promo.ImageOptions.SvgImage")));
+            this.barButtonItem8Promo.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem8Promo.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem8Promo.Name = "barButtonItem8Promo";
             this.barButtonItem8Promo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Promo_ItemClick);
             // 
@@ -526,18 +568,26 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem8Section.Caption = "Section";
             this.barButtonItem8Section.Id = 31;
             this.barButtonItem8Section.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Section.ImageOptions.SvgImage")));
+            this.barButtonItem8Section.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem8Section.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem8Section.Name = "barButtonItem8Section";
             this.barButtonItem8Section.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8Section_ItemClick);
             // 
-            // repositoryItemFontEdit1
+            // barButtonItem8
             // 
-            this.repositoryItemFontEdit1.AutoHeight = false;
-            this.repositoryItemFontEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
+            this.barButtonItem8.Caption = "Decision";
+            this.barButtonItem8.Id = 35;
+            this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
+            this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
+            this.barButtonItem8.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem8.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick_1);
             // 
             // ribbonPage1
             // 
+            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage1.Appearance.Options.UseFont = true;
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
@@ -586,12 +636,15 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPage2
             // 
+            this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage2.Appearance.Options.UseFont = true;
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5,
             this.ribbonPageGroup6,
             this.ribbonPageGroup20});
+            this.ribbonPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.ImageOptions.Image")));
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "ribbonPage2";
+            this.ribbonPage2.Text = "ficher";
             // 
             // ribbonPageGroup5
             // 
@@ -616,6 +669,8 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPage3
             // 
+            this.ribbonPage3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage3.Appearance.Options.UseFont = true;
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup7,
             this.ribbonPageGroup11,
@@ -643,6 +698,8 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPage4
             // 
+            this.ribbonPage4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage4.Appearance.Options.UseFont = true;
             this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup12,
             this.ribbonPageGroup13,
@@ -668,11 +725,14 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPage5
             // 
+            this.ribbonPage5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage5.Appearance.Options.UseFont = true;
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup15,
             this.ribbonPageGroup16});
+            this.ribbonPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage5.ImageOptions.Image")));
             this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "ribbonPage5";
+            this.ribbonPage5.Text = "Etablissement";
             // 
             // ribbonPageGroup15
             // 
@@ -688,17 +748,35 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPage6
             // 
+            this.ribbonPage6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage6.Appearance.Options.UseFont = true;
             this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup19});
+            this.ribbonPageGroup19,
+            this.ribbonPageGroup21});
+            this.ribbonPage6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage6.ImageOptions.Image")));
             this.ribbonPage6.Name = "ribbonPage6";
-            this.ribbonPage6.Text = "ribbonPage6";
+            this.ribbonPage6.Text = "Proce Verbal";
             // 
             // ribbonPageGroup19
             // 
+            this.ribbonPageGroup19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup19.ImageOptions.Image")));
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem8ProceVerbale);
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem9ParticpePV);
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
-            this.ribbonPageGroup19.Text = "ribbonPageGroup19";
+            this.ribbonPageGroup19.Text = "Proce Verbal";
+            // 
+            // ribbonPageGroup21
+            // 
+            this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
+            this.ribbonPageGroup21.Text = "ribbonPageGroup21";
+            // 
+            // repositoryItemFontEdit1
+            // 
+            this.repositoryItemFontEdit1.AutoHeight = false;
+            this.repositoryItemFontEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
             // 
             // barButtonItem2
             // 
@@ -887,5 +965,7 @@ namespace gtsco2.forms.Pageprancipel
         private DevExpress.XtraBars.BarButtonItem barButtonItem8Section;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
         private DevExpress.XtraEditors.Repository.RepositoryItemFontEdit repositoryItemFontEdit1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
     }
 }

@@ -75,11 +75,11 @@
             // 
             this.gridControl.DataSource = this.evaluationCollectionViewBindingSource;
             this.gridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl.Location = new System.Drawing.Point(0, 57);
+            this.gridControl.Location = new System.Drawing.Point(0, 126);
             this.gridControl.MainView = this.gridView;
             this.gridControl.MenuManager = this.ribbonControl;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(1022, 679);
+            this.gridControl.Size = new System.Drawing.Size(1022, 610);
             this.gridControl.TabIndex = 2;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
@@ -151,48 +151,48 @@
             this.gridColumn6.FieldName = "Control_1";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 12;
-            this.gridColumn6.Width = 70;
+            this.gridColumn6.VisibleIndex = 10;
+            this.gridColumn6.Width = 58;
             // 
             // gridColumn7
             // 
             this.gridColumn7.FieldName = "Control_2";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 13;
-            this.gridColumn7.Width = 70;
+            this.gridColumn7.VisibleIndex = 11;
+            this.gridColumn7.Width = 62;
             // 
             // gridColumn8
             // 
             this.gridColumn8.FieldName = "Exam";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 14;
-            this.gridColumn8.Width = 49;
+            this.gridColumn8.VisibleIndex = 12;
+            this.gridColumn8.Width = 53;
             // 
             // gridColumn9
             // 
             this.gridColumn9.FieldName = "Rattrapage";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 15;
-            this.gridColumn9.Width = 78;
+            this.gridColumn9.VisibleIndex = 13;
+            this.gridColumn9.Width = 76;
             // 
             // gridColumn10
             // 
             this.gridColumn10.FieldName = "Moyenne_Module_AvRt";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 16;
-            this.gridColumn10.Width = 140;
+            this.gridColumn10.VisibleIndex = 14;
+            this.gridColumn10.Width = 63;
             // 
             // gridColumn11
             // 
             this.gridColumn11.FieldName = "Moyenne_Module_ApRt";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 17;
-            this.gridColumn11.Width = 140;
+            this.gridColumn11.VisibleIndex = 15;
+            this.gridColumn11.Width = 122;
             // 
             // gridColumn12
             // 
@@ -200,8 +200,8 @@
             this.gridColumn12.FieldName = "annee_scolaire.Designation";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 7;
-            this.gridColumn12.Width = 94;
+            this.gridColumn12.VisibleIndex = 6;
+            this.gridColumn12.Width = 68;
             // 
             // gridColumn13
             // 
@@ -210,7 +210,7 @@
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 4;
-            this.gridColumn13.Width = 100;
+            this.gridColumn13.Width = 76;
             // 
             // gridColumn14
             // 
@@ -227,8 +227,7 @@
             this.gridColumn15.FieldName = "Semestre.Designation_Semestre";
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.Visible = true;
-            this.gridColumn15.VisibleIndex = 6;
-            this.gridColumn15.Width = 68;
+            this.gridColumn15.VisibleIndex = 5;
             // 
             // gridColumn16
             // 
@@ -236,16 +235,14 @@
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.Visible = true;
             this.gridColumn16.VisibleIndex = 0;
-            this.gridColumn16.Width = 69;
+            this.gridColumn16.Width = 53;
             // 
             // gridColumn17
             // 
             this.gridColumn17.Caption = "Prenom ensenant";
             this.gridColumn17.FieldName = "Enseignant1.prenom";
             this.gridColumn17.Name = "gridColumn17";
-            this.gridColumn17.Visible = true;
-            this.gridColumn17.VisibleIndex = 5;
-            this.gridColumn17.Width = 107;
+            this.gridColumn17.Width = 72;
             // 
             // gridColumn18
             // 
@@ -254,7 +251,7 @@
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.Visible = true;
             this.gridColumn18.VisibleIndex = 1;
-            this.gridColumn18.Width = 47;
+            this.gridColumn18.Width = 36;
             // 
             // gridColumn19
             // 
@@ -263,7 +260,7 @@
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.Visible = true;
             this.gridColumn19.VisibleIndex = 2;
-            this.gridColumn19.Width = 59;
+            this.gridColumn19.Width = 45;
             // 
             // gridColumn20
             // 
@@ -278,8 +275,8 @@
             this.gridColumn21.FieldName = "Stagiair.Promo.Option.Designation_Option";
             this.gridColumn21.Name = "gridColumn21";
             this.gridColumn21.Visible = true;
-            this.gridColumn21.VisibleIndex = 10;
-            this.gridColumn21.Width = 55;
+            this.gridColumn21.VisibleIndex = 9;
+            this.gridColumn21.Width = 37;
             // 
             // gridColumn22
             // 
@@ -287,17 +284,15 @@
             this.gridColumn22.FieldName = "Stagiair.Promo.Option.Specialite1.Designation_SP";
             this.gridColumn22.Name = "gridColumn22";
             this.gridColumn22.Visible = true;
-            this.gridColumn22.VisibleIndex = 9;
-            this.gridColumn22.Width = 66;
+            this.gridColumn22.VisibleIndex = 8;
+            this.gridColumn22.Width = 46;
             // 
             // gridColumn23
             // 
             this.gridColumn23.Caption = "Code Section";
             this.gridColumn23.FieldName = "Stagiair.Section1.Code_Section";
             this.gridColumn23.Name = "gridColumn23";
-            this.gridColumn23.Visible = true;
-            this.gridColumn23.VisibleIndex = 11;
-            this.gridColumn23.Width = 86;
+            this.gridColumn23.Width = 55;
             // 
             // gridColumn24
             // 
@@ -305,8 +300,8 @@
             this.gridColumn24.FieldName = "Stagiair.Promo.Mode_formation.Désignation_Mode_Formation";
             this.gridColumn24.Name = "gridColumn24";
             this.gridColumn24.Visible = true;
-            this.gridColumn24.VisibleIndex = 8;
-            this.gridColumn24.Width = 98;
+            this.gridColumn24.VisibleIndex = 7;
+            this.gridColumn24.Width = 72;
             // 
             // ribbonControl
             // 
@@ -325,15 +320,15 @@
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
+            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(1022, 57);
+            this.ribbonControl.Size = new System.Drawing.Size(1022, 126);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiPrintPreview
             // 
-            this.bbiPrintPreview.Caption = "Print Preview";
+            this.bbiPrintPreview.Caption = "Imprimer";
             this.bbiPrintPreview.Id = 14;
             this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
             this.bbiPrintPreview.Name = "bbiPrintPreview";
@@ -346,28 +341,28 @@
             // 
             // bbiNew
             // 
-            this.bbiNew.Caption = "New";
+            this.bbiNew.Caption = "Ajouter";
             this.bbiNew.Id = 16;
             this.bbiNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiNew.Name = "bbiNew";
             // 
             // bbiEdit
             // 
-            this.bbiEdit.Caption = "Edit";
+            this.bbiEdit.Caption = "Modifier";
             this.bbiEdit.Id = 17;
             this.bbiEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiEdit.Name = "bbiEdit";
             // 
             // bbiDelete
             // 
-            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Caption = "Supprimer";
             this.bbiDelete.Id = 18;
             this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiDelete.Name = "bbiDelete";
             // 
             // bbiRefresh
             // 
-            this.bbiRefresh.Caption = "Refresh";
+            this.bbiRefresh.Caption = "Actualiser";
             this.bbiRefresh.Id = 19;
             this.bbiRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiRefresh.Name = "bbiRefresh";
@@ -379,7 +374,7 @@
             this.ribbonPageGroup2});
             this.ribbonPage1.MergeOrder = 0;
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Home";
+            this.ribbonPage1.Text = "Fichier";
             // 
             // ribbonPageGroup1
             // 
@@ -390,7 +385,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Evaluation Tasks";
+            this.ribbonPageGroup1.Text = "Gestion des évaluations ";
             // 
             // ribbonPageGroup2
             // 
@@ -398,7 +393,7 @@
             this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Print and Export";
+            this.ribbonPageGroup2.Text = "Enregistrer et imprimer";
             // 
             // ribbonStatusBar
             // 

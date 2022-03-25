@@ -788,6 +788,12 @@
     <EmbeddedResource Include="mvvm\Views\Enseignant\EnseignantCollectionView.resx">
       <DependentUpon>EnseignantCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Enseignant\EnseignantView.resx">
+      <DependentUpon>EnseignantView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Etablissement\EtablissementView.resx">
+      <DependentUpon>EtablissementView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Evaluation\EvaluationCollectionView.resx">
       <DependentUpon>EvaluationCollectionView.cs</DependentUpon>
     </EmbeddedResource>
@@ -797,17 +803,32 @@
     <EmbeddedResource Include="mvvm\Views\Maitre_Apprentissage\Maitre_ApprentissageCollectionView.resx">
       <DependentUpon>Maitre_ApprentissageCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Maitre_Apprentissage\Maitre_ApprentissageView.resx">
+      <DependentUpon>Maitre_ApprentissageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Mode_formation\Mode_formationCollectionView.resx">
       <DependentUpon>Mode_formationCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Mode_formation\Mode_formationView.resx">
+      <DependentUpon>Mode_formationView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Module\ModuleCollectionView.resx">
       <DependentUpon>ModuleCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Module\ModuleView.resx">
+      <DependentUpon>ModuleView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Option\OptionCollectionView.resx">
       <DependentUpon>OptionCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Option\OptionView.resx">
+      <DependentUpon>OptionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\PARTICIPE\PARTICIPEView.resx">
       <DependentUpon>PARTICIPEView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\Views\Proce_verbal_delibation\Proce_verbal_delibationCollectionView.resx">
+      <DependentUpon>Proce_verbal_delibationCollectionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Proce_verbal_delibation\Proce_verbal_delibationView.resx">
       <DependentUpon>Proce_verbal_delibationView.cs</DependentUpon>

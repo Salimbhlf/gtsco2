@@ -138,9 +138,9 @@ namespace gtsco2.forms.GTabsences.PVabsences
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
-            this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
+            this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -176,7 +176,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
             this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.closeButton7.Location = new System.Drawing.Point(208, 3);
+            this.closeButton7.Location = new System.Drawing.Point(516, 3);
             this.closeButton7.Name = "closeButton7";
             this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.closeButton7.ShowToolTips = false;
@@ -193,7 +193,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.simpleButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton5.Location = new System.Drawing.Point(399, 3);
+            this.simpleButton5.Location = new System.Drawing.Point(208, 3);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton5.ShowToolTips = false;
@@ -210,13 +210,13 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.simpleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(529, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(338, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton1.ShowToolTips = false;
             this.simpleButton1.Size = new System.Drawing.Size(172, 69);
             this.simpleButton1.TabIndex = 12;
-            this.simpleButton1.Text = " formilar d\'ajoute";
+            this.simpleButton1.Text = "Formulaire d\'ajout";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // panelControl2

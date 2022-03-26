@@ -8,7 +8,7 @@ using DevExpress.Utils.MVVM.Services;
 using DevExpress.XtraBars;
 
 namespace gtsco2.mvvm.Views.WillayaCollectionView{
-    public partial class WillayaCollectionView : XtraForm
+    public partial class WillayaCollectionView : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public WillayaCollectionView() {
             InitializeComponent();

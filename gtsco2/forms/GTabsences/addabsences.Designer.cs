@@ -301,63 +301,63 @@ namespace gtsco2.forms.GTabsences
             // 
             this.spcomboBox1.DropDownWidth = 200;
             this.spcomboBox1.FormattingEnabled = true;
-            this.spcomboBox1.Location = new System.Drawing.Point(106, 54);
+            this.spcomboBox1.Location = new System.Drawing.Point(107, 54);
             this.spcomboBox1.Name = "spcomboBox1";
-            this.spcomboBox1.Size = new System.Drawing.Size(140, 21);
+            this.spcomboBox1.Size = new System.Drawing.Size(139, 21);
             this.spcomboBox1.TabIndex = 4;
             this.spcomboBox1.SelectionChangeCommitted += new System.EventHandler(this.spcomboBox1_SelectionChangeCommitted);
             // 
             // promocomboBox11
             // 
             this.promocomboBox11.FormattingEnabled = true;
-            this.promocomboBox11.Location = new System.Drawing.Point(106, 79);
+            this.promocomboBox11.Location = new System.Drawing.Point(107, 79);
             this.promocomboBox11.Name = "promocomboBox11";
-            this.promocomboBox11.Size = new System.Drawing.Size(140, 21);
+            this.promocomboBox11.Size = new System.Drawing.Size(139, 21);
             this.promocomboBox11.TabIndex = 4;
             this.promocomboBox11.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox11_SelectionChangeCommitted);
             // 
             // seccomboBox
             // 
             this.seccomboBox.FormattingEnabled = true;
-            this.seccomboBox.Location = new System.Drawing.Point(106, 104);
+            this.seccomboBox.Location = new System.Drawing.Point(107, 104);
             this.seccomboBox.Name = "seccomboBox";
-            this.seccomboBox.Size = new System.Drawing.Size(140, 21);
+            this.seccomboBox.Size = new System.Drawing.Size(139, 21);
             this.seccomboBox.TabIndex = 4;
             // 
             // smstcomboBox13
             // 
             this.smstcomboBox13.FormattingEnabled = true;
-            this.smstcomboBox13.Location = new System.Drawing.Point(106, 129);
+            this.smstcomboBox13.Location = new System.Drawing.Point(107, 129);
             this.smstcomboBox13.Name = "smstcomboBox13";
-            this.smstcomboBox13.Size = new System.Drawing.Size(140, 21);
+            this.smstcomboBox13.Size = new System.Drawing.Size(139, 21);
             this.smstcomboBox13.TabIndex = 4;
             // 
             // modecombobox
             // 
             this.modecombobox.FormattingEnabled = true;
-            this.modecombobox.Location = new System.Drawing.Point(106, 29);
+            this.modecombobox.Location = new System.Drawing.Point(107, 29);
             this.modecombobox.Name = "modecombobox";
-            this.modecombobox.Size = new System.Drawing.Size(140, 21);
+            this.modecombobox.Size = new System.Drawing.Size(139, 21);
             this.modecombobox.TabIndex = 4;
             // 
             // anneecomboBox141
             // 
             this.anneecomboBox141.FormattingEnabled = true;
-            this.anneecomboBox141.Location = new System.Drawing.Point(106, 4);
+            this.anneecomboBox141.Location = new System.Drawing.Point(107, 4);
             this.anneecomboBox141.Name = "anneecomboBox141";
-            this.anneecomboBox141.Size = new System.Drawing.Size(140, 21);
+            this.anneecomboBox141.Size = new System.Drawing.Size(139, 21);
             this.anneecomboBox141.TabIndex = 4;
             // 
             // dateEdit1
             // 
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(106, 154);
+            this.dateEdit1.Location = new System.Drawing.Point(107, 154);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(140, 20);
+            this.dateEdit1.Size = new System.Drawing.Size(139, 20);
             this.dateEdit1.StyleController = this.layoutControl1;
             this.dateEdit1.TabIndex = 12;
             // 
@@ -400,7 +400,7 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(246, 25);
             this.layoutControlItem1.Text = "Spécialité ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(90, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(91, 13);
             // 
             // layoutControlItem2
             // 
@@ -413,7 +413,7 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(246, 25);
             this.layoutControlItem2.Text = "Promo";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(90, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(91, 13);
             // 
             // layoutControlItem3
             // 
@@ -426,7 +426,7 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(246, 25);
             this.layoutControlItem3.Text = "Section";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(90, 13);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(91, 13);
             // 
             // layoutControlItem4
             // 
@@ -439,7 +439,7 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(246, 25);
             this.layoutControlItem4.Text = "Semestre";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(90, 13);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(91, 13);
             // 
             // layoutControlItem6
             // 
@@ -452,7 +452,7 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(246, 25);
             this.layoutControlItem6.Text = "Mode formation";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(90, 13);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(91, 13);
             // 
             // layoutControlItem7
             // 
@@ -497,7 +497,7 @@ namespace gtsco2.forms.GTabsences
             this.date_abssonce.Name = "date_abssonce";
             this.date_abssonce.Size = new System.Drawing.Size(246, 24);
             this.date_abssonce.Text = "Date d\'absence";
-            this.date_abssonce.TextSize = new System.Drawing.Size(90, 13);
+            this.date_abssonce.TextSize = new System.Drawing.Size(91, 13);
             // 
             // layoutControlItem8
             // 
@@ -509,8 +509,8 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.Size = new System.Drawing.Size(246, 25);
-            this.layoutControlItem8.Text = "Annee Scolaire";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(90, 13);
+            this.layoutControlItem8.Text = "Session Scolaire";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(91, 13);
             // 
             // panelControl3
             // 

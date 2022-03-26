@@ -295,7 +295,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem5Anne
             // 
-            this.barButtonItem5Anne.Caption = "Année scolaire";
+            this.barButtonItem5Anne.Caption = "Année /Session scolaire";
             this.barButtonItem5Anne.Id = 11;
             this.barButtonItem5Anne.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Anne.ImageOptions.Image")));
             this.barButtonItem5Anne.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Anne.ImageOptions.LargeImage")));
@@ -590,7 +590,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup20});
             this.ribbonPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.ImageOptions.Image")));
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Organisation";
+            this.ribbonPage2.Text = "Structure ";
             // 
             // ribbonPageGroup22
             // 

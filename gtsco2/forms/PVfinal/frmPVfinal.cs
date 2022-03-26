@@ -85,7 +85,7 @@ namespace gtsco2.forms.PVfinal
                 try
                 {
                     var qur5 = (from ann in shared.bd.annee_scolaire
-                                select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) }).ToList();
+                                select new { id = ann.ID_Année_SCO, nom = (ann.Designation + " " + ann.Session_Année_SCO) }).ToList();
                     DataTable table = new DataTable();
                     table.Columns.Add("nom");
                     table.Columns.Add("id");

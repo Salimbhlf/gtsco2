@@ -80,7 +80,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
 
                 var qur5 = from ann in shared.bd.annee_scolaire
-                           select new { id = ann.ID_Année_SCO, nom = (ann.Designation + ann.Session_Année_SCO) };
+                           select new { id = ann.ID_Année_SCO, nom = (ann.Designation +" " + ann.Session_Année_SCO) };
                 anneecomboBox141.DataSource = qur5.ToList();
                 anneecomboBox141.DisplayMember = "nom";
                 anneecomboBox141.ValueMember = "id";

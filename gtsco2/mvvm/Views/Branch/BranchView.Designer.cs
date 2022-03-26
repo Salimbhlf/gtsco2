@@ -24,10 +24,26 @@
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.Code_BrancheTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.branchViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Designation_BrancheTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.Designation_Branche_arTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.SpecialitesXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.SpecialitesGridControl = new DevExpress.XtraGrid.GridControl();
+            this.SpecialitesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SpecialitesGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_Specialité = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode_SP = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -37,63 +53,47 @@
             this.colID_Branche = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBranch = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colOptions = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
-            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
-            this.SpecialitesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.Code_BrancheTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForCode_Branche = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Designation_BrancheTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDesignation_Branche = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Designation_Branche_arTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDesignation_Branche_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForSpecialites = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.SpecialitesBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.SpecialitesBar = new DevExpress.XtraBars.Bar();
             this.bbiSpecialitesNew = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSpecialitesEdit = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSpecialitesDelete = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSpecialitesRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.SpecialitesBar = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForCode_Branche = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDesignation_Branche = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDesignation_Branche_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForSpecialites = new DevExpress.XtraLayout.LayoutControlItem();
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.SpecialitesPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_BrancheTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_BrancheTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_Branche_arTextEdit.Properties)).BeginInit();
             this.SpecialitesXtraUserControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesBarManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_BrancheTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Branche)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_BrancheTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_Branche_arTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialites)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialites)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesBarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesPopUpMenu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,19 +112,158 @@
             this.dataLayoutControl1.Size = new System.Drawing.Size(1023, 402);
             this.dataLayoutControl1.TabIndex = 0;
             // 
-            // layoutControlGroup1
+            // Code_BrancheTextEdit
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2});
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1023, 402);
-            this.layoutControlGroup1.TextVisible = false;
+            this.Code_BrancheTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Code_Branche", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Code_BrancheTextEdit.Location = new System.Drawing.Point(193, 12);
+            this.Code_BrancheTextEdit.MenuManager = this.mainRibbonControl;
+            this.Code_BrancheTextEdit.Name = "Code_BrancheTextEdit";
+            this.Code_BrancheTextEdit.Size = new System.Drawing.Size(818, 20);
+            this.Code_BrancheTextEdit.StyleController = this.dataLayoutControl1;
+            this.Code_BrancheTextEdit.TabIndex = 4;
             // 
             // branchViewBindingSource
             // 
             this.branchViewBindingSource.DataSource = typeof(gtsco2.basededonne.Branch);
+            // 
+            // mainRibbonControl
+            // 
+            this.mainRibbonControl.ExpandCollapseItem.Id = 0;
+            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.mainRibbonControl.ExpandCollapseItem,
+            this.mainRibbonControl.SearchEditItem,
+            this.bbiCustomize,
+            this.bbiSave,
+            this.bbiSaveAndClose,
+            this.bbiSaveAndNew,
+            this.bbiReset,
+            this.bbiDelete,
+            this.bbiClose,
+            this.bbiSaveLayout,
+            this.bbiResetLayout});
+            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.mainRibbonControl.MaxItemId = 10;
+            this.mainRibbonControl.Name = "mainRibbonControl";
+            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.mainRibbonPage});
+            this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
+            this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonControl.Size = new System.Drawing.Size(1023, 126);
+            this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            // 
+            // bbiCustomize
+            // 
+            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
+            this.bbiCustomize.Id = 1;
+            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
+            this.bbiCustomize.Name = "bbiCustomize";
+            // 
+            // bbiSave
+            // 
+            this.bbiSave.Caption = "Enregistrer ";
+            this.bbiSave.Id = 2;
+            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSave.Name = "bbiSave";
+            // 
+            // bbiSaveAndClose
+            // 
+            this.bbiSaveAndClose.Caption = "Enregistrer et fermer";
+            this.bbiSaveAndClose.Id = 3;
+            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
+            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
+            // 
+            // bbiSaveAndNew
+            // 
+            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
+            this.bbiSaveAndNew.Id = 4;
+            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
+            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
+            // 
+            // bbiReset
+            // 
+            this.bbiReset.Caption = "Annuler les changements";
+            this.bbiReset.Id = 5;
+            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiReset.Name = "bbiReset";
+            // 
+            // bbiDelete
+            // 
+            this.bbiDelete.Caption = "Supprimer ";
+            this.bbiDelete.Id = 6;
+            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDelete.Name = "bbiDelete";
+            // 
+            // bbiClose
+            // 
+            this.bbiClose.Caption = "Fermer ";
+            this.bbiClose.Id = 7;
+            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
+            this.bbiClose.Name = "bbiClose";
+            // 
+            // bbiSaveLayout
+            // 
+            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
+            this.bbiSaveLayout.Id = 8;
+            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSaveLayout.Name = "bbiSaveLayout";
+            // 
+            // bbiResetLayout
+            // 
+            this.bbiResetLayout.Caption = "Annuler la personnalisation";
+            this.bbiResetLayout.Id = 9;
+            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiResetLayout.Name = "bbiResetLayout";
+            // 
+            // mainRibbonPage
+            // 
+            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.mainRibbonPageGroup,
+            this.ribbonPageGroupLayout});
+            this.mainRibbonPage.MergeOrder = 0;
+            this.mainRibbonPage.Name = "mainRibbonPage";
+            this.mainRibbonPage.Text = "Fichier";
+            // 
+            // mainRibbonPageGroup
+            // 
+            this.mainRibbonPageGroup.AllowTextClipping = false;
+            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
+            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
+            this.mainRibbonPageGroup.Text = "Gestions des branches";
+            // 
+            // ribbonPageGroupLayout
+            // 
+            this.ribbonPageGroupLayout.AllowTextClipping = false;
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
+            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
+            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
+            // 
+            // Designation_BrancheTextEdit
+            // 
+            this.Designation_BrancheTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Designation_Branche", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Designation_BrancheTextEdit.Location = new System.Drawing.Point(193, 36);
+            this.Designation_BrancheTextEdit.MenuManager = this.mainRibbonControl;
+            this.Designation_BrancheTextEdit.Name = "Designation_BrancheTextEdit";
+            this.Designation_BrancheTextEdit.Size = new System.Drawing.Size(818, 20);
+            this.Designation_BrancheTextEdit.StyleController = this.dataLayoutControl1;
+            this.Designation_BrancheTextEdit.TabIndex = 5;
+            // 
+            // Designation_Branche_arTextEdit
+            // 
+            this.Designation_Branche_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Designation_Branche_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Designation_Branche_arTextEdit.Location = new System.Drawing.Point(193, 60);
+            this.Designation_Branche_arTextEdit.MenuManager = this.mainRibbonControl;
+            this.Designation_Branche_arTextEdit.Name = "Designation_Branche_arTextEdit";
+            this.Designation_Branche_arTextEdit.Size = new System.Drawing.Size(818, 20);
+            this.Designation_Branche_arTextEdit.StyleController = this.dataLayoutControl1;
+            this.Designation_Branche_arTextEdit.TabIndex = 6;
             // 
             // SpecialitesXtraUserControl
             // 
@@ -151,6 +290,10 @@
             this.SpecialitesGridControl.TabIndex = 0;
             this.SpecialitesGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.SpecialitesGridView});
+            // 
+            // SpecialitesBindingSource
+            // 
+            this.SpecialitesBindingSource.DataSource = typeof(gtsco2.basededonne.Specialite);
             // 
             // SpecialitesGridView
             // 
@@ -220,244 +363,13 @@
             this.colOptions.FieldName = "Options";
             this.colOptions.Name = "colOptions";
             // 
-            // mainRibbonControl
+            // barDockControlLeft
             // 
-            this.mainRibbonControl.ExpandCollapseItem.Id = 0;
-            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.mainRibbonControl.ExpandCollapseItem,
-            this.bbiCustomize,
-            this.bbiSave,
-            this.bbiSaveAndClose,
-            this.bbiSaveAndNew,
-            this.bbiReset,
-            this.bbiDelete,
-            this.bbiClose,
-            this.bbiSaveLayout,
-            this.bbiResetLayout,
-            this.mainRibbonControl.SearchEditItem});
-            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 10;
-            this.mainRibbonControl.Name = "mainRibbonControl";
-            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.mainRibbonPage});
-            this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1023, 126);
-            this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-            // 
-            // bbiCustomize
-            // 
-            this.bbiCustomize.Caption = "Customize";
-            this.bbiCustomize.Id = 1;
-            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
-            this.bbiCustomize.Name = "bbiCustomize";
-            // 
-            // mainRibbonPage
-            // 
-            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
-            this.mainRibbonPage.MergeOrder = 0;
-            this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "Home";
-            // 
-            // mainRibbonPageGroup
-            // 
-            this.mainRibbonPageGroup.AllowTextClipping = false;
-            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
-            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Branch Tasks";
-            // 
-            // bbiSave
-            // 
-            this.bbiSave.Caption = "Save";
-            this.bbiSave.Id = 2;
-            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
-            this.bbiSave.Name = "bbiSave";
-            // 
-            // bbiSaveAndClose
-            // 
-            this.bbiSaveAndClose.Caption = "Save And Close";
-            this.bbiSaveAndClose.Id = 3;
-            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
-            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
-            // 
-            // bbiSaveAndNew
-            // 
-            this.bbiSaveAndNew.Caption = "Save And New";
-            this.bbiSaveAndNew.Id = 4;
-            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
-            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
-            // 
-            // bbiReset
-            // 
-            this.bbiReset.Caption = "Reset Changes";
-            this.bbiReset.Id = 5;
-            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
-            this.bbiReset.Name = "bbiReset";
-            // 
-            // bbiDelete
-            // 
-            this.bbiDelete.Caption = "Delete";
-            this.bbiDelete.Id = 6;
-            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiDelete.Name = "bbiDelete";
-            // 
-            // bbiClose
-            // 
-            this.bbiClose.Caption = "Close";
-            this.bbiClose.Id = 7;
-            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
-            this.bbiClose.Name = "bbiClose";
-            // 
-            // ribbonPageGroupLayout
-            // 
-            this.ribbonPageGroupLayout.AllowTextClipping = false;
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
-            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
-            this.ribbonPageGroupLayout.Text = "Layout";
-            // 
-            // bbiSaveLayout
-            // 
-            this.bbiSaveLayout.Caption = "Save Layout";
-            this.bbiSaveLayout.Id = 8;
-            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
-            this.bbiSaveLayout.Name = "bbiSaveLayout";
-            // 
-            // bbiResetLayout
-            // 
-            this.bbiResetLayout.Caption = "Reset Layout";
-            this.bbiResetLayout.Id = 9;
-            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
-            this.bbiResetLayout.Name = "bbiResetLayout";
-            // 
-            // SpecialitesBindingSource
-            // 
-            this.SpecialitesBindingSource.DataSource = typeof(gtsco2.basededonne.Specialite);
-            // 
-            // layoutControlGroup2
-            // 
-            this.layoutControlGroup2.AllowDrawBackground = false;
-            this.layoutControlGroup2.GroupBordersVisible = false;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForCode_Branche,
-            this.ItemForDesignation_Branche,
-            this.ItemForDesignation_Branche_ar,
-            this.tabbedControlGroup1});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1003, 382);
-            // 
-            // Code_BrancheTextEdit
-            // 
-            this.Code_BrancheTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Code_Branche", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Code_BrancheTextEdit.Location = new System.Drawing.Point(141, 12);
-            this.Code_BrancheTextEdit.MenuManager = this.mainRibbonControl;
-            this.Code_BrancheTextEdit.Name = "Code_BrancheTextEdit";
-            this.Code_BrancheTextEdit.Size = new System.Drawing.Size(870, 20);
-            this.Code_BrancheTextEdit.StyleController = this.dataLayoutControl1;
-            this.Code_BrancheTextEdit.TabIndex = 4;
-            // 
-            // ItemForCode_Branche
-            // 
-            this.ItemForCode_Branche.Control = this.Code_BrancheTextEdit;
-            this.ItemForCode_Branche.Location = new System.Drawing.Point(0, 0);
-            this.ItemForCode_Branche.Name = "ItemForCode_Branche";
-            this.ItemForCode_Branche.Size = new System.Drawing.Size(1003, 24);
-            this.ItemForCode_Branche.Text = "Code_Branche";
-            this.ItemForCode_Branche.TextSize = new System.Drawing.Size(117, 13);
-            // 
-            // Designation_BrancheTextEdit
-            // 
-            this.Designation_BrancheTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Designation_Branche", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_BrancheTextEdit.Location = new System.Drawing.Point(141, 36);
-            this.Designation_BrancheTextEdit.MenuManager = this.mainRibbonControl;
-            this.Designation_BrancheTextEdit.Name = "Designation_BrancheTextEdit";
-            this.Designation_BrancheTextEdit.Size = new System.Drawing.Size(870, 20);
-            this.Designation_BrancheTextEdit.StyleController = this.dataLayoutControl1;
-            this.Designation_BrancheTextEdit.TabIndex = 5;
-            // 
-            // ItemForDesignation_Branche
-            // 
-            this.ItemForDesignation_Branche.Control = this.Designation_BrancheTextEdit;
-            this.ItemForDesignation_Branche.Location = new System.Drawing.Point(0, 24);
-            this.ItemForDesignation_Branche.Name = "ItemForDesignation_Branche";
-            this.ItemForDesignation_Branche.Size = new System.Drawing.Size(1003, 24);
-            this.ItemForDesignation_Branche.Text = "Designation_Branche";
-            this.ItemForDesignation_Branche.TextSize = new System.Drawing.Size(117, 13);
-            // 
-            // Designation_Branche_arTextEdit
-            // 
-            this.Designation_Branche_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Designation_Branche_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_Branche_arTextEdit.Location = new System.Drawing.Point(141, 60);
-            this.Designation_Branche_arTextEdit.MenuManager = this.mainRibbonControl;
-            this.Designation_Branche_arTextEdit.Name = "Designation_Branche_arTextEdit";
-            this.Designation_Branche_arTextEdit.Size = new System.Drawing.Size(870, 20);
-            this.Designation_Branche_arTextEdit.StyleController = this.dataLayoutControl1;
-            this.Designation_Branche_arTextEdit.TabIndex = 6;
-            // 
-            // ItemForDesignation_Branche_ar
-            // 
-            this.ItemForDesignation_Branche_ar.Control = this.Designation_Branche_arTextEdit;
-            this.ItemForDesignation_Branche_ar.Location = new System.Drawing.Point(0, 48);
-            this.ItemForDesignation_Branche_ar.Name = "ItemForDesignation_Branche_ar";
-            this.ItemForDesignation_Branche_ar.Size = new System.Drawing.Size(1003, 24);
-            this.ItemForDesignation_Branche_ar.Text = "Designation_Branche_ar";
-            this.ItemForDesignation_Branche_ar.TextSize = new System.Drawing.Size(117, 13);
-            // 
-            // ItemForSpecialites
-            // 
-            this.ItemForSpecialites.Control = this.SpecialitesXtraUserControl;
-            this.ItemForSpecialites.Location = new System.Drawing.Point(0, 0);
-            this.ItemForSpecialites.Name = "ItemForSpecialites";
-            this.ItemForSpecialites.Size = new System.Drawing.Size(979, 263);
-            this.ItemForSpecialites.StartNewLine = true;
-            this.ItemForSpecialites.Text = "Specialites";
-            this.ItemForSpecialites.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForSpecialites.TextVisible = false;
-            // 
-            // tabbedControlGroup1
-            // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 72);
-            this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1003, 310);
-            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup3});
-            this.tabbedControlGroup1.Text = "Tabs";
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForSpecialites});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "autoGroupForSpecialites";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(979, 263);
-            this.layoutControlGroup3.Text = "Specialites";
-            // 
-            // mvvmContext
-            // 
-            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Save", this.bbiSave),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "SaveAndClose", this.bbiSaveAndClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "SaveAndNew", this.bbiSaveAndNew),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Reset", this.bbiReset),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Delete", this.bbiDelete),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Close", this.bbiClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "SaveLayout", this.bbiSaveLayout),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "ResetLayout", this.bbiResetLayout)});
-            this.mvvmContext.ContainerControl = this;
-            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
-            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
-            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.BranchViewModel);
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.SpecialitesBarManager;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 235);
             // 
             // SpecialitesBarManager
             // 
@@ -477,38 +389,6 @@
             this.SpecialitesBarManager.MainMenu = this.SpecialitesBar;
             this.SpecialitesBarManager.MaxItemId = 4;
             // 
-            // bbiSpecialitesNew
-            // 
-            this.bbiSpecialitesNew.Caption = "New";
-            this.bbiSpecialitesNew.Id = 0;
-            this.bbiSpecialitesNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiSpecialitesNew.Name = "bbiSpecialitesNew";
-            this.bbiSpecialitesNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiSpecialitesEdit
-            // 
-            this.bbiSpecialitesEdit.Caption = "Edit";
-            this.bbiSpecialitesEdit.Id = 1;
-            this.bbiSpecialitesEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiSpecialitesEdit.Name = "bbiSpecialitesEdit";
-            this.bbiSpecialitesEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiSpecialitesDelete
-            // 
-            this.bbiSpecialitesDelete.Caption = "Delete";
-            this.bbiSpecialitesDelete.Id = 2;
-            this.bbiSpecialitesDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiSpecialitesDelete.Name = "bbiSpecialitesDelete";
-            this.bbiSpecialitesDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiSpecialitesRefresh
-            // 
-            this.bbiSpecialitesRefresh.Caption = "Refresh";
-            this.bbiSpecialitesRefresh.Id = 3;
-            this.bbiSpecialitesRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiSpecialitesRefresh.Name = "bbiSpecialitesRefresh";
-            this.bbiSpecialitesRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
             // SpecialitesBar
             // 
             this.SpecialitesBar.BarName = "Specialites";
@@ -523,6 +403,38 @@
             this.SpecialitesBar.OptionsBar.AllowQuickCustomization = false;
             this.SpecialitesBar.OptionsBar.DrawDragBorder = false;
             this.SpecialitesBar.Text = "Specialites";
+            // 
+            // bbiSpecialitesNew
+            // 
+            this.bbiSpecialitesNew.Caption = "Ajouter";
+            this.bbiSpecialitesNew.Id = 0;
+            this.bbiSpecialitesNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiSpecialitesNew.Name = "bbiSpecialitesNew";
+            this.bbiSpecialitesNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiSpecialitesEdit
+            // 
+            this.bbiSpecialitesEdit.Caption = "Modifier";
+            this.bbiSpecialitesEdit.Id = 1;
+            this.bbiSpecialitesEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiSpecialitesEdit.Name = "bbiSpecialitesEdit";
+            this.bbiSpecialitesEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiSpecialitesDelete
+            // 
+            this.bbiSpecialitesDelete.Caption = "Supprimer";
+            this.bbiSpecialitesDelete.Id = 2;
+            this.bbiSpecialitesDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiSpecialitesDelete.Name = "bbiSpecialitesDelete";
+            this.bbiSpecialitesDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiSpecialitesRefresh
+            // 
+            this.bbiSpecialitesRefresh.Caption = "Actualiser";
+            this.bbiSpecialitesRefresh.Id = 3;
+            this.bbiSpecialitesRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiSpecialitesRefresh.Name = "bbiSpecialitesRefresh";
+            this.bbiSpecialitesRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // barDockControlTop
             // 
@@ -540,14 +452,6 @@
             this.barDockControlBottom.Manager = this.SpecialitesBarManager;
             this.barDockControlBottom.Size = new System.Drawing.Size(975, 0);
             // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
-            this.barDockControlLeft.Manager = this.SpecialitesBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 235);
-            // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
@@ -555,6 +459,102 @@
             this.barDockControlRight.Location = new System.Drawing.Point(975, 24);
             this.barDockControlRight.Manager = this.SpecialitesBarManager;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 235);
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1023, 402);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForCode_Branche,
+            this.ItemForDesignation_Branche,
+            this.ItemForDesignation_Branche_ar,
+            this.tabbedControlGroup1});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1003, 382);
+            // 
+            // ItemForCode_Branche
+            // 
+            this.ItemForCode_Branche.Control = this.Code_BrancheTextEdit;
+            this.ItemForCode_Branche.Location = new System.Drawing.Point(0, 0);
+            this.ItemForCode_Branche.Name = "ItemForCode_Branche";
+            this.ItemForCode_Branche.Size = new System.Drawing.Size(1003, 24);
+            this.ItemForCode_Branche.Text = "Code de la branche";
+            this.ItemForCode_Branche.TextSize = new System.Drawing.Size(169, 13);
+            // 
+            // ItemForDesignation_Branche
+            // 
+            this.ItemForDesignation_Branche.Control = this.Designation_BrancheTextEdit;
+            this.ItemForDesignation_Branche.Location = new System.Drawing.Point(0, 24);
+            this.ItemForDesignation_Branche.Name = "ItemForDesignation_Branche";
+            this.ItemForDesignation_Branche.Size = new System.Drawing.Size(1003, 24);
+            this.ItemForDesignation_Branche.Text = "Designation des Branches";
+            this.ItemForDesignation_Branche.TextSize = new System.Drawing.Size(169, 13);
+            // 
+            // ItemForDesignation_Branche_ar
+            // 
+            this.ItemForDesignation_Branche_ar.Control = this.Designation_Branche_arTextEdit;
+            this.ItemForDesignation_Branche_ar.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDesignation_Branche_ar.Name = "ItemForDesignation_Branche_ar";
+            this.ItemForDesignation_Branche_ar.Size = new System.Drawing.Size(1003, 24);
+            this.ItemForDesignation_Branche_ar.Text = "Designation des branches en arabe";
+            this.ItemForDesignation_Branche_ar.TextSize = new System.Drawing.Size(169, 13);
+            // 
+            // tabbedControlGroup1
+            // 
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 72);
+            this.tabbedControlGroup1.Name = "autoGroupForTabs";
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(1003, 310);
+            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup3});
+            this.tabbedControlGroup1.Text = "Tabs";
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForSpecialites});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "autoGroupForSpecialites";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(979, 263);
+            this.layoutControlGroup3.Text = "Spécialités";
+            // 
+            // ItemForSpecialites
+            // 
+            this.ItemForSpecialites.Control = this.SpecialitesXtraUserControl;
+            this.ItemForSpecialites.Location = new System.Drawing.Point(0, 0);
+            this.ItemForSpecialites.Name = "ItemForSpecialites";
+            this.ItemForSpecialites.Size = new System.Drawing.Size(979, 263);
+            this.ItemForSpecialites.StartNewLine = true;
+            this.ItemForSpecialites.Text = "Specialites";
+            this.ItemForSpecialites.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForSpecialites.TextVisible = false;
+            // 
+            // mvvmContext
+            // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Save", this.bbiSave),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "SaveAndClose", this.bbiSaveAndClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "SaveAndNew", this.bbiSaveAndNew),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Reset", this.bbiReset),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Delete", this.bbiDelete),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "Close", this.bbiClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "SaveLayout", this.bbiSaveLayout),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.BranchViewModel), "ResetLayout", this.bbiResetLayout)});
+            this.mvvmContext.ContainerControl = this;
+            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
+            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
+            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.BranchViewModel);
             // 
             // SpecialitesPopUpMenu
             // 
@@ -577,26 +577,26 @@
             this.Size = new System.Drawing.Size(1023, 528);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_BrancheTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_BrancheTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_Branche_arTextEdit.Properties)).EndInit();
             this.SpecialitesXtraUserControl.ResumeLayout(false);
             this.SpecialitesXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesBarManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_BrancheTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Branche)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_BrancheTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_Branche_arTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialites)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialites)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SpecialitesBarManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesPopUpMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

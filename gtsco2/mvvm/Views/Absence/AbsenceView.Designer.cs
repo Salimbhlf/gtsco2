@@ -155,14 +155,14 @@
             // ID_AbsenceTextEdit
             // 
             this.ID_AbsenceTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "ID_Absence", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ID_AbsenceTextEdit.Location = new System.Drawing.Point(99, 12);
+            this.ID_AbsenceTextEdit.Location = new System.Drawing.Point(152, 12);
             this.ID_AbsenceTextEdit.Name = "ID_AbsenceTextEdit";
             this.ID_AbsenceTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_AbsenceTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.ID_AbsenceTextEdit.Properties.Mask.EditMask = "N0";
             this.ID_AbsenceTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_AbsenceTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.ID_AbsenceTextEdit.Size = new System.Drawing.Size(919, 20);
+            this.ID_AbsenceTextEdit.Size = new System.Drawing.Size(866, 20);
             this.ID_AbsenceTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_AbsenceTextEdit.TabIndex = 4;
             // 
@@ -175,7 +175,7 @@
             this.Seance_1_ABSCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Seance_1_ABS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Seance_1_ABSCheckEdit.Location = new System.Drawing.Point(322, 36);
             this.Seance_1_ABSCheckEdit.Name = "Seance_1_ABSCheckEdit";
-            this.Seance_1_ABSCheckEdit.Properties.Caption = "Seance_1_ABS";
+            this.Seance_1_ABSCheckEdit.Properties.Caption = "Séance n°1";
             this.Seance_1_ABSCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.Seance_1_ABSCheckEdit.Size = new System.Drawing.Size(148, 20);
             this.Seance_1_ABSCheckEdit.StyleController = this.dataLayoutControl1;
@@ -186,7 +186,7 @@
             this.Seance_2_ABSCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Seance_2_ABS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Seance_2_ABSCheckEdit.Location = new System.Drawing.Point(474, 36);
             this.Seance_2_ABSCheckEdit.Name = "Seance_2_ABSCheckEdit";
-            this.Seance_2_ABSCheckEdit.Properties.Caption = "Seance_2_ABS";
+            this.Seance_2_ABSCheckEdit.Properties.Caption = "Séance n°2";
             this.Seance_2_ABSCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.Seance_2_ABSCheckEdit.Size = new System.Drawing.Size(189, 20);
             this.Seance_2_ABSCheckEdit.StyleController = this.dataLayoutControl1;
@@ -197,7 +197,7 @@
             this.Seance_3_ABSCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Seance_3_ABS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Seance_3_ABSCheckEdit.Location = new System.Drawing.Point(667, 36);
             this.Seance_3_ABSCheckEdit.Name = "Seance_3_ABSCheckEdit";
-            this.Seance_3_ABSCheckEdit.Properties.Caption = "Seance_3_ABS";
+            this.Seance_3_ABSCheckEdit.Properties.Caption = "Séance n°3";
             this.Seance_3_ABSCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.Seance_3_ABSCheckEdit.Size = new System.Drawing.Size(186, 20);
             this.Seance_3_ABSCheckEdit.StyleController = this.dataLayoutControl1;
@@ -208,7 +208,7 @@
             this.Seance_4_ABSCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Seance_4_ABS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Seance_4_ABSCheckEdit.Location = new System.Drawing.Point(857, 36);
             this.Seance_4_ABSCheckEdit.Name = "Seance_4_ABSCheckEdit";
-            this.Seance_4_ABSCheckEdit.Properties.Caption = "Seance_4_ABS";
+            this.Seance_4_ABSCheckEdit.Properties.Caption = "Séance n°4";
             this.Seance_4_ABSCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.Seance_4_ABSCheckEdit.Size = new System.Drawing.Size(161, 20);
             this.Seance_4_ABSCheckEdit.StyleController = this.dataLayoutControl1;
@@ -218,14 +218,14 @@
             // 
             this.Date_ABSDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Date_ABS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Date_ABSDateEdit.EditValue = null;
-            this.Date_ABSDateEdit.Location = new System.Drawing.Point(99, 36);
+            this.Date_ABSDateEdit.Location = new System.Drawing.Point(152, 36);
             this.Date_ABSDateEdit.Name = "Date_ABSDateEdit";
             this.Date_ABSDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.Date_ABSDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Date_ABSDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Date_ABSDateEdit.Size = new System.Drawing.Size(219, 20);
+            this.Date_ABSDateEdit.Size = new System.Drawing.Size(166, 20);
             this.Date_ABSDateEdit.StyleController = this.dataLayoutControl1;
             this.Date_ABSDateEdit.TabIndex = 9;
             // 
@@ -234,7 +234,7 @@
             this.Absence_JustiferCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Absence_Justifer", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Absence_JustiferCheckEdit.Location = new System.Drawing.Point(12, 60);
             this.Absence_JustiferCheckEdit.Name = "Absence_JustiferCheckEdit";
-            this.Absence_JustiferCheckEdit.Properties.Caption = "Absence_Justifer";
+            this.Absence_JustiferCheckEdit.Properties.Caption = "Absence justifer";
             this.Absence_JustiferCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.Absence_JustiferCheckEdit.Size = new System.Drawing.Size(225, 20);
             this.Absence_JustiferCheckEdit.StyleController = this.dataLayoutControl1;
@@ -243,16 +243,17 @@
             // Justif_ABSTextEdit
             // 
             this.Justif_ABSTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Justif_ABS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Justif_ABSTextEdit.Location = new System.Drawing.Point(328, 60);
+            this.Justif_ABSTextEdit.Location = new System.Drawing.Point(381, 60);
             this.Justif_ABSTextEdit.Name = "Justif_ABSTextEdit";
-            this.Justif_ABSTextEdit.Size = new System.Drawing.Size(690, 20);
+            this.Justif_ABSTextEdit.Size = new System.Drawing.Size(637, 20);
             this.Justif_ABSTextEdit.StyleController = this.dataLayoutControl1;
             this.Justif_ABSTextEdit.TabIndex = 11;
             // 
             // StagiairLookUpEdit
             // 
             this.StagiairLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "Num_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.StagiairLookUpEdit.Location = new System.Drawing.Point(99, 84);
+            this.StagiairLookUpEdit.EditValue = "";
+            this.StagiairLookUpEdit.Location = new System.Drawing.Point(152, 84);
             this.StagiairLookUpEdit.Name = "StagiairLookUpEdit";
             this.StagiairLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -260,7 +261,7 @@
             this.StagiairLookUpEdit.Properties.DisplayMember = "Num_STG";
             this.StagiairLookUpEdit.Properties.PopupView = this.StagiairLookUpEditView;
             this.StagiairLookUpEdit.Properties.ValueMember = "Num_STG";
-            this.StagiairLookUpEdit.Size = new System.Drawing.Size(919, 20);
+            this.StagiairLookUpEdit.Size = new System.Drawing.Size(866, 20);
             this.StagiairLookUpEdit.StyleController = this.dataLayoutControl1;
             this.StagiairLookUpEdit.TabIndex = 12;
             // 
@@ -335,7 +336,8 @@
             // SemestreLookUpEdit
             // 
             this.SemestreLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "ID_Semestre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.SemestreLookUpEdit.Location = new System.Drawing.Point(99, 108);
+            this.SemestreLookUpEdit.EditValue = "";
+            this.SemestreLookUpEdit.Location = new System.Drawing.Point(152, 108);
             this.SemestreLookUpEdit.Name = "SemestreLookUpEdit";
             this.SemestreLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -343,7 +345,7 @@
             this.SemestreLookUpEdit.Properties.DisplayMember = "Designation_Semestre";
             this.SemestreLookUpEdit.Properties.PopupView = this.SemestreLookUpEditView;
             this.SemestreLookUpEdit.Properties.ValueMember = "ID_Semestre";
-            this.SemestreLookUpEdit.Size = new System.Drawing.Size(919, 20);
+            this.SemestreLookUpEdit.Size = new System.Drawing.Size(866, 20);
             this.SemestreLookUpEdit.StyleController = this.dataLayoutControl1;
             this.SemestreLookUpEdit.TabIndex = 13;
             // 
@@ -416,7 +418,8 @@
             // annee_scolaireLookUpEdit
             // 
             this.annee_scolaireLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.absenceViewBindingSource, "ID_Année_SCO", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.annee_scolaireLookUpEdit.Location = new System.Drawing.Point(99, 132);
+            this.annee_scolaireLookUpEdit.EditValue = "";
+            this.annee_scolaireLookUpEdit.Location = new System.Drawing.Point(152, 132);
             this.annee_scolaireLookUpEdit.Name = "annee_scolaireLookUpEdit";
             this.annee_scolaireLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -424,7 +427,7 @@
             this.annee_scolaireLookUpEdit.Properties.DisplayMember = "Designation";
             this.annee_scolaireLookUpEdit.Properties.PopupView = this.annee_scolaireLookUpEditView;
             this.annee_scolaireLookUpEdit.Properties.ValueMember = "ID_Année_SCO";
-            this.annee_scolaireLookUpEdit.Size = new System.Drawing.Size(919, 20);
+            this.annee_scolaireLookUpEdit.Size = new System.Drawing.Size(866, 20);
             this.annee_scolaireLookUpEdit.StyleController = this.dataLayoutControl1;
             this.annee_scolaireLookUpEdit.TabIndex = 14;
             // 
@@ -534,8 +537,8 @@
             this.ItemForID_Absence.Location = new System.Drawing.Point(0, 0);
             this.ItemForID_Absence.Name = "ItemForID_Absence";
             this.ItemForID_Absence.Size = new System.Drawing.Size(1010, 24);
-            this.ItemForID_Absence.Text = "ID_Absence";
-            this.ItemForID_Absence.TextSize = new System.Drawing.Size(75, 13);
+            this.ItemForID_Absence.Text = "Numéro de l\'absence";
+            this.ItemForID_Absence.TextSize = new System.Drawing.Size(128, 13);
             // 
             // ItemForSeance_1_ABS
             // 
@@ -563,8 +566,8 @@
             this.ItemForNum_STG.Location = new System.Drawing.Point(0, 72);
             this.ItemForNum_STG.Name = "ItemForNum_STG";
             this.ItemForNum_STG.Size = new System.Drawing.Size(1010, 24);
-            this.ItemForNum_STG.Text = "Num_STG";
-            this.ItemForNum_STG.TextSize = new System.Drawing.Size(75, 13);
+            this.ItemForNum_STG.Text = "Numéro du stagiaire";
+            this.ItemForNum_STG.TextSize = new System.Drawing.Size(128, 13);
             // 
             // ItemForID_Semestre
             // 
@@ -572,8 +575,8 @@
             this.ItemForID_Semestre.Location = new System.Drawing.Point(0, 96);
             this.ItemForID_Semestre.Name = "ItemForID_Semestre";
             this.ItemForID_Semestre.Size = new System.Drawing.Size(1010, 24);
-            this.ItemForID_Semestre.Text = "ID_Semestre";
-            this.ItemForID_Semestre.TextSize = new System.Drawing.Size(75, 13);
+            this.ItemForID_Semestre.Text = "Numéro du semestre";
+            this.ItemForID_Semestre.TextSize = new System.Drawing.Size(128, 13);
             // 
             // ItemForID_Année_SCO
             // 
@@ -581,8 +584,8 @@
             this.ItemForID_Année_SCO.Location = new System.Drawing.Point(0, 120);
             this.ItemForID_Année_SCO.Name = "ItemForID_Année_SCO";
             this.ItemForID_Année_SCO.Size = new System.Drawing.Size(1010, 74);
-            this.ItemForID_Année_SCO.Text = "ID_Année_SCO";
-            this.ItemForID_Année_SCO.TextSize = new System.Drawing.Size(75, 13);
+            this.ItemForID_Année_SCO.Text = "Numéro de l\'année scolaire";
+            this.ItemForID_Année_SCO.TextSize = new System.Drawing.Size(128, 13);
             // 
             // ItemForSeance_2_ABS
             // 
@@ -620,8 +623,8 @@
             this.ItemForDate_ABS.Location = new System.Drawing.Point(0, 24);
             this.ItemForDate_ABS.Name = "ItemForDate_ABS";
             this.ItemForDate_ABS.Size = new System.Drawing.Size(310, 24);
-            this.ItemForDate_ABS.Text = "Date_ABS";
-            this.ItemForDate_ABS.TextSize = new System.Drawing.Size(75, 13);
+            this.ItemForDate_ABS.Text = "Date de l\'absnece";
+            this.ItemForDate_ABS.TextSize = new System.Drawing.Size(128, 13);
             // 
             // ItemForJustif_ABS
             // 
@@ -629,8 +632,8 @@
             this.ItemForJustif_ABS.Location = new System.Drawing.Point(229, 48);
             this.ItemForJustif_ABS.Name = "ItemForJustif_ABS";
             this.ItemForJustif_ABS.Size = new System.Drawing.Size(781, 24);
-            this.ItemForJustif_ABS.Text = "Justif_ABS";
-            this.ItemForJustif_ABS.TextSize = new System.Drawing.Size(75, 13);
+            this.ItemForJustif_ABS.Text = "Justificatif d\'absence";
+            this.ItemForJustif_ABS.TextSize = new System.Drawing.Size(128, 13);
             // 
             // mvvmContext
             // 
@@ -650,56 +653,56 @@
             // 
             // bbiSave
             // 
-            this.bbiSave.Caption = "Save";
+            this.bbiSave.Caption = "Enregistrer";
             this.bbiSave.Id = 2;
             this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
             this.bbiSave.Name = "bbiSave";
             // 
             // bbiSaveAndClose
             // 
-            this.bbiSaveAndClose.Caption = "Save And Close";
+            this.bbiSaveAndClose.Caption = "Enregistrer et Fermer";
             this.bbiSaveAndClose.Id = 3;
             this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
             this.bbiSaveAndClose.Name = "bbiSaveAndClose";
             // 
             // bbiSaveAndNew
             // 
-            this.bbiSaveAndNew.Caption = "Save And New";
+            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
             this.bbiSaveAndNew.Id = 4;
             this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
             this.bbiSaveAndNew.Name = "bbiSaveAndNew";
             // 
             // bbiReset
             // 
-            this.bbiReset.Caption = "Reset Changes";
+            this.bbiReset.Caption = "Annuler les changements ";
             this.bbiReset.Id = 5;
             this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
             this.bbiReset.Name = "bbiReset";
             // 
             // bbiDelete
             // 
-            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Caption = "Supprimer";
             this.bbiDelete.Id = 6;
             this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiDelete.Name = "bbiDelete";
             // 
             // bbiClose
             // 
-            this.bbiClose.Caption = "Close";
+            this.bbiClose.Caption = "Fermer";
             this.bbiClose.Id = 7;
             this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
             this.bbiClose.Name = "bbiClose";
             // 
             // bbiSaveLayout
             // 
-            this.bbiSaveLayout.Caption = "Save Layout";
+            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
             this.bbiSaveLayout.Id = 8;
             this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
             this.bbiSaveLayout.Name = "bbiSaveLayout";
             // 
             // bbiResetLayout
             // 
-            this.bbiResetLayout.Caption = "Reset Layout";
+            this.bbiResetLayout.Caption = "Annuler la personnalisation";
             this.bbiResetLayout.Id = 9;
             this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
             this.bbiResetLayout.Name = "bbiResetLayout";
@@ -731,7 +734,7 @@
             // 
             // bbiCustomize
             // 
-            this.bbiCustomize.Caption = "Customize";
+            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
             this.bbiCustomize.Id = 1;
             this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
             this.bbiCustomize.Name = "bbiCustomize";
@@ -743,7 +746,7 @@
             this.ribbonPageGroupLayout});
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "Home";
+            this.mainRibbonPage.Text = "Fichier";
             // 
             // mainRibbonPageGroup
             // 
@@ -756,7 +759,7 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Absence Tasks";
+            this.mainRibbonPageGroup.Text = "Gestion des Absences";
             // 
             // ribbonPageGroupLayout
             // 
@@ -765,7 +768,7 @@
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
-            this.ribbonPageGroupLayout.Text = "Layout";
+            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
             // 
             // AbsenceView
             // 

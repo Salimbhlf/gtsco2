@@ -44,5 +44,10 @@ namespace gtsco2.mvvm.Views.CommuneCollectionView{
                 }
             };
         }
+
+        private void bbiPrintPreview_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

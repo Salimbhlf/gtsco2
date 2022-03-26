@@ -98,16 +98,16 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
@@ -168,8 +168,8 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonControl1.MaxItemId = 36;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1,
             this.ribbonPage2,
+            this.ribbonPage1,
             this.ribbonPage3,
             this.ribbonPage5,
             this.ribbonPage6,
@@ -242,7 +242,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1Bronch
             // 
-            this.barButtonItem1Bronch.Caption = "Bronch";
+            this.barButtonItem1Bronch.Caption = "Branches";
             this.barButtonItem1Bronch.Id = 6;
             this.barButtonItem1Bronch.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Bronch.ImageOptions.Image")));
             this.barButtonItem1Bronch.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Bronch.ImageOptions.LargeImage")));
@@ -254,7 +254,7 @@ namespace gtsco2.forms.Pageprancipel
             // barButtonItem5Specailite
             // 
             this.barButtonItem5Specailite.AllowRightClickInMenu = false;
-            this.barButtonItem5Specailite.Caption = "Specialite";
+            this.barButtonItem5Specailite.Caption = "Spécialités";
             this.barButtonItem5Specailite.Id = 7;
             this.barButtonItem5Specailite.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.Image")));
             this.barButtonItem5Specailite.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.LargeImage")));
@@ -265,7 +265,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem6Option
             // 
-            this.barButtonItem6Option.Caption = "Option";
+            this.barButtonItem6Option.Caption = "Options";
             this.barButtonItem6Option.Id = 8;
             this.barButtonItem6Option.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.Image")));
             this.barButtonItem6Option.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.LargeImage")));
@@ -276,7 +276,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItemModeF
             // 
-            this.barButtonItemModeF.Caption = "Mode De Formation";
+            this.barButtonItemModeF.Caption = "Modes de Formation";
             this.barButtonItemModeF.Id = 9;
             this.barButtonItemModeF.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemModeF.ImageOptions.Image")));
             this.barButtonItemModeF.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemModeF.ImageOptions.LargeImage")));
@@ -289,7 +289,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1Semestre
             // 
-            this.barButtonItem1Semestre.Caption = "Semestre";
+            this.barButtonItem1Semestre.Caption = "Semestres";
             this.barButtonItem1Semestre.Id = 10;
             this.barButtonItem1Semestre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Semestre.ImageOptions.Image")));
             this.barButtonItem1Semestre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Semestre.ImageOptions.LargeImage")));
@@ -300,7 +300,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem5Anne
             // 
-            this.barButtonItem5Anne.Caption = "Annee secolire";
+            this.barButtonItem5Anne.Caption = "Année scolaire";
             this.barButtonItem5Anne.Id = 11;
             this.barButtonItem5Anne.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Anne.ImageOptions.Image")));
             this.barButtonItem5Anne.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Anne.ImageOptions.LargeImage")));
@@ -311,7 +311,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1Soiver
             // 
-            this.barButtonItem1Soiver.Caption = "Enseinant Soiver";
+            this.barButtonItem1Soiver.Caption = "Enseignant chargé du suivie ";
             this.barButtonItem1Soiver.Id = 12;
             this.barButtonItem1Soiver.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Soiver.ImageOptions.Image")));
             this.barButtonItem1Soiver.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Soiver.ImageOptions.LargeImage")));
@@ -322,7 +322,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1Module
             // 
-            this.barButtonItem1Module.Caption = "Module";
+            this.barButtonItem1Module.Caption = "Modules";
             this.barButtonItem1Module.Id = 13;
             this.barButtonItem1Module.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Module.ImageOptions.Image")));
             this.barButtonItem1Module.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Module.ImageOptions.LargeImage")));
@@ -335,7 +335,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem1Employeur
             // 
-            this.barButtonItem1Employeur.Caption = "Employeur";
+            this.barButtonItem1Employeur.Caption = "Employeurs";
             this.barButtonItem1Employeur.Id = 14;
             this.barButtonItem1Employeur.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Employeur.ImageOptions.Image")));
             this.barButtonItem1Employeur.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1Employeur.ImageOptions.LargeImage")));
@@ -346,7 +346,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItemMaitre
             // 
-            this.barButtonItemMaitre.Caption = "Maitre apperntisage";
+            this.barButtonItemMaitre.Caption = "Maitre apperntissage";
             this.barButtonItemMaitre.Id = 15;
             this.barButtonItemMaitre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemMaitre.ImageOptions.Image")));
             this.barButtonItemMaitre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemMaitre.ImageOptions.LargeImage")));
@@ -460,7 +460,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem8Enesignant
             // 
-            this.barButtonItem8Enesignant.Caption = "Enesignant";
+            this.barButtonItem8Enesignant.Caption = "Enesignants";
             this.barButtonItem8Enesignant.Id = 22;
             this.barButtonItem8Enesignant.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Enesignant.ImageOptions.SvgImage")));
             this.barButtonItem8Enesignant.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -470,7 +470,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem9Etablissement
             // 
-            this.barButtonItem9Etablissement.Caption = "Etablissement";
+            this.barButtonItem9Etablissement.Caption = "Etablissements";
             this.barButtonItem9Etablissement.Id = 23;
             this.barButtonItem9Etablissement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9Etablissement.ImageOptions.Image")));
             this.barButtonItem9Etablissement.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9Etablissement.ImageOptions.LargeImage")));
@@ -491,7 +491,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem8ContractAvnCHongment
             // 
-            this.barButtonItem8ContractAvnCHongment.Caption = "Contract avenant de Chongement";
+            this.barButtonItem8ContractAvnCHongment.Caption = "Avenant de contrat changement d\'employeur ";
             this.barButtonItem8ContractAvnCHongment.Id = 25;
             this.barButtonItem8ContractAvnCHongment.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ContractAvnCHongment.ImageOptions.Image")));
             this.barButtonItem8ContractAvnCHongment.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ContractAvnCHongment.ImageOptions.LargeImage")));
@@ -502,7 +502,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem9AvenantProrgation
             // 
-            this.barButtonItem9AvenantProrgation.Caption = "Avenant de Prorogation";
+            this.barButtonItem9AvenantProrgation.Caption = "Avenant de contrat de prorogation";
             this.barButtonItem9AvenantProrgation.Id = 26;
             this.barButtonItem9AvenantProrgation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9AvenantProrgation.ImageOptions.Image")));
             this.barButtonItem9AvenantProrgation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9AvenantProrgation.ImageOptions.LargeImage")));
@@ -513,7 +513,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem8ProceVerbale
             // 
-            this.barButtonItem8ProceVerbale.Caption = "Proce verbal delibartion";
+            this.barButtonItem8ProceVerbale.Caption = "P.V  de délibération";
             this.barButtonItem8ProceVerbale.Id = 27;
             this.barButtonItem8ProceVerbale.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ProceVerbale.ImageOptions.Image")));
             this.barButtonItem8ProceVerbale.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8ProceVerbale.ImageOptions.LargeImage")));
@@ -524,7 +524,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem9ParticpePV
             // 
-            this.barButtonItem9ParticpePV.Caption = "Participe eu Proce verbale";
+            this.barButtonItem9ParticpePV.Caption = "Participants de la reunion de deliberation";
             this.barButtonItem9ParticpePV.Id = 28;
             this.barButtonItem9ParticpePV.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9ParticpePV.ImageOptions.Image")));
             this.barButtonItem9ParticpePV.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9ParticpePV.ImageOptions.LargeImage")));
@@ -565,7 +565,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem8Section
             // 
-            this.barButtonItem8Section.Caption = "Section";
+            this.barButtonItem8Section.Caption = "Sections";
             this.barButtonItem8Section.Id = 31;
             this.barButtonItem8Section.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8Section.ImageOptions.SvgImage")));
             this.barButtonItem8Section.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -575,7 +575,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem8
             // 
-            this.barButtonItem8.Caption = "Decision";
+            this.barButtonItem8.Caption = "Décisions";
             this.barButtonItem8.Id = 35;
             this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
             this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
@@ -596,7 +596,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup17});
             this.ribbonPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Gestion Stagiaire";
+            this.ribbonPage1.Text = "Stagiaires";
             // 
             // ribbonPageGroup1
             // 
@@ -620,14 +620,14 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemPvAbs);
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1ABS);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "absonse";
+            this.ribbonPageGroup3.Text = "Gestion des absences";
             // 
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup4.ImageOptions.Image")));
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem1Soiver);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Enseignant suiver";
+            this.ribbonPageGroup4.Text = "Enseignant chargé du suivie ";
             // 
             // ribbonPageGroup17
             // 
@@ -640,11 +640,11 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage2.Appearance.Options.UseFont = true;
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5,
-            this.ribbonPageGroup6,
-            this.ribbonPageGroup20});
+            this.ribbonPageGroup20,
+            this.ribbonPageGroup6});
             this.ribbonPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.ImageOptions.Image")));
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "ficher";
+            this.ribbonPage2.Text = "Organisation";
             // 
             // ribbonPageGroup5
             // 
@@ -656,15 +656,15 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // ribbonPageGroup6
             // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem1Semestre);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem5Anne);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem1Semestre);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem1Module);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             // 
             // ribbonPageGroup20
             // 
             this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Promo);
-            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Section);
+            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Section, true);
             this.ribbonPageGroup20.Name = "ribbonPageGroup20";
             // 
             // ribbonPage3
@@ -677,7 +677,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup18});
             this.ribbonPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.ImageOptions.Image")));
             this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "Emploire";
+            this.ribbonPage3.Text = "Employeurs ";
             // 
             // ribbonPageGroup7
             // 
@@ -694,34 +694,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem8ContractAvnCHongment);
             this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem9AvenantProrgation);
             this.ribbonPageGroup18.Name = "ribbonPageGroup18";
-            this.ribbonPageGroup18.Text = "ribbonPageGroup18";
-            // 
-            // ribbonPage4
-            // 
-            this.ribbonPage4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ribbonPage4.Appearance.Options.UseFont = true;
-            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup12,
-            this.ribbonPageGroup13,
-            this.ribbonPageGroup14});
-            this.ribbonPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
-            this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "Parmitre";
-            // 
-            // ribbonPageGroup12
-            // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
-            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            // 
-            // ribbonPageGroup13
-            // 
-            this.ribbonPageGroup13.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
-            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            // 
-            // ribbonPageGroup14
-            // 
-            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
+            this.ribbonPageGroup18.Text = "Avenants de contrat ";
             // 
             // ribbonPage5
             // 
@@ -732,7 +705,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup16});
             this.ribbonPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage5.ImageOptions.Image")));
             this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "Etablissement";
+            this.ribbonPage5.Text = "Etablissements";
             // 
             // ribbonPageGroup15
             // 
@@ -755,7 +728,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup21});
             this.ribbonPage6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage6.ImageOptions.Image")));
             this.ribbonPage6.Name = "ribbonPage6";
-            this.ribbonPage6.Text = "Proce Verbal";
+            this.ribbonPage6.Text = "P.V";
             // 
             // ribbonPageGroup19
             // 
@@ -763,13 +736,40 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem8ProceVerbale);
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem9ParticpePV);
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
-            this.ribbonPageGroup19.Text = "Proce Verbal";
+            this.ribbonPageGroup19.Text = "Procès Verbal";
             // 
             // ribbonPageGroup21
             // 
             this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup21.Name = "ribbonPageGroup21";
-            this.ribbonPageGroup21.Text = "ribbonPageGroup21";
+            this.ribbonPageGroup21.Text = "Décisions ";
+            // 
+            // ribbonPage4
+            // 
+            this.ribbonPage4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage4.Appearance.Options.UseFont = true;
+            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13,
+            this.ribbonPageGroup14});
+            this.ribbonPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
+            this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Text = "Personnalisation";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "ribbonPageGroup14";
             // 
             // repositoryItemFontEdit1
             // 
@@ -885,7 +885,7 @@ namespace gtsco2.forms.Pageprancipel
             this.IsMdiContainer = true;
             this.Name = "FrmPrancipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPrancipal";
+            this.Text = "Page principale  ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();

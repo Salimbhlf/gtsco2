@@ -31,7 +31,6 @@ namespace gtsco2.forms.Login
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,7 +66,6 @@ namespace gtsco2.forms.Login
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -79,27 +77,17 @@ namespace gtsco2.forms.Login
             this.panel1.Size = new System.Drawing.Size(351, 530);
             this.panel1.TabIndex = 0;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(29, 372);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(282, 24);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "De Technicien Supérieurde";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(54, 331);
+            this.label5.Location = new System.Drawing.Point(29, 331);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(234, 24);
+            this.label5.Size = new System.Drawing.Size(270, 48);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Assure Des Formations";
+            this.label5.Text = "Assure Des Formations De\r\n Technicien Supérieur";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -366,7 +354,6 @@ namespace gtsco2.forms.Login
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

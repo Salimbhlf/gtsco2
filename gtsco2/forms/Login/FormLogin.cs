@@ -215,6 +215,9 @@ namespace gtsco2.forms.Login
                 textEdit2.Properties.UseSystemPasswordChar = true;
         }
 
-       
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

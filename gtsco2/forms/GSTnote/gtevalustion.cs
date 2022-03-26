@@ -539,23 +539,23 @@ namespace gtsco2.forms
 
                     ev.Numro_STG = row["Numro_STG"].ToString();
                     ev.Nom_Prenom = row["Nom_et_Prenom"].ToString();
-                    if (row["Control1"].ToString() != "")
+                    if (row["Control1"].ToString() != "" && btn != 3)
                     {
                         ev.Control_1 = row["Control1"].ToString();
                     }
-                    if (row["Control2"].ToString() != "")
+                    if (row["Control2"].ToString() != "" && btn != 3)
                     {
                         ev.Control_2 = row["Control2"].ToString();
                     }
-                    if (row["Exam"].ToString() != "")
+                    if (row["Exam"].ToString() != "" && btn != 3)
                     {
                         ev.Exam = row["Exam"].ToString();
                     }
-                    if (row["Rattrapage"].ToString() != "")
+                    if (row["Rattrapage"].ToString() != ""&& btn !=3)
                     {
                         ev.Rattarpage = row["Rattrapage"].ToString();
                     }
-                    if(dt.Columns.Count > 6)
+                    if(dt.Columns.Count > 6&& btn !=3)
                         {
                             if (row["moyenne_avr"].ToString() != "")
                             {
@@ -613,6 +613,7 @@ namespace gtsco2.forms
                     {
                         GSTnote.reportNoteAvicMoy.Report1noteAvicMoy.load(idane, spe, pro, sec, mod, listeva, ens);
                     }
+
 
                         
                         
@@ -882,12 +883,12 @@ namespace gtsco2.forms
 
         private void simpleButton8_Click(object sender, EventArgs e)
         {
-            vprint(2);
+            vprint(3);
         }
 
         private void simpleButton9_Click(object sender, EventArgs e)
         {
-            
+            vprint(2);
         }
 
         private void radio1_CheckedChanged(object sender, EventArgs e)

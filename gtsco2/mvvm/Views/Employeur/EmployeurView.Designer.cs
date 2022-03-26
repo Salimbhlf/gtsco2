@@ -143,62 +143,6 @@
             this.StagiairsGridControl = new DevExpress.XtraGrid.GridControl();
             this.StagiairsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StagiairsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDate_de_Naissance = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colLieu_Naissance = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAdresse = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAdresse_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCode_postal = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSexe = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEtranger = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNationalité_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colHandicape = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colObservation_handicape = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colE_Maile = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNivo_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNivo_SCO_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom_Père_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom_Père_STG_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_Mère_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_Mère_STG_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom_Mère_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom_Mère_STG_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNbr_Frère_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSituation_Familiale_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSituation_Familiale_Parents_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colProfession_Père_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colProfession_Mère_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNum_Diplome_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNum_Validation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDate_Validation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDate_Resiliation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colid_tuteur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colphoto = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAbsences = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAvenant_contrat_prorogation = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCode_Postal1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colContract_avenant_changement = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDecisions = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEtablissement = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEvaluations = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMaitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSection1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coltuteur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSuiver_stagiaire = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTransferers = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.StagiairsBarManager = new DevExpress.XtraBars.BarManager(this.components);
             this.StagiairsBar = new DevExpress.XtraBars.Bar();
@@ -238,15 +182,26 @@
             this.ItemForMaitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForNature_Emp = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForID_Emp = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNature_Emp = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.Avenant_contrat_prorogationPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.Maitre_ApprentissagePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.Contract_avenant_changementPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAvenant_contrat_prorogation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colContract_avenant_changement = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_Resiliation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_Validation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDecisions = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ID_EmpTextEdit.Properties)).BeginInit();
@@ -322,10 +277,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForMaitre_Apprentissage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNature_Emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNature_Emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avenant_contrat_prorogationPopUpMenu)).BeginInit();
@@ -371,7 +324,7 @@
             // ID_EmpTextEdit
             // 
             this.ID_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "ID_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ID_EmpTextEdit.Location = new System.Drawing.Point(324, 36);
+            this.ID_EmpTextEdit.Location = new System.Drawing.Point(279, 3);
             this.ID_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.ID_EmpTextEdit.Name = "ID_EmpTextEdit";
             this.ID_EmpTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -379,7 +332,7 @@
             this.ID_EmpTextEdit.Properties.Mask.EditMask = "N0";
             this.ID_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.ID_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.ID_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.ID_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_EmpTextEdit.TabIndex = 4;
             // 
@@ -414,63 +367,63 @@
             // 
             // bbiCustomize
             // 
-            this.bbiCustomize.Caption = "Customize";
+            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
             this.bbiCustomize.Id = 1;
             this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
             this.bbiCustomize.Name = "bbiCustomize";
             // 
             // bbiSave
             // 
-            this.bbiSave.Caption = "Save";
+            this.bbiSave.Caption = "Enregistrer ";
             this.bbiSave.Id = 2;
             this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
             this.bbiSave.Name = "bbiSave";
             // 
             // bbiSaveAndClose
             // 
-            this.bbiSaveAndClose.Caption = "Save And Close";
+            this.bbiSaveAndClose.Caption = "Enregistrer et Fermer";
             this.bbiSaveAndClose.Id = 3;
             this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
             this.bbiSaveAndClose.Name = "bbiSaveAndClose";
             // 
             // bbiSaveAndNew
             // 
-            this.bbiSaveAndNew.Caption = "Save And New";
+            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
             this.bbiSaveAndNew.Id = 4;
             this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
             this.bbiSaveAndNew.Name = "bbiSaveAndNew";
             // 
             // bbiReset
             // 
-            this.bbiReset.Caption = "Reset Changes";
+            this.bbiReset.Caption = "Annuler les changements";
             this.bbiReset.Id = 5;
             this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
             this.bbiReset.Name = "bbiReset";
             // 
             // bbiDelete
             // 
-            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Caption = "Supprimer ";
             this.bbiDelete.Id = 6;
             this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiDelete.Name = "bbiDelete";
             // 
             // bbiClose
             // 
-            this.bbiClose.Caption = "Close";
+            this.bbiClose.Caption = "Fermer";
             this.bbiClose.Id = 7;
             this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
             this.bbiClose.Name = "bbiClose";
             // 
             // bbiSaveLayout
             // 
-            this.bbiSaveLayout.Caption = "Save Layout";
+            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
             this.bbiSaveLayout.Id = 8;
             this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
             this.bbiSaveLayout.Name = "bbiSaveLayout";
             // 
             // bbiResetLayout
             // 
-            this.bbiResetLayout.Caption = "Reset Layout";
+            this.bbiResetLayout.Caption = "Annuler la personnalisation";
             this.bbiResetLayout.Id = 9;
             this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
             this.bbiResetLayout.Name = "bbiResetLayout";
@@ -482,7 +435,7 @@
             this.ribbonPageGroupLayout});
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "Home";
+            this.mainRibbonPage.Text = "Fichier";
             // 
             // mainRibbonPageGroup
             // 
@@ -495,7 +448,7 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Employeur Tasks";
+            this.mainRibbonPageGroup.Text = "Gestion des Employeurs";
             // 
             // ribbonPageGroupLayout
             // 
@@ -504,82 +457,83 @@
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
-            this.ribbonPageGroupLayout.Text = "Layout";
+            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
             // 
             // Type_EmpTextEdit
             // 
             this.Type_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Type_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Type_EmpTextEdit.Location = new System.Drawing.Point(324, 12);
+            this.Type_EmpTextEdit.Location = new System.Drawing.Point(279, 75);
             this.Type_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Type_EmpTextEdit.Name = "Type_EmpTextEdit";
-            this.Type_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Type_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Type_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Type_EmpTextEdit.TabIndex = 5;
             // 
             // Nature_EmpTextEdit
             // 
             this.Nature_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Nature_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nature_EmpTextEdit.Location = new System.Drawing.Point(324, 60);
+            this.Nature_EmpTextEdit.Location = new System.Drawing.Point(279, 267);
             this.Nature_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Nature_EmpTextEdit.Name = "Nature_EmpTextEdit";
-            this.Nature_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Nature_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Nature_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Nature_EmpTextEdit.TabIndex = 6;
             // 
             // Nom_EmpTextEdit
             // 
             this.Nom_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Nom_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_EmpTextEdit.Location = new System.Drawing.Point(324, 176);
+            this.Nom_EmpTextEdit.Location = new System.Drawing.Point(279, 27);
             this.Nom_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_EmpTextEdit.Name = "Nom_EmpTextEdit";
-            this.Nom_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Nom_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Nom_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_EmpTextEdit.TabIndex = 7;
             // 
             // Nom_Emp_arTextEdit
             // 
             this.Nom_Emp_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Nom_Emp_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_Emp_arTextEdit.Location = new System.Drawing.Point(324, 200);
+            this.Nom_Emp_arTextEdit.Location = new System.Drawing.Point(279, 51);
             this.Nom_Emp_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_Emp_arTextEdit.Name = "Nom_Emp_arTextEdit";
-            this.Nom_Emp_arTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Nom_Emp_arTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Nom_Emp_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_Emp_arTextEdit.TabIndex = 8;
             // 
             // Statut_EmpTextEdit
             // 
             this.Statut_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Statut_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Statut_EmpTextEdit.Location = new System.Drawing.Point(324, 224);
+            this.Statut_EmpTextEdit.Location = new System.Drawing.Point(279, 243);
             this.Statut_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Statut_EmpTextEdit.Name = "Statut_EmpTextEdit";
-            this.Statut_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Statut_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Statut_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Statut_EmpTextEdit.TabIndex = 9;
             // 
             // Adresse_EmpTextEdit
             // 
             this.Adresse_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Adresse_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Adresse_EmpTextEdit.Location = new System.Drawing.Point(324, 248);
+            this.Adresse_EmpTextEdit.Location = new System.Drawing.Point(279, 99);
             this.Adresse_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Adresse_EmpTextEdit.Name = "Adresse_EmpTextEdit";
-            this.Adresse_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Adresse_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Adresse_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Adresse_EmpTextEdit.TabIndex = 10;
             // 
             // Adresse_Emp_arTextEdit
             // 
             this.Adresse_Emp_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Adresse_Emp_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Adresse_Emp_arTextEdit.Location = new System.Drawing.Point(324, 272);
+            this.Adresse_Emp_arTextEdit.Location = new System.Drawing.Point(279, 123);
             this.Adresse_Emp_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Adresse_Emp_arTextEdit.Name = "Adresse_Emp_arTextEdit";
-            this.Adresse_Emp_arTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Adresse_Emp_arTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Adresse_Emp_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Adresse_Emp_arTextEdit.TabIndex = 11;
             // 
             // Code_PostalLookUpEdit
             // 
             this.Code_PostalLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Code_Postal_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Code_PostalLookUpEdit.Location = new System.Drawing.Point(324, 296);
+            this.Code_PostalLookUpEdit.EditValue = "";
+            this.Code_PostalLookUpEdit.Location = new System.Drawing.Point(279, 147);
             this.Code_PostalLookUpEdit.MenuManager = this.mainRibbonControl;
             this.Code_PostalLookUpEdit.Name = "Code_PostalLookUpEdit";
             this.Code_PostalLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -588,7 +542,7 @@
             this.Code_PostalLookUpEdit.Properties.DisplayMember = "post_Adresse_ar";
             this.Code_PostalLookUpEdit.Properties.PopupView = this.Code_PostalLookUpEditView;
             this.Code_PostalLookUpEdit.Properties.ValueMember = "ID_Code_Postal";
-            this.Code_PostalLookUpEdit.Size = new System.Drawing.Size(671, 20);
+            this.Code_PostalLookUpEdit.Size = new System.Drawing.Size(716, 20);
             this.Code_PostalLookUpEdit.StyleController = this.dataLayoutControl1;
             this.Code_PostalLookUpEdit.TabIndex = 12;
             // 
@@ -606,7 +560,7 @@
             // Tel_EmpTextEdit
             // 
             this.Tel_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Tel_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Tel_EmpTextEdit.Location = new System.Drawing.Point(324, 320);
+            this.Tel_EmpTextEdit.Location = new System.Drawing.Point(279, 171);
             this.Tel_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Tel_EmpTextEdit.Name = "Tel_EmpTextEdit";
             this.Tel_EmpTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -615,14 +569,14 @@
             this.Tel_EmpTextEdit.Properties.Mask.EditMask = "N0";
             this.Tel_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Tel_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Tel_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Tel_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Tel_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Tel_EmpTextEdit.TabIndex = 13;
             // 
             // Fax_EmpTextEdit
             // 
             this.Fax_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Fax_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Fax_EmpTextEdit.Location = new System.Drawing.Point(324, 344);
+            this.Fax_EmpTextEdit.Location = new System.Drawing.Point(279, 195);
             this.Fax_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Fax_EmpTextEdit.Name = "Fax_EmpTextEdit";
             this.Fax_EmpTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -631,44 +585,44 @@
             this.Fax_EmpTextEdit.Properties.Mask.EditMask = "N0";
             this.Fax_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Fax_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Fax_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Fax_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Fax_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Fax_EmpTextEdit.TabIndex = 14;
             // 
             // Mail_EmpTextEdit
             // 
             this.Mail_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Mail_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Mail_EmpTextEdit.Location = new System.Drawing.Point(324, 368);
+            this.Mail_EmpTextEdit.Location = new System.Drawing.Point(279, 219);
             this.Mail_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Mail_EmpTextEdit.Name = "Mail_EmpTextEdit";
-            this.Mail_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Mail_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Mail_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Mail_EmpTextEdit.TabIndex = 15;
             // 
             // Fonction_EmpTextEdit
             // 
             this.Fonction_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Fonction_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Fonction_EmpTextEdit.Location = new System.Drawing.Point(324, 392);
+            this.Fonction_EmpTextEdit.Location = new System.Drawing.Point(279, 291);
             this.Fonction_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Fonction_EmpTextEdit.Name = "Fonction_EmpTextEdit";
-            this.Fonction_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Fonction_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Fonction_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Fonction_EmpTextEdit.TabIndex = 16;
             // 
             // Secteur_Activité_EmpTextEdit
             // 
             this.Secteur_Activité_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Secteur_Activité_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Secteur_Activité_EmpTextEdit.Location = new System.Drawing.Point(324, 416);
+            this.Secteur_Activité_EmpTextEdit.Location = new System.Drawing.Point(279, 315);
             this.Secteur_Activité_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Secteur_Activité_EmpTextEdit.Name = "Secteur_Activité_EmpTextEdit";
-            this.Secteur_Activité_EmpTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Secteur_Activité_EmpTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Secteur_Activité_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Secteur_Activité_EmpTextEdit.TabIndex = 17;
             // 
             // Effectif_TrvTextEdit
             // 
             this.Effectif_TrvTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Effectif_Trv", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Effectif_TrvTextEdit.Location = new System.Drawing.Point(324, 440);
+            this.Effectif_TrvTextEdit.Location = new System.Drawing.Point(279, 339);
             this.Effectif_TrvTextEdit.MenuManager = this.mainRibbonControl;
             this.Effectif_TrvTextEdit.Name = "Effectif_TrvTextEdit";
             this.Effectif_TrvTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -677,14 +631,14 @@
             this.Effectif_TrvTextEdit.Properties.Mask.EditMask = "N0";
             this.Effectif_TrvTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Effectif_TrvTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Effectif_TrvTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Effectif_TrvTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Effectif_TrvTextEdit.StyleController = this.dataLayoutControl1;
             this.Effectif_TrvTextEdit.TabIndex = 18;
             // 
             // Effectif_aptTextEdit
             // 
             this.Effectif_aptTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Effectif_apt", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Effectif_aptTextEdit.Location = new System.Drawing.Point(324, 464);
+            this.Effectif_aptTextEdit.Location = new System.Drawing.Point(279, 363);
             this.Effectif_aptTextEdit.MenuManager = this.mainRibbonControl;
             this.Effectif_aptTextEdit.Name = "Effectif_aptTextEdit";
             this.Effectif_aptTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -693,14 +647,14 @@
             this.Effectif_aptTextEdit.Properties.Mask.EditMask = "N0";
             this.Effectif_aptTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Effectif_aptTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Effectif_aptTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Effectif_aptTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Effectif_aptTextEdit.StyleController = this.dataLayoutControl1;
             this.Effectif_aptTextEdit.TabIndex = 19;
             // 
             // Quota_maxTextEdit
             // 
             this.Quota_maxTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Quota_max", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Quota_maxTextEdit.Location = new System.Drawing.Point(324, 488);
+            this.Quota_maxTextEdit.Location = new System.Drawing.Point(279, 387);
             this.Quota_maxTextEdit.MenuManager = this.mainRibbonControl;
             this.Quota_maxTextEdit.Name = "Quota_maxTextEdit";
             this.Quota_maxTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -709,14 +663,14 @@
             this.Quota_maxTextEdit.Properties.Mask.EditMask = "N0";
             this.Quota_maxTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Quota_maxTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Quota_maxTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Quota_maxTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Quota_maxTextEdit.StyleController = this.dataLayoutControl1;
             this.Quota_maxTextEdit.TabIndex = 20;
             // 
             // Qouta_MINTextEdit
             // 
             this.Qouta_MINTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Qouta_MIN", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Qouta_MINTextEdit.Location = new System.Drawing.Point(324, 512);
+            this.Qouta_MINTextEdit.Location = new System.Drawing.Point(279, 411);
             this.Qouta_MINTextEdit.MenuManager = this.mainRibbonControl;
             this.Qouta_MINTextEdit.Name = "Qouta_MINTextEdit";
             this.Qouta_MINTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -725,17 +679,17 @@
             this.Qouta_MINTextEdit.Properties.Mask.EditMask = "N0";
             this.Qouta_MINTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Qouta_MINTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Qouta_MINTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Qouta_MINTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Qouta_MINTextEdit.StyleController = this.dataLayoutControl1;
             this.Qouta_MINTextEdit.TabIndex = 21;
             // 
             // Existance_une_structure_de_formationCheckEdit
             // 
             this.Existance_une_structure_de_formationCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Existance_une_structure_de_formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Existance_une_structure_de_formationCheckEdit.Location = new System.Drawing.Point(12, 536);
+            this.Existance_une_structure_de_formationCheckEdit.Location = new System.Drawing.Point(12, 435);
             this.Existance_une_structure_de_formationCheckEdit.MenuManager = this.mainRibbonControl;
             this.Existance_une_structure_de_formationCheckEdit.Name = "Existance_une_structure_de_formationCheckEdit";
-            this.Existance_une_structure_de_formationCheckEdit.Properties.Caption = "Existance_une_structure_de_formation";
+            this.Existance_une_structure_de_formationCheckEdit.Properties.Caption = "Existance d\'une structure de formation";
             this.Existance_une_structure_de_formationCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
             this.Existance_une_structure_de_formationCheckEdit.Size = new System.Drawing.Size(983, 20);
             this.Existance_une_structure_de_formationCheckEdit.StyleController = this.dataLayoutControl1;
@@ -744,10 +698,10 @@
             // Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit
             // 
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Nom_et_prenom_et_fonction_de_responsble_de_la_steucture", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Location = new System.Drawing.Point(324, 560);
+            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Location = new System.Drawing.Point(279, 459);
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Name = "Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit";
-            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Size = new System.Drawing.Size(671, 20);
+            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Size = new System.Drawing.Size(716, 20);
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.TabIndex = 23;
             // 
@@ -758,7 +712,7 @@
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl4);
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl2);
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl1);
-            this.Avenant_contrat_prorogationXtraUserControl.Location = new System.Drawing.Point(24, 619);
+            this.Avenant_contrat_prorogationXtraUserControl.Location = new System.Drawing.Point(24, 518);
             this.Avenant_contrat_prorogationXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Avenant_contrat_prorogationXtraUserControl.Name = "Avenant_contrat_prorogationXtraUserControl";
             this.Avenant_contrat_prorogationXtraUserControl.Size = new System.Drawing.Size(959, 100);
@@ -768,11 +722,11 @@
             // 
             this.Avenant_contrat_prorogationGridControl.DataSource = this.Avenant_contrat_prorogationBindingSource;
             this.Avenant_contrat_prorogationGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Avenant_contrat_prorogationGridControl.Location = new System.Drawing.Point(0, 28);
+            this.Avenant_contrat_prorogationGridControl.Location = new System.Drawing.Point(0, 24);
             this.Avenant_contrat_prorogationGridControl.MainView = this.Avenant_contrat_prorogationGridView;
             this.Avenant_contrat_prorogationGridControl.MenuManager = this.mainRibbonControl;
             this.Avenant_contrat_prorogationGridControl.Name = "Avenant_contrat_prorogationGridControl";
-            this.Avenant_contrat_prorogationGridControl.Size = new System.Drawing.Size(959, 72);
+            this.Avenant_contrat_prorogationGridControl.Size = new System.Drawing.Size(959, 76);
             this.Avenant_contrat_prorogationGridControl.TabIndex = 0;
             this.Avenant_contrat_prorogationGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Avenant_contrat_prorogationGridView});
@@ -861,9 +815,9 @@
             // 
             this.barDockControl3.CausesValidation = false;
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 28);
+            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 72);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 76);
             // 
             // Avenant_contrat_prorogationBarManager
             // 
@@ -900,7 +854,7 @@
             // 
             // bbiAvenant_contrat_prorogationNew
             // 
-            this.bbiAvenant_contrat_prorogationNew.Caption = "New";
+            this.bbiAvenant_contrat_prorogationNew.Caption = "Ajouter";
             this.bbiAvenant_contrat_prorogationNew.Id = 0;
             this.bbiAvenant_contrat_prorogationNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiAvenant_contrat_prorogationNew.Name = "bbiAvenant_contrat_prorogationNew";
@@ -908,7 +862,7 @@
             // 
             // bbiAvenant_contrat_prorogationEdit
             // 
-            this.bbiAvenant_contrat_prorogationEdit.Caption = "Edit";
+            this.bbiAvenant_contrat_prorogationEdit.Caption = "Modifier";
             this.bbiAvenant_contrat_prorogationEdit.Id = 1;
             this.bbiAvenant_contrat_prorogationEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiAvenant_contrat_prorogationEdit.Name = "bbiAvenant_contrat_prorogationEdit";
@@ -916,7 +870,7 @@
             // 
             // bbiAvenant_contrat_prorogationDelete
             // 
-            this.bbiAvenant_contrat_prorogationDelete.Caption = "Delete";
+            this.bbiAvenant_contrat_prorogationDelete.Caption = "Supprimer";
             this.bbiAvenant_contrat_prorogationDelete.Id = 2;
             this.bbiAvenant_contrat_prorogationDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiAvenant_contrat_prorogationDelete.Name = "bbiAvenant_contrat_prorogationDelete";
@@ -924,7 +878,7 @@
             // 
             // bbiAvenant_contrat_prorogationRefresh
             // 
-            this.bbiAvenant_contrat_prorogationRefresh.Caption = "Refresh";
+            this.bbiAvenant_contrat_prorogationRefresh.Caption = "Actualiser";
             this.bbiAvenant_contrat_prorogationRefresh.Id = 3;
             this.bbiAvenant_contrat_prorogationRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiAvenant_contrat_prorogationRefresh.Name = "bbiAvenant_contrat_prorogationRefresh";
@@ -936,7 +890,7 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(959, 28);
+            this.barDockControl1.Size = new System.Drawing.Size(959, 24);
             // 
             // barDockControl2
             // 
@@ -950,9 +904,9 @@
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(959, 28);
+            this.barDockControl4.Location = new System.Drawing.Point(959, 24);
             this.barDockControl4.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 72);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 76);
             // 
             // Contract_avenant_changementXtraUserControl
             // 
@@ -961,7 +915,7 @@
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl12);
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl10);
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl9);
-            this.Contract_avenant_changementXtraUserControl.Location = new System.Drawing.Point(24, 619);
+            this.Contract_avenant_changementXtraUserControl.Location = new System.Drawing.Point(24, 518);
             this.Contract_avenant_changementXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Contract_avenant_changementXtraUserControl.Name = "Contract_avenant_changementXtraUserControl";
             this.Contract_avenant_changementXtraUserControl.Size = new System.Drawing.Size(959, 100);
@@ -971,11 +925,11 @@
             // 
             this.Contract_avenant_changementGridControl.DataSource = this.Contract_avenant_changementBindingSource;
             this.Contract_avenant_changementGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Contract_avenant_changementGridControl.Location = new System.Drawing.Point(0, 28);
+            this.Contract_avenant_changementGridControl.Location = new System.Drawing.Point(0, 24);
             this.Contract_avenant_changementGridControl.MainView = this.Contract_avenant_changementGridView;
             this.Contract_avenant_changementGridControl.MenuManager = this.mainRibbonControl;
             this.Contract_avenant_changementGridControl.Name = "Contract_avenant_changementGridControl";
-            this.Contract_avenant_changementGridControl.Size = new System.Drawing.Size(959, 72);
+            this.Contract_avenant_changementGridControl.Size = new System.Drawing.Size(959, 76);
             this.Contract_avenant_changementGridControl.TabIndex = 0;
             this.Contract_avenant_changementGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Contract_avenant_changementGridView});
@@ -1072,9 +1026,9 @@
             // 
             this.barDockControl11.CausesValidation = false;
             this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl11.Location = new System.Drawing.Point(0, 28);
+            this.barDockControl11.Location = new System.Drawing.Point(0, 24);
             this.barDockControl11.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl11.Size = new System.Drawing.Size(0, 72);
+            this.barDockControl11.Size = new System.Drawing.Size(0, 76);
             // 
             // Contract_avenant_changementBarManager
             // 
@@ -1111,7 +1065,7 @@
             // 
             // bbiContract_avenant_changementNew
             // 
-            this.bbiContract_avenant_changementNew.Caption = "New";
+            this.bbiContract_avenant_changementNew.Caption = "Ajouter";
             this.bbiContract_avenant_changementNew.Id = 0;
             this.bbiContract_avenant_changementNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiContract_avenant_changementNew.Name = "bbiContract_avenant_changementNew";
@@ -1119,7 +1073,7 @@
             // 
             // bbiContract_avenant_changementEdit
             // 
-            this.bbiContract_avenant_changementEdit.Caption = "Edit";
+            this.bbiContract_avenant_changementEdit.Caption = "Modifier";
             this.bbiContract_avenant_changementEdit.Id = 1;
             this.bbiContract_avenant_changementEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiContract_avenant_changementEdit.Name = "bbiContract_avenant_changementEdit";
@@ -1127,7 +1081,7 @@
             // 
             // bbiContract_avenant_changementDelete
             // 
-            this.bbiContract_avenant_changementDelete.Caption = "Delete";
+            this.bbiContract_avenant_changementDelete.Caption = "Supprimer ";
             this.bbiContract_avenant_changementDelete.Id = 2;
             this.bbiContract_avenant_changementDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiContract_avenant_changementDelete.Name = "bbiContract_avenant_changementDelete";
@@ -1135,7 +1089,7 @@
             // 
             // bbiContract_avenant_changementRefresh
             // 
-            this.bbiContract_avenant_changementRefresh.Caption = "Refresh";
+            this.bbiContract_avenant_changementRefresh.Caption = "Actualiser";
             this.bbiContract_avenant_changementRefresh.Id = 3;
             this.bbiContract_avenant_changementRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiContract_avenant_changementRefresh.Name = "bbiContract_avenant_changementRefresh";
@@ -1147,7 +1101,7 @@
             this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl9.Location = new System.Drawing.Point(0, 0);
             this.barDockControl9.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl9.Size = new System.Drawing.Size(959, 28);
+            this.barDockControl9.Size = new System.Drawing.Size(959, 24);
             // 
             // barDockControl10
             // 
@@ -1161,9 +1115,9 @@
             // 
             this.barDockControl12.CausesValidation = false;
             this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl12.Location = new System.Drawing.Point(959, 28);
+            this.barDockControl12.Location = new System.Drawing.Point(959, 24);
             this.barDockControl12.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl12.Size = new System.Drawing.Size(0, 72);
+            this.barDockControl12.Size = new System.Drawing.Size(0, 76);
             // 
             // Maitre_ApprentissageXtraUserControl
             // 
@@ -1172,7 +1126,7 @@
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl8);
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl6);
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl5);
-            this.Maitre_ApprentissageXtraUserControl.Location = new System.Drawing.Point(24, 619);
+            this.Maitre_ApprentissageXtraUserControl.Location = new System.Drawing.Point(24, 518);
             this.Maitre_ApprentissageXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Maitre_ApprentissageXtraUserControl.Name = "Maitre_ApprentissageXtraUserControl";
             this.Maitre_ApprentissageXtraUserControl.Size = new System.Drawing.Size(959, 100);
@@ -1182,11 +1136,11 @@
             // 
             this.Maitre_ApprentissageGridControl.DataSource = this.Maitre_ApprentissageBindingSource;
             this.Maitre_ApprentissageGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Maitre_ApprentissageGridControl.Location = new System.Drawing.Point(0, 28);
+            this.Maitre_ApprentissageGridControl.Location = new System.Drawing.Point(0, 24);
             this.Maitre_ApprentissageGridControl.MainView = this.Maitre_ApprentissageGridView;
             this.Maitre_ApprentissageGridControl.MenuManager = this.mainRibbonControl;
             this.Maitre_ApprentissageGridControl.Name = "Maitre_ApprentissageGridControl";
-            this.Maitre_ApprentissageGridControl.Size = new System.Drawing.Size(959, 72);
+            this.Maitre_ApprentissageGridControl.Size = new System.Drawing.Size(959, 76);
             this.Maitre_ApprentissageGridControl.TabIndex = 0;
             this.Maitre_ApprentissageGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Maitre_ApprentissageGridView});
@@ -1345,9 +1299,9 @@
             // 
             this.barDockControl7.CausesValidation = false;
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 28);
+            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 72);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 76);
             // 
             // Maitre_ApprentissageBarManager
             // 
@@ -1384,7 +1338,7 @@
             // 
             // bbiMaitre_ApprentissageNew
             // 
-            this.bbiMaitre_ApprentissageNew.Caption = "New";
+            this.bbiMaitre_ApprentissageNew.Caption = "Ajouter ";
             this.bbiMaitre_ApprentissageNew.Id = 0;
             this.bbiMaitre_ApprentissageNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiMaitre_ApprentissageNew.Name = "bbiMaitre_ApprentissageNew";
@@ -1392,7 +1346,7 @@
             // 
             // bbiMaitre_ApprentissageEdit
             // 
-            this.bbiMaitre_ApprentissageEdit.Caption = "Edit";
+            this.bbiMaitre_ApprentissageEdit.Caption = "Modifier ";
             this.bbiMaitre_ApprentissageEdit.Id = 1;
             this.bbiMaitre_ApprentissageEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiMaitre_ApprentissageEdit.Name = "bbiMaitre_ApprentissageEdit";
@@ -1400,7 +1354,7 @@
             // 
             // bbiMaitre_ApprentissageDelete
             // 
-            this.bbiMaitre_ApprentissageDelete.Caption = "Delete";
+            this.bbiMaitre_ApprentissageDelete.Caption = "Supprimer ";
             this.bbiMaitre_ApprentissageDelete.Id = 2;
             this.bbiMaitre_ApprentissageDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiMaitre_ApprentissageDelete.Name = "bbiMaitre_ApprentissageDelete";
@@ -1408,7 +1362,7 @@
             // 
             // bbiMaitre_ApprentissageRefresh
             // 
-            this.bbiMaitre_ApprentissageRefresh.Caption = "Refresh";
+            this.bbiMaitre_ApprentissageRefresh.Caption = "Actualiser";
             this.bbiMaitre_ApprentissageRefresh.Id = 3;
             this.bbiMaitre_ApprentissageRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiMaitre_ApprentissageRefresh.Name = "bbiMaitre_ApprentissageRefresh";
@@ -1420,7 +1374,7 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl5.Size = new System.Drawing.Size(959, 28);
+            this.barDockControl5.Size = new System.Drawing.Size(959, 24);
             // 
             // barDockControl6
             // 
@@ -1434,9 +1388,9 @@
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(959, 28);
+            this.barDockControl8.Location = new System.Drawing.Point(959, 24);
             this.barDockControl8.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 72);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 76);
             // 
             // StagiairsXtraUserControl
             // 
@@ -1445,7 +1399,7 @@
             this.StagiairsXtraUserControl.Controls.Add(this.barDockControlRight);
             this.StagiairsXtraUserControl.Controls.Add(this.barDockControlBottom);
             this.StagiairsXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 619);
+            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 518);
             this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
             this.StagiairsXtraUserControl.Size = new System.Drawing.Size(959, 100);
@@ -1455,11 +1409,11 @@
             // 
             this.StagiairsGridControl.DataSource = this.StagiairsBindingSource;
             this.StagiairsGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.StagiairsGridControl.Location = new System.Drawing.Point(0, 28);
+            this.StagiairsGridControl.Location = new System.Drawing.Point(0, 24);
             this.StagiairsGridControl.MainView = this.StagiairsGridView;
             this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
             this.StagiairsGridControl.Name = "StagiairsGridControl";
-            this.StagiairsGridControl.Size = new System.Drawing.Size(959, 72);
+            this.StagiairsGridControl.Size = new System.Drawing.Size(959, 76);
             this.StagiairsGridControl.TabIndex = 0;
             this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.StagiairsGridView});
@@ -1476,431 +1430,26 @@
             this.colNom_ar,
             this.colPrenom,
             this.colPrenom_ar,
-            this.colDate_de_Naissance,
-            this.colLieu_Naissance,
-            this.colAdresse,
-            this.colAdresse_ar,
-            this.colCode_postal,
-            this.colSexe,
-            this.colEtranger,
-            this.colNationalité_STG,
-            this.colHandicape,
-            this.colObservation_handicape,
-            this.colTelephone,
-            this.colE_Maile,
-            this.colNivo_SCO,
-            this.colNivo_SCO_ar,
-            this.colPrenom_Père_STG,
-            this.colPrenom_Père_STG_ar,
-            this.colNom_Mère_STG,
-            this.colNom_Mère_STG_ar,
-            this.colPrenom_Mère_STG,
-            this.colPrenom_Mère_STG_ar,
-            this.colNbr_Frère_STG,
-            this.colSituation_Familiale_STG,
-            this.colSituation_Familiale_Parents_STG,
-            this.colProfession_Père_STG,
-            this.colProfession_Mère_STG,
-            this.colNum_Diplome_STG,
-            this.colID_Emp,
-            this.colNum_Validation_Contrat_STG,
-            this.colDate_Validation_Contrat_STG,
-            this.colDate_Resiliation_Contrat_STG,
-            this.colID_Maitre_Apprentissage,
-            this.colID_ETAB,
-            this.colSection,
-            this.colid_tuteur,
-            this.colID_Promo,
-            this.colphoto,
-            this.colAbsences,
-            this.colAvenant_contrat_prorogation,
-            this.colCode_Postal1,
-            this.colCommune,
-            this.colContract_avenant_changement,
-            this.colDecisions,
-            this.colEmployeur,
-            this.colEtablissement,
-            this.colEvaluations,
-            this.colMaitre_Apprentissage,
             this.colPromo,
-            this.colSection1,
-            this.coltuteur,
-            this.colSuiver_stagiaire,
-            this.colTransferers});
+            this.colSection,
+            this.colEmployeur,
+            this.colAvenant_contrat_prorogation,
+            this.colContract_avenant_changement,
+            this.colDate_Resiliation_Contrat_STG,
+            this.colDate_Validation_Contrat_STG,
+            this.colDecisions});
             this.StagiairsGridView.GridControl = this.StagiairsGridControl;
             this.StagiairsGridView.Name = "StagiairsGridView";
             this.StagiairsGridView.OptionsBehavior.Editable = false;
             this.StagiairsGridView.OptionsBehavior.ReadOnly = true;
             // 
-            // colNum_STG
-            // 
-            this.colNum_STG.FieldName = "Num_STG";
-            this.colNum_STG.Name = "colNum_STG";
-            this.colNum_STG.Visible = true;
-            this.colNum_STG.VisibleIndex = 0;
-            // 
-            // colNom
-            // 
-            this.colNom.FieldName = "Nom";
-            this.colNom.Name = "colNom";
-            this.colNom.Visible = true;
-            this.colNom.VisibleIndex = 1;
-            // 
-            // colNom_ar
-            // 
-            this.colNom_ar.FieldName = "Nom_ar";
-            this.colNom_ar.Name = "colNom_ar";
-            this.colNom_ar.Visible = true;
-            this.colNom_ar.VisibleIndex = 2;
-            // 
-            // colPrenom
-            // 
-            this.colPrenom.FieldName = "Prenom";
-            this.colPrenom.Name = "colPrenom";
-            this.colPrenom.Visible = true;
-            this.colPrenom.VisibleIndex = 3;
-            // 
-            // colPrenom_ar
-            // 
-            this.colPrenom_ar.FieldName = "Prenom_ar";
-            this.colPrenom_ar.Name = "colPrenom_ar";
-            this.colPrenom_ar.Visible = true;
-            this.colPrenom_ar.VisibleIndex = 4;
-            // 
-            // colDate_de_Naissance
-            // 
-            this.colDate_de_Naissance.FieldName = "Date_de_Naissance";
-            this.colDate_de_Naissance.Name = "colDate_de_Naissance";
-            this.colDate_de_Naissance.Visible = true;
-            this.colDate_de_Naissance.VisibleIndex = 5;
-            // 
-            // colLieu_Naissance
-            // 
-            this.colLieu_Naissance.FieldName = "Lieu_Naissance";
-            this.colLieu_Naissance.Name = "colLieu_Naissance";
-            this.colLieu_Naissance.Visible = true;
-            this.colLieu_Naissance.VisibleIndex = 6;
-            // 
-            // colAdresse
-            // 
-            this.colAdresse.FieldName = "Adresse";
-            this.colAdresse.Name = "colAdresse";
-            this.colAdresse.Visible = true;
-            this.colAdresse.VisibleIndex = 7;
-            // 
-            // colAdresse_ar
-            // 
-            this.colAdresse_ar.FieldName = "Adresse_ar";
-            this.colAdresse_ar.Name = "colAdresse_ar";
-            this.colAdresse_ar.Visible = true;
-            this.colAdresse_ar.VisibleIndex = 8;
-            // 
-            // colCode_postal
-            // 
-            this.colCode_postal.FieldName = "Code_postal";
-            this.colCode_postal.Name = "colCode_postal";
-            this.colCode_postal.Visible = true;
-            this.colCode_postal.VisibleIndex = 9;
-            // 
-            // colSexe
-            // 
-            this.colSexe.FieldName = "Sexe";
-            this.colSexe.Name = "colSexe";
-            this.colSexe.Visible = true;
-            this.colSexe.VisibleIndex = 10;
-            // 
-            // colEtranger
-            // 
-            this.colEtranger.FieldName = "Etranger";
-            this.colEtranger.Name = "colEtranger";
-            this.colEtranger.Visible = true;
-            this.colEtranger.VisibleIndex = 11;
-            // 
-            // colNationalité_STG
-            // 
-            this.colNationalité_STG.FieldName = "Nationalité_STG";
-            this.colNationalité_STG.Name = "colNationalité_STG";
-            this.colNationalité_STG.Visible = true;
-            this.colNationalité_STG.VisibleIndex = 12;
-            // 
-            // colHandicape
-            // 
-            this.colHandicape.FieldName = "Handicape";
-            this.colHandicape.Name = "colHandicape";
-            this.colHandicape.Visible = true;
-            this.colHandicape.VisibleIndex = 13;
-            // 
-            // colObservation_handicape
-            // 
-            this.colObservation_handicape.FieldName = "Observation_handicape";
-            this.colObservation_handicape.Name = "colObservation_handicape";
-            this.colObservation_handicape.Visible = true;
-            this.colObservation_handicape.VisibleIndex = 14;
-            // 
-            // colTelephone
-            // 
-            this.colTelephone.FieldName = "Telephone";
-            this.colTelephone.Name = "colTelephone";
-            this.colTelephone.Visible = true;
-            this.colTelephone.VisibleIndex = 15;
-            // 
-            // colE_Maile
-            // 
-            this.colE_Maile.FieldName = "E_Maile";
-            this.colE_Maile.Name = "colE_Maile";
-            this.colE_Maile.Visible = true;
-            this.colE_Maile.VisibleIndex = 16;
-            // 
-            // colNivo_SCO
-            // 
-            this.colNivo_SCO.FieldName = "Nivo_SCO";
-            this.colNivo_SCO.Name = "colNivo_SCO";
-            this.colNivo_SCO.Visible = true;
-            this.colNivo_SCO.VisibleIndex = 17;
-            // 
-            // colNivo_SCO_ar
-            // 
-            this.colNivo_SCO_ar.FieldName = "Nivo_SCO_ar";
-            this.colNivo_SCO_ar.Name = "colNivo_SCO_ar";
-            this.colNivo_SCO_ar.Visible = true;
-            this.colNivo_SCO_ar.VisibleIndex = 18;
-            // 
-            // colPrenom_Père_STG
-            // 
-            this.colPrenom_Père_STG.FieldName = "Prenom_Père_STG";
-            this.colPrenom_Père_STG.Name = "colPrenom_Père_STG";
-            this.colPrenom_Père_STG.Visible = true;
-            this.colPrenom_Père_STG.VisibleIndex = 19;
-            // 
-            // colPrenom_Père_STG_ar
-            // 
-            this.colPrenom_Père_STG_ar.FieldName = "Prenom_Père_STG_ar";
-            this.colPrenom_Père_STG_ar.Name = "colPrenom_Père_STG_ar";
-            this.colPrenom_Père_STG_ar.Visible = true;
-            this.colPrenom_Père_STG_ar.VisibleIndex = 20;
-            // 
-            // colNom_Mère_STG
-            // 
-            this.colNom_Mère_STG.FieldName = "Nom_Mère_STG";
-            this.colNom_Mère_STG.Name = "colNom_Mère_STG";
-            this.colNom_Mère_STG.Visible = true;
-            this.colNom_Mère_STG.VisibleIndex = 21;
-            // 
-            // colNom_Mère_STG_ar
-            // 
-            this.colNom_Mère_STG_ar.FieldName = "Nom_Mère_STG_ar";
-            this.colNom_Mère_STG_ar.Name = "colNom_Mère_STG_ar";
-            this.colNom_Mère_STG_ar.Visible = true;
-            this.colNom_Mère_STG_ar.VisibleIndex = 22;
-            // 
-            // colPrenom_Mère_STG
-            // 
-            this.colPrenom_Mère_STG.FieldName = "Prenom_Mère_STG";
-            this.colPrenom_Mère_STG.Name = "colPrenom_Mère_STG";
-            this.colPrenom_Mère_STG.Visible = true;
-            this.colPrenom_Mère_STG.VisibleIndex = 23;
-            // 
-            // colPrenom_Mère_STG_ar
-            // 
-            this.colPrenom_Mère_STG_ar.FieldName = "Prenom_Mère_STG_ar";
-            this.colPrenom_Mère_STG_ar.Name = "colPrenom_Mère_STG_ar";
-            this.colPrenom_Mère_STG_ar.Visible = true;
-            this.colPrenom_Mère_STG_ar.VisibleIndex = 24;
-            // 
-            // colNbr_Frère_STG
-            // 
-            this.colNbr_Frère_STG.FieldName = "Nbr_Frère_STG";
-            this.colNbr_Frère_STG.Name = "colNbr_Frère_STG";
-            this.colNbr_Frère_STG.Visible = true;
-            this.colNbr_Frère_STG.VisibleIndex = 25;
-            // 
-            // colSituation_Familiale_STG
-            // 
-            this.colSituation_Familiale_STG.FieldName = "Situation_Familiale_STG";
-            this.colSituation_Familiale_STG.Name = "colSituation_Familiale_STG";
-            this.colSituation_Familiale_STG.Visible = true;
-            this.colSituation_Familiale_STG.VisibleIndex = 26;
-            // 
-            // colSituation_Familiale_Parents_STG
-            // 
-            this.colSituation_Familiale_Parents_STG.FieldName = "Situation_Familiale_Parents_STG";
-            this.colSituation_Familiale_Parents_STG.Name = "colSituation_Familiale_Parents_STG";
-            this.colSituation_Familiale_Parents_STG.Visible = true;
-            this.colSituation_Familiale_Parents_STG.VisibleIndex = 27;
-            // 
-            // colProfession_Père_STG
-            // 
-            this.colProfession_Père_STG.FieldName = "Profession_Père_STG";
-            this.colProfession_Père_STG.Name = "colProfession_Père_STG";
-            this.colProfession_Père_STG.Visible = true;
-            this.colProfession_Père_STG.VisibleIndex = 28;
-            // 
-            // colProfession_Mère_STG
-            // 
-            this.colProfession_Mère_STG.FieldName = "Profession_Mère_STG";
-            this.colProfession_Mère_STG.Name = "colProfession_Mère_STG";
-            this.colProfession_Mère_STG.Visible = true;
-            this.colProfession_Mère_STG.VisibleIndex = 29;
-            // 
-            // colNum_Diplome_STG
-            // 
-            this.colNum_Diplome_STG.FieldName = "Num_Diplome_STG";
-            this.colNum_Diplome_STG.Name = "colNum_Diplome_STG";
-            this.colNum_Diplome_STG.Visible = true;
-            this.colNum_Diplome_STG.VisibleIndex = 30;
-            // 
-            // colID_Emp
-            // 
-            this.colID_Emp.FieldName = "ID_Emp";
-            this.colID_Emp.Name = "colID_Emp";
-            this.colID_Emp.Visible = true;
-            this.colID_Emp.VisibleIndex = 31;
-            // 
-            // colNum_Validation_Contrat_STG
-            // 
-            this.colNum_Validation_Contrat_STG.FieldName = "Num_Validation_Contrat_STG";
-            this.colNum_Validation_Contrat_STG.Name = "colNum_Validation_Contrat_STG";
-            this.colNum_Validation_Contrat_STG.Visible = true;
-            this.colNum_Validation_Contrat_STG.VisibleIndex = 32;
-            // 
-            // colDate_Validation_Contrat_STG
-            // 
-            this.colDate_Validation_Contrat_STG.FieldName = "Date_Validation_Contrat_STG";
-            this.colDate_Validation_Contrat_STG.Name = "colDate_Validation_Contrat_STG";
-            this.colDate_Validation_Contrat_STG.Visible = true;
-            this.colDate_Validation_Contrat_STG.VisibleIndex = 33;
-            // 
-            // colDate_Resiliation_Contrat_STG
-            // 
-            this.colDate_Resiliation_Contrat_STG.FieldName = "Date_Resiliation_Contrat_STG";
-            this.colDate_Resiliation_Contrat_STG.Name = "colDate_Resiliation_Contrat_STG";
-            this.colDate_Resiliation_Contrat_STG.Visible = true;
-            this.colDate_Resiliation_Contrat_STG.VisibleIndex = 34;
-            // 
-            // colID_Maitre_Apprentissage
-            // 
-            this.colID_Maitre_Apprentissage.FieldName = "ID_Maitre_Apprentissage";
-            this.colID_Maitre_Apprentissage.Name = "colID_Maitre_Apprentissage";
-            this.colID_Maitre_Apprentissage.Visible = true;
-            this.colID_Maitre_Apprentissage.VisibleIndex = 35;
-            // 
-            // colID_ETAB
-            // 
-            this.colID_ETAB.FieldName = "ID_ETAB";
-            this.colID_ETAB.Name = "colID_ETAB";
-            this.colID_ETAB.Visible = true;
-            this.colID_ETAB.VisibleIndex = 36;
-            // 
-            // colSection
-            // 
-            this.colSection.FieldName = "Section";
-            this.colSection.Name = "colSection";
-            this.colSection.Visible = true;
-            this.colSection.VisibleIndex = 37;
-            // 
-            // colid_tuteur
-            // 
-            this.colid_tuteur.FieldName = "id_tuteur";
-            this.colid_tuteur.Name = "colid_tuteur";
-            this.colid_tuteur.Visible = true;
-            this.colid_tuteur.VisibleIndex = 38;
-            // 
-            // colID_Promo
-            // 
-            this.colID_Promo.FieldName = "ID_Promo";
-            this.colID_Promo.Name = "colID_Promo";
-            this.colID_Promo.Visible = true;
-            this.colID_Promo.VisibleIndex = 39;
-            // 
-            // colphoto
-            // 
-            this.colphoto.FieldName = "photo";
-            this.colphoto.Name = "colphoto";
-            this.colphoto.Visible = true;
-            this.colphoto.VisibleIndex = 40;
-            // 
-            // colAbsences
-            // 
-            this.colAbsences.FieldName = "Absences";
-            this.colAbsences.Name = "colAbsences";
-            // 
-            // colAvenant_contrat_prorogation
-            // 
-            this.colAvenant_contrat_prorogation.FieldName = "Avenant_contrat_prorogation";
-            this.colAvenant_contrat_prorogation.Name = "colAvenant_contrat_prorogation";
-            // 
-            // colCode_Postal1
-            // 
-            this.colCode_Postal1.FieldName = "Code_Postal1";
-            this.colCode_Postal1.Name = "colCode_Postal1";
-            // 
-            // colCommune
-            // 
-            this.colCommune.FieldName = "Commune";
-            this.colCommune.Name = "colCommune";
-            // 
-            // colContract_avenant_changement
-            // 
-            this.colContract_avenant_changement.FieldName = "Contract_avenant_changement";
-            this.colContract_avenant_changement.Name = "colContract_avenant_changement";
-            // 
-            // colDecisions
-            // 
-            this.colDecisions.FieldName = "Decisions";
-            this.colDecisions.Name = "colDecisions";
-            // 
-            // colEmployeur
-            // 
-            this.colEmployeur.FieldName = "Employeur";
-            this.colEmployeur.Name = "colEmployeur";
-            // 
-            // colEtablissement
-            // 
-            this.colEtablissement.FieldName = "Etablissement";
-            this.colEtablissement.Name = "colEtablissement";
-            // 
-            // colEvaluations
-            // 
-            this.colEvaluations.FieldName = "Evaluations";
-            this.colEvaluations.Name = "colEvaluations";
-            // 
-            // colMaitre_Apprentissage
-            // 
-            this.colMaitre_Apprentissage.FieldName = "Maitre_Apprentissage";
-            this.colMaitre_Apprentissage.Name = "colMaitre_Apprentissage";
-            // 
-            // colPromo
-            // 
-            this.colPromo.FieldName = "Promo";
-            this.colPromo.Name = "colPromo";
-            // 
-            // colSection1
-            // 
-            this.colSection1.FieldName = "Section1";
-            this.colSection1.Name = "colSection1";
-            // 
-            // coltuteur
-            // 
-            this.coltuteur.FieldName = "tuteur";
-            this.coltuteur.Name = "coltuteur";
-            // 
-            // colSuiver_stagiaire
-            // 
-            this.colSuiver_stagiaire.FieldName = "Suiver_stagiaire";
-            this.colSuiver_stagiaire.Name = "colSuiver_stagiaire";
-            // 
-            // colTransferers
-            // 
-            this.colTransferers.FieldName = "Transferers";
-            this.colTransferers.Name = "colTransferers";
-            // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.StagiairsBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 72);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 76);
             // 
             // StagiairsBarManager
             // 
@@ -1937,7 +1486,7 @@
             // 
             // bbiStagiairsNew
             // 
-            this.bbiStagiairsNew.Caption = "New";
+            this.bbiStagiairsNew.Caption = "Ajouter";
             this.bbiStagiairsNew.Id = 0;
             this.bbiStagiairsNew.ImageOptions.ImageUri.Uri = "New";
             this.bbiStagiairsNew.Name = "bbiStagiairsNew";
@@ -1945,7 +1494,7 @@
             // 
             // bbiStagiairsEdit
             // 
-            this.bbiStagiairsEdit.Caption = "Edit";
+            this.bbiStagiairsEdit.Caption = "Modifier ";
             this.bbiStagiairsEdit.Id = 1;
             this.bbiStagiairsEdit.ImageOptions.ImageUri.Uri = "Edit";
             this.bbiStagiairsEdit.Name = "bbiStagiairsEdit";
@@ -1953,7 +1502,7 @@
             // 
             // bbiStagiairsDelete
             // 
-            this.bbiStagiairsDelete.Caption = "Delete";
+            this.bbiStagiairsDelete.Caption = "Supprimer ";
             this.bbiStagiairsDelete.Id = 2;
             this.bbiStagiairsDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiStagiairsDelete.Name = "bbiStagiairsDelete";
@@ -1961,7 +1510,7 @@
             // 
             // bbiStagiairsRefresh
             // 
-            this.bbiStagiairsRefresh.Caption = "Refresh";
+            this.bbiStagiairsRefresh.Caption = "Actualiser";
             this.bbiStagiairsRefresh.Id = 3;
             this.bbiStagiairsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiStagiairsRefresh.Name = "bbiStagiairsRefresh";
@@ -1973,7 +1522,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.StagiairsBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(959, 28);
+            this.barDockControlTop.Size = new System.Drawing.Size(959, 24);
             // 
             // barDockControlBottom
             // 
@@ -1987,9 +1536,9 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(959, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(959, 24);
             this.barDockControlRight.Manager = this.StagiairsBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 72);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 76);
             // 
             // layoutControlGroup1
             // 
@@ -1998,7 +1547,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1007, 743);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1007, 651);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -2007,9 +1556,6 @@
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForType_Emp,
-            this.ItemForNom_Emp,
-            this.ItemForNom_Emp_ar,
-            this.ItemForStatut_Emp,
             this.ItemForAdresse_Emp,
             this.ItemForAdresse_Emp_ar,
             this.ItemForCode_Postal_Emp,
@@ -2025,161 +1571,163 @@
             this.ItemForExistance_une_structure_de_formation,
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture,
             this.tabbedControlGroup1,
-            this.tabbedControlGroup2,
             this.ItemForID_Emp,
-            this.ItemForNature_Emp});
+            this.ItemForNom_Emp,
+            this.ItemForNom_Emp_ar,
+            this.ItemForNature_Emp,
+            this.ItemForStatut_Emp});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(987, 723);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(987, 631);
             // 
             // ItemForType_Emp
             // 
             this.ItemForType_Emp.Control = this.Type_EmpTextEdit;
-            this.ItemForType_Emp.Location = new System.Drawing.Point(0, 0);
+            this.ItemForType_Emp.Location = new System.Drawing.Point(0, 72);
             this.ItemForType_Emp.Name = "ItemForType_Emp";
             this.ItemForType_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForType_Emp.Text = "Type_Emp";
-            this.ItemForType_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForType_Emp.Text = "Type de l\'employeur ";
+            this.ItemForType_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForNom_Emp
             // 
             this.ItemForNom_Emp.Control = this.Nom_EmpTextEdit;
-            this.ItemForNom_Emp.Location = new System.Drawing.Point(0, 164);
+            this.ItemForNom_Emp.Location = new System.Drawing.Point(0, 24);
             this.ItemForNom_Emp.Name = "ItemForNom_Emp";
             this.ItemForNom_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForNom_Emp.Text = "Nom_Emp";
-            this.ItemForNom_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForNom_Emp.Text = "Nom de de l\'employeur ";
+            this.ItemForNom_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForNom_Emp_ar
             // 
             this.ItemForNom_Emp_ar.Control = this.Nom_Emp_arTextEdit;
-            this.ItemForNom_Emp_ar.Location = new System.Drawing.Point(0, 188);
+            this.ItemForNom_Emp_ar.Location = new System.Drawing.Point(0, 48);
             this.ItemForNom_Emp_ar.Name = "ItemForNom_Emp_ar";
             this.ItemForNom_Emp_ar.Size = new System.Drawing.Size(987, 24);
-            this.ItemForNom_Emp_ar.Text = "Nom_Emp_ar";
-            this.ItemForNom_Emp_ar.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForNom_Emp_ar.Text = "Nom de de l\'employeur en arabe";
+            this.ItemForNom_Emp_ar.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForStatut_Emp
             // 
             this.ItemForStatut_Emp.Control = this.Statut_EmpTextEdit;
-            this.ItemForStatut_Emp.Location = new System.Drawing.Point(0, 212);
+            this.ItemForStatut_Emp.Location = new System.Drawing.Point(0, 240);
             this.ItemForStatut_Emp.Name = "ItemForStatut_Emp";
             this.ItemForStatut_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForStatut_Emp.Text = "Statut_Emp";
-            this.ItemForStatut_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForStatut_Emp.Text = "Statut de l\'employeur ";
+            this.ItemForStatut_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForAdresse_Emp
             // 
             this.ItemForAdresse_Emp.Control = this.Adresse_EmpTextEdit;
-            this.ItemForAdresse_Emp.Location = new System.Drawing.Point(0, 236);
+            this.ItemForAdresse_Emp.Location = new System.Drawing.Point(0, 96);
             this.ItemForAdresse_Emp.Name = "ItemForAdresse_Emp";
             this.ItemForAdresse_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForAdresse_Emp.Text = "Adresse_Emp";
-            this.ItemForAdresse_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForAdresse_Emp.Text = "Adresse de l\'employeur ";
+            this.ItemForAdresse_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForAdresse_Emp_ar
             // 
             this.ItemForAdresse_Emp_ar.Control = this.Adresse_Emp_arTextEdit;
-            this.ItemForAdresse_Emp_ar.Location = new System.Drawing.Point(0, 260);
+            this.ItemForAdresse_Emp_ar.Location = new System.Drawing.Point(0, 120);
             this.ItemForAdresse_Emp_ar.Name = "ItemForAdresse_Emp_ar";
             this.ItemForAdresse_Emp_ar.Size = new System.Drawing.Size(987, 24);
-            this.ItemForAdresse_Emp_ar.Text = "Adresse_Emp_ar";
-            this.ItemForAdresse_Emp_ar.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForAdresse_Emp_ar.Text = "Adresse de l\'employeur en arabe";
+            this.ItemForAdresse_Emp_ar.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForCode_Postal_Emp
             // 
             this.ItemForCode_Postal_Emp.Control = this.Code_PostalLookUpEdit;
-            this.ItemForCode_Postal_Emp.Location = new System.Drawing.Point(0, 284);
+            this.ItemForCode_Postal_Emp.Location = new System.Drawing.Point(0, 144);
             this.ItemForCode_Postal_Emp.Name = "ItemForCode_Postal_Emp";
             this.ItemForCode_Postal_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForCode_Postal_Emp.Text = "Code_Postal_Emp";
-            this.ItemForCode_Postal_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForCode_Postal_Emp.Text = "Code postal de l\'employeur ";
+            this.ItemForCode_Postal_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForTel_Emp
             // 
             this.ItemForTel_Emp.Control = this.Tel_EmpTextEdit;
-            this.ItemForTel_Emp.Location = new System.Drawing.Point(0, 308);
+            this.ItemForTel_Emp.Location = new System.Drawing.Point(0, 168);
             this.ItemForTel_Emp.Name = "ItemForTel_Emp";
             this.ItemForTel_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForTel_Emp.Text = "Tel_Emp";
-            this.ItemForTel_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForTel_Emp.Text = "Téléphone de l\'employeur ";
+            this.ItemForTel_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForFax_Emp
             // 
             this.ItemForFax_Emp.Control = this.Fax_EmpTextEdit;
-            this.ItemForFax_Emp.Location = new System.Drawing.Point(0, 332);
+            this.ItemForFax_Emp.Location = new System.Drawing.Point(0, 192);
             this.ItemForFax_Emp.Name = "ItemForFax_Emp";
             this.ItemForFax_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForFax_Emp.Text = "Fax_Emp";
-            this.ItemForFax_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForFax_Emp.Text = "Fax de l\'employeur ";
+            this.ItemForFax_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForMail_Emp
             // 
             this.ItemForMail_Emp.Control = this.Mail_EmpTextEdit;
-            this.ItemForMail_Emp.Location = new System.Drawing.Point(0, 356);
+            this.ItemForMail_Emp.Location = new System.Drawing.Point(0, 216);
             this.ItemForMail_Emp.Name = "ItemForMail_Emp";
             this.ItemForMail_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForMail_Emp.Text = "Mail_Emp";
-            this.ItemForMail_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForMail_Emp.Text = "E-mail de l\'employeur ";
+            this.ItemForMail_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForFonction_Emp
             // 
             this.ItemForFonction_Emp.Control = this.Fonction_EmpTextEdit;
-            this.ItemForFonction_Emp.Location = new System.Drawing.Point(0, 380);
+            this.ItemForFonction_Emp.Location = new System.Drawing.Point(0, 288);
             this.ItemForFonction_Emp.Name = "ItemForFonction_Emp";
             this.ItemForFonction_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForFonction_Emp.Text = "Fonction_Emp";
-            this.ItemForFonction_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForFonction_Emp.Text = "Fonction de l\'employeur ";
+            this.ItemForFonction_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForSecteur_Activité_Emp
             // 
             this.ItemForSecteur_Activité_Emp.Control = this.Secteur_Activité_EmpTextEdit;
-            this.ItemForSecteur_Activité_Emp.Location = new System.Drawing.Point(0, 404);
+            this.ItemForSecteur_Activité_Emp.Location = new System.Drawing.Point(0, 312);
             this.ItemForSecteur_Activité_Emp.Name = "ItemForSecteur_Activité_Emp";
             this.ItemForSecteur_Activité_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForSecteur_Activité_Emp.Text = "Secteur_Activité_Emp";
-            this.ItemForSecteur_Activité_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForSecteur_Activité_Emp.Text = "Secteur d\'activité de l\'employeur ";
+            this.ItemForSecteur_Activité_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForEffectif_Trv
             // 
             this.ItemForEffectif_Trv.Control = this.Effectif_TrvTextEdit;
-            this.ItemForEffectif_Trv.Location = new System.Drawing.Point(0, 428);
+            this.ItemForEffectif_Trv.Location = new System.Drawing.Point(0, 336);
             this.ItemForEffectif_Trv.Name = "ItemForEffectif_Trv";
             this.ItemForEffectif_Trv.Size = new System.Drawing.Size(987, 24);
-            this.ItemForEffectif_Trv.Text = "Effectif_Trv";
-            this.ItemForEffectif_Trv.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForEffectif_Trv.Text = "Effectif des travailleur dans l\'entreprise";
+            this.ItemForEffectif_Trv.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForEffectif_apt
             // 
             this.ItemForEffectif_apt.Control = this.Effectif_aptTextEdit;
-            this.ItemForEffectif_apt.Location = new System.Drawing.Point(0, 452);
+            this.ItemForEffectif_apt.Location = new System.Drawing.Point(0, 360);
             this.ItemForEffectif_apt.Name = "ItemForEffectif_apt";
             this.ItemForEffectif_apt.Size = new System.Drawing.Size(987, 24);
-            this.ItemForEffectif_apt.Text = "Effectif_apt";
-            this.ItemForEffectif_apt.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForEffectif_apt.Text = "Effectif des stagiaires dans l\'entreprise";
+            this.ItemForEffectif_apt.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForQuota_max
             // 
             this.ItemForQuota_max.Control = this.Quota_maxTextEdit;
-            this.ItemForQuota_max.Location = new System.Drawing.Point(0, 476);
+            this.ItemForQuota_max.Location = new System.Drawing.Point(0, 384);
             this.ItemForQuota_max.Name = "ItemForQuota_max";
             this.ItemForQuota_max.Size = new System.Drawing.Size(987, 24);
-            this.ItemForQuota_max.Text = "Quota_max";
-            this.ItemForQuota_max.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForQuota_max.Text = "Quota maximum";
+            this.ItemForQuota_max.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForQouta_MIN
             // 
             this.ItemForQouta_MIN.Control = this.Qouta_MINTextEdit;
-            this.ItemForQouta_MIN.Location = new System.Drawing.Point(0, 500);
+            this.ItemForQouta_MIN.Location = new System.Drawing.Point(0, 408);
             this.ItemForQouta_MIN.Name = "ItemForQouta_MIN";
             this.ItemForQouta_MIN.Size = new System.Drawing.Size(987, 24);
-            this.ItemForQouta_MIN.Text = "Qouta_MIN";
-            this.ItemForQouta_MIN.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForQouta_MIN.Text = "Quota minimum";
+            this.ItemForQouta_MIN.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForExistance_une_structure_de_formation
             // 
             this.ItemForExistance_une_structure_de_formation.Control = this.Existance_une_structure_de_formationCheckEdit;
-            this.ItemForExistance_une_structure_de_formation.Location = new System.Drawing.Point(0, 524);
+            this.ItemForExistance_une_structure_de_formation.Location = new System.Drawing.Point(0, 432);
             this.ItemForExistance_une_structure_de_formation.Name = "ItemForExistance_une_structure_de_formation";
             this.ItemForExistance_une_structure_de_formation.Size = new System.Drawing.Size(987, 24);
             this.ItemForExistance_une_structure_de_formation.Text = "Existance_une_structure_de_formation";
@@ -2189,17 +1737,17 @@
             // ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture
             // 
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Control = this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit;
-            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Location = new System.Drawing.Point(0, 548);
+            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Location = new System.Drawing.Point(0, 456);
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Name = "ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture";
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Size = new System.Drawing.Size(987, 24);
-            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Text = "Nom_et_prenom_et_fonction_de_responsble_de_la_steucture";
-            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Text = "Nom/ prénom/ fonction du responsble de la steucture";
+            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.TextSize = new System.Drawing.Size(255, 13);
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 572);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 480);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup6;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(987, 151);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3,
@@ -2215,7 +1763,7 @@
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForAvenant_contrat_prorogation";
             this.layoutControlGroup3.Size = new System.Drawing.Size(963, 104);
-            this.layoutControlGroup3.Text = "Avenant_contrat_prorogation";
+            this.layoutControlGroup3.Text = "Avenant de contrat de prorogation";
             // 
             // ItemForAvenant_contrat_prorogation
             // 
@@ -2235,7 +1783,7 @@
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "autoGroupForContract_avenant_changement";
             this.layoutControlGroup4.Size = new System.Drawing.Size(963, 104);
-            this.layoutControlGroup4.Text = "Contract_avenant_changement";
+            this.layoutControlGroup4.Text = "Avenant de contract changement d\'employeur ";
             // 
             // ItemForContract_avenant_changement
             // 
@@ -2255,7 +1803,7 @@
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "autoGroupForMaitre_Apprentissage";
             this.layoutControlGroup5.Size = new System.Drawing.Size(963, 104);
-            this.layoutControlGroup5.Text = "Maitre_Apprentissage";
+            this.layoutControlGroup5.Text = "Maitre Apprentissage";
             // 
             // ItemForMaitre_Apprentissage
             // 
@@ -2275,7 +1823,7 @@
             this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup6.Name = "autoGroupForStagiairs";
             this.layoutControlGroup6.Size = new System.Drawing.Size(963, 104);
-            this.layoutControlGroup6.Text = "Stagiairs";
+            this.layoutControlGroup6.Text = "Stagiaires";
             // 
             // ItemForStagiairs
             // 
@@ -2288,38 +1836,23 @@
             this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForStagiairs.TextVisible = false;
             // 
-            // tabbedControlGroup2
+            // ItemForID_Emp
             // 
-            this.tabbedControlGroup2.Location = new System.Drawing.Point(0, 72);
-            this.tabbedControlGroup2.Name = "tabbedControlGroup2";
-            this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup7;
-            this.tabbedControlGroup2.Size = new System.Drawing.Size(987, 92);
-            this.tabbedControlGroup2.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup7});
-            // 
-            // layoutControlGroup7
-            // 
-            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup7.Name = "layoutControlGroup7";
-            this.layoutControlGroup7.Size = new System.Drawing.Size(963, 45);
+            this.ItemForID_Emp.Control = this.ID_EmpTextEdit;
+            this.ItemForID_Emp.Location = new System.Drawing.Point(0, 0);
+            this.ItemForID_Emp.Name = "ItemForID_Emp";
+            this.ItemForID_Emp.Size = new System.Drawing.Size(987, 24);
+            this.ItemForID_Emp.Text = "Numéro de l\'employeur ";
+            this.ItemForID_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForNature_Emp
             // 
             this.ItemForNature_Emp.Control = this.Nature_EmpTextEdit;
-            this.ItemForNature_Emp.Location = new System.Drawing.Point(0, 48);
+            this.ItemForNature_Emp.Location = new System.Drawing.Point(0, 264);
             this.ItemForNature_Emp.Name = "ItemForNature_Emp";
             this.ItemForNature_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForNature_Emp.Text = "Nature_Emp";
-            this.ItemForNature_Emp.TextSize = new System.Drawing.Size(300, 13);
-            // 
-            // ItemForID_Emp
-            // 
-            this.ItemForID_Emp.Control = this.ID_EmpTextEdit;
-            this.ItemForID_Emp.Location = new System.Drawing.Point(0, 24);
-            this.ItemForID_Emp.Name = "ItemForID_Emp";
-            this.ItemForID_Emp.Size = new System.Drawing.Size(987, 24);
-            this.ItemForID_Emp.Text = "ID_Emp";
-            this.ItemForID_Emp.TextSize = new System.Drawing.Size(300, 13);
+            this.ItemForNature_Emp.Text = "Nature de l\'employeur ";
+            this.ItemForNature_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // mvvmContext
             // 
@@ -2376,6 +1909,97 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiContract_avenant_changementRefresh)});
             this.Contract_avenant_changementPopUpMenu.Manager = this.Contract_avenant_changementBarManager;
             this.Contract_avenant_changementPopUpMenu.Name = "Contract_avenant_changementPopUpMenu";
+            // 
+            // colNum_STG
+            // 
+            this.colNum_STG.FieldName = "Num_STG";
+            this.colNum_STG.Name = "colNum_STG";
+            this.colNum_STG.Visible = true;
+            this.colNum_STG.VisibleIndex = 0;
+            // 
+            // colNom
+            // 
+            this.colNom.FieldName = "Nom";
+            this.colNom.Name = "colNom";
+            this.colNom.Visible = true;
+            this.colNom.VisibleIndex = 1;
+            // 
+            // colNom_ar
+            // 
+            this.colNom_ar.FieldName = "Nom_ar";
+            this.colNom_ar.Name = "colNom_ar";
+            this.colNom_ar.Visible = true;
+            this.colNom_ar.VisibleIndex = 2;
+            // 
+            // colPrenom
+            // 
+            this.colPrenom.FieldName = "Prenom";
+            this.colPrenom.Name = "colPrenom";
+            this.colPrenom.Visible = true;
+            this.colPrenom.VisibleIndex = 3;
+            // 
+            // colPrenom_ar
+            // 
+            this.colPrenom_ar.FieldName = "Prenom_ar";
+            this.colPrenom_ar.Name = "colPrenom_ar";
+            this.colPrenom_ar.Visible = true;
+            this.colPrenom_ar.VisibleIndex = 4;
+            // 
+            // colPromo
+            // 
+            this.colPromo.FieldName = "Promo";
+            this.colPromo.Name = "colPromo";
+            this.colPromo.Visible = true;
+            this.colPromo.VisibleIndex = 5;
+            // 
+            // colSection
+            // 
+            this.colSection.FieldName = "Section";
+            this.colSection.Name = "colSection";
+            this.colSection.Visible = true;
+            this.colSection.VisibleIndex = 6;
+            // 
+            // colAvenant_contrat_prorogation
+            // 
+            this.colAvenant_contrat_prorogation.FieldName = "Avenant_contrat_prorogation";
+            this.colAvenant_contrat_prorogation.Name = "colAvenant_contrat_prorogation";
+            this.colAvenant_contrat_prorogation.Visible = true;
+            this.colAvenant_contrat_prorogation.VisibleIndex = 7;
+            // 
+            // colContract_avenant_changement
+            // 
+            this.colContract_avenant_changement.FieldName = "Contract_avenant_changement";
+            this.colContract_avenant_changement.Name = "colContract_avenant_changement";
+            this.colContract_avenant_changement.Visible = true;
+            this.colContract_avenant_changement.VisibleIndex = 8;
+            // 
+            // colDate_Resiliation_Contrat_STG
+            // 
+            this.colDate_Resiliation_Contrat_STG.FieldName = "Date_Resiliation_Contrat_STG";
+            this.colDate_Resiliation_Contrat_STG.Name = "colDate_Resiliation_Contrat_STG";
+            this.colDate_Resiliation_Contrat_STG.Visible = true;
+            this.colDate_Resiliation_Contrat_STG.VisibleIndex = 9;
+            // 
+            // colDate_Validation_Contrat_STG
+            // 
+            this.colDate_Validation_Contrat_STG.FieldName = "Date_Validation_Contrat_STG";
+            this.colDate_Validation_Contrat_STG.Name = "colDate_Validation_Contrat_STG";
+            this.colDate_Validation_Contrat_STG.Visible = true;
+            this.colDate_Validation_Contrat_STG.VisibleIndex = 10;
+            // 
+            // colDecisions
+            // 
+            this.colDecisions.FieldName = "Decisions";
+            this.colDecisions.Name = "colDecisions";
+            this.colDecisions.Visible = true;
+            this.colDecisions.VisibleIndex = 11;
+            // 
+            // colEmployeur
+            // 
+            this.colEmployeur.FieldName = "Employeur";
+            this.colEmployeur.Name = "colEmployeur";
+            this.colEmployeur.Visible = true;
+            this.colEmployeur.VisibleIndex = 12;
             // 
             // EmployeurView
             // 
@@ -2465,10 +2089,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForMaitre_Apprentissage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNature_Emp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNature_Emp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avenant_contrat_prorogationPopUpMenu)).EndInit();
@@ -2613,62 +2235,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControl6;
         private DevExpress.XtraBars.BarDockControl barDockControl8;
         private System.Windows.Forms.BindingSource StagiairsBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colNum_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colNom;
-        private DevExpress.XtraGrid.Columns.GridColumn colNom_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrenom;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colDate_de_Naissance;
-        private DevExpress.XtraGrid.Columns.GridColumn colLieu_Naissance;
-        private DevExpress.XtraGrid.Columns.GridColumn colAdresse;
-        private DevExpress.XtraGrid.Columns.GridColumn colAdresse_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colCode_postal;
-        private DevExpress.XtraGrid.Columns.GridColumn colSexe;
-        private DevExpress.XtraGrid.Columns.GridColumn colEtranger;
-        private DevExpress.XtraGrid.Columns.GridColumn colNationalité_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colHandicape;
-        private DevExpress.XtraGrid.Columns.GridColumn colObservation_handicape;
-        private DevExpress.XtraGrid.Columns.GridColumn colTelephone;
-        private DevExpress.XtraGrid.Columns.GridColumn colE_Maile;
-        private DevExpress.XtraGrid.Columns.GridColumn colNivo_SCO;
-        private DevExpress.XtraGrid.Columns.GridColumn colNivo_SCO_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Père_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Père_STG_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colNom_Mère_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colNom_Mère_STG_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Mère_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Mère_STG_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colNbr_Frère_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_Parents_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colProfession_Père_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colProfession_Mère_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colNum_Diplome_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Emp;
-        private DevExpress.XtraGrid.Columns.GridColumn colNum_Validation_Contrat_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colDate_Validation_Contrat_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colDate_Resiliation_Contrat_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Maitre_Apprentissage;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_ETAB;
-        private DevExpress.XtraGrid.Columns.GridColumn colSection;
-        private DevExpress.XtraGrid.Columns.GridColumn colid_tuteur;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Promo;
-        private DevExpress.XtraGrid.Columns.GridColumn colphoto;
-        private DevExpress.XtraGrid.Columns.GridColumn colAbsences;
-        private DevExpress.XtraGrid.Columns.GridColumn colAvenant_contrat_prorogation;
-        private DevExpress.XtraGrid.Columns.GridColumn colCode_Postal1;
-        private DevExpress.XtraGrid.Columns.GridColumn colCommune;
-        private DevExpress.XtraGrid.Columns.GridColumn colContract_avenant_changement;
-        private DevExpress.XtraGrid.Columns.GridColumn colDecisions;
-        private DevExpress.XtraGrid.Columns.GridColumn colEmployeur;
-        private DevExpress.XtraGrid.Columns.GridColumn colEtablissement;
-        private DevExpress.XtraGrid.Columns.GridColumn colEvaluations;
-        private DevExpress.XtraGrid.Columns.GridColumn colMaitre_Apprentissage;
-        private DevExpress.XtraGrid.Columns.GridColumn colPromo;
-        private DevExpress.XtraGrid.Columns.GridColumn colSection1;
-        private DevExpress.XtraGrid.Columns.GridColumn coltuteur;
-        private DevExpress.XtraGrid.Columns.GridColumn colSuiver_stagiaire;
-        private DevExpress.XtraGrid.Columns.GridColumn colTransferers;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
@@ -2701,9 +2267,20 @@
         private DevExpress.XtraLayout.LayoutControlItem ItemForMaitre_Apprentissage;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup6;
         private DevExpress.XtraLayout.LayoutControlItem ItemForStagiairs;
-        private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup2;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup7;
         private DevExpress.XtraLayout.LayoutControlItem ItemForNature_Emp;
         private DevExpress.XtraLayout.LayoutControlItem ItemForID_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colPromo;
+        private DevExpress.XtraGrid.Columns.GridColumn colSection;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeur;
+        private DevExpress.XtraGrid.Columns.GridColumn colAvenant_contrat_prorogation;
+        private DevExpress.XtraGrid.Columns.GridColumn colContract_avenant_changement;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_Resiliation_Contrat_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_Validation_Contrat_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colDecisions;
     }
 }

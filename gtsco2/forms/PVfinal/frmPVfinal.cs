@@ -365,7 +365,7 @@ namespace gtsco2.forms.PVfinal
                 {
                     if (chikdeavenrtp.Checked == true)
                     {
-                        rowstg["OPS"] = "Ret";
+                        rowstg["OPS"] = "Ratt";
                     }
                 }
                 else
@@ -448,7 +448,9 @@ namespace gtsco2.forms.PVfinal
                         var valeu = float.Parse(e.CellValue.ToString());
                         if (valeu < conn)
                         {
-                            e.Appearance.BackColor = Color.FromArgb(0xD2, 0xFD, 0x91);
+                            //e.Appearance.BackColor = Color.FromArgb(0xD2, 0xFD, 0x91);
+                            e.Appearance.BackColor = Color.Orange;
+
                             e.Appearance.Font = new Font(e.Appearance.Font.FontFamily, e.Appearance.Font.Size, FontStyle.Bold);
                         }
                     }

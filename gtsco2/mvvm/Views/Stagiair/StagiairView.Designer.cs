@@ -41,8 +41,6 @@
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.NomTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Nom_arTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.PrenomTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -51,12 +49,21 @@
             this.CommuneLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.CommuneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CommuneLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colCommune_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune_name_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDaira_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDaira_name_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWillaya = new DevExpress.XtraGrid.Columns.GridColumn();
             this.AdresseTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Adresse_arTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Code_Postal1LookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.Code_Postal1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Code_Postal1LookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.SexeTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.colCode_Postal1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPost_adresse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colpost_Adresse_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EtrangerCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.Nationalité_STGTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.HandicapeCheckEdit = new DevExpress.XtraEditors.CheckEdit();
@@ -234,7 +241,6 @@
             this.Suiver_stagiaireGridControl = new DevExpress.XtraGrid.GridControl();
             this.Suiver_stagiaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Suiver_stagiaireGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colnum_stg6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEnseignant2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colsemestre3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNBR__VISITE_FORMATEUR = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -273,6 +279,7 @@
             this.barDockControl13 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl14 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl16 = new DevExpress.XtraBars.BarDockControl();
+            this.SexeTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
@@ -291,41 +298,41 @@
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForNum_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNom = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForPrenom = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForCode_postal = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForEtranger = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForHandicape = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForTelephone = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNom_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForPrenom_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDate_de_Naissance = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForphoto = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNationalité_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForObservation_handicape = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForAdresse_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForAdresse = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNivo_SCO_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNum_Diplome_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNivo_SCO = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForLieu_Naissance = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForE_Maile = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForSexe = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup11 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForPrenom_Père_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNom_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForSituation_Familiale_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForid_tuteur = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForPrenom_Père_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNom_Mère_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForPrenom_Mère_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForProfession_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForSituation_Familiale_Parents_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNbr_Frère_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForPrenom_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForProfession_Père_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForNum_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNom = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForPrenom = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForLieu_Naissance = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForAdresse = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForCode_postal = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForSexe = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForEtranger = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForHandicape = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForTelephone = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNivo_SCO = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNom_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForPrenom_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDate_de_Naissance = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForAdresse_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNivo_SCO_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForE_Maile = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForphoto = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNationalité_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForObservation_handicape = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNum_Diplome_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForSituation_Familiale_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForSituation_Familiale_Parents_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup12 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForNum_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForDate_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
@@ -345,6 +352,11 @@
             this.Suiver_stagiairePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.colEnseignant3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnum_stg6 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).BeginInit();
@@ -364,7 +376,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Code_Postal1LookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Code_Postal1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Code_Postal1LookUpEditView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SexeTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EtrangerCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nationalité_STGTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HandicapeCheckEdit.Properties)).BeginInit();
@@ -444,6 +455,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TransferersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransferersGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransferersBarManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SexeTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
@@ -462,41 +474,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForHandicape)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTelephone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_de_Naissance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForphoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNationalité_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForObservation_handicape)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Diplome_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForLieu_Naissance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForE_Maile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSexe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNbr_Frère_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Père_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForLieu_Naissance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSexe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForHandicape)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTelephone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_de_Naissance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForE_Maile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForphoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNationalité_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForObservation_handicape)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Diplome_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).BeginInit();
@@ -529,7 +541,6 @@
             this.dataLayoutControl1.Controls.Add(this.AdresseTextEdit);
             this.dataLayoutControl1.Controls.Add(this.Adresse_arTextEdit);
             this.dataLayoutControl1.Controls.Add(this.Code_Postal1LookUpEdit);
-            this.dataLayoutControl1.Controls.Add(this.SexeTextEdit);
             this.dataLayoutControl1.Controls.Add(this.EtrangerCheckEdit);
             this.dataLayoutControl1.Controls.Add(this.Nationalité_STGTextEdit);
             this.dataLayoutControl1.Controls.Add(this.HandicapeCheckEdit);
@@ -567,22 +578,23 @@
             this.dataLayoutControl1.Controls.Add(this.EvaluationsXtraUserControl);
             this.dataLayoutControl1.Controls.Add(this.Suiver_stagiaireXtraUserControl);
             this.dataLayoutControl1.Controls.Add(this.TransferersXtraUserControl);
+            this.dataLayoutControl1.Controls.Add(this.SexeTextEdit);
             this.dataLayoutControl1.DataSource = this.stagiairViewBindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 129);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(950, 101, 650, 400);
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 639);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1022, 579);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // Num_STGTextEdit
             // 
             this.Num_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Num_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Num_STGTextEdit.Location = new System.Drawing.Point(512, 47);
+            this.Num_STGTextEdit.Location = new System.Drawing.Point(487, 47);
             this.Num_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Num_STGTextEdit.Name = "Num_STGTextEdit";
-            this.Num_STGTextEdit.Size = new System.Drawing.Size(488, 20);
+            this.Num_STGTextEdit.Size = new System.Drawing.Size(511, 20);
             this.Num_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Num_STGTextEdit.TabIndex = 4;
             // 
@@ -610,11 +622,10 @@
             this.mainRibbonControl.MaxItemId = 11;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.mainRibbonPage,
-            this.ribbonPage1});
+            this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 129);
+            this.mainRibbonControl.Size = new System.Drawing.Size(1022, 129);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -682,7 +693,7 @@
             // 
             // barButtonItem4
             // 
-            this.barButtonItem4.Caption = "Certficat Scolireti";
+            this.barButtonItem4.Caption = "Imprimer le certificat \r\nde scolarité ";
             this.barButtonItem4.Id = 10;
             this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
             this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
@@ -697,7 +708,7 @@
             this.mainRibbonPage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mainRibbonPage.ImageOptions.Image")));
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "ACCEUIL";
+            this.mainRibbonPage.Text = "Stagiaire";
             // 
             // mainRibbonPageGroup
             // 
@@ -707,6 +718,7 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.barButtonItem4);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
@@ -721,56 +733,43 @@
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Personnalisation la fenêtre";
             // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
             // NomTextEdit
             // 
             this.NomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.NomTextEdit.Location = new System.Drawing.Point(512, 71);
+            this.NomTextEdit.Location = new System.Drawing.Point(487, 71);
             this.NomTextEdit.MenuManager = this.mainRibbonControl;
             this.NomTextEdit.Name = "NomTextEdit";
-            this.NomTextEdit.Size = new System.Drawing.Size(135, 20);
+            this.NomTextEdit.Size = new System.Drawing.Size(158, 20);
             this.NomTextEdit.StyleController = this.dataLayoutControl1;
             this.NomTextEdit.TabIndex = 5;
             // 
             // Nom_arTextEdit
             // 
             this.Nom_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nom_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_arTextEdit.Location = new System.Drawing.Point(651, 71);
+            this.Nom_arTextEdit.Location = new System.Drawing.Point(649, 71);
             this.Nom_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_arTextEdit.Name = "Nom_arTextEdit";
-            this.Nom_arTextEdit.Size = new System.Drawing.Size(95, 20);
+            this.Nom_arTextEdit.Size = new System.Drawing.Size(315, 20);
             this.Nom_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_arTextEdit.TabIndex = 6;
             // 
             // PrenomTextEdit
             // 
             this.PrenomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Prenom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.PrenomTextEdit.Location = new System.Drawing.Point(512, 95);
+            this.PrenomTextEdit.Location = new System.Drawing.Point(487, 95);
             this.PrenomTextEdit.MenuManager = this.mainRibbonControl;
             this.PrenomTextEdit.Name = "PrenomTextEdit";
-            this.PrenomTextEdit.Size = new System.Drawing.Size(135, 20);
+            this.PrenomTextEdit.Size = new System.Drawing.Size(158, 20);
             this.PrenomTextEdit.StyleController = this.dataLayoutControl1;
             this.PrenomTextEdit.TabIndex = 7;
             // 
             // Prenom_arTextEdit
             // 
             this.Prenom_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Prenom_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Prenom_arTextEdit.Location = new System.Drawing.Point(651, 95);
+            this.Prenom_arTextEdit.Location = new System.Drawing.Point(649, 95);
             this.Prenom_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Prenom_arTextEdit.Name = "Prenom_arTextEdit";
-            this.Prenom_arTextEdit.Size = new System.Drawing.Size(95, 20);
+            this.Prenom_arTextEdit.Size = new System.Drawing.Size(309, 20);
             this.Prenom_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Prenom_arTextEdit.TabIndex = 8;
             // 
@@ -778,7 +777,7 @@
             // 
             this.Date_de_NaissanceDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Date_de_Naissance", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Date_de_NaissanceDateEdit.EditValue = null;
-            this.Date_de_NaissanceDateEdit.Location = new System.Drawing.Point(512, 119);
+            this.Date_de_NaissanceDateEdit.Location = new System.Drawing.Point(487, 167);
             this.Date_de_NaissanceDateEdit.MenuManager = this.mainRibbonControl;
             this.Date_de_NaissanceDateEdit.Name = "Date_de_NaissanceDateEdit";
             this.Date_de_NaissanceDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -786,7 +785,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Date_de_NaissanceDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Date_de_NaissanceDateEdit.Size = new System.Drawing.Size(135, 20);
+            this.Date_de_NaissanceDateEdit.Size = new System.Drawing.Size(158, 20);
             this.Date_de_NaissanceDateEdit.StyleController = this.dataLayoutControl1;
             this.Date_de_NaissanceDateEdit.TabIndex = 9;
             // 
@@ -794,7 +793,7 @@
             // 
             this.CommuneLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Lieu_Naissance", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.CommuneLookUpEdit.EditValue = "";
-            this.CommuneLookUpEdit.Location = new System.Drawing.Point(905, 119);
+            this.CommuneLookUpEdit.Location = new System.Drawing.Point(753, 167);
             this.CommuneLookUpEdit.MenuManager = this.mainRibbonControl;
             this.CommuneLookUpEdit.Name = "CommuneLookUpEdit";
             this.CommuneLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -803,7 +802,7 @@
             this.CommuneLookUpEdit.Properties.DisplayMember = "Commune_name";
             this.CommuneLookUpEdit.Properties.PopupView = this.CommuneLookUpEditView;
             this.CommuneLookUpEdit.Properties.ValueMember = "Commune_id";
-            this.CommuneLookUpEdit.Size = new System.Drawing.Size(95, 20);
+            this.CommuneLookUpEdit.Size = new System.Drawing.Size(245, 20);
             this.CommuneLookUpEdit.StyleController = this.dataLayoutControl1;
             this.CommuneLookUpEdit.TabIndex = 10;
             // 
@@ -813,28 +812,74 @@
             // 
             // CommuneLookUpEditView
             // 
+            this.CommuneLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCommune_name,
+            this.colCommune_name_ar,
+            this.colDaira_name,
+            this.colDaira_name_ar,
+            this.gridColumn1,
+            this.colWillaya});
             this.CommuneLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.CommuneLookUpEditView.Name = "CommuneLookUpEditView";
             this.CommuneLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.CommuneLookUpEditView.OptionsView.ShowGroupPanel = false;
             // 
+            // colCommune_name
+            // 
+            this.colCommune_name.FieldName = "Commune_name";
+            this.colCommune_name.Name = "colCommune_name";
+            this.colCommune_name.Visible = true;
+            this.colCommune_name.VisibleIndex = 0;
+            // 
+            // colCommune_name_ar
+            // 
+            this.colCommune_name_ar.FieldName = "Commune_name_ar";
+            this.colCommune_name_ar.Name = "colCommune_name_ar";
+            this.colCommune_name_ar.Visible = true;
+            this.colCommune_name_ar.VisibleIndex = 1;
+            // 
+            // colDaira_name
+            // 
+            this.colDaira_name.FieldName = "Daira_name";
+            this.colDaira_name.Name = "colDaira_name";
+            // 
+            // colDaira_name_ar
+            // 
+            this.colDaira_name_ar.FieldName = "Daira_name_ar";
+            this.colDaira_name_ar.Name = "colDaira_name_ar";
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Wilaya";
+            this.gridColumn1.FieldName = "Willaya.Wilaya_name__ar";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 3;
+            // 
+            // colWillaya
+            // 
+            this.colWillaya.FieldName = "Willaya.Wilaya_name__fr_";
+            this.colWillaya.Name = "colWillaya";
+            this.colWillaya.Visible = true;
+            this.colWillaya.VisibleIndex = 2;
+            // 
             // AdresseTextEdit
             // 
             this.AdresseTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Adresse", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.AdresseTextEdit.Location = new System.Drawing.Point(512, 143);
+            this.AdresseTextEdit.Location = new System.Drawing.Point(487, 119);
             this.AdresseTextEdit.MenuManager = this.mainRibbonControl;
             this.AdresseTextEdit.Name = "AdresseTextEdit";
-            this.AdresseTextEdit.Size = new System.Drawing.Size(135, 20);
+            this.AdresseTextEdit.Size = new System.Drawing.Size(158, 20);
             this.AdresseTextEdit.StyleController = this.dataLayoutControl1;
             this.AdresseTextEdit.TabIndex = 11;
             // 
             // Adresse_arTextEdit
             // 
             this.Adresse_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Adresse_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Adresse_arTextEdit.Location = new System.Drawing.Point(651, 143);
+            this.Adresse_arTextEdit.Location = new System.Drawing.Point(649, 119);
             this.Adresse_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Adresse_arTextEdit.Name = "Adresse_arTextEdit";
-            this.Adresse_arTextEdit.Size = new System.Drawing.Size(95, 20);
+            this.Adresse_arTextEdit.Size = new System.Drawing.Size(307, 20);
             this.Adresse_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Adresse_arTextEdit.TabIndex = 12;
             // 
@@ -842,16 +887,16 @@
             // 
             this.Code_Postal1LookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Code_postal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Code_Postal1LookUpEdit.EditValue = "";
-            this.Code_Postal1LookUpEdit.Location = new System.Drawing.Point(512, 167);
+            this.Code_Postal1LookUpEdit.Location = new System.Drawing.Point(487, 191);
             this.Code_Postal1LookUpEdit.MenuManager = this.mainRibbonControl;
             this.Code_Postal1LookUpEdit.Name = "Code_Postal1LookUpEdit";
             this.Code_Postal1LookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Code_Postal1LookUpEdit.Properties.DataSource = this.Code_Postal1BindingSource;
-            this.Code_Postal1LookUpEdit.Properties.DisplayMember = "post_Adresse_ar";
+            this.Code_Postal1LookUpEdit.Properties.DisplayMember = "Code_Postal1";
             this.Code_Postal1LookUpEdit.Properties.PopupView = this.Code_Postal1LookUpEditView;
             this.Code_Postal1LookUpEdit.Properties.ValueMember = "ID_Code_Postal";
-            this.Code_Postal1LookUpEdit.Size = new System.Drawing.Size(488, 20);
+            this.Code_Postal1LookUpEdit.Size = new System.Drawing.Size(245, 20);
             this.Code_Postal1LookUpEdit.StyleController = this.dataLayoutControl1;
             this.Code_Postal1LookUpEdit.TabIndex = 13;
             // 
@@ -861,69 +906,96 @@
             // 
             // Code_Postal1LookUpEditView
             // 
+            this.Code_Postal1LookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCode_Postal1,
+            this.colPost_adresse,
+            this.colpost_Adresse_ar,
+            this.colCommune});
             this.Code_Postal1LookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.Code_Postal1LookUpEditView.Name = "Code_Postal1LookUpEditView";
             this.Code_Postal1LookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.Code_Postal1LookUpEditView.OptionsView.ShowGroupPanel = false;
             // 
-            // SexeTextEdit
+            // colCode_Postal1
             // 
-            this.SexeTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Sexe", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.SexeTextEdit.Location = new System.Drawing.Point(512, 191);
-            this.SexeTextEdit.MenuManager = this.mainRibbonControl;
-            this.SexeTextEdit.Name = "SexeTextEdit";
-            this.SexeTextEdit.Size = new System.Drawing.Size(488, 20);
-            this.SexeTextEdit.StyleController = this.dataLayoutControl1;
-            this.SexeTextEdit.TabIndex = 14;
+            this.colCode_Postal1.FieldName = "Code_Postal1";
+            this.colCode_Postal1.Name = "colCode_Postal1";
+            this.colCode_Postal1.Visible = true;
+            this.colCode_Postal1.VisibleIndex = 0;
+            // 
+            // colPost_adresse
+            // 
+            this.colPost_adresse.FieldName = "Post_adresse";
+            this.colPost_adresse.Name = "colPost_adresse";
+            this.colPost_adresse.Visible = true;
+            this.colPost_adresse.VisibleIndex = 1;
+            // 
+            // colpost_Adresse_ar
+            // 
+            this.colpost_Adresse_ar.FieldName = "post_Adresse_ar";
+            this.colpost_Adresse_ar.Name = "colpost_Adresse_ar";
+            this.colpost_Adresse_ar.Visible = true;
+            this.colpost_Adresse_ar.VisibleIndex = 2;
+            // 
+            // colCommune
+            // 
+            this.colCommune.FieldName = "Commune.Commune_name";
+            this.colCommune.Name = "colCommune";
+            this.colCommune.Visible = true;
+            this.colCommune.VisibleIndex = 3;
             // 
             // EtrangerCheckEdit
             // 
             this.EtrangerCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Etranger", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.EtrangerCheckEdit.Location = new System.Drawing.Point(258, 215);
+            this.EtrangerCheckEdit.Location = new System.Drawing.Point(257, 215);
             this.EtrangerCheckEdit.MenuManager = this.mainRibbonControl;
             this.EtrangerCheckEdit.Name = "EtrangerCheckEdit";
+            this.EtrangerCheckEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.EtrangerCheckEdit.Properties.Appearance.Options.UseFont = true;
             this.EtrangerCheckEdit.Properties.Caption = "Etranger au pays";
             this.EtrangerCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
-            this.EtrangerCheckEdit.Size = new System.Drawing.Size(106, 20);
+            this.EtrangerCheckEdit.Size = new System.Drawing.Size(119, 20);
             this.EtrangerCheckEdit.StyleController = this.dataLayoutControl1;
             this.EtrangerCheckEdit.TabIndex = 15;
             // 
             // Nationalité_STGTextEdit
             // 
             this.Nationalité_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nationalité_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nationalité_STGTextEdit.Location = new System.Drawing.Point(622, 215);
+            this.Nationalité_STGTextEdit.Location = new System.Drawing.Point(525, 215);
             this.Nationalité_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Nationalité_STGTextEdit.Name = "Nationalité_STGTextEdit";
-            this.Nationalité_STGTextEdit.Size = new System.Drawing.Size(378, 20);
+            this.Nationalité_STGTextEdit.Size = new System.Drawing.Size(473, 20);
             this.Nationalité_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Nationalité_STGTextEdit.TabIndex = 16;
             // 
             // HandicapeCheckEdit
             // 
             this.HandicapeCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Handicape", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.HandicapeCheckEdit.Location = new System.Drawing.Point(258, 239);
+            this.HandicapeCheckEdit.Location = new System.Drawing.Point(257, 239);
             this.HandicapeCheckEdit.MenuManager = this.mainRibbonControl;
             this.HandicapeCheckEdit.Name = "HandicapeCheckEdit";
+            this.HandicapeCheckEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.HandicapeCheckEdit.Properties.Appearance.Options.UseFont = true;
             this.HandicapeCheckEdit.Properties.Caption = "Handicapé";
             this.HandicapeCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
-            this.HandicapeCheckEdit.Size = new System.Drawing.Size(83, 20);
+            this.HandicapeCheckEdit.Size = new System.Drawing.Size(107, 20);
             this.HandicapeCheckEdit.StyleController = this.dataLayoutControl1;
             this.HandicapeCheckEdit.TabIndex = 17;
             // 
             // Observation_handicapeTextEdit
             // 
             this.Observation_handicapeTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Observation_handicape", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Observation_handicapeTextEdit.Location = new System.Drawing.Point(599, 239);
+            this.Observation_handicapeTextEdit.Location = new System.Drawing.Point(523, 239);
             this.Observation_handicapeTextEdit.MenuManager = this.mainRibbonControl;
             this.Observation_handicapeTextEdit.Name = "Observation_handicapeTextEdit";
-            this.Observation_handicapeTextEdit.Size = new System.Drawing.Size(401, 20);
+            this.Observation_handicapeTextEdit.Size = new System.Drawing.Size(475, 20);
             this.Observation_handicapeTextEdit.StyleController = this.dataLayoutControl1;
             this.Observation_handicapeTextEdit.TabIndex = 18;
             // 
             // TelephoneTextEdit
             // 
             this.TelephoneTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Telephone", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.TelephoneTextEdit.Location = new System.Drawing.Point(512, 263);
+            this.TelephoneTextEdit.Location = new System.Drawing.Point(487, 263);
             this.TelephoneTextEdit.MenuManager = this.mainRibbonControl;
             this.TelephoneTextEdit.Name = "TelephoneTextEdit";
             this.TelephoneTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -932,104 +1004,104 @@
             this.TelephoneTextEdit.Properties.Mask.EditMask = "N0";
             this.TelephoneTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.TelephoneTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.TelephoneTextEdit.Size = new System.Drawing.Size(135, 20);
+            this.TelephoneTextEdit.Size = new System.Drawing.Size(138, 20);
             this.TelephoneTextEdit.StyleController = this.dataLayoutControl1;
             this.TelephoneTextEdit.TabIndex = 19;
             // 
             // E_MaileTextEdit
             // 
             this.E_MaileTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "E_Maile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.E_MaileTextEdit.Location = new System.Drawing.Point(905, 263);
+            this.E_MaileTextEdit.Location = new System.Drawing.Point(681, 263);
             this.E_MaileTextEdit.MenuManager = this.mainRibbonControl;
             this.E_MaileTextEdit.Name = "E_MaileTextEdit";
-            this.E_MaileTextEdit.Size = new System.Drawing.Size(95, 20);
+            this.E_MaileTextEdit.Size = new System.Drawing.Size(317, 20);
             this.E_MaileTextEdit.StyleController = this.dataLayoutControl1;
             this.E_MaileTextEdit.TabIndex = 20;
             // 
             // Nivo_SCOTextEdit
             // 
             this.Nivo_SCOTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nivo_SCO", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nivo_SCOTextEdit.Location = new System.Drawing.Point(512, 287);
+            this.Nivo_SCOTextEdit.Location = new System.Drawing.Point(487, 143);
             this.Nivo_SCOTextEdit.MenuManager = this.mainRibbonControl;
             this.Nivo_SCOTextEdit.Name = "Nivo_SCOTextEdit";
-            this.Nivo_SCOTextEdit.Size = new System.Drawing.Size(135, 20);
+            this.Nivo_SCOTextEdit.Size = new System.Drawing.Size(158, 20);
             this.Nivo_SCOTextEdit.StyleController = this.dataLayoutControl1;
             this.Nivo_SCOTextEdit.TabIndex = 21;
             // 
             // Nivo_SCO_arTextEdit
             // 
             this.Nivo_SCO_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nivo_SCO_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nivo_SCO_arTextEdit.Location = new System.Drawing.Point(651, 287);
+            this.Nivo_SCO_arTextEdit.Location = new System.Drawing.Point(649, 143);
             this.Nivo_SCO_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Nivo_SCO_arTextEdit.Name = "Nivo_SCO_arTextEdit";
-            this.Nivo_SCO_arTextEdit.Size = new System.Drawing.Size(95, 20);
+            this.Nivo_SCO_arTextEdit.Size = new System.Drawing.Size(244, 20);
             this.Nivo_SCO_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Nivo_SCO_arTextEdit.TabIndex = 22;
             // 
             // Prenom_Père_STGTextEdit
             // 
             this.Prenom_Père_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Prenom_Père_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Prenom_Père_STGTextEdit.Location = new System.Drawing.Point(278, 47);
+            this.Prenom_Père_STGTextEdit.Location = new System.Drawing.Point(254, 47);
             this.Prenom_Père_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Prenom_Père_STGTextEdit.Name = "Prenom_Père_STGTextEdit";
-            this.Prenom_Père_STGTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Prenom_Père_STGTextEdit.Size = new System.Drawing.Size(255, 20);
             this.Prenom_Père_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Prenom_Père_STGTextEdit.TabIndex = 23;
             // 
             // Prenom_Père_STG_arTextEdit
             // 
             this.Prenom_Père_STG_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Prenom_Père_STG_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Prenom_Père_STG_arTextEdit.Location = new System.Drawing.Point(514, 47);
+            this.Prenom_Père_STG_arTextEdit.Location = new System.Drawing.Point(513, 47);
             this.Prenom_Père_STG_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Prenom_Père_STG_arTextEdit.Name = "Prenom_Père_STG_arTextEdit";
-            this.Prenom_Père_STG_arTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Prenom_Père_STG_arTextEdit.Size = new System.Drawing.Size(376, 20);
             this.Prenom_Père_STG_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Prenom_Père_STG_arTextEdit.TabIndex = 24;
             // 
             // Nom_Mère_STGTextEdit
             // 
             this.Nom_Mère_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nom_Mère_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_Mère_STGTextEdit.Location = new System.Drawing.Point(278, 71);
+            this.Nom_Mère_STGTextEdit.Location = new System.Drawing.Point(254, 71);
             this.Nom_Mère_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_Mère_STGTextEdit.Name = "Nom_Mère_STGTextEdit";
-            this.Nom_Mère_STGTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Nom_Mère_STGTextEdit.Size = new System.Drawing.Size(255, 20);
             this.Nom_Mère_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_Mère_STGTextEdit.TabIndex = 25;
             // 
             // Nom_Mère_STG_arTextEdit
             // 
             this.Nom_Mère_STG_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nom_Mère_STG_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_Mère_STG_arTextEdit.Location = new System.Drawing.Point(514, 71);
+            this.Nom_Mère_STG_arTextEdit.Location = new System.Drawing.Point(513, 71);
             this.Nom_Mère_STG_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_Mère_STG_arTextEdit.Name = "Nom_Mère_STG_arTextEdit";
-            this.Nom_Mère_STG_arTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Nom_Mère_STG_arTextEdit.Size = new System.Drawing.Size(382, 20);
             this.Nom_Mère_STG_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_Mère_STG_arTextEdit.TabIndex = 26;
             // 
             // Prenom_Mère_STGTextEdit
             // 
             this.Prenom_Mère_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Prenom_Mère_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Prenom_Mère_STGTextEdit.Location = new System.Drawing.Point(278, 95);
+            this.Prenom_Mère_STGTextEdit.Location = new System.Drawing.Point(254, 95);
             this.Prenom_Mère_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Prenom_Mère_STGTextEdit.Name = "Prenom_Mère_STGTextEdit";
-            this.Prenom_Mère_STGTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Prenom_Mère_STGTextEdit.Size = new System.Drawing.Size(255, 20);
             this.Prenom_Mère_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Prenom_Mère_STGTextEdit.TabIndex = 27;
             // 
             // Prenom_Mère_STG_arTextEdit
             // 
             this.Prenom_Mère_STG_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Prenom_Mère_STG_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Prenom_Mère_STG_arTextEdit.Location = new System.Drawing.Point(514, 95);
+            this.Prenom_Mère_STG_arTextEdit.Location = new System.Drawing.Point(513, 95);
             this.Prenom_Mère_STG_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Prenom_Mère_STG_arTextEdit.Name = "Prenom_Mère_STG_arTextEdit";
-            this.Prenom_Mère_STG_arTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Prenom_Mère_STG_arTextEdit.Size = new System.Drawing.Size(376, 20);
             this.Prenom_Mère_STG_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Prenom_Mère_STG_arTextEdit.TabIndex = 28;
             // 
             // Nbr_Frère_STGTextEdit
             // 
             this.Nbr_Frère_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Nbr_Frère_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nbr_Frère_STGTextEdit.Location = new System.Drawing.Point(278, 119);
+            this.Nbr_Frère_STGTextEdit.Location = new System.Drawing.Point(254, 143);
             this.Nbr_Frère_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Nbr_Frère_STGTextEdit.Name = "Nbr_Frère_STGTextEdit";
             this.Nbr_Frère_STGTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -1038,57 +1110,57 @@
             this.Nbr_Frère_STGTextEdit.Properties.Mask.EditMask = "N0";
             this.Nbr_Frère_STGTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Nbr_Frère_STGTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Nbr_Frère_STGTextEdit.Size = new System.Drawing.Size(50, 20);
+            this.Nbr_Frère_STGTextEdit.Size = new System.Drawing.Size(744, 20);
             this.Nbr_Frère_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Nbr_Frère_STGTextEdit.TabIndex = 29;
             // 
             // Situation_Familiale_STGTextEdit
             // 
             this.Situation_Familiale_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Situation_Familiale_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Situation_Familiale_STGTextEdit.Location = new System.Drawing.Point(552, 119);
+            this.Situation_Familiale_STGTextEdit.Location = new System.Drawing.Point(255, 167);
             this.Situation_Familiale_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Situation_Familiale_STGTextEdit.Name = "Situation_Familiale_STGTextEdit";
-            this.Situation_Familiale_STGTextEdit.Size = new System.Drawing.Size(110, 20);
+            this.Situation_Familiale_STGTextEdit.Size = new System.Drawing.Size(743, 20);
             this.Situation_Familiale_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Situation_Familiale_STGTextEdit.TabIndex = 30;
             // 
             // Situation_Familiale_Parents_STGTextEdit
             // 
             this.Situation_Familiale_Parents_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Situation_Familiale_Parents_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Situation_Familiale_Parents_STGTextEdit.Location = new System.Drawing.Point(920, 119);
+            this.Situation_Familiale_Parents_STGTextEdit.Location = new System.Drawing.Point(271, 119);
             this.Situation_Familiale_Parents_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Situation_Familiale_Parents_STGTextEdit.Name = "Situation_Familiale_Parents_STGTextEdit";
-            this.Situation_Familiale_Parents_STGTextEdit.Size = new System.Drawing.Size(80, 20);
+            this.Situation_Familiale_Parents_STGTextEdit.Size = new System.Drawing.Size(727, 20);
             this.Situation_Familiale_Parents_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Situation_Familiale_Parents_STGTextEdit.TabIndex = 31;
             // 
             // Profession_Père_STGTextEdit
             // 
             this.Profession_Père_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Profession_Père_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Profession_Père_STGTextEdit.Location = new System.Drawing.Point(278, 143);
+            this.Profession_Père_STGTextEdit.Location = new System.Drawing.Point(254, 191);
             this.Profession_Père_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Profession_Père_STGTextEdit.Name = "Profession_Père_STGTextEdit";
-            this.Profession_Père_STGTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Profession_Père_STGTextEdit.Size = new System.Drawing.Size(255, 20);
             this.Profession_Père_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Profession_Père_STGTextEdit.TabIndex = 32;
             // 
             // Profession_Mère_STGTextEdit
             // 
             this.Profession_Mère_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Profession_Mère_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Profession_Mère_STGTextEdit.Location = new System.Drawing.Point(768, 143);
+            this.Profession_Mère_STGTextEdit.Location = new System.Drawing.Point(710, 191);
             this.Profession_Mère_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Profession_Mère_STGTextEdit.Name = "Profession_Mère_STGTextEdit";
-            this.Profession_Mère_STGTextEdit.Size = new System.Drawing.Size(232, 20);
+            this.Profession_Mère_STGTextEdit.Size = new System.Drawing.Size(288, 20);
             this.Profession_Mère_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Profession_Mère_STGTextEdit.TabIndex = 33;
             // 
             // Num_Diplome_STGTextEdit
             // 
             this.Num_Diplome_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Num_Diplome_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Num_Diplome_STGTextEdit.Location = new System.Drawing.Point(512, 311);
+            this.Num_Diplome_STGTextEdit.Location = new System.Drawing.Point(487, 287);
             this.Num_Diplome_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Num_Diplome_STGTextEdit.Name = "Num_Diplome_STGTextEdit";
-            this.Num_Diplome_STGTextEdit.Size = new System.Drawing.Size(135, 20);
+            this.Num_Diplome_STGTextEdit.Size = new System.Drawing.Size(511, 20);
             this.Num_Diplome_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Num_Diplome_STGTextEdit.TabIndex = 34;
             // 
@@ -1096,7 +1168,7 @@
             // 
             this.EmployeurLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "ID_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.EmployeurLookUpEdit.EditValue = "";
-            this.EmployeurLookUpEdit.Location = new System.Drawing.Point(278, 47);
+            this.EmployeurLookUpEdit.Location = new System.Drawing.Point(254, 47);
             this.EmployeurLookUpEdit.MenuManager = this.mainRibbonControl;
             this.EmployeurLookUpEdit.Name = "EmployeurLookUpEdit";
             this.EmployeurLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1105,7 +1177,7 @@
             this.EmployeurLookUpEdit.Properties.DisplayMember = "Type_Emp";
             this.EmployeurLookUpEdit.Properties.PopupView = this.EmployeurLookUpEditView;
             this.EmployeurLookUpEdit.Properties.ValueMember = "ID_Emp";
-            this.EmployeurLookUpEdit.Size = new System.Drawing.Size(722, 20);
+            this.EmployeurLookUpEdit.Size = new System.Drawing.Size(744, 20);
             this.EmployeurLookUpEdit.StyleController = this.dataLayoutControl1;
             this.EmployeurLookUpEdit.TabIndex = 35;
             // 
@@ -1123,7 +1195,7 @@
             // Num_Validation_Contrat_STGTextEdit
             // 
             this.Num_Validation_Contrat_STGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Num_Validation_Contrat_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Num_Validation_Contrat_STGTextEdit.Location = new System.Drawing.Point(278, 71);
+            this.Num_Validation_Contrat_STGTextEdit.Location = new System.Drawing.Point(254, 71);
             this.Num_Validation_Contrat_STGTextEdit.MenuManager = this.mainRibbonControl;
             this.Num_Validation_Contrat_STGTextEdit.Name = "Num_Validation_Contrat_STGTextEdit";
             this.Num_Validation_Contrat_STGTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -1132,7 +1204,7 @@
             this.Num_Validation_Contrat_STGTextEdit.Properties.Mask.EditMask = "N0";
             this.Num_Validation_Contrat_STGTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Num_Validation_Contrat_STGTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Num_Validation_Contrat_STGTextEdit.Size = new System.Drawing.Size(722, 20);
+            this.Num_Validation_Contrat_STGTextEdit.Size = new System.Drawing.Size(744, 20);
             this.Num_Validation_Contrat_STGTextEdit.StyleController = this.dataLayoutControl1;
             this.Num_Validation_Contrat_STGTextEdit.TabIndex = 36;
             // 
@@ -1140,7 +1212,7 @@
             // 
             this.Date_Validation_Contrat_STGDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Date_Validation_Contrat_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Date_Validation_Contrat_STGDateEdit.EditValue = null;
-            this.Date_Validation_Contrat_STGDateEdit.Location = new System.Drawing.Point(278, 95);
+            this.Date_Validation_Contrat_STGDateEdit.Location = new System.Drawing.Point(254, 95);
             this.Date_Validation_Contrat_STGDateEdit.MenuManager = this.mainRibbonControl;
             this.Date_Validation_Contrat_STGDateEdit.Name = "Date_Validation_Contrat_STGDateEdit";
             this.Date_Validation_Contrat_STGDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -1148,7 +1220,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Date_Validation_Contrat_STGDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Date_Validation_Contrat_STGDateEdit.Size = new System.Drawing.Size(722, 20);
+            this.Date_Validation_Contrat_STGDateEdit.Size = new System.Drawing.Size(744, 20);
             this.Date_Validation_Contrat_STGDateEdit.StyleController = this.dataLayoutControl1;
             this.Date_Validation_Contrat_STGDateEdit.TabIndex = 37;
             // 
@@ -1156,7 +1228,7 @@
             // 
             this.Date_Resiliation_Contrat_STGDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Date_Resiliation_Contrat_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Date_Resiliation_Contrat_STGDateEdit.EditValue = null;
-            this.Date_Resiliation_Contrat_STGDateEdit.Location = new System.Drawing.Point(278, 119);
+            this.Date_Resiliation_Contrat_STGDateEdit.Location = new System.Drawing.Point(254, 119);
             this.Date_Resiliation_Contrat_STGDateEdit.MenuManager = this.mainRibbonControl;
             this.Date_Resiliation_Contrat_STGDateEdit.Name = "Date_Resiliation_Contrat_STGDateEdit";
             this.Date_Resiliation_Contrat_STGDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -1164,7 +1236,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Date_Resiliation_Contrat_STGDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Date_Resiliation_Contrat_STGDateEdit.Size = new System.Drawing.Size(722, 20);
+            this.Date_Resiliation_Contrat_STGDateEdit.Size = new System.Drawing.Size(744, 20);
             this.Date_Resiliation_Contrat_STGDateEdit.StyleController = this.dataLayoutControl1;
             this.Date_Resiliation_Contrat_STGDateEdit.TabIndex = 38;
             // 
@@ -1172,7 +1244,7 @@
             // 
             this.Maitre_ApprentissageLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "ID_Maitre_Apprentissage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Maitre_ApprentissageLookUpEdit.EditValue = "";
-            this.Maitre_ApprentissageLookUpEdit.Location = new System.Drawing.Point(278, 143);
+            this.Maitre_ApprentissageLookUpEdit.Location = new System.Drawing.Point(254, 143);
             this.Maitre_ApprentissageLookUpEdit.MenuManager = this.mainRibbonControl;
             this.Maitre_ApprentissageLookUpEdit.Name = "Maitre_ApprentissageLookUpEdit";
             this.Maitre_ApprentissageLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1181,7 +1253,7 @@
             this.Maitre_ApprentissageLookUpEdit.Properties.DisplayMember = "Nom_Maitre_Apprentissage";
             this.Maitre_ApprentissageLookUpEdit.Properties.PopupView = this.Maitre_ApprentissageLookUpEditView;
             this.Maitre_ApprentissageLookUpEdit.Properties.ValueMember = "ID_Maitre_Apprentissage";
-            this.Maitre_ApprentissageLookUpEdit.Size = new System.Drawing.Size(722, 20);
+            this.Maitre_ApprentissageLookUpEdit.Size = new System.Drawing.Size(744, 20);
             this.Maitre_ApprentissageLookUpEdit.StyleController = this.dataLayoutControl1;
             this.Maitre_ApprentissageLookUpEdit.TabIndex = 39;
             // 
@@ -1200,7 +1272,7 @@
             // 
             this.EtablissementLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "ID_ETAB", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.EtablissementLookUpEdit.EditValue = "";
-            this.EtablissementLookUpEdit.Location = new System.Drawing.Point(266, 347);
+            this.EtablissementLookUpEdit.Location = new System.Drawing.Point(242, 323);
             this.EtablissementLookUpEdit.MenuManager = this.mainRibbonControl;
             this.EtablissementLookUpEdit.Name = "EtablissementLookUpEdit";
             this.EtablissementLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1209,7 +1281,7 @@
             this.EtablissementLookUpEdit.Properties.DisplayMember = "Nom_ETAB";
             this.EtablissementLookUpEdit.Properties.PopupView = this.EtablissementLookUpEditView;
             this.EtablissementLookUpEdit.Properties.ValueMember = "ID_ETAB";
-            this.EtablissementLookUpEdit.Size = new System.Drawing.Size(312, 20);
+            this.EtablissementLookUpEdit.Size = new System.Drawing.Size(335, 20);
             this.EtablissementLookUpEdit.StyleController = this.dataLayoutControl1;
             this.EtablissementLookUpEdit.TabIndex = 40;
             // 
@@ -1228,7 +1300,7 @@
             // 
             this.Section1LookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Section", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Section1LookUpEdit.EditValue = "";
-            this.Section1LookUpEdit.Location = new System.Drawing.Point(836, 347);
+            this.Section1LookUpEdit.Location = new System.Drawing.Point(811, 323);
             this.Section1LookUpEdit.MenuManager = this.mainRibbonControl;
             this.Section1LookUpEdit.Name = "Section1LookUpEdit";
             this.Section1LookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1237,7 +1309,7 @@
             this.Section1LookUpEdit.Properties.DisplayMember = "Code_Section";
             this.Section1LookUpEdit.Properties.PopupView = this.Section1LookUpEditView;
             this.Section1LookUpEdit.Properties.ValueMember = "SectionID";
-            this.Section1LookUpEdit.Size = new System.Drawing.Size(176, 20);
+            this.Section1LookUpEdit.Size = new System.Drawing.Size(199, 20);
             this.Section1LookUpEdit.StyleController = this.dataLayoutControl1;
             this.Section1LookUpEdit.TabIndex = 41;
             // 
@@ -1256,7 +1328,7 @@
             // 
             this.tuteurLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "id_tuteur", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.tuteurLookUpEdit.EditValue = "";
-            this.tuteurLookUpEdit.Location = new System.Drawing.Point(278, 167);
+            this.tuteurLookUpEdit.Location = new System.Drawing.Point(254, 215);
             this.tuteurLookUpEdit.MenuManager = this.mainRibbonControl;
             this.tuteurLookUpEdit.Name = "tuteurLookUpEdit";
             this.tuteurLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1265,7 +1337,7 @@
             this.tuteurLookUpEdit.Properties.DisplayMember = "nom";
             this.tuteurLookUpEdit.Properties.PopupView = this.tuteurLookUpEditView;
             this.tuteurLookUpEdit.Properties.ValueMember = "id_tuteur";
-            this.tuteurLookUpEdit.Size = new System.Drawing.Size(722, 20);
+            this.tuteurLookUpEdit.Size = new System.Drawing.Size(744, 20);
             this.tuteurLookUpEdit.StyleController = this.dataLayoutControl1;
             this.tuteurLookUpEdit.TabIndex = 42;
             // 
@@ -1284,7 +1356,7 @@
             // 
             this.PromoLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "ID_Promo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.PromoLookUpEdit.EditValue = "";
-            this.PromoLookUpEdit.Location = new System.Drawing.Point(836, 371);
+            this.PromoLookUpEdit.Location = new System.Drawing.Point(811, 347);
             this.PromoLookUpEdit.MenuManager = this.mainRibbonControl;
             this.PromoLookUpEdit.Name = "PromoLookUpEdit";
             this.PromoLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1293,7 +1365,7 @@
             this.PromoLookUpEdit.Properties.DisplayMember = "Code_Promo";
             this.PromoLookUpEdit.Properties.PopupView = this.PromoLookUpEditView;
             this.PromoLookUpEdit.Properties.ValueMember = "ID_Promo";
-            this.PromoLookUpEdit.Size = new System.Drawing.Size(176, 20);
+            this.PromoLookUpEdit.Size = new System.Drawing.Size(199, 20);
             this.PromoLookUpEdit.StyleController = this.dataLayoutControl1;
             this.PromoLookUpEdit.TabIndex = 43;
             // 
@@ -1315,7 +1387,7 @@
             this.photoPictureEdit.MenuManager = this.mainRibbonControl;
             this.photoPictureEdit.Name = "photoPictureEdit";
             this.photoPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.photoPictureEdit.Size = new System.Drawing.Size(230, 284);
+            this.photoPictureEdit.Size = new System.Drawing.Size(229, 260);
             this.photoPictureEdit.StyleController = this.dataLayoutControl1;
             this.photoPictureEdit.TabIndex = 44;
             // 
@@ -1326,10 +1398,10 @@
             this.AbsencesXtraUserControl.Controls.Add(this.barDockControlRight);
             this.AbsencesXtraUserControl.Controls.Add(this.barDockControlBottom);
             this.AbsencesXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.AbsencesXtraUserControl.Location = new System.Drawing.Point(24, 430);
+            this.AbsencesXtraUserControl.Location = new System.Drawing.Point(24, 406);
             this.AbsencesXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.AbsencesXtraUserControl.Name = "AbsencesXtraUserControl";
-            this.AbsencesXtraUserControl.Size = new System.Drawing.Size(976, 185);
+            this.AbsencesXtraUserControl.Size = new System.Drawing.Size(974, 149);
             this.AbsencesXtraUserControl.TabIndex = 45;
             // 
             // AbsencesGridControl
@@ -1340,7 +1412,7 @@
             this.AbsencesGridControl.MainView = this.AbsencesGridView;
             this.AbsencesGridControl.MenuManager = this.mainRibbonControl;
             this.AbsencesGridControl.Name = "AbsencesGridControl";
-            this.AbsencesGridControl.Size = new System.Drawing.Size(976, 161);
+            this.AbsencesGridControl.Size = new System.Drawing.Size(974, 125);
             this.AbsencesGridControl.TabIndex = 0;
             this.AbsencesGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.AbsencesGridView});
@@ -1470,7 +1542,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.AbsencesBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 161);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 125);
             // 
             // AbsencesBarManager
             // 
@@ -1543,23 +1615,23 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.AbsencesBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(974, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 185);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 149);
             this.barDockControlBottom.Manager = this.AbsencesBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(974, 0);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(974, 24);
             this.barDockControlRight.Manager = this.AbsencesBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 161);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 125);
             // 
             // Avenant_contrat_prorogationXtraUserControl
             // 
@@ -1568,10 +1640,10 @@
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl12);
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl10);
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl9);
-            this.Avenant_contrat_prorogationXtraUserControl.Location = new System.Drawing.Point(24, 430);
+            this.Avenant_contrat_prorogationXtraUserControl.Location = new System.Drawing.Point(24, 406);
             this.Avenant_contrat_prorogationXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Avenant_contrat_prorogationXtraUserControl.Name = "Avenant_contrat_prorogationXtraUserControl";
-            this.Avenant_contrat_prorogationXtraUserControl.Size = new System.Drawing.Size(976, 185);
+            this.Avenant_contrat_prorogationXtraUserControl.Size = new System.Drawing.Size(974, 149);
             this.Avenant_contrat_prorogationXtraUserControl.TabIndex = 46;
             // 
             // Avenant_contrat_prorogationGridControl
@@ -1582,7 +1654,7 @@
             this.Avenant_contrat_prorogationGridControl.MainView = this.Avenant_contrat_prorogationGridView;
             this.Avenant_contrat_prorogationGridControl.MenuManager = this.mainRibbonControl;
             this.Avenant_contrat_prorogationGridControl.Name = "Avenant_contrat_prorogationGridControl";
-            this.Avenant_contrat_prorogationGridControl.Size = new System.Drawing.Size(976, 161);
+            this.Avenant_contrat_prorogationGridControl.Size = new System.Drawing.Size(974, 125);
             this.Avenant_contrat_prorogationGridControl.TabIndex = 0;
             this.Avenant_contrat_prorogationGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Avenant_contrat_prorogationGridView});
@@ -1673,7 +1745,7 @@
             this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl11.Location = new System.Drawing.Point(0, 24);
             this.barDockControl11.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl11.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl11.Size = new System.Drawing.Size(0, 125);
             // 
             // Avenant_contrat_prorogationBarManager
             // 
@@ -1746,23 +1818,23 @@
             this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl9.Location = new System.Drawing.Point(0, 0);
             this.barDockControl9.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl9.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl9.Size = new System.Drawing.Size(974, 24);
             // 
             // barDockControl10
             // 
             this.barDockControl10.CausesValidation = false;
             this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl10.Location = new System.Drawing.Point(0, 185);
+            this.barDockControl10.Location = new System.Drawing.Point(0, 149);
             this.barDockControl10.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl10.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl10.Size = new System.Drawing.Size(974, 0);
             // 
             // barDockControl12
             // 
             this.barDockControl12.CausesValidation = false;
             this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl12.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl12.Location = new System.Drawing.Point(974, 24);
             this.barDockControl12.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl12.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl12.Size = new System.Drawing.Size(0, 125);
             // 
             // Contract_avenant_changementXtraUserControl
             // 
@@ -1771,10 +1843,10 @@
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl20);
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl18);
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl17);
-            this.Contract_avenant_changementXtraUserControl.Location = new System.Drawing.Point(24, 430);
+            this.Contract_avenant_changementXtraUserControl.Location = new System.Drawing.Point(24, 406);
             this.Contract_avenant_changementXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Contract_avenant_changementXtraUserControl.Name = "Contract_avenant_changementXtraUserControl";
-            this.Contract_avenant_changementXtraUserControl.Size = new System.Drawing.Size(976, 185);
+            this.Contract_avenant_changementXtraUserControl.Size = new System.Drawing.Size(974, 149);
             this.Contract_avenant_changementXtraUserControl.TabIndex = 47;
             // 
             // Contract_avenant_changementGridControl
@@ -1785,7 +1857,7 @@
             this.Contract_avenant_changementGridControl.MainView = this.Contract_avenant_changementGridView;
             this.Contract_avenant_changementGridControl.MenuManager = this.mainRibbonControl;
             this.Contract_avenant_changementGridControl.Name = "Contract_avenant_changementGridControl";
-            this.Contract_avenant_changementGridControl.Size = new System.Drawing.Size(976, 161);
+            this.Contract_avenant_changementGridControl.Size = new System.Drawing.Size(974, 125);
             this.Contract_avenant_changementGridControl.TabIndex = 0;
             this.Contract_avenant_changementGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Contract_avenant_changementGridView});
@@ -1884,7 +1956,7 @@
             this.barDockControl19.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl19.Location = new System.Drawing.Point(0, 24);
             this.barDockControl19.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl19.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl19.Size = new System.Drawing.Size(0, 125);
             // 
             // Contract_avenant_changementBarManager
             // 
@@ -1957,23 +2029,23 @@
             this.barDockControl17.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl17.Location = new System.Drawing.Point(0, 0);
             this.barDockControl17.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl17.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl17.Size = new System.Drawing.Size(974, 24);
             // 
             // barDockControl18
             // 
             this.barDockControl18.CausesValidation = false;
             this.barDockControl18.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl18.Location = new System.Drawing.Point(0, 185);
+            this.barDockControl18.Location = new System.Drawing.Point(0, 149);
             this.barDockControl18.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl18.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl18.Size = new System.Drawing.Size(974, 0);
             // 
             // barDockControl20
             // 
             this.barDockControl20.CausesValidation = false;
             this.barDockControl20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl20.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl20.Location = new System.Drawing.Point(974, 24);
             this.barDockControl20.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl20.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl20.Size = new System.Drawing.Size(0, 125);
             // 
             // DecisionsXtraUserControl
             // 
@@ -1982,10 +2054,10 @@
             this.DecisionsXtraUserControl.Controls.Add(this.barDockControl8);
             this.DecisionsXtraUserControl.Controls.Add(this.barDockControl6);
             this.DecisionsXtraUserControl.Controls.Add(this.barDockControl5);
-            this.DecisionsXtraUserControl.Location = new System.Drawing.Point(24, 430);
+            this.DecisionsXtraUserControl.Location = new System.Drawing.Point(24, 406);
             this.DecisionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.DecisionsXtraUserControl.Name = "DecisionsXtraUserControl";
-            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(976, 185);
+            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(974, 149);
             this.DecisionsXtraUserControl.TabIndex = 48;
             // 
             // DecisionsGridControl
@@ -1996,7 +2068,7 @@
             this.DecisionsGridControl.MainView = this.DecisionsGridView;
             this.DecisionsGridControl.MenuManager = this.mainRibbonControl;
             this.DecisionsGridControl.Name = "DecisionsGridControl";
-            this.DecisionsGridControl.Size = new System.Drawing.Size(976, 161);
+            this.DecisionsGridControl.Size = new System.Drawing.Size(974, 125);
             this.DecisionsGridControl.TabIndex = 0;
             this.DecisionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.DecisionsGridView});
@@ -2099,7 +2171,7 @@
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.DecisionsBarManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 125);
             // 
             // DecisionsBarManager
             // 
@@ -2176,23 +2248,23 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.DecisionsBarManager;
-            this.barDockControl5.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl5.Size = new System.Drawing.Size(974, 24);
             // 
             // barDockControl6
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 185);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 149);
             this.barDockControl6.Manager = this.DecisionsBarManager;
-            this.barDockControl6.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl6.Size = new System.Drawing.Size(974, 0);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl8.Location = new System.Drawing.Point(974, 24);
             this.barDockControl8.Manager = this.DecisionsBarManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 125);
             // 
             // bbiDecisionsDelete
             // 
@@ -2209,10 +2281,10 @@
             this.EvaluationsXtraUserControl.Controls.Add(this.barDockControl4);
             this.EvaluationsXtraUserControl.Controls.Add(this.barDockControl2);
             this.EvaluationsXtraUserControl.Controls.Add(this.barDockControl1);
-            this.EvaluationsXtraUserControl.Location = new System.Drawing.Point(24, 430);
+            this.EvaluationsXtraUserControl.Location = new System.Drawing.Point(24, 406);
             this.EvaluationsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.EvaluationsXtraUserControl.Name = "EvaluationsXtraUserControl";
-            this.EvaluationsXtraUserControl.Size = new System.Drawing.Size(976, 185);
+            this.EvaluationsXtraUserControl.Size = new System.Drawing.Size(974, 149);
             this.EvaluationsXtraUserControl.TabIndex = 49;
             // 
             // EvaluationsGridControl
@@ -2223,7 +2295,7 @@
             this.EvaluationsGridControl.MainView = this.EvaluationsGridView;
             this.EvaluationsGridControl.MenuManager = this.mainRibbonControl;
             this.EvaluationsGridControl.Name = "EvaluationsGridControl";
-            this.EvaluationsGridControl.Size = new System.Drawing.Size(976, 161);
+            this.EvaluationsGridControl.Size = new System.Drawing.Size(974, 125);
             this.EvaluationsGridControl.TabIndex = 0;
             this.EvaluationsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.EvaluationsGridView});
@@ -2364,7 +2436,7 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.EvaluationsBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 125);
             // 
             // EvaluationsBarManager
             // 
@@ -2437,23 +2509,23 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.EvaluationsBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl1.Size = new System.Drawing.Size(974, 24);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 185);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 149);
             this.barDockControl2.Manager = this.EvaluationsBarManager;
-            this.barDockControl2.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(974, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl4.Location = new System.Drawing.Point(974, 24);
             this.barDockControl4.Manager = this.EvaluationsBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 125);
             // 
             // Suiver_stagiaireXtraUserControl
             // 
@@ -2462,10 +2534,10 @@
             this.Suiver_stagiaireXtraUserControl.Controls.Add(this.barDockControl24);
             this.Suiver_stagiaireXtraUserControl.Controls.Add(this.barDockControl22);
             this.Suiver_stagiaireXtraUserControl.Controls.Add(this.barDockControl21);
-            this.Suiver_stagiaireXtraUserControl.Location = new System.Drawing.Point(24, 430);
+            this.Suiver_stagiaireXtraUserControl.Location = new System.Drawing.Point(24, 406);
             this.Suiver_stagiaireXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Suiver_stagiaireXtraUserControl.Name = "Suiver_stagiaireXtraUserControl";
-            this.Suiver_stagiaireXtraUserControl.Size = new System.Drawing.Size(976, 185);
+            this.Suiver_stagiaireXtraUserControl.Size = new System.Drawing.Size(974, 149);
             this.Suiver_stagiaireXtraUserControl.TabIndex = 50;
             // 
             // Suiver_stagiaireGridControl
@@ -2476,7 +2548,7 @@
             this.Suiver_stagiaireGridControl.MainView = this.Suiver_stagiaireGridView;
             this.Suiver_stagiaireGridControl.MenuManager = this.mainRibbonControl;
             this.Suiver_stagiaireGridControl.Name = "Suiver_stagiaireGridControl";
-            this.Suiver_stagiaireGridControl.Size = new System.Drawing.Size(976, 161);
+            this.Suiver_stagiaireGridControl.Size = new System.Drawing.Size(974, 125);
             this.Suiver_stagiaireGridControl.TabIndex = 0;
             this.Suiver_stagiaireGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Suiver_stagiaireGridView});
@@ -2495,46 +2567,39 @@
             this.colOBSERV_FORMAT,
             this.colEnseignant11,
             this.colSemestre11,
-            this.colStagiair6});
+            this.colStagiair6,
+            this.gridColumn4,
+            this.gridColumn3,
+            this.gridColumn2,
+            this.colEnseignant3});
             this.Suiver_stagiaireGridView.GridControl = this.Suiver_stagiaireGridControl;
             this.Suiver_stagiaireGridView.Name = "Suiver_stagiaireGridView";
             this.Suiver_stagiaireGridView.OptionsBehavior.Editable = false;
             this.Suiver_stagiaireGridView.OptionsBehavior.ReadOnly = true;
             // 
-            // colnum_stg6
-            // 
-            this.colnum_stg6.FieldName = "num_stg";
-            this.colnum_stg6.Name = "colnum_stg6";
-            this.colnum_stg6.Visible = true;
-            this.colnum_stg6.VisibleIndex = 0;
-            // 
             // colEnseignant2
             // 
             this.colEnseignant2.FieldName = "Enseignant";
             this.colEnseignant2.Name = "colEnseignant2";
-            this.colEnseignant2.Visible = true;
-            this.colEnseignant2.VisibleIndex = 1;
             // 
             // colsemestre3
             // 
             this.colsemestre3.FieldName = "semestre";
             this.colsemestre3.Name = "colsemestre3";
-            this.colsemestre3.Visible = true;
-            this.colsemestre3.VisibleIndex = 2;
             // 
             // colNBR__VISITE_FORMATEUR
             // 
             this.colNBR__VISITE_FORMATEUR.FieldName = "NBR__VISITE_FORMATEUR";
             this.colNBR__VISITE_FORMATEUR.Name = "colNBR__VISITE_FORMATEUR";
             this.colNBR__VISITE_FORMATEUR.Visible = true;
-            this.colNBR__VISITE_FORMATEUR.VisibleIndex = 3;
+            this.colNBR__VISITE_FORMATEUR.VisibleIndex = 4;
             // 
             // colOBSERV_FORMAT
             // 
             this.colOBSERV_FORMAT.FieldName = "OBSERV_FORMAT";
             this.colOBSERV_FORMAT.Name = "colOBSERV_FORMAT";
             this.colOBSERV_FORMAT.Visible = true;
-            this.colOBSERV_FORMAT.VisibleIndex = 4;
+            this.colOBSERV_FORMAT.VisibleIndex = 5;
             // 
             // colEnseignant11
             // 
@@ -2557,7 +2622,7 @@
             this.barDockControl23.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl23.Location = new System.Drawing.Point(0, 24);
             this.barDockControl23.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl23.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl23.Size = new System.Drawing.Size(0, 125);
             // 
             // Suiver_stagiaireBarManager
             // 
@@ -2630,23 +2695,23 @@
             this.barDockControl21.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl21.Location = new System.Drawing.Point(0, 0);
             this.barDockControl21.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl21.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl21.Size = new System.Drawing.Size(974, 24);
             // 
             // barDockControl22
             // 
             this.barDockControl22.CausesValidation = false;
             this.barDockControl22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl22.Location = new System.Drawing.Point(0, 185);
+            this.barDockControl22.Location = new System.Drawing.Point(0, 149);
             this.barDockControl22.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl22.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl22.Size = new System.Drawing.Size(974, 0);
             // 
             // barDockControl24
             // 
             this.barDockControl24.CausesValidation = false;
             this.barDockControl24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl24.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl24.Location = new System.Drawing.Point(974, 24);
             this.barDockControl24.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl24.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl24.Size = new System.Drawing.Size(0, 125);
             // 
             // TransferersXtraUserControl
             // 
@@ -2655,10 +2720,10 @@
             this.TransferersXtraUserControl.Controls.Add(this.barDockControl16);
             this.TransferersXtraUserControl.Controls.Add(this.barDockControl14);
             this.TransferersXtraUserControl.Controls.Add(this.barDockControl13);
-            this.TransferersXtraUserControl.Location = new System.Drawing.Point(24, 430);
+            this.TransferersXtraUserControl.Location = new System.Drawing.Point(24, 406);
             this.TransferersXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.TransferersXtraUserControl.Name = "TransferersXtraUserControl";
-            this.TransferersXtraUserControl.Size = new System.Drawing.Size(976, 185);
+            this.TransferersXtraUserControl.Size = new System.Drawing.Size(974, 149);
             this.TransferersXtraUserControl.TabIndex = 51;
             // 
             // TransferersGridControl
@@ -2669,7 +2734,7 @@
             this.TransferersGridControl.MainView = this.TransferersGridView;
             this.TransferersGridControl.MenuManager = this.mainRibbonControl;
             this.TransferersGridControl.Name = "TransferersGridControl";
-            this.TransferersGridControl.Size = new System.Drawing.Size(976, 161);
+            this.TransferersGridControl.Size = new System.Drawing.Size(974, 125);
             this.TransferersGridControl.TabIndex = 0;
             this.TransferersGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.TransferersGridView});
@@ -2744,7 +2809,7 @@
             this.barDockControl15.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl15.Location = new System.Drawing.Point(0, 24);
             this.barDockControl15.Manager = this.TransferersBarManager;
-            this.barDockControl15.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl15.Size = new System.Drawing.Size(0, 125);
             // 
             // TransferersBarManager
             // 
@@ -2817,23 +2882,38 @@
             this.barDockControl13.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl13.Location = new System.Drawing.Point(0, 0);
             this.barDockControl13.Manager = this.TransferersBarManager;
-            this.barDockControl13.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl13.Size = new System.Drawing.Size(974, 24);
             // 
             // barDockControl14
             // 
             this.barDockControl14.CausesValidation = false;
             this.barDockControl14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl14.Location = new System.Drawing.Point(0, 185);
+            this.barDockControl14.Location = new System.Drawing.Point(0, 149);
             this.barDockControl14.Manager = this.TransferersBarManager;
-            this.barDockControl14.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl14.Size = new System.Drawing.Size(974, 0);
             // 
             // barDockControl16
             // 
             this.barDockControl16.CausesValidation = false;
             this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl16.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl16.Location = new System.Drawing.Point(974, 24);
             this.barDockControl16.Manager = this.TransferersBarManager;
-            this.barDockControl16.Size = new System.Drawing.Size(0, 161);
+            this.barDockControl16.Size = new System.Drawing.Size(0, 125);
+            // 
+            // SexeTextEdit
+            // 
+            this.SexeTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "Sexe", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.SexeTextEdit.Location = new System.Drawing.Point(839, 191);
+            this.SexeTextEdit.MenuManager = this.mainRibbonControl;
+            this.SexeTextEdit.Name = "SexeTextEdit";
+            this.SexeTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SexeTextEdit.Properties.Items.AddRange(new object[] {
+            "Homme",
+            "Femme"});
+            this.SexeTextEdit.Size = new System.Drawing.Size(159, 20);
+            this.SexeTextEdit.StyleController = this.dataLayoutControl1;
+            this.SexeTextEdit.TabIndex = 14;
             // 
             // layoutControlGroup1
             // 
@@ -2842,7 +2922,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 639);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1022, 579);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -2857,14 +2937,14 @@
             this.ItemForID_ETAB});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 619);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1002, 559);
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 383);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 359);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 236);
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup8;
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(1002, 200);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3,
             this.layoutControlGroup4,
@@ -2881,7 +2961,7 @@
             this.ItemForAbsences});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForAbsences";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 189);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(978, 153);
             this.layoutControlGroup3.Text = "Absences";
             // 
             // ItemForAbsences
@@ -2889,7 +2969,7 @@
             this.ItemForAbsences.Control = this.AbsencesXtraUserControl;
             this.ItemForAbsences.Location = new System.Drawing.Point(0, 0);
             this.ItemForAbsences.Name = "ItemForAbsences";
-            this.ItemForAbsences.Size = new System.Drawing.Size(980, 189);
+            this.ItemForAbsences.Size = new System.Drawing.Size(978, 153);
             this.ItemForAbsences.StartNewLine = true;
             this.ItemForAbsences.Text = "Absences";
             this.ItemForAbsences.TextSize = new System.Drawing.Size(0, 0);
@@ -2901,7 +2981,7 @@
             this.ItemForAvenant_contrat_prorogation});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "autoGroupForAvenant_contrat_prorogation";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(980, 189);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(978, 153);
             this.layoutControlGroup4.Text = "Avenant de contrat de prorogation";
             // 
             // ItemForAvenant_contrat_prorogation
@@ -2909,7 +2989,7 @@
             this.ItemForAvenant_contrat_prorogation.Control = this.Avenant_contrat_prorogationXtraUserControl;
             this.ItemForAvenant_contrat_prorogation.Location = new System.Drawing.Point(0, 0);
             this.ItemForAvenant_contrat_prorogation.Name = "ItemForAvenant_contrat_prorogation";
-            this.ItemForAvenant_contrat_prorogation.Size = new System.Drawing.Size(980, 189);
+            this.ItemForAvenant_contrat_prorogation.Size = new System.Drawing.Size(978, 153);
             this.ItemForAvenant_contrat_prorogation.StartNewLine = true;
             this.ItemForAvenant_contrat_prorogation.Text = "Avenant_contrat_prorogation";
             this.ItemForAvenant_contrat_prorogation.TextSize = new System.Drawing.Size(0, 0);
@@ -2921,7 +3001,7 @@
             this.ItemForContract_avenant_changement});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "autoGroupForContract_avenant_changement";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(980, 189);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(978, 153);
             this.layoutControlGroup5.Text = "Avenant de contrat changement d\'employeur";
             // 
             // ItemForContract_avenant_changement
@@ -2929,7 +3009,7 @@
             this.ItemForContract_avenant_changement.Control = this.Contract_avenant_changementXtraUserControl;
             this.ItemForContract_avenant_changement.Location = new System.Drawing.Point(0, 0);
             this.ItemForContract_avenant_changement.Name = "ItemForContract_avenant_changement";
-            this.ItemForContract_avenant_changement.Size = new System.Drawing.Size(980, 189);
+            this.ItemForContract_avenant_changement.Size = new System.Drawing.Size(978, 153);
             this.ItemForContract_avenant_changement.StartNewLine = true;
             this.ItemForContract_avenant_changement.Text = "Contract_avenant_changement";
             this.ItemForContract_avenant_changement.TextSize = new System.Drawing.Size(0, 0);
@@ -2941,7 +3021,7 @@
             this.ItemForDecisions});
             this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup6.Name = "autoGroupForDecisions";
-            this.layoutControlGroup6.Size = new System.Drawing.Size(980, 189);
+            this.layoutControlGroup6.Size = new System.Drawing.Size(978, 153);
             this.layoutControlGroup6.Text = "Decisions";
             // 
             // ItemForDecisions
@@ -2949,7 +3029,7 @@
             this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
             this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
             this.ItemForDecisions.Name = "ItemForDecisions";
-            this.ItemForDecisions.Size = new System.Drawing.Size(980, 189);
+            this.ItemForDecisions.Size = new System.Drawing.Size(978, 153);
             this.ItemForDecisions.StartNewLine = true;
             this.ItemForDecisions.Text = "Decisions";
             this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
@@ -2961,7 +3041,7 @@
             this.ItemForEvaluations});
             this.layoutControlGroup7.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup7.Name = "autoGroupForEvaluations";
-            this.layoutControlGroup7.Size = new System.Drawing.Size(980, 189);
+            this.layoutControlGroup7.Size = new System.Drawing.Size(978, 153);
             this.layoutControlGroup7.Text = "Evaluations";
             // 
             // ItemForEvaluations
@@ -2969,7 +3049,7 @@
             this.ItemForEvaluations.Control = this.EvaluationsXtraUserControl;
             this.ItemForEvaluations.Location = new System.Drawing.Point(0, 0);
             this.ItemForEvaluations.Name = "ItemForEvaluations";
-            this.ItemForEvaluations.Size = new System.Drawing.Size(980, 189);
+            this.ItemForEvaluations.Size = new System.Drawing.Size(978, 153);
             this.ItemForEvaluations.StartNewLine = true;
             this.ItemForEvaluations.Text = "Evaluations";
             this.ItemForEvaluations.TextSize = new System.Drawing.Size(0, 0);
@@ -2981,7 +3061,7 @@
             this.ItemForSuiver_stagiaire});
             this.layoutControlGroup8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup8.Name = "autoGroupForSuiver_stagiaire";
-            this.layoutControlGroup8.Size = new System.Drawing.Size(980, 189);
+            this.layoutControlGroup8.Size = new System.Drawing.Size(978, 153);
             this.layoutControlGroup8.Text = "Suivie du stagiaire ";
             // 
             // ItemForSuiver_stagiaire
@@ -2989,7 +3069,7 @@
             this.ItemForSuiver_stagiaire.Control = this.Suiver_stagiaireXtraUserControl;
             this.ItemForSuiver_stagiaire.Location = new System.Drawing.Point(0, 0);
             this.ItemForSuiver_stagiaire.Name = "ItemForSuiver_stagiaire";
-            this.ItemForSuiver_stagiaire.Size = new System.Drawing.Size(980, 189);
+            this.ItemForSuiver_stagiaire.Size = new System.Drawing.Size(978, 153);
             this.ItemForSuiver_stagiaire.StartNewLine = true;
             this.ItemForSuiver_stagiaire.Text = "Suiver_stagiaire";
             this.ItemForSuiver_stagiaire.TextSize = new System.Drawing.Size(0, 0);
@@ -3001,7 +3081,7 @@
             this.ItemForTransferers});
             this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup9.Name = "autoGroupForTransferers";
-            this.layoutControlGroup9.Size = new System.Drawing.Size(980, 189);
+            this.layoutControlGroup9.Size = new System.Drawing.Size(978, 153);
             this.layoutControlGroup9.Text = "Transferts";
             // 
             // ItemForTransferers
@@ -3009,7 +3089,7 @@
             this.ItemForTransferers.Control = this.TransferersXtraUserControl;
             this.ItemForTransferers.Location = new System.Drawing.Point(0, 0);
             this.ItemForTransferers.Name = "ItemForTransferers";
-            this.ItemForTransferers.Size = new System.Drawing.Size(980, 189);
+            this.ItemForTransferers.Size = new System.Drawing.Size(978, 153);
             this.ItemForTransferers.StartNewLine = true;
             this.ItemForTransferers.Text = "Transferers";
             this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
@@ -3020,168 +3100,11 @@
             this.tabbedControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.tabbedControlGroup2.Name = "tabbedControlGroup2";
             this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup10;
-            this.tabbedControlGroup2.Size = new System.Drawing.Size(1004, 335);
+            this.tabbedControlGroup2.Size = new System.Drawing.Size(1002, 311);
             this.tabbedControlGroup2.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup10,
             this.layoutControlGroup11,
             this.layoutControlGroup12});
-            // 
-            // layoutControlGroup11
-            // 
-            this.layoutControlGroup11.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForPrenom_Père_STG,
-            this.ItemForNom_Mère_STG,
-            this.ItemForSituation_Familiale_STG,
-            this.ItemForid_tuteur,
-            this.ItemForPrenom_Père_STG_ar,
-            this.ItemForNom_Mère_STG_ar,
-            this.ItemForPrenom_Mère_STG_ar,
-            this.ItemForProfession_Mère_STG,
-            this.ItemForSituation_Familiale_Parents_STG,
-            this.ItemForNbr_Frère_STG,
-            this.ItemForPrenom_Mère_STG,
-            this.ItemForProfession_Père_STG});
-            this.layoutControlGroup11.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup11.Name = "layoutControlGroup11";
-            this.layoutControlGroup11.Size = new System.Drawing.Size(980, 288);
-            this.layoutControlGroup11.Text = "Informations familiales";
-            // 
-            // ItemForPrenom_Père_STG
-            // 
-            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Père_STG.Control = this.Prenom_Père_STGTextEdit;
-            this.ItemForPrenom_Père_STG.Location = new System.Drawing.Point(0, 0);
-            this.ItemForPrenom_Père_STG.Name = "ItemForPrenom_Père_STG";
-            this.ItemForPrenom_Père_STG.Size = new System.Drawing.Size(490, 24);
-            this.ItemForPrenom_Père_STG.Text = "Prenom du père du stagiaire";
-            this.ItemForPrenom_Père_STG.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForNom_Mère_STG
-            // 
-            this.ItemForNom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForNom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForNom_Mère_STG.Control = this.Nom_Mère_STGTextEdit;
-            this.ItemForNom_Mère_STG.Location = new System.Drawing.Point(0, 24);
-            this.ItemForNom_Mère_STG.Name = "ItemForNom_Mère_STG";
-            this.ItemForNom_Mère_STG.Size = new System.Drawing.Size(490, 24);
-            this.ItemForNom_Mère_STG.Text = "Nom de la mère du stagiaire";
-            this.ItemForNom_Mère_STG.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForSituation_Familiale_STG
-            // 
-            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForSituation_Familiale_STG.Control = this.Situation_Familiale_STGTextEdit;
-            this.ItemForSituation_Familiale_STG.Location = new System.Drawing.Point(308, 72);
-            this.ItemForSituation_Familiale_STG.Name = "ItemForSituation_Familiale_STG";
-            this.ItemForSituation_Familiale_STG.Size = new System.Drawing.Size(334, 24);
-            this.ItemForSituation_Familiale_STG.Text = "Situation familiale du stagiaire";
-            this.ItemForSituation_Familiale_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.ItemForSituation_Familiale_STG.TextSize = new System.Drawing.Size(215, 13);
-            this.ItemForSituation_Familiale_STG.TextToControlDistance = 5;
-            // 
-            // ItemForid_tuteur
-            // 
-            this.ItemForid_tuteur.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForid_tuteur.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForid_tuteur.Control = this.tuteurLookUpEdit;
-            this.ItemForid_tuteur.Location = new System.Drawing.Point(0, 120);
-            this.ItemForid_tuteur.Name = "ItemForid_tuteur";
-            this.ItemForid_tuteur.Size = new System.Drawing.Size(980, 168);
-            this.ItemForid_tuteur.Text = "Numéro du tuteur";
-            this.ItemForid_tuteur.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForPrenom_Père_STG_ar
-            // 
-            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Père_STG_ar.Control = this.Prenom_Père_STG_arTextEdit;
-            this.ItemForPrenom_Père_STG_ar.Location = new System.Drawing.Point(490, 0);
-            this.ItemForPrenom_Père_STG_ar.Name = "ItemForPrenom_Père_STG_ar";
-            this.ItemForPrenom_Père_STG_ar.Size = new System.Drawing.Size(490, 24);
-            this.ItemForPrenom_Père_STG_ar.Text = "أسم أب المتمهب  ";
-            this.ItemForPrenom_Père_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForPrenom_Père_STG_ar.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForNom_Mère_STG_ar
-            // 
-            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForNom_Mère_STG_ar.Control = this.Nom_Mère_STG_arTextEdit;
-            this.ItemForNom_Mère_STG_ar.Location = new System.Drawing.Point(490, 24);
-            this.ItemForNom_Mère_STG_ar.Name = "ItemForNom_Mère_STG_ar";
-            this.ItemForNom_Mère_STG_ar.Size = new System.Drawing.Size(490, 24);
-            this.ItemForNom_Mère_STG_ar.Text = "لقب أم المتمهن";
-            this.ItemForNom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForNom_Mère_STG_ar.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForPrenom_Mère_STG_ar
-            // 
-            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Mère_STG_ar.Control = this.Prenom_Mère_STG_arTextEdit;
-            this.ItemForPrenom_Mère_STG_ar.Location = new System.Drawing.Point(490, 48);
-            this.ItemForPrenom_Mère_STG_ar.Name = "ItemForPrenom_Mère_STG_ar";
-            this.ItemForPrenom_Mère_STG_ar.Size = new System.Drawing.Size(490, 24);
-            this.ItemForPrenom_Mère_STG_ar.Text = "Prénom de la mère du stagiaire en arabe";
-            this.ItemForPrenom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForPrenom_Mère_STG_ar.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForProfession_Mère_STG
-            // 
-            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForProfession_Mère_STG.Control = this.Profession_Mère_STGTextEdit;
-            this.ItemForProfession_Mère_STG.Location = new System.Drawing.Point(490, 96);
-            this.ItemForProfession_Mère_STG.Name = "ItemForProfession_Mère_STG";
-            this.ItemForProfession_Mère_STG.Size = new System.Drawing.Size(490, 24);
-            this.ItemForProfession_Mère_STG.Text = "Profession de la mère du stagiaire";
-            this.ItemForProfession_Mère_STG.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForSituation_Familiale_Parents_STG
-            // 
-            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForSituation_Familiale_Parents_STG.Control = this.Situation_Familiale_Parents_STGTextEdit;
-            this.ItemForSituation_Familiale_Parents_STG.Location = new System.Drawing.Point(642, 72);
-            this.ItemForSituation_Familiale_Parents_STG.Name = "ItemForSituation_Familiale_Parents_STG";
-            this.ItemForSituation_Familiale_Parents_STG.Size = new System.Drawing.Size(338, 24);
-            this.ItemForSituation_Familiale_Parents_STG.Text = "Situation familiale des parents du stagiaire";
-            this.ItemForSituation_Familiale_Parents_STG.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForNbr_Frère_STG
-            // 
-            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForNbr_Frère_STG.Control = this.Nbr_Frère_STGTextEdit;
-            this.ItemForNbr_Frère_STG.Location = new System.Drawing.Point(0, 72);
-            this.ItemForNbr_Frère_STG.Name = "ItemForNbr_Frère_STG";
-            this.ItemForNbr_Frère_STG.Size = new System.Drawing.Size(308, 24);
-            this.ItemForNbr_Frère_STG.Text = "Nombre de freres et soeur du stagiaire";
-            this.ItemForNbr_Frère_STG.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForPrenom_Mère_STG
-            // 
-            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Mère_STG.Control = this.Prenom_Mère_STGTextEdit;
-            this.ItemForPrenom_Mère_STG.Location = new System.Drawing.Point(0, 48);
-            this.ItemForPrenom_Mère_STG.Name = "ItemForPrenom_Mère_STG";
-            this.ItemForPrenom_Mère_STG.Size = new System.Drawing.Size(490, 24);
-            this.ItemForPrenom_Mère_STG.Text = "Prénom de la mère du stagiaire";
-            this.ItemForPrenom_Mère_STG.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForProfession_Père_STG
-            // 
-            this.ItemForProfession_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForProfession_Père_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForProfession_Père_STG.Control = this.Profession_Père_STGTextEdit;
-            this.ItemForProfession_Père_STG.Location = new System.Drawing.Point(0, 96);
-            this.ItemForProfession_Père_STG.Name = "ItemForProfession_Père_STG";
-            this.ItemForProfession_Père_STG.Size = new System.Drawing.Size(490, 24);
-            this.ItemForProfession_Père_STG.Text = "Profession du père du stagiaire";
-            this.ItemForProfession_Père_STG.TextSize = new System.Drawing.Size(242, 13);
             // 
             // layoutControlGroup10
             // 
@@ -3191,98 +3114,79 @@
             this.ItemForNum_STG,
             this.ItemForNom,
             this.ItemForPrenom,
-            this.ItemForLieu_Naissance,
-            this.ItemForAdresse,
             this.ItemForCode_postal,
-            this.ItemForSexe,
             this.ItemForEtranger,
             this.ItemForHandicape,
             this.ItemForTelephone,
-            this.ItemForNivo_SCO,
             this.ItemForNom_ar,
             this.ItemForPrenom_ar,
             this.ItemForDate_de_Naissance,
-            this.ItemForAdresse_ar,
-            this.ItemForNivo_SCO_ar,
-            this.ItemForE_Maile,
             this.ItemForphoto,
             this.ItemForNationalité_STG,
             this.ItemForObservation_handicape,
-            this.ItemForNum_Diplome_STG});
+            this.ItemForAdresse_ar,
+            this.ItemForAdresse,
+            this.ItemForNivo_SCO_ar,
+            this.ItemForNum_Diplome_STG,
+            this.ItemForNivo_SCO,
+            this.ItemForLieu_Naissance,
+            this.ItemForE_Maile,
+            this.ItemForSexe});
             this.layoutControlGroup10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup10.Name = "layoutControlGroup10";
-            this.layoutControlGroup10.Size = new System.Drawing.Size(980, 288);
+            this.layoutControlGroup10.Size = new System.Drawing.Size(978, 264);
             this.layoutControlGroup10.Text = "Infomations";
             // 
             // ItemForNum_STG
             // 
+            this.ItemForNum_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForNum_STG.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForNum_STG.Control = this.Num_STGTextEdit;
-            this.ItemForNum_STG.Location = new System.Drawing.Point(234, 0);
+            this.ItemForNum_STG.Location = new System.Drawing.Point(233, 0);
             this.ItemForNum_STG.Name = "ItemForNum_STG";
-            this.ItemForNum_STG.Size = new System.Drawing.Size(746, 24);
+            this.ItemForNum_STG.Size = new System.Drawing.Size(745, 24);
             this.ItemForNum_STG.Text = "Numéro du stagiaire";
-            this.ItemForNum_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForNum_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForNom
             // 
+            this.ItemForNom.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForNom.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForNom.Control = this.NomTextEdit;
-            this.ItemForNom.Location = new System.Drawing.Point(234, 24);
+            this.ItemForNom.Location = new System.Drawing.Point(233, 24);
             this.ItemForNom.Name = "ItemForNom";
-            this.ItemForNom.Size = new System.Drawing.Size(393, 24);
+            this.ItemForNom.Size = new System.Drawing.Size(392, 24);
             this.ItemForNom.Text = "Nom du stagiaire";
-            this.ItemForNom.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForNom.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForPrenom
             // 
+            this.ItemForPrenom.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForPrenom.Control = this.PrenomTextEdit;
-            this.ItemForPrenom.Location = new System.Drawing.Point(234, 48);
+            this.ItemForPrenom.Location = new System.Drawing.Point(233, 48);
             this.ItemForPrenom.Name = "ItemForPrenom";
-            this.ItemForPrenom.Size = new System.Drawing.Size(393, 24);
+            this.ItemForPrenom.Size = new System.Drawing.Size(392, 24);
             this.ItemForPrenom.Text = "Prenom du stagiaire";
-            this.ItemForPrenom.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForLieu_Naissance
-            // 
-            this.ItemForLieu_Naissance.Control = this.CommuneLookUpEdit;
-            this.ItemForLieu_Naissance.Location = new System.Drawing.Point(627, 72);
-            this.ItemForLieu_Naissance.Name = "ItemForLieu_Naissance";
-            this.ItemForLieu_Naissance.Size = new System.Drawing.Size(353, 24);
-            this.ItemForLieu_Naissance.Text = "Lieu de naissance";
-            this.ItemForLieu_Naissance.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForAdresse
-            // 
-            this.ItemForAdresse.Control = this.AdresseTextEdit;
-            this.ItemForAdresse.Location = new System.Drawing.Point(234, 96);
-            this.ItemForAdresse.Name = "ItemForAdresse";
-            this.ItemForAdresse.Size = new System.Drawing.Size(393, 24);
-            this.ItemForAdresse.Text = "Adresse du stagiaire";
-            this.ItemForAdresse.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForPrenom.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForCode_postal
             // 
+            this.ItemForCode_postal.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForCode_postal.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForCode_postal.Control = this.Code_Postal1LookUpEdit;
-            this.ItemForCode_postal.Location = new System.Drawing.Point(234, 120);
+            this.ItemForCode_postal.Location = new System.Drawing.Point(233, 144);
             this.ItemForCode_postal.Name = "ItemForCode_postal";
-            this.ItemForCode_postal.Size = new System.Drawing.Size(746, 24);
+            this.ItemForCode_postal.Size = new System.Drawing.Size(479, 24);
             this.ItemForCode_postal.Text = "Code postal du stagiaire";
-            this.ItemForCode_postal.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForSexe
-            // 
-            this.ItemForSexe.Control = this.SexeTextEdit;
-            this.ItemForSexe.Location = new System.Drawing.Point(234, 144);
-            this.ItemForSexe.Name = "ItemForSexe";
-            this.ItemForSexe.Size = new System.Drawing.Size(746, 24);
-            this.ItemForSexe.Text = "Sexe du stagiaire";
-            this.ItemForSexe.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForCode_postal.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForEtranger
             // 
             this.ItemForEtranger.Control = this.EtrangerCheckEdit;
-            this.ItemForEtranger.Location = new System.Drawing.Point(234, 168);
+            this.ItemForEtranger.Location = new System.Drawing.Point(233, 168);
             this.ItemForEtranger.Name = "ItemForEtranger";
-            this.ItemForEtranger.Size = new System.Drawing.Size(110, 24);
+            this.ItemForEtranger.Size = new System.Drawing.Size(123, 24);
             this.ItemForEtranger.Text = "Etranger";
             this.ItemForEtranger.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.ItemForEtranger.TextSize = new System.Drawing.Size(0, 0);
@@ -3292,103 +3196,69 @@
             // ItemForHandicape
             // 
             this.ItemForHandicape.Control = this.HandicapeCheckEdit;
-            this.ItemForHandicape.Location = new System.Drawing.Point(234, 192);
+            this.ItemForHandicape.Location = new System.Drawing.Point(233, 192);
             this.ItemForHandicape.Name = "ItemForHandicape";
-            this.ItemForHandicape.Size = new System.Drawing.Size(87, 24);
+            this.ItemForHandicape.Size = new System.Drawing.Size(111, 24);
             this.ItemForHandicape.Text = "Handicape";
             this.ItemForHandicape.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForHandicape.TextVisible = false;
             // 
             // ItemForTelephone
             // 
+            this.ItemForTelephone.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForTelephone.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForTelephone.Control = this.TelephoneTextEdit;
-            this.ItemForTelephone.Location = new System.Drawing.Point(234, 216);
+            this.ItemForTelephone.Location = new System.Drawing.Point(233, 216);
             this.ItemForTelephone.Name = "ItemForTelephone";
-            this.ItemForTelephone.Size = new System.Drawing.Size(393, 24);
+            this.ItemForTelephone.Size = new System.Drawing.Size(372, 24);
             this.ItemForTelephone.Text = "Telephone";
-            this.ItemForTelephone.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForNivo_SCO
-            // 
-            this.ItemForNivo_SCO.Control = this.Nivo_SCOTextEdit;
-            this.ItemForNivo_SCO.Location = new System.Drawing.Point(234, 240);
-            this.ItemForNivo_SCO.Name = "ItemForNivo_SCO";
-            this.ItemForNivo_SCO.Size = new System.Drawing.Size(393, 24);
-            this.ItemForNivo_SCO.Text = "Niveau scolaire ";
-            this.ItemForNivo_SCO.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForTelephone.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForNom_ar
             // 
             this.ItemForNom_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.ItemForNom_ar.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForNom_ar.Control = this.Nom_arTextEdit;
-            this.ItemForNom_ar.Location = new System.Drawing.Point(627, 24);
+            this.ItemForNom_ar.Location = new System.Drawing.Point(625, 24);
             this.ItemForNom_ar.Name = "ItemForNom_ar";
             this.ItemForNom_ar.Size = new System.Drawing.Size(353, 24);
             this.ItemForNom_ar.Text = "اللقب";
+            this.ItemForNom_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.ItemForNom_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForNom_ar.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForNom_ar.TextSize = new System.Drawing.Size(29, 13);
+            this.ItemForNom_ar.TextToControlDistance = 5;
             // 
             // ItemForPrenom_ar
             // 
             this.ItemForPrenom_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.ItemForPrenom_ar.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForPrenom_ar.Control = this.Prenom_arTextEdit;
-            this.ItemForPrenom_ar.Location = new System.Drawing.Point(627, 48);
+            this.ItemForPrenom_ar.Location = new System.Drawing.Point(625, 48);
             this.ItemForPrenom_ar.Name = "ItemForPrenom_ar";
             this.ItemForPrenom_ar.Size = new System.Drawing.Size(353, 24);
             this.ItemForPrenom_ar.Text = "الإ سم";
+            this.ItemForPrenom_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.ItemForPrenom_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForPrenom_ar.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForPrenom_ar.TextSize = new System.Drawing.Size(35, 13);
+            this.ItemForPrenom_ar.TextToControlDistance = 5;
             // 
             // ItemForDate_de_Naissance
             // 
+            this.ItemForDate_de_Naissance.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForDate_de_Naissance.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForDate_de_Naissance.Control = this.Date_de_NaissanceDateEdit;
-            this.ItemForDate_de_Naissance.Location = new System.Drawing.Point(234, 72);
+            this.ItemForDate_de_Naissance.Location = new System.Drawing.Point(233, 120);
             this.ItemForDate_de_Naissance.Name = "ItemForDate_de_Naissance";
-            this.ItemForDate_de_Naissance.Size = new System.Drawing.Size(393, 24);
+            this.ItemForDate_de_Naissance.Size = new System.Drawing.Size(392, 24);
             this.ItemForDate_de_Naissance.Text = "Date de naissance du stagiaire";
-            this.ItemForDate_de_Naissance.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForAdresse_ar
-            // 
-            this.ItemForAdresse_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.ItemForAdresse_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForAdresse_ar.Control = this.Adresse_arTextEdit;
-            this.ItemForAdresse_ar.Location = new System.Drawing.Point(627, 96);
-            this.ItemForAdresse_ar.Name = "ItemForAdresse_ar";
-            this.ItemForAdresse_ar.Size = new System.Drawing.Size(353, 24);
-            this.ItemForAdresse_ar.Text = "العنوان";
-            this.ItemForAdresse_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForAdresse_ar.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForNivo_SCO_ar
-            // 
-            this.ItemForNivo_SCO_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.ItemForNivo_SCO_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForNivo_SCO_ar.Control = this.Nivo_SCO_arTextEdit;
-            this.ItemForNivo_SCO_ar.Location = new System.Drawing.Point(627, 240);
-            this.ItemForNivo_SCO_ar.Name = "ItemForNivo_SCO_ar";
-            this.ItemForNivo_SCO_ar.Size = new System.Drawing.Size(353, 48);
-            this.ItemForNivo_SCO_ar.Text = "المستوى الدراسي";
-            this.ItemForNivo_SCO_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForNivo_SCO_ar.TextSize = new System.Drawing.Size(242, 13);
-            // 
-            // ItemForE_Maile
-            // 
-            this.ItemForE_Maile.Control = this.E_MaileTextEdit;
-            this.ItemForE_Maile.Location = new System.Drawing.Point(627, 216);
-            this.ItemForE_Maile.Name = "ItemForE_Maile";
-            this.ItemForE_Maile.Size = new System.Drawing.Size(353, 24);
-            this.ItemForE_Maile.Text = "E-mail";
-            this.ItemForE_Maile.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForDate_de_Naissance.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForphoto
             // 
             this.ItemForphoto.Control = this.photoPictureEdit;
             this.ItemForphoto.Location = new System.Drawing.Point(0, 0);
             this.ItemForphoto.Name = "ItemForphoto";
-            this.ItemForphoto.Size = new System.Drawing.Size(234, 288);
+            this.ItemForphoto.Size = new System.Drawing.Size(233, 264);
             this.ItemForphoto.StartNewLine = true;
             this.ItemForphoto.Text = "photo";
             this.ItemForphoto.TextSize = new System.Drawing.Size(0, 0);
@@ -3396,30 +3266,300 @@
             // 
             // ItemForNationalité_STG
             // 
+            this.ItemForNationalité_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForNationalité_STG.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForNationalité_STG.Control = this.Nationalité_STGTextEdit;
-            this.ItemForNationalité_STG.Location = new System.Drawing.Point(344, 168);
+            this.ItemForNationalité_STG.Location = new System.Drawing.Point(356, 168);
+            this.ItemForNationalité_STG.MaxSize = new System.Drawing.Size(0, 24);
+            this.ItemForNationalité_STG.MinSize = new System.Drawing.Size(301, 24);
             this.ItemForNationalité_STG.Name = "ItemForNationalité_STG";
-            this.ItemForNationalité_STG.Size = new System.Drawing.Size(636, 24);
-            this.ItemForNationalité_STG.Text = "Nationalité du stagiaire ";
-            this.ItemForNationalité_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForNationalité_STG.Size = new System.Drawing.Size(622, 24);
+            this.ItemForNationalité_STG.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.ItemForNationalité_STG.Text = "  Nationalité du stagiaire ";
+            this.ItemForNationalité_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForNationalité_STG.TextSize = new System.Drawing.Size(140, 13);
+            this.ItemForNationalité_STG.TextToControlDistance = 5;
             // 
             // ItemForObservation_handicape
             // 
+            this.ItemForObservation_handicape.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForObservation_handicape.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForObservation_handicape.Control = this.Observation_handicapeTextEdit;
-            this.ItemForObservation_handicape.Location = new System.Drawing.Point(321, 192);
+            this.ItemForObservation_handicape.Location = new System.Drawing.Point(344, 192);
             this.ItemForObservation_handicape.Name = "ItemForObservation_handicape";
-            this.ItemForObservation_handicape.Size = new System.Drawing.Size(659, 24);
+            this.ItemForObservation_handicape.Size = new System.Drawing.Size(634, 24);
             this.ItemForObservation_handicape.Text = "Observation sur l\'handicap";
-            this.ItemForObservation_handicape.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForObservation_handicape.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForObservation_handicape.TextSize = new System.Drawing.Size(150, 13);
+            this.ItemForObservation_handicape.TextToControlDistance = 5;
+            // 
+            // ItemForAdresse_ar
+            // 
+            this.ItemForAdresse_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForAdresse_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForAdresse_ar.Control = this.Adresse_arTextEdit;
+            this.ItemForAdresse_ar.Location = new System.Drawing.Point(625, 72);
+            this.ItemForAdresse_ar.Name = "ItemForAdresse_ar";
+            this.ItemForAdresse_ar.Size = new System.Drawing.Size(353, 24);
+            this.ItemForAdresse_ar.Text = "العنوان";
+            this.ItemForAdresse_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForAdresse_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForAdresse_ar.TextSize = new System.Drawing.Size(37, 13);
+            this.ItemForAdresse_ar.TextToControlDistance = 5;
+            // 
+            // ItemForAdresse
+            // 
+            this.ItemForAdresse.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForAdresse.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForAdresse.Control = this.AdresseTextEdit;
+            this.ItemForAdresse.Location = new System.Drawing.Point(233, 72);
+            this.ItemForAdresse.Name = "ItemForAdresse";
+            this.ItemForAdresse.Size = new System.Drawing.Size(392, 24);
+            this.ItemForAdresse.Text = "Adresse du stagiaire";
+            this.ItemForAdresse.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForNivo_SCO_ar
+            // 
+            this.ItemForNivo_SCO_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForNivo_SCO_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNivo_SCO_ar.Control = this.Nivo_SCO_arTextEdit;
+            this.ItemForNivo_SCO_ar.Location = new System.Drawing.Point(625, 96);
+            this.ItemForNivo_SCO_ar.Name = "ItemForNivo_SCO_ar";
+            this.ItemForNivo_SCO_ar.Size = new System.Drawing.Size(353, 24);
+            this.ItemForNivo_SCO_ar.Text = "المستوى الدراسي";
+            this.ItemForNivo_SCO_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForNivo_SCO_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForNivo_SCO_ar.TextSize = new System.Drawing.Size(100, 13);
+            this.ItemForNivo_SCO_ar.TextToControlDistance = 5;
             // 
             // ItemForNum_Diplome_STG
             // 
+            this.ItemForNum_Diplome_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForNum_Diplome_STG.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForNum_Diplome_STG.Control = this.Num_Diplome_STGTextEdit;
-            this.ItemForNum_Diplome_STG.Location = new System.Drawing.Point(234, 264);
+            this.ItemForNum_Diplome_STG.Location = new System.Drawing.Point(233, 240);
             this.ItemForNum_Diplome_STG.Name = "ItemForNum_Diplome_STG";
-            this.ItemForNum_Diplome_STG.Size = new System.Drawing.Size(393, 24);
+            this.ItemForNum_Diplome_STG.Size = new System.Drawing.Size(745, 24);
             this.ItemForNum_Diplome_STG.Text = "Numéro du diplome du stagiaire";
-            this.ItemForNum_Diplome_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForNum_Diplome_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForNivo_SCO
+            // 
+            this.ItemForNivo_SCO.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForNivo_SCO.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNivo_SCO.Control = this.Nivo_SCOTextEdit;
+            this.ItemForNivo_SCO.Location = new System.Drawing.Point(233, 96);
+            this.ItemForNivo_SCO.Name = "ItemForNivo_SCO";
+            this.ItemForNivo_SCO.Size = new System.Drawing.Size(392, 24);
+            this.ItemForNivo_SCO.Text = "Niveau scolaire ";
+            this.ItemForNivo_SCO.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForLieu_Naissance
+            // 
+            this.ItemForLieu_Naissance.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForLieu_Naissance.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForLieu_Naissance.Control = this.CommuneLookUpEdit;
+            this.ItemForLieu_Naissance.Location = new System.Drawing.Point(625, 120);
+            this.ItemForLieu_Naissance.Name = "ItemForLieu_Naissance";
+            this.ItemForLieu_Naissance.Size = new System.Drawing.Size(353, 24);
+            this.ItemForLieu_Naissance.Text = "Lieu de naissance";
+            this.ItemForLieu_Naissance.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForLieu_Naissance.TextSize = new System.Drawing.Size(99, 13);
+            this.ItemForLieu_Naissance.TextToControlDistance = 5;
+            // 
+            // ItemForE_Maile
+            // 
+            this.ItemForE_Maile.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForE_Maile.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForE_Maile.Control = this.E_MaileTextEdit;
+            this.ItemForE_Maile.Location = new System.Drawing.Point(605, 216);
+            this.ItemForE_Maile.Name = "ItemForE_Maile";
+            this.ItemForE_Maile.Size = new System.Drawing.Size(373, 24);
+            this.ItemForE_Maile.Text = "E-mail    ";
+            this.ItemForE_Maile.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForE_Maile.TextSize = new System.Drawing.Size(47, 13);
+            this.ItemForE_Maile.TextToControlDistance = 5;
+            // 
+            // ItemForSexe
+            // 
+            this.ItemForSexe.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForSexe.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForSexe.Control = this.SexeTextEdit;
+            this.ItemForSexe.Location = new System.Drawing.Point(712, 144);
+            this.ItemForSexe.Name = "ItemForSexe";
+            this.ItemForSexe.Size = new System.Drawing.Size(266, 24);
+            this.ItemForSexe.Text = "Sexe du stagiaire";
+            this.ItemForSexe.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForSexe.TextSize = new System.Drawing.Size(98, 13);
+            this.ItemForSexe.TextToControlDistance = 5;
+            // 
+            // layoutControlGroup11
+            // 
+            this.layoutControlGroup11.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForPrenom_Père_STG,
+            this.ItemForNom_Mère_STG,
+            this.ItemForid_tuteur,
+            this.ItemForPrenom_Père_STG_ar,
+            this.ItemForNom_Mère_STG_ar,
+            this.ItemForPrenom_Mère_STG_ar,
+            this.ItemForProfession_Mère_STG,
+            this.ItemForNbr_Frère_STG,
+            this.ItemForPrenom_Mère_STG,
+            this.ItemForProfession_Père_STG,
+            this.ItemForSituation_Familiale_STG,
+            this.ItemForSituation_Familiale_Parents_STG});
+            this.layoutControlGroup11.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup11.Name = "layoutControlGroup11";
+            this.layoutControlGroup11.Size = new System.Drawing.Size(978, 264);
+            this.layoutControlGroup11.Text = "Informations familiales";
+            // 
+            // ItemForPrenom_Père_STG
+            // 
+            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Père_STG.Control = this.Prenom_Père_STGTextEdit;
+            this.ItemForPrenom_Père_STG.Location = new System.Drawing.Point(0, 0);
+            this.ItemForPrenom_Père_STG.Name = "ItemForPrenom_Père_STG";
+            this.ItemForPrenom_Père_STG.Size = new System.Drawing.Size(489, 24);
+            this.ItemForPrenom_Père_STG.Text = "Prenom du père du stagiaire";
+            this.ItemForPrenom_Père_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForNom_Mère_STG
+            // 
+            this.ItemForNom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForNom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNom_Mère_STG.Control = this.Nom_Mère_STGTextEdit;
+            this.ItemForNom_Mère_STG.Location = new System.Drawing.Point(0, 24);
+            this.ItemForNom_Mère_STG.Name = "ItemForNom_Mère_STG";
+            this.ItemForNom_Mère_STG.Size = new System.Drawing.Size(489, 24);
+            this.ItemForNom_Mère_STG.Text = "Nom de la mère du stagiaire";
+            this.ItemForNom_Mère_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForid_tuteur
+            // 
+            this.ItemForid_tuteur.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForid_tuteur.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForid_tuteur.Control = this.tuteurLookUpEdit;
+            this.ItemForid_tuteur.Location = new System.Drawing.Point(0, 168);
+            this.ItemForid_tuteur.Name = "ItemForid_tuteur";
+            this.ItemForid_tuteur.Size = new System.Drawing.Size(978, 96);
+            this.ItemForid_tuteur.Text = "Numéro du tuteur";
+            this.ItemForid_tuteur.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForPrenom_Père_STG_ar
+            // 
+            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Père_STG_ar.Control = this.Prenom_Père_STG_arTextEdit;
+            this.ItemForPrenom_Père_STG_ar.CustomizationFormText = "أسم أب المتمهن ";
+            this.ItemForPrenom_Père_STG_ar.Location = new System.Drawing.Point(489, 0);
+            this.ItemForPrenom_Père_STG_ar.Name = "ItemForPrenom_Père_STG_ar";
+            this.ItemForPrenom_Père_STG_ar.Size = new System.Drawing.Size(489, 24);
+            this.ItemForPrenom_Père_STG_ar.Text = "أسم أب المتمهن (ة)";
+            this.ItemForPrenom_Père_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForPrenom_Père_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForPrenom_Père_STG_ar.TextSize = new System.Drawing.Size(104, 13);
+            this.ItemForPrenom_Père_STG_ar.TextToControlDistance = 5;
+            // 
+            // ItemForNom_Mère_STG_ar
+            // 
+            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNom_Mère_STG_ar.Control = this.Nom_Mère_STG_arTextEdit;
+            this.ItemForNom_Mère_STG_ar.Location = new System.Drawing.Point(489, 24);
+            this.ItemForNom_Mère_STG_ar.Name = "ItemForNom_Mère_STG_ar";
+            this.ItemForNom_Mère_STG_ar.Size = new System.Drawing.Size(489, 24);
+            this.ItemForNom_Mère_STG_ar.Text = "لقب أم المتمهن (ة)";
+            this.ItemForNom_Mère_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForNom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForNom_Mère_STG_ar.TextSize = new System.Drawing.Size(98, 13);
+            this.ItemForNom_Mère_STG_ar.TextToControlDistance = 5;
+            // 
+            // ItemForPrenom_Mère_STG_ar
+            // 
+            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Mère_STG_ar.Control = this.Prenom_Mère_STG_arTextEdit;
+            this.ItemForPrenom_Mère_STG_ar.Location = new System.Drawing.Point(489, 48);
+            this.ItemForPrenom_Mère_STG_ar.Name = "ItemForPrenom_Mère_STG_ar";
+            this.ItemForPrenom_Mère_STG_ar.Size = new System.Drawing.Size(489, 24);
+            this.ItemForPrenom_Mère_STG_ar.Text = "أسم أم المتمهن (ة) ";
+            this.ItemForPrenom_Mère_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForPrenom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForPrenom_Mère_STG_ar.TextSize = new System.Drawing.Size(104, 13);
+            this.ItemForPrenom_Mère_STG_ar.TextToControlDistance = 5;
+            // 
+            // ItemForProfession_Mère_STG
+            // 
+            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForProfession_Mère_STG.Control = this.Profession_Mère_STGTextEdit;
+            this.ItemForProfession_Mère_STG.Location = new System.Drawing.Point(489, 144);
+            this.ItemForProfession_Mère_STG.Name = "ItemForProfession_Mère_STG";
+            this.ItemForProfession_Mère_STG.Size = new System.Drawing.Size(489, 24);
+            this.ItemForProfession_Mère_STG.Text = "Profession de la mère du stagiaire";
+            this.ItemForProfession_Mère_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForProfession_Mère_STG.TextSize = new System.Drawing.Size(192, 13);
+            this.ItemForProfession_Mère_STG.TextToControlDistance = 5;
+            // 
+            // ItemForNbr_Frère_STG
+            // 
+            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNbr_Frère_STG.Control = this.Nbr_Frère_STGTextEdit;
+            this.ItemForNbr_Frère_STG.Location = new System.Drawing.Point(0, 96);
+            this.ItemForNbr_Frère_STG.Name = "ItemForNbr_Frère_STG";
+            this.ItemForNbr_Frère_STG.Size = new System.Drawing.Size(978, 24);
+            this.ItemForNbr_Frère_STG.Text = "Nombre de freres et soeur du stagiaire";
+            this.ItemForNbr_Frère_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForPrenom_Mère_STG
+            // 
+            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Mère_STG.Control = this.Prenom_Mère_STGTextEdit;
+            this.ItemForPrenom_Mère_STG.Location = new System.Drawing.Point(0, 48);
+            this.ItemForPrenom_Mère_STG.Name = "ItemForPrenom_Mère_STG";
+            this.ItemForPrenom_Mère_STG.Size = new System.Drawing.Size(489, 24);
+            this.ItemForPrenom_Mère_STG.Text = "Prénom de la mère du stagiaire";
+            this.ItemForPrenom_Mère_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForProfession_Père_STG
+            // 
+            this.ItemForProfession_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForProfession_Père_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForProfession_Père_STG.Control = this.Profession_Père_STGTextEdit;
+            this.ItemForProfession_Père_STG.Location = new System.Drawing.Point(0, 144);
+            this.ItemForProfession_Père_STG.Name = "ItemForProfession_Père_STG";
+            this.ItemForProfession_Père_STG.Size = new System.Drawing.Size(489, 24);
+            this.ItemForProfession_Père_STG.Text = "Profession du père du stagiaire";
+            this.ItemForProfession_Père_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForSituation_Familiale_STG
+            // 
+            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForSituation_Familiale_STG.Control = this.Situation_Familiale_STGTextEdit;
+            this.ItemForSituation_Familiale_STG.Location = new System.Drawing.Point(0, 120);
+            this.ItemForSituation_Familiale_STG.Name = "ItemForSituation_Familiale_STG";
+            this.ItemForSituation_Familiale_STG.Size = new System.Drawing.Size(978, 24);
+            this.ItemForSituation_Familiale_STG.Text = "Situation familiale du stagiaire                  ";
+            this.ItemForSituation_Familiale_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForSituation_Familiale_STG.TextSize = new System.Drawing.Size(226, 13);
+            this.ItemForSituation_Familiale_STG.TextToControlDistance = 5;
+            // 
+            // ItemForSituation_Familiale_Parents_STG
+            // 
+            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForSituation_Familiale_Parents_STG.Control = this.Situation_Familiale_Parents_STGTextEdit;
+            this.ItemForSituation_Familiale_Parents_STG.Location = new System.Drawing.Point(0, 72);
+            this.ItemForSituation_Familiale_Parents_STG.Name = "ItemForSituation_Familiale_Parents_STG";
+            this.ItemForSituation_Familiale_Parents_STG.Size = new System.Drawing.Size(978, 24);
+            this.ItemForSituation_Familiale_Parents_STG.Text = "Situation familiale des parents du stagiaire";
+            this.ItemForSituation_Familiale_Parents_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForSituation_Familiale_Parents_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForSituation_Familiale_Parents_STG.TextToControlDistance = 5;
             // 
             // layoutControlGroup12
             // 
@@ -3431,7 +3571,7 @@
             this.ItemForID_Maitre_Apprentissage});
             this.layoutControlGroup12.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup12.Name = "layoutControlGroup12";
-            this.layoutControlGroup12.Size = new System.Drawing.Size(980, 288);
+            this.layoutControlGroup12.Size = new System.Drawing.Size(978, 264);
             this.layoutControlGroup12.Text = "Employeur et Contrat";
             // 
             // ItemForNum_Validation_Contrat_STG
@@ -3439,73 +3579,79 @@
             this.ItemForNum_Validation_Contrat_STG.Control = this.Num_Validation_Contrat_STGTextEdit;
             this.ItemForNum_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 24);
             this.ItemForNum_Validation_Contrat_STG.Name = "ItemForNum_Validation_Contrat_STG";
-            this.ItemForNum_Validation_Contrat_STG.Size = new System.Drawing.Size(980, 24);
+            this.ItemForNum_Validation_Contrat_STG.Size = new System.Drawing.Size(978, 24);
             this.ItemForNum_Validation_Contrat_STG.Text = "Numéro de Validation du Contrat du stagiaire";
-            this.ItemForNum_Validation_Contrat_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForNum_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForDate_Validation_Contrat_STG
             // 
             this.ItemForDate_Validation_Contrat_STG.Control = this.Date_Validation_Contrat_STGDateEdit;
             this.ItemForDate_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 48);
             this.ItemForDate_Validation_Contrat_STG.Name = "ItemForDate_Validation_Contrat_STG";
-            this.ItemForDate_Validation_Contrat_STG.Size = new System.Drawing.Size(980, 24);
+            this.ItemForDate_Validation_Contrat_STG.Size = new System.Drawing.Size(978, 24);
             this.ItemForDate_Validation_Contrat_STG.Text = "Date de Validation du Contrat du stagiaire";
-            this.ItemForDate_Validation_Contrat_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForDate_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForDate_Resiliation_Contrat_STG
             // 
             this.ItemForDate_Resiliation_Contrat_STG.Control = this.Date_Resiliation_Contrat_STGDateEdit;
             this.ItemForDate_Resiliation_Contrat_STG.Location = new System.Drawing.Point(0, 72);
             this.ItemForDate_Resiliation_Contrat_STG.Name = "ItemForDate_Resiliation_Contrat_STG";
-            this.ItemForDate_Resiliation_Contrat_STG.Size = new System.Drawing.Size(980, 24);
+            this.ItemForDate_Resiliation_Contrat_STG.Size = new System.Drawing.Size(978, 24);
             this.ItemForDate_Resiliation_Contrat_STG.Text = "Date de résiliation du Contrat du stagiaire";
-            this.ItemForDate_Resiliation_Contrat_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForDate_Resiliation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForID_Emp
             // 
             this.ItemForID_Emp.Control = this.EmployeurLookUpEdit;
             this.ItemForID_Emp.Location = new System.Drawing.Point(0, 0);
             this.ItemForID_Emp.Name = "ItemForID_Emp";
-            this.ItemForID_Emp.Size = new System.Drawing.Size(980, 24);
+            this.ItemForID_Emp.Size = new System.Drawing.Size(978, 24);
             this.ItemForID_Emp.Text = "Numero d\'employeur ";
-            this.ItemForID_Emp.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForID_Emp.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForID_Maitre_Apprentissage
             // 
             this.ItemForID_Maitre_Apprentissage.Control = this.Maitre_ApprentissageLookUpEdit;
             this.ItemForID_Maitre_Apprentissage.Location = new System.Drawing.Point(0, 96);
             this.ItemForID_Maitre_Apprentissage.Name = "ItemForID_Maitre_Apprentissage";
-            this.ItemForID_Maitre_Apprentissage.Size = new System.Drawing.Size(980, 192);
+            this.ItemForID_Maitre_Apprentissage.Size = new System.Drawing.Size(978, 168);
             this.ItemForID_Maitre_Apprentissage.Text = "Numéro du Maitre Apprentissage";
-            this.ItemForID_Maitre_Apprentissage.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForID_Maitre_Apprentissage.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForID_Promo
             // 
+            this.ItemForID_Promo.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForID_Promo.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForID_Promo.Control = this.PromoLookUpEdit;
-            this.ItemForID_Promo.Location = new System.Drawing.Point(570, 359);
+            this.ItemForID_Promo.Location = new System.Drawing.Point(569, 335);
             this.ItemForID_Promo.Name = "ItemForID_Promo";
-            this.ItemForID_Promo.Size = new System.Drawing.Size(434, 24);
+            this.ItemForID_Promo.Size = new System.Drawing.Size(433, 24);
             this.ItemForID_Promo.Text = "Numéro de promo";
-            this.ItemForID_Promo.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForID_Promo.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForSection
             // 
+            this.ItemForSection.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForSection.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForSection.Control = this.Section1LookUpEdit;
-            this.ItemForSection.Location = new System.Drawing.Point(570, 335);
+            this.ItemForSection.Location = new System.Drawing.Point(569, 311);
             this.ItemForSection.Name = "ItemForSection";
-            this.ItemForSection.Size = new System.Drawing.Size(434, 24);
+            this.ItemForSection.Size = new System.Drawing.Size(433, 24);
             this.ItemForSection.Text = "Section";
-            this.ItemForSection.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForSection.TextSize = new System.Drawing.Size(218, 13);
             this.ItemForSection.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInRuntime;
             // 
             // ItemForID_ETAB
             // 
+            this.ItemForID_ETAB.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ItemForID_ETAB.AppearanceItemCaption.Options.UseFont = true;
             this.ItemForID_ETAB.Control = this.EtablissementLookUpEdit;
-            this.ItemForID_ETAB.Location = new System.Drawing.Point(0, 335);
+            this.ItemForID_ETAB.Location = new System.Drawing.Point(0, 311);
             this.ItemForID_ETAB.Name = "ItemForID_ETAB";
-            this.ItemForID_ETAB.Size = new System.Drawing.Size(570, 48);
+            this.ItemForID_ETAB.Size = new System.Drawing.Size(569, 48);
             this.ItemForID_ETAB.Text = "Numéro d\'établissement ";
-            this.ItemForID_ETAB.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForID_ETAB.TextSize = new System.Drawing.Size(218, 13);
             this.ItemForID_ETAB.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInRuntime;
             // 
             // mvvmContext
@@ -3610,15 +3756,52 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // colEnseignant3
+            // 
+            this.colEnseignant3.FieldName = "Enseignant";
+            this.colEnseignant3.Name = "colEnseignant3";
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Semestre";
+            this.gridColumn2.FieldName = "Semestre1.Designation_Semestre";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 3;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Nom de l\'enseignant";
+            this.gridColumn3.FieldName = "Enseignant1.Nom";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 1;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Prénom de l\'enseignant";
+            this.gridColumn4.FieldName = "Enseignant1.prenom";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 2;
+            // 
+            // colnum_stg6
+            // 
+            this.colnum_stg6.FieldName = "num_stg";
+            this.colnum_stg6.Name = "colnum_stg6";
+            this.colnum_stg6.Visible = true;
+            this.colnum_stg6.VisibleIndex = 0;
+            // 
             // StagiairView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.ClientSize = new System.Drawing.Size(1022, 708);
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "StagiairView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Text = "stagiaire";
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).EndInit();
@@ -3638,7 +3821,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Code_Postal1LookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Code_Postal1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Code_Postal1LookUpEditView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SexeTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EtrangerCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nationalité_STGTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HandicapeCheckEdit.Properties)).EndInit();
@@ -3725,6 +3907,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TransferersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransferersGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransferersBarManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SexeTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
@@ -3743,41 +3926,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForHandicape)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTelephone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_de_Naissance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForphoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNationalité_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForObservation_handicape)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Diplome_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForLieu_Naissance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForE_Maile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSexe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNbr_Frère_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Père_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForLieu_Naissance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSexe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForHandicape)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTelephone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_de_Naissance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNivo_SCO_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForE_Maile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForphoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNationalité_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForObservation_handicape)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Diplome_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).EndInit();
@@ -3915,7 +4098,6 @@
         private DevExpress.XtraEditors.TextEdit AdresseTextEdit;
         private DevExpress.XtraEditors.TextEdit Adresse_arTextEdit;
         private DevExpress.XtraGrid.Views.Grid.GridView Code_Postal1LookUpEditView;
-        private DevExpress.XtraEditors.TextEdit SexeTextEdit;
         private DevExpress.XtraEditors.CheckEdit EtrangerCheckEdit;
         private DevExpress.XtraEditors.TextEdit Nationalité_STGTextEdit;
         private DevExpress.XtraEditors.CheckEdit HandicapeCheckEdit;
@@ -4032,7 +4214,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControl2;
         private DevExpress.XtraBars.BarDockControl barDockControl4;
         private System.Windows.Forms.BindingSource Suiver_stagiaireBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colnum_stg6;
         private DevExpress.XtraGrid.Columns.GridColumn colEnseignant2;
         private DevExpress.XtraGrid.Columns.GridColumn colsemestre3;
         private DevExpress.XtraGrid.Columns.GridColumn colNBR__VISITE_FORMATEUR;
@@ -4121,7 +4302,21 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraEditors.ComboBoxEdit SexeTextEdit;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_name_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colDaira_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colDaira_name_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn colWillaya;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Postal1;
+        private DevExpress.XtraGrid.Columns.GridColumn colPost_adresse;
+        private DevExpress.XtraGrid.Columns.GridColumn colpost_Adresse_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraGrid.Columns.GridColumn colnum_stg6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn colEnseignant3;
     }
 }

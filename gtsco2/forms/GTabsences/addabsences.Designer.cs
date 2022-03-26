@@ -42,7 +42,6 @@ namespace gtsco2.forms.GTabsences
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.NUBEREF = new DevExpress.XtraEditors.LabelControl();
-            this.avenrtp = new DevExpress.XtraEditors.CheckEdit();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.spcomboBox1 = new System.Windows.Forms.ComboBox();
             this.promocomboBox11 = new System.Windows.Forms.ComboBox();
@@ -59,7 +58,6 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -75,7 +73,6 @@ namespace gtsco2.forms.GTabsences
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avenrtp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -86,7 +83,6 @@ namespace gtsco2.forms.GTabsences
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
@@ -248,7 +244,6 @@ namespace gtsco2.forms.GTabsences
             // 
             this.layoutControl1.Controls.Add(this.labelControl3);
             this.layoutControl1.Controls.Add(this.NUBEREF);
-            this.layoutControl1.Controls.Add(this.avenrtp);
             this.layoutControl1.Controls.Add(this.simpleButton2);
             this.layoutControl1.Controls.Add(this.spcomboBox1);
             this.layoutControl1.Controls.Add(this.promocomboBox11);
@@ -288,25 +283,12 @@ namespace gtsco2.forms.GTabsences
             this.NUBEREF.TabIndex = 10;
             this.NUBEREF.Text = "0";
             // 
-            // avenrtp
-            // 
-            this.avenrtp.EditValue = true;
-            this.avenrtp.Location = new System.Drawing.Point(4, 178);
-            this.avenrtp.Name = "avenrtp";
-            this.avenrtp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.avenrtp.Properties.Appearance.Options.UseFont = true;
-            this.avenrtp.Properties.Caption = "Avant rattrapage";
-            this.avenrtp.Size = new System.Drawing.Size(242, 20);
-            this.avenrtp.StyleController = this.layoutControl1;
-            this.avenrtp.TabIndex = 6;
-            this.avenrtp.CheckedChanged += new System.EventHandler(this.avenrtp_CheckedChanged);
-            // 
             // simpleButton2
             // 
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(4, 203);
+            this.simpleButton2.Location = new System.Drawing.Point(4, 179);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton2.Size = new System.Drawing.Size(242, 36);
@@ -391,7 +373,6 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem4,
             this.layoutControlItem6,
             this.layoutControlItem7,
-            this.layoutControlItem9,
             this.simpleSeparator1,
             this.layoutControlItem12,
             this.layoutControlItem11,
@@ -405,9 +386,9 @@ namespace gtsco2.forms.GTabsences
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 239);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 215);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(246, 248);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(246, 272);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
@@ -476,25 +457,16 @@ namespace gtsco2.forms.GTabsences
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.simpleButton2;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 199);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 175);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(246, 40);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.avenrtp;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 174);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(246, 24);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
-            // 
             // simpleSeparator1
             // 
             this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(0, 198);
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 174);
             this.simpleSeparator1.Name = "simpleSeparator1";
             this.simpleSeparator1.Size = new System.Drawing.Size(246, 1);
             // 
@@ -586,7 +558,6 @@ namespace gtsco2.forms.GTabsences
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.avenrtp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -597,7 +568,6 @@ namespace gtsco2.forms.GTabsences
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
@@ -633,8 +603,6 @@ namespace gtsco2.forms.GTabsences
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private System.Windows.Forms.ComboBox anneecomboBox141;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraEditors.CheckEdit avenrtp;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl NUBEREF;

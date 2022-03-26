@@ -8,7 +8,7 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Base;
 
 namespace gtsco2.mvvm.Views.StagiairView{
-    public partial class StagiairView : XtraUserControl {
+    public partial class StagiairView : XtraForm {
         public StagiairView() {
             InitializeComponent();
 			if(!mvvmContext.IsDesignMode)

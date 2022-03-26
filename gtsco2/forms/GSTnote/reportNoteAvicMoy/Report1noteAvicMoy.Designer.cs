@@ -77,8 +77,8 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.pSECTION = new DevExpress.XtraReports.Parameters.Parameter();
             this.pAnnee = new DevExpress.XtraReports.Parameters.Parameter();
             this.pModule = new DevExpress.XtraReports.Parameters.Parameter();
-            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.pEnseignant = new DevExpress.XtraReports.Parameters.Parameter();
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
@@ -156,7 +156,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.cellnumrostg.StylePriority.UseTextAlignment = false;
             this.cellnumrostg.Text = "cellnumrostg";
             this.cellnumrostg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.cellnumrostg.Weight = 2.2131807257074012D;
+            this.cellnumrostg.Weight = 2.2201858992059029D;
             // 
             // Cell2numetprenom
             // 
@@ -169,7 +169,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.Cell2numetprenom.StylePriority.UseTextAlignment = false;
             this.Cell2numetprenom.Text = "Cell2numetprenom";
             this.Cell2numetprenom.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.Cell2numetprenom.Weight = 3.8625777830872803D;
+            this.Cell2numetprenom.Weight = 3.8715878287341416D;
             // 
             // Cell3control1
             // 
@@ -180,7 +180,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.Cell3control1.StylePriority.UseTextAlignment = false;
             this.Cell3control1.Text = "Cell3control1";
             this.Cell3control1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.Cell3control1.Weight = 2D;
+            this.Cell3control1.Weight = 1.9630623765540951D;
             // 
             // Cell4control2
             // 
@@ -191,7 +191,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.Cell4control2.StylePriority.UseTextAlignment = false;
             this.Cell4control2.Text = "Cell4control2";
             this.Cell4control2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.Cell4control2.Weight = 1.5662973319808655D;
+            this.Cell4control2.Weight = 1.848813208681249D;
             // 
             // Cell5exam
             // 
@@ -202,7 +202,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.Cell5exam.StylePriority.UseTextAlignment = false;
             this.Cell5exam.Text = "Cell5exam";
             this.Cell5exam.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.Cell5exam.Weight = 1.956675525208005D;
+            this.Cell5exam.Weight = 1.6950820528081629D;
             // 
             // Cell17moyAVenR
             // 
@@ -459,7 +459,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "control 2";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell12.Weight = 0.80950072859834787D;
+            this.xrTableCell12.Weight = 0.94291671501374408D;
             // 
             // xrTableCell13
             // 
@@ -472,7 +472,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.Text = "Examen";
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell13.Weight = 0.99792889250202943D;
+            this.xrTableCell13.Weight = 0.86451290608663323D;
             // 
             // xrTableCell16
             // 
@@ -485,7 +485,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.xrTableCell16.StylePriority.UseTextAlignment = false;
             this.xrTableCell16.Text = "Moyenne";
             this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell16.Weight = 0.92539439699435233D;
+            this.xrTableCell16.Weight = 0.95163255250844769D;
             // 
             // xrTableCell14
             // 
@@ -498,7 +498,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "Rattrapage";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell14.Weight = 1.0721519625079117D;
+            this.xrTableCell14.Weight = 1.0477266505952103D;
             // 
             // xrTableCell15
             // 
@@ -511,7 +511,7 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.xrTableCell15.StylePriority.UseTextAlignment = false;
             this.xrTableCell15.Text = "Moyenne";
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell15.Weight = 0.778636831480793D;
+            this.xrTableCell15.Weight = 0.776823987879399D;
             // 
             // xrLabel6
             // 
@@ -633,15 +633,15 @@ namespace gtsco2.forms.GSTnote.reportNoteAvicMoy
             this.pModule.Description = "Parameter1";
             this.pModule.Name = "pModule";
             // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataSource = typeof(gtsco2.forms.eva);
-            this.objectDataSource1.Name = "objectDataSource1";
-            // 
             // pEnseignant
             // 
             this.pEnseignant.Description = "pEnseignant";
             this.pEnseignant.Name = "pEnseignant";
+            // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(gtsco2.forms.eva);
+            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // Report1noteAvicMoy
             // 

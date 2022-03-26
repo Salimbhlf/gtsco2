@@ -227,7 +227,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl2.Location = new System.Drawing.Point(0, 79);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(334, 547);
+            this.panelControl2.Size = new System.Drawing.Size(403, 547);
             this.panelControl2.TabIndex = 1;
             // 
             // layoutControl1
@@ -253,7 +253,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(465, 334, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(330, 543);
+            this.layoutControl1.Size = new System.Drawing.Size(399, 543);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -287,7 +287,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.simpleButton2.Location = new System.Drawing.Point(4, 288);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton2.Size = new System.Drawing.Size(322, 36);
+            this.simpleButton2.Size = new System.Drawing.Size(391, 36);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 5;
             this.simpleButton2.Text = "VALIDER";
@@ -301,7 +301,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.spcomboBox1.IntegralHeight = false;
             this.spcomboBox1.Location = new System.Drawing.Point(109, 54);
             this.spcomboBox1.Name = "spcomboBox1";
-            this.spcomboBox1.Size = new System.Drawing.Size(217, 21);
+            this.spcomboBox1.Size = new System.Drawing.Size(286, 21);
             this.spcomboBox1.TabIndex = 4;
             this.spcomboBox1.SelectionChangeCommitted += new System.EventHandler(this.spcomboBox1_SelectionChangeCommitted);
             // 
@@ -313,7 +313,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.promocomboBox11.IntegralHeight = false;
             this.promocomboBox11.Location = new System.Drawing.Point(109, 79);
             this.promocomboBox11.Name = "promocomboBox11";
-            this.promocomboBox11.Size = new System.Drawing.Size(217, 21);
+            this.promocomboBox11.Size = new System.Drawing.Size(286, 21);
             this.promocomboBox11.TabIndex = 4;
             this.promocomboBox11.SelectedIndexChanged += new System.EventHandler(this.promocomboBox11_SelectedIndexChanged);
             this.promocomboBox11.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox11_SelectionChangeCommitted);
@@ -326,7 +326,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.seccomboBox.IntegralHeight = false;
             this.seccomboBox.Location = new System.Drawing.Point(109, 104);
             this.seccomboBox.Name = "seccomboBox";
-            this.seccomboBox.Size = new System.Drawing.Size(217, 21);
+            this.seccomboBox.Size = new System.Drawing.Size(286, 21);
             this.seccomboBox.TabIndex = 4;
             this.seccomboBox.SelectedIndexChanged += new System.EventHandler(this.seccomboBox_SelectedIndexChanged);
             // 
@@ -338,7 +338,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.smstcomboBox13.IntegralHeight = false;
             this.smstcomboBox13.Location = new System.Drawing.Point(109, 129);
             this.smstcomboBox13.Name = "smstcomboBox13";
-            this.smstcomboBox13.Size = new System.Drawing.Size(217, 21);
+            this.smstcomboBox13.Size = new System.Drawing.Size(286, 21);
             this.smstcomboBox13.TabIndex = 4;
             // 
             // modecombobox
@@ -350,7 +350,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.modecombobox.IntegralHeight = false;
             this.modecombobox.Location = new System.Drawing.Point(109, 29);
             this.modecombobox.Name = "modecombobox";
-            this.modecombobox.Size = new System.Drawing.Size(217, 21);
+            this.modecombobox.Size = new System.Drawing.Size(286, 21);
             this.modecombobox.TabIndex = 4;
             // 
             // anneecomboBox141
@@ -361,7 +361,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.anneecomboBox141.IntegralHeight = false;
             this.anneecomboBox141.Location = new System.Drawing.Point(109, 4);
             this.anneecomboBox141.Name = "anneecomboBox141";
-            this.anneecomboBox141.Size = new System.Drawing.Size(217, 21);
+            this.anneecomboBox141.Size = new System.Drawing.Size(286, 21);
             this.anneecomboBox141.TabIndex = 4;
             // 
             // dateEditdébut
@@ -373,7 +373,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEditdébut.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditdébut.Size = new System.Drawing.Size(312, 20);
+            this.dateEditdébut.Size = new System.Drawing.Size(381, 20);
             this.dateEditdébut.StyleController = this.layoutControl1;
             this.dateEditdébut.TabIndex = 12;
             // 
@@ -386,7 +386,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEditfin.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditfin.Size = new System.Drawing.Size(312, 20);
+            this.dateEditfin.Size = new System.Drawing.Size(381, 20);
             this.dateEditfin.StyleController = this.layoutControl1;
             this.dateEditfin.TabIndex = 12;
             // 
@@ -395,7 +395,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.av1textEdit1.EditValue = "1";
             this.av1textEdit1.Location = new System.Drawing.Point(206, 355);
             this.av1textEdit1.Name = "av1textEdit1";
-            this.av1textEdit1.Size = new System.Drawing.Size(115, 20);
+            this.av1textEdit1.Size = new System.Drawing.Size(184, 20);
             this.av1textEdit1.StyleController = this.layoutControl1;
             this.av1textEdit1.TabIndex = 13;
             // 
@@ -404,7 +404,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.av2textEdit11.EditValue = "4";
             this.av2textEdit11.Location = new System.Drawing.Point(206, 379);
             this.av2textEdit11.Name = "av2textEdit11";
-            this.av2textEdit11.Size = new System.Drawing.Size(115, 20);
+            this.av2textEdit11.Size = new System.Drawing.Size(184, 20);
             this.av2textEdit11.StyleController = this.layoutControl1;
             this.av2textEdit11.TabIndex = 13;
             // 
@@ -413,7 +413,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.blmtextEdit12.EditValue = "7";
             this.blmtextEdit12.Location = new System.Drawing.Point(206, 403);
             this.blmtextEdit12.Name = "blmtextEdit12";
-            this.blmtextEdit12.Size = new System.Drawing.Size(115, 20);
+            this.blmtextEdit12.Size = new System.Drawing.Size(184, 20);
             this.blmtextEdit12.StyleController = this.layoutControl1;
             this.blmtextEdit12.TabIndex = 13;
             // 
@@ -422,7 +422,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.exctextEdit13.EditValue = "9";
             this.exctextEdit13.Location = new System.Drawing.Point(206, 427);
             this.exctextEdit13.Name = "exctextEdit13";
-            this.exctextEdit13.Size = new System.Drawing.Size(115, 20);
+            this.exctextEdit13.Size = new System.Drawing.Size(184, 20);
             this.exctextEdit13.StyleController = this.layoutControl1;
             this.exctextEdit13.TabIndex = 13;
             // 
@@ -448,7 +448,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem8});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(330, 543);
+            this.Root.Size = new System.Drawing.Size(399, 543);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -458,7 +458,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem1.Control = this.spcomboBox1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 50);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(326, 25);
+            this.layoutControlItem1.Size = new System.Drawing.Size(395, 25);
             this.layoutControlItem1.Text = "Specialité";
             this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(100, 13);
@@ -473,7 +473,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem2.CustomizationFormText = "sepcialite";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 75);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(326, 25);
+            this.layoutControlItem2.Size = new System.Drawing.Size(395, 25);
             this.layoutControlItem2.Text = "Promo";
             this.layoutControlItem2.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(100, 13);
@@ -488,7 +488,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem3.CustomizationFormText = "sepcialite";
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 100);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(326, 25);
+            this.layoutControlItem3.Size = new System.Drawing.Size(395, 25);
             this.layoutControlItem3.Text = "Section";
             this.layoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(100, 13);
@@ -503,7 +503,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem6.CustomizationFormText = "sepcialite";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 25);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(326, 25);
+            this.layoutControlItem6.Size = new System.Drawing.Size(395, 25);
             this.layoutControlItem6.Text = "Mode formation";
             this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(100, 13);
@@ -514,7 +514,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem7.Control = this.simpleButton2;
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 284);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(326, 40);
+            this.layoutControlItem7.Size = new System.Drawing.Size(395, 40);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -523,7 +523,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.simpleSeparator1.AllowHotTrack = false;
             this.simpleSeparator1.Location = new System.Drawing.Point(0, 150);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(326, 1);
+            this.simpleSeparator1.Size = new System.Drawing.Size(395, 1);
             // 
             // layoutControlItem12
             // 
@@ -539,7 +539,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem11.Control = this.NUBEREF;
             this.layoutControlItem11.Location = new System.Drawing.Point(79, 516);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(247, 23);
+            this.layoutControlItem11.Size = new System.Drawing.Size(316, 23);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
@@ -548,14 +548,14 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.simpleSeparator2.AllowHotTrack = false;
             this.simpleSeparator2.Location = new System.Drawing.Point(0, 515);
             this.simpleSeparator2.Name = "simpleSeparator2";
-            this.simpleSeparator2.Size = new System.Drawing.Size(326, 1);
+            this.simpleSeparator2.Size = new System.Drawing.Size(395, 1);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 151);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(326, 10);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(395, 10);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup1
@@ -569,7 +569,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 161);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(326, 112);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(395, 112);
             this.layoutControlGroup1.Text = "Comptabilisation des absences";
             // 
             // date_abssonce1
@@ -581,7 +581,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.date_abssonce1.CustomizationFormText = "date_abssonce";
             this.date_abssonce1.Location = new System.Drawing.Point(0, 40);
             this.date_abssonce1.Name = "date_abssonce1";
-            this.date_abssonce1.Size = new System.Drawing.Size(316, 40);
+            this.date_abssonce1.Size = new System.Drawing.Size(385, 40);
             this.date_abssonce1.Text = "Date de fin";
             this.date_abssonce1.TextLocation = DevExpress.Utils.Locations.Top;
             this.date_abssonce1.TextSize = new System.Drawing.Size(185, 13);
@@ -593,7 +593,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.date_abssonce.Control = this.dateEditdébut;
             this.date_abssonce.Location = new System.Drawing.Point(0, 0);
             this.date_abssonce.Name = "date_abssonce";
-            this.date_abssonce.Size = new System.Drawing.Size(316, 40);
+            this.date_abssonce.Size = new System.Drawing.Size(385, 40);
             this.date_abssonce.Text = "Date de début";
             this.date_abssonce.TextLocation = DevExpress.Utils.Locations.Top;
             this.date_abssonce.TextSize = new System.Drawing.Size(185, 13);
@@ -603,7 +603,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 273);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(326, 11);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(395, 11);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup3
@@ -620,7 +620,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.OptionsItemText.TextToControlDistance = 3;
             this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(326, 191);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(395, 191);
             this.layoutControlGroup3.Text = "Règles de sanctions sur l\'absence";
             // 
             // emptySpaceItem1
@@ -628,7 +628,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 96);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(316, 63);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(385, 63);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
@@ -637,7 +637,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem5.CustomizationFormText = "1er averstissement à partir de (jour)";
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(316, 24);
+            this.layoutControlItem5.Size = new System.Drawing.Size(385, 24);
             this.layoutControlItem5.Text = "1er averstissement à partir de (jour)";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(185, 13);
             // 
@@ -648,7 +648,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem9.CustomizationFormText = "layoutControlItem5";
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(316, 24);
+            this.layoutControlItem9.Size = new System.Drawing.Size(385, 24);
             this.layoutControlItem9.Text = "2éme averstissement à partir de (jour)";
             this.layoutControlItem9.TextSize = new System.Drawing.Size(185, 13);
             // 
@@ -659,7 +659,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem10.CustomizationFormText = "layoutControlItem5";
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(316, 24);
+            this.layoutControlItem10.Size = new System.Drawing.Size(385, 24);
             this.layoutControlItem10.Text = "Blâme à partir de (jour)";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(185, 13);
             // 
@@ -670,7 +670,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem13.CustomizationFormText = "layoutControlItem5";
             this.layoutControlItem13.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(316, 24);
+            this.layoutControlItem13.Size = new System.Drawing.Size(385, 24);
             this.layoutControlItem13.Text = "Exlusion à partir de (jour)";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(185, 13);
             // 
@@ -683,7 +683,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem4.CustomizationFormText = "sepcialite";
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 125);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(326, 25);
+            this.layoutControlItem4.Size = new System.Drawing.Size(395, 25);
             this.layoutControlItem4.Text = "Semestre";
             this.layoutControlItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(100, 13);
@@ -698,7 +698,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.layoutControlItem8.CustomizationFormText = "sepcialite";
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(326, 25);
+            this.layoutControlItem8.Size = new System.Drawing.Size(395, 25);
             this.layoutControlItem8.Text = "Session Scolaire";
             this.layoutControlItem8.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem8.TextLocation = DevExpress.Utils.Locations.Left;
@@ -711,9 +711,9 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.panelControl3.Appearance.Options.UseBackColor = true;
             this.panelControl3.Controls.Add(this.gridControl1);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl3.Location = new System.Drawing.Point(334, 79);
+            this.panelControl3.Location = new System.Drawing.Point(403, 79);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(747, 547);
+            this.panelControl3.Size = new System.Drawing.Size(678, 547);
             this.panelControl3.TabIndex = 2;
             // 
             // gridControl1
@@ -722,7 +722,7 @@ namespace gtsco2.forms.GTabsences.PVabsences
             this.gridControl1.Location = new System.Drawing.Point(2, 2);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(743, 543);
+            this.gridControl1.Size = new System.Drawing.Size(674, 543);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});

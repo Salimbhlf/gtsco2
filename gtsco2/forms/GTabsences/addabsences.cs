@@ -581,5 +581,10 @@ namespace gtsco2.forms.GTabsences
 
             }
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

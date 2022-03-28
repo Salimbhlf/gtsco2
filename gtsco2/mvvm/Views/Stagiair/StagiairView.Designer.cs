@@ -220,7 +220,6 @@
             this.EvaluationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EvaluationsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colNum_STG1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Semestre1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID_Année_SCO1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID_Module = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEnseignant = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -365,6 +364,16 @@
             this.Suiver_stagiairePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.Col_NomStagiaire = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColEprenomSTG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColSemestreE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColanneeSclr = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColSissionSclr = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Col_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Col_Connff = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.col_noteELm = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColNom_Enseignant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColPrenomEnseignant = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).BeginInit();
@@ -2417,10 +2426,19 @@
             // EvaluationsGridView
             // 
             this.EvaluationsGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ColEprenomSTG,
+            this.Col_NomStagiaire,
             this.colNum_STG1,
-            this.colID_Semestre1,
+            this.ColSemestreE,
+            this.ColSissionSclr,
+            this.ColanneeSclr,
             this.colID_Année_SCO1,
+            this.col_noteELm,
+            this.Col_Connff,
+            this.Col_Module,
             this.colID_Module,
+            this.ColPrenomEnseignant,
+            this.ColNom_Enseignant,
             this.colEnseignant,
             this.colControl_1,
             this.colControl_2,
@@ -2443,77 +2461,66 @@
             this.colNum_STG1.FieldName = "Num_STG";
             this.colNum_STG1.Name = "colNum_STG1";
             this.colNum_STG1.Visible = true;
-            this.colNum_STG1.VisibleIndex = 0;
-            // 
-            // colID_Semestre1
-            // 
-            this.colID_Semestre1.FieldName = "ID_Semestre";
-            this.colID_Semestre1.Name = "colID_Semestre1";
-            this.colID_Semestre1.Visible = true;
-            this.colID_Semestre1.VisibleIndex = 1;
+            this.colNum_STG1.VisibleIndex = 2;
             // 
             // colID_Année_SCO1
             // 
             this.colID_Année_SCO1.FieldName = "ID_Année_SCO";
             this.colID_Année_SCO1.Name = "colID_Année_SCO1";
-            this.colID_Année_SCO1.Visible = true;
-            this.colID_Année_SCO1.VisibleIndex = 2;
             // 
             // colID_Module
             // 
+            this.colID_Module.Caption = "Id Module";
             this.colID_Module.FieldName = "ID_Module";
             this.colID_Module.Name = "colID_Module";
-            this.colID_Module.Visible = true;
-            this.colID_Module.VisibleIndex = 3;
             // 
             // colEnseignant
             // 
+            this.colEnseignant.Caption = "id Enseignant ";
             this.colEnseignant.FieldName = "Enseignant";
             this.colEnseignant.Name = "colEnseignant";
-            this.colEnseignant.Visible = true;
-            this.colEnseignant.VisibleIndex = 4;
             // 
             // colControl_1
             // 
             this.colControl_1.FieldName = "Control_1";
             this.colControl_1.Name = "colControl_1";
             this.colControl_1.Visible = true;
-            this.colControl_1.VisibleIndex = 5;
+            this.colControl_1.VisibleIndex = 9;
             // 
             // colControl_2
             // 
             this.colControl_2.FieldName = "Control_2";
             this.colControl_2.Name = "colControl_2";
             this.colControl_2.Visible = true;
-            this.colControl_2.VisibleIndex = 6;
+            this.colControl_2.VisibleIndex = 10;
             // 
             // colExam
             // 
             this.colExam.FieldName = "Exam";
             this.colExam.Name = "colExam";
             this.colExam.Visible = true;
-            this.colExam.VisibleIndex = 7;
+            this.colExam.VisibleIndex = 11;
             // 
             // colRattrapage
             // 
             this.colRattrapage.FieldName = "Rattrapage";
             this.colRattrapage.Name = "colRattrapage";
             this.colRattrapage.Visible = true;
-            this.colRattrapage.VisibleIndex = 8;
+            this.colRattrapage.VisibleIndex = 12;
             // 
             // colMoyenne_Module_AvRt
             // 
             this.colMoyenne_Module_AvRt.FieldName = "Moyenne_Module_AvRt";
             this.colMoyenne_Module_AvRt.Name = "colMoyenne_Module_AvRt";
             this.colMoyenne_Module_AvRt.Visible = true;
-            this.colMoyenne_Module_AvRt.VisibleIndex = 9;
+            this.colMoyenne_Module_AvRt.VisibleIndex = 13;
             // 
             // colMoyenne_Module_ApRt
             // 
             this.colMoyenne_Module_ApRt.FieldName = "Moyenne_Module_ApRt";
             this.colMoyenne_Module_ApRt.Name = "colMoyenne_Module_ApRt";
             this.colMoyenne_Module_ApRt.Visible = true;
-            this.colMoyenne_Module_ApRt.VisibleIndex = 10;
+            this.colMoyenne_Module_ApRt.VisibleIndex = 14;
             // 
             // colannee_scolaire1
             // 
@@ -3646,7 +3653,7 @@
             // 
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 359);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.autoGroupForEvaluations;
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup6;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(1002, 200);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3,
@@ -3899,6 +3906,82 @@
             this.barButtonItem2.ImageOptions.ImageUri.Uri = "Delete";
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // Col_NomStagiaire
+            // 
+            this.Col_NomStagiaire.Caption = "Nom Stagiare";
+            this.Col_NomStagiaire.FieldName = "Stagiair.Nom";
+            this.Col_NomStagiaire.Name = "Col_NomStagiaire";
+            this.Col_NomStagiaire.Visible = true;
+            this.Col_NomStagiaire.VisibleIndex = 1;
+            // 
+            // ColEprenomSTG
+            // 
+            this.ColEprenomSTG.Caption = "Prenom Stagiaire";
+            this.ColEprenomSTG.FieldName = "Stagiair.Prenom";
+            this.ColEprenomSTG.Name = "ColEprenomSTG";
+            this.ColEprenomSTG.Visible = true;
+            this.ColEprenomSTG.VisibleIndex = 0;
+            // 
+            // ColSemestreE
+            // 
+            this.ColSemestreE.Caption = "Semestre";
+            this.ColSemestreE.FieldName = "Semestre.Designation_Semestre";
+            this.ColSemestreE.Name = "ColSemestreE";
+            this.ColSemestreE.Visible = true;
+            this.ColSemestreE.VisibleIndex = 3;
+            // 
+            // ColanneeSclr
+            // 
+            this.ColanneeSclr.Caption = "Annee Scolaire";
+            this.ColanneeSclr.FieldName = "annee_scolaire.Designation";
+            this.ColanneeSclr.Name = "ColanneeSclr";
+            this.ColanneeSclr.Visible = true;
+            this.ColanneeSclr.VisibleIndex = 4;
+            // 
+            // ColSissionSclr
+            // 
+            this.ColSissionSclr.Caption = "Session Scolaire";
+            this.ColSissionSclr.FieldName = "annee_scolaire.Session_Année_SCO";
+            this.ColSissionSclr.Name = "ColSissionSclr";
+            this.ColSissionSclr.Visible = true;
+            this.ColSissionSclr.VisibleIndex = 5;
+            // 
+            // Col_Module
+            // 
+            this.Col_Module.Caption = "Module";
+            this.Col_Module.FieldName = "Module.Designation_Module";
+            this.Col_Module.Name = "Col_Module";
+            this.Col_Module.Visible = true;
+            this.Col_Module.VisibleIndex = 6;
+            // 
+            // Col_Connff
+            // 
+            this.Col_Connff.Caption = "Coefficient Module";
+            this.Col_Connff.FieldName = "Module.coefficient_Module";
+            this.Col_Connff.Name = "Col_Connff";
+            // 
+            // col_noteELm
+            // 
+            this.col_noteELm.Caption = "Note Elim ";
+            this.col_noteELm.FieldName = "Module.Note_Elim_Module";
+            this.col_noteELm.Name = "col_noteELm";
+            // 
+            // ColNom_Enseignant
+            // 
+            this.ColNom_Enseignant.Caption = "Nom  Enseignant ";
+            this.ColNom_Enseignant.FieldName = "Enseignant1.Nom";
+            this.ColNom_Enseignant.Name = "ColNom_Enseignant";
+            this.ColNom_Enseignant.Visible = true;
+            this.ColNom_Enseignant.VisibleIndex = 8;
+            // 
+            // ColPrenomEnseignant
+            // 
+            this.ColPrenomEnseignant.Caption = "Prenom Enseignant ";
+            this.ColPrenomEnseignant.FieldName = "Enseignant1.prenom";
+            this.ColPrenomEnseignant.Name = "ColPrenomEnseignant";
+            this.ColPrenomEnseignant.Visible = true;
+            this.ColPrenomEnseignant.VisibleIndex = 7;
             // 
             // StagiairView
             // 
@@ -4299,7 +4382,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControl8;
         private System.Windows.Forms.BindingSource EvaluationsBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colNum_STG1;
-        private DevExpress.XtraGrid.Columns.GridColumn colID_Semestre1;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Année_SCO1;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Module;
         private DevExpress.XtraGrid.Columns.GridColumn colEnseignant;
@@ -4434,5 +4516,15 @@
         private DevExpress.XtraGrid.Columns.GridColumn CoPrenomstagiaire;
         private DevExpress.XtraLayout.LayoutControlGroup autoGroupForEvaluations;
         private DevExpress.XtraLayout.LayoutControlItem ItemForEvaluations;
+        private DevExpress.XtraGrid.Columns.GridColumn ColEprenomSTG;
+        private DevExpress.XtraGrid.Columns.GridColumn Col_NomStagiaire;
+        private DevExpress.XtraGrid.Columns.GridColumn ColSemestreE;
+        private DevExpress.XtraGrid.Columns.GridColumn ColSissionSclr;
+        private DevExpress.XtraGrid.Columns.GridColumn ColanneeSclr;
+        private DevExpress.XtraGrid.Columns.GridColumn col_noteELm;
+        private DevExpress.XtraGrid.Columns.GridColumn Col_Connff;
+        private DevExpress.XtraGrid.Columns.GridColumn Col_Module;
+        private DevExpress.XtraGrid.Columns.GridColumn ColPrenomEnseignant;
+        private DevExpress.XtraGrid.Columns.GridColumn ColNom_Enseignant;
     }
 }

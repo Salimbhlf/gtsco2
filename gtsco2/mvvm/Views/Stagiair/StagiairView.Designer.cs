@@ -140,6 +140,11 @@
             this.Avenant_contrat_prorogationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Avenant_contrat_prorogationGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colNum_stg3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColNomStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColPrenomStagiaire = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColStatutEmp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColType_Employeur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColNom_Employeur = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID_emp = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNum_validation_cont_proro = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldate_validation_cont_proro = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -161,7 +166,12 @@
             this.Contract_avenant_changementGridControl = new DevExpress.XtraGrid.GridControl();
             this.Contract_avenant_changementBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Contract_avenant_changementGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ColNomEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColTypeEmplyeur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.COlStatutEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colid_emp1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ColNomSatgiaire = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CoPrenomstagiaire = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colnum_stg5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNUM_AV_CHANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNUM_AV_VALID_CHANG = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -285,19 +295,6 @@
             this.SexeTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForAbsences = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForAvenant_contrat_prorogation = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForContract_avenant_changement = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForSuiver_stagiaire = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForNum_STG = new DevExpress.XtraLayout.LayoutControlItem();
@@ -343,6 +340,21 @@
             this.ItemForID_Promo = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForSection = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForID_ETAB = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.autoGroupForEvaluations = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForEvaluations = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForAbsences = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForAvenant_contrat_prorogation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForContract_avenant_changement = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForSuiver_stagiaire = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.AbsencesPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.EvaluationsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
@@ -353,18 +365,6 @@
             this.Suiver_stagiairePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.ColNom_Employeur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColType_Employeur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColStatutEmp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColNomStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColPrenomStagiaire = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColNomEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColTypeEmplyeur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.COlStatutEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColNomSatgiaire = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.CoPrenomstagiaire = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.autoGroupForEvaluations = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForEvaluations = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).BeginInit();
@@ -466,19 +466,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SexeTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAvenant_contrat_prorogation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForContract_avenant_changement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).BeginInit();
@@ -524,6 +511,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_ETAB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoGroupForEvaluations)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAvenant_contrat_prorogation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForContract_avenant_changement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AbsencesPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EvaluationsPopUpMenu)).BeginInit();
@@ -532,8 +534,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.TransferersPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contract_avenant_changementPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiairePopUpMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.autoGroupForEvaluations)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayoutControl1
@@ -1390,7 +1390,7 @@
             // 
             // photoPictureEdit
             // 
-            this.photoPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.stagiairViewBindingSource, "photo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.photoPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("SvgImage", this.stagiairViewBindingSource, "photo", true));
             this.photoPictureEdit.Location = new System.Drawing.Point(24, 47);
             this.photoPictureEdit.MenuManager = this.mainRibbonControl;
             this.photoPictureEdit.Name = "photoPictureEdit";
@@ -1724,6 +1724,40 @@
             this.colNum_stg3.Visible = true;
             this.colNum_stg3.VisibleIndex = 0;
             // 
+            // ColNomStagiair
+            // 
+            this.ColNomStagiair.Caption = "Nom Stagiair";
+            this.ColNomStagiair.FieldName = "Stagiair.Nom";
+            this.ColNomStagiair.Name = "ColNomStagiair";
+            // 
+            // ColPrenomStagiaire
+            // 
+            this.ColPrenomStagiaire.Caption = "Prenom Stagiaire";
+            this.ColPrenomStagiaire.FieldName = "Stagiair.Prenom";
+            this.ColPrenomStagiaire.Name = "ColPrenomStagiaire";
+            // 
+            // ColStatutEmp
+            // 
+            this.ColStatutEmp.Caption = "Statut Emp";
+            this.ColStatutEmp.FieldName = "Employeur.Statut_Emp";
+            this.ColStatutEmp.Name = "ColStatutEmp";
+            // 
+            // ColType_Employeur
+            // 
+            this.ColType_Employeur.Caption = "Type Employeur";
+            this.ColType_Employeur.FieldName = "Employeur.Type_Emp";
+            this.ColType_Employeur.Name = "ColType_Employeur";
+            this.ColType_Employeur.Visible = true;
+            this.ColType_Employeur.VisibleIndex = 2;
+            // 
+            // ColNom_Employeur
+            // 
+            this.ColNom_Employeur.Caption = "Nom Employeur";
+            this.ColNom_Employeur.FieldName = "Employeur.Nom_Emp";
+            this.ColNom_Employeur.Name = "ColNom_Employeur";
+            this.ColNom_Employeur.Visible = true;
+            this.ColNom_Employeur.VisibleIndex = 1;
+            // 
             // colID_emp
             // 
             this.colID_emp.Caption = "ID Employeur ";
@@ -1924,11 +1958,51 @@
             this.Contract_avenant_changementGridView.OptionsBehavior.Editable = false;
             this.Contract_avenant_changementGridView.OptionsBehavior.ReadOnly = true;
             // 
+            // ColNomEmployeur
+            // 
+            this.ColNomEmployeur.Caption = "Nom Employeur ";
+            this.ColNomEmployeur.FieldName = "Employeur.Nom_Emp";
+            this.ColNomEmployeur.Name = "ColNomEmployeur";
+            this.ColNomEmployeur.Visible = true;
+            this.ColNomEmployeur.VisibleIndex = 0;
+            // 
+            // ColTypeEmplyeur
+            // 
+            this.ColTypeEmplyeur.Caption = "Type Emplyeur";
+            this.ColTypeEmplyeur.FieldName = "Employeur.Type_Emp";
+            this.ColTypeEmplyeur.Name = "ColTypeEmplyeur";
+            this.ColTypeEmplyeur.Visible = true;
+            this.ColTypeEmplyeur.VisibleIndex = 4;
+            // 
+            // COlStatutEmployeur
+            // 
+            this.COlStatutEmployeur.Caption = "Statut Employeur";
+            this.COlStatutEmployeur.FieldName = "Employeur.Statut_Emp";
+            this.COlStatutEmployeur.Name = "COlStatutEmployeur";
+            this.COlStatutEmployeur.Visible = true;
+            this.COlStatutEmployeur.VisibleIndex = 5;
+            // 
             // colid_emp1
             // 
             this.colid_emp1.Caption = "ID Employeur";
             this.colid_emp1.FieldName = "id_emp";
             this.colid_emp1.Name = "colid_emp1";
+            // 
+            // ColNomSatgiaire
+            // 
+            this.ColNomSatgiaire.Caption = "Nom stagiaire";
+            this.ColNomSatgiaire.FieldName = "Stagiair.Nom";
+            this.ColNomSatgiaire.Name = "ColNomSatgiaire";
+            this.ColNomSatgiaire.Visible = true;
+            this.ColNomSatgiaire.VisibleIndex = 3;
+            // 
+            // CoPrenomstagiaire
+            // 
+            this.CoPrenomstagiaire.Caption = "Prenom Stagiaire";
+            this.CoPrenomstagiaire.FieldName = "Stagiair.Prenom";
+            this.CoPrenomstagiaire.Name = "CoPrenomstagiaire";
+            this.CoPrenomstagiaire.Visible = true;
+            this.CoPrenomstagiaire.VisibleIndex = 2;
             // 
             // colnum_stg5
             // 
@@ -3011,142 +3085,6 @@
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
             this.layoutControlGroup2.Size = new System.Drawing.Size(1002, 559);
             // 
-            // tabbedControlGroup1
-            // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 359);
-            this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.autoGroupForEvaluations;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1002, 200);
-            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup3,
-            this.layoutControlGroup4,
-            this.layoutControlGroup5,
-            this.autoGroupForEvaluations,
-            this.layoutControlGroup6,
-            this.layoutControlGroup8,
-            this.layoutControlGroup9});
-            this.tabbedControlGroup1.Text = "Tabs";
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForAbsences});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "autoGroupForAbsences";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup3.Text = "Absences";
-            // 
-            // ItemForAbsences
-            // 
-            this.ItemForAbsences.Control = this.AbsencesXtraUserControl;
-            this.ItemForAbsences.Location = new System.Drawing.Point(0, 0);
-            this.ItemForAbsences.Name = "ItemForAbsences";
-            this.ItemForAbsences.Size = new System.Drawing.Size(978, 153);
-            this.ItemForAbsences.StartNewLine = true;
-            this.ItemForAbsences.Text = "Absences";
-            this.ItemForAbsences.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForAbsences.TextVisible = false;
-            // 
-            // layoutControlGroup4
-            // 
-            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForAvenant_contrat_prorogation});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup4.Name = "autoGroupForAvenant_contrat_prorogation";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup4.Text = "Avenant de contrat de prorogation";
-            // 
-            // ItemForAvenant_contrat_prorogation
-            // 
-            this.ItemForAvenant_contrat_prorogation.Control = this.Avenant_contrat_prorogationXtraUserControl;
-            this.ItemForAvenant_contrat_prorogation.Location = new System.Drawing.Point(0, 0);
-            this.ItemForAvenant_contrat_prorogation.Name = "ItemForAvenant_contrat_prorogation";
-            this.ItemForAvenant_contrat_prorogation.Size = new System.Drawing.Size(978, 153);
-            this.ItemForAvenant_contrat_prorogation.StartNewLine = true;
-            this.ItemForAvenant_contrat_prorogation.Text = "Avenant_contrat_prorogation";
-            this.ItemForAvenant_contrat_prorogation.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForAvenant_contrat_prorogation.TextVisible = false;
-            // 
-            // layoutControlGroup5
-            // 
-            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForContract_avenant_changement});
-            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup5.Name = "autoGroupForContract_avenant_changement";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup5.Text = "Avenant de contrat changement d\'employeur";
-            // 
-            // ItemForContract_avenant_changement
-            // 
-            this.ItemForContract_avenant_changement.Control = this.Contract_avenant_changementXtraUserControl;
-            this.ItemForContract_avenant_changement.Location = new System.Drawing.Point(0, 0);
-            this.ItemForContract_avenant_changement.Name = "ItemForContract_avenant_changement";
-            this.ItemForContract_avenant_changement.Size = new System.Drawing.Size(978, 153);
-            this.ItemForContract_avenant_changement.StartNewLine = true;
-            this.ItemForContract_avenant_changement.Text = "Contract_avenant_changement";
-            this.ItemForContract_avenant_changement.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForContract_avenant_changement.TextVisible = false;
-            // 
-            // layoutControlGroup6
-            // 
-            this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForDecisions});
-            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup6.Name = "autoGroupForDecisions";
-            this.layoutControlGroup6.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup6.Text = "Decisions";
-            // 
-            // ItemForDecisions
-            // 
-            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
-            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
-            this.ItemForDecisions.Name = "ItemForDecisions";
-            this.ItemForDecisions.Size = new System.Drawing.Size(978, 153);
-            this.ItemForDecisions.StartNewLine = true;
-            this.ItemForDecisions.Text = "Decisions";
-            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForDecisions.TextVisible = false;
-            // 
-            // layoutControlGroup8
-            // 
-            this.layoutControlGroup8.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForSuiver_stagiaire});
-            this.layoutControlGroup8.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup8.Name = "autoGroupForSuiver_stagiaire";
-            this.layoutControlGroup8.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup8.Text = "Suivie du stagiaire ";
-            // 
-            // ItemForSuiver_stagiaire
-            // 
-            this.ItemForSuiver_stagiaire.Control = this.Suiver_stagiaireXtraUserControl;
-            this.ItemForSuiver_stagiaire.Location = new System.Drawing.Point(0, 0);
-            this.ItemForSuiver_stagiaire.Name = "ItemForSuiver_stagiaire";
-            this.ItemForSuiver_stagiaire.Size = new System.Drawing.Size(978, 153);
-            this.ItemForSuiver_stagiaire.StartNewLine = true;
-            this.ItemForSuiver_stagiaire.Text = "Suiver_stagiaire";
-            this.ItemForSuiver_stagiaire.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForSuiver_stagiaire.TextVisible = false;
-            // 
-            // layoutControlGroup9
-            // 
-            this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForTransferers});
-            this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup9.Name = "autoGroupForTransferers";
-            this.layoutControlGroup9.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup9.Text = "Transferts";
-            // 
-            // ItemForTransferers
-            // 
-            this.ItemForTransferers.Control = this.TransferersXtraUserControl;
-            this.ItemForTransferers.Location = new System.Drawing.Point(0, 0);
-            this.ItemForTransferers.Name = "ItemForTransferers";
-            this.ItemForTransferers.Size = new System.Drawing.Size(978, 153);
-            this.ItemForTransferers.StartNewLine = true;
-            this.ItemForTransferers.Text = "Transferers";
-            this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForTransferers.TextVisible = false;
-            // 
             // tabbedControlGroup2
             // 
             this.tabbedControlGroup2.Location = new System.Drawing.Point(0, 0);
@@ -3704,6 +3642,162 @@
             this.ItemForID_ETAB.Text = "Numéro d\'établissement ";
             this.ItemForID_ETAB.TextSize = new System.Drawing.Size(218, 13);
             // 
+            // tabbedControlGroup1
+            // 
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 359);
+            this.tabbedControlGroup1.Name = "autoGroupForTabs";
+            this.tabbedControlGroup1.SelectedTabPage = this.autoGroupForEvaluations;
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(1002, 200);
+            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup3,
+            this.layoutControlGroup4,
+            this.layoutControlGroup5,
+            this.autoGroupForEvaluations,
+            this.layoutControlGroup6,
+            this.layoutControlGroup8,
+            this.layoutControlGroup9});
+            this.tabbedControlGroup1.Text = "Tabs";
+            // 
+            // autoGroupForEvaluations
+            // 
+            this.autoGroupForEvaluations.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForEvaluations});
+            this.autoGroupForEvaluations.Location = new System.Drawing.Point(0, 0);
+            this.autoGroupForEvaluations.Name = "autoGroupForEvaluations";
+            this.autoGroupForEvaluations.Size = new System.Drawing.Size(978, 153);
+            this.autoGroupForEvaluations.Text = "Evaluations";
+            // 
+            // ItemForEvaluations
+            // 
+            this.ItemForEvaluations.Control = this.EvaluationsXtraUserControl;
+            this.ItemForEvaluations.Location = new System.Drawing.Point(0, 0);
+            this.ItemForEvaluations.Name = "ItemForEvaluations";
+            this.ItemForEvaluations.Size = new System.Drawing.Size(978, 153);
+            this.ItemForEvaluations.StartNewLine = true;
+            this.ItemForEvaluations.Text = "Evaluations";
+            this.ItemForEvaluations.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForEvaluations.TextVisible = false;
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForAbsences});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "autoGroupForAbsences";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup3.Text = "Absences";
+            // 
+            // ItemForAbsences
+            // 
+            this.ItemForAbsences.Control = this.AbsencesXtraUserControl;
+            this.ItemForAbsences.Location = new System.Drawing.Point(0, 0);
+            this.ItemForAbsences.Name = "ItemForAbsences";
+            this.ItemForAbsences.Size = new System.Drawing.Size(978, 153);
+            this.ItemForAbsences.StartNewLine = true;
+            this.ItemForAbsences.Text = "Absences";
+            this.ItemForAbsences.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForAbsences.TextVisible = false;
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForAvenant_contrat_prorogation});
+            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup4.Name = "autoGroupForAvenant_contrat_prorogation";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup4.Text = "Avenant de contrat de prorogation";
+            // 
+            // ItemForAvenant_contrat_prorogation
+            // 
+            this.ItemForAvenant_contrat_prorogation.Control = this.Avenant_contrat_prorogationXtraUserControl;
+            this.ItemForAvenant_contrat_prorogation.Location = new System.Drawing.Point(0, 0);
+            this.ItemForAvenant_contrat_prorogation.Name = "ItemForAvenant_contrat_prorogation";
+            this.ItemForAvenant_contrat_prorogation.Size = new System.Drawing.Size(978, 153);
+            this.ItemForAvenant_contrat_prorogation.StartNewLine = true;
+            this.ItemForAvenant_contrat_prorogation.Text = "Avenant_contrat_prorogation";
+            this.ItemForAvenant_contrat_prorogation.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForAvenant_contrat_prorogation.TextVisible = false;
+            // 
+            // layoutControlGroup5
+            // 
+            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForContract_avenant_changement});
+            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup5.Name = "autoGroupForContract_avenant_changement";
+            this.layoutControlGroup5.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup5.Text = "Avenant de contrat changement d\'employeur";
+            // 
+            // ItemForContract_avenant_changement
+            // 
+            this.ItemForContract_avenant_changement.Control = this.Contract_avenant_changementXtraUserControl;
+            this.ItemForContract_avenant_changement.Location = new System.Drawing.Point(0, 0);
+            this.ItemForContract_avenant_changement.Name = "ItemForContract_avenant_changement";
+            this.ItemForContract_avenant_changement.Size = new System.Drawing.Size(978, 153);
+            this.ItemForContract_avenant_changement.StartNewLine = true;
+            this.ItemForContract_avenant_changement.Text = "Contract_avenant_changement";
+            this.ItemForContract_avenant_changement.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForContract_avenant_changement.TextVisible = false;
+            // 
+            // layoutControlGroup6
+            // 
+            this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForDecisions});
+            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup6.Name = "autoGroupForDecisions";
+            this.layoutControlGroup6.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup6.Text = "Decisions";
+            // 
+            // ItemForDecisions
+            // 
+            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
+            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
+            this.ItemForDecisions.Name = "ItemForDecisions";
+            this.ItemForDecisions.Size = new System.Drawing.Size(978, 153);
+            this.ItemForDecisions.StartNewLine = true;
+            this.ItemForDecisions.Text = "Decisions";
+            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForDecisions.TextVisible = false;
+            // 
+            // layoutControlGroup8
+            // 
+            this.layoutControlGroup8.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForSuiver_stagiaire});
+            this.layoutControlGroup8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup8.Name = "autoGroupForSuiver_stagiaire";
+            this.layoutControlGroup8.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup8.Text = "Suivie du stagiaire ";
+            // 
+            // ItemForSuiver_stagiaire
+            // 
+            this.ItemForSuiver_stagiaire.Control = this.Suiver_stagiaireXtraUserControl;
+            this.ItemForSuiver_stagiaire.Location = new System.Drawing.Point(0, 0);
+            this.ItemForSuiver_stagiaire.Name = "ItemForSuiver_stagiaire";
+            this.ItemForSuiver_stagiaire.Size = new System.Drawing.Size(978, 153);
+            this.ItemForSuiver_stagiaire.StartNewLine = true;
+            this.ItemForSuiver_stagiaire.Text = "Suiver_stagiaire";
+            this.ItemForSuiver_stagiaire.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForSuiver_stagiaire.TextVisible = false;
+            // 
+            // layoutControlGroup9
+            // 
+            this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForTransferers});
+            this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup9.Name = "autoGroupForTransferers";
+            this.layoutControlGroup9.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup9.Text = "Transferts";
+            // 
+            // ItemForTransferers
+            // 
+            this.ItemForTransferers.Control = this.TransferersXtraUserControl;
+            this.ItemForTransferers.Location = new System.Drawing.Point(0, 0);
+            this.ItemForTransferers.Name = "ItemForTransferers";
+            this.ItemForTransferers.Size = new System.Drawing.Size(978, 153);
+            this.ItemForTransferers.StartNewLine = true;
+            this.ItemForTransferers.Text = "Transferers";
+            this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForTransferers.TextVisible = false;
+            // 
             // mvvmContext
             // 
             this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
@@ -3805,100 +3899,6 @@
             this.barButtonItem2.ImageOptions.ImageUri.Uri = "Delete";
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // ColNom_Employeur
-            // 
-            this.ColNom_Employeur.Caption = "Nom Employeur";
-            this.ColNom_Employeur.FieldName = "Employeur.Nom_Emp";
-            this.ColNom_Employeur.Name = "ColNom_Employeur";
-            this.ColNom_Employeur.Visible = true;
-            this.ColNom_Employeur.VisibleIndex = 1;
-            // 
-            // ColType_Employeur
-            // 
-            this.ColType_Employeur.Caption = "Type Employeur";
-            this.ColType_Employeur.FieldName = "Employeur.Type_Emp";
-            this.ColType_Employeur.Name = "ColType_Employeur";
-            this.ColType_Employeur.Visible = true;
-            this.ColType_Employeur.VisibleIndex = 2;
-            // 
-            // ColStatutEmp
-            // 
-            this.ColStatutEmp.Caption = "Statut Emp";
-            this.ColStatutEmp.FieldName = "Employeur.Statut_Emp";
-            this.ColStatutEmp.Name = "ColStatutEmp";
-            // 
-            // ColNomStagiair
-            // 
-            this.ColNomStagiair.Caption = "Nom Stagiair";
-            this.ColNomStagiair.FieldName = "Stagiair.Nom";
-            this.ColNomStagiair.Name = "ColNomStagiair";
-            // 
-            // ColPrenomStagiaire
-            // 
-            this.ColPrenomStagiaire.Caption = "Prenom Stagiaire";
-            this.ColPrenomStagiaire.FieldName = "Stagiair.Prenom";
-            this.ColPrenomStagiaire.Name = "ColPrenomStagiaire";
-            // 
-            // ColNomEmployeur
-            // 
-            this.ColNomEmployeur.Caption = "Nom Employeur ";
-            this.ColNomEmployeur.FieldName = "Employeur.Nom_Emp";
-            this.ColNomEmployeur.Name = "ColNomEmployeur";
-            this.ColNomEmployeur.Visible = true;
-            this.ColNomEmployeur.VisibleIndex = 0;
-            // 
-            // ColTypeEmplyeur
-            // 
-            this.ColTypeEmplyeur.Caption = "Type Emplyeur";
-            this.ColTypeEmplyeur.FieldName = "Employeur.Type_Emp";
-            this.ColTypeEmplyeur.Name = "ColTypeEmplyeur";
-            this.ColTypeEmplyeur.Visible = true;
-            this.ColTypeEmplyeur.VisibleIndex = 4;
-            // 
-            // COlStatutEmployeur
-            // 
-            this.COlStatutEmployeur.Caption = "Statut Employeur";
-            this.COlStatutEmployeur.FieldName = "Employeur.Statut_Emp";
-            this.COlStatutEmployeur.Name = "COlStatutEmployeur";
-            this.COlStatutEmployeur.Visible = true;
-            this.COlStatutEmployeur.VisibleIndex = 5;
-            // 
-            // ColNomSatgiaire
-            // 
-            this.ColNomSatgiaire.Caption = "Nom stagiaire";
-            this.ColNomSatgiaire.FieldName = "Stagiair.Nom";
-            this.ColNomSatgiaire.Name = "ColNomSatgiaire";
-            this.ColNomSatgiaire.Visible = true;
-            this.ColNomSatgiaire.VisibleIndex = 3;
-            // 
-            // CoPrenomstagiaire
-            // 
-            this.CoPrenomstagiaire.Caption = "Prenom Stagiaire";
-            this.CoPrenomstagiaire.FieldName = "Stagiair.Prenom";
-            this.CoPrenomstagiaire.Name = "CoPrenomstagiaire";
-            this.CoPrenomstagiaire.Visible = true;
-            this.CoPrenomstagiaire.VisibleIndex = 2;
-            // 
-            // autoGroupForEvaluations
-            // 
-            this.autoGroupForEvaluations.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForEvaluations});
-            this.autoGroupForEvaluations.Location = new System.Drawing.Point(0, 0);
-            this.autoGroupForEvaluations.Name = "autoGroupForEvaluations";
-            this.autoGroupForEvaluations.Size = new System.Drawing.Size(978, 153);
-            this.autoGroupForEvaluations.Text = "Evaluations";
-            // 
-            // ItemForEvaluations
-            // 
-            this.ItemForEvaluations.Control = this.EvaluationsXtraUserControl;
-            this.ItemForEvaluations.Location = new System.Drawing.Point(0, 0);
-            this.ItemForEvaluations.Name = "ItemForEvaluations";
-            this.ItemForEvaluations.Size = new System.Drawing.Size(978, 153);
-            this.ItemForEvaluations.StartNewLine = true;
-            this.ItemForEvaluations.Text = "Evaluations";
-            this.ItemForEvaluations.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForEvaluations.TextVisible = false;
             // 
             // StagiairView
             // 
@@ -4018,19 +4018,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SexeTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAvenant_contrat_prorogation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForContract_avenant_changement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).EndInit();
@@ -4076,6 +4063,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_ETAB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoGroupForEvaluations)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAvenant_contrat_prorogation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForContract_avenant_changement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AbsencesPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EvaluationsPopUpMenu)).EndInit();
@@ -4084,8 +4086,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.TransferersPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contract_avenant_changementPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiairePopUpMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.autoGroupForEvaluations)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

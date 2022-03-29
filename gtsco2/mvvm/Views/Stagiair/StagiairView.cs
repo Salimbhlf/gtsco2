@@ -219,5 +219,20 @@ namespace gtsco2.mvvm.Views.StagiairView{
 			forms.Formulaire.certficat.ReportCertficat.printCertficat(Num_STGTextEdit.Text);
 			
 		}
+
+        private void TelephoneTextEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void photoPictureEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Section1LookUpEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

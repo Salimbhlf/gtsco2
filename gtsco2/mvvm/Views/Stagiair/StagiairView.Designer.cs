@@ -379,19 +379,12 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup11 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForPrenom_Père_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNom_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForid_tuteur = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForPrenom_Père_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNom_Mère_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForPrenom_Mère_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForPrenom_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForProfession_Père_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForNbr_Frère_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForSituation_Familiale_Parents_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForSituation_Familiale_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForProfession_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup12 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForNum_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDate_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDate_Resiliation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForID_Emp = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForID_Maitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForCode_postal = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForEtranger = new DevExpress.XtraLayout.LayoutControlItem();
@@ -405,12 +398,19 @@
             this.ItemForE_Maile = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForAdresse = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForAdresse_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup12 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForNum_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDate_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDate_Resiliation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForID_Emp = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForID_Maitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup11 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForPrenom_Père_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNom_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForid_tuteur = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForPrenom_Père_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNom_Mère_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForPrenom_Mère_STG_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForPrenom_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForProfession_Père_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForNbr_Frère_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForSituation_Familiale_Parents_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForSituation_Familiale_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForProfession_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForSection = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -550,19 +550,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Père_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNbr_Frère_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).BeginInit();
@@ -576,12 +569,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForE_Maile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Père_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNbr_Frère_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
@@ -3829,173 +3829,63 @@
             this.layoutControlGroup11,
             this.layoutControlGroup12});
             // 
-            // layoutControlGroup11
+            // layoutControlGroup12
             // 
-            this.layoutControlGroup11.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForPrenom_Père_STG,
-            this.ItemForNom_Mère_STG,
-            this.ItemForid_tuteur,
-            this.ItemForPrenom_Père_STG_ar,
-            this.ItemForNom_Mère_STG_ar,
-            this.ItemForPrenom_Mère_STG_ar,
-            this.ItemForPrenom_Mère_STG,
-            this.ItemForProfession_Père_STG,
-            this.ItemForNbr_Frère_STG,
-            this.ItemForSituation_Familiale_Parents_STG,
-            this.ItemForSituation_Familiale_STG,
-            this.ItemForProfession_Mère_STG});
-            this.layoutControlGroup11.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup11.Name = "layoutControlGroup11";
-            this.layoutControlGroup11.Size = new System.Drawing.Size(697, 168);
-            this.layoutControlGroup11.Text = "Informations familiales";
+            this.layoutControlGroup12.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForNum_Validation_Contrat_STG,
+            this.ItemForDate_Validation_Contrat_STG,
+            this.ItemForDate_Resiliation_Contrat_STG,
+            this.ItemForID_Emp,
+            this.ItemForID_Maitre_Apprentissage});
+            this.layoutControlGroup12.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup12.Name = "layoutControlGroup12";
+            this.layoutControlGroup12.Size = new System.Drawing.Size(697, 168);
+            this.layoutControlGroup12.Text = "Employeur et Contrat";
             // 
-            // ItemForPrenom_Père_STG
+            // ItemForNum_Validation_Contrat_STG
             // 
-            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Père_STG.Control = this.Prenom_Père_STGTextEdit;
-            this.ItemForPrenom_Père_STG.Location = new System.Drawing.Point(0, 0);
-            this.ItemForPrenom_Père_STG.Name = "ItemForPrenom_Père_STG";
-            this.ItemForPrenom_Père_STG.Size = new System.Drawing.Size(442, 24);
-            this.ItemForPrenom_Père_STG.Text = "Prenom du père du stagiaire";
-            this.ItemForPrenom_Père_STG.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForNum_Validation_Contrat_STG.Control = this.Num_Validation_Contrat_STGTextEdit;
+            this.ItemForNum_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 24);
+            this.ItemForNum_Validation_Contrat_STG.Name = "ItemForNum_Validation_Contrat_STG";
+            this.ItemForNum_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
+            this.ItemForNum_Validation_Contrat_STG.Text = "Numéro de Validation du Contrat du stagiaire";
+            this.ItemForNum_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
-            // ItemForNom_Mère_STG
+            // ItemForDate_Validation_Contrat_STG
             // 
-            this.ItemForNom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForNom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForNom_Mère_STG.Control = this.Nom_Mère_STGTextEdit;
-            this.ItemForNom_Mère_STG.Location = new System.Drawing.Point(0, 24);
-            this.ItemForNom_Mère_STG.Name = "ItemForNom_Mère_STG";
-            this.ItemForNom_Mère_STG.Size = new System.Drawing.Size(442, 24);
-            this.ItemForNom_Mère_STG.Text = "Nom de la mère du stagiaire";
-            this.ItemForNom_Mère_STG.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForDate_Validation_Contrat_STG.Control = this.Date_Validation_Contrat_STGDateEdit;
+            this.ItemForDate_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDate_Validation_Contrat_STG.Name = "ItemForDate_Validation_Contrat_STG";
+            this.ItemForDate_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
+            this.ItemForDate_Validation_Contrat_STG.Text = "Date de Validation du Contrat du stagiaire";
+            this.ItemForDate_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
-            // ItemForid_tuteur
+            // ItemForDate_Resiliation_Contrat_STG
             // 
-            this.ItemForid_tuteur.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForid_tuteur.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForid_tuteur.Control = this.tuteurLookUpEdit;
-            this.ItemForid_tuteur.Location = new System.Drawing.Point(0, 144);
-            this.ItemForid_tuteur.Name = "ItemForid_tuteur";
-            this.ItemForid_tuteur.Size = new System.Drawing.Size(697, 24);
-            this.ItemForid_tuteur.Text = "Nom du tuteur";
-            this.ItemForid_tuteur.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForDate_Resiliation_Contrat_STG.Control = this.Date_Resiliation_Contrat_STGDateEdit;
+            this.ItemForDate_Resiliation_Contrat_STG.Location = new System.Drawing.Point(0, 72);
+            this.ItemForDate_Resiliation_Contrat_STG.Name = "ItemForDate_Resiliation_Contrat_STG";
+            this.ItemForDate_Resiliation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
+            this.ItemForDate_Resiliation_Contrat_STG.Text = "Date de résiliation du Contrat du stagiaire";
+            this.ItemForDate_Resiliation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
-            // ItemForPrenom_Père_STG_ar
+            // ItemForID_Emp
             // 
-            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Père_STG_ar.Control = this.Prenom_Père_STG_arTextEdit;
-            this.ItemForPrenom_Père_STG_ar.CustomizationFormText = "أسم أب المتمهن ";
-            this.ItemForPrenom_Père_STG_ar.Location = new System.Drawing.Point(442, 0);
-            this.ItemForPrenom_Père_STG_ar.Name = "ItemForPrenom_Père_STG_ar";
-            this.ItemForPrenom_Père_STG_ar.Size = new System.Drawing.Size(255, 24);
-            this.ItemForPrenom_Père_STG_ar.Text = "أسم أب المتمهن (ة)";
-            this.ItemForPrenom_Père_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForPrenom_Père_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForPrenom_Père_STG_ar.TextSize = new System.Drawing.Size(104, 13);
-            this.ItemForPrenom_Père_STG_ar.TextToControlDistance = 5;
+            this.ItemForID_Emp.Control = this.EmployeurLookUpEdit;
+            this.ItemForID_Emp.Location = new System.Drawing.Point(0, 0);
+            this.ItemForID_Emp.Name = "ItemForID_Emp";
+            this.ItemForID_Emp.Size = new System.Drawing.Size(697, 24);
+            this.ItemForID_Emp.Text = "Employeur ";
+            this.ItemForID_Emp.TextSize = new System.Drawing.Size(218, 13);
             // 
-            // ItemForNom_Mère_STG_ar
+            // ItemForID_Maitre_Apprentissage
             // 
-            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForNom_Mère_STG_ar.Control = this.Nom_Mère_STG_arTextEdit;
-            this.ItemForNom_Mère_STG_ar.Location = new System.Drawing.Point(442, 24);
-            this.ItemForNom_Mère_STG_ar.Name = "ItemForNom_Mère_STG_ar";
-            this.ItemForNom_Mère_STG_ar.Size = new System.Drawing.Size(255, 24);
-            this.ItemForNom_Mère_STG_ar.Text = "لقب أم المتمهن (ة)";
-            this.ItemForNom_Mère_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForNom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForNom_Mère_STG_ar.TextSize = new System.Drawing.Size(98, 13);
-            this.ItemForNom_Mère_STG_ar.TextToControlDistance = 5;
-            // 
-            // ItemForPrenom_Mère_STG_ar
-            // 
-            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Mère_STG_ar.Control = this.Prenom_Mère_STG_arTextEdit;
-            this.ItemForPrenom_Mère_STG_ar.Location = new System.Drawing.Point(442, 48);
-            this.ItemForPrenom_Mère_STG_ar.Name = "ItemForPrenom_Mère_STG_ar";
-            this.ItemForPrenom_Mère_STG_ar.Size = new System.Drawing.Size(255, 24);
-            this.ItemForPrenom_Mère_STG_ar.Text = "أسم أم المتمهن (ة) ";
-            this.ItemForPrenom_Mère_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForPrenom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForPrenom_Mère_STG_ar.TextSize = new System.Drawing.Size(104, 13);
-            this.ItemForPrenom_Mère_STG_ar.TextToControlDistance = 5;
-            // 
-            // ItemForPrenom_Mère_STG
-            // 
-            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForPrenom_Mère_STG.Control = this.Prenom_Mère_STGTextEdit;
-            this.ItemForPrenom_Mère_STG.Location = new System.Drawing.Point(0, 48);
-            this.ItemForPrenom_Mère_STG.Name = "ItemForPrenom_Mère_STG";
-            this.ItemForPrenom_Mère_STG.Size = new System.Drawing.Size(442, 24);
-            this.ItemForPrenom_Mère_STG.Text = "Prénom de la mère du stagiaire";
-            this.ItemForPrenom_Mère_STG.TextSize = new System.Drawing.Size(218, 13);
-            // 
-            // ItemForProfession_Père_STG
-            // 
-            this.ItemForProfession_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForProfession_Père_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForProfession_Père_STG.Control = this.Profession_Père_STGTextEdit;
-            this.ItemForProfession_Père_STG.Location = new System.Drawing.Point(375, 120);
-            this.ItemForProfession_Père_STG.Name = "ItemForProfession_Père_STG";
-            this.ItemForProfession_Père_STG.Size = new System.Drawing.Size(322, 24);
-            this.ItemForProfession_Père_STG.Text = "Profession du père du stagiaire";
-            this.ItemForProfession_Père_STG.TextSize = new System.Drawing.Size(218, 13);
-            // 
-            // ItemForNbr_Frère_STG
-            // 
-            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForNbr_Frère_STG.Control = this.Nbr_Frère_STGTextEdit;
-            this.ItemForNbr_Frère_STG.Location = new System.Drawing.Point(413, 72);
-            this.ItemForNbr_Frère_STG.Name = "ItemForNbr_Frère_STG";
-            this.ItemForNbr_Frère_STG.Size = new System.Drawing.Size(284, 24);
-            this.ItemForNbr_Frère_STG.Text = "Nombre de freres et soeur du stagiaire";
-            this.ItemForNbr_Frère_STG.TextSize = new System.Drawing.Size(218, 13);
-            // 
-            // ItemForSituation_Familiale_Parents_STG
-            // 
-            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForSituation_Familiale_Parents_STG.Control = this.Situation_Familiale_Parents_STGTextEdit;
-            this.ItemForSituation_Familiale_Parents_STG.Location = new System.Drawing.Point(0, 96);
-            this.ItemForSituation_Familiale_Parents_STG.Name = "ItemForSituation_Familiale_Parents_STG";
-            this.ItemForSituation_Familiale_Parents_STG.Size = new System.Drawing.Size(697, 24);
-            this.ItemForSituation_Familiale_Parents_STG.Text = "Situation familiale des parents du stagiaire";
-            this.ItemForSituation_Familiale_Parents_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForSituation_Familiale_Parents_STG.TextSize = new System.Drawing.Size(242, 13);
-            this.ItemForSituation_Familiale_Parents_STG.TextToControlDistance = 5;
-            // 
-            // ItemForSituation_Familiale_STG
-            // 
-            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForSituation_Familiale_STG.Control = this.Situation_Familiale_STGTextEdit;
-            this.ItemForSituation_Familiale_STG.Location = new System.Drawing.Point(0, 72);
-            this.ItemForSituation_Familiale_STG.Name = "ItemForSituation_Familiale_STG";
-            this.ItemForSituation_Familiale_STG.Size = new System.Drawing.Size(413, 24);
-            this.ItemForSituation_Familiale_STG.Text = "Situation familiale du stagiaire                  ";
-            this.ItemForSituation_Familiale_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForSituation_Familiale_STG.TextSize = new System.Drawing.Size(226, 13);
-            this.ItemForSituation_Familiale_STG.TextToControlDistance = 5;
-            // 
-            // ItemForProfession_Mère_STG
-            // 
-            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
-            this.ItemForProfession_Mère_STG.Control = this.Profession_Mère_STGTextEdit;
-            this.ItemForProfession_Mère_STG.Location = new System.Drawing.Point(0, 120);
-            this.ItemForProfession_Mère_STG.Name = "ItemForProfession_Mère_STG";
-            this.ItemForProfession_Mère_STG.Size = new System.Drawing.Size(375, 24);
-            this.ItemForProfession_Mère_STG.Text = "Profession de la mère du stagiaire";
-            this.ItemForProfession_Mère_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForProfession_Mère_STG.TextSize = new System.Drawing.Size(192, 13);
-            this.ItemForProfession_Mère_STG.TextToControlDistance = 5;
+            this.ItemForID_Maitre_Apprentissage.Control = this.Maitre_ApprentissageLookUpEdit;
+            this.ItemForID_Maitre_Apprentissage.Location = new System.Drawing.Point(0, 96);
+            this.ItemForID_Maitre_Apprentissage.Name = "ItemForID_Maitre_Apprentissage";
+            this.ItemForID_Maitre_Apprentissage.Size = new System.Drawing.Size(697, 72);
+            this.ItemForID_Maitre_Apprentissage.Text = "Maitre Apprentissage";
+            this.ItemForID_Maitre_Apprentissage.TextSize = new System.Drawing.Size(218, 13);
             // 
             // layoutControlGroup10
             // 
@@ -4166,63 +4056,173 @@
             this.ItemForAdresse_ar.TextSize = new System.Drawing.Size(37, 13);
             this.ItemForAdresse_ar.TextToControlDistance = 5;
             // 
-            // layoutControlGroup12
+            // layoutControlGroup11
             // 
-            this.layoutControlGroup12.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForNum_Validation_Contrat_STG,
-            this.ItemForDate_Validation_Contrat_STG,
-            this.ItemForDate_Resiliation_Contrat_STG,
-            this.ItemForID_Emp,
-            this.ItemForID_Maitre_Apprentissage});
-            this.layoutControlGroup12.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup12.Name = "layoutControlGroup12";
-            this.layoutControlGroup12.Size = new System.Drawing.Size(697, 168);
-            this.layoutControlGroup12.Text = "Employeur et Contrat";
+            this.layoutControlGroup11.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForPrenom_Père_STG,
+            this.ItemForNom_Mère_STG,
+            this.ItemForid_tuteur,
+            this.ItemForPrenom_Père_STG_ar,
+            this.ItemForNom_Mère_STG_ar,
+            this.ItemForPrenom_Mère_STG_ar,
+            this.ItemForPrenom_Mère_STG,
+            this.ItemForProfession_Père_STG,
+            this.ItemForNbr_Frère_STG,
+            this.ItemForSituation_Familiale_Parents_STG,
+            this.ItemForSituation_Familiale_STG,
+            this.ItemForProfession_Mère_STG});
+            this.layoutControlGroup11.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup11.Name = "layoutControlGroup11";
+            this.layoutControlGroup11.Size = new System.Drawing.Size(697, 168);
+            this.layoutControlGroup11.Text = "Informations familiales";
             // 
-            // ItemForNum_Validation_Contrat_STG
+            // ItemForPrenom_Père_STG
             // 
-            this.ItemForNum_Validation_Contrat_STG.Control = this.Num_Validation_Contrat_STGTextEdit;
-            this.ItemForNum_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 24);
-            this.ItemForNum_Validation_Contrat_STG.Name = "ItemForNum_Validation_Contrat_STG";
-            this.ItemForNum_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
-            this.ItemForNum_Validation_Contrat_STG.Text = "Numéro de Validation du Contrat du stagiaire";
-            this.ItemForNum_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Père_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Père_STG.Control = this.Prenom_Père_STGTextEdit;
+            this.ItemForPrenom_Père_STG.Location = new System.Drawing.Point(0, 0);
+            this.ItemForPrenom_Père_STG.Name = "ItemForPrenom_Père_STG";
+            this.ItemForPrenom_Père_STG.Size = new System.Drawing.Size(442, 24);
+            this.ItemForPrenom_Père_STG.Text = "Prenom du père du stagiaire";
+            this.ItemForPrenom_Père_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
-            // ItemForDate_Validation_Contrat_STG
+            // ItemForNom_Mère_STG
             // 
-            this.ItemForDate_Validation_Contrat_STG.Control = this.Date_Validation_Contrat_STGDateEdit;
-            this.ItemForDate_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 48);
-            this.ItemForDate_Validation_Contrat_STG.Name = "ItemForDate_Validation_Contrat_STG";
-            this.ItemForDate_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
-            this.ItemForDate_Validation_Contrat_STG.Text = "Date de Validation du Contrat du stagiaire";
-            this.ItemForDate_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForNom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForNom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNom_Mère_STG.Control = this.Nom_Mère_STGTextEdit;
+            this.ItemForNom_Mère_STG.Location = new System.Drawing.Point(0, 24);
+            this.ItemForNom_Mère_STG.Name = "ItemForNom_Mère_STG";
+            this.ItemForNom_Mère_STG.Size = new System.Drawing.Size(442, 24);
+            this.ItemForNom_Mère_STG.Text = "Nom de la mère du stagiaire";
+            this.ItemForNom_Mère_STG.TextSize = new System.Drawing.Size(218, 13);
             // 
-            // ItemForDate_Resiliation_Contrat_STG
+            // ItemForid_tuteur
             // 
-            this.ItemForDate_Resiliation_Contrat_STG.Control = this.Date_Resiliation_Contrat_STGDateEdit;
-            this.ItemForDate_Resiliation_Contrat_STG.Location = new System.Drawing.Point(0, 72);
-            this.ItemForDate_Resiliation_Contrat_STG.Name = "ItemForDate_Resiliation_Contrat_STG";
-            this.ItemForDate_Resiliation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
-            this.ItemForDate_Resiliation_Contrat_STG.Text = "Date de résiliation du Contrat du stagiaire";
-            this.ItemForDate_Resiliation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForid_tuteur.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForid_tuteur.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForid_tuteur.Control = this.tuteurLookUpEdit;
+            this.ItemForid_tuteur.Location = new System.Drawing.Point(0, 144);
+            this.ItemForid_tuteur.Name = "ItemForid_tuteur";
+            this.ItemForid_tuteur.Size = new System.Drawing.Size(697, 24);
+            this.ItemForid_tuteur.Text = "Nom du tuteur";
+            this.ItemForid_tuteur.TextSize = new System.Drawing.Size(218, 13);
             // 
-            // ItemForID_Emp
+            // ItemForPrenom_Père_STG_ar
             // 
-            this.ItemForID_Emp.Control = this.EmployeurLookUpEdit;
-            this.ItemForID_Emp.Location = new System.Drawing.Point(0, 0);
-            this.ItemForID_Emp.Name = "ItemForID_Emp";
-            this.ItemForID_Emp.Size = new System.Drawing.Size(697, 24);
-            this.ItemForID_Emp.Text = "Employeur ";
-            this.ItemForID_Emp.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Père_STG_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Père_STG_ar.Control = this.Prenom_Père_STG_arTextEdit;
+            this.ItemForPrenom_Père_STG_ar.CustomizationFormText = "أسم أب المتمهن ";
+            this.ItemForPrenom_Père_STG_ar.Location = new System.Drawing.Point(442, 0);
+            this.ItemForPrenom_Père_STG_ar.Name = "ItemForPrenom_Père_STG_ar";
+            this.ItemForPrenom_Père_STG_ar.Size = new System.Drawing.Size(255, 24);
+            this.ItemForPrenom_Père_STG_ar.Text = "أسم أب المتمهن (ة)";
+            this.ItemForPrenom_Père_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForPrenom_Père_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForPrenom_Père_STG_ar.TextSize = new System.Drawing.Size(104, 13);
+            this.ItemForPrenom_Père_STG_ar.TextToControlDistance = 5;
             // 
-            // ItemForID_Maitre_Apprentissage
+            // ItemForNom_Mère_STG_ar
             // 
-            this.ItemForID_Maitre_Apprentissage.Control = this.Maitre_ApprentissageLookUpEdit;
-            this.ItemForID_Maitre_Apprentissage.Location = new System.Drawing.Point(0, 96);
-            this.ItemForID_Maitre_Apprentissage.Name = "ItemForID_Maitre_Apprentissage";
-            this.ItemForID_Maitre_Apprentissage.Size = new System.Drawing.Size(697, 72);
-            this.ItemForID_Maitre_Apprentissage.Text = "Maitre Apprentissage";
-            this.ItemForID_Maitre_Apprentissage.TextSize = new System.Drawing.Size(218, 13);
+            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForNom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNom_Mère_STG_ar.Control = this.Nom_Mère_STG_arTextEdit;
+            this.ItemForNom_Mère_STG_ar.Location = new System.Drawing.Point(442, 24);
+            this.ItemForNom_Mère_STG_ar.Name = "ItemForNom_Mère_STG_ar";
+            this.ItemForNom_Mère_STG_ar.Size = new System.Drawing.Size(255, 24);
+            this.ItemForNom_Mère_STG_ar.Text = "لقب أم المتمهن (ة)";
+            this.ItemForNom_Mère_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForNom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForNom_Mère_STG_ar.TextSize = new System.Drawing.Size(98, 13);
+            this.ItemForNom_Mère_STG_ar.TextToControlDistance = 5;
+            // 
+            // ItemForPrenom_Mère_STG_ar
+            // 
+            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Mère_STG_ar.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Mère_STG_ar.Control = this.Prenom_Mère_STG_arTextEdit;
+            this.ItemForPrenom_Mère_STG_ar.Location = new System.Drawing.Point(442, 48);
+            this.ItemForPrenom_Mère_STG_ar.Name = "ItemForPrenom_Mère_STG_ar";
+            this.ItemForPrenom_Mère_STG_ar.Size = new System.Drawing.Size(255, 24);
+            this.ItemForPrenom_Mère_STG_ar.Text = "أسم أم المتمهن (ة) ";
+            this.ItemForPrenom_Mère_STG_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForPrenom_Mère_STG_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForPrenom_Mère_STG_ar.TextSize = new System.Drawing.Size(104, 13);
+            this.ItemForPrenom_Mère_STG_ar.TextToControlDistance = 5;
+            // 
+            // ItemForPrenom_Mère_STG
+            // 
+            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForPrenom_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForPrenom_Mère_STG.Control = this.Prenom_Mère_STGTextEdit;
+            this.ItemForPrenom_Mère_STG.Location = new System.Drawing.Point(0, 48);
+            this.ItemForPrenom_Mère_STG.Name = "ItemForPrenom_Mère_STG";
+            this.ItemForPrenom_Mère_STG.Size = new System.Drawing.Size(442, 24);
+            this.ItemForPrenom_Mère_STG.Text = "Prénom de la mère du stagiaire";
+            this.ItemForPrenom_Mère_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForProfession_Père_STG
+            // 
+            this.ItemForProfession_Père_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForProfession_Père_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForProfession_Père_STG.Control = this.Profession_Père_STGTextEdit;
+            this.ItemForProfession_Père_STG.Location = new System.Drawing.Point(375, 120);
+            this.ItemForProfession_Père_STG.Name = "ItemForProfession_Père_STG";
+            this.ItemForProfession_Père_STG.Size = new System.Drawing.Size(322, 24);
+            this.ItemForProfession_Père_STG.Text = "Profession du père du stagiaire";
+            this.ItemForProfession_Père_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForNbr_Frère_STG
+            // 
+            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForNbr_Frère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForNbr_Frère_STG.Control = this.Nbr_Frère_STGTextEdit;
+            this.ItemForNbr_Frère_STG.Location = new System.Drawing.Point(413, 72);
+            this.ItemForNbr_Frère_STG.Name = "ItemForNbr_Frère_STG";
+            this.ItemForNbr_Frère_STG.Size = new System.Drawing.Size(284, 24);
+            this.ItemForNbr_Frère_STG.Text = "Nombre de freres et soeur du stagiaire";
+            this.ItemForNbr_Frère_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForSituation_Familiale_Parents_STG
+            // 
+            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForSituation_Familiale_Parents_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForSituation_Familiale_Parents_STG.Control = this.Situation_Familiale_Parents_STGTextEdit;
+            this.ItemForSituation_Familiale_Parents_STG.Location = new System.Drawing.Point(0, 96);
+            this.ItemForSituation_Familiale_Parents_STG.Name = "ItemForSituation_Familiale_Parents_STG";
+            this.ItemForSituation_Familiale_Parents_STG.Size = new System.Drawing.Size(697, 24);
+            this.ItemForSituation_Familiale_Parents_STG.Text = "Situation familiale des parents du stagiaire";
+            this.ItemForSituation_Familiale_Parents_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForSituation_Familiale_Parents_STG.TextSize = new System.Drawing.Size(242, 13);
+            this.ItemForSituation_Familiale_Parents_STG.TextToControlDistance = 5;
+            // 
+            // ItemForSituation_Familiale_STG
+            // 
+            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForSituation_Familiale_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForSituation_Familiale_STG.Control = this.Situation_Familiale_STGTextEdit;
+            this.ItemForSituation_Familiale_STG.Location = new System.Drawing.Point(0, 72);
+            this.ItemForSituation_Familiale_STG.Name = "ItemForSituation_Familiale_STG";
+            this.ItemForSituation_Familiale_STG.Size = new System.Drawing.Size(413, 24);
+            this.ItemForSituation_Familiale_STG.Text = "Situation familiale du stagiaire                  ";
+            this.ItemForSituation_Familiale_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForSituation_Familiale_STG.TextSize = new System.Drawing.Size(226, 13);
+            this.ItemForSituation_Familiale_STG.TextToControlDistance = 5;
+            // 
+            // ItemForProfession_Mère_STG
+            // 
+            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ItemForProfession_Mère_STG.AppearanceItemCaption.Options.UseFont = true;
+            this.ItemForProfession_Mère_STG.Control = this.Profession_Mère_STGTextEdit;
+            this.ItemForProfession_Mère_STG.Location = new System.Drawing.Point(0, 120);
+            this.ItemForProfession_Mère_STG.Name = "ItemForProfession_Mère_STG";
+            this.ItemForProfession_Mère_STG.Size = new System.Drawing.Size(375, 24);
+            this.ItemForProfession_Mère_STG.Text = "Profession de la mère du stagiaire";
+            this.ItemForProfession_Mère_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForProfession_Mère_STG.TextSize = new System.Drawing.Size(192, 13);
+            this.ItemForProfession_Mère_STG.TextToControlDistance = 5;
             // 
             // ItemForSection
             // 
@@ -4634,7 +4634,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "StagiairView";
-            this.Text = "stagiaire";
+            this.Text = "Stagiaire";
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).EndInit();
@@ -4744,19 +4744,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Père_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNbr_Frère_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).EndInit();
@@ -4770,12 +4763,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForE_Maile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Père_STG_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Mère_STG_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom_Mère_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Père_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNbr_Frère_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();

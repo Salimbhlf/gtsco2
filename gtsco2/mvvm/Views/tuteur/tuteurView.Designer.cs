@@ -43,13 +43,19 @@
             this.nomTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.prenomTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.adresseTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.code_postalTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.telephoneTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.StagiairsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.StagiairsGridControl = new DevExpress.XtraGrid.GridControl();
             this.StagiairsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StagiairsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coltuteur = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.StagiairsBarManager = new DevExpress.XtraBars.BarManager(this.components);
             this.StagiairsBar = new DevExpress.XtraBars.Bar();
@@ -60,6 +66,8 @@
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.code_postalTextEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForid_tuteur = new DevExpress.XtraLayout.LayoutControlItem();
@@ -73,13 +81,7 @@
             this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coltuteur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.id_tuteurTextEdit.Properties)).BeginInit();
@@ -88,13 +90,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.nomTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prenomTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adresseTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.code_postalTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.telephoneTextEdit.Properties)).BeginInit();
             this.StagiairsXtraUserControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.code_postalTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).BeginInit();
@@ -108,6 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayoutControl1
@@ -117,15 +121,15 @@
             this.dataLayoutControl1.Controls.Add(this.nomTextEdit);
             this.dataLayoutControl1.Controls.Add(this.prenomTextEdit);
             this.dataLayoutControl1.Controls.Add(this.adresseTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.code_postalTextEdit);
             this.dataLayoutControl1.Controls.Add(this.telephoneTextEdit);
             this.dataLayoutControl1.Controls.Add(this.StagiairsXtraUserControl);
+            this.dataLayoutControl1.Controls.Add(this.code_postalTextEdit);
             this.dataLayoutControl1.DataSource = this.tuteurViewBindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 129);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 639);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(949, 346);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // id_tuteurTextEdit
@@ -136,10 +140,12 @@
             this.id_tuteurTextEdit.Name = "id_tuteurTextEdit";
             this.id_tuteurTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.id_tuteurTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.id_tuteurTextEdit.Properties.Mask.EditMask = "N0";
-            this.id_tuteurTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.id_tuteurTextEdit.Properties.BeepOnError = false;
             this.id_tuteurTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.id_tuteurTextEdit.Size = new System.Drawing.Size(880, 20);
+            this.id_tuteurTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.id_tuteurTextEdit.Properties.MaskSettings.Set("mask", "d");
+            this.id_tuteurTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.id_tuteurTextEdit.Size = new System.Drawing.Size(805, 20);
             this.id_tuteurTextEdit.StyleController = this.dataLayoutControl1;
             this.id_tuteurTextEdit.TabIndex = 4;
             // 
@@ -169,7 +175,7 @@
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 129);
+            this.mainRibbonControl.Size = new System.Drawing.Size(949, 129);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -243,7 +249,7 @@
             this.mainRibbonPage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mainRibbonPage.ImageOptions.Image")));
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "ACCEUIL ";
+            this.mainRibbonPage.Text = "Tuteur ";
             // 
             // mainRibbonPageGroup
             // 
@@ -273,7 +279,7 @@
             this.nomTextEdit.Location = new System.Drawing.Point(132, 36);
             this.nomTextEdit.MenuManager = this.mainRibbonControl;
             this.nomTextEdit.Name = "nomTextEdit";
-            this.nomTextEdit.Size = new System.Drawing.Size(880, 20);
+            this.nomTextEdit.Size = new System.Drawing.Size(805, 20);
             this.nomTextEdit.StyleController = this.dataLayoutControl1;
             this.nomTextEdit.TabIndex = 5;
             // 
@@ -283,7 +289,7 @@
             this.prenomTextEdit.Location = new System.Drawing.Point(132, 60);
             this.prenomTextEdit.MenuManager = this.mainRibbonControl;
             this.prenomTextEdit.Name = "prenomTextEdit";
-            this.prenomTextEdit.Size = new System.Drawing.Size(880, 20);
+            this.prenomTextEdit.Size = new System.Drawing.Size(805, 20);
             this.prenomTextEdit.StyleController = this.dataLayoutControl1;
             this.prenomTextEdit.TabIndex = 6;
             // 
@@ -293,25 +299,9 @@
             this.adresseTextEdit.Location = new System.Drawing.Point(132, 84);
             this.adresseTextEdit.MenuManager = this.mainRibbonControl;
             this.adresseTextEdit.Name = "adresseTextEdit";
-            this.adresseTextEdit.Size = new System.Drawing.Size(880, 20);
+            this.adresseTextEdit.Size = new System.Drawing.Size(805, 20);
             this.adresseTextEdit.StyleController = this.dataLayoutControl1;
             this.adresseTextEdit.TabIndex = 7;
-            // 
-            // code_postalTextEdit
-            // 
-            this.code_postalTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tuteurViewBindingSource, "code_postal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.code_postalTextEdit.Location = new System.Drawing.Point(132, 108);
-            this.code_postalTextEdit.MenuManager = this.mainRibbonControl;
-            this.code_postalTextEdit.Name = "code_postalTextEdit";
-            this.code_postalTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.code_postalTextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.code_postalTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.code_postalTextEdit.Properties.Mask.EditMask = "N0";
-            this.code_postalTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.code_postalTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.code_postalTextEdit.Size = new System.Drawing.Size(880, 20);
-            this.code_postalTextEdit.StyleController = this.dataLayoutControl1;
-            this.code_postalTextEdit.TabIndex = 8;
             // 
             // telephoneTextEdit
             // 
@@ -319,7 +309,7 @@
             this.telephoneTextEdit.Location = new System.Drawing.Point(132, 132);
             this.telephoneTextEdit.MenuManager = this.mainRibbonControl;
             this.telephoneTextEdit.Name = "telephoneTextEdit";
-            this.telephoneTextEdit.Size = new System.Drawing.Size(880, 20);
+            this.telephoneTextEdit.Size = new System.Drawing.Size(805, 20);
             this.telephoneTextEdit.StyleController = this.dataLayoutControl1;
             this.telephoneTextEdit.TabIndex = 9;
             // 
@@ -333,7 +323,7 @@
             this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 191);
             this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
-            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(976, 424);
+            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(901, 131);
             this.StagiairsXtraUserControl.TabIndex = 10;
             // 
             // StagiairsGridControl
@@ -344,7 +334,7 @@
             this.StagiairsGridControl.MainView = this.StagiairsGridView;
             this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
             this.StagiairsGridControl.Name = "StagiairsGridControl";
-            this.StagiairsGridControl.Size = new System.Drawing.Size(976, 400);
+            this.StagiairsGridControl.Size = new System.Drawing.Size(901, 107);
             this.StagiairsGridControl.TabIndex = 0;
             this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.StagiairsGridView});
@@ -377,13 +367,62 @@
             this.colNum_STG.VisibleIndex = 0;
             this.colNum_STG.Width = 35;
             // 
+            // colNom_ar
+            // 
+            this.colNom_ar.FieldName = "Nom_ar";
+            this.colNom_ar.Name = "colNom_ar";
+            this.colNom_ar.Visible = true;
+            this.colNom_ar.VisibleIndex = 1;
+            // 
+            // colPrenom
+            // 
+            this.colPrenom.FieldName = "Prenom";
+            this.colPrenom.Name = "colPrenom";
+            this.colPrenom.Visible = true;
+            this.colPrenom.VisibleIndex = 2;
+            // 
+            // colPrenom_ar
+            // 
+            this.colPrenom_ar.FieldName = "Prenom_ar";
+            this.colPrenom_ar.Name = "colPrenom_ar";
+            this.colPrenom_ar.Visible = true;
+            this.colPrenom_ar.VisibleIndex = 3;
+            // 
+            // colPromo
+            // 
+            this.colPromo.FieldName = "Promo";
+            this.colPromo.Name = "colPromo";
+            this.colPromo.Visible = true;
+            this.colPromo.VisibleIndex = 5;
+            // 
+            // colSection
+            // 
+            this.colSection.FieldName = "Section";
+            this.colSection.Name = "colSection";
+            this.colSection.Visible = true;
+            this.colSection.VisibleIndex = 4;
+            // 
+            // colTelephone
+            // 
+            this.colTelephone.FieldName = "Telephone";
+            this.colTelephone.Name = "colTelephone";
+            this.colTelephone.Visible = true;
+            this.colTelephone.VisibleIndex = 6;
+            // 
+            // coltuteur
+            // 
+            this.coltuteur.FieldName = "tuteur";
+            this.coltuteur.Name = "coltuteur";
+            this.coltuteur.Visible = true;
+            this.coltuteur.VisibleIndex = 7;
+            // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.StagiairsBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 400);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 107);
             // 
             // StagiairsBarManager
             // 
@@ -456,23 +495,49 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.StagiairsBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(901, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 424);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 131);
             this.barDockControlBottom.Manager = this.StagiairsBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(901, 0);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(901, 24);
             this.barDockControlRight.Manager = this.StagiairsBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 400);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 107);
+            // 
+            // code_postalTextEdit
+            // 
+            this.code_postalTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.tuteurViewBindingSource, "code_postal", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.code_postalTextEdit.Location = new System.Drawing.Point(132, 108);
+            this.code_postalTextEdit.MenuManager = this.mainRibbonControl;
+            this.code_postalTextEdit.Name = "code_postalTextEdit";
+            this.code_postalTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.code_postalTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.code_postalTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.code_postalTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.code_postalTextEdit.Properties.DataSource = this.StagiairsBindingSource;
+            this.code_postalTextEdit.Properties.NullText = "";
+            this.code_postalTextEdit.Properties.PopupSizeable = false;
+            this.code_postalTextEdit.Properties.PopupView = this.gridLookUpEdit1View;
+            this.code_postalTextEdit.Size = new System.Drawing.Size(805, 20);
+            this.code_postalTextEdit.StyleController = this.dataLayoutControl1;
+            this.code_postalTextEdit.TabIndex = 8;
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
             // layoutControlGroup1
             // 
@@ -481,7 +546,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 639);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(949, 346);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -498,14 +563,14 @@
             this.tabbedControlGroup1});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 619);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(929, 326);
             // 
             // ItemForid_tuteur
             // 
             this.ItemForid_tuteur.Control = this.id_tuteurTextEdit;
             this.ItemForid_tuteur.Location = new System.Drawing.Point(0, 0);
             this.ItemForid_tuteur.Name = "ItemForid_tuteur";
-            this.ItemForid_tuteur.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForid_tuteur.Size = new System.Drawing.Size(929, 24);
             this.ItemForid_tuteur.Text = "Numéro du tuteur";
             this.ItemForid_tuteur.TextSize = new System.Drawing.Size(108, 13);
             // 
@@ -514,7 +579,7 @@
             this.ItemFornom.Control = this.nomTextEdit;
             this.ItemFornom.Location = new System.Drawing.Point(0, 24);
             this.ItemFornom.Name = "ItemFornom";
-            this.ItemFornom.Size = new System.Drawing.Size(1004, 24);
+            this.ItemFornom.Size = new System.Drawing.Size(929, 24);
             this.ItemFornom.Text = "Nom  du tuteur";
             this.ItemFornom.TextSize = new System.Drawing.Size(108, 13);
             // 
@@ -523,7 +588,7 @@
             this.ItemForprenom.Control = this.prenomTextEdit;
             this.ItemForprenom.Location = new System.Drawing.Point(0, 48);
             this.ItemForprenom.Name = "ItemForprenom";
-            this.ItemForprenom.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForprenom.Size = new System.Drawing.Size(929, 24);
             this.ItemForprenom.Text = "Prenom  du tuteur";
             this.ItemForprenom.TextSize = new System.Drawing.Size(108, 13);
             // 
@@ -532,7 +597,7 @@
             this.ItemForadresse.Control = this.adresseTextEdit;
             this.ItemForadresse.Location = new System.Drawing.Point(0, 72);
             this.ItemForadresse.Name = "ItemForadresse";
-            this.ItemForadresse.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForadresse.Size = new System.Drawing.Size(929, 24);
             this.ItemForadresse.Text = "Adresse  du tuteur";
             this.ItemForadresse.TextSize = new System.Drawing.Size(108, 13);
             // 
@@ -541,7 +606,7 @@
             this.ItemForcode_postal.Control = this.code_postalTextEdit;
             this.ItemForcode_postal.Location = new System.Drawing.Point(0, 96);
             this.ItemForcode_postal.Name = "ItemForcode_postal";
-            this.ItemForcode_postal.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForcode_postal.Size = new System.Drawing.Size(929, 24);
             this.ItemForcode_postal.Text = "Code postal  du tuteur";
             this.ItemForcode_postal.TextSize = new System.Drawing.Size(108, 13);
             // 
@@ -550,7 +615,7 @@
             this.ItemFortelephone.Control = this.telephoneTextEdit;
             this.ItemFortelephone.Location = new System.Drawing.Point(0, 120);
             this.ItemFortelephone.Name = "ItemFortelephone";
-            this.ItemFortelephone.Size = new System.Drawing.Size(1004, 24);
+            this.ItemFortelephone.Size = new System.Drawing.Size(929, 24);
             this.ItemFortelephone.Text = "Telephone  du tuteur";
             this.ItemFortelephone.TextSize = new System.Drawing.Size(108, 13);
             // 
@@ -559,7 +624,7 @@
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 144);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
             this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 475);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(929, 182);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3});
             this.tabbedControlGroup1.Text = "Tabs";
@@ -570,15 +635,15 @@
             this.ItemForStagiairs});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForStagiairs";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 428);
-            this.layoutControlGroup3.Text = "Stagiairs";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(905, 135);
+            this.layoutControlGroup3.Text = "Stagiaires";
             // 
             // ItemForStagiairs
             // 
             this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
             this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
             this.ItemForStagiairs.Name = "ItemForStagiairs";
-            this.ItemForStagiairs.Size = new System.Drawing.Size(980, 428);
+            this.ItemForStagiairs.Size = new System.Drawing.Size(905, 135);
             this.ItemForStagiairs.StartNewLine = true;
             this.ItemForStagiairs.Text = "Stagiairs";
             this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
@@ -610,55 +675,6 @@
             this.StagiairsPopUpMenu.Manager = this.StagiairsBarManager;
             this.StagiairsPopUpMenu.Name = "StagiairsPopUpMenu";
             // 
-            // colNom_ar
-            // 
-            this.colNom_ar.FieldName = "Nom_ar";
-            this.colNom_ar.Name = "colNom_ar";
-            this.colNom_ar.Visible = true;
-            this.colNom_ar.VisibleIndex = 1;
-            // 
-            // colPrenom
-            // 
-            this.colPrenom.FieldName = "Prenom";
-            this.colPrenom.Name = "colPrenom";
-            this.colPrenom.Visible = true;
-            this.colPrenom.VisibleIndex = 2;
-            // 
-            // colPrenom_ar
-            // 
-            this.colPrenom_ar.FieldName = "Prenom_ar";
-            this.colPrenom_ar.Name = "colPrenom_ar";
-            this.colPrenom_ar.Visible = true;
-            this.colPrenom_ar.VisibleIndex = 3;
-            // 
-            // colSection
-            // 
-            this.colSection.FieldName = "Section";
-            this.colSection.Name = "colSection";
-            this.colSection.Visible = true;
-            this.colSection.VisibleIndex = 4;
-            // 
-            // colPromo
-            // 
-            this.colPromo.FieldName = "Promo";
-            this.colPromo.Name = "colPromo";
-            this.colPromo.Visible = true;
-            this.colPromo.VisibleIndex = 5;
-            // 
-            // colTelephone
-            // 
-            this.colTelephone.FieldName = "Telephone";
-            this.colTelephone.Name = "colTelephone";
-            this.colTelephone.Visible = true;
-            this.colTelephone.VisibleIndex = 6;
-            // 
-            // coltuteur
-            // 
-            this.coltuteur.FieldName = "tuteur";
-            this.coltuteur.Name = "coltuteur";
-            this.coltuteur.Visible = true;
-            this.coltuteur.VisibleIndex = 7;
-            // 
             // tuteurView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -667,7 +683,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "tuteurView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(949, 475);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.id_tuteurTextEdit.Properties)).EndInit();
@@ -676,7 +692,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nomTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prenomTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adresseTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.code_postalTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.telephoneTextEdit.Properties)).EndInit();
             this.StagiairsXtraUserControl.ResumeLayout(false);
             this.StagiairsXtraUserControl.PerformLayout();
@@ -684,6 +699,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.code_postalTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForid_tuteur)).EndInit();
@@ -697,6 +714,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -735,7 +753,6 @@
         private DevExpress.XtraEditors.TextEdit nomTextEdit;
         private DevExpress.XtraEditors.TextEdit prenomTextEdit;
         private DevExpress.XtraEditors.TextEdit adresseTextEdit;
-        private DevExpress.XtraEditors.TextEdit code_postalTextEdit;
         private DevExpress.XtraEditors.TextEdit telephoneTextEdit;
         private System.Windows.Forms.BindingSource StagiairsBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colNum_STG;
@@ -760,5 +777,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colSection;
         private DevExpress.XtraGrid.Columns.GridColumn colTelephone;
         private DevExpress.XtraGrid.Columns.GridColumn coltuteur;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraEditors.GridLookUpEdit code_postalTextEdit;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
     }
 }

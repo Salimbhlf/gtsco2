@@ -226,7 +226,7 @@ namespace gtsco2.forms.PVfinal
             this.chikdeavenrtp.Name = "chikdeavenrtp";
             this.chikdeavenrtp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.chikdeavenrtp.Properties.Appearance.Options.UseFont = true;
-            this.chikdeavenrtp.Properties.Caption = "Avant ratrapage";
+            this.chikdeavenrtp.Properties.Caption = "Avant rattrapage";
             this.chikdeavenrtp.Size = new System.Drawing.Size(310, 20);
             this.chikdeavenrtp.StyleController = this.layoutControl1;
             this.chikdeavenrtp.TabIndex = 6;

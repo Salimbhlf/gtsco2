@@ -367,7 +367,7 @@ namespace gtsco2.forms
             this.radioapre.Name = "radioapre";
             this.radioapre.Size = new System.Drawing.Size(325, 25);
             this.radioapre.TabIndex = 18;
-            this.radioapre.Text = "La moyenne  avant ratrapage";
+            this.radioapre.Text = "La moyenne  (avant rattrapage)";
             this.radioapre.UseVisualStyleBackColor = true;
             // 
             // radio1avin
@@ -419,7 +419,7 @@ namespace gtsco2.forms
             this.avenrtp.Name = "avenrtp";
             this.avenrtp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.avenrtp.Properties.Appearance.Options.UseFont = true;
-            this.avenrtp.Properties.Caption = "Avant Ratrapage";
+            this.avenrtp.Properties.Caption = "Avant Rattrapage";
             this.avenrtp.Size = new System.Drawing.Size(337, 20);
             this.avenrtp.StyleController = this.layoutControl1;
             this.avenrtp.TabIndex = 6;
@@ -704,7 +704,7 @@ namespace gtsco2.forms
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Size = new System.Drawing.Size(329, 18);
             this.simpleLabelItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.simpleLabelItem1.Text = "La note de ratrapage remplace";
+            this.simpleLabelItem1.Text = "La note de rattrapage remplace";
             this.simpleLabelItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(50, 20);
             // 

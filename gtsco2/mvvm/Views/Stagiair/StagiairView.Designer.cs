@@ -3822,7 +3822,7 @@
             // 
             this.tabbedControlGroup2.Location = new System.Drawing.Point(281, 96);
             this.tabbedControlGroup2.Name = "tabbedControlGroup2";
-            this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup12;
+            this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup10;
             this.tabbedControlGroup2.Size = new System.Drawing.Size(721, 215);
             this.tabbedControlGroup2.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup10,

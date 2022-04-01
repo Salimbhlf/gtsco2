@@ -187,5 +187,12 @@ namespace gtsco2.forms.Pageprancipel
         {
             opfrm(new mvvm.Views.DecisionCollectionView.DecisionCollectionView());
         }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CnxDataBase.FrmCnxDataBase frm =new CnxDataBase.FrmCnxDataBase();
+            frm.ShowDialog();
+
+        }
     }
 }

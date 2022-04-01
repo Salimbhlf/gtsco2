@@ -115,10 +115,10 @@
             // Code_BrancheTextEdit
             // 
             this.Code_BrancheTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Code_Branche", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Code_BrancheTextEdit.Location = new System.Drawing.Point(193, 12);
+            this.Code_BrancheTextEdit.Location = new System.Drawing.Point(147, 12);
             this.Code_BrancheTextEdit.MenuManager = this.mainRibbonControl;
             this.Code_BrancheTextEdit.Name = "Code_BrancheTextEdit";
-            this.Code_BrancheTextEdit.Size = new System.Drawing.Size(818, 20);
+            this.Code_BrancheTextEdit.Size = new System.Drawing.Size(864, 20);
             this.Code_BrancheTextEdit.StyleController = this.dataLayoutControl1;
             this.Code_BrancheTextEdit.TabIndex = 4;
             // 
@@ -248,20 +248,21 @@
             // Designation_BrancheTextEdit
             // 
             this.Designation_BrancheTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Designation_Branche", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_BrancheTextEdit.Location = new System.Drawing.Point(193, 36);
+            this.Designation_BrancheTextEdit.Location = new System.Drawing.Point(147, 36);
             this.Designation_BrancheTextEdit.MenuManager = this.mainRibbonControl;
             this.Designation_BrancheTextEdit.Name = "Designation_BrancheTextEdit";
-            this.Designation_BrancheTextEdit.Size = new System.Drawing.Size(818, 20);
+            this.Designation_BrancheTextEdit.Size = new System.Drawing.Size(449, 20);
             this.Designation_BrancheTextEdit.StyleController = this.dataLayoutControl1;
             this.Designation_BrancheTextEdit.TabIndex = 5;
             // 
             // Designation_Branche_arTextEdit
             // 
             this.Designation_Branche_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.branchViewBindingSource, "Designation_Branche_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_Branche_arTextEdit.Location = new System.Drawing.Point(193, 60);
+            this.Designation_Branche_arTextEdit.Location = new System.Drawing.Point(600, 36);
             this.Designation_Branche_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Designation_Branche_arTextEdit.Name = "Designation_Branche_arTextEdit";
-            this.Designation_Branche_arTextEdit.Size = new System.Drawing.Size(818, 20);
+            this.Designation_Branche_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Designation_Branche_arTextEdit.Size = new System.Drawing.Size(357, 20);
             this.Designation_Branche_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Designation_Branche_arTextEdit.TabIndex = 6;
             // 
@@ -272,10 +273,10 @@
             this.SpecialitesXtraUserControl.Controls.Add(this.barDockControlRight);
             this.SpecialitesXtraUserControl.Controls.Add(this.barDockControlBottom);
             this.SpecialitesXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.SpecialitesXtraUserControl.Location = new System.Drawing.Point(24, 119);
+            this.SpecialitesXtraUserControl.Location = new System.Drawing.Point(24, 95);
             this.SpecialitesXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.SpecialitesXtraUserControl.Name = "SpecialitesXtraUserControl";
-            this.SpecialitesXtraUserControl.Size = new System.Drawing.Size(975, 259);
+            this.SpecialitesXtraUserControl.Size = new System.Drawing.Size(975, 283);
             this.SpecialitesXtraUserControl.TabIndex = 7;
             // 
             // SpecialitesGridControl
@@ -286,7 +287,7 @@
             this.SpecialitesGridControl.MainView = this.SpecialitesGridView;
             this.SpecialitesGridControl.MenuManager = this.mainRibbonControl;
             this.SpecialitesGridControl.Name = "SpecialitesGridControl";
-            this.SpecialitesGridControl.Size = new System.Drawing.Size(975, 235);
+            this.SpecialitesGridControl.Size = new System.Drawing.Size(975, 259);
             this.SpecialitesGridControl.TabIndex = 0;
             this.SpecialitesGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.SpecialitesGridView});
@@ -369,7 +370,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.SpecialitesBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 235);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 259);
             // 
             // SpecialitesBarManager
             // 
@@ -448,7 +449,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 259);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 283);
             this.barDockControlBottom.Manager = this.SpecialitesBarManager;
             this.barDockControlBottom.Size = new System.Drawing.Size(975, 0);
             // 
@@ -458,7 +459,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(975, 24);
             this.barDockControlRight.Manager = this.SpecialitesBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 235);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 259);
             // 
             // layoutControlGroup1
             // 
@@ -477,8 +478,8 @@
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForCode_Branche,
             this.ItemForDesignation_Branche,
-            this.ItemForDesignation_Branche_ar,
-            this.tabbedControlGroup1});
+            this.tabbedControlGroup1,
+            this.ItemForDesignation_Branche_ar});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
             this.layoutControlGroup2.Size = new System.Drawing.Size(1003, 382);
@@ -490,32 +491,35 @@
             this.ItemForCode_Branche.Name = "ItemForCode_Branche";
             this.ItemForCode_Branche.Size = new System.Drawing.Size(1003, 24);
             this.ItemForCode_Branche.Text = "Code de la branche";
-            this.ItemForCode_Branche.TextSize = new System.Drawing.Size(169, 13);
+            this.ItemForCode_Branche.TextSize = new System.Drawing.Size(123, 13);
             // 
             // ItemForDesignation_Branche
             // 
             this.ItemForDesignation_Branche.Control = this.Designation_BrancheTextEdit;
             this.ItemForDesignation_Branche.Location = new System.Drawing.Point(0, 24);
             this.ItemForDesignation_Branche.Name = "ItemForDesignation_Branche";
-            this.ItemForDesignation_Branche.Size = new System.Drawing.Size(1003, 24);
+            this.ItemForDesignation_Branche.Size = new System.Drawing.Size(588, 24);
             this.ItemForDesignation_Branche.Text = "Designation des Branches";
-            this.ItemForDesignation_Branche.TextSize = new System.Drawing.Size(169, 13);
+            this.ItemForDesignation_Branche.TextSize = new System.Drawing.Size(123, 13);
             // 
             // ItemForDesignation_Branche_ar
             // 
             this.ItemForDesignation_Branche_ar.Control = this.Designation_Branche_arTextEdit;
-            this.ItemForDesignation_Branche_ar.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDesignation_Branche_ar.Location = new System.Drawing.Point(588, 24);
             this.ItemForDesignation_Branche_ar.Name = "ItemForDesignation_Branche_ar";
-            this.ItemForDesignation_Branche_ar.Size = new System.Drawing.Size(1003, 24);
-            this.ItemForDesignation_Branche_ar.Text = "Designation des branches en arabe";
-            this.ItemForDesignation_Branche_ar.TextSize = new System.Drawing.Size(169, 13);
+            this.ItemForDesignation_Branche_ar.Size = new System.Drawing.Size(415, 24);
+            this.ItemForDesignation_Branche_ar.Text = "اسم الفرع";
+            this.ItemForDesignation_Branche_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForDesignation_Branche_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForDesignation_Branche_ar.TextSize = new System.Drawing.Size(49, 13);
+            this.ItemForDesignation_Branche_ar.TextToControlDistance = 5;
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 72);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 48);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
             this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1003, 310);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(1003, 334);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3});
             this.tabbedControlGroup1.Text = "Tabs";
@@ -526,7 +530,7 @@
             this.ItemForSpecialites});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForSpecialites";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(979, 263);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(979, 287);
             this.layoutControlGroup3.Text = "Spécialités";
             // 
             // ItemForSpecialites
@@ -534,7 +538,7 @@
             this.ItemForSpecialites.Control = this.SpecialitesXtraUserControl;
             this.ItemForSpecialites.Location = new System.Drawing.Point(0, 0);
             this.ItemForSpecialites.Name = "ItemForSpecialites";
-            this.ItemForSpecialites.Size = new System.Drawing.Size(979, 263);
+            this.ItemForSpecialites.Size = new System.Drawing.Size(979, 287);
             this.ItemForSpecialites.StartNewLine = true;
             this.ItemForSpecialites.Text = "Specialites";
             this.ItemForSpecialites.TextSize = new System.Drawing.Size(0, 0);

@@ -25,10 +25,26 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SemestreView));
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ID_SemestreTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.semestreViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Designation_SemestreTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.Designation_Semestre_arTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.AbsencesXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.AbsencesGridControl = new DevExpress.XtraGrid.GridControl();
+            this.AbsencesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AbsencesGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_Absence = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSeance_1_ABS = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -44,22 +60,47 @@
             this.colannee_scolaire = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSemestre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
-            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
-            this.AbsencesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.AbsencesBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.AbsencesBar = new DevExpress.XtraBars.Bar();
+            this.bbiAbsencesNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiAbsencesEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiAbsencesDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiAbsencesRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.DecisionsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
+            this.DecisionsGridControl = new DevExpress.XtraGrid.GridControl();
+            this.DecisionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DecisionsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colType_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_PV_Délibiration = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Semestre2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_STG2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProce_verbal_delibation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSemestre2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
+            this.DecisionsBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.DecisionsBar = new DevExpress.XtraBars.Bar();
+            this.bbiDecisionsNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDecisionsEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControl5 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
+            this.bbiDecisionsDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDecisionsRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.EvaluationsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.EvaluationsGridControl = new DevExpress.XtraGrid.GridControl();
+            this.EvaluationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EvaluationsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colNum_STG1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID_Semestre1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -77,24 +118,19 @@
             this.colModule = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSemestre1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiair1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.EvaluationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DecisionsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
-            this.DecisionsGridControl = new DevExpress.XtraGrid.GridControl();
-            this.DecisionsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colID_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colType_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDate_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_PV_Délibiration = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Semestre2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNum_STG2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colProce_verbal_delibation = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSemestre2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStagiair2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.DecisionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
+            this.EvaluationsBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.EvaluationsBar = new DevExpress.XtraBars.Bar();
+            this.bbiEvaluationsNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiEvaluationsEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiEvaluationsDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiEvaluationsRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
             this.SectionsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.SectionsGridControl = new DevExpress.XtraGrid.GridControl();
+            this.SectionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SectionsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSectionID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode_Section = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -109,9 +145,19 @@
             this.colPromo1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSemestre3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiairs = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.SectionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.barDockControl11 = new DevExpress.XtraBars.BarDockControl();
+            this.SectionsBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.SectionsBar = new DevExpress.XtraBars.Bar();
+            this.bbiSectionsNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSectionsEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSectionsDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSectionsRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControl9 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl10 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl12 = new DevExpress.XtraBars.BarDockControl();
             this.Suiver_stagiaireXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.Suiver_stagiaireGridControl = new DevExpress.XtraGrid.GridControl();
+            this.Suiver_stagiaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Suiver_stagiaireGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colnum_stg3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEnseignant2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -121,138 +167,92 @@
             this.colEnseignant11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSemestre11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiair3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Suiver_stagiaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ID_SemestreTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForID_Semestre = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Designation_SemestreTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDesignation_Semestre = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Designation_Semestre_arTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDesignation_Semestre_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForAbsences = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForEvaluations = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForSections = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForSuiver_stagiaire = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
-            this.AbsencesBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiAbsencesNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiAbsencesEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiAbsencesDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiAbsencesRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.AbsencesBar = new DevExpress.XtraBars.Bar();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.AbsencesPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.EvaluationsBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiEvaluationsNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiEvaluationsEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiEvaluationsDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiEvaluationsRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.EvaluationsBar = new DevExpress.XtraBars.Bar();
-            this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
-            this.EvaluationsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.DecisionsBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiDecisionsNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDecisionsEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDecisionsDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDecisionsRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.DecisionsBar = new DevExpress.XtraBars.Bar();
-            this.barDockControl5 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            this.DecisionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.SectionsBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiSectionsNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSectionsEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSectionsDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSectionsRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.SectionsBar = new DevExpress.XtraBars.Bar();
-            this.barDockControl9 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl10 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl11 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl12 = new DevExpress.XtraBars.BarDockControl();
-            this.SectionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barDockControl15 = new DevExpress.XtraBars.BarDockControl();
             this.Suiver_stagiaireBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.Suiver_stagiaireBar = new DevExpress.XtraBars.Bar();
             this.bbiSuiver_stagiaireNew = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSuiver_stagiaireEdit = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSuiver_stagiaireDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSuiver_stagiaireRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.Suiver_stagiaireBar = new DevExpress.XtraBars.Bar();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControl13 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl14 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl15 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl16 = new DevExpress.XtraBars.BarDockControl();
+            this.bbiSuiver_stagiaireRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForID_Semestre = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDesignation_Semestre = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForSuiver_stagiaire = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForAbsences = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForEvaluations = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForSections = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDesignation_Semestre_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.AbsencesPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.EvaluationsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.DecisionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.SectionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.Suiver_stagiairePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ID_SemestreTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.semestreViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_SemestreTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_Semestre_arTextEdit.Properties)).BeginInit();
             this.AbsencesXtraUserControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AbsencesGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbsencesGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AbsencesBindingSource)).BeginInit();
-            this.EvaluationsXtraUserControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbsencesGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbsencesBarManager)).BeginInit();
             this.DecisionsXtraUserControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBarManager)).BeginInit();
+            this.EvaluationsXtraUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBarManager)).BeginInit();
             this.SectionsXtraUserControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsBarManager)).BeginInit();
             this.Suiver_stagiaireXtraUserControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ID_SemestreTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Semestre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_SemestreTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_Semestre_arTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbsencesBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbsencesPopUpMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsPopUpMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireBarManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Semestre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbsencesPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiairePopUpMenu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -272,22 +272,168 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(986, 357);
             this.dataLayoutControl1.TabIndex = 0;
             // 
-            // layoutControlGroup1
+            // ID_SemestreTextEdit
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2});
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
-            this.layoutControlGroup1.TextVisible = false;
+            this.ID_SemestreTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.semestreViewBindingSource, "ID_Semestre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ID_SemestreTextEdit.Location = new System.Drawing.Point(142, 12);
+            this.ID_SemestreTextEdit.MenuManager = this.mainRibbonControl;
+            this.ID_SemestreTextEdit.Name = "ID_SemestreTextEdit";
+            this.ID_SemestreTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.ID_SemestreTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.ID_SemestreTextEdit.Properties.Mask.EditMask = "N0";
+            this.ID_SemestreTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.ID_SemestreTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_SemestreTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ID_SemestreTextEdit.Size = new System.Drawing.Size(832, 20);
+            this.ID_SemestreTextEdit.StyleController = this.dataLayoutControl1;
+            this.ID_SemestreTextEdit.TabIndex = 4;
             // 
             // semestreViewBindingSource
             // 
             this.semestreViewBindingSource.DataSource = typeof(gtsco2.basededonne.Semestre);
+            // 
+            // mainRibbonControl
+            // 
+            this.mainRibbonControl.ExpandCollapseItem.Id = 0;
+            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.mainRibbonControl.ExpandCollapseItem,
+            this.mainRibbonControl.SearchEditItem,
+            this.bbiCustomize,
+            this.bbiSave,
+            this.bbiSaveAndClose,
+            this.bbiSaveAndNew,
+            this.bbiReset,
+            this.bbiDelete,
+            this.bbiClose,
+            this.bbiSaveLayout,
+            this.bbiResetLayout});
+            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.mainRibbonControl.MaxItemId = 10;
+            this.mainRibbonControl.Name = "mainRibbonControl";
+            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.mainRibbonPage});
+            this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
+            this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonControl.Size = new System.Drawing.Size(986, 126);
+            this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            // 
+            // bbiCustomize
+            // 
+            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
+            this.bbiCustomize.Id = 1;
+            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
+            this.bbiCustomize.Name = "bbiCustomize";
+            // 
+            // bbiSave
+            // 
+            this.bbiSave.Caption = "Enregistrer";
+            this.bbiSave.Id = 2;
+            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSave.Name = "bbiSave";
+            // 
+            // bbiSaveAndClose
+            // 
+            this.bbiSaveAndClose.Caption = "Enregistrer et fermer";
+            this.bbiSaveAndClose.Id = 3;
+            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
+            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
+            // 
+            // bbiSaveAndNew
+            // 
+            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
+            this.bbiSaveAndNew.Id = 4;
+            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
+            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
+            // 
+            // bbiReset
+            // 
+            this.bbiReset.Caption = "Annuler les changements ";
+            this.bbiReset.Id = 5;
+            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiReset.Name = "bbiReset";
+            // 
+            // bbiDelete
+            // 
+            this.bbiDelete.Caption = "Supprimer ";
+            this.bbiDelete.Id = 6;
+            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDelete.Name = "bbiDelete";
+            // 
+            // bbiClose
+            // 
+            this.bbiClose.Caption = "Fermer ";
+            this.bbiClose.Id = 7;
+            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
+            this.bbiClose.Name = "bbiClose";
+            // 
+            // bbiSaveLayout
+            // 
+            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
+            this.bbiSaveLayout.Id = 8;
+            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSaveLayout.Name = "bbiSaveLayout";
+            // 
+            // bbiResetLayout
+            // 
+            this.bbiResetLayout.Caption = "Annuler la personnalisation";
+            this.bbiResetLayout.Id = 9;
+            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiResetLayout.Name = "bbiResetLayout";
+            // 
+            // mainRibbonPage
+            // 
+            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.mainRibbonPageGroup,
+            this.ribbonPageGroupLayout});
+            this.mainRibbonPage.MergeOrder = 0;
+            this.mainRibbonPage.Name = "mainRibbonPage";
+            this.mainRibbonPage.Text = "Home";
+            // 
+            // mainRibbonPageGroup
+            // 
+            this.mainRibbonPageGroup.AllowTextClipping = false;
+            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
+            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
+            this.mainRibbonPageGroup.Text = "Gestion des semestres";
+            // 
+            // ribbonPageGroupLayout
+            // 
+            this.ribbonPageGroupLayout.AllowTextClipping = false;
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
+            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
+            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
+            // 
+            // Designation_SemestreTextEdit
+            // 
+            this.Designation_SemestreTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.semestreViewBindingSource, "Designation_Semestre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Designation_SemestreTextEdit.Location = new System.Drawing.Point(142, 36);
+            this.Designation_SemestreTextEdit.MenuManager = this.mainRibbonControl;
+            this.Designation_SemestreTextEdit.Name = "Designation_SemestreTextEdit";
+            this.Designation_SemestreTextEdit.Size = new System.Drawing.Size(405, 20);
+            this.Designation_SemestreTextEdit.StyleController = this.dataLayoutControl1;
+            this.Designation_SemestreTextEdit.TabIndex = 5;
+            // 
+            // Designation_Semestre_arTextEdit
+            // 
+            this.Designation_Semestre_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.semestreViewBindingSource, "Designation_Semestre_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Designation_Semestre_arTextEdit.Location = new System.Drawing.Point(551, 36);
+            this.Designation_Semestre_arTextEdit.MenuManager = this.mainRibbonControl;
+            this.Designation_Semestre_arTextEdit.Name = "Designation_Semestre_arTextEdit";
+            this.Designation_Semestre_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Designation_Semestre_arTextEdit.Size = new System.Drawing.Size(366, 20);
+            this.Designation_Semestre_arTextEdit.StyleController = this.dataLayoutControl1;
+            this.Designation_Semestre_arTextEdit.TabIndex = 6;
             // 
             // AbsencesXtraUserControl
             // 
@@ -296,10 +442,10 @@
             this.AbsencesXtraUserControl.Controls.Add(this.barDockControlRight);
             this.AbsencesXtraUserControl.Controls.Add(this.barDockControlBottom);
             this.AbsencesXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.AbsencesXtraUserControl.Location = new System.Drawing.Point(24, 119);
+            this.AbsencesXtraUserControl.Location = new System.Drawing.Point(24, 95);
             this.AbsencesXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.AbsencesXtraUserControl.Name = "AbsencesXtraUserControl";
-            this.AbsencesXtraUserControl.Size = new System.Drawing.Size(976, 499);
+            this.AbsencesXtraUserControl.Size = new System.Drawing.Size(938, 238);
             this.AbsencesXtraUserControl.TabIndex = 7;
             // 
             // AbsencesGridControl
@@ -310,10 +456,14 @@
             this.AbsencesGridControl.MainView = this.AbsencesGridView;
             this.AbsencesGridControl.MenuManager = this.mainRibbonControl;
             this.AbsencesGridControl.Name = "AbsencesGridControl";
-            this.AbsencesGridControl.Size = new System.Drawing.Size(976, 475);
+            this.AbsencesGridControl.Size = new System.Drawing.Size(938, 214);
             this.AbsencesGridControl.TabIndex = 0;
             this.AbsencesGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.AbsencesGridView});
+            // 
+            // AbsencesBindingSource
+            // 
+            this.AbsencesBindingSource.DataSource = typeof(gtsco2.basededonne.Absence);
             // 
             // AbsencesGridView
             // 
@@ -429,128 +579,347 @@
             this.colStagiair.FieldName = "Stagiair";
             this.colStagiair.Name = "colStagiair";
             // 
-            // mainRibbonControl
+            // barDockControlLeft
             // 
-            this.mainRibbonControl.ExpandCollapseItem.Id = 0;
-            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.mainRibbonControl.ExpandCollapseItem,
-            this.bbiCustomize,
-            this.bbiSave,
-            this.bbiSaveAndClose,
-            this.bbiSaveAndNew,
-            this.bbiReset,
-            this.bbiDelete,
-            this.bbiClose,
-            this.bbiSaveLayout,
-            this.bbiResetLayout,
-            this.mainRibbonControl.SearchEditItem});
-            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 10;
-            this.mainRibbonControl.Name = "mainRibbonControl";
-            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.mainRibbonPage});
-            this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
-            this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.AbsencesBarManager;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 214);
             // 
-            // bbiCustomize
+            // AbsencesBarManager
             // 
-            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
-            this.bbiCustomize.Id = 1;
-            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
-            this.bbiCustomize.Name = "bbiCustomize";
+            this.AbsencesBarManager.AllowCustomization = false;
+            this.AbsencesBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.AbsencesBar});
+            this.AbsencesBarManager.DockControls.Add(this.barDockControlTop);
+            this.AbsencesBarManager.DockControls.Add(this.barDockControlBottom);
+            this.AbsencesBarManager.DockControls.Add(this.barDockControlLeft);
+            this.AbsencesBarManager.DockControls.Add(this.barDockControlRight);
+            this.AbsencesBarManager.Form = this.AbsencesXtraUserControl;
+            this.AbsencesBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiAbsencesNew,
+            this.bbiAbsencesEdit,
+            this.bbiAbsencesDelete,
+            this.bbiAbsencesRefresh});
+            this.AbsencesBarManager.MainMenu = this.AbsencesBar;
+            this.AbsencesBarManager.MaxItemId = 4;
             // 
-            // mainRibbonPage
+            // AbsencesBar
             // 
-            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
-            this.mainRibbonPage.MergeOrder = 0;
-            this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "Home";
+            this.AbsencesBar.BarName = "Absences";
+            this.AbsencesBar.DockCol = 0;
+            this.AbsencesBar.DockRow = 0;
+            this.AbsencesBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.AbsencesBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesRefresh)});
+            this.AbsencesBar.OptionsBar.AllowQuickCustomization = false;
+            this.AbsencesBar.OptionsBar.DrawDragBorder = false;
+            this.AbsencesBar.Text = "Absences";
             // 
-            // mainRibbonPageGroup
+            // bbiAbsencesNew
             // 
-            this.mainRibbonPageGroup.AllowTextClipping = false;
-            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
-            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Gestion des semestres";
+            this.bbiAbsencesNew.Caption = "Ajouter ";
+            this.bbiAbsencesNew.Id = 0;
+            this.bbiAbsencesNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiAbsencesNew.Name = "bbiAbsencesNew";
+            this.bbiAbsencesNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiSave
+            // bbiAbsencesEdit
             // 
-            this.bbiSave.Caption = "Enregistrer";
-            this.bbiSave.Id = 2;
-            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
-            this.bbiSave.Name = "bbiSave";
+            this.bbiAbsencesEdit.Caption = "Modifier ";
+            this.bbiAbsencesEdit.Id = 1;
+            this.bbiAbsencesEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiAbsencesEdit.Name = "bbiAbsencesEdit";
+            this.bbiAbsencesEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiSaveAndClose
+            // bbiAbsencesDelete
             // 
-            this.bbiSaveAndClose.Caption = "Enregistrer et fermer";
-            this.bbiSaveAndClose.Id = 3;
-            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
-            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
+            this.bbiAbsencesDelete.Caption = "Supprimer ";
+            this.bbiAbsencesDelete.Id = 2;
+            this.bbiAbsencesDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiAbsencesDelete.Name = "bbiAbsencesDelete";
+            this.bbiAbsencesDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiSaveAndNew
+            // bbiAbsencesRefresh
             // 
-            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
-            this.bbiSaveAndNew.Id = 4;
-            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
-            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
+            this.bbiAbsencesRefresh.Caption = "Actualiser";
+            this.bbiAbsencesRefresh.Id = 3;
+            this.bbiAbsencesRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiAbsencesRefresh.Name = "bbiAbsencesRefresh";
+            this.bbiAbsencesRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiReset
+            // barDockControlTop
             // 
-            this.bbiReset.Caption = "Annuler les changements ";
-            this.bbiReset.Id = 5;
-            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
-            this.bbiReset.Name = "bbiReset";
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.AbsencesBarManager;
+            this.barDockControlTop.Size = new System.Drawing.Size(938, 24);
             // 
-            // bbiDelete
+            // barDockControlBottom
             // 
-            this.bbiDelete.Caption = "Supprimer ";
-            this.bbiDelete.Id = 6;
-            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiDelete.Name = "bbiDelete";
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 238);
+            this.barDockControlBottom.Manager = this.AbsencesBarManager;
+            this.barDockControlBottom.Size = new System.Drawing.Size(938, 0);
             // 
-            // bbiClose
+            // barDockControlRight
             // 
-            this.bbiClose.Caption = "Fermer ";
-            this.bbiClose.Id = 7;
-            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
-            this.bbiClose.Name = "bbiClose";
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(938, 24);
+            this.barDockControlRight.Manager = this.AbsencesBarManager;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 214);
             // 
-            // ribbonPageGroupLayout
+            // DecisionsXtraUserControl
             // 
-            this.ribbonPageGroupLayout.AllowTextClipping = false;
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
-            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
-            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
+            this.DecisionsXtraUserControl.Controls.Add(this.DecisionsGridControl);
+            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl7);
+            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl8);
+            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl6);
+            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl5);
+            this.DecisionsXtraUserControl.Location = new System.Drawing.Point(24, 95);
+            this.DecisionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
+            this.DecisionsXtraUserControl.Name = "DecisionsXtraUserControl";
+            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(938, 238);
+            this.DecisionsXtraUserControl.TabIndex = 8;
             // 
-            // bbiSaveLayout
+            // DecisionsGridControl
             // 
-            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
-            this.bbiSaveLayout.Id = 8;
-            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
-            this.bbiSaveLayout.Name = "bbiSaveLayout";
+            this.DecisionsGridControl.DataSource = this.DecisionsBindingSource;
+            this.DecisionsGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DecisionsGridControl.Location = new System.Drawing.Point(0, 24);
+            this.DecisionsGridControl.MainView = this.DecisionsGridView;
+            this.DecisionsGridControl.MenuManager = this.mainRibbonControl;
+            this.DecisionsGridControl.Name = "DecisionsGridControl";
+            this.DecisionsGridControl.Size = new System.Drawing.Size(938, 214);
+            this.DecisionsGridControl.TabIndex = 0;
+            this.DecisionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.DecisionsGridView});
             // 
-            // bbiResetLayout
+            // DecisionsBindingSource
             // 
-            this.bbiResetLayout.Caption = "Annuler la personnalisation";
-            this.bbiResetLayout.Id = 9;
-            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
-            this.bbiResetLayout.Name = "bbiResetLayout";
+            this.DecisionsBindingSource.DataSource = typeof(gtsco2.basededonne.Decision);
             // 
-            // AbsencesBindingSource
+            // DecisionsGridView
             // 
-            this.AbsencesBindingSource.DataSource = typeof(gtsco2.basededonne.Absence);
+            this.DecisionsGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Decision,
+            this.colType_Decision,
+            this.colDate_Decision,
+            this.colID_PV_Délibiration,
+            this.colID_Promo,
+            this.colID_Semestre2,
+            this.colNum_STG2,
+            this.colProce_verbal_delibation,
+            this.colPromo,
+            this.colSemestre2,
+            this.colStagiair2});
+            this.DecisionsGridView.GridControl = this.DecisionsGridControl;
+            this.DecisionsGridView.Name = "DecisionsGridView";
+            this.DecisionsGridView.OptionsBehavior.Editable = false;
+            this.DecisionsGridView.OptionsBehavior.ReadOnly = true;
+            // 
+            // colID_Decision
+            // 
+            this.colID_Decision.FieldName = "ID_Decision";
+            this.colID_Decision.Name = "colID_Decision";
+            this.colID_Decision.Visible = true;
+            this.colID_Decision.VisibleIndex = 0;
+            // 
+            // colType_Decision
+            // 
+            this.colType_Decision.FieldName = "Type_Decision";
+            this.colType_Decision.Name = "colType_Decision";
+            this.colType_Decision.Visible = true;
+            this.colType_Decision.VisibleIndex = 1;
+            // 
+            // colDate_Decision
+            // 
+            this.colDate_Decision.FieldName = "Date_Decision";
+            this.colDate_Decision.Name = "colDate_Decision";
+            this.colDate_Decision.Visible = true;
+            this.colDate_Decision.VisibleIndex = 2;
+            // 
+            // colID_PV_Délibiration
+            // 
+            this.colID_PV_Délibiration.FieldName = "ID_PV_Délibiration";
+            this.colID_PV_Délibiration.Name = "colID_PV_Délibiration";
+            this.colID_PV_Délibiration.Visible = true;
+            this.colID_PV_Délibiration.VisibleIndex = 3;
+            // 
+            // colID_Promo
+            // 
+            this.colID_Promo.FieldName = "ID_Promo";
+            this.colID_Promo.Name = "colID_Promo";
+            this.colID_Promo.Visible = true;
+            this.colID_Promo.VisibleIndex = 4;
+            // 
+            // colID_Semestre2
+            // 
+            this.colID_Semestre2.FieldName = "ID_Semestre";
+            this.colID_Semestre2.Name = "colID_Semestre2";
+            this.colID_Semestre2.Visible = true;
+            this.colID_Semestre2.VisibleIndex = 5;
+            // 
+            // colNum_STG2
+            // 
+            this.colNum_STG2.FieldName = "Num_STG";
+            this.colNum_STG2.Name = "colNum_STG2";
+            this.colNum_STG2.Visible = true;
+            this.colNum_STG2.VisibleIndex = 6;
+            // 
+            // colProce_verbal_delibation
+            // 
+            this.colProce_verbal_delibation.FieldName = "Proce_verbal_delibation";
+            this.colProce_verbal_delibation.Name = "colProce_verbal_delibation";
+            // 
+            // colPromo
+            // 
+            this.colPromo.FieldName = "Promo";
+            this.colPromo.Name = "colPromo";
+            // 
+            // colSemestre2
+            // 
+            this.colSemestre2.FieldName = "Semestre";
+            this.colSemestre2.Name = "colSemestre2";
+            // 
+            // colStagiair2
+            // 
+            this.colStagiair2.FieldName = "Stagiair";
+            this.colStagiair2.Name = "colStagiair2";
+            // 
+            // barDockControl7
+            // 
+            this.barDockControl7.CausesValidation = false;
+            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl7.Manager = this.DecisionsBarManager;
+            this.barDockControl7.Size = new System.Drawing.Size(0, 214);
+            // 
+            // DecisionsBarManager
+            // 
+            this.DecisionsBarManager.AllowCustomization = false;
+            this.DecisionsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.DecisionsBar});
+            this.DecisionsBarManager.DockControls.Add(this.barDockControl5);
+            this.DecisionsBarManager.DockControls.Add(this.barDockControl6);
+            this.DecisionsBarManager.DockControls.Add(this.barDockControl7);
+            this.DecisionsBarManager.DockControls.Add(this.barDockControl8);
+            this.DecisionsBarManager.Form = this.DecisionsXtraUserControl;
+            this.DecisionsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiDecisionsNew,
+            this.bbiDecisionsEdit,
+            this.bbiDecisionsDelete,
+            this.bbiDecisionsRefresh,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3});
+            this.DecisionsBarManager.MainMenu = this.DecisionsBar;
+            this.DecisionsBarManager.MaxItemId = 7;
+            // 
+            // DecisionsBar
+            // 
+            this.DecisionsBar.BarName = "Decisions";
+            this.DecisionsBar.DockCol = 0;
+            this.DecisionsBar.DockRow = 0;
+            this.DecisionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.DecisionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem3)});
+            this.DecisionsBar.OptionsBar.AllowQuickCustomization = false;
+            this.DecisionsBar.OptionsBar.DrawDragBorder = false;
+            this.DecisionsBar.Text = "Decisions";
+            // 
+            // bbiDecisionsNew
+            // 
+            this.bbiDecisionsNew.Caption = "Ajouter ";
+            this.bbiDecisionsNew.Id = 0;
+            this.bbiDecisionsNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiDecisionsNew.Name = "bbiDecisionsNew";
+            this.bbiDecisionsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiDecisionsEdit
+            // 
+            this.bbiDecisionsEdit.Caption = "Modifier ";
+            this.bbiDecisionsEdit.Id = 1;
+            this.bbiDecisionsEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiDecisionsEdit.Name = "bbiDecisionsEdit";
+            this.bbiDecisionsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Supprimer ";
+            this.barButtonItem2.Id = 5;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Actualiser ";
+            this.barButtonItem3.Id = 6;
+            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barDockControl5
+            // 
+            this.barDockControl5.CausesValidation = false;
+            this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControl5.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl5.Manager = this.DecisionsBarManager;
+            this.barDockControl5.Size = new System.Drawing.Size(938, 24);
+            // 
+            // barDockControl6
+            // 
+            this.barDockControl6.CausesValidation = false;
+            this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControl6.Location = new System.Drawing.Point(0, 238);
+            this.barDockControl6.Manager = this.DecisionsBarManager;
+            this.barDockControl6.Size = new System.Drawing.Size(938, 0);
+            // 
+            // barDockControl8
+            // 
+            this.barDockControl8.CausesValidation = false;
+            this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControl8.Location = new System.Drawing.Point(938, 24);
+            this.barDockControl8.Manager = this.DecisionsBarManager;
+            this.barDockControl8.Size = new System.Drawing.Size(0, 214);
+            // 
+            // bbiDecisionsDelete
+            // 
+            this.bbiDecisionsDelete.Caption = "Delete";
+            this.bbiDecisionsDelete.Id = 2;
+            this.bbiDecisionsDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDecisionsDelete.Name = "bbiDecisionsDelete";
+            this.bbiDecisionsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiDecisionsRefresh
+            // 
+            this.bbiDecisionsRefresh.Caption = "Refresh";
+            this.bbiDecisionsRefresh.Id = 3;
+            this.bbiDecisionsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiDecisionsRefresh.Name = "bbiDecisionsRefresh";
+            this.bbiDecisionsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Supprimer ";
+            this.barButtonItem1.Id = 4;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.Caption;
             // 
             // EvaluationsXtraUserControl
             // 
@@ -559,10 +928,10 @@
             this.EvaluationsXtraUserControl.Controls.Add(this.barDockControl4);
             this.EvaluationsXtraUserControl.Controls.Add(this.barDockControl2);
             this.EvaluationsXtraUserControl.Controls.Add(this.barDockControl1);
-            this.EvaluationsXtraUserControl.Location = new System.Drawing.Point(24, 119);
+            this.EvaluationsXtraUserControl.Location = new System.Drawing.Point(24, 95);
             this.EvaluationsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.EvaluationsXtraUserControl.Name = "EvaluationsXtraUserControl";
-            this.EvaluationsXtraUserControl.Size = new System.Drawing.Size(976, 499);
+            this.EvaluationsXtraUserControl.Size = new System.Drawing.Size(938, 238);
             this.EvaluationsXtraUserControl.TabIndex = 9;
             // 
             // EvaluationsGridControl
@@ -573,10 +942,14 @@
             this.EvaluationsGridControl.MainView = this.EvaluationsGridView;
             this.EvaluationsGridControl.MenuManager = this.mainRibbonControl;
             this.EvaluationsGridControl.Name = "EvaluationsGridControl";
-            this.EvaluationsGridControl.Size = new System.Drawing.Size(976, 475);
+            this.EvaluationsGridControl.Size = new System.Drawing.Size(938, 214);
             this.EvaluationsGridControl.TabIndex = 0;
             this.EvaluationsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.EvaluationsGridView});
+            // 
+            // EvaluationsBindingSource
+            // 
+            this.EvaluationsBindingSource.DataSource = typeof(gtsco2.basededonne.Evaluation);
             // 
             // EvaluationsGridView
             // 
@@ -704,127 +1077,102 @@
             this.colStagiair1.FieldName = "Stagiair";
             this.colStagiair1.Name = "colStagiair1";
             // 
-            // EvaluationsBindingSource
+            // barDockControl3
             // 
-            this.EvaluationsBindingSource.DataSource = typeof(gtsco2.basededonne.Evaluation);
+            this.barDockControl3.CausesValidation = false;
+            this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl3.Manager = this.EvaluationsBarManager;
+            this.barDockControl3.Size = new System.Drawing.Size(0, 214);
             // 
-            // DecisionsXtraUserControl
+            // EvaluationsBarManager
             // 
-            this.DecisionsXtraUserControl.Controls.Add(this.DecisionsGridControl);
-            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl7);
-            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl8);
-            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl6);
-            this.DecisionsXtraUserControl.Controls.Add(this.barDockControl5);
-            this.DecisionsXtraUserControl.Location = new System.Drawing.Point(24, 119);
-            this.DecisionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
-            this.DecisionsXtraUserControl.Name = "DecisionsXtraUserControl";
-            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(976, 499);
-            this.DecisionsXtraUserControl.TabIndex = 8;
+            this.EvaluationsBarManager.AllowCustomization = false;
+            this.EvaluationsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.EvaluationsBar});
+            this.EvaluationsBarManager.DockControls.Add(this.barDockControl1);
+            this.EvaluationsBarManager.DockControls.Add(this.barDockControl2);
+            this.EvaluationsBarManager.DockControls.Add(this.barDockControl3);
+            this.EvaluationsBarManager.DockControls.Add(this.barDockControl4);
+            this.EvaluationsBarManager.Form = this.EvaluationsXtraUserControl;
+            this.EvaluationsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiEvaluationsNew,
+            this.bbiEvaluationsEdit,
+            this.bbiEvaluationsDelete,
+            this.bbiEvaluationsRefresh});
+            this.EvaluationsBarManager.MainMenu = this.EvaluationsBar;
+            this.EvaluationsBarManager.MaxItemId = 4;
             // 
-            // DecisionsGridControl
+            // EvaluationsBar
             // 
-            this.DecisionsGridControl.DataSource = this.DecisionsBindingSource;
-            this.DecisionsGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DecisionsGridControl.Location = new System.Drawing.Point(0, 24);
-            this.DecisionsGridControl.MainView = this.DecisionsGridView;
-            this.DecisionsGridControl.MenuManager = this.mainRibbonControl;
-            this.DecisionsGridControl.Name = "DecisionsGridControl";
-            this.DecisionsGridControl.Size = new System.Drawing.Size(976, 475);
-            this.DecisionsGridControl.TabIndex = 0;
-            this.DecisionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.DecisionsGridView});
+            this.EvaluationsBar.BarName = "Evaluations";
+            this.EvaluationsBar.DockCol = 0;
+            this.EvaluationsBar.DockRow = 0;
+            this.EvaluationsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.EvaluationsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsEdit, true),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsRefresh)});
+            this.EvaluationsBar.OptionsBar.AllowQuickCustomization = false;
+            this.EvaluationsBar.OptionsBar.DrawDragBorder = false;
+            this.EvaluationsBar.Text = "Evaluations";
             // 
-            // DecisionsGridView
+            // bbiEvaluationsNew
             // 
-            this.DecisionsGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colID_Decision,
-            this.colType_Decision,
-            this.colDate_Decision,
-            this.colID_PV_Délibiration,
-            this.colID_Promo,
-            this.colID_Semestre2,
-            this.colNum_STG2,
-            this.colProce_verbal_delibation,
-            this.colPromo,
-            this.colSemestre2,
-            this.colStagiair2});
-            this.DecisionsGridView.GridControl = this.DecisionsGridControl;
-            this.DecisionsGridView.Name = "DecisionsGridView";
-            this.DecisionsGridView.OptionsBehavior.Editable = false;
-            this.DecisionsGridView.OptionsBehavior.ReadOnly = true;
+            this.bbiEvaluationsNew.Caption = "Ajouter";
+            this.bbiEvaluationsNew.Id = 0;
+            this.bbiEvaluationsNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiEvaluationsNew.Name = "bbiEvaluationsNew";
+            this.bbiEvaluationsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // colID_Decision
+            // bbiEvaluationsEdit
             // 
-            this.colID_Decision.FieldName = "ID_Decision";
-            this.colID_Decision.Name = "colID_Decision";
-            this.colID_Decision.Visible = true;
-            this.colID_Decision.VisibleIndex = 0;
+            this.bbiEvaluationsEdit.Caption = "Modifier ";
+            this.bbiEvaluationsEdit.Id = 1;
+            this.bbiEvaluationsEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiEvaluationsEdit.Name = "bbiEvaluationsEdit";
+            this.bbiEvaluationsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // colType_Decision
+            // bbiEvaluationsDelete
             // 
-            this.colType_Decision.FieldName = "Type_Decision";
-            this.colType_Decision.Name = "colType_Decision";
-            this.colType_Decision.Visible = true;
-            this.colType_Decision.VisibleIndex = 1;
+            this.bbiEvaluationsDelete.Caption = "Supprimer ";
+            this.bbiEvaluationsDelete.Id = 2;
+            this.bbiEvaluationsDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiEvaluationsDelete.Name = "bbiEvaluationsDelete";
+            this.bbiEvaluationsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // colDate_Decision
+            // bbiEvaluationsRefresh
             // 
-            this.colDate_Decision.FieldName = "Date_Decision";
-            this.colDate_Decision.Name = "colDate_Decision";
-            this.colDate_Decision.Visible = true;
-            this.colDate_Decision.VisibleIndex = 2;
+            this.bbiEvaluationsRefresh.Caption = "Actualiser ";
+            this.bbiEvaluationsRefresh.Id = 3;
+            this.bbiEvaluationsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiEvaluationsRefresh.Name = "bbiEvaluationsRefresh";
+            this.bbiEvaluationsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // colID_PV_Délibiration
+            // barDockControl1
             // 
-            this.colID_PV_Délibiration.FieldName = "ID_PV_Délibiration";
-            this.colID_PV_Délibiration.Name = "colID_PV_Délibiration";
-            this.colID_PV_Délibiration.Visible = true;
-            this.colID_PV_Délibiration.VisibleIndex = 3;
+            this.barDockControl1.CausesValidation = false;
+            this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl1.Manager = this.EvaluationsBarManager;
+            this.barDockControl1.Size = new System.Drawing.Size(938, 24);
             // 
-            // colID_Promo
+            // barDockControl2
             // 
-            this.colID_Promo.FieldName = "ID_Promo";
-            this.colID_Promo.Name = "colID_Promo";
-            this.colID_Promo.Visible = true;
-            this.colID_Promo.VisibleIndex = 4;
+            this.barDockControl2.CausesValidation = false;
+            this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControl2.Location = new System.Drawing.Point(0, 238);
+            this.barDockControl2.Manager = this.EvaluationsBarManager;
+            this.barDockControl2.Size = new System.Drawing.Size(938, 0);
             // 
-            // colID_Semestre2
+            // barDockControl4
             // 
-            this.colID_Semestre2.FieldName = "ID_Semestre";
-            this.colID_Semestre2.Name = "colID_Semestre2";
-            this.colID_Semestre2.Visible = true;
-            this.colID_Semestre2.VisibleIndex = 5;
-            // 
-            // colNum_STG2
-            // 
-            this.colNum_STG2.FieldName = "Num_STG";
-            this.colNum_STG2.Name = "colNum_STG2";
-            this.colNum_STG2.Visible = true;
-            this.colNum_STG2.VisibleIndex = 6;
-            // 
-            // colProce_verbal_delibation
-            // 
-            this.colProce_verbal_delibation.FieldName = "Proce_verbal_delibation";
-            this.colProce_verbal_delibation.Name = "colProce_verbal_delibation";
-            // 
-            // colPromo
-            // 
-            this.colPromo.FieldName = "Promo";
-            this.colPromo.Name = "colPromo";
-            // 
-            // colSemestre2
-            // 
-            this.colSemestre2.FieldName = "Semestre";
-            this.colSemestre2.Name = "colSemestre2";
-            // 
-            // colStagiair2
-            // 
-            this.colStagiair2.FieldName = "Stagiair";
-            this.colStagiair2.Name = "colStagiair2";
-            // 
-            // DecisionsBindingSource
-            // 
-            this.DecisionsBindingSource.DataSource = typeof(gtsco2.basededonne.Decision);
+            this.barDockControl4.CausesValidation = false;
+            this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControl4.Location = new System.Drawing.Point(938, 24);
+            this.barDockControl4.Manager = this.EvaluationsBarManager;
+            this.barDockControl4.Size = new System.Drawing.Size(0, 214);
             // 
             // SectionsXtraUserControl
             // 
@@ -833,10 +1181,10 @@
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl12);
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl10);
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl9);
-            this.SectionsXtraUserControl.Location = new System.Drawing.Point(24, 119);
+            this.SectionsXtraUserControl.Location = new System.Drawing.Point(24, 95);
             this.SectionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.SectionsXtraUserControl.Name = "SectionsXtraUserControl";
-            this.SectionsXtraUserControl.Size = new System.Drawing.Size(976, 499);
+            this.SectionsXtraUserControl.Size = new System.Drawing.Size(938, 238);
             this.SectionsXtraUserControl.TabIndex = 10;
             // 
             // SectionsGridControl
@@ -847,10 +1195,14 @@
             this.SectionsGridControl.MainView = this.SectionsGridView;
             this.SectionsGridControl.MenuManager = this.mainRibbonControl;
             this.SectionsGridControl.Name = "SectionsGridControl";
-            this.SectionsGridControl.Size = new System.Drawing.Size(976, 475);
+            this.SectionsGridControl.Size = new System.Drawing.Size(938, 214);
             this.SectionsGridControl.TabIndex = 0;
             this.SectionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.SectionsGridView});
+            // 
+            // SectionsBindingSource
+            // 
+            this.SectionsBindingSource.DataSource = typeof(gtsco2.basededonne.Section);
             // 
             // SectionsGridView
             // 
@@ -954,9 +1306,102 @@
             this.colStagiairs.FieldName = "Stagiairs";
             this.colStagiairs.Name = "colStagiairs";
             // 
-            // SectionsBindingSource
+            // barDockControl11
             // 
-            this.SectionsBindingSource.DataSource = typeof(gtsco2.basededonne.Section);
+            this.barDockControl11.CausesValidation = false;
+            this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl11.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl11.Manager = this.SectionsBarManager;
+            this.barDockControl11.Size = new System.Drawing.Size(0, 214);
+            // 
+            // SectionsBarManager
+            // 
+            this.SectionsBarManager.AllowCustomization = false;
+            this.SectionsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.SectionsBar});
+            this.SectionsBarManager.DockControls.Add(this.barDockControl9);
+            this.SectionsBarManager.DockControls.Add(this.barDockControl10);
+            this.SectionsBarManager.DockControls.Add(this.barDockControl11);
+            this.SectionsBarManager.DockControls.Add(this.barDockControl12);
+            this.SectionsBarManager.Form = this.SectionsXtraUserControl;
+            this.SectionsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiSectionsNew,
+            this.bbiSectionsEdit,
+            this.bbiSectionsDelete,
+            this.bbiSectionsRefresh});
+            this.SectionsBarManager.MainMenu = this.SectionsBar;
+            this.SectionsBarManager.MaxItemId = 4;
+            // 
+            // SectionsBar
+            // 
+            this.SectionsBar.BarName = "Sections";
+            this.SectionsBar.DockCol = 0;
+            this.SectionsBar.DockRow = 0;
+            this.SectionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.SectionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
+            this.SectionsBar.OptionsBar.AllowQuickCustomization = false;
+            this.SectionsBar.OptionsBar.DrawDragBorder = false;
+            this.SectionsBar.Text = "Sections";
+            // 
+            // bbiSectionsNew
+            // 
+            this.bbiSectionsNew.Caption = "Ajouter ";
+            this.bbiSectionsNew.Id = 0;
+            this.bbiSectionsNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiSectionsNew.Name = "bbiSectionsNew";
+            this.bbiSectionsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiSectionsEdit
+            // 
+            this.bbiSectionsEdit.Caption = "Modifier ";
+            this.bbiSectionsEdit.Id = 1;
+            this.bbiSectionsEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiSectionsEdit.Name = "bbiSectionsEdit";
+            this.bbiSectionsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiSectionsDelete
+            // 
+            this.bbiSectionsDelete.Caption = "Supprimer ";
+            this.bbiSectionsDelete.Id = 2;
+            this.bbiSectionsDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiSectionsDelete.Name = "bbiSectionsDelete";
+            this.bbiSectionsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiSectionsRefresh
+            // 
+            this.bbiSectionsRefresh.Caption = "Actualiser ";
+            this.bbiSectionsRefresh.Id = 3;
+            this.bbiSectionsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiSectionsRefresh.Name = "bbiSectionsRefresh";
+            this.bbiSectionsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barDockControl9
+            // 
+            this.barDockControl9.CausesValidation = false;
+            this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControl9.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl9.Manager = this.SectionsBarManager;
+            this.barDockControl9.Size = new System.Drawing.Size(938, 24);
+            // 
+            // barDockControl10
+            // 
+            this.barDockControl10.CausesValidation = false;
+            this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControl10.Location = new System.Drawing.Point(0, 238);
+            this.barDockControl10.Manager = this.SectionsBarManager;
+            this.barDockControl10.Size = new System.Drawing.Size(938, 0);
+            // 
+            // barDockControl12
+            // 
+            this.barDockControl12.CausesValidation = false;
+            this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControl12.Location = new System.Drawing.Point(938, 24);
+            this.barDockControl12.Manager = this.SectionsBarManager;
+            this.barDockControl12.Size = new System.Drawing.Size(0, 214);
             // 
             // Suiver_stagiaireXtraUserControl
             // 
@@ -965,10 +1410,10 @@
             this.Suiver_stagiaireXtraUserControl.Controls.Add(this.barDockControl16);
             this.Suiver_stagiaireXtraUserControl.Controls.Add(this.barDockControl14);
             this.Suiver_stagiaireXtraUserControl.Controls.Add(this.barDockControl13);
-            this.Suiver_stagiaireXtraUserControl.Location = new System.Drawing.Point(24, 119);
+            this.Suiver_stagiaireXtraUserControl.Location = new System.Drawing.Point(24, 95);
             this.Suiver_stagiaireXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Suiver_stagiaireXtraUserControl.Name = "Suiver_stagiaireXtraUserControl";
-            this.Suiver_stagiaireXtraUserControl.Size = new System.Drawing.Size(976, 499);
+            this.Suiver_stagiaireXtraUserControl.Size = new System.Drawing.Size(938, 238);
             this.Suiver_stagiaireXtraUserControl.TabIndex = 11;
             // 
             // Suiver_stagiaireGridControl
@@ -979,10 +1424,14 @@
             this.Suiver_stagiaireGridControl.MainView = this.Suiver_stagiaireGridView;
             this.Suiver_stagiaireGridControl.MenuManager = this.mainRibbonControl;
             this.Suiver_stagiaireGridControl.Name = "Suiver_stagiaireGridControl";
-            this.Suiver_stagiaireGridControl.Size = new System.Drawing.Size(976, 475);
+            this.Suiver_stagiaireGridControl.Size = new System.Drawing.Size(938, 214);
             this.Suiver_stagiaireGridControl.TabIndex = 0;
             this.Suiver_stagiaireGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Suiver_stagiaireGridView});
+            // 
+            // Suiver_stagiaireBindingSource
+            // 
+            this.Suiver_stagiaireBindingSource.DataSource = typeof(gtsco2.basededonne.Suiver_stagiaire);
             // 
             // Suiver_stagiaireGridView
             // 
@@ -1050,645 +1499,13 @@
             this.colStagiair3.FieldName = "Stagiair";
             this.colStagiair3.Name = "colStagiair3";
             // 
-            // Suiver_stagiaireBindingSource
-            // 
-            this.Suiver_stagiaireBindingSource.DataSource = typeof(gtsco2.basededonne.Suiver_stagiaire);
-            // 
-            // layoutControlGroup2
-            // 
-            this.layoutControlGroup2.AllowDrawBackground = false;
-            this.layoutControlGroup2.GroupBordersVisible = false;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForID_Semestre,
-            this.ItemForDesignation_Semestre,
-            this.ItemForDesignation_Semestre_ar,
-            this.tabbedControlGroup1});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
-            // 
-            // ID_SemestreTextEdit
-            // 
-            this.ID_SemestreTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.semestreViewBindingSource, "ID_Semestre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ID_SemestreTextEdit.Location = new System.Drawing.Point(188, 12);
-            this.ID_SemestreTextEdit.MenuManager = this.mainRibbonControl;
-            this.ID_SemestreTextEdit.Name = "ID_SemestreTextEdit";
-            this.ID_SemestreTextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.ID_SemestreTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_SemestreTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_SemestreTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.ID_SemestreTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.ID_SemestreTextEdit.Size = new System.Drawing.Size(824, 20);
-            this.ID_SemestreTextEdit.StyleController = this.dataLayoutControl1;
-            this.ID_SemestreTextEdit.TabIndex = 4;
-            // 
-            // ItemForID_Semestre
-            // 
-            this.ItemForID_Semestre.Control = this.ID_SemestreTextEdit;
-            this.ItemForID_Semestre.Location = new System.Drawing.Point(0, 0);
-            this.ItemForID_Semestre.Name = "ItemForID_Semestre";
-            this.ItemForID_Semestre.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForID_Semestre.Text = "Numéro du semestre";
-            this.ItemForID_Semestre.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // Designation_SemestreTextEdit
-            // 
-            this.Designation_SemestreTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.semestreViewBindingSource, "Designation_Semestre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_SemestreTextEdit.Location = new System.Drawing.Point(188, 36);
-            this.Designation_SemestreTextEdit.MenuManager = this.mainRibbonControl;
-            this.Designation_SemestreTextEdit.Name = "Designation_SemestreTextEdit";
-            this.Designation_SemestreTextEdit.Size = new System.Drawing.Size(824, 20);
-            this.Designation_SemestreTextEdit.StyleController = this.dataLayoutControl1;
-            this.Designation_SemestreTextEdit.TabIndex = 5;
-            // 
-            // ItemForDesignation_Semestre
-            // 
-            this.ItemForDesignation_Semestre.Control = this.Designation_SemestreTextEdit;
-            this.ItemForDesignation_Semestre.Location = new System.Drawing.Point(0, 24);
-            this.ItemForDesignation_Semestre.Name = "ItemForDesignation_Semestre";
-            this.ItemForDesignation_Semestre.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDesignation_Semestre.Text = "Designation du semestre";
-            this.ItemForDesignation_Semestre.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // Designation_Semestre_arTextEdit
-            // 
-            this.Designation_Semestre_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.semestreViewBindingSource, "Designation_Semestre_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_Semestre_arTextEdit.Location = new System.Drawing.Point(188, 60);
-            this.Designation_Semestre_arTextEdit.MenuManager = this.mainRibbonControl;
-            this.Designation_Semestre_arTextEdit.Name = "Designation_Semestre_arTextEdit";
-            this.Designation_Semestre_arTextEdit.Size = new System.Drawing.Size(824, 20);
-            this.Designation_Semestre_arTextEdit.StyleController = this.dataLayoutControl1;
-            this.Designation_Semestre_arTextEdit.TabIndex = 6;
-            // 
-            // ItemForDesignation_Semestre_ar
-            // 
-            this.ItemForDesignation_Semestre_ar.Control = this.Designation_Semestre_arTextEdit;
-            this.ItemForDesignation_Semestre_ar.Location = new System.Drawing.Point(0, 48);
-            this.ItemForDesignation_Semestre_ar.Name = "ItemForDesignation_Semestre_ar";
-            this.ItemForDesignation_Semestre_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDesignation_Semestre_ar.Text = "Designation du semestre en arabe";
-            this.ItemForDesignation_Semestre_ar.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // ItemForAbsences
-            // 
-            this.ItemForAbsences.Control = this.AbsencesXtraUserControl;
-            this.ItemForAbsences.Location = new System.Drawing.Point(0, 0);
-            this.ItemForAbsences.Name = "ItemForAbsences";
-            this.ItemForAbsences.Size = new System.Drawing.Size(980, 503);
-            this.ItemForAbsences.StartNewLine = true;
-            this.ItemForAbsences.Text = "Absences";
-            this.ItemForAbsences.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForAbsences.TextVisible = false;
-            // 
-            // tabbedControlGroup1
-            // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 72);
-            this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup7;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 550);
-            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup3,
-            this.layoutControlGroup4,
-            this.layoutControlGroup5,
-            this.layoutControlGroup6,
-            this.layoutControlGroup7});
-            this.tabbedControlGroup1.Text = "Tabs";
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForAbsences});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "autoGroupForAbsences";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 503);
-            this.layoutControlGroup3.Text = "Absences";
-            // 
-            // ItemForDecisions
-            // 
-            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
-            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
-            this.ItemForDecisions.Name = "ItemForDecisions";
-            this.ItemForDecisions.Size = new System.Drawing.Size(980, 503);
-            this.ItemForDecisions.StartNewLine = true;
-            this.ItemForDecisions.Text = "Decisions";
-            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForDecisions.TextVisible = false;
-            // 
-            // layoutControlGroup4
-            // 
-            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForDecisions});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup4.Name = "autoGroupForDecisions";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(980, 503);
-            this.layoutControlGroup4.Text = "Decisions";
-            // 
-            // ItemForEvaluations
-            // 
-            this.ItemForEvaluations.Control = this.EvaluationsXtraUserControl;
-            this.ItemForEvaluations.Location = new System.Drawing.Point(0, 0);
-            this.ItemForEvaluations.Name = "ItemForEvaluations";
-            this.ItemForEvaluations.Size = new System.Drawing.Size(980, 503);
-            this.ItemForEvaluations.StartNewLine = true;
-            this.ItemForEvaluations.Text = "Evaluations";
-            this.ItemForEvaluations.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForEvaluations.TextVisible = false;
-            // 
-            // layoutControlGroup5
-            // 
-            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForEvaluations});
-            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup5.Name = "autoGroupForEvaluations";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(980, 503);
-            this.layoutControlGroup5.Text = "Evaluations";
-            // 
-            // ItemForSections
-            // 
-            this.ItemForSections.Control = this.SectionsXtraUserControl;
-            this.ItemForSections.Location = new System.Drawing.Point(0, 0);
-            this.ItemForSections.Name = "ItemForSections";
-            this.ItemForSections.Size = new System.Drawing.Size(980, 503);
-            this.ItemForSections.StartNewLine = true;
-            this.ItemForSections.Text = "Sections";
-            this.ItemForSections.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForSections.TextVisible = false;
-            // 
-            // layoutControlGroup6
-            // 
-            this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForSections});
-            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup6.Name = "autoGroupForSections";
-            this.layoutControlGroup6.Size = new System.Drawing.Size(980, 503);
-            this.layoutControlGroup6.Text = "Sections";
-            // 
-            // ItemForSuiver_stagiaire
-            // 
-            this.ItemForSuiver_stagiaire.Control = this.Suiver_stagiaireXtraUserControl;
-            this.ItemForSuiver_stagiaire.Location = new System.Drawing.Point(0, 0);
-            this.ItemForSuiver_stagiaire.Name = "ItemForSuiver_stagiaire";
-            this.ItemForSuiver_stagiaire.Size = new System.Drawing.Size(980, 503);
-            this.ItemForSuiver_stagiaire.StartNewLine = true;
-            this.ItemForSuiver_stagiaire.Text = "Suiver_stagiaire";
-            this.ItemForSuiver_stagiaire.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForSuiver_stagiaire.TextVisible = false;
-            // 
-            // layoutControlGroup7
-            // 
-            this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForSuiver_stagiaire});
-            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup7.Name = "autoGroupForSuiver_stagiaire";
-            this.layoutControlGroup7.Size = new System.Drawing.Size(980, 503);
-            this.layoutControlGroup7.Text = "Suivie du stagiaire";
-            // 
-            // mvvmContext
-            // 
-            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Save", this.bbiSave),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "SaveAndClose", this.bbiSaveAndClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "SaveAndNew", this.bbiSaveAndNew),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Reset", this.bbiReset),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Delete", this.bbiDelete),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Close", this.bbiClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "SaveLayout", this.bbiSaveLayout),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "ResetLayout", this.bbiResetLayout)});
-            this.mvvmContext.ContainerControl = this;
-            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
-            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
-            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.SemestreViewModel);
-            // 
-            // AbsencesBarManager
-            // 
-            this.AbsencesBarManager.AllowCustomization = false;
-            this.AbsencesBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.AbsencesBar});
-            this.AbsencesBarManager.DockControls.Add(this.barDockControlTop);
-            this.AbsencesBarManager.DockControls.Add(this.barDockControlBottom);
-            this.AbsencesBarManager.DockControls.Add(this.barDockControlLeft);
-            this.AbsencesBarManager.DockControls.Add(this.barDockControlRight);
-            this.AbsencesBarManager.Form = this.AbsencesXtraUserControl;
-            this.AbsencesBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiAbsencesNew,
-            this.bbiAbsencesEdit,
-            this.bbiAbsencesDelete,
-            this.bbiAbsencesRefresh});
-            this.AbsencesBarManager.MainMenu = this.AbsencesBar;
-            this.AbsencesBarManager.MaxItemId = 4;
-            // 
-            // bbiAbsencesNew
-            // 
-            this.bbiAbsencesNew.Caption = "Ajouter ";
-            this.bbiAbsencesNew.Id = 0;
-            this.bbiAbsencesNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiAbsencesNew.Name = "bbiAbsencesNew";
-            this.bbiAbsencesNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiAbsencesEdit
-            // 
-            this.bbiAbsencesEdit.Caption = "Modifier ";
-            this.bbiAbsencesEdit.Id = 1;
-            this.bbiAbsencesEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiAbsencesEdit.Name = "bbiAbsencesEdit";
-            this.bbiAbsencesEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiAbsencesDelete
-            // 
-            this.bbiAbsencesDelete.Caption = "Supprimer ";
-            this.bbiAbsencesDelete.Id = 2;
-            this.bbiAbsencesDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiAbsencesDelete.Name = "bbiAbsencesDelete";
-            this.bbiAbsencesDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiAbsencesRefresh
-            // 
-            this.bbiAbsencesRefresh.Caption = "Actualiser";
-            this.bbiAbsencesRefresh.Id = 3;
-            this.bbiAbsencesRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiAbsencesRefresh.Name = "bbiAbsencesRefresh";
-            this.bbiAbsencesRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // AbsencesBar
-            // 
-            this.AbsencesBar.BarName = "Absences";
-            this.AbsencesBar.DockCol = 0;
-            this.AbsencesBar.DockRow = 0;
-            this.AbsencesBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.AbsencesBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesRefresh)});
-            this.AbsencesBar.OptionsBar.AllowQuickCustomization = false;
-            this.AbsencesBar.OptionsBar.DrawDragBorder = false;
-            this.AbsencesBar.Text = "Absences";
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.AbsencesBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 499);
-            this.barDockControlBottom.Manager = this.AbsencesBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
-            this.barDockControlLeft.Manager = this.AbsencesBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 475);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
-            this.barDockControlRight.Manager = this.AbsencesBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 475);
-            // 
-            // AbsencesPopUpMenu
-            // 
-            this.AbsencesPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesRefresh)});
-            this.AbsencesPopUpMenu.Manager = this.AbsencesBarManager;
-            this.AbsencesPopUpMenu.Name = "AbsencesPopUpMenu";
-            // 
-            // EvaluationsBarManager
-            // 
-            this.EvaluationsBarManager.AllowCustomization = false;
-            this.EvaluationsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.EvaluationsBar});
-            this.EvaluationsBarManager.DockControls.Add(this.barDockControl1);
-            this.EvaluationsBarManager.DockControls.Add(this.barDockControl2);
-            this.EvaluationsBarManager.DockControls.Add(this.barDockControl3);
-            this.EvaluationsBarManager.DockControls.Add(this.barDockControl4);
-            this.EvaluationsBarManager.Form = this.EvaluationsXtraUserControl;
-            this.EvaluationsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiEvaluationsNew,
-            this.bbiEvaluationsEdit,
-            this.bbiEvaluationsDelete,
-            this.bbiEvaluationsRefresh});
-            this.EvaluationsBarManager.MainMenu = this.EvaluationsBar;
-            this.EvaluationsBarManager.MaxItemId = 4;
-            // 
-            // bbiEvaluationsNew
-            // 
-            this.bbiEvaluationsNew.Caption = "Ajouter";
-            this.bbiEvaluationsNew.Id = 0;
-            this.bbiEvaluationsNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiEvaluationsNew.Name = "bbiEvaluationsNew";
-            this.bbiEvaluationsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiEvaluationsEdit
-            // 
-            this.bbiEvaluationsEdit.Caption = "Modifier ";
-            this.bbiEvaluationsEdit.Id = 1;
-            this.bbiEvaluationsEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiEvaluationsEdit.Name = "bbiEvaluationsEdit";
-            this.bbiEvaluationsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiEvaluationsDelete
-            // 
-            this.bbiEvaluationsDelete.Caption = "Supprimer ";
-            this.bbiEvaluationsDelete.Id = 2;
-            this.bbiEvaluationsDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiEvaluationsDelete.Name = "bbiEvaluationsDelete";
-            this.bbiEvaluationsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiEvaluationsRefresh
-            // 
-            this.bbiEvaluationsRefresh.Caption = "Actualiser ";
-            this.bbiEvaluationsRefresh.Id = 3;
-            this.bbiEvaluationsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiEvaluationsRefresh.Name = "bbiEvaluationsRefresh";
-            this.bbiEvaluationsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // EvaluationsBar
-            // 
-            this.EvaluationsBar.BarName = "Evaluations";
-            this.EvaluationsBar.DockCol = 0;
-            this.EvaluationsBar.DockRow = 0;
-            this.EvaluationsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.EvaluationsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsEdit, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsRefresh)});
-            this.EvaluationsBar.OptionsBar.AllowQuickCustomization = false;
-            this.EvaluationsBar.OptionsBar.DrawDragBorder = false;
-            this.EvaluationsBar.Text = "Evaluations";
-            // 
-            // barDockControl1
-            // 
-            this.barDockControl1.CausesValidation = false;
-            this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl1.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl1.Manager = this.EvaluationsBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControl2
-            // 
-            this.barDockControl2.CausesValidation = false;
-            this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 499);
-            this.barDockControl2.Manager = this.EvaluationsBarManager;
-            this.barDockControl2.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControl3
-            // 
-            this.barDockControl3.CausesValidation = false;
-            this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl3.Manager = this.EvaluationsBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 475);
-            // 
-            // barDockControl4
-            // 
-            this.barDockControl4.CausesValidation = false;
-            this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(976, 24);
-            this.barDockControl4.Manager = this.EvaluationsBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 475);
-            // 
-            // EvaluationsPopUpMenu
-            // 
-            this.EvaluationsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsRefresh)});
-            this.EvaluationsPopUpMenu.Manager = this.EvaluationsBarManager;
-            this.EvaluationsPopUpMenu.Name = "EvaluationsPopUpMenu";
-            // 
-            // DecisionsBarManager
-            // 
-            this.DecisionsBarManager.AllowCustomization = false;
-            this.DecisionsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.DecisionsBar});
-            this.DecisionsBarManager.DockControls.Add(this.barDockControl5);
-            this.DecisionsBarManager.DockControls.Add(this.barDockControl6);
-            this.DecisionsBarManager.DockControls.Add(this.barDockControl7);
-            this.DecisionsBarManager.DockControls.Add(this.barDockControl8);
-            this.DecisionsBarManager.Form = this.DecisionsXtraUserControl;
-            this.DecisionsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiDecisionsNew,
-            this.bbiDecisionsEdit,
-            this.bbiDecisionsDelete,
-            this.bbiDecisionsRefresh,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3});
-            this.DecisionsBarManager.MainMenu = this.DecisionsBar;
-            this.DecisionsBarManager.MaxItemId = 7;
-            // 
-            // bbiDecisionsNew
-            // 
-            this.bbiDecisionsNew.Caption = "Ajouter ";
-            this.bbiDecisionsNew.Id = 0;
-            this.bbiDecisionsNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiDecisionsNew.Name = "bbiDecisionsNew";
-            this.bbiDecisionsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiDecisionsEdit
-            // 
-            this.bbiDecisionsEdit.Caption = "Modifier ";
-            this.bbiDecisionsEdit.Id = 1;
-            this.bbiDecisionsEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiDecisionsEdit.Name = "bbiDecisionsEdit";
-            this.bbiDecisionsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiDecisionsDelete
-            // 
-            this.bbiDecisionsDelete.Caption = "Delete";
-            this.bbiDecisionsDelete.Id = 2;
-            this.bbiDecisionsDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiDecisionsDelete.Name = "bbiDecisionsDelete";
-            this.bbiDecisionsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiDecisionsRefresh
-            // 
-            this.bbiDecisionsRefresh.Caption = "Refresh";
-            this.bbiDecisionsRefresh.Id = 3;
-            this.bbiDecisionsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiDecisionsRefresh.Name = "bbiDecisionsRefresh";
-            this.bbiDecisionsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // DecisionsBar
-            // 
-            this.DecisionsBar.BarName = "Decisions";
-            this.DecisionsBar.DockCol = 0;
-            this.DecisionsBar.DockRow = 0;
-            this.DecisionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.DecisionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem3)});
-            this.DecisionsBar.OptionsBar.AllowQuickCustomization = false;
-            this.DecisionsBar.OptionsBar.DrawDragBorder = false;
-            this.DecisionsBar.Text = "Decisions";
-            // 
-            // barDockControl5
-            // 
-            this.barDockControl5.CausesValidation = false;
-            this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl5.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl5.Manager = this.DecisionsBarManager;
-            this.barDockControl5.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControl6
-            // 
-            this.barDockControl6.CausesValidation = false;
-            this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 499);
-            this.barDockControl6.Manager = this.DecisionsBarManager;
-            this.barDockControl6.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControl7
-            // 
-            this.barDockControl7.CausesValidation = false;
-            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl7.Manager = this.DecisionsBarManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 475);
-            // 
-            // barDockControl8
-            // 
-            this.barDockControl8.CausesValidation = false;
-            this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(976, 24);
-            this.barDockControl8.Manager = this.DecisionsBarManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 475);
-            // 
-            // DecisionsPopUpMenu
-            // 
-            this.DecisionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsRefresh)});
-            this.DecisionsPopUpMenu.Manager = this.DecisionsBarManager;
-            this.DecisionsPopUpMenu.Name = "DecisionsPopUpMenu";
-            // 
-            // SectionsBarManager
-            // 
-            this.SectionsBarManager.AllowCustomization = false;
-            this.SectionsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.SectionsBar});
-            this.SectionsBarManager.DockControls.Add(this.barDockControl9);
-            this.SectionsBarManager.DockControls.Add(this.barDockControl10);
-            this.SectionsBarManager.DockControls.Add(this.barDockControl11);
-            this.SectionsBarManager.DockControls.Add(this.barDockControl12);
-            this.SectionsBarManager.Form = this.SectionsXtraUserControl;
-            this.SectionsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiSectionsNew,
-            this.bbiSectionsEdit,
-            this.bbiSectionsDelete,
-            this.bbiSectionsRefresh});
-            this.SectionsBarManager.MainMenu = this.SectionsBar;
-            this.SectionsBarManager.MaxItemId = 4;
-            // 
-            // bbiSectionsNew
-            // 
-            this.bbiSectionsNew.Caption = "Ajouter ";
-            this.bbiSectionsNew.Id = 0;
-            this.bbiSectionsNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiSectionsNew.Name = "bbiSectionsNew";
-            this.bbiSectionsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiSectionsEdit
-            // 
-            this.bbiSectionsEdit.Caption = "Modifier ";
-            this.bbiSectionsEdit.Id = 1;
-            this.bbiSectionsEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiSectionsEdit.Name = "bbiSectionsEdit";
-            this.bbiSectionsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiSectionsDelete
-            // 
-            this.bbiSectionsDelete.Caption = "Supprimer ";
-            this.bbiSectionsDelete.Id = 2;
-            this.bbiSectionsDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiSectionsDelete.Name = "bbiSectionsDelete";
-            this.bbiSectionsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiSectionsRefresh
-            // 
-            this.bbiSectionsRefresh.Caption = "Actualiser ";
-            this.bbiSectionsRefresh.Id = 3;
-            this.bbiSectionsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiSectionsRefresh.Name = "bbiSectionsRefresh";
-            this.bbiSectionsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // SectionsBar
-            // 
-            this.SectionsBar.BarName = "Sections";
-            this.SectionsBar.DockCol = 0;
-            this.SectionsBar.DockRow = 0;
-            this.SectionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.SectionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
-            this.SectionsBar.OptionsBar.AllowQuickCustomization = false;
-            this.SectionsBar.OptionsBar.DrawDragBorder = false;
-            this.SectionsBar.Text = "Sections";
-            // 
-            // barDockControl9
-            // 
-            this.barDockControl9.CausesValidation = false;
-            this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl9.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl9.Manager = this.SectionsBarManager;
-            this.barDockControl9.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControl10
-            // 
-            this.barDockControl10.CausesValidation = false;
-            this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl10.Location = new System.Drawing.Point(0, 499);
-            this.barDockControl10.Manager = this.SectionsBarManager;
-            this.barDockControl10.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControl11
-            // 
-            this.barDockControl11.CausesValidation = false;
-            this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl11.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl11.Manager = this.SectionsBarManager;
-            this.barDockControl11.Size = new System.Drawing.Size(0, 475);
-            // 
-            // barDockControl12
-            // 
-            this.barDockControl12.CausesValidation = false;
-            this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl12.Location = new System.Drawing.Point(976, 24);
-            this.barDockControl12.Manager = this.SectionsBarManager;
-            this.barDockControl12.Size = new System.Drawing.Size(0, 475);
-            // 
-            // SectionsPopUpMenu
-            // 
-            this.SectionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
-            this.SectionsPopUpMenu.Manager = this.SectionsBarManager;
-            this.SectionsPopUpMenu.Name = "SectionsPopUpMenu";
+            // barDockControl15
+            // 
+            this.barDockControl15.CausesValidation = false;
+            this.barDockControl15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl15.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl15.Manager = this.Suiver_stagiaireBarManager;
+            this.barDockControl15.Size = new System.Drawing.Size(0, 214);
             // 
             // Suiver_stagiaireBarManager
             // 
@@ -1708,6 +1525,21 @@
             this.barButtonItem4});
             this.Suiver_stagiaireBarManager.MainMenu = this.Suiver_stagiaireBar;
             this.Suiver_stagiaireBarManager.MaxItemId = 5;
+            // 
+            // Suiver_stagiaireBar
+            // 
+            this.Suiver_stagiaireBar.BarName = "Suiver_stagiaire";
+            this.Suiver_stagiaireBar.DockCol = 0;
+            this.Suiver_stagiaireBar.DockRow = 0;
+            this.Suiver_stagiaireBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.Suiver_stagiaireBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuiver_stagiaireNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuiver_stagiaireEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuiver_stagiaireDelete, true),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4)});
+            this.Suiver_stagiaireBar.OptionsBar.AllowQuickCustomization = false;
+            this.Suiver_stagiaireBar.OptionsBar.DrawDragBorder = false;
+            this.Suiver_stagiaireBar.Text = "Suiver_stagiaire";
             // 
             // bbiSuiver_stagiaireNew
             // 
@@ -1733,6 +1565,39 @@
             this.bbiSuiver_stagiaireDelete.Name = "bbiSuiver_stagiaireDelete";
             this.bbiSuiver_stagiaireDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Actualiser ";
+            this.barButtonItem4.Id = 4;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barDockControl13
+            // 
+            this.barDockControl13.CausesValidation = false;
+            this.barDockControl13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControl13.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl13.Manager = this.Suiver_stagiaireBarManager;
+            this.barDockControl13.Size = new System.Drawing.Size(938, 24);
+            // 
+            // barDockControl14
+            // 
+            this.barDockControl14.CausesValidation = false;
+            this.barDockControl14.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControl14.Location = new System.Drawing.Point(0, 238);
+            this.barDockControl14.Manager = this.Suiver_stagiaireBarManager;
+            this.barDockControl14.Size = new System.Drawing.Size(938, 0);
+            // 
+            // barDockControl16
+            // 
+            this.barDockControl16.CausesValidation = false;
+            this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControl16.Location = new System.Drawing.Point(938, 24);
+            this.barDockControl16.Manager = this.Suiver_stagiaireBarManager;
+            this.barDockControl16.Size = new System.Drawing.Size(0, 214);
+            // 
             // bbiSuiver_stagiaireRefresh
             // 
             this.bbiSuiver_stagiaireRefresh.Caption = "Refresh";
@@ -1741,52 +1606,228 @@
             this.bbiSuiver_stagiaireRefresh.Name = "bbiSuiver_stagiaireRefresh";
             this.bbiSuiver_stagiaireRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // Suiver_stagiaireBar
+            // layoutControlGroup1
             // 
-            this.Suiver_stagiaireBar.BarName = "Suiver_stagiaire";
-            this.Suiver_stagiaireBar.DockCol = 0;
-            this.Suiver_stagiaireBar.DockRow = 0;
-            this.Suiver_stagiaireBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.Suiver_stagiaireBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuiver_stagiaireNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuiver_stagiaireEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuiver_stagiaireDelete, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4)});
-            this.Suiver_stagiaireBar.OptionsBar.AllowQuickCustomization = false;
-            this.Suiver_stagiaireBar.OptionsBar.DrawDragBorder = false;
-            this.Suiver_stagiaireBar.Text = "Suiver_stagiaire";
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(986, 357);
+            this.layoutControlGroup1.TextVisible = false;
             // 
-            // barDockControl13
+            // layoutControlGroup2
             // 
-            this.barDockControl13.CausesValidation = false;
-            this.barDockControl13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl13.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl13.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl13.Size = new System.Drawing.Size(976, 24);
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForID_Semestre,
+            this.ItemForDesignation_Semestre,
+            this.tabbedControlGroup1,
+            this.ItemForDesignation_Semestre_ar});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(966, 337);
             // 
-            // barDockControl14
+            // ItemForID_Semestre
             // 
-            this.barDockControl14.CausesValidation = false;
-            this.barDockControl14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl14.Location = new System.Drawing.Point(0, 499);
-            this.barDockControl14.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl14.Size = new System.Drawing.Size(976, 0);
+            this.ItemForID_Semestre.Control = this.ID_SemestreTextEdit;
+            this.ItemForID_Semestre.Location = new System.Drawing.Point(0, 0);
+            this.ItemForID_Semestre.Name = "ItemForID_Semestre";
+            this.ItemForID_Semestre.Size = new System.Drawing.Size(966, 24);
+            this.ItemForID_Semestre.Text = "Numéro du semestre";
+            this.ItemForID_Semestre.TextSize = new System.Drawing.Size(118, 13);
             // 
-            // barDockControl15
+            // ItemForDesignation_Semestre
             // 
-            this.barDockControl15.CausesValidation = false;
-            this.barDockControl15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl15.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl15.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl15.Size = new System.Drawing.Size(0, 475);
+            this.ItemForDesignation_Semestre.Control = this.Designation_SemestreTextEdit;
+            this.ItemForDesignation_Semestre.Location = new System.Drawing.Point(0, 24);
+            this.ItemForDesignation_Semestre.Name = "ItemForDesignation_Semestre";
+            this.ItemForDesignation_Semestre.Size = new System.Drawing.Size(539, 24);
+            this.ItemForDesignation_Semestre.Text = "Designation du semestre";
+            this.ItemForDesignation_Semestre.TextSize = new System.Drawing.Size(118, 13);
             // 
-            // barDockControl16
+            // tabbedControlGroup1
             // 
-            this.barDockControl16.CausesValidation = false;
-            this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl16.Location = new System.Drawing.Point(976, 24);
-            this.barDockControl16.Manager = this.Suiver_stagiaireBarManager;
-            this.barDockControl16.Size = new System.Drawing.Size(0, 475);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 48);
+            this.tabbedControlGroup1.Name = "autoGroupForTabs";
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup7;
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(966, 289);
+            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup3,
+            this.layoutControlGroup4,
+            this.layoutControlGroup5,
+            this.layoutControlGroup6,
+            this.layoutControlGroup7});
+            this.tabbedControlGroup1.Text = "Tabs";
+            // 
+            // layoutControlGroup7
+            // 
+            this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForSuiver_stagiaire});
+            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup7.Name = "autoGroupForSuiver_stagiaire";
+            this.layoutControlGroup7.Size = new System.Drawing.Size(942, 242);
+            this.layoutControlGroup7.Text = "Suivie du stagiaire";
+            // 
+            // ItemForSuiver_stagiaire
+            // 
+            this.ItemForSuiver_stagiaire.Control = this.Suiver_stagiaireXtraUserControl;
+            this.ItemForSuiver_stagiaire.Location = new System.Drawing.Point(0, 0);
+            this.ItemForSuiver_stagiaire.Name = "ItemForSuiver_stagiaire";
+            this.ItemForSuiver_stagiaire.Size = new System.Drawing.Size(942, 242);
+            this.ItemForSuiver_stagiaire.StartNewLine = true;
+            this.ItemForSuiver_stagiaire.Text = "Suiver_stagiaire";
+            this.ItemForSuiver_stagiaire.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForSuiver_stagiaire.TextVisible = false;
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForAbsences});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "autoGroupForAbsences";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(942, 242);
+            this.layoutControlGroup3.Text = "Absences";
+            // 
+            // ItemForAbsences
+            // 
+            this.ItemForAbsences.Control = this.AbsencesXtraUserControl;
+            this.ItemForAbsences.Location = new System.Drawing.Point(0, 0);
+            this.ItemForAbsences.Name = "ItemForAbsences";
+            this.ItemForAbsences.Size = new System.Drawing.Size(942, 242);
+            this.ItemForAbsences.StartNewLine = true;
+            this.ItemForAbsences.Text = "Absences";
+            this.ItemForAbsences.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForAbsences.TextVisible = false;
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForDecisions});
+            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup4.Name = "autoGroupForDecisions";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(942, 242);
+            this.layoutControlGroup4.Text = "Decisions";
+            // 
+            // ItemForDecisions
+            // 
+            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
+            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
+            this.ItemForDecisions.Name = "ItemForDecisions";
+            this.ItemForDecisions.Size = new System.Drawing.Size(942, 242);
+            this.ItemForDecisions.StartNewLine = true;
+            this.ItemForDecisions.Text = "Decisions";
+            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForDecisions.TextVisible = false;
+            // 
+            // layoutControlGroup5
+            // 
+            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForEvaluations});
+            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup5.Name = "autoGroupForEvaluations";
+            this.layoutControlGroup5.Size = new System.Drawing.Size(942, 242);
+            this.layoutControlGroup5.Text = "Evaluations";
+            // 
+            // ItemForEvaluations
+            // 
+            this.ItemForEvaluations.Control = this.EvaluationsXtraUserControl;
+            this.ItemForEvaluations.Location = new System.Drawing.Point(0, 0);
+            this.ItemForEvaluations.Name = "ItemForEvaluations";
+            this.ItemForEvaluations.Size = new System.Drawing.Size(942, 242);
+            this.ItemForEvaluations.StartNewLine = true;
+            this.ItemForEvaluations.Text = "Evaluations";
+            this.ItemForEvaluations.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForEvaluations.TextVisible = false;
+            // 
+            // layoutControlGroup6
+            // 
+            this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForSections});
+            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup6.Name = "autoGroupForSections";
+            this.layoutControlGroup6.Size = new System.Drawing.Size(942, 242);
+            this.layoutControlGroup6.Text = "Sections";
+            // 
+            // ItemForSections
+            // 
+            this.ItemForSections.Control = this.SectionsXtraUserControl;
+            this.ItemForSections.Location = new System.Drawing.Point(0, 0);
+            this.ItemForSections.Name = "ItemForSections";
+            this.ItemForSections.Size = new System.Drawing.Size(942, 242);
+            this.ItemForSections.StartNewLine = true;
+            this.ItemForSections.Text = "Sections";
+            this.ItemForSections.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForSections.TextVisible = false;
+            // 
+            // ItemForDesignation_Semestre_ar
+            // 
+            this.ItemForDesignation_Semestre_ar.Control = this.Designation_Semestre_arTextEdit;
+            this.ItemForDesignation_Semestre_ar.Location = new System.Drawing.Point(539, 24);
+            this.ItemForDesignation_Semestre_ar.Name = "ItemForDesignation_Semestre_ar";
+            this.ItemForDesignation_Semestre_ar.Size = new System.Drawing.Size(427, 24);
+            this.ItemForDesignation_Semestre_ar.Text = "االسداسي";
+            this.ItemForDesignation_Semestre_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForDesignation_Semestre_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForDesignation_Semestre_ar.TextSize = new System.Drawing.Size(52, 13);
+            this.ItemForDesignation_Semestre_ar.TextToControlDistance = 5;
+            // 
+            // mvvmContext
+            // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Save", this.bbiSave),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "SaveAndClose", this.bbiSaveAndClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "SaveAndNew", this.bbiSaveAndNew),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Reset", this.bbiReset),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Delete", this.bbiDelete),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "Close", this.bbiClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "SaveLayout", this.bbiSaveLayout),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.SemestreViewModel), "ResetLayout", this.bbiResetLayout)});
+            this.mvvmContext.ContainerControl = this;
+            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
+            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
+            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.SemestreViewModel);
+            // 
+            // AbsencesPopUpMenu
+            // 
+            this.AbsencesPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAbsencesRefresh)});
+            this.AbsencesPopUpMenu.Manager = this.AbsencesBarManager;
+            this.AbsencesPopUpMenu.Name = "AbsencesPopUpMenu";
+            // 
+            // EvaluationsPopUpMenu
+            // 
+            this.EvaluationsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiEvaluationsRefresh)});
+            this.EvaluationsPopUpMenu.Manager = this.EvaluationsBarManager;
+            this.EvaluationsPopUpMenu.Name = "EvaluationsPopUpMenu";
+            // 
+            // DecisionsPopUpMenu
+            // 
+            this.DecisionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsRefresh)});
+            this.DecisionsPopUpMenu.Manager = this.DecisionsBarManager;
+            this.DecisionsPopUpMenu.Name = "DecisionsPopUpMenu";
+            // 
+            // SectionsPopUpMenu
+            // 
+            this.SectionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
+            this.SectionsPopUpMenu.Manager = this.SectionsBarManager;
+            this.SectionsPopUpMenu.Name = "SectionsPopUpMenu";
             // 
             // Suiver_stagiairePopUpMenu
             // 
@@ -1798,42 +1839,6 @@
             this.Suiver_stagiairePopUpMenu.Manager = this.Suiver_stagiaireBarManager;
             this.Suiver_stagiairePopUpMenu.Name = "Suiver_stagiairePopUpMenu";
             // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Supprimer ";
-            this.barButtonItem1.Id = 4;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.Caption;
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Supprimer ";
-            this.barButtonItem2.Id = 5;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "Actualiser ";
-            this.barButtonItem3.Id = 6;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Actualiser ";
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
             // SemestreView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1842,65 +1847,65 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "SemestreView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(986, 483);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ID_SemestreTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.semestreViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_SemestreTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Designation_Semestre_arTextEdit.Properties)).EndInit();
             this.AbsencesXtraUserControl.ResumeLayout(false);
             this.AbsencesXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AbsencesGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbsencesGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AbsencesBindingSource)).EndInit();
-            this.EvaluationsXtraUserControl.ResumeLayout(false);
-            this.EvaluationsXtraUserControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbsencesGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbsencesBarManager)).EndInit();
             this.DecisionsXtraUserControl.ResumeLayout(false);
             this.DecisionsXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBarManager)).EndInit();
+            this.EvaluationsXtraUserControl.ResumeLayout(false);
+            this.EvaluationsXtraUserControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBarManager)).EndInit();
             this.SectionsXtraUserControl.ResumeLayout(false);
             this.SectionsXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsBarManager)).EndInit();
             this.Suiver_stagiaireXtraUserControl.ResumeLayout(false);
             this.Suiver_stagiaireXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ID_SemestreTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Semestre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_SemestreTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Designation_Semestre_arTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbsencesBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbsencesPopUpMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsPopUpMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiaireBarManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Semestre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Semestre_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbsencesPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EvaluationsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Suiver_stagiairePopUpMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

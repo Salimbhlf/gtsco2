@@ -24,10 +24,44 @@
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ID_PromoTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.promoViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Code_PromoTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.DiplomeTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.Diplome_arTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.DATE_D_FormationDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.Date_F_FormationDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.OptionLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.OptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.OptionLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Option1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Option = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Option = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Option_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecialite1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Mode_formationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.Mode_formationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Mode_formationLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Mode_Formation1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Mode_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDésignation_Mode_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDésignation_Mode_Formation_ar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DecisionsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.DecisionsGridControl = new DevExpress.XtraGrid.GridControl();
+            this.DecisionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DecisionsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colType_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -40,22 +74,19 @@
             this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSemestre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
-            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
-            this.DecisionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.DecisionsBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.DecisionsBar = new DevExpress.XtraBars.Bar();
+            this.bbiDecisionsNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDecisionsEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDecisionsDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDecisionsRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.SectionsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.SectionsGridControl = new DevExpress.XtraGrid.GridControl();
+            this.SectionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SectionsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSectionID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode_Section = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -70,73 +101,20 @@
             this.colPromo1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSemestre1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiairs = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.SectionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.StagiairsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
-            this.StagiairsGridControl = new DevExpress.XtraGrid.GridControl();
-            this.StagiairsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.StagiairsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Mode_formationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
-            this.Mode_formationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.OptionLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
-            this.OptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ID_PromoTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForID_Promo = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Code_PromoTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForCode_Promo = new DevExpress.XtraLayout.LayoutControlItem();
-            this.DiplomeTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDiplome = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Diplome_arTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDiplome_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.DATE_D_FormationDateEdit = new DevExpress.XtraEditors.DateEdit();
-            this.ItemForDATE_D_Formation = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Date_F_FormationDateEdit = new DevExpress.XtraEditors.DateEdit();
-            this.ItemForDate_F_Formation = new DevExpress.XtraLayout.LayoutControlItem();
-            this.OptionLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ItemForID_Option = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Mode_formationLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ItemForMode_de_formation = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForSections = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
-            this.DecisionsBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiDecisionsNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDecisionsEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDecisionsDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiDecisionsRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.DecisionsBar = new DevExpress.XtraBars.Bar();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.DecisionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.SectionsBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.SectionsBar = new DevExpress.XtraBars.Bar();
             this.bbiSectionsNew = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSectionsEdit = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSectionsDelete = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSectionsRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.SectionsBar = new DevExpress.XtraBars.Bar();
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
-            this.SectionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.StagiairsBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiStagiairsNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiStagiairsEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiStagiairsDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiStagiairsRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.StagiairsBar = new DevExpress.XtraBars.Bar();
-            this.barDockControl5 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.StagiairsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
+            this.StagiairsGridControl = new DevExpress.XtraGrid.GridControl();
+            this.StagiairsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.StagiairsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colNum_STG1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -147,59 +125,90 @@
             this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colE_Maile = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
+            this.StagiairsBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.StagiairsBar = new DevExpress.XtraBars.Bar();
+            this.bbiStagiairsNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiStagiairsEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiStagiairsDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiStagiairsRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControl5 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForID_Promo = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForCode_Promo = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDiplome = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForSections = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDATE_D_Formation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDate_F_Formation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForID_Option = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForMode_de_formation = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDiplome_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.DecisionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.SectionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.promoViewBindingSource)).BeginInit();
-            this.DecisionsXtraUserControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBindingSource)).BeginInit();
-            this.SectionsXtraUserControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsBindingSource)).BeginInit();
-            this.StagiairsXtraUserControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationLookUpEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OptionLookUpEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OptionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ID_PromoTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.promoViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Code_PromoTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Promo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiplomeTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diplome_arTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DATE_D_FormationDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DATE_D_FormationDateEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDATE_D_Formation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Date_F_FormationDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Date_F_FormationDateEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_F_Formation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OptionLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OptionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OptionLookUpEditView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Option)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Mode_formationLookUpEditView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForMode_de_formation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
+            this.DecisionsXtraUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).BeginInit();
+            this.SectionsXtraUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).BeginInit();
+            this.StagiairsXtraUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Promo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDATE_D_Formation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_F_Formation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Option)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMode_de_formation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,22 +231,348 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(977, 433);
             this.dataLayoutControl1.TabIndex = 0;
             // 
-            // layoutControlGroup1
+            // ID_PromoTextEdit
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2});
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
-            this.layoutControlGroup1.TextVisible = false;
+            this.ID_PromoTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "ID_Promo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ID_PromoTextEdit.Location = new System.Drawing.Point(188, 12);
+            this.ID_PromoTextEdit.MenuManager = this.mainRibbonControl;
+            this.ID_PromoTextEdit.Name = "ID_PromoTextEdit";
+            this.ID_PromoTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.ID_PromoTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.ID_PromoTextEdit.Properties.Mask.EditMask = "N0";
+            this.ID_PromoTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.ID_PromoTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_PromoTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ID_PromoTextEdit.Size = new System.Drawing.Size(777, 20);
+            this.ID_PromoTextEdit.StyleController = this.dataLayoutControl1;
+            this.ID_PromoTextEdit.TabIndex = 4;
             // 
             // promoViewBindingSource
             // 
             this.promoViewBindingSource.DataSource = typeof(gtsco2.basededonne.Promo);
+            // 
+            // mainRibbonControl
+            // 
+            this.mainRibbonControl.ExpandCollapseItem.Id = 0;
+            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.mainRibbonControl.ExpandCollapseItem,
+            this.mainRibbonControl.SearchEditItem,
+            this.bbiCustomize,
+            this.bbiSave,
+            this.bbiSaveAndClose,
+            this.bbiSaveAndNew,
+            this.bbiReset,
+            this.bbiDelete,
+            this.bbiClose,
+            this.bbiSaveLayout,
+            this.bbiResetLayout});
+            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.mainRibbonControl.MaxItemId = 10;
+            this.mainRibbonControl.Name = "mainRibbonControl";
+            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.mainRibbonPage});
+            this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
+            this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonControl.Size = new System.Drawing.Size(977, 126);
+            this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            // 
+            // bbiCustomize
+            // 
+            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
+            this.bbiCustomize.Id = 1;
+            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
+            this.bbiCustomize.Name = "bbiCustomize";
+            // 
+            // bbiSave
+            // 
+            this.bbiSave.Caption = "Enregistrer";
+            this.bbiSave.Id = 2;
+            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSave.Name = "bbiSave";
+            // 
+            // bbiSaveAndClose
+            // 
+            this.bbiSaveAndClose.Caption = "Enregistrer et fermer";
+            this.bbiSaveAndClose.Id = 3;
+            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
+            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
+            // 
+            // bbiSaveAndNew
+            // 
+            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
+            this.bbiSaveAndNew.Id = 4;
+            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
+            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
+            // 
+            // bbiReset
+            // 
+            this.bbiReset.Caption = "Annuler les changements";
+            this.bbiReset.Id = 5;
+            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiReset.Name = "bbiReset";
+            // 
+            // bbiDelete
+            // 
+            this.bbiDelete.Caption = "Supprimer";
+            this.bbiDelete.Id = 6;
+            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDelete.Name = "bbiDelete";
+            // 
+            // bbiClose
+            // 
+            this.bbiClose.Caption = "Fermer ";
+            this.bbiClose.Id = 7;
+            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
+            this.bbiClose.Name = "bbiClose";
+            // 
+            // bbiSaveLayout
+            // 
+            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
+            this.bbiSaveLayout.Id = 8;
+            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSaveLayout.Name = "bbiSaveLayout";
+            // 
+            // bbiResetLayout
+            // 
+            this.bbiResetLayout.Caption = "Annuler la personnalisation";
+            this.bbiResetLayout.Id = 9;
+            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiResetLayout.Name = "bbiResetLayout";
+            // 
+            // mainRibbonPage
+            // 
+            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.mainRibbonPageGroup,
+            this.ribbonPageGroupLayout});
+            this.mainRibbonPage.MergeOrder = 0;
+            this.mainRibbonPage.Name = "mainRibbonPage";
+            this.mainRibbonPage.Text = "Home";
+            // 
+            // mainRibbonPageGroup
+            // 
+            this.mainRibbonPageGroup.AllowTextClipping = false;
+            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
+            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
+            this.mainRibbonPageGroup.Text = "Gestion des promos";
+            // 
+            // ribbonPageGroupLayout
+            // 
+            this.ribbonPageGroupLayout.AllowTextClipping = false;
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
+            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
+            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
+            // 
+            // Code_PromoTextEdit
+            // 
+            this.Code_PromoTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Code_Promo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Code_PromoTextEdit.Location = new System.Drawing.Point(188, 36);
+            this.Code_PromoTextEdit.MenuManager = this.mainRibbonControl;
+            this.Code_PromoTextEdit.Name = "Code_PromoTextEdit";
+            this.Code_PromoTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Code_PromoTextEdit.Size = new System.Drawing.Size(777, 20);
+            this.Code_PromoTextEdit.StyleController = this.dataLayoutControl1;
+            this.Code_PromoTextEdit.TabIndex = 5;
+            // 
+            // DiplomeTextEdit
+            // 
+            this.DiplomeTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Diplome", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.DiplomeTextEdit.Location = new System.Drawing.Point(188, 156);
+            this.DiplomeTextEdit.MenuManager = this.mainRibbonControl;
+            this.DiplomeTextEdit.Name = "DiplomeTextEdit";
+            this.DiplomeTextEdit.Size = new System.Drawing.Size(385, 20);
+            this.DiplomeTextEdit.StyleController = this.dataLayoutControl1;
+            this.DiplomeTextEdit.TabIndex = 6;
+            // 
+            // Diplome_arTextEdit
+            // 
+            this.Diplome_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Diplome_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Diplome_arTextEdit.Location = new System.Drawing.Point(577, 156);
+            this.Diplome_arTextEdit.MenuManager = this.mainRibbonControl;
+            this.Diplome_arTextEdit.Name = "Diplome_arTextEdit";
+            this.Diplome_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Diplome_arTextEdit.Size = new System.Drawing.Size(321, 20);
+            this.Diplome_arTextEdit.StyleController = this.dataLayoutControl1;
+            this.Diplome_arTextEdit.TabIndex = 7;
+            // 
+            // DATE_D_FormationDateEdit
+            // 
+            this.DATE_D_FormationDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "DATE_D_Formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.DATE_D_FormationDateEdit.EditValue = null;
+            this.DATE_D_FormationDateEdit.Location = new System.Drawing.Point(188, 60);
+            this.DATE_D_FormationDateEdit.MenuManager = this.mainRibbonControl;
+            this.DATE_D_FormationDateEdit.Name = "DATE_D_FormationDateEdit";
+            this.DATE_D_FormationDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.DATE_D_FormationDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DATE_D_FormationDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DATE_D_FormationDateEdit.Properties.NullValuePrompt = "Séléctionnez la date du debut ";
+            this.DATE_D_FormationDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.DATE_D_FormationDateEdit.Size = new System.Drawing.Size(777, 20);
+            this.DATE_D_FormationDateEdit.StyleController = this.dataLayoutControl1;
+            this.DATE_D_FormationDateEdit.TabIndex = 8;
+            // 
+            // Date_F_FormationDateEdit
+            // 
+            this.Date_F_FormationDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Date_F_Formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Date_F_FormationDateEdit.EditValue = null;
+            this.Date_F_FormationDateEdit.Location = new System.Drawing.Point(188, 84);
+            this.Date_F_FormationDateEdit.MenuManager = this.mainRibbonControl;
+            this.Date_F_FormationDateEdit.Name = "Date_F_FormationDateEdit";
+            this.Date_F_FormationDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.Date_F_FormationDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.Date_F_FormationDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.Date_F_FormationDateEdit.Properties.NullValuePrompt = "Séléctionnez la date de fin";
+            this.Date_F_FormationDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.Date_F_FormationDateEdit.Size = new System.Drawing.Size(777, 20);
+            this.Date_F_FormationDateEdit.StyleController = this.dataLayoutControl1;
+            this.Date_F_FormationDateEdit.TabIndex = 9;
+            // 
+            // OptionLookUpEdit
+            // 
+            this.OptionLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "ID_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.OptionLookUpEdit.EditValue = "";
+            this.OptionLookUpEdit.Location = new System.Drawing.Point(188, 108);
+            this.OptionLookUpEdit.MenuManager = this.mainRibbonControl;
+            this.OptionLookUpEdit.Name = "OptionLookUpEdit";
+            this.OptionLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.OptionLookUpEdit.Properties.DataSource = this.OptionBindingSource;
+            this.OptionLookUpEdit.Properties.DisplayMember = "Code_Option";
+            this.OptionLookUpEdit.Properties.NullText = "";
+            this.OptionLookUpEdit.Properties.NullValuePrompt = "Saisir ou selectionnez l\'option de spécialité";
+            this.OptionLookUpEdit.Properties.PopupView = this.OptionLookUpEditView;
+            this.OptionLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.OptionLookUpEdit.Properties.ValueMember = "ID_Option";
+            this.OptionLookUpEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.OptionLookUpEdit.Size = new System.Drawing.Size(777, 20);
+            this.OptionLookUpEdit.StyleController = this.dataLayoutControl1;
+            this.OptionLookUpEdit.TabIndex = 10;
+            // 
+            // OptionBindingSource
+            // 
+            this.OptionBindingSource.DataSource = typeof(gtsco2.basededonne.Option);
+            // 
+            // OptionLookUpEditView
+            // 
+            this.OptionLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Option1,
+            this.colCode_Option,
+            this.colDesignation_Option,
+            this.colDesignation_Option_ar,
+            this.colSpecialite1});
+            this.OptionLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.OptionLookUpEditView.Name = "OptionLookUpEditView";
+            this.OptionLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.OptionLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Option1
+            // 
+            this.colID_Option1.FieldName = "ID_Option";
+            this.colID_Option1.Name = "colID_Option1";
+            // 
+            // colCode_Option
+            // 
+            this.colCode_Option.FieldName = "Code_Option";
+            this.colCode_Option.Name = "colCode_Option";
+            this.colCode_Option.Visible = true;
+            this.colCode_Option.VisibleIndex = 0;
+            // 
+            // colDesignation_Option
+            // 
+            this.colDesignation_Option.FieldName = "Designation_Option";
+            this.colDesignation_Option.Name = "colDesignation_Option";
+            this.colDesignation_Option.Visible = true;
+            this.colDesignation_Option.VisibleIndex = 1;
+            // 
+            // colDesignation_Option_ar
+            // 
+            this.colDesignation_Option_ar.FieldName = "Designation_Option_ar";
+            this.colDesignation_Option_ar.Name = "colDesignation_Option_ar";
+            this.colDesignation_Option_ar.Visible = true;
+            this.colDesignation_Option_ar.VisibleIndex = 2;
+            // 
+            // colSpecialite1
+            // 
+            this.colSpecialite1.FieldName = "Specialite1.Designation_SP";
+            this.colSpecialite1.Name = "colSpecialite1";
+            this.colSpecialite1.Visible = true;
+            this.colSpecialite1.VisibleIndex = 3;
+            // 
+            // Mode_formationLookUpEdit
+            // 
+            this.Mode_formationLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Mode_de_formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Mode_formationLookUpEdit.EditValue = "";
+            this.Mode_formationLookUpEdit.Location = new System.Drawing.Point(188, 132);
+            this.Mode_formationLookUpEdit.MenuManager = this.mainRibbonControl;
+            this.Mode_formationLookUpEdit.Name = "Mode_formationLookUpEdit";
+            this.Mode_formationLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.Mode_formationLookUpEdit.Properties.DataSource = this.Mode_formationBindingSource;
+            this.Mode_formationLookUpEdit.Properties.DisplayMember = "Code_Mode_Formation";
+            this.Mode_formationLookUpEdit.Properties.NullText = "";
+            this.Mode_formationLookUpEdit.Properties.NullValuePrompt = "Sasir ou séléctionnez le mode de formation";
+            this.Mode_formationLookUpEdit.Properties.PopupView = this.Mode_formationLookUpEditView;
+            this.Mode_formationLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.Mode_formationLookUpEdit.Properties.ValueMember = "ID_Mode_Formation";
+            this.Mode_formationLookUpEdit.Size = new System.Drawing.Size(777, 20);
+            this.Mode_formationLookUpEdit.StyleController = this.dataLayoutControl1;
+            this.Mode_formationLookUpEdit.TabIndex = 11;
+            // 
+            // Mode_formationBindingSource
+            // 
+            this.Mode_formationBindingSource.DataSource = typeof(gtsco2.basededonne.Mode_formation);
+            // 
+            // Mode_formationLookUpEditView
+            // 
+            this.Mode_formationLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Mode_Formation1,
+            this.colCode_Mode_Formation,
+            this.colDésignation_Mode_Formation,
+            this.colDésignation_Mode_Formation_ar});
+            this.Mode_formationLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.Mode_formationLookUpEditView.Name = "Mode_formationLookUpEditView";
+            this.Mode_formationLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.Mode_formationLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Mode_Formation1
+            // 
+            this.colID_Mode_Formation1.FieldName = "ID_Mode_Formation";
+            this.colID_Mode_Formation1.Name = "colID_Mode_Formation1";
+            // 
+            // colCode_Mode_Formation
+            // 
+            this.colCode_Mode_Formation.FieldName = "Code_Mode_Formation";
+            this.colCode_Mode_Formation.Name = "colCode_Mode_Formation";
+            this.colCode_Mode_Formation.Visible = true;
+            this.colCode_Mode_Formation.VisibleIndex = 0;
+            // 
+            // colDésignation_Mode_Formation
+            // 
+            this.colDésignation_Mode_Formation.FieldName = "Désignation_Mode_Formation";
+            this.colDésignation_Mode_Formation.Name = "colDésignation_Mode_Formation";
+            this.colDésignation_Mode_Formation.Visible = true;
+            this.colDésignation_Mode_Formation.VisibleIndex = 1;
+            // 
+            // colDésignation_Mode_Formation_ar
+            // 
+            this.colDésignation_Mode_Formation_ar.FieldName = "Désignation_Mode_Formation_ar";
+            this.colDésignation_Mode_Formation_ar.Name = "colDésignation_Mode_Formation_ar";
+            this.colDésignation_Mode_Formation_ar.Visible = true;
+            this.colDésignation_Mode_Formation_ar.VisibleIndex = 2;
             // 
             // DecisionsXtraUserControl
             // 
@@ -246,10 +581,10 @@
             this.DecisionsXtraUserControl.Controls.Add(this.barDockControlRight);
             this.DecisionsXtraUserControl.Controls.Add(this.barDockControlBottom);
             this.DecisionsXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.DecisionsXtraUserControl.Location = new System.Drawing.Point(24, 239);
+            this.DecisionsXtraUserControl.Location = new System.Drawing.Point(24, 215);
             this.DecisionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.DecisionsXtraUserControl.Name = "DecisionsXtraUserControl";
-            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(976, 379);
+            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(929, 194);
             this.DecisionsXtraUserControl.TabIndex = 12;
             // 
             // DecisionsGridControl
@@ -260,10 +595,14 @@
             this.DecisionsGridControl.MainView = this.DecisionsGridView;
             this.DecisionsGridControl.MenuManager = this.mainRibbonControl;
             this.DecisionsGridControl.Name = "DecisionsGridControl";
-            this.DecisionsGridControl.Size = new System.Drawing.Size(976, 355);
+            this.DecisionsGridControl.Size = new System.Drawing.Size(929, 170);
             this.DecisionsGridControl.TabIndex = 0;
             this.DecisionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.DecisionsGridView});
+            // 
+            // DecisionsBindingSource
+            // 
+            this.DecisionsBindingSource.DataSource = typeof(gtsco2.basededonne.Decision);
             // 
             // DecisionsGridView
             // 
@@ -353,128 +692,102 @@
             this.colStagiair.FieldName = "Stagiair";
             this.colStagiair.Name = "colStagiair";
             // 
-            // mainRibbonControl
+            // barDockControlLeft
             // 
-            this.mainRibbonControl.ExpandCollapseItem.Id = 0;
-            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.mainRibbonControl.ExpandCollapseItem,
-            this.bbiCustomize,
-            this.bbiSave,
-            this.bbiSaveAndClose,
-            this.bbiSaveAndNew,
-            this.bbiReset,
-            this.bbiDelete,
-            this.bbiClose,
-            this.bbiSaveLayout,
-            this.bbiResetLayout,
-            this.mainRibbonControl.SearchEditItem});
-            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 10;
-            this.mainRibbonControl.Name = "mainRibbonControl";
-            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.mainRibbonPage});
-            this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
-            this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.DecisionsBarManager;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 170);
             // 
-            // bbiCustomize
+            // DecisionsBarManager
             // 
-            this.bbiCustomize.Caption = "Personnaliser la fenêtre";
-            this.bbiCustomize.Id = 1;
-            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
-            this.bbiCustomize.Name = "bbiCustomize";
+            this.DecisionsBarManager.AllowCustomization = false;
+            this.DecisionsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.DecisionsBar});
+            this.DecisionsBarManager.DockControls.Add(this.barDockControlTop);
+            this.DecisionsBarManager.DockControls.Add(this.barDockControlBottom);
+            this.DecisionsBarManager.DockControls.Add(this.barDockControlLeft);
+            this.DecisionsBarManager.DockControls.Add(this.barDockControlRight);
+            this.DecisionsBarManager.Form = this.DecisionsXtraUserControl;
+            this.DecisionsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiDecisionsNew,
+            this.bbiDecisionsEdit,
+            this.bbiDecisionsDelete,
+            this.bbiDecisionsRefresh});
+            this.DecisionsBarManager.MainMenu = this.DecisionsBar;
+            this.DecisionsBarManager.MaxItemId = 4;
             // 
-            // mainRibbonPage
+            // DecisionsBar
             // 
-            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
-            this.mainRibbonPage.MergeOrder = 0;
-            this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "Home";
+            this.DecisionsBar.BarName = "Decisions";
+            this.DecisionsBar.DockCol = 0;
+            this.DecisionsBar.DockRow = 0;
+            this.DecisionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.DecisionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsRefresh)});
+            this.DecisionsBar.OptionsBar.AllowQuickCustomization = false;
+            this.DecisionsBar.OptionsBar.DrawDragBorder = false;
+            this.DecisionsBar.Text = "Decisions";
             // 
-            // mainRibbonPageGroup
+            // bbiDecisionsNew
             // 
-            this.mainRibbonPageGroup.AllowTextClipping = false;
-            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
-            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Gestion des promos";
+            this.bbiDecisionsNew.Caption = "Ajouter";
+            this.bbiDecisionsNew.Id = 0;
+            this.bbiDecisionsNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiDecisionsNew.Name = "bbiDecisionsNew";
+            this.bbiDecisionsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiSave
+            // bbiDecisionsEdit
             // 
-            this.bbiSave.Caption = "Enregistrer";
-            this.bbiSave.Id = 2;
-            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
-            this.bbiSave.Name = "bbiSave";
+            this.bbiDecisionsEdit.Caption = "Modifier ";
+            this.bbiDecisionsEdit.Id = 1;
+            this.bbiDecisionsEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiDecisionsEdit.Name = "bbiDecisionsEdit";
+            this.bbiDecisionsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiSaveAndClose
+            // bbiDecisionsDelete
             // 
-            this.bbiSaveAndClose.Caption = "Enregistrer et fermer";
-            this.bbiSaveAndClose.Id = 3;
-            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
-            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
+            this.bbiDecisionsDelete.Caption = "Supprimer ";
+            this.bbiDecisionsDelete.Id = 2;
+            this.bbiDecisionsDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDecisionsDelete.Name = "bbiDecisionsDelete";
+            this.bbiDecisionsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiSaveAndNew
+            // bbiDecisionsRefresh
             // 
-            this.bbiSaveAndNew.Caption = "Enregistrer et Ajouter";
-            this.bbiSaveAndNew.Id = 4;
-            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
-            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
+            this.bbiDecisionsRefresh.Caption = "Actualiser ";
+            this.bbiDecisionsRefresh.Id = 3;
+            this.bbiDecisionsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiDecisionsRefresh.Name = "bbiDecisionsRefresh";
+            this.bbiDecisionsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // bbiReset
+            // barDockControlTop
             // 
-            this.bbiReset.Caption = "Annuler les changements";
-            this.bbiReset.Id = 5;
-            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
-            this.bbiReset.Name = "bbiReset";
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.DecisionsBarManager;
+            this.barDockControlTop.Size = new System.Drawing.Size(929, 24);
             // 
-            // bbiDelete
+            // barDockControlBottom
             // 
-            this.bbiDelete.Caption = "Supprimer";
-            this.bbiDelete.Id = 6;
-            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiDelete.Name = "bbiDelete";
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 194);
+            this.barDockControlBottom.Manager = this.DecisionsBarManager;
+            this.barDockControlBottom.Size = new System.Drawing.Size(929, 0);
             // 
-            // bbiClose
+            // barDockControlRight
             // 
-            this.bbiClose.Caption = "Fermer ";
-            this.bbiClose.Id = 7;
-            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
-            this.bbiClose.Name = "bbiClose";
-            // 
-            // ribbonPageGroupLayout
-            // 
-            this.ribbonPageGroupLayout.AllowTextClipping = false;
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
-            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
-            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
-            // 
-            // bbiSaveLayout
-            // 
-            this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
-            this.bbiSaveLayout.Id = 8;
-            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
-            this.bbiSaveLayout.Name = "bbiSaveLayout";
-            // 
-            // bbiResetLayout
-            // 
-            this.bbiResetLayout.Caption = "Annuler la personnalisation";
-            this.bbiResetLayout.Id = 9;
-            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
-            this.bbiResetLayout.Name = "bbiResetLayout";
-            // 
-            // DecisionsBindingSource
-            // 
-            this.DecisionsBindingSource.DataSource = typeof(gtsco2.basededonne.Decision);
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(929, 24);
+            this.barDockControlRight.Manager = this.DecisionsBarManager;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 170);
             // 
             // SectionsXtraUserControl
             // 
@@ -483,10 +796,10 @@
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl4);
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl2);
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl1);
-            this.SectionsXtraUserControl.Location = new System.Drawing.Point(24, 239);
+            this.SectionsXtraUserControl.Location = new System.Drawing.Point(24, 215);
             this.SectionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.SectionsXtraUserControl.Name = "SectionsXtraUserControl";
-            this.SectionsXtraUserControl.Size = new System.Drawing.Size(976, 379);
+            this.SectionsXtraUserControl.Size = new System.Drawing.Size(929, 194);
             this.SectionsXtraUserControl.TabIndex = 13;
             // 
             // SectionsGridControl
@@ -497,10 +810,14 @@
             this.SectionsGridControl.MainView = this.SectionsGridView;
             this.SectionsGridControl.MenuManager = this.mainRibbonControl;
             this.SectionsGridControl.Name = "SectionsGridControl";
-            this.SectionsGridControl.Size = new System.Drawing.Size(976, 355);
+            this.SectionsGridControl.Size = new System.Drawing.Size(929, 170);
             this.SectionsGridControl.TabIndex = 0;
             this.SectionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.SectionsGridView});
+            // 
+            // SectionsBindingSource
+            // 
+            this.SectionsBindingSource.DataSource = typeof(gtsco2.basededonne.Section);
             // 
             // SectionsGridView
             // 
@@ -604,475 +921,13 @@
             this.colStagiairs.FieldName = "Stagiairs";
             this.colStagiairs.Name = "colStagiairs";
             // 
-            // SectionsBindingSource
-            // 
-            this.SectionsBindingSource.DataSource = typeof(gtsco2.basededonne.Section);
-            // 
-            // StagiairsXtraUserControl
-            // 
-            this.StagiairsXtraUserControl.Controls.Add(this.StagiairsGridControl);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl7);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl8);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl6);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl5);
-            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 239);
-            this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
-            this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
-            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(976, 379);
-            this.StagiairsXtraUserControl.TabIndex = 14;
-            // 
-            // StagiairsGridControl
-            // 
-            this.StagiairsGridControl.DataSource = this.StagiairsBindingSource;
-            this.StagiairsGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.StagiairsGridControl.Location = new System.Drawing.Point(0, 24);
-            this.StagiairsGridControl.MainView = this.StagiairsGridView;
-            this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
-            this.StagiairsGridControl.Name = "StagiairsGridControl";
-            this.StagiairsGridControl.Size = new System.Drawing.Size(976, 355);
-            this.StagiairsGridControl.TabIndex = 0;
-            this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.StagiairsGridView});
-            // 
-            // StagiairsGridView
-            // 
-            this.StagiairsGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colNum_STG1,
-            this.colNom,
-            this.colNom_ar,
-            this.colPrenom,
-            this.colPrenom_ar,
-            this.colPrenom_ar1,
-            this.colPromo2,
-            this.colSection,
-            this.colTelephone,
-            this.colE_Maile});
-            this.StagiairsGridView.GridControl = this.StagiairsGridControl;
-            this.StagiairsGridView.Name = "StagiairsGridView";
-            this.StagiairsGridView.OptionsBehavior.Editable = false;
-            this.StagiairsGridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // StagiairsBindingSource
-            // 
-            this.StagiairsBindingSource.DataSource = typeof(gtsco2.basededonne.Stagiair);
-            // 
-            // Mode_formationLookUpEdit
-            // 
-            this.Mode_formationLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Mode_de_formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Mode_formationLookUpEdit.EditValue = "";
-            this.Mode_formationLookUpEdit.Location = new System.Drawing.Point(188, 180);
-            this.Mode_formationLookUpEdit.MenuManager = this.mainRibbonControl;
-            this.Mode_formationLookUpEdit.Name = "Mode_formationLookUpEdit";
-            this.Mode_formationLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Mode_formationLookUpEdit.Properties.DataSource = this.Mode_formationBindingSource;
-            this.Mode_formationLookUpEdit.Properties.DisplayMember = "Code_Mode_Formation";
-            this.Mode_formationLookUpEdit.Properties.PopupView = this.Mode_formationLookUpEditView;
-            this.Mode_formationLookUpEdit.Properties.ValueMember = "ID_Mode_Formation";
-            this.Mode_formationLookUpEdit.Size = new System.Drawing.Size(824, 20);
-            this.Mode_formationLookUpEdit.StyleController = this.dataLayoutControl1;
-            this.Mode_formationLookUpEdit.TabIndex = 11;
-            // 
-            // Mode_formationBindingSource
-            // 
-            this.Mode_formationBindingSource.DataSource = typeof(gtsco2.basededonne.Mode_formation);
-            // 
-            // OptionLookUpEdit
-            // 
-            this.OptionLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "ID_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.OptionLookUpEdit.EditValue = "";
-            this.OptionLookUpEdit.Location = new System.Drawing.Point(188, 156);
-            this.OptionLookUpEdit.MenuManager = this.mainRibbonControl;
-            this.OptionLookUpEdit.Name = "OptionLookUpEdit";
-            this.OptionLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.OptionLookUpEdit.Properties.DataSource = this.OptionBindingSource;
-            this.OptionLookUpEdit.Properties.DisplayMember = "Code_Option";
-            this.OptionLookUpEdit.Properties.PopupView = this.OptionLookUpEditView;
-            this.OptionLookUpEdit.Properties.ValueMember = "ID_Option";
-            this.OptionLookUpEdit.Size = new System.Drawing.Size(824, 20);
-            this.OptionLookUpEdit.StyleController = this.dataLayoutControl1;
-            this.OptionLookUpEdit.TabIndex = 10;
-            // 
-            // OptionBindingSource
-            // 
-            this.OptionBindingSource.DataSource = typeof(gtsco2.basededonne.Option);
-            // 
-            // layoutControlGroup2
-            // 
-            this.layoutControlGroup2.AllowDrawBackground = false;
-            this.layoutControlGroup2.GroupBordersVisible = false;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForID_Promo,
-            this.ItemForCode_Promo,
-            this.ItemForDiplome,
-            this.ItemForDiplome_ar,
-            this.ItemForDATE_D_Formation,
-            this.ItemForDate_F_Formation,
-            this.ItemForID_Option,
-            this.ItemForMode_de_formation,
-            this.tabbedControlGroup1});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
-            // 
-            // ID_PromoTextEdit
-            // 
-            this.ID_PromoTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "ID_Promo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ID_PromoTextEdit.Location = new System.Drawing.Point(188, 12);
-            this.ID_PromoTextEdit.MenuManager = this.mainRibbonControl;
-            this.ID_PromoTextEdit.Name = "ID_PromoTextEdit";
-            this.ID_PromoTextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.ID_PromoTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_PromoTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_PromoTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.ID_PromoTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.ID_PromoTextEdit.Size = new System.Drawing.Size(824, 20);
-            this.ID_PromoTextEdit.StyleController = this.dataLayoutControl1;
-            this.ID_PromoTextEdit.TabIndex = 4;
-            // 
-            // ItemForID_Promo
-            // 
-            this.ItemForID_Promo.Control = this.ID_PromoTextEdit;
-            this.ItemForID_Promo.Location = new System.Drawing.Point(0, 0);
-            this.ItemForID_Promo.Name = "ItemForID_Promo";
-            this.ItemForID_Promo.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForID_Promo.Text = "Numéro de promo";
-            this.ItemForID_Promo.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // Code_PromoTextEdit
-            // 
-            this.Code_PromoTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Code_Promo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Code_PromoTextEdit.Location = new System.Drawing.Point(188, 36);
-            this.Code_PromoTextEdit.MenuManager = this.mainRibbonControl;
-            this.Code_PromoTextEdit.Name = "Code_PromoTextEdit";
-            this.Code_PromoTextEdit.Size = new System.Drawing.Size(824, 20);
-            this.Code_PromoTextEdit.StyleController = this.dataLayoutControl1;
-            this.Code_PromoTextEdit.TabIndex = 5;
-            // 
-            // ItemForCode_Promo
-            // 
-            this.ItemForCode_Promo.Control = this.Code_PromoTextEdit;
-            this.ItemForCode_Promo.Location = new System.Drawing.Point(0, 24);
-            this.ItemForCode_Promo.Name = "ItemForCode_Promo";
-            this.ItemForCode_Promo.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForCode_Promo.Text = "Code de la promo";
-            this.ItemForCode_Promo.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // DiplomeTextEdit
-            // 
-            this.DiplomeTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Diplome", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.DiplomeTextEdit.Location = new System.Drawing.Point(188, 60);
-            this.DiplomeTextEdit.MenuManager = this.mainRibbonControl;
-            this.DiplomeTextEdit.Name = "DiplomeTextEdit";
-            this.DiplomeTextEdit.Size = new System.Drawing.Size(824, 20);
-            this.DiplomeTextEdit.StyleController = this.dataLayoutControl1;
-            this.DiplomeTextEdit.TabIndex = 6;
-            // 
-            // ItemForDiplome
-            // 
-            this.ItemForDiplome.Control = this.DiplomeTextEdit;
-            this.ItemForDiplome.Location = new System.Drawing.Point(0, 48);
-            this.ItemForDiplome.Name = "ItemForDiplome";
-            this.ItemForDiplome.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDiplome.Text = "Désignation du diplome";
-            this.ItemForDiplome.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // Diplome_arTextEdit
-            // 
-            this.Diplome_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Diplome_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Diplome_arTextEdit.Location = new System.Drawing.Point(188, 84);
-            this.Diplome_arTextEdit.MenuManager = this.mainRibbonControl;
-            this.Diplome_arTextEdit.Name = "Diplome_arTextEdit";
-            this.Diplome_arTextEdit.Size = new System.Drawing.Size(824, 20);
-            this.Diplome_arTextEdit.StyleController = this.dataLayoutControl1;
-            this.Diplome_arTextEdit.TabIndex = 7;
-            // 
-            // ItemForDiplome_ar
-            // 
-            this.ItemForDiplome_ar.Control = this.Diplome_arTextEdit;
-            this.ItemForDiplome_ar.Location = new System.Drawing.Point(0, 72);
-            this.ItemForDiplome_ar.Name = "ItemForDiplome_ar";
-            this.ItemForDiplome_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDiplome_ar.Text = "Désignation du diplome en arabe";
-            this.ItemForDiplome_ar.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // DATE_D_FormationDateEdit
-            // 
-            this.DATE_D_FormationDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "DATE_D_Formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.DATE_D_FormationDateEdit.EditValue = null;
-            this.DATE_D_FormationDateEdit.Location = new System.Drawing.Point(188, 108);
-            this.DATE_D_FormationDateEdit.MenuManager = this.mainRibbonControl;
-            this.DATE_D_FormationDateEdit.Name = "DATE_D_FormationDateEdit";
-            this.DATE_D_FormationDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.DATE_D_FormationDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DATE_D_FormationDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.DATE_D_FormationDateEdit.Size = new System.Drawing.Size(824, 20);
-            this.DATE_D_FormationDateEdit.StyleController = this.dataLayoutControl1;
-            this.DATE_D_FormationDateEdit.TabIndex = 8;
-            // 
-            // ItemForDATE_D_Formation
-            // 
-            this.ItemForDATE_D_Formation.Control = this.DATE_D_FormationDateEdit;
-            this.ItemForDATE_D_Formation.Location = new System.Drawing.Point(0, 96);
-            this.ItemForDATE_D_Formation.Name = "ItemForDATE_D_Formation";
-            this.ItemForDATE_D_Formation.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDATE_D_Formation.Text = "Date début de formation";
-            this.ItemForDATE_D_Formation.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // Date_F_FormationDateEdit
-            // 
-            this.Date_F_FormationDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.promoViewBindingSource, "Date_F_Formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Date_F_FormationDateEdit.EditValue = null;
-            this.Date_F_FormationDateEdit.Location = new System.Drawing.Point(188, 132);
-            this.Date_F_FormationDateEdit.MenuManager = this.mainRibbonControl;
-            this.Date_F_FormationDateEdit.Name = "Date_F_FormationDateEdit";
-            this.Date_F_FormationDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.Date_F_FormationDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Date_F_FormationDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Date_F_FormationDateEdit.Size = new System.Drawing.Size(824, 20);
-            this.Date_F_FormationDateEdit.StyleController = this.dataLayoutControl1;
-            this.Date_F_FormationDateEdit.TabIndex = 9;
-            // 
-            // ItemForDate_F_Formation
-            // 
-            this.ItemForDate_F_Formation.Control = this.Date_F_FormationDateEdit;
-            this.ItemForDate_F_Formation.Location = new System.Drawing.Point(0, 120);
-            this.ItemForDate_F_Formation.Name = "ItemForDate_F_Formation";
-            this.ItemForDate_F_Formation.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDate_F_Formation.Text = "Date fin de formation";
-            this.ItemForDate_F_Formation.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // OptionLookUpEditView
-            // 
-            this.OptionLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.OptionLookUpEditView.Name = "OptionLookUpEditView";
-            this.OptionLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.OptionLookUpEditView.OptionsView.ShowGroupPanel = false;
-            // 
-            // ItemForID_Option
-            // 
-            this.ItemForID_Option.Control = this.OptionLookUpEdit;
-            this.ItemForID_Option.Location = new System.Drawing.Point(0, 144);
-            this.ItemForID_Option.Name = "ItemForID_Option";
-            this.ItemForID_Option.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForID_Option.Text = "Numéro d\'option de spécialité";
-            this.ItemForID_Option.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // Mode_formationLookUpEditView
-            // 
-            this.Mode_formationLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.Mode_formationLookUpEditView.Name = "Mode_formationLookUpEditView";
-            this.Mode_formationLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.Mode_formationLookUpEditView.OptionsView.ShowGroupPanel = false;
-            // 
-            // ItemForMode_de_formation
-            // 
-            this.ItemForMode_de_formation.Control = this.Mode_formationLookUpEdit;
-            this.ItemForMode_de_formation.Location = new System.Drawing.Point(0, 168);
-            this.ItemForMode_de_formation.Name = "ItemForMode_de_formation";
-            this.ItemForMode_de_formation.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForMode_de_formation.Text = "Désignation du mode de formation";
-            this.ItemForMode_de_formation.TextSize = new System.Drawing.Size(164, 13);
-            // 
-            // ItemForDecisions
-            // 
-            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
-            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
-            this.ItemForDecisions.Name = "ItemForDecisions";
-            this.ItemForDecisions.Size = new System.Drawing.Size(980, 383);
-            this.ItemForDecisions.StartNewLine = true;
-            this.ItemForDecisions.Text = "Decisions";
-            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForDecisions.TextVisible = false;
-            // 
-            // tabbedControlGroup1
-            // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 192);
-            this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup5;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 430);
-            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup3,
-            this.layoutControlGroup4,
-            this.layoutControlGroup5});
-            this.tabbedControlGroup1.Text = "Tabs";
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForDecisions});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "autoGroupForDecisions";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 383);
-            this.layoutControlGroup3.Text = "Decisions";
-            // 
-            // ItemForSections
-            // 
-            this.ItemForSections.Control = this.SectionsXtraUserControl;
-            this.ItemForSections.Location = new System.Drawing.Point(0, 0);
-            this.ItemForSections.Name = "ItemForSections";
-            this.ItemForSections.Size = new System.Drawing.Size(980, 383);
-            this.ItemForSections.StartNewLine = true;
-            this.ItemForSections.Text = "Sections";
-            this.ItemForSections.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForSections.TextVisible = false;
-            // 
-            // layoutControlGroup4
-            // 
-            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForSections});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup4.Name = "autoGroupForSections";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(980, 383);
-            this.layoutControlGroup4.Text = "Sections";
-            // 
-            // ItemForStagiairs
-            // 
-            this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
-            this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
-            this.ItemForStagiairs.Name = "ItemForStagiairs";
-            this.ItemForStagiairs.Size = new System.Drawing.Size(980, 383);
-            this.ItemForStagiairs.StartNewLine = true;
-            this.ItemForStagiairs.Text = "Stagiairs";
-            this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForStagiairs.TextVisible = false;
-            // 
-            // layoutControlGroup5
-            // 
-            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForStagiairs});
-            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup5.Name = "autoGroupForStagiairs";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(980, 383);
-            this.layoutControlGroup5.Text = "Stagiaires";
-            // 
-            // mvvmContext
-            // 
-            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Save", this.bbiSave),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "SaveAndClose", this.bbiSaveAndClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "SaveAndNew", this.bbiSaveAndNew),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Reset", this.bbiReset),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Delete", this.bbiDelete),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Close", this.bbiClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "SaveLayout", this.bbiSaveLayout),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "ResetLayout", this.bbiResetLayout)});
-            this.mvvmContext.ContainerControl = this;
-            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
-            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
-            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.PromoViewModel);
-            // 
-            // DecisionsBarManager
-            // 
-            this.DecisionsBarManager.AllowCustomization = false;
-            this.DecisionsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.DecisionsBar});
-            this.DecisionsBarManager.DockControls.Add(this.barDockControlTop);
-            this.DecisionsBarManager.DockControls.Add(this.barDockControlBottom);
-            this.DecisionsBarManager.DockControls.Add(this.barDockControlLeft);
-            this.DecisionsBarManager.DockControls.Add(this.barDockControlRight);
-            this.DecisionsBarManager.Form = this.DecisionsXtraUserControl;
-            this.DecisionsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiDecisionsNew,
-            this.bbiDecisionsEdit,
-            this.bbiDecisionsDelete,
-            this.bbiDecisionsRefresh});
-            this.DecisionsBarManager.MainMenu = this.DecisionsBar;
-            this.DecisionsBarManager.MaxItemId = 4;
-            // 
-            // bbiDecisionsNew
-            // 
-            this.bbiDecisionsNew.Caption = "Ajouter";
-            this.bbiDecisionsNew.Id = 0;
-            this.bbiDecisionsNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiDecisionsNew.Name = "bbiDecisionsNew";
-            this.bbiDecisionsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiDecisionsEdit
-            // 
-            this.bbiDecisionsEdit.Caption = "Modifier ";
-            this.bbiDecisionsEdit.Id = 1;
-            this.bbiDecisionsEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiDecisionsEdit.Name = "bbiDecisionsEdit";
-            this.bbiDecisionsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiDecisionsDelete
-            // 
-            this.bbiDecisionsDelete.Caption = "Supprimer ";
-            this.bbiDecisionsDelete.Id = 2;
-            this.bbiDecisionsDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiDecisionsDelete.Name = "bbiDecisionsDelete";
-            this.bbiDecisionsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiDecisionsRefresh
-            // 
-            this.bbiDecisionsRefresh.Caption = "Actualiser ";
-            this.bbiDecisionsRefresh.Id = 3;
-            this.bbiDecisionsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiDecisionsRefresh.Name = "bbiDecisionsRefresh";
-            this.bbiDecisionsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // DecisionsBar
-            // 
-            this.DecisionsBar.BarName = "Decisions";
-            this.DecisionsBar.DockCol = 0;
-            this.DecisionsBar.DockRow = 0;
-            this.DecisionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.DecisionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsRefresh)});
-            this.DecisionsBar.OptionsBar.AllowQuickCustomization = false;
-            this.DecisionsBar.OptionsBar.DrawDragBorder = false;
-            this.DecisionsBar.Text = "Decisions";
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.DecisionsBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 379);
-            this.barDockControlBottom.Manager = this.DecisionsBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
-            this.barDockControlLeft.Manager = this.DecisionsBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 355);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
-            this.barDockControlRight.Manager = this.DecisionsBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 355);
-            // 
-            // DecisionsPopUpMenu
-            // 
-            this.DecisionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsRefresh)});
-            this.DecisionsPopUpMenu.Manager = this.DecisionsBarManager;
-            this.DecisionsPopUpMenu.Name = "DecisionsPopUpMenu";
+            // barDockControl3
+            // 
+            this.barDockControl3.CausesValidation = false;
+            this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl3.Manager = this.SectionsBarManager;
+            this.barDockControl3.Size = new System.Drawing.Size(0, 170);
             // 
             // SectionsBarManager
             // 
@@ -1091,6 +946,21 @@
             this.bbiSectionsRefresh});
             this.SectionsBarManager.MainMenu = this.SectionsBar;
             this.SectionsBarManager.MaxItemId = 4;
+            // 
+            // SectionsBar
+            // 
+            this.SectionsBar.BarName = "Sections";
+            this.SectionsBar.DockCol = 0;
+            this.SectionsBar.DockRow = 0;
+            this.SectionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.SectionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
+            this.SectionsBar.OptionsBar.AllowQuickCustomization = false;
+            this.SectionsBar.OptionsBar.DrawDragBorder = false;
+            this.SectionsBar.Text = "Sections";
             // 
             // bbiSectionsNew
             // 
@@ -1124,169 +994,77 @@
             this.bbiSectionsRefresh.Name = "bbiSectionsRefresh";
             this.bbiSectionsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // SectionsBar
-            // 
-            this.SectionsBar.BarName = "Sections";
-            this.SectionsBar.DockCol = 0;
-            this.SectionsBar.DockRow = 0;
-            this.SectionsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.SectionsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
-            this.SectionsBar.OptionsBar.AllowQuickCustomization = false;
-            this.SectionsBar.OptionsBar.DrawDragBorder = false;
-            this.SectionsBar.Text = "Sections";
-            // 
             // barDockControl1
             // 
             this.barDockControl1.CausesValidation = false;
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.SectionsBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl1.Size = new System.Drawing.Size(929, 24);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 379);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 194);
             this.barDockControl2.Manager = this.SectionsBarManager;
-            this.barDockControl2.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControl3
-            // 
-            this.barDockControl3.CausesValidation = false;
-            this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl3.Manager = this.SectionsBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 355);
+            this.barDockControl2.Size = new System.Drawing.Size(929, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl4.Location = new System.Drawing.Point(929, 24);
             this.barDockControl4.Manager = this.SectionsBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 355);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 170);
             // 
-            // SectionsPopUpMenu
+            // StagiairsXtraUserControl
             // 
-            this.SectionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
-            this.SectionsPopUpMenu.Manager = this.SectionsBarManager;
-            this.SectionsPopUpMenu.Name = "SectionsPopUpMenu";
+            this.StagiairsXtraUserControl.Controls.Add(this.StagiairsGridControl);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl7);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl8);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl6);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControl5);
+            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 215);
+            this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
+            this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
+            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(929, 194);
+            this.StagiairsXtraUserControl.TabIndex = 14;
             // 
-            // StagiairsBarManager
+            // StagiairsGridControl
             // 
-            this.StagiairsBarManager.AllowCustomization = false;
-            this.StagiairsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.StagiairsBar});
-            this.StagiairsBarManager.DockControls.Add(this.barDockControl5);
-            this.StagiairsBarManager.DockControls.Add(this.barDockControl6);
-            this.StagiairsBarManager.DockControls.Add(this.barDockControl7);
-            this.StagiairsBarManager.DockControls.Add(this.barDockControl8);
-            this.StagiairsBarManager.Form = this.StagiairsXtraUserControl;
-            this.StagiairsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiStagiairsNew,
-            this.bbiStagiairsEdit,
-            this.bbiStagiairsDelete,
-            this.bbiStagiairsRefresh});
-            this.StagiairsBarManager.MainMenu = this.StagiairsBar;
-            this.StagiairsBarManager.MaxItemId = 4;
+            this.StagiairsGridControl.DataSource = this.StagiairsBindingSource;
+            this.StagiairsGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StagiairsGridControl.Location = new System.Drawing.Point(0, 24);
+            this.StagiairsGridControl.MainView = this.StagiairsGridView;
+            this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
+            this.StagiairsGridControl.Name = "StagiairsGridControl";
+            this.StagiairsGridControl.Size = new System.Drawing.Size(929, 170);
+            this.StagiairsGridControl.TabIndex = 0;
+            this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.StagiairsGridView});
             // 
-            // bbiStagiairsNew
+            // StagiairsBindingSource
             // 
-            this.bbiStagiairsNew.Caption = "Ajouter";
-            this.bbiStagiairsNew.Id = 0;
-            this.bbiStagiairsNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiStagiairsNew.Name = "bbiStagiairsNew";
-            this.bbiStagiairsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.StagiairsBindingSource.DataSource = typeof(gtsco2.basededonne.Stagiair);
             // 
-            // bbiStagiairsEdit
+            // StagiairsGridView
             // 
-            this.bbiStagiairsEdit.Caption = "Modifier";
-            this.bbiStagiairsEdit.Id = 1;
-            this.bbiStagiairsEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiStagiairsEdit.Name = "bbiStagiairsEdit";
-            this.bbiStagiairsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiStagiairsDelete
-            // 
-            this.bbiStagiairsDelete.Caption = "Supprimer ";
-            this.bbiStagiairsDelete.Id = 2;
-            this.bbiStagiairsDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiStagiairsDelete.Name = "bbiStagiairsDelete";
-            this.bbiStagiairsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiStagiairsRefresh
-            // 
-            this.bbiStagiairsRefresh.Caption = "Actualiser ";
-            this.bbiStagiairsRefresh.Id = 3;
-            this.bbiStagiairsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiStagiairsRefresh.Name = "bbiStagiairsRefresh";
-            this.bbiStagiairsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // StagiairsBar
-            // 
-            this.StagiairsBar.BarName = "Stagiairs";
-            this.StagiairsBar.DockCol = 0;
-            this.StagiairsBar.DockRow = 0;
-            this.StagiairsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.StagiairsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh, true)});
-            this.StagiairsBar.OptionsBar.AllowQuickCustomization = false;
-            this.StagiairsBar.OptionsBar.DrawDragBorder = false;
-            this.StagiairsBar.Text = "Stagiairs";
-            // 
-            // barDockControl5
-            // 
-            this.barDockControl5.CausesValidation = false;
-            this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl5.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl5.Manager = this.StagiairsBarManager;
-            this.barDockControl5.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControl6
-            // 
-            this.barDockControl6.CausesValidation = false;
-            this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 379);
-            this.barDockControl6.Manager = this.StagiairsBarManager;
-            this.barDockControl6.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControl7
-            // 
-            this.barDockControl7.CausesValidation = false;
-            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl7.Manager = this.StagiairsBarManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 355);
-            // 
-            // barDockControl8
-            // 
-            this.barDockControl8.CausesValidation = false;
-            this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(976, 24);
-            this.barDockControl8.Manager = this.StagiairsBarManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 355);
-            // 
-            // StagiairsPopUpMenu
-            // 
-            this.StagiairsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh)});
-            this.StagiairsPopUpMenu.Manager = this.StagiairsBarManager;
-            this.StagiairsPopUpMenu.Name = "StagiairsPopUpMenu";
+            this.StagiairsGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colNum_STG1,
+            this.colNom,
+            this.colNom_ar,
+            this.colPrenom,
+            this.colPrenom_ar,
+            this.colPrenom_ar1,
+            this.colPromo2,
+            this.colSection,
+            this.colTelephone,
+            this.colE_Maile});
+            this.StagiairsGridView.GridControl = this.StagiairsGridControl;
+            this.StagiairsGridView.Name = "StagiairsGridView";
+            this.StagiairsGridView.OptionsBehavior.Editable = false;
+            this.StagiairsGridView.OptionsBehavior.ReadOnly = true;
             // 
             // colNum_STG1
             // 
@@ -1358,6 +1136,324 @@
             this.colE_Maile.Visible = true;
             this.colE_Maile.VisibleIndex = 9;
             // 
+            // barDockControl7
+            // 
+            this.barDockControl7.CausesValidation = false;
+            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl7.Manager = this.StagiairsBarManager;
+            this.barDockControl7.Size = new System.Drawing.Size(0, 170);
+            // 
+            // StagiairsBarManager
+            // 
+            this.StagiairsBarManager.AllowCustomization = false;
+            this.StagiairsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.StagiairsBar});
+            this.StagiairsBarManager.DockControls.Add(this.barDockControl5);
+            this.StagiairsBarManager.DockControls.Add(this.barDockControl6);
+            this.StagiairsBarManager.DockControls.Add(this.barDockControl7);
+            this.StagiairsBarManager.DockControls.Add(this.barDockControl8);
+            this.StagiairsBarManager.Form = this.StagiairsXtraUserControl;
+            this.StagiairsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiStagiairsNew,
+            this.bbiStagiairsEdit,
+            this.bbiStagiairsDelete,
+            this.bbiStagiairsRefresh});
+            this.StagiairsBarManager.MainMenu = this.StagiairsBar;
+            this.StagiairsBarManager.MaxItemId = 4;
+            // 
+            // StagiairsBar
+            // 
+            this.StagiairsBar.BarName = "Stagiairs";
+            this.StagiairsBar.DockCol = 0;
+            this.StagiairsBar.DockRow = 0;
+            this.StagiairsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.StagiairsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh, true)});
+            this.StagiairsBar.OptionsBar.AllowQuickCustomization = false;
+            this.StagiairsBar.OptionsBar.DrawDragBorder = false;
+            this.StagiairsBar.Text = "Stagiairs";
+            // 
+            // bbiStagiairsNew
+            // 
+            this.bbiStagiairsNew.Caption = "Ajouter";
+            this.bbiStagiairsNew.Id = 0;
+            this.bbiStagiairsNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiStagiairsNew.Name = "bbiStagiairsNew";
+            this.bbiStagiairsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiStagiairsEdit
+            // 
+            this.bbiStagiairsEdit.Caption = "Modifier";
+            this.bbiStagiairsEdit.Id = 1;
+            this.bbiStagiairsEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiStagiairsEdit.Name = "bbiStagiairsEdit";
+            this.bbiStagiairsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiStagiairsDelete
+            // 
+            this.bbiStagiairsDelete.Caption = "Supprimer ";
+            this.bbiStagiairsDelete.Id = 2;
+            this.bbiStagiairsDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiStagiairsDelete.Name = "bbiStagiairsDelete";
+            this.bbiStagiairsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiStagiairsRefresh
+            // 
+            this.bbiStagiairsRefresh.Caption = "Actualiser ";
+            this.bbiStagiairsRefresh.Id = 3;
+            this.bbiStagiairsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiStagiairsRefresh.Name = "bbiStagiairsRefresh";
+            this.bbiStagiairsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barDockControl5
+            // 
+            this.barDockControl5.CausesValidation = false;
+            this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControl5.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl5.Manager = this.StagiairsBarManager;
+            this.barDockControl5.Size = new System.Drawing.Size(929, 24);
+            // 
+            // barDockControl6
+            // 
+            this.barDockControl6.CausesValidation = false;
+            this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControl6.Location = new System.Drawing.Point(0, 194);
+            this.barDockControl6.Manager = this.StagiairsBarManager;
+            this.barDockControl6.Size = new System.Drawing.Size(929, 0);
+            // 
+            // barDockControl8
+            // 
+            this.barDockControl8.CausesValidation = false;
+            this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControl8.Location = new System.Drawing.Point(929, 24);
+            this.barDockControl8.Manager = this.StagiairsBarManager;
+            this.barDockControl8.Size = new System.Drawing.Size(0, 170);
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(977, 433);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForID_Promo,
+            this.ItemForCode_Promo,
+            this.ItemForDiplome,
+            this.tabbedControlGroup1,
+            this.ItemForDATE_D_Formation,
+            this.ItemForDate_F_Formation,
+            this.ItemForID_Option,
+            this.ItemForMode_de_formation,
+            this.ItemForDiplome_ar});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(957, 413);
+            // 
+            // ItemForID_Promo
+            // 
+            this.ItemForID_Promo.Control = this.ID_PromoTextEdit;
+            this.ItemForID_Promo.Location = new System.Drawing.Point(0, 0);
+            this.ItemForID_Promo.Name = "ItemForID_Promo";
+            this.ItemForID_Promo.Size = new System.Drawing.Size(957, 24);
+            this.ItemForID_Promo.Text = "Numéro de promo";
+            this.ItemForID_Promo.TextSize = new System.Drawing.Size(164, 13);
+            // 
+            // ItemForCode_Promo
+            // 
+            this.ItemForCode_Promo.Control = this.Code_PromoTextEdit;
+            this.ItemForCode_Promo.Location = new System.Drawing.Point(0, 24);
+            this.ItemForCode_Promo.Name = "ItemForCode_Promo";
+            this.ItemForCode_Promo.Size = new System.Drawing.Size(957, 24);
+            this.ItemForCode_Promo.Text = "Code de la promo";
+            this.ItemForCode_Promo.TextSize = new System.Drawing.Size(164, 13);
+            // 
+            // ItemForDiplome
+            // 
+            this.ItemForDiplome.Control = this.DiplomeTextEdit;
+            this.ItemForDiplome.Location = new System.Drawing.Point(0, 144);
+            this.ItemForDiplome.Name = "ItemForDiplome";
+            this.ItemForDiplome.Size = new System.Drawing.Size(565, 24);
+            this.ItemForDiplome.Text = "Désignation du diplome";
+            this.ItemForDiplome.TextSize = new System.Drawing.Size(164, 13);
+            // 
+            // tabbedControlGroup1
+            // 
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 168);
+            this.tabbedControlGroup1.Name = "autoGroupForTabs";
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup5;
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(957, 245);
+            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup3,
+            this.layoutControlGroup4,
+            this.layoutControlGroup5});
+            this.tabbedControlGroup1.Text = "Tabs";
+            // 
+            // layoutControlGroup5
+            // 
+            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForStagiairs});
+            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup5.Name = "autoGroupForStagiairs";
+            this.layoutControlGroup5.Size = new System.Drawing.Size(933, 198);
+            this.layoutControlGroup5.Text = "Stagiaires";
+            // 
+            // ItemForStagiairs
+            // 
+            this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
+            this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
+            this.ItemForStagiairs.Name = "ItemForStagiairs";
+            this.ItemForStagiairs.Size = new System.Drawing.Size(933, 198);
+            this.ItemForStagiairs.StartNewLine = true;
+            this.ItemForStagiairs.Text = "Stagiairs";
+            this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForStagiairs.TextVisible = false;
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForDecisions});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "autoGroupForDecisions";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(933, 198);
+            this.layoutControlGroup3.Text = "Decisions";
+            // 
+            // ItemForDecisions
+            // 
+            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
+            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
+            this.ItemForDecisions.Name = "ItemForDecisions";
+            this.ItemForDecisions.Size = new System.Drawing.Size(933, 198);
+            this.ItemForDecisions.StartNewLine = true;
+            this.ItemForDecisions.Text = "Decisions";
+            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForDecisions.TextVisible = false;
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForSections});
+            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup4.Name = "autoGroupForSections";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(933, 198);
+            this.layoutControlGroup4.Text = "Sections";
+            // 
+            // ItemForSections
+            // 
+            this.ItemForSections.Control = this.SectionsXtraUserControl;
+            this.ItemForSections.Location = new System.Drawing.Point(0, 0);
+            this.ItemForSections.Name = "ItemForSections";
+            this.ItemForSections.Size = new System.Drawing.Size(933, 198);
+            this.ItemForSections.StartNewLine = true;
+            this.ItemForSections.Text = "Sections";
+            this.ItemForSections.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForSections.TextVisible = false;
+            // 
+            // ItemForDATE_D_Formation
+            // 
+            this.ItemForDATE_D_Formation.Control = this.DATE_D_FormationDateEdit;
+            this.ItemForDATE_D_Formation.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDATE_D_Formation.Name = "ItemForDATE_D_Formation";
+            this.ItemForDATE_D_Formation.Size = new System.Drawing.Size(957, 24);
+            this.ItemForDATE_D_Formation.Text = "Date début de formation";
+            this.ItemForDATE_D_Formation.TextSize = new System.Drawing.Size(164, 13);
+            // 
+            // ItemForDate_F_Formation
+            // 
+            this.ItemForDate_F_Formation.Control = this.Date_F_FormationDateEdit;
+            this.ItemForDate_F_Formation.Location = new System.Drawing.Point(0, 72);
+            this.ItemForDate_F_Formation.Name = "ItemForDate_F_Formation";
+            this.ItemForDate_F_Formation.Size = new System.Drawing.Size(957, 24);
+            this.ItemForDate_F_Formation.Text = "Date fin de formation";
+            this.ItemForDate_F_Formation.TextSize = new System.Drawing.Size(164, 13);
+            // 
+            // ItemForID_Option
+            // 
+            this.ItemForID_Option.Control = this.OptionLookUpEdit;
+            this.ItemForID_Option.Location = new System.Drawing.Point(0, 96);
+            this.ItemForID_Option.Name = "ItemForID_Option";
+            this.ItemForID_Option.Size = new System.Drawing.Size(957, 24);
+            this.ItemForID_Option.Text = "Code Option de spécialité";
+            this.ItemForID_Option.TextSize = new System.Drawing.Size(164, 13);
+            // 
+            // ItemForMode_de_formation
+            // 
+            this.ItemForMode_de_formation.Control = this.Mode_formationLookUpEdit;
+            this.ItemForMode_de_formation.Location = new System.Drawing.Point(0, 120);
+            this.ItemForMode_de_formation.Name = "ItemForMode_de_formation";
+            this.ItemForMode_de_formation.Size = new System.Drawing.Size(957, 24);
+            this.ItemForMode_de_formation.Text = "Désignation du mode de formation";
+            this.ItemForMode_de_formation.TextSize = new System.Drawing.Size(164, 13);
+            // 
+            // ItemForDiplome_ar
+            // 
+            this.ItemForDiplome_ar.Control = this.Diplome_arTextEdit;
+            this.ItemForDiplome_ar.Location = new System.Drawing.Point(565, 144);
+            this.ItemForDiplome_ar.Name = "ItemForDiplome_ar";
+            this.ItemForDiplome_ar.Size = new System.Drawing.Size(392, 24);
+            this.ItemForDiplome_ar.Text = "إسم الشهادة";
+            this.ItemForDiplome_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForDiplome_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForDiplome_ar.TextSize = new System.Drawing.Size(62, 13);
+            this.ItemForDiplome_ar.TextToControlDistance = 5;
+            // 
+            // mvvmContext
+            // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Save", this.bbiSave),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "SaveAndClose", this.bbiSaveAndClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "SaveAndNew", this.bbiSaveAndNew),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Reset", this.bbiReset),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Delete", this.bbiDelete),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "Close", this.bbiClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "SaveLayout", this.bbiSaveLayout),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.PromoViewModel), "ResetLayout", this.bbiResetLayout)});
+            this.mvvmContext.ContainerControl = this;
+            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
+            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
+            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.PromoViewModel);
+            // 
+            // DecisionsPopUpMenu
+            // 
+            this.DecisionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiDecisionsRefresh)});
+            this.DecisionsPopUpMenu.Manager = this.DecisionsBarManager;
+            this.DecisionsPopUpMenu.Name = "DecisionsPopUpMenu";
+            // 
+            // SectionsPopUpMenu
+            // 
+            this.SectionsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSectionsRefresh)});
+            this.SectionsPopUpMenu.Manager = this.SectionsBarManager;
+            this.SectionsPopUpMenu.Name = "SectionsPopUpMenu";
+            // 
+            // StagiairsPopUpMenu
+            // 
+            this.StagiairsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh)});
+            this.StagiairsPopUpMenu.Manager = this.StagiairsBarManager;
+            this.StagiairsPopUpMenu.Name = "StagiairsPopUpMenu";
+            // 
             // PromoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1366,63 +1462,63 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "PromoView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(977, 559);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ID_PromoTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.promoViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PromoTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiplomeTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diplome_arTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DATE_D_FormationDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DATE_D_FormationDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Date_F_FormationDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Date_F_FormationDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OptionLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OptionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OptionLookUpEditView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationLookUpEditView)).EndInit();
             this.DecisionsXtraUserControl.ResumeLayout(false);
             this.DecisionsXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBarManager)).EndInit();
             this.SectionsXtraUserControl.ResumeLayout(false);
             this.SectionsXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsBarManager)).EndInit();
             this.StagiairsXtraUserControl.ResumeLayout(false);
             this.StagiairsXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationLookUpEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OptionLookUpEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OptionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ID_PromoTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PromoTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Promo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DiplomeTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Diplome_arTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DATE_D_FormationDateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DATE_D_FormationDateEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDATE_D_Formation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Date_F_FormationDateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Date_F_FormationDateEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_F_Formation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OptionLookUpEditView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Option)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mode_formationLookUpEditView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForMode_de_formation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Promo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForSections)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDATE_D_Formation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_F_Formation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Option)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMode_de_formation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDiplome_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1555,5 +1651,14 @@
         private DevExpress.XtraGrid.Columns.GridColumn colSection;
         private DevExpress.XtraGrid.Columns.GridColumn colTelephone;
         private DevExpress.XtraGrid.Columns.GridColumn colE_Maile;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Option1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Option;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecialite1;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Mode_Formation1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Mode_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colDésignation_Mode_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colDésignation_Mode_Formation_ar;
     }
 }

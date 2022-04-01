@@ -45,6 +45,13 @@
             this.Specialite1LookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.Specialite1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Specialite1LookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Specialité = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_SP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_SP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_SP_AR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNiveau_qualification = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Branche = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colBranch = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ModulesXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.ModulesGridControl = new DevExpress.XtraGrid.GridControl();
             this.ModulesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -125,7 +132,6 @@
             this.ItemForID_Option = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForCode_Option = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForDesignation_Option = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDesignation_Option_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForSpecialite = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -134,6 +140,7 @@
             this.ItemForModules = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForPromoes = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDesignation_Option_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.PromoesPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.SectionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
@@ -169,7 +176,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Option)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Option)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Option)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Option_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
@@ -178,6 +184,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForModules)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPromoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Option_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PromoesPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).BeginInit();
@@ -200,13 +207,13 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(964, 333);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // ID_OptionTextEdit
             // 
             this.ID_OptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "ID_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ID_OptionTextEdit.Location = new System.Drawing.Point(236, 12);
+            this.ID_OptionTextEdit.Location = new System.Drawing.Point(190, 12);
             this.ID_OptionTextEdit.MenuManager = this.mainRibbonControl;
             this.ID_OptionTextEdit.Name = "ID_OptionTextEdit";
             this.ID_OptionTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -214,7 +221,8 @@
             this.ID_OptionTextEdit.Properties.Mask.EditMask = "N0";
             this.ID_OptionTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_OptionTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.ID_OptionTextEdit.Size = new System.Drawing.Size(776, 20);
+            this.ID_OptionTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ID_OptionTextEdit.Size = new System.Drawing.Size(762, 20);
             this.ID_OptionTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_OptionTextEdit.TabIndex = 4;
             // 
@@ -244,7 +252,7 @@
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
+            this.mainRibbonControl.Size = new System.Drawing.Size(964, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -344,30 +352,31 @@
             // Code_OptionTextEdit
             // 
             this.Code_OptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Code_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Code_OptionTextEdit.Location = new System.Drawing.Point(236, 36);
+            this.Code_OptionTextEdit.Location = new System.Drawing.Point(190, 36);
             this.Code_OptionTextEdit.MenuManager = this.mainRibbonControl;
             this.Code_OptionTextEdit.Name = "Code_OptionTextEdit";
-            this.Code_OptionTextEdit.Size = new System.Drawing.Size(776, 20);
+            this.Code_OptionTextEdit.Size = new System.Drawing.Size(762, 20);
             this.Code_OptionTextEdit.StyleController = this.dataLayoutControl1;
             this.Code_OptionTextEdit.TabIndex = 5;
             // 
             // Designation_OptionTextEdit
             // 
             this.Designation_OptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Designation_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_OptionTextEdit.Location = new System.Drawing.Point(236, 60);
+            this.Designation_OptionTextEdit.Location = new System.Drawing.Point(190, 60);
             this.Designation_OptionTextEdit.MenuManager = this.mainRibbonControl;
             this.Designation_OptionTextEdit.Name = "Designation_OptionTextEdit";
-            this.Designation_OptionTextEdit.Size = new System.Drawing.Size(776, 20);
+            this.Designation_OptionTextEdit.Size = new System.Drawing.Size(389, 20);
             this.Designation_OptionTextEdit.StyleController = this.dataLayoutControl1;
             this.Designation_OptionTextEdit.TabIndex = 6;
             // 
             // Designation_Option_arTextEdit
             // 
             this.Designation_Option_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Designation_Option_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_Option_arTextEdit.Location = new System.Drawing.Point(236, 84);
+            this.Designation_Option_arTextEdit.Location = new System.Drawing.Point(583, 60);
             this.Designation_Option_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Designation_Option_arTextEdit.Name = "Designation_Option_arTextEdit";
-            this.Designation_Option_arTextEdit.Size = new System.Drawing.Size(776, 20);
+            this.Designation_Option_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Designation_Option_arTextEdit.Size = new System.Drawing.Size(339, 20);
             this.Designation_Option_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Designation_Option_arTextEdit.TabIndex = 7;
             // 
@@ -375,16 +384,18 @@
             // 
             this.Specialite1LookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Specialite", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Specialite1LookUpEdit.EditValue = "";
-            this.Specialite1LookUpEdit.Location = new System.Drawing.Point(236, 108);
+            this.Specialite1LookUpEdit.Location = new System.Drawing.Point(190, 84);
             this.Specialite1LookUpEdit.MenuManager = this.mainRibbonControl;
             this.Specialite1LookUpEdit.Name = "Specialite1LookUpEdit";
             this.Specialite1LookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Specialite1LookUpEdit.Properties.DataSource = this.Specialite1BindingSource;
             this.Specialite1LookUpEdit.Properties.DisplayMember = "Code_SP";
+            this.Specialite1LookUpEdit.Properties.NullText = "";
+            this.Specialite1LookUpEdit.Properties.NullValuePrompt = "Saisir ou séléctionnez la spécialité";
             this.Specialite1LookUpEdit.Properties.PopupView = this.Specialite1LookUpEditView;
             this.Specialite1LookUpEdit.Properties.ValueMember = "ID_Specialité";
-            this.Specialite1LookUpEdit.Size = new System.Drawing.Size(776, 20);
+            this.Specialite1LookUpEdit.Size = new System.Drawing.Size(762, 20);
             this.Specialite1LookUpEdit.StyleController = this.dataLayoutControl1;
             this.Specialite1LookUpEdit.TabIndex = 8;
             // 
@@ -394,10 +405,63 @@
             // 
             // Specialite1LookUpEditView
             // 
+            this.Specialite1LookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Specialité,
+            this.colCode_SP,
+            this.colDesignation_SP,
+            this.colDesignation_SP_AR,
+            this.colNiveau_qualification,
+            this.colID_Branche,
+            this.colBranch});
             this.Specialite1LookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.Specialite1LookUpEditView.Name = "Specialite1LookUpEditView";
             this.Specialite1LookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.Specialite1LookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Specialité
+            // 
+            this.colID_Specialité.FieldName = "ID_Specialité";
+            this.colID_Specialité.Name = "colID_Specialité";
+            // 
+            // colCode_SP
+            // 
+            this.colCode_SP.FieldName = "Code_SP";
+            this.colCode_SP.Name = "colCode_SP";
+            this.colCode_SP.Visible = true;
+            this.colCode_SP.VisibleIndex = 0;
+            // 
+            // colDesignation_SP
+            // 
+            this.colDesignation_SP.FieldName = "Branch";
+            this.colDesignation_SP.Name = "colDesignation_SP";
+            this.colDesignation_SP.Visible = true;
+            this.colDesignation_SP.VisibleIndex = 3;
+            // 
+            // colDesignation_SP_AR
+            // 
+            this.colDesignation_SP_AR.FieldName = "Designation_SP_AR";
+            this.colDesignation_SP_AR.Name = "colDesignation_SP_AR";
+            this.colDesignation_SP_AR.Visible = true;
+            this.colDesignation_SP_AR.VisibleIndex = 1;
+            // 
+            // colNiveau_qualification
+            // 
+            this.colNiveau_qualification.FieldName = "Niveau_qualification";
+            this.colNiveau_qualification.Name = "colNiveau_qualification";
+            this.colNiveau_qualification.Visible = true;
+            this.colNiveau_qualification.VisibleIndex = 4;
+            // 
+            // colID_Branche
+            // 
+            this.colID_Branche.FieldName = "Branch.Designation_Branche";
+            this.colID_Branche.Name = "colID_Branche";
+            // 
+            // colBranch
+            // 
+            this.colBranch.FieldName = "Branch.Code_Branche";
+            this.colBranch.Name = "colBranch";
+            this.colBranch.Visible = true;
+            this.colBranch.VisibleIndex = 2;
             // 
             // ModulesXtraUserControl
             // 
@@ -406,10 +470,10 @@
             this.ModulesXtraUserControl.Controls.Add(this.barDockControl8);
             this.ModulesXtraUserControl.Controls.Add(this.barDockControl6);
             this.ModulesXtraUserControl.Controls.Add(this.barDockControl5);
-            this.ModulesXtraUserControl.Location = new System.Drawing.Point(24, 167);
+            this.ModulesXtraUserControl.Location = new System.Drawing.Point(24, 143);
             this.ModulesXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.ModulesXtraUserControl.Name = "ModulesXtraUserControl";
-            this.ModulesXtraUserControl.Size = new System.Drawing.Size(976, 451);
+            this.ModulesXtraUserControl.Size = new System.Drawing.Size(916, 166);
             this.ModulesXtraUserControl.TabIndex = 9;
             // 
             // ModulesGridControl
@@ -420,7 +484,7 @@
             this.ModulesGridControl.MainView = this.ModulesGridView;
             this.ModulesGridControl.MenuManager = this.mainRibbonControl;
             this.ModulesGridControl.Name = "ModulesGridControl";
-            this.ModulesGridControl.Size = new System.Drawing.Size(976, 427);
+            this.ModulesGridControl.Size = new System.Drawing.Size(916, 142);
             this.ModulesGridControl.TabIndex = 0;
             this.ModulesGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ModulesGridView});
@@ -495,7 +559,7 @@
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.ModulesBarManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 427);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 142);
             // 
             // ModulesBarManager
             // 
@@ -568,23 +632,23 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.ModulesBarManager;
-            this.barDockControl5.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl5.Size = new System.Drawing.Size(916, 24);
             // 
             // barDockControl6
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 451);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 166);
             this.barDockControl6.Manager = this.ModulesBarManager;
-            this.barDockControl6.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl6.Size = new System.Drawing.Size(916, 0);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl8.Location = new System.Drawing.Point(916, 24);
             this.barDockControl8.Manager = this.ModulesBarManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 427);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 142);
             // 
             // PromoesXtraUserControl
             // 
@@ -593,10 +657,10 @@
             this.PromoesXtraUserControl.Controls.Add(this.barDockControlRight);
             this.PromoesXtraUserControl.Controls.Add(this.barDockControlBottom);
             this.PromoesXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.PromoesXtraUserControl.Location = new System.Drawing.Point(24, 167);
+            this.PromoesXtraUserControl.Location = new System.Drawing.Point(24, 143);
             this.PromoesXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.PromoesXtraUserControl.Name = "PromoesXtraUserControl";
-            this.PromoesXtraUserControl.Size = new System.Drawing.Size(976, 451);
+            this.PromoesXtraUserControl.Size = new System.Drawing.Size(916, 166);
             this.PromoesXtraUserControl.TabIndex = 10;
             // 
             // PromoesGridControl
@@ -607,7 +671,7 @@
             this.PromoesGridControl.MainView = this.PromoesGridView;
             this.PromoesGridControl.MenuManager = this.mainRibbonControl;
             this.PromoesGridControl.Name = "PromoesGridControl";
-            this.PromoesGridControl.Size = new System.Drawing.Size(976, 427);
+            this.PromoesGridControl.Size = new System.Drawing.Size(916, 142);
             this.PromoesGridControl.TabIndex = 0;
             this.PromoesGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.PromoesGridView});
@@ -724,7 +788,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.PromoesBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 427);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 142);
             // 
             // PromoesBarManager
             // 
@@ -797,23 +861,23 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.PromoesBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(916, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 451);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 166);
             this.barDockControlBottom.Manager = this.PromoesBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(916, 0);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(916, 24);
             this.barDockControlRight.Manager = this.PromoesBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 427);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 142);
             // 
             // SectionsXtraUserControl
             // 
@@ -822,10 +886,10 @@
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl4);
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl2);
             this.SectionsXtraUserControl.Controls.Add(this.barDockControl1);
-            this.SectionsXtraUserControl.Location = new System.Drawing.Point(24, 167);
+            this.SectionsXtraUserControl.Location = new System.Drawing.Point(24, 143);
             this.SectionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.SectionsXtraUserControl.Name = "SectionsXtraUserControl";
-            this.SectionsXtraUserControl.Size = new System.Drawing.Size(976, 451);
+            this.SectionsXtraUserControl.Size = new System.Drawing.Size(916, 166);
             this.SectionsXtraUserControl.TabIndex = 11;
             // 
             // SectionsGridControl
@@ -836,7 +900,7 @@
             this.SectionsGridControl.MainView = this.SectionsGridView;
             this.SectionsGridControl.MenuManager = this.mainRibbonControl;
             this.SectionsGridControl.Name = "SectionsGridControl";
-            this.SectionsGridControl.Size = new System.Drawing.Size(976, 427);
+            this.SectionsGridControl.Size = new System.Drawing.Size(916, 142);
             this.SectionsGridControl.TabIndex = 0;
             this.SectionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.SectionsGridView});
@@ -953,7 +1017,7 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.SectionsBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 427);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 142);
             // 
             // SectionsBarManager
             // 
@@ -1026,23 +1090,23 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.SectionsBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl1.Size = new System.Drawing.Size(916, 24);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 451);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 166);
             this.barDockControl2.Manager = this.SectionsBarManager;
-            this.barDockControl2.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(916, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl4.Location = new System.Drawing.Point(916, 24);
             this.barDockControl4.Manager = this.SectionsBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 427);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 142);
             // 
             // layoutControlGroup1
             // 
@@ -1051,7 +1115,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(964, 333);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -1062,64 +1126,55 @@
             this.ItemForID_Option,
             this.ItemForCode_Option,
             this.ItemForDesignation_Option,
-            this.ItemForDesignation_Option_ar,
             this.ItemForSpecialite,
-            this.tabbedControlGroup1});
+            this.tabbedControlGroup1,
+            this.ItemForDesignation_Option_ar});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(944, 313);
             // 
             // ItemForID_Option
             // 
             this.ItemForID_Option.Control = this.ID_OptionTextEdit;
             this.ItemForID_Option.Location = new System.Drawing.Point(0, 0);
             this.ItemForID_Option.Name = "ItemForID_Option";
-            this.ItemForID_Option.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForID_Option.Size = new System.Drawing.Size(944, 24);
             this.ItemForID_Option.Text = "Numéro d\'option de spécialité";
-            this.ItemForID_Option.TextSize = new System.Drawing.Size(212, 13);
+            this.ItemForID_Option.TextSize = new System.Drawing.Size(166, 13);
             // 
             // ItemForCode_Option
             // 
             this.ItemForCode_Option.Control = this.Code_OptionTextEdit;
             this.ItemForCode_Option.Location = new System.Drawing.Point(0, 24);
             this.ItemForCode_Option.Name = "ItemForCode_Option";
-            this.ItemForCode_Option.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForCode_Option.Size = new System.Drawing.Size(944, 24);
             this.ItemForCode_Option.Text = "Code option de spécialité";
-            this.ItemForCode_Option.TextSize = new System.Drawing.Size(212, 13);
+            this.ItemForCode_Option.TextSize = new System.Drawing.Size(166, 13);
             // 
             // ItemForDesignation_Option
             // 
             this.ItemForDesignation_Option.Control = this.Designation_OptionTextEdit;
             this.ItemForDesignation_Option.Location = new System.Drawing.Point(0, 48);
             this.ItemForDesignation_Option.Name = "ItemForDesignation_Option";
-            this.ItemForDesignation_Option.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForDesignation_Option.Size = new System.Drawing.Size(571, 24);
             this.ItemForDesignation_Option.Text = "Designation de option de spécialité";
-            this.ItemForDesignation_Option.TextSize = new System.Drawing.Size(212, 13);
-            // 
-            // ItemForDesignation_Option_ar
-            // 
-            this.ItemForDesignation_Option_ar.Control = this.Designation_Option_arTextEdit;
-            this.ItemForDesignation_Option_ar.Location = new System.Drawing.Point(0, 72);
-            this.ItemForDesignation_Option_ar.Name = "ItemForDesignation_Option_ar";
-            this.ItemForDesignation_Option_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDesignation_Option_ar.Text = "Designation de option de spécialité en arabe";
-            this.ItemForDesignation_Option_ar.TextSize = new System.Drawing.Size(212, 13);
+            this.ItemForDesignation_Option.TextSize = new System.Drawing.Size(166, 13);
             // 
             // ItemForSpecialite
             // 
             this.ItemForSpecialite.Control = this.Specialite1LookUpEdit;
-            this.ItemForSpecialite.Location = new System.Drawing.Point(0, 96);
+            this.ItemForSpecialite.Location = new System.Drawing.Point(0, 72);
             this.ItemForSpecialite.Name = "ItemForSpecialite";
-            this.ItemForSpecialite.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForSpecialite.Size = new System.Drawing.Size(944, 24);
             this.ItemForSpecialite.Text = "Spécialité";
-            this.ItemForSpecialite.TextSize = new System.Drawing.Size(212, 13);
+            this.ItemForSpecialite.TextSize = new System.Drawing.Size(166, 13);
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 120);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 96);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
             this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup5;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 502);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(944, 217);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3,
             this.layoutControlGroup4,
@@ -1132,7 +1187,7 @@
             this.ItemForSections});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "autoGroupForSections";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(980, 455);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(920, 170);
             this.layoutControlGroup5.Text = "Sections";
             // 
             // ItemForSections
@@ -1140,7 +1195,7 @@
             this.ItemForSections.Control = this.SectionsXtraUserControl;
             this.ItemForSections.Location = new System.Drawing.Point(0, 0);
             this.ItemForSections.Name = "ItemForSections";
-            this.ItemForSections.Size = new System.Drawing.Size(980, 455);
+            this.ItemForSections.Size = new System.Drawing.Size(920, 170);
             this.ItemForSections.StartNewLine = true;
             this.ItemForSections.Text = "Sections";
             this.ItemForSections.TextSize = new System.Drawing.Size(0, 0);
@@ -1152,7 +1207,7 @@
             this.ItemForModules});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForModules";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 455);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(920, 170);
             this.layoutControlGroup3.Text = "Modules";
             // 
             // ItemForModules
@@ -1160,7 +1215,7 @@
             this.ItemForModules.Control = this.ModulesXtraUserControl;
             this.ItemForModules.Location = new System.Drawing.Point(0, 0);
             this.ItemForModules.Name = "ItemForModules";
-            this.ItemForModules.Size = new System.Drawing.Size(980, 455);
+            this.ItemForModules.Size = new System.Drawing.Size(920, 170);
             this.ItemForModules.StartNewLine = true;
             this.ItemForModules.Text = "Modules";
             this.ItemForModules.TextSize = new System.Drawing.Size(0, 0);
@@ -1172,7 +1227,7 @@
             this.ItemForPromoes});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "autoGroupForPromoes";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(980, 455);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(920, 170);
             this.layoutControlGroup4.Text = "Promo";
             // 
             // ItemForPromoes
@@ -1180,11 +1235,23 @@
             this.ItemForPromoes.Control = this.PromoesXtraUserControl;
             this.ItemForPromoes.Location = new System.Drawing.Point(0, 0);
             this.ItemForPromoes.Name = "ItemForPromoes";
-            this.ItemForPromoes.Size = new System.Drawing.Size(980, 455);
+            this.ItemForPromoes.Size = new System.Drawing.Size(920, 170);
             this.ItemForPromoes.StartNewLine = true;
             this.ItemForPromoes.Text = "Promoes";
             this.ItemForPromoes.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForPromoes.TextVisible = false;
+            // 
+            // ItemForDesignation_Option_ar
+            // 
+            this.ItemForDesignation_Option_ar.Control = this.Designation_Option_arTextEdit;
+            this.ItemForDesignation_Option_ar.Location = new System.Drawing.Point(571, 48);
+            this.ItemForDesignation_Option_ar.Name = "ItemForDesignation_Option_ar";
+            this.ItemForDesignation_Option_ar.Size = new System.Drawing.Size(373, 24);
+            this.ItemForDesignation_Option_ar.Text = "اختيار";
+            this.ItemForDesignation_Option_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForDesignation_Option_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForDesignation_Option_ar.TextSize = new System.Drawing.Size(25, 13);
+            this.ItemForDesignation_Option_ar.TextToControlDistance = 5;
             // 
             // mvvmContext
             // 
@@ -1240,7 +1307,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "OptionView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(964, 459);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ID_OptionTextEdit.Properties)).EndInit();
@@ -1275,7 +1342,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Option)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Option)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Option)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Option_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialite)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
@@ -1284,6 +1350,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForModules)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPromoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Option_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PromoesPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SectionsPopUpMenu)).EndInit();
@@ -1410,5 +1477,12 @@
         private DevExpress.XtraLayout.LayoutControlItem ItemForModules;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
         private DevExpress.XtraLayout.LayoutControlItem ItemForPromoes;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Specialité;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_SP;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP_AR;
+        private DevExpress.XtraGrid.Columns.GridColumn colNiveau_qualification;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Branche;
+        private DevExpress.XtraGrid.Columns.GridColumn colBranch;
     }
 }

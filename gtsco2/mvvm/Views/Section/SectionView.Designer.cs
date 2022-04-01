@@ -43,15 +43,34 @@
             this.PromoLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.PromoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PromoLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Promo1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDiplome = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDiplome_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDATE_D_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_F_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Option = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMode_de_formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Mode_formationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.Mode_formationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Mode_formationLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colCode_Mode_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDésignation_Mode_Formation1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.OptionLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.OptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.OptionLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Option = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Option1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Option = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Option_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecialite = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SemestreLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.SemestreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SemestreLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Semestre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Semestre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Semestre_ar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.StagiairsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.StagiairsGridControl = new DevExpress.XtraGrid.GridControl();
             this.StagiairsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -123,7 +142,14 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.SemestreLookUpEdit1 = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.anneescolaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gTSCO19DataSet = new gtsco2.GTSCO19DataSet();
             this.SemestreLookUpEditView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDATE_D_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_F_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSession_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForSectionID = new DevExpress.XtraLayout.LayoutControlItem();
@@ -138,6 +164,8 @@
             this.ItemForSemestre_en_coure1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.annee_scolaireTableAdapter = new gtsco2.GTSCO19DataSetTableAdapters.annee_scolaireTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SectionIDTextEdit.Properties)).BeginInit();
@@ -162,6 +190,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SemestreLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.anneescolaireBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gTSCO19DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SemestreLookUpEditView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
@@ -177,6 +207,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSemestre_en_coure1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayoutControl1
@@ -195,7 +226,7 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1005, 395);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // SectionIDTextEdit
@@ -206,10 +237,10 @@
             this.SectionIDTextEdit.Name = "SectionIDTextEdit";
             this.SectionIDTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.SectionIDTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.SectionIDTextEdit.Properties.Mask.EditMask = "N0";
-            this.SectionIDTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.SectionIDTextEdit.Properties.BeepOnError = false;
             this.SectionIDTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.SectionIDTextEdit.Size = new System.Drawing.Size(797, 20);
+            this.SectionIDTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SectionIDTextEdit.Size = new System.Drawing.Size(778, 20);
             this.SectionIDTextEdit.StyleController = this.dataLayoutControl1;
             this.SectionIDTextEdit.TabIndex = 4;
             // 
@@ -239,7 +270,7 @@
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
+            this.mainRibbonControl.Size = new System.Drawing.Size(1005, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -342,7 +373,7 @@
             this.Code_SectionTextEdit.Location = new System.Drawing.Point(215, 36);
             this.Code_SectionTextEdit.MenuManager = this.mainRibbonControl;
             this.Code_SectionTextEdit.Name = "Code_SectionTextEdit";
-            this.Code_SectionTextEdit.Size = new System.Drawing.Size(797, 20);
+            this.Code_SectionTextEdit.Size = new System.Drawing.Size(778, 20);
             this.Code_SectionTextEdit.StyleController = this.dataLayoutControl1;
             this.Code_SectionTextEdit.TabIndex = 5;
             // 
@@ -357,9 +388,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.PromoLookUpEdit.Properties.DataSource = this.PromoBindingSource;
             this.PromoLookUpEdit.Properties.DisplayMember = "Code_Promo";
+            this.PromoLookUpEdit.Properties.NullText = "";
+            this.PromoLookUpEdit.Properties.NullValuePrompt = "Saisir ou sélectionnez la promos";
             this.PromoLookUpEdit.Properties.PopupView = this.PromoLookUpEditView;
+            this.PromoLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.PromoLookUpEdit.Properties.ValueMember = "ID_Promo";
-            this.PromoLookUpEdit.Size = new System.Drawing.Size(797, 20);
+            this.PromoLookUpEdit.Size = new System.Drawing.Size(778, 20);
             this.PromoLookUpEdit.StyleController = this.dataLayoutControl1;
             this.PromoLookUpEdit.TabIndex = 6;
             // 
@@ -369,10 +403,80 @@
             // 
             // PromoLookUpEditView
             // 
+            this.PromoLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Promo1,
+            this.colCode_Promo,
+            this.colDiplome,
+            this.colDiplome_ar,
+            this.colDATE_D_Formation,
+            this.colDate_F_Formation,
+            this.colCode_Option,
+            this.colMode_de_formation,
+            this.colOption});
             this.PromoLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.PromoLookUpEditView.Name = "PromoLookUpEditView";
             this.PromoLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.PromoLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Promo1
+            // 
+            this.colID_Promo1.FieldName = "ID_Promo";
+            this.colID_Promo1.Name = "colID_Promo1";
+            // 
+            // colCode_Promo
+            // 
+            this.colCode_Promo.FieldName = "Code_Promo";
+            this.colCode_Promo.Name = "colCode_Promo";
+            this.colCode_Promo.Visible = true;
+            this.colCode_Promo.VisibleIndex = 5;
+            // 
+            // colDiplome
+            // 
+            this.colDiplome.FieldName = "Mode_formation";
+            this.colDiplome.Name = "colDiplome";
+            // 
+            // colDiplome_ar
+            // 
+            this.colDiplome_ar.FieldName = "Diplome_ar";
+            this.colDiplome_ar.Name = "colDiplome_ar";
+            this.colDiplome_ar.Visible = true;
+            this.colDiplome_ar.VisibleIndex = 6;
+            // 
+            // colDATE_D_Formation
+            // 
+            this.colDATE_D_Formation.FieldName = "DATE_D_Formation";
+            this.colDATE_D_Formation.Name = "colDATE_D_Formation";
+            this.colDATE_D_Formation.Visible = true;
+            this.colDATE_D_Formation.VisibleIndex = 1;
+            // 
+            // colDate_F_Formation
+            // 
+            this.colDate_F_Formation.FieldName = "Date_F_Formation";
+            this.colDate_F_Formation.Name = "colDate_F_Formation";
+            this.colDate_F_Formation.Visible = true;
+            this.colDate_F_Formation.VisibleIndex = 2;
+            // 
+            // colCode_Option
+            // 
+            this.colCode_Option.Caption = "Code_Option";
+            this.colCode_Option.FieldName = "Option.Code_Option";
+            this.colCode_Option.Name = "colCode_Option";
+            this.colCode_Option.Visible = true;
+            this.colCode_Option.VisibleIndex = 3;
+            // 
+            // colMode_de_formation
+            // 
+            this.colMode_de_formation.FieldName = "Mode_de_formation";
+            this.colMode_de_formation.Name = "colMode_de_formation";
+            this.colMode_de_formation.Visible = true;
+            this.colMode_de_formation.VisibleIndex = 0;
+            // 
+            // colOption
+            // 
+            this.colOption.FieldName = "Option.Designation_Option";
+            this.colOption.Name = "colOption";
+            this.colOption.Visible = true;
+            this.colOption.VisibleIndex = 4;
             // 
             // Mode_formationLookUpEdit
             // 
@@ -385,9 +489,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Mode_formationLookUpEdit.Properties.DataSource = this.Mode_formationBindingSource;
             this.Mode_formationLookUpEdit.Properties.DisplayMember = "Code_Mode_Formation";
+            this.Mode_formationLookUpEdit.Properties.NullText = "";
+            this.Mode_formationLookUpEdit.Properties.NullValuePrompt = "Saisir ou sélectionnez le mode de formation";
             this.Mode_formationLookUpEdit.Properties.PopupView = this.Mode_formationLookUpEditView;
+            this.Mode_formationLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.Mode_formationLookUpEdit.Properties.ValueMember = "ID_Mode_Formation";
-            this.Mode_formationLookUpEdit.Size = new System.Drawing.Size(797, 20);
+            this.Mode_formationLookUpEdit.Size = new System.Drawing.Size(778, 20);
             this.Mode_formationLookUpEdit.StyleController = this.dataLayoutControl1;
             this.Mode_formationLookUpEdit.TabIndex = 7;
             this.Mode_formationLookUpEdit.EditValueChanged += new System.EventHandler(this.Mode_formationLookUpEdit_EditValueChanged);
@@ -398,10 +505,27 @@
             // 
             // Mode_formationLookUpEditView
             // 
+            this.Mode_formationLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCode_Mode_Formation,
+            this.colDésignation_Mode_Formation1});
             this.Mode_formationLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.Mode_formationLookUpEditView.Name = "Mode_formationLookUpEditView";
             this.Mode_formationLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.Mode_formationLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colCode_Mode_Formation
+            // 
+            this.colCode_Mode_Formation.FieldName = "Code_Mode_Formation";
+            this.colCode_Mode_Formation.Name = "colCode_Mode_Formation";
+            this.colCode_Mode_Formation.Visible = true;
+            this.colCode_Mode_Formation.VisibleIndex = 0;
+            // 
+            // colDésignation_Mode_Formation1
+            // 
+            this.colDésignation_Mode_Formation1.FieldName = "Désignation_Mode_Formation";
+            this.colDésignation_Mode_Formation1.Name = "colDésignation_Mode_Formation1";
+            this.colDésignation_Mode_Formation1.Visible = true;
+            this.colDésignation_Mode_Formation1.VisibleIndex = 1;
             // 
             // OptionLookUpEdit
             // 
@@ -414,9 +538,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.OptionLookUpEdit.Properties.DataSource = this.OptionBindingSource;
             this.OptionLookUpEdit.Properties.DisplayMember = "Code_Option";
+            this.OptionLookUpEdit.Properties.NullText = "";
+            this.OptionLookUpEdit.Properties.NullValuePrompt = "Saisir ou slectionnez le code option";
             this.OptionLookUpEdit.Properties.PopupView = this.OptionLookUpEditView;
+            this.OptionLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.OptionLookUpEdit.Properties.ValueMember = "ID_Option";
-            this.OptionLookUpEdit.Size = new System.Drawing.Size(797, 20);
+            this.OptionLookUpEdit.Size = new System.Drawing.Size(778, 20);
             this.OptionLookUpEdit.StyleController = this.dataLayoutControl1;
             this.OptionLookUpEdit.TabIndex = 8;
             // 
@@ -426,10 +553,49 @@
             // 
             // OptionLookUpEditView
             // 
+            this.OptionLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Option,
+            this.colCode_Option1,
+            this.colDesignation_Option,
+            this.colDesignation_Option_ar,
+            this.colSpecialite});
             this.OptionLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.OptionLookUpEditView.Name = "OptionLookUpEditView";
             this.OptionLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.OptionLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Option
+            // 
+            this.colID_Option.FieldName = "ID_Option";
+            this.colID_Option.Name = "colID_Option";
+            // 
+            // colCode_Option1
+            // 
+            this.colCode_Option1.FieldName = "Code_Option";
+            this.colCode_Option1.Name = "colCode_Option1";
+            this.colCode_Option1.Visible = true;
+            this.colCode_Option1.VisibleIndex = 0;
+            // 
+            // colDesignation_Option
+            // 
+            this.colDesignation_Option.FieldName = "Designation_Option";
+            this.colDesignation_Option.Name = "colDesignation_Option";
+            this.colDesignation_Option.Visible = true;
+            this.colDesignation_Option.VisibleIndex = 1;
+            // 
+            // colDesignation_Option_ar
+            // 
+            this.colDesignation_Option_ar.FieldName = "Designation_Option_ar";
+            this.colDesignation_Option_ar.Name = "colDesignation_Option_ar";
+            this.colDesignation_Option_ar.Visible = true;
+            this.colDesignation_Option_ar.VisibleIndex = 2;
+            // 
+            // colSpecialite
+            // 
+            this.colSpecialite.FieldName = "Specialite1.Designation_SP";
+            this.colSpecialite.Name = "colSpecialite";
+            this.colSpecialite.Visible = true;
+            this.colSpecialite.VisibleIndex = 3;
             // 
             // SemestreLookUpEdit
             // 
@@ -442,9 +608,12 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.SemestreLookUpEdit.Properties.DataSource = this.SemestreBindingSource;
             this.SemestreLookUpEdit.Properties.DisplayMember = "Designation_Semestre";
+            this.SemestreLookUpEdit.Properties.NullText = "";
+            this.SemestreLookUpEdit.Properties.NullValuePrompt = "Saisir ou slectionnez le semestre";
             this.SemestreLookUpEdit.Properties.PopupView = this.SemestreLookUpEditView;
+            this.SemestreLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.SemestreLookUpEdit.Properties.ValueMember = "ID_Semestre";
-            this.SemestreLookUpEdit.Size = new System.Drawing.Size(797, 20);
+            this.SemestreLookUpEdit.Size = new System.Drawing.Size(778, 20);
             this.SemestreLookUpEdit.StyleController = this.dataLayoutControl1;
             this.SemestreLookUpEdit.TabIndex = 9;
             // 
@@ -454,10 +623,33 @@
             // 
             // SemestreLookUpEditView
             // 
+            this.SemestreLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Semestre,
+            this.colDesignation_Semestre,
+            this.colDesignation_Semestre_ar});
             this.SemestreLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.SemestreLookUpEditView.Name = "SemestreLookUpEditView";
             this.SemestreLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.SemestreLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Semestre
+            // 
+            this.colID_Semestre.FieldName = "ID_Semestre";
+            this.colID_Semestre.Name = "colID_Semestre";
+            // 
+            // colDesignation_Semestre
+            // 
+            this.colDesignation_Semestre.FieldName = "Designation_Semestre";
+            this.colDesignation_Semestre.Name = "colDesignation_Semestre";
+            this.colDesignation_Semestre.Visible = true;
+            this.colDesignation_Semestre.VisibleIndex = 0;
+            // 
+            // colDesignation_Semestre_ar
+            // 
+            this.colDesignation_Semestre_ar.FieldName = "Designation_Semestre_ar";
+            this.colDesignation_Semestre_ar.Name = "colDesignation_Semestre_ar";
+            this.colDesignation_Semestre_ar.Visible = true;
+            this.colDesignation_Semestre_ar.VisibleIndex = 1;
             // 
             // StagiairsXtraUserControl
             // 
@@ -469,7 +661,7 @@
             this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 215);
             this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
-            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(976, 403);
+            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(957, 156);
             this.StagiairsXtraUserControl.TabIndex = 10;
             // 
             // StagiairsGridControl
@@ -480,7 +672,7 @@
             this.StagiairsGridControl.MainView = this.StagiairsGridView;
             this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
             this.StagiairsGridControl.Name = "StagiairsGridControl";
-            this.StagiairsGridControl.Size = new System.Drawing.Size(976, 379);
+            this.StagiairsGridControl.Size = new System.Drawing.Size(957, 132);
             this.StagiairsGridControl.TabIndex = 0;
             this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.StagiairsGridView});
@@ -879,7 +1071,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.StagiairsBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 379);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 132);
             // 
             // StagiairsBarManager
             // 
@@ -952,23 +1144,23 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.StagiairsBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(957, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 403);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 156);
             this.barDockControlBottom.Manager = this.StagiairsBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(957, 0);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(957, 24);
             this.barDockControlRight.Manager = this.StagiairsBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 379);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 132);
             // 
             // SemestreLookUpEdit1
             // 
@@ -979,20 +1171,71 @@
             this.SemestreLookUpEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.SemestreLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.SemestreLookUpEdit1.Properties.DataSource = typeof(gtsco2.basededonne.annee_scolaire);
+            this.SemestreLookUpEdit1.Properties.DataSource = this.anneescolaireBindingSource;
             this.SemestreLookUpEdit1.Properties.DisplayMember = "Designation";
+            this.SemestreLookUpEdit1.Properties.NullText = "";
+            this.SemestreLookUpEdit1.Properties.NullValuePrompt = "Saisir ou slectionnez l\'année soclaire ";
             this.SemestreLookUpEdit1.Properties.PopupView = this.SemestreLookUpEditView1;
             this.SemestreLookUpEdit1.Properties.ValueMember = "ID_Année_SCO";
-            this.SemestreLookUpEdit1.Size = new System.Drawing.Size(797, 20);
+            this.SemestreLookUpEdit1.Size = new System.Drawing.Size(778, 20);
             this.SemestreLookUpEdit1.StyleController = this.dataLayoutControl1;
             this.SemestreLookUpEdit1.TabIndex = 9;
             // 
+            // anneescolaireBindingSource
+            // 
+            this.anneescolaireBindingSource.DataMember = "annee_scolaire";
+            this.anneescolaireBindingSource.DataSource = this.gTSCO19DataSet;
+            // 
+            // gTSCO19DataSet
+            // 
+            this.gTSCO19DataSet.DataSetName = "GTSCO19DataSet";
+            this.gTSCO19DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SemestreLookUpEditView1
             // 
+            this.SemestreLookUpEditView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Année_SCO,
+            this.colDesignation,
+            this.colDATE_D_Année_SCO,
+            this.colDate_F_Année_SCO,
+            this.colSession_Année_SCO});
             this.SemestreLookUpEditView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.SemestreLookUpEditView1.Name = "SemestreLookUpEditView1";
             this.SemestreLookUpEditView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.SemestreLookUpEditView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Année_SCO
+            // 
+            this.colID_Année_SCO.FieldName = "ID_Année_SCO";
+            this.colID_Année_SCO.Name = "colID_Année_SCO";
+            // 
+            // colDesignation
+            // 
+            this.colDesignation.FieldName = "Designation";
+            this.colDesignation.Name = "colDesignation";
+            this.colDesignation.Visible = true;
+            this.colDesignation.VisibleIndex = 0;
+            // 
+            // colDATE_D_Année_SCO
+            // 
+            this.colDATE_D_Année_SCO.FieldName = "DATE_D_Année_SCO";
+            this.colDATE_D_Année_SCO.Name = "colDATE_D_Année_SCO";
+            this.colDATE_D_Année_SCO.Visible = true;
+            this.colDATE_D_Année_SCO.VisibleIndex = 2;
+            // 
+            // colDate_F_Année_SCO
+            // 
+            this.colDate_F_Année_SCO.FieldName = "Date_F_Année_SCO";
+            this.colDate_F_Année_SCO.Name = "colDate_F_Année_SCO";
+            this.colDate_F_Année_SCO.Visible = true;
+            this.colDate_F_Année_SCO.VisibleIndex = 3;
+            // 
+            // colSession_Année_SCO
+            // 
+            this.colSession_Année_SCO.FieldName = "Session_Année_SCO";
+            this.colSession_Année_SCO.Name = "colSession_Année_SCO";
+            this.colSession_Année_SCO.Visible = true;
+            this.colSession_Année_SCO.VisibleIndex = 1;
             // 
             // layoutControlGroup1
             // 
@@ -1001,7 +1244,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1005, 395);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -1019,14 +1262,14 @@
             this.ItemForSemestre_en_coure1});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(985, 375);
             // 
             // ItemForSectionID
             // 
             this.ItemForSectionID.Control = this.SectionIDTextEdit;
             this.ItemForSectionID.Location = new System.Drawing.Point(0, 0);
             this.ItemForSectionID.Name = "ItemForSectionID";
-            this.ItemForSectionID.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForSectionID.Size = new System.Drawing.Size(985, 24);
             this.ItemForSectionID.Text = "Numéro de section";
             this.ItemForSectionID.TextSize = new System.Drawing.Size(191, 13);
             // 
@@ -1035,7 +1278,7 @@
             this.ItemForCode_Section.Control = this.Code_SectionTextEdit;
             this.ItemForCode_Section.Location = new System.Drawing.Point(0, 24);
             this.ItemForCode_Section.Name = "ItemForCode_Section";
-            this.ItemForCode_Section.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForCode_Section.Size = new System.Drawing.Size(985, 24);
             this.ItemForCode_Section.Text = "Code de la section";
             this.ItemForCode_Section.TextSize = new System.Drawing.Size(191, 13);
             // 
@@ -1044,8 +1287,8 @@
             this.ItemForID_Promo.Control = this.PromoLookUpEdit;
             this.ItemForID_Promo.Location = new System.Drawing.Point(0, 48);
             this.ItemForID_Promo.Name = "ItemForID_Promo";
-            this.ItemForID_Promo.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForID_Promo.Text = "Numéro de la promo";
+            this.ItemForID_Promo.Size = new System.Drawing.Size(985, 24);
+            this.ItemForID_Promo.Text = "Code de la promo";
             this.ItemForID_Promo.TextSize = new System.Drawing.Size(191, 13);
             // 
             // ItemForID_Mode_Formation
@@ -1053,8 +1296,8 @@
             this.ItemForID_Mode_Formation.Control = this.Mode_formationLookUpEdit;
             this.ItemForID_Mode_Formation.Location = new System.Drawing.Point(0, 72);
             this.ItemForID_Mode_Formation.Name = "ItemForID_Mode_Formation";
-            this.ItemForID_Mode_Formation.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForID_Mode_Formation.Text = "Numéro du mode de formation";
+            this.ItemForID_Mode_Formation.Size = new System.Drawing.Size(985, 24);
+            this.ItemForID_Mode_Formation.Text = "Code mode de formation";
             this.ItemForID_Mode_Formation.TextSize = new System.Drawing.Size(191, 13);
             // 
             // ItemForID_Option
@@ -1062,8 +1305,8 @@
             this.ItemForID_Option.Control = this.OptionLookUpEdit;
             this.ItemForID_Option.Location = new System.Drawing.Point(0, 96);
             this.ItemForID_Option.Name = "ItemForID_Option";
-            this.ItemForID_Option.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForID_Option.Text = "Numéro de l\'option de spécialité";
+            this.ItemForID_Option.Size = new System.Drawing.Size(985, 24);
+            this.ItemForID_Option.Text = "Code option de spécialité";
             this.ItemForID_Option.TextSize = new System.Drawing.Size(191, 13);
             // 
             // ItemForSemestre_en_coure
@@ -1071,7 +1314,7 @@
             this.ItemForSemestre_en_coure.Control = this.SemestreLookUpEdit;
             this.ItemForSemestre_en_coure.Location = new System.Drawing.Point(0, 120);
             this.ItemForSemestre_en_coure.Name = "ItemForSemestre_en_coure";
-            this.ItemForSemestre_en_coure.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForSemestre_en_coure.Size = new System.Drawing.Size(985, 24);
             this.ItemForSemestre_en_coure.Text = "Désignation du semestre en cours";
             this.ItemForSemestre_en_coure.TextSize = new System.Drawing.Size(191, 13);
             // 
@@ -1080,7 +1323,7 @@
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 168);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
             this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 454);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(985, 207);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3});
             this.tabbedControlGroup1.Text = "Tabs";
@@ -1091,7 +1334,7 @@
             this.ItemForStagiairs});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForStagiairs";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 407);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(961, 160);
             this.layoutControlGroup3.Text = "Stagiaires";
             // 
             // ItemForStagiairs
@@ -1099,7 +1342,7 @@
             this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
             this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
             this.ItemForStagiairs.Name = "ItemForStagiairs";
-            this.ItemForStagiairs.Size = new System.Drawing.Size(980, 407);
+            this.ItemForStagiairs.Size = new System.Drawing.Size(961, 160);
             this.ItemForStagiairs.StartNewLine = true;
             this.ItemForStagiairs.Text = "Stagiairs";
             this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
@@ -1112,7 +1355,7 @@
             this.ItemForSemestre_en_coure1.CustomizationFormText = "annee  scolaire en  coure";
             this.ItemForSemestre_en_coure1.Location = new System.Drawing.Point(0, 144);
             this.ItemForSemestre_en_coure1.Name = "ItemForSemestre_en_coure1";
-            this.ItemForSemestre_en_coure1.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForSemestre_en_coure1.Size = new System.Drawing.Size(985, 24);
             this.ItemForSemestre_en_coure1.Text = "Désignation de l\'année scolaire en cours";
             this.ItemForSemestre_en_coure1.TextSize = new System.Drawing.Size(191, 13);
             // 
@@ -1142,6 +1385,10 @@
             this.StagiairsPopUpMenu.Manager = this.StagiairsBarManager;
             this.StagiairsPopUpMenu.Name = "StagiairsPopUpMenu";
             // 
+            // annee_scolaireTableAdapter
+            // 
+            this.annee_scolaireTableAdapter.ClearBeforeFill = true;
+            // 
             // SectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1150,7 +1397,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "SectionView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(1005, 521);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SectionIDTextEdit.Properties)).EndInit();
@@ -1176,6 +1423,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SemestreLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.anneescolaireBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gTSCO19DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SemestreLookUpEditView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
@@ -1191,6 +1440,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSemestre_en_coure1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1313,5 +1563,33 @@
         private DevExpress.XtraEditors.GridLookUpEdit SemestreLookUpEdit1;
         private DevExpress.XtraGrid.Views.Grid.GridView SemestreLookUpEditView1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForSemestre_en_coure1;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Promo1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Promo;
+        private DevExpress.XtraGrid.Columns.GridColumn colDiplome;
+        private DevExpress.XtraGrid.Columns.GridColumn colDiplome_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_D_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_F_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Option;
+        private DevExpress.XtraGrid.Columns.GridColumn colMode_de_formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colOption;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Mode_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colDésignation_Mode_Formation1;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Option;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Option1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecialite;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Semestre;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Semestre;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Semestre_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Année_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_D_Année_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_F_Année_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colSession_Année_SCO;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private System.Windows.Forms.BindingSource anneescolaireBindingSource;
+        private GTSCO19DataSet gTSCO19DataSet;
+        private GTSCO19DataSetTableAdapters.annee_scolaireTableAdapter annee_scolaireTableAdapter;
     }
 }

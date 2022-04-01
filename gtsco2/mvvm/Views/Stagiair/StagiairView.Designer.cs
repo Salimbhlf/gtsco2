@@ -1694,6 +1694,7 @@
             this.Section1LookUpEdit.Size = new System.Drawing.Size(267, 20);
             this.Section1LookUpEdit.StyleController = this.dataLayoutControl1;
             this.Section1LookUpEdit.TabIndex = 41;
+            this.Section1LookUpEdit.Popup += new System.EventHandler(this.Section1LookUpEdit_Popup);
             this.Section1LookUpEdit.EditValueChanged += new System.EventHandler(this.Section1LookUpEdit_EditValueChanged);
             // 
             // Section1BindingSource
@@ -3822,7 +3823,7 @@
             // 
             this.tabbedControlGroup2.Location = new System.Drawing.Point(281, 96);
             this.tabbedControlGroup2.Name = "tabbedControlGroup2";
-            this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup12;
+            this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup10;
             this.tabbedControlGroup2.Size = new System.Drawing.Size(721, 215);
             this.tabbedControlGroup2.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup10,

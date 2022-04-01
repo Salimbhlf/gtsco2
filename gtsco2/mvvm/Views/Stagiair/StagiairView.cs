@@ -234,5 +234,25 @@ namespace gtsco2.mvvm.Views.StagiairView{
         {
 
         }
+
+        private void Section1LookUpEdit_Popup(object sender, EventArgs e)
+        {
+			try
+			{
+				//DataRow row = this.PromoLookUpEditView.GetFocusedDataRow() ;
+				string z = PromoLookUpEdit.EditValue.ToString();
+
+				string myFilterString = "[ID_Promo] = '" + z + "'";
+				GridLookUpEdit editor = (GridLookUpEdit)sender;
+				editor.Properties.View.ActiveFilterString = myFilterString;
+
+			}
+			catch
+			{
+				GridLookUpEdit editor = (GridLookUpEdit)sender;
+				editor.Properties.View.ActiveFilterString = "";
+
+			}
+		}
     }
 }

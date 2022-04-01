@@ -305,6 +305,11 @@
     <Compile Include="forms\PVfinal\frmPVfinal.Designer.cs">
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GTSCO19DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GTSCO19DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="mvvm\Common\CollectionViewModel.cs" />
     <Compile Include="mvvm\Common\EntitiesViewModel.cs" />
     <Compile Include="mvvm\Common\ReadOnlyCollectionViewModel.cs" />
@@ -699,6 +704,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="GTSCO19DataSet.xsc">
+      <DependentUpon>GTSCO19DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GTSCO19DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GTSCO19DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GTSCO19DataSet.xss">
+      <DependentUpon>GTSCO19DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\image_viber_2022-03-23_19-13-58-552.png" />
     <EmbeddedResource Include="forms\Fenêtre connexion.resx">
       <DependentUpon>Fenêtre connexion.cs</DependentUpon>

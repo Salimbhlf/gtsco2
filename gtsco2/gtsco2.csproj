@@ -198,6 +198,18 @@
     <Compile Include="forms\CnxDataBase\FrmCnxDataBase.Designer.cs">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Décisions\Redoublement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Décisions\Redoublement.Designer.cs">
+      <DependentUpon>Redoublement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Décisions\Résiliation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Décisions\Résiliation.Designer.cs">
+      <DependentUpon>Résiliation.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Fenêtre connexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +305,12 @@
     </Compile>
     <Compile Include="forms\navigation\frmNavigation.Designer.cs">
       <DependentUpon>frmNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Décisions\Transfert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Décisions\Transfert.Designer.cs">
+      <DependentUpon>Transfert.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Pageprancipel\FrmPrancipal.cs">
       <SubType>Form</SubType>
@@ -710,6 +728,12 @@
     <EmbeddedResource Include="forms\CnxDataBase\FrmCnxDataBase.resx">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\Décisions\Redoublement.resx">
+      <DependentUpon>Redoublement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Décisions\Résiliation.resx">
+      <DependentUpon>Résiliation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Fenêtre connexion.resx">
       <DependentUpon>Fenêtre connexion.cs</DependentUpon>
     </EmbeddedResource>
@@ -757,6 +781,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\navigation\frmNavigation.resx">
       <DependentUpon>frmNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Décisions\Transfert.resx">
+      <DependentUpon>Transfert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Pageprancipel\FrmPrancipal.resx">
       <DependentUpon>FrmPrancipal.cs</DependentUpon>

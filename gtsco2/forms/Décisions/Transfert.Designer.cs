@@ -1,7 +1,7 @@
 ﻿
 namespace gtsco2.forms.NewFolder1
 {
-    partial class XtraReport1
+    partial class Transfert
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace gtsco2.forms.NewFolder1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraReport1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Transfert));
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -367,12 +367,12 @@ namespace gtsco2.forms.NewFolder1
             // 
             this.label2.AutoWidth = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(20.91656F, 129.7501F);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 129.7501F);
             this.label2.Multiline = true;
             this.label2.Name = "label2";
             this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label2.SizeF = new System.Drawing.SizeF(676.9999F, 33.41669F);
+            this.label2.SizeF = new System.Drawing.SizeF(697.9164F, 33.41669F);
             this.label2.StylePriority.UseFont = false;
             this.label2.StylePriority.UseTextAlignment = false;
             this.label2.Text = "الرقم: ................./  م ع /....................                             " +
@@ -430,7 +430,7 @@ namespace gtsco2.forms.NewFolder1
     "كويـــــــن والتعليـــــــم المهنــــــــي\r\n";
             this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // XtraReport1
+            // Transfert
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.Detail,

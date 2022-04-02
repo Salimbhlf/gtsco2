@@ -88,7 +88,9 @@ namespace gtsco2.forms
 
         private void simpleButton11_Click(object sender, EventArgs e)
         {
-
+            gtsco2.forms.Décisions.Redoublement.load();
+            
+           
         }
 
         private void simpleButton12_Click(object sender, EventArgs e)

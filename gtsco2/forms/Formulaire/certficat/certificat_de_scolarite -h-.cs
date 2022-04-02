@@ -38,7 +38,7 @@ namespace gtsco2.forms.Formulaire.certficat
         public void load(string Num_stg)
         {
             var qure = from stg in shared.bd.Stagiairs
-                       join sec in shared.bd.Sections on stg.Section equals sec.SectionID
+                       from sec in shared.bd.Sections.Where( x=> x.SectionID == stg.Lieu_Naissance).DefaultIfEmpty()
                        from sem in shared.bd.Semestres.Where(x => x.ID_Semestre == sec.Semestre_en_coure).DefaultIfEmpty()
                        join promo in shared.bd.Promoes on stg.ID_Promo equals promo.ID_Promo
                        from anne in shared.bd.annee_scolaire.Where(x => x.ID_Année_SCO == sec.Annee_secolir_en_coure).DefaultIfEmpty()

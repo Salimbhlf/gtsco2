@@ -192,6 +192,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Bulletin Semestriel\Bulletin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Bulletin Semestriel\Bulletin.Designer.cs">
+      <DependentUpon>Bulletin.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\CnxDataBase\FrmCnxDataBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,12 +215,6 @@
     </Compile>
     <Compile Include="forms\Décisions\Résiliation.Designer.cs">
       <DependentUpon>Résiliation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="forms\Fenêtre connexion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\Fenêtre connexion.Designer.cs">
-      <DependentUpon>Fenêtre connexion.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\GTabsences\PVabsences\formilaredesabsonce\frmforimolierdesabsonce.cs">
       <SubType>Form</SubType>
@@ -725,6 +725,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Resources\image_viber_2022-03-23_19-13-58-552.png" />
+    <EmbeddedResource Include="forms\Bulletin Semestriel\Bulletin.resx">
+      <DependentUpon>Bulletin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\CnxDataBase\FrmCnxDataBase.resx">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -733,9 +736,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Décisions\Résiliation.resx">
       <DependentUpon>Résiliation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\Fenêtre connexion.resx">
-      <DependentUpon>Fenêtre connexion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\GTabsences\PVabsences\formilaredesabsonce\frmforimolierdesabsonce.resx">
       <DependentUpon>frmforimolierdesabsonce.cs</DependentUpon>

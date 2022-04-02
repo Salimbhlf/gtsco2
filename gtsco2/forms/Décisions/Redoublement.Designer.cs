@@ -36,9 +36,9 @@ namespace gtsco2.forms.Décisions
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.label9 = new DevExpress.XtraReports.UI.XRLabel();
             this.label11 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label10 = new DevExpress.XtraReports.UI.XRLabel();
             this.label8 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.labelsp04 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label03 = new DevExpress.XtraReports.UI.XRLabel();
             this.label5 = new DevExpress.XtraReports.UI.XRLabel();
             this.label4 = new DevExpress.XtraReports.UI.XRLabel();
             this.label3 = new DevExpress.XtraReports.UI.XRLabel();
@@ -47,7 +47,8 @@ namespace gtsco2.forms.Décisions
             this.label13 = new DevExpress.XtraReports.UI.XRLabel();
             this.label14 = new DevExpress.XtraReports.UI.XRLabel();
             this.pictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.label15 = new DevExpress.XtraReports.UI.XRLabel();
+            this.labe1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -67,11 +68,12 @@ namespace gtsco2.forms.Décisions
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel2,
             this.label9,
             this.label11,
-            this.label10,
             this.label8,
-            this.label6,
+            this.labelsp04,
+            this.label03,
             this.label5,
             this.label4,
             this.label3,
@@ -80,7 +82,7 @@ namespace gtsco2.forms.Décisions
             this.label13,
             this.label14,
             this.pictureBox1,
-            this.label15});
+            this.labe1});
             this.ReportHeader.HeightF = 865.9167F;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -93,7 +95,7 @@ namespace gtsco2.forms.Décisions
             this.label9.Name = "label9";
             this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label9.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label9.SizeF = new System.Drawing.SizeF(142.5414F, 95.54163F);
+            this.label9.SizeF = new System.Drawing.SizeF(173.5423F, 95.54163F);
             this.label9.StylePriority.UseFont = false;
             this.label9.StylePriority.UseTextAlignment = false;
             this.label9.Text = "نسخة إلى :\r\n-المؤسسة المستخدمة.\r\n-المتمهن\r\n";
@@ -114,61 +116,61 @@ namespace gtsco2.forms.Décisions
             this.label11.Text = "المديرة              ";
             this.label11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // label10
-            // 
-            this.label10.AutoWidth = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(0F, 674.25F);
-            this.label10.Multiline = true;
-            this.label10.Name = "label10";
-            this.label10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label10.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label10.SizeF = new System.Drawing.SizeF(678.9997F, 44.79181F);
-            this.label10.StylePriority.UseFont = false;
-            this.label10.StylePriority.UseTextAlignment = false;
-            this.label10.Text = "الـمـادة الثـانيـة : يكلف كل من المديـر الفرعي للتكوين المتواصل والتمهين  والمديـ" +
-    "ــر الفرعي للإدارة  و الماليـة كل فـي حـدود اختصاصه بتنفـيـذ هـذا المـقـرر";
-            this.label10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
             // label8
             // 
             this.label8.AutoWidth = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(0F, 644.3334F);
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(0F, 674.25F);
             this.label8.Multiline = true;
             this.label8.Name = "label8";
             this.label8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label8.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label8.SizeF = new System.Drawing.SizeF(676.9999F, 29.91663F);
+            this.label8.SizeF = new System.Drawing.SizeF(700F, 44.79181F);
             this.label8.StylePriority.UseFont = false;
             this.label8.StylePriority.UseTextAlignment = false;
-            this.label8.Text = "اختصاص تقني سامي في ألمعلوماتية خيار قاعدة المعطيات";
-            this.label8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.label8.Text = "الـمـادة الثـانيـة : يكلف كل من المديـر الفرعي للتكوين المتواصل والتمهين  والمديـ" +
+    "ــر الفرعي للإدارة  و الماليـة كل فـي حـدود اختصاصه بتنفـيـذ هـذا المـقـرر";
+            this.label8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
-            // label6
+            // labelsp04
             // 
-            this.label6.AutoWidth = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 616.5002F);
-            this.label6.Multiline = true;
-            this.label6.Name = "label6";
-            this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label6.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label6.SizeF = new System.Drawing.SizeF(678.9999F, 27.83325F);
-            this.label6.StylePriority.UseFont = false;
-            this.label6.StylePriority.UseTextAlignment = false;
-            this.label6.Text = "المـادة الأولـى : يعـيـــد المتمهن بوغربي عماد الدين (السداسي الثاني)";
-            this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.labelsp04.AutoWidth = true;
+            this.labelsp04.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.labelsp04.LocationFloat = new DevExpress.Utils.PointFloat(0F, 644.3334F);
+            this.labelsp04.Multiline = true;
+            this.labelsp04.Name = "labelsp04";
+            this.labelsp04.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.labelsp04.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.labelsp04.SizeF = new System.Drawing.SizeF(700F, 29.91663F);
+            this.labelsp04.StylePriority.UseFont = false;
+            this.labelsp04.StylePriority.UseTextAlignment = false;
+            this.labelsp04.Text = "اختصاص تقني سامي في ألمعلوماتية خيار قاعدة المعطيات";
+            this.labelsp04.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label03
+            // 
+            this.label03.AutoWidth = true;
+            this.label03.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label03.LocationFloat = new DevExpress.Utils.PointFloat(0F, 616.5002F);
+            this.label03.Multiline = true;
+            this.label03.Name = "label03";
+            this.label03.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label03.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.label03.SizeF = new System.Drawing.SizeF(700F, 27.83325F);
+            this.label03.StylePriority.UseFont = false;
+            this.label03.StylePriority.UseTextAlignment = false;
+            this.label03.Text = "المـادة الأولـى : يعـيـــد المتمهن بوغربي عماد الدين (السداسي الثاني)";
+            this.label03.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label5
             // 
             this.label5.AutoWidth = true;
             this.label5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(2.000077F, 562.25F);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 562.25F);
             this.label5.Multiline = true;
             this.label5.Name = "label5";
             this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label5.SizeF = new System.Drawing.SizeF(677.0001F, 41.75F);
+            this.label5.SizeF = new System.Drawing.SizeF(697.9999F, 41.75F);
             this.label5.StylePriority.UseFont = false;
             this.label5.StylePriority.UseTextAlignment = false;
             this.label5.Text = "يـقـــــــــرر";
@@ -183,7 +185,7 @@ namespace gtsco2.forms.Décisions
             this.label4.Name = "label4";
             this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label4.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label4.SizeF = new System.Drawing.SizeF(677.0006F, 261.1667F);
+            this.label4.SizeF = new System.Drawing.SizeF(700F, 261.1667F);
             this.label4.StylePriority.UseFont = false;
             this.label4.StylePriority.UseTextAlignment = false;
             this.label4.Text = resources.GetString("label4.Text");
@@ -197,7 +199,7 @@ namespace gtsco2.forms.Décisions
             this.label3.Multiline = true;
             this.label3.Name = "label3";
             this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label3.SizeF = new System.Drawing.SizeF(677F, 35.50002F);
+            this.label3.SizeF = new System.Drawing.SizeF(700F, 35.50002F);
             this.label3.StylePriority.UseFont = false;
             this.label3.StylePriority.UseTextAlignment = false;
             this.label3.Text = "مـــقــــــرر إعادة السداسي ";
@@ -212,7 +214,7 @@ namespace gtsco2.forms.Décisions
             this.label2.Name = "label2";
             this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label2.SizeF = new System.Drawing.SizeF(679.0001F, 33.41669F);
+            this.label2.SizeF = new System.Drawing.SizeF(700F, 33.41669F);
             this.label2.StylePriority.UseFont = false;
             this.label2.StylePriority.UseTextAlignment = false;
             this.label2.Text = "الرقم: ................./  م ع /....................                             " +
@@ -227,7 +229,7 @@ namespace gtsco2.forms.Décisions
             this.label1.Multiline = true;
             this.label1.Name = "label1";
             this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label1.SizeF = new System.Drawing.SizeF(676.9999F, 48F);
+            this.label1.SizeF = new System.Drawing.SizeF(700F, 48F);
             this.label1.StylePriority.UseFont = false;
             this.label1.StylePriority.UseTextAlignment = false;
             this.label1.Text = "الجمهوريـــــة الجزائريــــــة الديمقراطيـــــــــة الشعبيـــــــــــة\r\nوزارة الت" +
@@ -238,11 +240,11 @@ namespace gtsco2.forms.Décisions
             // 
             this.label13.AutoWidth = true;
             this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label13.LocationFloat = new DevExpress.Utils.PointFloat(431.8756F, 68.83335F);
+            this.label13.LocationFloat = new DevExpress.Utils.PointFloat(465.209F, 68.83335F);
             this.label13.Multiline = true;
             this.label13.Name = "label13";
             this.label13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label13.SizeF = new System.Drawing.SizeF(245.1243F, 70.91667F);
+            this.label13.SizeF = new System.Drawing.SizeF(234.791F, 70.91668F);
             this.label13.StylePriority.UseFont = false;
             this.label13.StylePriority.UseTextAlignment = false;
             this.label13.Text = "المعهد الوطني المتخصص في التكوين \r\nالمهني  حسين داي   – المحمدية سابقا –\r\n\r\n\r\n\r\n";
@@ -266,24 +268,41 @@ namespace gtsco2.forms.Décisions
             // pictureBox1
             // 
             this.pictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("pictureBox1.ImageSource"));
-            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(264.5005F, 79.25002F);
+            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(283.2505F, 83.41669F);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.SizeF = new System.Drawing.SizeF(167.3751F, 45.83334F);
             // 
-            // label15
+            // labe1
             // 
-            this.label15.AutoWidth = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F);
-            this.label15.LocationFloat = new DevExpress.Utils.PointFloat(0F, 493.7917F);
-            this.label15.Multiline = true;
-            this.label15.Name = "label15";
-            this.label15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label15.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label15.SizeF = new System.Drawing.SizeF(677.0007F, 68.45834F);
-            this.label15.StylePriority.UseFont = false;
-            this.label15.StylePriority.UseTextAlignment = false;
-            this.label15.Text = resources.GetString("label15.Text");
-            this.label15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.labe1.AutoWidth = true;
+            this.labe1.Font = new System.Drawing.Font("Arial", 12F);
+            this.labe1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 493.7917F);
+            this.labe1.Multiline = true;
+            this.labe1.Name = "labe1";
+            this.labe1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.labe1.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.labe1.SizeF = new System.Drawing.SizeF(700F, 45.54166F);
+            this.labe1.StylePriority.UseFont = false;
+            this.labe1.StylePriority.UseTextAlignment = false;
+            this.labe1.Text = "-نـظرا للمحضـر المـــؤرخ يـوم 17/03/2019 تحت رقـــم 01/2019 والمتضمـن فتــح فــرع" +
+    " تـقنـي ســامي فــي اختصــاص ألمعلوماتية خيار قاعدة المعطيات  ";
+            this.labe1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.AutoWidth = true;
+            this.xrLabel2.Font = new System.Drawing.Font("Arial", 12F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 539.3334F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(700F, 22.91656F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "- وتبـعـــا لقـــرار محضــر اجتمــاع مجلــس الأساتــذة المنعقد يوم 12 فيفري 2020\r" +
+    "\n";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // Redoublement
             // 
@@ -307,9 +326,9 @@ namespace gtsco2.forms.Décisions
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRLabel label9;
         private DevExpress.XtraReports.UI.XRLabel label11;
-        private DevExpress.XtraReports.UI.XRLabel label10;
         private DevExpress.XtraReports.UI.XRLabel label8;
-        private DevExpress.XtraReports.UI.XRLabel label6;
+        private DevExpress.XtraReports.UI.XRLabel labelsp04;
+        private DevExpress.XtraReports.UI.XRLabel label03;
         private DevExpress.XtraReports.UI.XRLabel label5;
         private DevExpress.XtraReports.UI.XRLabel label4;
         private DevExpress.XtraReports.UI.XRLabel label3;
@@ -318,6 +337,7 @@ namespace gtsco2.forms.Décisions
         private DevExpress.XtraReports.UI.XRLabel label13;
         private DevExpress.XtraReports.UI.XRLabel label14;
         private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
-        private DevExpress.XtraReports.UI.XRLabel label15;
+        private DevExpress.XtraReports.UI.XRLabel labe1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
     }
 }

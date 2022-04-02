@@ -198,12 +198,6 @@
     <Compile Include="forms\CnxDataBase\FrmCnxDataBase.Designer.cs">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\Fenêtre connexion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="forms\Fenêtre connexion.Designer.cs">
-      <DependentUpon>Fenêtre connexion.cs</DependentUpon>
-    </Compile>
     <Compile Include="forms\GTabsences\PVabsences\formilaredesabsonce\frmforimolierdesabsonce.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -704,14 +698,17 @@
     <Compile Include="mvvm\Views\Willaya\WillayaView.designer.cs">
       <DependentUpon>WillayaView.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewFolder1\TEST.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\TEST.Designer.cs">
+      <DependentUpon>TEST.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Resources\image_viber_2022-03-23_19-13-58-552.png" />
     <EmbeddedResource Include="forms\CnxDataBase\FrmCnxDataBase.resx">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="forms\Fenêtre connexion.resx">
-      <DependentUpon>Fenêtre connexion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\GTabsences\PVabsences\formilaredesabsonce\frmforimolierdesabsonce.resx">
       <DependentUpon>frmforimolierdesabsonce.cs</DependentUpon>
@@ -969,9 +966,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -402,22 +402,28 @@ namespace gtsco2.forms.PVfinal
 
         public void print()
         {
+            int r = 0;
             if (seccomboBox.SelectedValue != null)
             {
                 idsec = int.Parse(seccomboBox.SelectedValue.ToString());
             }
-            else { MessageBox.Show("auccune section selicatione"); }
+            else { MessageBox.Show("auccune section selicatione"); r += 1; }
             if (smstcomboBox13.SelectedValue != null)
                 idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
-            else { MessageBox.Show("auccune semmestre selicatione"); }
+            else { MessageBox.Show("auccune semmestre selicatione"); r += 1; }
             if (anneecomboBox141.SelectedValue != null)
             {
                 idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
             }
-            else { MessageBox.Show("auccune annnee selicatione"); }
+            else { MessageBox.Show("auccune annnee selicatione");
+                r += 1;
+            }
+            
+            DataRow ro = gridView1.GetFocusedDataRow();
+            
 
-
-            Bulletin_Semestriel.Bulletin.printBulletin(idsem, idannee, idsec, "1647255869");
+            if(ro!= null&& r==0)
+            Bulletin_Semestriel.Bulletin.printBulletin(idsem, idannee, idsec, ro["Numro_STG"].ToString());
         }
 
       

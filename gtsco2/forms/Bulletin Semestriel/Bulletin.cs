@@ -93,7 +93,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
                     der = Math.Max((double)row.mynav, (double)row.mynap);
                     cofl = int.Parse(row.coefficient_Module.ToString());
                     coff += cofl;
-                    drow["Moy"] = der;
+                    drow["Moy"] = der.ToString(".##");
                     TNote += (der * cofl);
                         
                 }
@@ -102,9 +102,11 @@ namespace gtsco2.forms.Bulletin_Semestriel
                 {
                     if (row.mynav != null) { 
                          der = (double)row.mynav;
-                        drow["Moy"] = row.mynav.ToString();
-                        TNote += der;
-                       
+                        cofl = int.Parse(row.coefficient_Module.ToString());
+                        coff += cofl;
+                        drow["Moy"] = der.ToString(".##");
+                        TNote += (der * cofl);
+
 
                     }
                     
@@ -147,9 +149,12 @@ namespace gtsco2.forms.Bulletin_Semestriel
                 xrTableCell3Specialite.Text = row.sp;
                 xrTableCell2Modefr.Text = row.modeformation;
                 xrTableCell22LieuNass.Text = row.lieuNissance;
+                try { 
                 xrTableCell8DateNiss.Text = row.datenissance.Value.ToString("MM/dd/yyyy");
                 xrTableCell23DateFin.Text = row.datefin.Value.ToString("MM/dd/yyyy");
                 xrTableCell10DateDube.Text = row.datedeube.Value.ToString("MM/dd/yyyy");
+                }
+                catch { }
                 xrTableCell4Section.Text = row.section;
 
 
@@ -157,7 +162,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
                 tb1.Rows.Add(drow);
 
             }
-            xrTableCell12MoyGenrale.Text = (TNote / coff).ToString();
+            xrTableCell12MoyGenrale.Text = (TNote / coff).ToString(".##");
             return tb1;
           
          

@@ -143,7 +143,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
                 xrTableCell21Prenom.Text = row.Prenom;
 
                 xrTableCell6Nom.Text = row.Nom;
-                xrTableCell5CodeStg.Text = row.Numro_STG;
+                //xrTableCell5CodeStg.Text = row.Numro_STG;
                 xrTableCell3Specialite.Text = row.sp;
                 xrTableCell2Modefr.Text = row.modeformation;
                 xrTableCell22LieuNass.Text = row.lieuNissance;

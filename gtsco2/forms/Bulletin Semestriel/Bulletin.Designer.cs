@@ -188,7 +188,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
             this.customerContactName.Name = "customerContactName";
             this.customerContactName.StylePriority.UseFont = false;
             this.customerContactName.StylePriority.UsePadding = false;
-            this.customerContactName.Text = "Specialite";
+            this.customerContactName.Text = "Specialite :";
             this.customerContactName.Weight = 1.1945245620977985D;
             // 
             // customerAddressRow
@@ -306,7 +306,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
             // 
             this.xrTableCell9.Multiline = true;
             this.xrTableCell9.Name = "xrTableCell9";
-            this.xrTableCell9.Text = "Date Debut formation ";
+            this.xrTableCell9.Text = "Date Debut formation :";
             this.xrTableCell9.Weight = 1.1945245620977985D;
             // 
             // xrTableCell10DateDube
@@ -329,7 +329,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
             // 
             this.xrTableCell15.Multiline = true;
             this.xrTableCell15.Name = "xrTableCell15";
-            this.xrTableCell15.Text = " A:";
+            this.xrTableCell15.Text = "A:";
             this.xrTableCell15.Weight = 0.48423093571236975D;
             // 
             // xrTableCell16
@@ -645,7 +645,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
             this.xrCheckBox2.LocationFloat = new DevExpress.Utils.PointFloat(263.2233F, 32.99999F);
             this.xrCheckBox2.Name = "xrCheckBox2";
             this.xrCheckBox2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrCheckBox2.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.xrCheckBox2.SizeF = new System.Drawing.SizeF(143.75F, 23F);
             this.xrCheckBox2.Text = "Admis(e) par rachat";
             // 
             // xrCheckBox3

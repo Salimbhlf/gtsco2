@@ -303,7 +303,15 @@ namespace gtsco2.forms.PVfinal
                             }
                             else
                             {
-                                dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                                
+                                if (qres.mynap != null)
+                                    dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                                else
+                                {
+                                    if (qres.mynav != null)
+                                        dro[qres.module] = qres.mynav;
+                                    else MessageBox.Show("pas de moy de d'exmaine");
+                                }
                                 r += 1;
                             }
 
@@ -330,7 +338,13 @@ namespace gtsco2.forms.PVfinal
                     {
                         if (qres.mynap != null)
                             dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
-                        else MessageBox.Show("pas de moy de ratrpage");
+                        else
+                        {
+                            if (qres.mynav != null)
+                                dro[qres.module] = qres.mynav;
+                            else MessageBox.Show("pas de moy de d'exmaine");
+                        }
+                        
                         
                     }
 

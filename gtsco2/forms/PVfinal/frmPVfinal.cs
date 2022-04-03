@@ -400,7 +400,25 @@ namespace gtsco2.forms.PVfinal
 
         
 
+        public void print()
+        {
+            if (seccomboBox.SelectedValue != null)
+            {
+                idsec = int.Parse(seccomboBox.SelectedValue.ToString());
+            }
+            else { MessageBox.Show("auccune section selicatione"); }
+            if (smstcomboBox13.SelectedValue != null)
+                idsem = int.Parse(smstcomboBox13.SelectedValue.ToString());
+            else { MessageBox.Show("auccune semmestre selicatione"); }
+            if (anneecomboBox141.SelectedValue != null)
+            {
+                idannee = int.Parse(anneecomboBox141.SelectedValue.ToString());
+            }
+            else { MessageBox.Show("auccune annnee selicatione"); }
 
+
+            Bulletin_Semestriel.Bulletin.printBulletin(idsem, idannee, idsec, "1647255869");
+        }
 
       
 
@@ -479,6 +497,11 @@ namespace gtsco2.forms.PVfinal
             //    else
             //        e.Appearance.BackColor = Color.FromArgb(0xD2, 0xFD, 0x91);
             //}
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            print();
         }
     }
 }

@@ -92,10 +92,10 @@
             this.ItemForNum_PV_Délibiraiton = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForDate_PV_Délibiration = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForPARTICIPEs = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.DecisionsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.PARTICIPEsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
@@ -123,10 +123,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_PV_Délibiraiton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_PV_Délibiration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPARTICIPEs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PARTICIPEsPopUpMenu)).BeginInit();
@@ -145,7 +145,7 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1284, 337);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // ID_PV_DélibirationTextEdit
@@ -159,7 +159,8 @@
             this.ID_PV_DélibirationTextEdit.Properties.Mask.EditMask = "N0";
             this.ID_PV_DélibirationTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_PV_DélibirationTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.ID_PV_DélibirationTextEdit.Size = new System.Drawing.Size(858, 20);
+            this.ID_PV_DélibirationTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ID_PV_DélibirationTextEdit.Size = new System.Drawing.Size(1118, 20);
             this.ID_PV_DélibirationTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_PV_DélibirationTextEdit.TabIndex = 4;
             // 
@@ -189,7 +190,7 @@
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
+            this.mainRibbonControl.Size = new System.Drawing.Size(1284, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -298,7 +299,8 @@
             this.Num_PV_DélibiraitonTextEdit.Properties.Mask.EditMask = "N0";
             this.Num_PV_DélibiraitonTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Num_PV_DélibiraitonTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Num_PV_DélibiraitonTextEdit.Size = new System.Drawing.Size(858, 20);
+            this.Num_PV_DélibiraitonTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Num_PV_DélibiraitonTextEdit.Size = new System.Drawing.Size(1118, 20);
             this.Num_PV_DélibiraitonTextEdit.StyleController = this.dataLayoutControl1;
             this.Num_PV_DélibiraitonTextEdit.TabIndex = 5;
             // 
@@ -314,7 +316,9 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Date_PV_DélibirationDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Date_PV_DélibirationDateEdit.Size = new System.Drawing.Size(858, 20);
+            this.Date_PV_DélibirationDateEdit.Properties.NullValuePrompt = "Sélectionner une date";
+            this.Date_PV_DélibirationDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.Date_PV_DélibirationDateEdit.Size = new System.Drawing.Size(1118, 20);
             this.Date_PV_DélibirationDateEdit.StyleController = this.dataLayoutControl1;
             this.Date_PV_DélibirationDateEdit.TabIndex = 6;
             // 
@@ -328,7 +332,7 @@
             this.DecisionsXtraUserControl.Location = new System.Drawing.Point(24, 119);
             this.DecisionsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.DecisionsXtraUserControl.Name = "DecisionsXtraUserControl";
-            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(976, 499);
+            this.DecisionsXtraUserControl.Size = new System.Drawing.Size(1236, 194);
             this.DecisionsXtraUserControl.TabIndex = 7;
             // 
             // DecisionsGridControl
@@ -339,7 +343,7 @@
             this.DecisionsGridControl.MainView = this.DecisionsGridView;
             this.DecisionsGridControl.MenuManager = this.mainRibbonControl;
             this.DecisionsGridControl.Name = "DecisionsGridControl";
-            this.DecisionsGridControl.Size = new System.Drawing.Size(976, 475);
+            this.DecisionsGridControl.Size = new System.Drawing.Size(1236, 170);
             this.DecisionsGridControl.TabIndex = 0;
             this.DecisionsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.DecisionsGridView});
@@ -442,7 +446,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.DecisionsBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 475);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 170);
             // 
             // DecisionsBarManager
             // 
@@ -515,23 +519,23 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.DecisionsBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(1236, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 499);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 194);
             this.barDockControlBottom.Manager = this.DecisionsBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1236, 0);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(1236, 24);
             this.barDockControlRight.Manager = this.DecisionsBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 475);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 170);
             // 
             // PARTICIPEsXtraUserControl
             // 
@@ -543,7 +547,7 @@
             this.PARTICIPEsXtraUserControl.Location = new System.Drawing.Point(24, 119);
             this.PARTICIPEsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.PARTICIPEsXtraUserControl.Name = "PARTICIPEsXtraUserControl";
-            this.PARTICIPEsXtraUserControl.Size = new System.Drawing.Size(976, 499);
+            this.PARTICIPEsXtraUserControl.Size = new System.Drawing.Size(1236, 194);
             this.PARTICIPEsXtraUserControl.TabIndex = 8;
             // 
             // PARTICIPEsGridControl
@@ -554,7 +558,7 @@
             this.PARTICIPEsGridControl.MainView = this.PARTICIPEsGridView;
             this.PARTICIPEsGridControl.MenuManager = this.mainRibbonControl;
             this.PARTICIPEsGridControl.Name = "PARTICIPEsGridControl";
-            this.PARTICIPEsGridControl.Size = new System.Drawing.Size(976, 475);
+            this.PARTICIPEsGridControl.Size = new System.Drawing.Size(1236, 170);
             this.PARTICIPEsGridControl.TabIndex = 0;
             this.PARTICIPEsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.PARTICIPEsGridView});
@@ -621,7 +625,7 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.PARTICIPEsBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 475);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 170);
             // 
             // PARTICIPEsBarManager
             // 
@@ -694,23 +698,23 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.PARTICIPEsBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl1.Size = new System.Drawing.Size(1236, 24);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 499);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 194);
             this.barDockControl2.Manager = this.PARTICIPEsBarManager;
-            this.barDockControl2.Size = new System.Drawing.Size(976, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(1236, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl4.Location = new System.Drawing.Point(1236, 24);
             this.barDockControl4.Manager = this.PARTICIPEsBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 475);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 170);
             // 
             // layoutControlGroup1
             // 
@@ -719,7 +723,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1284, 337);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -733,14 +737,14 @@
             this.tabbedControlGroup1});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1264, 317);
             // 
             // ItemForID_PV_Délibiration
             // 
             this.ItemForID_PV_Délibiration.Control = this.ID_PV_DélibirationTextEdit;
             this.ItemForID_PV_Délibiration.Location = new System.Drawing.Point(0, 0);
             this.ItemForID_PV_Délibiration.Name = "ItemForID_PV_Délibiration";
-            this.ItemForID_PV_Délibiration.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForID_PV_Délibiration.Size = new System.Drawing.Size(1264, 24);
             this.ItemForID_PV_Délibiration.Text = "ID_P.V délibération";
             this.ItemForID_PV_Délibiration.TextSize = new System.Drawing.Size(130, 13);
             // 
@@ -749,7 +753,7 @@
             this.ItemForNum_PV_Délibiraiton.Control = this.Num_PV_DélibiraitonTextEdit;
             this.ItemForNum_PV_Délibiraiton.Location = new System.Drawing.Point(0, 24);
             this.ItemForNum_PV_Délibiraiton.Name = "ItemForNum_PV_Délibiraiton";
-            this.ItemForNum_PV_Délibiraiton.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForNum_PV_Délibiraiton.Size = new System.Drawing.Size(1264, 24);
             this.ItemForNum_PV_Délibiraiton.Text = "Numéro de P.V délibération";
             this.ItemForNum_PV_Délibiraiton.TextSize = new System.Drawing.Size(130, 13);
             // 
@@ -758,7 +762,7 @@
             this.ItemForDate_PV_Délibiration.Control = this.Date_PV_DélibirationDateEdit;
             this.ItemForDate_PV_Délibiration.Location = new System.Drawing.Point(0, 48);
             this.ItemForDate_PV_Délibiration.Name = "ItemForDate_PV_Délibiration";
-            this.ItemForDate_PV_Délibiration.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForDate_PV_Délibiration.Size = new System.Drawing.Size(1264, 24);
             this.ItemForDate_PV_Délibiration.Text = "Date du P.V délibération";
             this.ItemForDate_PV_Délibiration.TextSize = new System.Drawing.Size(130, 13);
             // 
@@ -767,31 +771,11 @@
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 72);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
             this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup4;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 550);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(1264, 245);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3,
             this.layoutControlGroup4});
             this.tabbedControlGroup1.Text = "Tabs";
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForDecisions});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "autoGroupForDecisions";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 503);
-            this.layoutControlGroup3.Text = "Decisions";
-            // 
-            // ItemForDecisions
-            // 
-            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
-            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
-            this.ItemForDecisions.Name = "ItemForDecisions";
-            this.ItemForDecisions.Size = new System.Drawing.Size(980, 503);
-            this.ItemForDecisions.StartNewLine = true;
-            this.ItemForDecisions.Text = "Decisions";
-            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForDecisions.TextVisible = false;
             // 
             // layoutControlGroup4
             // 
@@ -799,7 +783,7 @@
             this.ItemForPARTICIPEs});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "autoGroupForPARTICIPEs";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(980, 503);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(1240, 198);
             this.layoutControlGroup4.Text = "Participants";
             // 
             // ItemForPARTICIPEs
@@ -807,11 +791,31 @@
             this.ItemForPARTICIPEs.Control = this.PARTICIPEsXtraUserControl;
             this.ItemForPARTICIPEs.Location = new System.Drawing.Point(0, 0);
             this.ItemForPARTICIPEs.Name = "ItemForPARTICIPEs";
-            this.ItemForPARTICIPEs.Size = new System.Drawing.Size(980, 503);
+            this.ItemForPARTICIPEs.Size = new System.Drawing.Size(1240, 198);
             this.ItemForPARTICIPEs.StartNewLine = true;
             this.ItemForPARTICIPEs.Text = "PARTICIPEs";
             this.ItemForPARTICIPEs.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForPARTICIPEs.TextVisible = false;
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForDecisions});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "autoGroupForDecisions";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(1240, 198);
+            this.layoutControlGroup3.Text = "Decisions";
+            // 
+            // ItemForDecisions
+            // 
+            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
+            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
+            this.ItemForDecisions.Name = "ItemForDecisions";
+            this.ItemForDecisions.Size = new System.Drawing.Size(1240, 198);
+            this.ItemForDecisions.StartNewLine = true;
+            this.ItemForDecisions.Text = "Decisions";
+            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForDecisions.TextVisible = false;
             // 
             // mvvmContext
             // 
@@ -857,7 +861,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "Proce_verbal_delibationView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(1284, 463);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ID_PV_DélibirationTextEdit.Properties)).EndInit();
@@ -884,10 +888,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_PV_Délibiraiton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_PV_Délibiration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPARTICIPEs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DecisionsPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PARTICIPEsPopUpMenu)).EndInit();

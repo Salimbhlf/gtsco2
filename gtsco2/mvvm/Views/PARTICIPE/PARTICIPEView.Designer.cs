@@ -28,9 +28,22 @@
             this.pARTICIPEViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EnseignantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EnseignantLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colid_Enseignant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colprenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNiveau = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPoste = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPoste_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSpecialite = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMode_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Proce_verbal_delibationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.Proce_verbal_delibationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Proce_verbal_delibationLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_PV_Délibiration = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_PV_Délibiraiton = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_PV_Délibiration = new DevExpress.XtraGrid.Columns.GridColumn();
             this.QualiteTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Qualite_arTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -99,7 +112,10 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.EnseignantLookUpEdit.Properties.DataSource = this.EnseignantBindingSource;
             this.EnseignantLookUpEdit.Properties.DisplayMember = "Nom";
+            this.EnseignantLookUpEdit.Properties.NullText = "";
+            this.EnseignantLookUpEdit.Properties.NullValuePrompt = "Saisir ou sélectionner l\'enseignant ";
             this.EnseignantLookUpEdit.Properties.PopupView = this.EnseignantLookUpEditView;
+            this.EnseignantLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.EnseignantLookUpEdit.Properties.ValueMember = "id_Enseignant";
             this.EnseignantLookUpEdit.Size = new System.Drawing.Size(534, 20);
             this.EnseignantLookUpEdit.StyleController = this.dataLayoutControl1;
@@ -115,10 +131,83 @@
             // 
             // EnseignantLookUpEditView
             // 
+            this.EnseignantLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colid_Enseignant,
+            this.colNom,
+            this.colNom_ar,
+            this.colprenom,
+            this.colPrenom_ar,
+            this.colNiveau,
+            this.colPoste,
+            this.colPoste_ar,
+            this.colSpecialite,
+            this.colMode_Formation});
             this.EnseignantLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.EnseignantLookUpEditView.Name = "EnseignantLookUpEditView";
             this.EnseignantLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.EnseignantLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colid_Enseignant
+            // 
+            this.colid_Enseignant.FieldName = "id_Enseignant";
+            this.colid_Enseignant.Name = "colid_Enseignant";
+            // 
+            // colNom
+            // 
+            this.colNom.FieldName = "Nom";
+            this.colNom.Name = "colNom";
+            this.colNom.Visible = true;
+            this.colNom.VisibleIndex = 0;
+            // 
+            // colNom_ar
+            // 
+            this.colNom_ar.FieldName = "Nom_ar";
+            this.colNom_ar.Name = "colNom_ar";
+            // 
+            // colprenom
+            // 
+            this.colprenom.FieldName = "prenom";
+            this.colprenom.Name = "colprenom";
+            this.colprenom.Visible = true;
+            this.colprenom.VisibleIndex = 1;
+            // 
+            // colPrenom_ar
+            // 
+            this.colPrenom_ar.FieldName = "Prenom_ar";
+            this.colPrenom_ar.Name = "colPrenom_ar";
+            // 
+            // colNiveau
+            // 
+            this.colNiveau.FieldName = "Niveau";
+            this.colNiveau.Name = "colNiveau";
+            this.colNiveau.Visible = true;
+            this.colNiveau.VisibleIndex = 2;
+            // 
+            // colPoste
+            // 
+            this.colPoste.FieldName = "Poste";
+            this.colPoste.Name = "colPoste";
+            this.colPoste.Visible = true;
+            this.colPoste.VisibleIndex = 3;
+            // 
+            // colPoste_ar
+            // 
+            this.colPoste_ar.FieldName = "Poste_ar";
+            this.colPoste_ar.Name = "colPoste_ar";
+            // 
+            // colSpecialite
+            // 
+            this.colSpecialite.FieldName = "Specialite";
+            this.colSpecialite.Name = "colSpecialite";
+            this.colSpecialite.Visible = true;
+            this.colSpecialite.VisibleIndex = 4;
+            // 
+            // colMode_Formation
+            // 
+            this.colMode_Formation.FieldName = "Mode_Formation";
+            this.colMode_Formation.Name = "colMode_Formation";
+            this.colMode_Formation.Visible = true;
+            this.colMode_Formation.VisibleIndex = 5;
             // 
             // Proce_verbal_delibationLookUpEdit
             // 
@@ -130,7 +219,10 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Proce_verbal_delibationLookUpEdit.Properties.DataSource = this.Proce_verbal_delibationBindingSource;
             this.Proce_verbal_delibationLookUpEdit.Properties.DisplayMember = "ID_PV_Délibiration";
+            this.Proce_verbal_delibationLookUpEdit.Properties.NullText = "";
+            this.Proce_verbal_delibationLookUpEdit.Properties.NullValuePrompt = "Saisir ou sélectionner le numéro de PV de délibération";
             this.Proce_verbal_delibationLookUpEdit.Properties.PopupView = this.Proce_verbal_delibationLookUpEditView;
+            this.Proce_verbal_delibationLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.Proce_verbal_delibationLookUpEdit.Properties.ValueMember = "ID_PV_Délibiration";
             this.Proce_verbal_delibationLookUpEdit.Size = new System.Drawing.Size(534, 20);
             this.Proce_verbal_delibationLookUpEdit.StyleController = this.dataLayoutControl1;
@@ -142,10 +234,33 @@
             // 
             // Proce_verbal_delibationLookUpEditView
             // 
+            this.Proce_verbal_delibationLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_PV_Délibiration,
+            this.colNum_PV_Délibiraiton,
+            this.colDate_PV_Délibiration});
             this.Proce_verbal_delibationLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.Proce_verbal_delibationLookUpEditView.Name = "Proce_verbal_delibationLookUpEditView";
             this.Proce_verbal_delibationLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.Proce_verbal_delibationLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_PV_Délibiration
+            // 
+            this.colID_PV_Délibiration.FieldName = "ID_PV_Délibiration";
+            this.colID_PV_Délibiration.Name = "colID_PV_Délibiration";
+            // 
+            // colNum_PV_Délibiraiton
+            // 
+            this.colNum_PV_Délibiraiton.FieldName = "Num_PV_Délibiraiton";
+            this.colNum_PV_Délibiraiton.Name = "colNum_PV_Délibiraiton";
+            this.colNum_PV_Délibiraiton.Visible = true;
+            this.colNum_PV_Délibiraiton.VisibleIndex = 0;
+            // 
+            // colDate_PV_Délibiration
+            // 
+            this.colDate_PV_Délibiration.FieldName = "Date_PV_Délibiration";
+            this.colDate_PV_Délibiration.Name = "colDate_PV_Délibiration";
+            this.colDate_PV_Délibiration.Visible = true;
+            this.colDate_PV_Délibiration.VisibleIndex = 1;
             // 
             // QualiteTextEdit
             // 
@@ -424,5 +539,18 @@
         private DevExpress.XtraBars.BarButtonItem bbiClose;
         private DevExpress.XtraBars.BarButtonItem bbiSaveLayout;
         private DevExpress.XtraBars.BarButtonItem bbiResetLayout;
+        private DevExpress.XtraGrid.Columns.GridColumn colid_Enseignant;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colprenom;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colNiveau;
+        private DevExpress.XtraGrid.Columns.GridColumn colPoste;
+        private DevExpress.XtraGrid.Columns.GridColumn colPoste_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colSpecialite;
+        private DevExpress.XtraGrid.Columns.GridColumn colMode_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_PV_Délibiration;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_PV_Délibiraiton;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_PV_Délibiration;
     }
 }

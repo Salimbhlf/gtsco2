@@ -244,6 +244,7 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "Proce_verbal_delibationCollectionView";
+            this.Text = "Procès verbal de deliberation ";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proce_verbal_delibationCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();

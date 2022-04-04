@@ -24,6 +24,7 @@
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
+            this.pARTICIPECollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -32,23 +33,22 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
+            this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
             this.bbiNew = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEdit = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
-            this.pARTICIPECollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pARTICIPECollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pARTICIPECollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,10 @@
             this.gridControl.TabIndex = 2;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
+            // 
+            // pARTICIPECollectionViewBindingSource
+            // 
+            this.pARTICIPECollectionViewBindingSource.DataSource = typeof(gtsco2.basededonne.PARTICIPE);
             // 
             // gridView
             // 
@@ -124,13 +128,13 @@
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
+            this.ribbonControl.SearchEditItem,
             this.bbiPrintPreview,
             this.bsiRecordsCount,
             this.bbiNew,
             this.bbiEdit,
             this.bbiDelete,
-            this.bbiRefresh,
-            this.ribbonControl.SearchEditItem});
+            this.bbiRefresh});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.MaxItemId = 20;
             this.ribbonControl.Name = "ribbonControl";
@@ -142,25 +146,18 @@
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
-            // ribbonPage1
+            // bbiPrintPreview
             // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
-            this.ribbonPage1.MergeOrder = 0;
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Fichier ";
+            this.bbiPrintPreview.Caption = "Enregistrer et imprimer ";
+            this.bbiPrintPreview.Id = 14;
+            this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
+            this.bbiPrintPreview.Name = "bbiPrintPreview";
             // 
-            // ribbonPageGroup1
+            // bsiRecordsCount
             // 
-            this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiNew);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiEdit);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Gestion des participants ";
+            this.bsiRecordsCount.Caption = "RECORDS : 2";
+            this.bsiRecordsCount.Id = 15;
+            this.bsiRecordsCount.Name = "bsiRecordsCount";
             // 
             // bbiNew
             // 
@@ -190,6 +187,26 @@
             this.bbiRefresh.ImageOptions.ImageUri.Uri = "Refresh";
             this.bbiRefresh.Name = "bbiRefresh";
             // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
+            this.ribbonPage1.MergeOrder = 0;
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Fichier ";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiNew);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiEdit);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Gestion des participants ";
+            // 
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
@@ -198,22 +215,13 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Enregistrer et imprimer ";
             // 
-            // bbiPrintPreview
+            // ribbonStatusBar
             // 
-            this.bbiPrintPreview.Caption = "Enregistrer et imprimer ";
-            this.bbiPrintPreview.Id = 14;
-            this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
-            this.bbiPrintPreview.Name = "bbiPrintPreview";
-            // 
-            // bsiRecordsCount
-            // 
-            this.bsiRecordsCount.Caption = "RECORDS : 2";
-            this.bsiRecordsCount.Id = 15;
-            this.bsiRecordsCount.Name = "bsiRecordsCount";
-            // 
-            // pARTICIPECollectionViewBindingSource
-            // 
-            this.pARTICIPECollectionViewBindingSource.DataSource = typeof(gtsco2.basededonne.PARTICIPE);
+            this.ribbonStatusBar.ItemLinks.Add(this.bsiRecordsCount);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 709);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbonControl;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1022, 27);
             // 
             // mvvmContext
             // 
@@ -226,14 +234,6 @@
             this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
             DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.Default, this.gridControl)});
             this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.PARTICIPECollectionViewModel);
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.ItemLinks.Add(this.bsiRecordsCount);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 709);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1022, 27);
             // 
             // popupMenu
             // 
@@ -253,10 +253,11 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "PARTICIPECollectionView";
+            this.Text = "Membre du jury ";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pARTICIPECollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pARTICIPECollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu)).EndInit();
             this.ResumeLayout(false);

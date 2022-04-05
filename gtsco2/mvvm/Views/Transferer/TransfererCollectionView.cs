@@ -6,6 +6,7 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraEditors;
 using DevExpress.Utils.MVVM.Services;
 using DevExpress.XtraBars;
+using System.Data;
 
 namespace gtsco2.mvvm.Views.TransfererCollectionView{
     public partial class TransfererCollectionView : XtraForm
@@ -44,5 +45,7 @@ namespace gtsco2.mvvm.Views.TransfererCollectionView{
                 }
             };
         }
+
+        
     }
 }

@@ -25,22 +25,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransfererView));
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.transfererViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EtablissementLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.transfererViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EtablissementBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.EtablissementLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.StagiairLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.StagiairBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.EtablissementLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ItemForID_etb = new DevExpress.XtraLayout.LayoutControlItem();
             this.StagiairLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ItemFornum_stg = new DevExpress.XtraLayout.LayoutControlItem();
             this.nom_directeurTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemFornom_directeur = new DevExpress.XtraLayout.LayoutControlItem();
             this.prenom_directeurTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForprenom_directeur = new DevExpress.XtraLayout.LayoutControlItem();
             this.date_transfertDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForID_etb = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemFornum_stg = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemFornom_directeur = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForprenom_directeur = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemFordate_transfert = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
@@ -56,25 +56,27 @@
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transfererViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EtablissementLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transfererViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EtablissementBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EtablissementLookUpEditView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EtablissementLookUpEditView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_etb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairLookUpEditView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemFornum_stg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nom_directeurTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemFornom_directeur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prenom_directeurTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForprenom_directeur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_transfertDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_transfertDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_etb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemFornum_stg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemFornom_directeur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForprenom_directeur)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemFordate_transfert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
@@ -93,22 +95,8 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 129);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 639);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(849, 209);
             this.dataLayoutControl1.TabIndex = 0;
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2});
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 639);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // transfererViewBindingSource
-            // 
-            this.transfererViewBindingSource.DataSource = typeof(gtsco2.basededonne.Transferer);
             // 
             // EtablissementLookUpEdit
             // 
@@ -122,13 +110,24 @@
             this.EtablissementLookUpEdit.Properties.DisplayMember = "Nom_ETAB";
             this.EtablissementLookUpEdit.Properties.PopupView = this.EtablissementLookUpEditView;
             this.EtablissementLookUpEdit.Properties.ValueMember = "ID_ETAB";
-            this.EtablissementLookUpEdit.Size = new System.Drawing.Size(871, 20);
+            this.EtablissementLookUpEdit.Size = new System.Drawing.Size(696, 20);
             this.EtablissementLookUpEdit.StyleController = this.dataLayoutControl1;
             this.EtablissementLookUpEdit.TabIndex = 4;
+            // 
+            // transfererViewBindingSource
+            // 
+            this.transfererViewBindingSource.DataSource = typeof(gtsco2.basededonne.Transferer);
             // 
             // EtablissementBindingSource
             // 
             this.EtablissementBindingSource.DataSource = typeof(gtsco2.basededonne.Etablissement);
+            // 
+            // EtablissementLookUpEditView
+            // 
+            this.EtablissementLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.EtablissementLookUpEditView.Name = "EtablissementLookUpEditView";
+            this.EtablissementLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.EtablissementLookUpEditView.OptionsView.ShowGroupPanel = false;
             // 
             // StagiairLookUpEdit
             // 
@@ -142,13 +141,63 @@
             this.StagiairLookUpEdit.Properties.DisplayMember = "Num_STG";
             this.StagiairLookUpEdit.Properties.PopupView = this.StagiairLookUpEditView;
             this.StagiairLookUpEdit.Properties.ValueMember = "Num_STG";
-            this.StagiairLookUpEdit.Size = new System.Drawing.Size(871, 20);
+            this.StagiairLookUpEdit.Size = new System.Drawing.Size(696, 20);
             this.StagiairLookUpEdit.StyleController = this.dataLayoutControl1;
             this.StagiairLookUpEdit.TabIndex = 5;
             // 
             // StagiairBindingSource
             // 
             this.StagiairBindingSource.DataSource = typeof(gtsco2.basededonne.Stagiair);
+            // 
+            // StagiairLookUpEditView
+            // 
+            this.StagiairLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.StagiairLookUpEditView.Name = "StagiairLookUpEditView";
+            this.StagiairLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.StagiairLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // nom_directeurTextEdit
+            // 
+            this.nom_directeurTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.transfererViewBindingSource, "nom_directeur", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nom_directeurTextEdit.Location = new System.Drawing.Point(141, 60);
+            this.nom_directeurTextEdit.Name = "nom_directeurTextEdit";
+            this.nom_directeurTextEdit.Size = new System.Drawing.Size(696, 20);
+            this.nom_directeurTextEdit.StyleController = this.dataLayoutControl1;
+            this.nom_directeurTextEdit.TabIndex = 6;
+            // 
+            // prenom_directeurTextEdit
+            // 
+            this.prenom_directeurTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.transfererViewBindingSource, "prenom_directeur", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.prenom_directeurTextEdit.Location = new System.Drawing.Point(141, 84);
+            this.prenom_directeurTextEdit.Name = "prenom_directeurTextEdit";
+            this.prenom_directeurTextEdit.Size = new System.Drawing.Size(696, 20);
+            this.prenom_directeurTextEdit.StyleController = this.dataLayoutControl1;
+            this.prenom_directeurTextEdit.TabIndex = 7;
+            // 
+            // date_transfertDateEdit
+            // 
+            this.date_transfertDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.transfererViewBindingSource, "date_transfert", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.date_transfertDateEdit.EditValue = null;
+            this.date_transfertDateEdit.Location = new System.Drawing.Point(141, 108);
+            this.date_transfertDateEdit.Name = "date_transfertDateEdit";
+            this.date_transfertDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.date_transfertDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_transfertDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_transfertDateEdit.Size = new System.Drawing.Size(696, 20);
+            this.date_transfertDateEdit.StyleController = this.dataLayoutControl1;
+            this.date_transfertDateEdit.TabIndex = 8;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(849, 209);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
             // 
@@ -162,97 +211,50 @@
             this.ItemFordate_transfert});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 619);
-            // 
-            // EtablissementLookUpEditView
-            // 
-            this.EtablissementLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.EtablissementLookUpEditView.Name = "EtablissementLookUpEditView";
-            this.EtablissementLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.EtablissementLookUpEditView.OptionsView.ShowGroupPanel = false;
+            this.layoutControlGroup2.Size = new System.Drawing.Size(829, 189);
             // 
             // ItemForID_etb
             // 
             this.ItemForID_etb.Control = this.EtablissementLookUpEdit;
             this.ItemForID_etb.Location = new System.Drawing.Point(0, 0);
             this.ItemForID_etb.Name = "ItemForID_etb";
-            this.ItemForID_etb.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForID_etb.Size = new System.Drawing.Size(829, 24);
             this.ItemForID_etb.Text = "Numéro d\'établissement ";
             this.ItemForID_etb.TextSize = new System.Drawing.Size(117, 13);
-            // 
-            // StagiairLookUpEditView
-            // 
-            this.StagiairLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.StagiairLookUpEditView.Name = "StagiairLookUpEditView";
-            this.StagiairLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.StagiairLookUpEditView.OptionsView.ShowGroupPanel = false;
             // 
             // ItemFornum_stg
             // 
             this.ItemFornum_stg.Control = this.StagiairLookUpEdit;
             this.ItemFornum_stg.Location = new System.Drawing.Point(0, 24);
             this.ItemFornum_stg.Name = "ItemFornum_stg";
-            this.ItemFornum_stg.Size = new System.Drawing.Size(1004, 24);
+            this.ItemFornum_stg.Size = new System.Drawing.Size(829, 24);
             this.ItemFornum_stg.Text = "Numero du stagiaire";
             this.ItemFornum_stg.TextSize = new System.Drawing.Size(117, 13);
-            // 
-            // nom_directeurTextEdit
-            // 
-            this.nom_directeurTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.transfererViewBindingSource, "nom_directeur", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.nom_directeurTextEdit.Location = new System.Drawing.Point(141, 60);
-            this.nom_directeurTextEdit.Name = "nom_directeurTextEdit";
-            this.nom_directeurTextEdit.Size = new System.Drawing.Size(871, 20);
-            this.nom_directeurTextEdit.StyleController = this.dataLayoutControl1;
-            this.nom_directeurTextEdit.TabIndex = 6;
             // 
             // ItemFornom_directeur
             // 
             this.ItemFornom_directeur.Control = this.nom_directeurTextEdit;
             this.ItemFornom_directeur.Location = new System.Drawing.Point(0, 48);
             this.ItemFornom_directeur.Name = "ItemFornom_directeur";
-            this.ItemFornom_directeur.Size = new System.Drawing.Size(1004, 24);
+            this.ItemFornom_directeur.Size = new System.Drawing.Size(829, 24);
             this.ItemFornom_directeur.Text = "Nom du directeur";
             this.ItemFornom_directeur.TextSize = new System.Drawing.Size(117, 13);
-            // 
-            // prenom_directeurTextEdit
-            // 
-            this.prenom_directeurTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.transfererViewBindingSource, "prenom_directeur", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.prenom_directeurTextEdit.Location = new System.Drawing.Point(141, 84);
-            this.prenom_directeurTextEdit.Name = "prenom_directeurTextEdit";
-            this.prenom_directeurTextEdit.Size = new System.Drawing.Size(871, 20);
-            this.prenom_directeurTextEdit.StyleController = this.dataLayoutControl1;
-            this.prenom_directeurTextEdit.TabIndex = 7;
             // 
             // ItemForprenom_directeur
             // 
             this.ItemForprenom_directeur.Control = this.prenom_directeurTextEdit;
             this.ItemForprenom_directeur.Location = new System.Drawing.Point(0, 72);
             this.ItemForprenom_directeur.Name = "ItemForprenom_directeur";
-            this.ItemForprenom_directeur.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForprenom_directeur.Size = new System.Drawing.Size(829, 24);
             this.ItemForprenom_directeur.Text = "Prénom du directeur";
             this.ItemForprenom_directeur.TextSize = new System.Drawing.Size(117, 13);
-            // 
-            // date_transfertDateEdit
-            // 
-            this.date_transfertDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.transfererViewBindingSource, "date_transfert", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.date_transfertDateEdit.EditValue = null;
-            this.date_transfertDateEdit.Location = new System.Drawing.Point(141, 108);
-            this.date_transfertDateEdit.Name = "date_transfertDateEdit";
-            this.date_transfertDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.date_transfertDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_transfertDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_transfertDateEdit.Size = new System.Drawing.Size(871, 20);
-            this.date_transfertDateEdit.StyleController = this.dataLayoutControl1;
-            this.date_transfertDateEdit.TabIndex = 8;
             // 
             // ItemFordate_transfert
             // 
             this.ItemFordate_transfert.Control = this.date_transfertDateEdit;
             this.ItemFordate_transfert.Location = new System.Drawing.Point(0, 96);
             this.ItemFordate_transfert.Name = "ItemFordate_transfert";
-            this.ItemFordate_transfert.Size = new System.Drawing.Size(1004, 523);
+            this.ItemFordate_transfert.Size = new System.Drawing.Size(829, 93);
             this.ItemFordate_transfert.Text = "Date du transfert";
             this.ItemFordate_transfert.TextSize = new System.Drawing.Size(117, 13);
             // 
@@ -333,6 +335,7 @@
             this.mainRibbonControl.ExpandCollapseItem.Id = 0;
             this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.mainRibbonControl.ExpandCollapseItem,
+            this.mainRibbonControl.SearchEditItem,
             this.bbiCustomize,
             this.bbiSave,
             this.bbiSaveAndClose,
@@ -342,15 +345,15 @@
             this.bbiClose,
             this.bbiSaveLayout,
             this.bbiResetLayout,
-            this.mainRibbonControl.SearchEditItem});
+            this.barButtonItem1});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 10;
+            this.mainRibbonControl.MaxItemId = 11;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 129);
+            this.mainRibbonControl.Size = new System.Drawing.Size(849, 129);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -364,7 +367,8 @@
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
+            this.ribbonPageGroupLayout,
+            this.ribbonPageGroup1});
             this.mainRibbonPage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mainRibbonPage.ImageOptions.Image")));
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
@@ -392,6 +396,19 @@
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Personnaliser la fenêtre";
             // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "imprem Desision";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // TransfererView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,26 +417,26 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "TransfererView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(849, 338);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transfererViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EtablissementLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transfererViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EtablissementBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EtablissementLookUpEditView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairLookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EtablissementLookUpEditView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_etb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairLookUpEditView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemFornum_stg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nom_directeurTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemFornom_directeur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prenom_directeurTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForprenom_directeur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_transfertDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_transfertDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_etb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemFornum_stg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemFornom_directeur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForprenom_directeur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemFordate_transfert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
@@ -462,5 +479,7 @@
         private DevExpress.XtraBars.BarButtonItem bbiClose;
         private DevExpress.XtraBars.BarButtonItem bbiSaveLayout;
         private DevExpress.XtraBars.BarButtonItem bbiResetLayout;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }

@@ -45,10 +45,10 @@ namespace gtsco2.forms.Décisions
             foreach (var row in qur.ToList())
             {
 
-                labe1.Text = ("-نـظرا للمحضـر المـــؤرخ يـوم " + row.datevalidation.Value.ToString("MM/dd/yyyy")
+                labe1.Text = ("-نـظرا للمحضـر المـــؤرخ يـوم " + row.datevalidation.Value.ToString("dd/MM/yyyy")
                     + " تحت رقـــم " + row.numcont + " والمتضمـن فتــح فــرع تـقنـي ســامي فــي اختصــاص ألمعلوماتية خيار قاعدة المعطيات  ");
 
-                xrLabel2.Text = ("- وتبـعـــا لقـــرار محضــر اجتمــاع مجلــس الأساتــذة المنعقد يوم" + row.datepv.Value.ToString("MM/dd/yyyy"));
+                xrLabel2.Text = ("- وتبـعـــا لقـــرار محضــر اجتمــاع مجلــس الأساتــذة المنعقد يوم" + row.datepv.Value.ToString("dd/MM/yyyy"));
 
                 label03.Text = ("المـادة الأولـى : يعـيـــد المتمهن  " + row.nom + "(" + " السداسي "+row.smstr + ")");
                 labelsp04.Text = row.sps;

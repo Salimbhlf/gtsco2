@@ -39,7 +39,6 @@
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.Type_EmpTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Nature_EmpTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Nom_EmpTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Nom_Emp_arTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -202,18 +201,18 @@
             this.ItemForNom_Emp_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForAdresse_Emp = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForAdresse_Emp_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForType_Emp = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.Avenant_contrat_prorogationPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.Maitre_ApprentissagePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.Contract_avenant_changementPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ID_EmpTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeurViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Type_EmpTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nature_EmpTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nom_EmpTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nom_Emp_arTextEdit.Properties)).BeginInit();
@@ -284,19 +283,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Emp_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_Emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_Emp_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForType_Emp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avenant_contrat_prorogationPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissagePopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contract_avenant_changementPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayoutControl1
             // 
             this.dataLayoutControl1.AllowCustomization = false;
             this.dataLayoutControl1.Controls.Add(this.ID_EmpTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.Type_EmpTextEdit);
             this.dataLayoutControl1.Controls.Add(this.Nature_EmpTextEdit);
             this.dataLayoutControl1.Controls.Add(this.Nom_EmpTextEdit);
             this.dataLayoutControl1.Controls.Add(this.Nom_Emp_arTextEdit);
@@ -319,12 +318,13 @@
             this.dataLayoutControl1.Controls.Add(this.Contract_avenant_changementXtraUserControl);
             this.dataLayoutControl1.Controls.Add(this.Maitre_ApprentissageXtraUserControl);
             this.dataLayoutControl1.Controls.Add(this.StagiairsXtraUserControl);
+            this.dataLayoutControl1.Controls.Add(this.comboBoxEdit1);
             this.dataLayoutControl1.DataSource = this.employeurViewBindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(970, 415);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(970, 528);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // ID_EmpTextEdit
@@ -339,9 +339,10 @@
             this.ID_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.ID_EmpTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ID_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.ID_EmpTextEdit.Size = new System.Drawing.Size(203, 20);
             this.ID_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_EmpTextEdit.TabIndex = 4;
+            this.ID_EmpTextEdit.EditValueChanged += new System.EventHandler(this.ID_EmpTextEdit_EditValueChanged);
             // 
             // employeurViewBindingSource
             // 
@@ -466,23 +467,13 @@
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
             // 
-            // Type_EmpTextEdit
-            // 
-            this.Type_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Type_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Type_EmpTextEdit.Location = new System.Drawing.Point(279, 180);
-            this.Type_EmpTextEdit.MenuManager = this.mainRibbonControl;
-            this.Type_EmpTextEdit.Name = "Type_EmpTextEdit";
-            this.Type_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
-            this.Type_EmpTextEdit.StyleController = this.dataLayoutControl1;
-            this.Type_EmpTextEdit.TabIndex = 5;
-            // 
             // Nature_EmpTextEdit
             // 
             this.Nature_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Nature_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nature_EmpTextEdit.Location = new System.Drawing.Point(279, 228);
+            this.Nature_EmpTextEdit.Location = new System.Drawing.Point(753, 108);
             this.Nature_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Nature_EmpTextEdit.Name = "Nature_EmpTextEdit";
-            this.Nature_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Nature_EmpTextEdit.Size = new System.Drawing.Size(205, 20);
             this.Nature_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Nature_EmpTextEdit.TabIndex = 6;
             // 
@@ -492,28 +483,28 @@
             this.Nom_EmpTextEdit.Location = new System.Drawing.Point(279, 36);
             this.Nom_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_EmpTextEdit.Name = "Nom_EmpTextEdit";
-            this.Nom_EmpTextEdit.Size = new System.Drawing.Size(276, 20);
+            this.Nom_EmpTextEdit.Size = new System.Drawing.Size(340, 20);
             this.Nom_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_EmpTextEdit.TabIndex = 7;
             // 
             // Nom_Emp_arTextEdit
             // 
             this.Nom_Emp_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Nom_Emp_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_Emp_arTextEdit.Location = new System.Drawing.Point(559, 36);
+            this.Nom_Emp_arTextEdit.Location = new System.Drawing.Point(623, 36);
             this.Nom_Emp_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_Emp_arTextEdit.Name = "Nom_Emp_arTextEdit";
             this.Nom_Emp_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Nom_Emp_arTextEdit.Size = new System.Drawing.Size(328, 20);
+            this.Nom_Emp_arTextEdit.Size = new System.Drawing.Size(281, 20);
             this.Nom_Emp_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_Emp_arTextEdit.TabIndex = 8;
             // 
             // Statut_EmpTextEdit
             // 
             this.Statut_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Statut_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Statut_EmpTextEdit.Location = new System.Drawing.Point(279, 204);
+            this.Statut_EmpTextEdit.Location = new System.Drawing.Point(279, 108);
             this.Statut_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Statut_EmpTextEdit.Name = "Statut_EmpTextEdit";
-            this.Statut_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Statut_EmpTextEdit.Size = new System.Drawing.Size(203, 20);
             this.Statut_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Statut_EmpTextEdit.TabIndex = 9;
             // 
@@ -523,18 +514,18 @@
             this.Adresse_EmpTextEdit.Location = new System.Drawing.Point(279, 60);
             this.Adresse_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Adresse_EmpTextEdit.Name = "Adresse_EmpTextEdit";
-            this.Adresse_EmpTextEdit.Size = new System.Drawing.Size(276, 20);
+            this.Adresse_EmpTextEdit.Size = new System.Drawing.Size(340, 20);
             this.Adresse_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Adresse_EmpTextEdit.TabIndex = 10;
             // 
             // Adresse_Emp_arTextEdit
             // 
             this.Adresse_Emp_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Adresse_Emp_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Adresse_Emp_arTextEdit.Location = new System.Drawing.Point(559, 60);
+            this.Adresse_Emp_arTextEdit.Location = new System.Drawing.Point(623, 60);
             this.Adresse_Emp_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Adresse_Emp_arTextEdit.Name = "Adresse_Emp_arTextEdit";
             this.Adresse_Emp_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Adresse_Emp_arTextEdit.Size = new System.Drawing.Size(296, 20);
+            this.Adresse_Emp_arTextEdit.Size = new System.Drawing.Size(249, 20);
             this.Adresse_Emp_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Adresse_Emp_arTextEdit.TabIndex = 11;
             // 
@@ -554,7 +545,7 @@
             this.Code_PostalLookUpEdit.Properties.PopupView = this.Code_PostalLookUpEditView;
             this.Code_PostalLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.Code_PostalLookUpEdit.Properties.ValueMember = "ID_Code_Postal";
-            this.Code_PostalLookUpEdit.Size = new System.Drawing.Size(662, 20);
+            this.Code_PostalLookUpEdit.Size = new System.Drawing.Size(679, 20);
             this.Code_PostalLookUpEdit.StyleController = this.dataLayoutControl1;
             this.Code_PostalLookUpEdit.TabIndex = 12;
             // 
@@ -613,24 +604,24 @@
             // Tel_EmpTextEdit
             // 
             this.Tel_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Tel_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Tel_EmpTextEdit.Location = new System.Drawing.Point(279, 108);
+            this.Tel_EmpTextEdit.Location = new System.Drawing.Point(279, 132);
             this.Tel_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Tel_EmpTextEdit.Name = "Tel_EmpTextEdit";
             this.Tel_EmpTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.Tel_EmpTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.Tel_EmpTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Tel_EmpTextEdit.Properties.Mask.EditMask = "N0";
-            this.Tel_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Tel_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.Tel_EmpTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.Tel_EmpTextEdit.Properties.MaskSettings.Set("mask", "N0");
             this.Tel_EmpTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Tel_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Tel_EmpTextEdit.Size = new System.Drawing.Size(203, 20);
             this.Tel_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Tel_EmpTextEdit.TabIndex = 13;
             // 
             // Fax_EmpTextEdit
             // 
             this.Fax_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Fax_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Fax_EmpTextEdit.Location = new System.Drawing.Point(279, 132);
+            this.Fax_EmpTextEdit.Location = new System.Drawing.Point(753, 132);
             this.Fax_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Fax_EmpTextEdit.Name = "Fax_EmpTextEdit";
             this.Fax_EmpTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -640,7 +631,7 @@
             this.Fax_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Fax_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Fax_EmpTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Fax_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Fax_EmpTextEdit.Size = new System.Drawing.Size(205, 20);
             this.Fax_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Fax_EmpTextEdit.TabIndex = 14;
             // 
@@ -650,35 +641,35 @@
             this.Mail_EmpTextEdit.Location = new System.Drawing.Point(279, 156);
             this.Mail_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Mail_EmpTextEdit.Name = "Mail_EmpTextEdit";
-            this.Mail_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Mail_EmpTextEdit.Size = new System.Drawing.Size(679, 20);
             this.Mail_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Mail_EmpTextEdit.TabIndex = 15;
             // 
             // Fonction_EmpTextEdit
             // 
             this.Fonction_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Fonction_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Fonction_EmpTextEdit.Location = new System.Drawing.Point(279, 252);
+            this.Fonction_EmpTextEdit.Location = new System.Drawing.Point(279, 180);
             this.Fonction_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Fonction_EmpTextEdit.Name = "Fonction_EmpTextEdit";
-            this.Fonction_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Fonction_EmpTextEdit.Size = new System.Drawing.Size(203, 20);
             this.Fonction_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Fonction_EmpTextEdit.TabIndex = 16;
             // 
             // Secteur_Activité_EmpTextEdit
             // 
             this.Secteur_Activité_EmpTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Secteur_Activité_Emp", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Secteur_Activité_EmpTextEdit.Location = new System.Drawing.Point(279, 276);
+            this.Secteur_Activité_EmpTextEdit.Location = new System.Drawing.Point(753, 180);
             this.Secteur_Activité_EmpTextEdit.MenuManager = this.mainRibbonControl;
             this.Secteur_Activité_EmpTextEdit.Name = "Secteur_Activité_EmpTextEdit";
             this.Secteur_Activité_EmpTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Secteur_Activité_EmpTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Secteur_Activité_EmpTextEdit.Size = new System.Drawing.Size(205, 20);
             this.Secteur_Activité_EmpTextEdit.StyleController = this.dataLayoutControl1;
             this.Secteur_Activité_EmpTextEdit.TabIndex = 17;
             // 
             // Effectif_TrvTextEdit
             // 
             this.Effectif_TrvTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Effectif_Trv", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Effectif_TrvTextEdit.Location = new System.Drawing.Point(279, 300);
+            this.Effectif_TrvTextEdit.Location = new System.Drawing.Point(753, 204);
             this.Effectif_TrvTextEdit.MenuManager = this.mainRibbonControl;
             this.Effectif_TrvTextEdit.Name = "Effectif_TrvTextEdit";
             this.Effectif_TrvTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -688,14 +679,14 @@
             this.Effectif_TrvTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Effectif_TrvTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Effectif_TrvTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Effectif_TrvTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Effectif_TrvTextEdit.Size = new System.Drawing.Size(205, 20);
             this.Effectif_TrvTextEdit.StyleController = this.dataLayoutControl1;
             this.Effectif_TrvTextEdit.TabIndex = 18;
             // 
             // Effectif_aptTextEdit
             // 
             this.Effectif_aptTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Effectif_apt", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Effectif_aptTextEdit.Location = new System.Drawing.Point(279, 324);
+            this.Effectif_aptTextEdit.Location = new System.Drawing.Point(279, 204);
             this.Effectif_aptTextEdit.MenuManager = this.mainRibbonControl;
             this.Effectif_aptTextEdit.Name = "Effectif_aptTextEdit";
             this.Effectif_aptTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -705,14 +696,15 @@
             this.Effectif_aptTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Effectif_aptTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Effectif_aptTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Effectif_aptTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Effectif_aptTextEdit.Size = new System.Drawing.Size(203, 20);
             this.Effectif_aptTextEdit.StyleController = this.dataLayoutControl1;
             this.Effectif_aptTextEdit.TabIndex = 19;
+            this.Effectif_aptTextEdit.EditValueChanged += new System.EventHandler(this.Effectif_aptTextEdit_EditValueChanged);
             // 
             // Quota_maxTextEdit
             // 
             this.Quota_maxTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Quota_max", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Quota_maxTextEdit.Location = new System.Drawing.Point(279, 348);
+            this.Quota_maxTextEdit.Location = new System.Drawing.Point(279, 228);
             this.Quota_maxTextEdit.MenuManager = this.mainRibbonControl;
             this.Quota_maxTextEdit.Name = "Quota_maxTextEdit";
             this.Quota_maxTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -722,14 +714,14 @@
             this.Quota_maxTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Quota_maxTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Quota_maxTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Quota_maxTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Quota_maxTextEdit.Size = new System.Drawing.Size(203, 20);
             this.Quota_maxTextEdit.StyleController = this.dataLayoutControl1;
             this.Quota_maxTextEdit.TabIndex = 20;
             // 
             // Qouta_MINTextEdit
             // 
             this.Qouta_MINTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Qouta_MIN", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Qouta_MINTextEdit.Location = new System.Drawing.Point(279, 372);
+            this.Qouta_MINTextEdit.Location = new System.Drawing.Point(753, 228);
             this.Qouta_MINTextEdit.MenuManager = this.mainRibbonControl;
             this.Qouta_MINTextEdit.Name = "Qouta_MINTextEdit";
             this.Qouta_MINTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -739,29 +731,30 @@
             this.Qouta_MINTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Qouta_MINTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Qouta_MINTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Qouta_MINTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Qouta_MINTextEdit.Size = new System.Drawing.Size(205, 20);
             this.Qouta_MINTextEdit.StyleController = this.dataLayoutControl1;
             this.Qouta_MINTextEdit.TabIndex = 21;
             // 
             // Existance_une_structure_de_formationCheckEdit
             // 
             this.Existance_une_structure_de_formationCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Existance_une_structure_de_formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Existance_une_structure_de_formationCheckEdit.Location = new System.Drawing.Point(12, 396);
+            this.Existance_une_structure_de_formationCheckEdit.Location = new System.Drawing.Point(486, 252);
             this.Existance_une_structure_de_formationCheckEdit.MenuManager = this.mainRibbonControl;
             this.Existance_une_structure_de_formationCheckEdit.Name = "Existance_une_structure_de_formationCheckEdit";
             this.Existance_une_structure_de_formationCheckEdit.Properties.Caption = "Existance d\'une structure de formation";
             this.Existance_une_structure_de_formationCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
-            this.Existance_une_structure_de_formationCheckEdit.Size = new System.Drawing.Size(929, 20);
+            this.Existance_une_structure_de_formationCheckEdit.Size = new System.Drawing.Size(472, 20);
             this.Existance_une_structure_de_formationCheckEdit.StyleController = this.dataLayoutControl1;
             this.Existance_une_structure_de_formationCheckEdit.TabIndex = 22;
+            this.Existance_une_structure_de_formationCheckEdit.CheckedChanged += new System.EventHandler(this.Existance_une_structure_de_formationCheckEdit_CheckedChanged);
             // 
             // Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit
             // 
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Nom_et_prenom_et_fonction_de_responsble_de_la_steucture", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Location = new System.Drawing.Point(279, 420);
+            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Location = new System.Drawing.Point(279, 252);
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.MenuManager = this.mainRibbonControl;
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Name = "Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit";
-            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Size = new System.Drawing.Size(662, 20);
+            this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.Size = new System.Drawing.Size(203, 20);
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.StyleController = this.dataLayoutControl1;
             this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit.TabIndex = 23;
             // 
@@ -772,10 +765,10 @@
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl4);
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl2);
             this.Avenant_contrat_prorogationXtraUserControl.Controls.Add(this.barDockControl1);
-            this.Avenant_contrat_prorogationXtraUserControl.Location = new System.Drawing.Point(24, 479);
+            this.Avenant_contrat_prorogationXtraUserControl.Location = new System.Drawing.Point(24, 311);
             this.Avenant_contrat_prorogationXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Avenant_contrat_prorogationXtraUserControl.Name = "Avenant_contrat_prorogationXtraUserControl";
-            this.Avenant_contrat_prorogationXtraUserControl.Size = new System.Drawing.Size(905, 100);
+            this.Avenant_contrat_prorogationXtraUserControl.Size = new System.Drawing.Size(922, 193);
             this.Avenant_contrat_prorogationXtraUserControl.TabIndex = 24;
             // 
             // Avenant_contrat_prorogationGridControl
@@ -786,7 +779,7 @@
             this.Avenant_contrat_prorogationGridControl.MainView = this.Avenant_contrat_prorogationGridView;
             this.Avenant_contrat_prorogationGridControl.MenuManager = this.mainRibbonControl;
             this.Avenant_contrat_prorogationGridControl.Name = "Avenant_contrat_prorogationGridControl";
-            this.Avenant_contrat_prorogationGridControl.Size = new System.Drawing.Size(905, 76);
+            this.Avenant_contrat_prorogationGridControl.Size = new System.Drawing.Size(922, 169);
             this.Avenant_contrat_prorogationGridControl.TabIndex = 0;
             this.Avenant_contrat_prorogationGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Avenant_contrat_prorogationGridView});
@@ -877,7 +870,7 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 24);
             this.barDockControl3.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 76);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 169);
             // 
             // Avenant_contrat_prorogationBarManager
             // 
@@ -950,23 +943,23 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(905, 24);
+            this.barDockControl1.Size = new System.Drawing.Size(922, 24);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 100);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 193);
             this.barDockControl2.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl2.Size = new System.Drawing.Size(905, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(922, 0);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(905, 24);
+            this.barDockControl4.Location = new System.Drawing.Point(922, 24);
             this.barDockControl4.Manager = this.Avenant_contrat_prorogationBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 76);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 169);
             // 
             // Contract_avenant_changementXtraUserControl
             // 
@@ -975,10 +968,10 @@
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl12);
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl10);
             this.Contract_avenant_changementXtraUserControl.Controls.Add(this.barDockControl9);
-            this.Contract_avenant_changementXtraUserControl.Location = new System.Drawing.Point(24, 479);
+            this.Contract_avenant_changementXtraUserControl.Location = new System.Drawing.Point(24, 311);
             this.Contract_avenant_changementXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Contract_avenant_changementXtraUserControl.Name = "Contract_avenant_changementXtraUserControl";
-            this.Contract_avenant_changementXtraUserControl.Size = new System.Drawing.Size(905, 100);
+            this.Contract_avenant_changementXtraUserControl.Size = new System.Drawing.Size(922, 193);
             this.Contract_avenant_changementXtraUserControl.TabIndex = 25;
             // 
             // Contract_avenant_changementGridControl
@@ -989,7 +982,7 @@
             this.Contract_avenant_changementGridControl.MainView = this.Contract_avenant_changementGridView;
             this.Contract_avenant_changementGridControl.MenuManager = this.mainRibbonControl;
             this.Contract_avenant_changementGridControl.Name = "Contract_avenant_changementGridControl";
-            this.Contract_avenant_changementGridControl.Size = new System.Drawing.Size(905, 76);
+            this.Contract_avenant_changementGridControl.Size = new System.Drawing.Size(922, 169);
             this.Contract_avenant_changementGridControl.TabIndex = 0;
             this.Contract_avenant_changementGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Contract_avenant_changementGridView});
@@ -1088,7 +1081,7 @@
             this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl11.Location = new System.Drawing.Point(0, 24);
             this.barDockControl11.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl11.Size = new System.Drawing.Size(0, 76);
+            this.barDockControl11.Size = new System.Drawing.Size(0, 169);
             // 
             // Contract_avenant_changementBarManager
             // 
@@ -1161,23 +1154,23 @@
             this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl9.Location = new System.Drawing.Point(0, 0);
             this.barDockControl9.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl9.Size = new System.Drawing.Size(905, 24);
+            this.barDockControl9.Size = new System.Drawing.Size(922, 24);
             // 
             // barDockControl10
             // 
             this.barDockControl10.CausesValidation = false;
             this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl10.Location = new System.Drawing.Point(0, 100);
+            this.barDockControl10.Location = new System.Drawing.Point(0, 193);
             this.barDockControl10.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl10.Size = new System.Drawing.Size(905, 0);
+            this.barDockControl10.Size = new System.Drawing.Size(922, 0);
             // 
             // barDockControl12
             // 
             this.barDockControl12.CausesValidation = false;
             this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl12.Location = new System.Drawing.Point(905, 24);
+            this.barDockControl12.Location = new System.Drawing.Point(922, 24);
             this.barDockControl12.Manager = this.Contract_avenant_changementBarManager;
-            this.barDockControl12.Size = new System.Drawing.Size(0, 76);
+            this.barDockControl12.Size = new System.Drawing.Size(0, 169);
             // 
             // Maitre_ApprentissageXtraUserControl
             // 
@@ -1186,10 +1179,10 @@
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl8);
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl6);
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl5);
-            this.Maitre_ApprentissageXtraUserControl.Location = new System.Drawing.Point(24, 479);
+            this.Maitre_ApprentissageXtraUserControl.Location = new System.Drawing.Point(24, 311);
             this.Maitre_ApprentissageXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Maitre_ApprentissageXtraUserControl.Name = "Maitre_ApprentissageXtraUserControl";
-            this.Maitre_ApprentissageXtraUserControl.Size = new System.Drawing.Size(905, 100);
+            this.Maitre_ApprentissageXtraUserControl.Size = new System.Drawing.Size(922, 193);
             this.Maitre_ApprentissageXtraUserControl.TabIndex = 26;
             // 
             // Maitre_ApprentissageGridControl
@@ -1200,7 +1193,7 @@
             this.Maitre_ApprentissageGridControl.MainView = this.Maitre_ApprentissageGridView;
             this.Maitre_ApprentissageGridControl.MenuManager = this.mainRibbonControl;
             this.Maitre_ApprentissageGridControl.Name = "Maitre_ApprentissageGridControl";
-            this.Maitre_ApprentissageGridControl.Size = new System.Drawing.Size(905, 76);
+            this.Maitre_ApprentissageGridControl.Size = new System.Drawing.Size(922, 169);
             this.Maitre_ApprentissageGridControl.TabIndex = 0;
             this.Maitre_ApprentissageGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Maitre_ApprentissageGridView});
@@ -1361,7 +1354,7 @@
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl7.Location = new System.Drawing.Point(0, 24);
             this.barDockControl7.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 76);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 169);
             // 
             // Maitre_ApprentissageBarManager
             // 
@@ -1434,23 +1427,23 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl5.Size = new System.Drawing.Size(905, 24);
+            this.barDockControl5.Size = new System.Drawing.Size(922, 24);
             // 
             // barDockControl6
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 100);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 193);
             this.barDockControl6.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl6.Size = new System.Drawing.Size(905, 0);
+            this.barDockControl6.Size = new System.Drawing.Size(922, 0);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(905, 24);
+            this.barDockControl8.Location = new System.Drawing.Point(922, 24);
             this.barDockControl8.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 76);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 169);
             // 
             // StagiairsXtraUserControl
             // 
@@ -1459,10 +1452,10 @@
             this.StagiairsXtraUserControl.Controls.Add(this.barDockControlRight);
             this.StagiairsXtraUserControl.Controls.Add(this.barDockControlBottom);
             this.StagiairsXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 479);
+            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 311);
             this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
-            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(905, 100);
+            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(922, 193);
             this.StagiairsXtraUserControl.TabIndex = 27;
             // 
             // StagiairsGridControl
@@ -1473,7 +1466,7 @@
             this.StagiairsGridControl.MainView = this.StagiairsGridView;
             this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
             this.StagiairsGridControl.Name = "StagiairsGridControl";
-            this.StagiairsGridControl.Size = new System.Drawing.Size(905, 76);
+            this.StagiairsGridControl.Size = new System.Drawing.Size(922, 169);
             this.StagiairsGridControl.TabIndex = 0;
             this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.StagiairsGridView});
@@ -1600,7 +1593,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.StagiairsBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 76);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 169);
             // 
             // StagiairsBarManager
             // 
@@ -1673,23 +1666,23 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.StagiairsBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(905, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(922, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 100);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 193);
             this.barDockControlBottom.Manager = this.StagiairsBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(905, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(922, 0);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(905, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(922, 24);
             this.barDockControlRight.Manager = this.StagiairsBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 76);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 169);
             // 
             // layoutControlGroup1
             // 
@@ -1698,7 +1691,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(953, 603);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(970, 528);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -1707,54 +1700,54 @@
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForCode_Postal_Emp,
-            this.ItemForTel_Emp,
             this.ItemForFax_Emp,
             this.ItemForMail_Emp,
             this.ItemForFonction_Emp,
-            this.ItemForSecteur_Activité_Emp,
-            this.ItemForEffectif_Trv,
-            this.ItemForEffectif_apt,
             this.ItemForQuota_max,
-            this.ItemForQouta_MIN,
             this.ItemForExistance_une_structure_de_formation,
-            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture,
             this.tabbedControlGroup1,
             this.ItemForID_Emp,
             this.ItemForNom_Emp,
-            this.ItemForNature_Emp,
-            this.ItemForStatut_Emp,
             this.ItemForNom_Emp_ar,
             this.ItemForAdresse_Emp,
             this.ItemForAdresse_Emp_ar,
-            this.ItemForType_Emp});
+            this.layoutControlItem1,
+            this.ItemForStatut_Emp,
+            this.ItemForTel_Emp,
+            this.ItemForNature_Emp,
+            this.ItemForSecteur_Activité_Emp,
+            this.ItemForEffectif_apt,
+            this.ItemForEffectif_Trv,
+            this.ItemForQouta_MIN,
+            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(933, 583);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(950, 508);
             // 
             // ItemForCode_Postal_Emp
             // 
             this.ItemForCode_Postal_Emp.Control = this.Code_PostalLookUpEdit;
             this.ItemForCode_Postal_Emp.Location = new System.Drawing.Point(0, 72);
             this.ItemForCode_Postal_Emp.Name = "ItemForCode_Postal_Emp";
-            this.ItemForCode_Postal_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForCode_Postal_Emp.Size = new System.Drawing.Size(950, 24);
             this.ItemForCode_Postal_Emp.Text = "Code postal de l\'employeur ";
             this.ItemForCode_Postal_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForTel_Emp
             // 
             this.ItemForTel_Emp.Control = this.Tel_EmpTextEdit;
-            this.ItemForTel_Emp.Location = new System.Drawing.Point(0, 96);
+            this.ItemForTel_Emp.Location = new System.Drawing.Point(0, 120);
             this.ItemForTel_Emp.Name = "ItemForTel_Emp";
-            this.ItemForTel_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForTel_Emp.Size = new System.Drawing.Size(474, 24);
             this.ItemForTel_Emp.Text = "Téléphone de l\'employeur ";
             this.ItemForTel_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForFax_Emp
             // 
             this.ItemForFax_Emp.Control = this.Fax_EmpTextEdit;
-            this.ItemForFax_Emp.Location = new System.Drawing.Point(0, 120);
+            this.ItemForFax_Emp.Location = new System.Drawing.Point(474, 120);
             this.ItemForFax_Emp.Name = "ItemForFax_Emp";
-            this.ItemForFax_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForFax_Emp.Size = new System.Drawing.Size(476, 24);
             this.ItemForFax_Emp.Text = "Fax de l\'employeur ";
             this.ItemForFax_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
@@ -1763,70 +1756,70 @@
             this.ItemForMail_Emp.Control = this.Mail_EmpTextEdit;
             this.ItemForMail_Emp.Location = new System.Drawing.Point(0, 144);
             this.ItemForMail_Emp.Name = "ItemForMail_Emp";
-            this.ItemForMail_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForMail_Emp.Size = new System.Drawing.Size(950, 24);
             this.ItemForMail_Emp.Text = "E-mail de l\'employeur ";
             this.ItemForMail_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForFonction_Emp
             // 
             this.ItemForFonction_Emp.Control = this.Fonction_EmpTextEdit;
-            this.ItemForFonction_Emp.Location = new System.Drawing.Point(0, 240);
+            this.ItemForFonction_Emp.Location = new System.Drawing.Point(0, 168);
             this.ItemForFonction_Emp.Name = "ItemForFonction_Emp";
-            this.ItemForFonction_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForFonction_Emp.Size = new System.Drawing.Size(474, 24);
             this.ItemForFonction_Emp.Text = "Fonction de l\'employeur ";
             this.ItemForFonction_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForSecteur_Activité_Emp
             // 
             this.ItemForSecteur_Activité_Emp.Control = this.Secteur_Activité_EmpTextEdit;
-            this.ItemForSecteur_Activité_Emp.Location = new System.Drawing.Point(0, 264);
+            this.ItemForSecteur_Activité_Emp.Location = new System.Drawing.Point(474, 168);
             this.ItemForSecteur_Activité_Emp.Name = "ItemForSecteur_Activité_Emp";
-            this.ItemForSecteur_Activité_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForSecteur_Activité_Emp.Size = new System.Drawing.Size(476, 24);
             this.ItemForSecteur_Activité_Emp.Text = "Secteur d\'activité de l\'employeur ";
             this.ItemForSecteur_Activité_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForEffectif_Trv
             // 
             this.ItemForEffectif_Trv.Control = this.Effectif_TrvTextEdit;
-            this.ItemForEffectif_Trv.Location = new System.Drawing.Point(0, 288);
+            this.ItemForEffectif_Trv.Location = new System.Drawing.Point(474, 192);
             this.ItemForEffectif_Trv.Name = "ItemForEffectif_Trv";
-            this.ItemForEffectif_Trv.Size = new System.Drawing.Size(933, 24);
+            this.ItemForEffectif_Trv.Size = new System.Drawing.Size(476, 24);
             this.ItemForEffectif_Trv.Text = "Effectif des travailleur dans l\'entreprise";
             this.ItemForEffectif_Trv.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForEffectif_apt
             // 
             this.ItemForEffectif_apt.Control = this.Effectif_aptTextEdit;
-            this.ItemForEffectif_apt.Location = new System.Drawing.Point(0, 312);
+            this.ItemForEffectif_apt.Location = new System.Drawing.Point(0, 192);
             this.ItemForEffectif_apt.Name = "ItemForEffectif_apt";
-            this.ItemForEffectif_apt.Size = new System.Drawing.Size(933, 24);
+            this.ItemForEffectif_apt.Size = new System.Drawing.Size(474, 24);
             this.ItemForEffectif_apt.Text = "Effectif des stagiaires dans l\'entreprise";
             this.ItemForEffectif_apt.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForQuota_max
             // 
             this.ItemForQuota_max.Control = this.Quota_maxTextEdit;
-            this.ItemForQuota_max.Location = new System.Drawing.Point(0, 336);
+            this.ItemForQuota_max.Location = new System.Drawing.Point(0, 216);
             this.ItemForQuota_max.Name = "ItemForQuota_max";
-            this.ItemForQuota_max.Size = new System.Drawing.Size(933, 24);
+            this.ItemForQuota_max.Size = new System.Drawing.Size(474, 24);
             this.ItemForQuota_max.Text = "Quota maximum";
             this.ItemForQuota_max.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForQouta_MIN
             // 
             this.ItemForQouta_MIN.Control = this.Qouta_MINTextEdit;
-            this.ItemForQouta_MIN.Location = new System.Drawing.Point(0, 360);
+            this.ItemForQouta_MIN.Location = new System.Drawing.Point(474, 216);
             this.ItemForQouta_MIN.Name = "ItemForQouta_MIN";
-            this.ItemForQouta_MIN.Size = new System.Drawing.Size(933, 24);
+            this.ItemForQouta_MIN.Size = new System.Drawing.Size(476, 24);
             this.ItemForQouta_MIN.Text = "Quota minimum";
             this.ItemForQouta_MIN.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForExistance_une_structure_de_formation
             // 
             this.ItemForExistance_une_structure_de_formation.Control = this.Existance_une_structure_de_formationCheckEdit;
-            this.ItemForExistance_une_structure_de_formation.Location = new System.Drawing.Point(0, 384);
+            this.ItemForExistance_une_structure_de_formation.Location = new System.Drawing.Point(474, 240);
             this.ItemForExistance_une_structure_de_formation.Name = "ItemForExistance_une_structure_de_formation";
-            this.ItemForExistance_une_structure_de_formation.Size = new System.Drawing.Size(933, 24);
+            this.ItemForExistance_une_structure_de_formation.Size = new System.Drawing.Size(476, 24);
             this.ItemForExistance_une_structure_de_formation.Text = "Existance_une_structure_de_formation";
             this.ItemForExistance_une_structure_de_formation.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForExistance_une_structure_de_formation.TextVisible = false;
@@ -1834,24 +1827,25 @@
             // ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture
             // 
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Control = this.Nom_et_prenom_et_fonction_de_responsble_de_la_steuctureTextEdit;
-            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Location = new System.Drawing.Point(0, 408);
+            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Location = new System.Drawing.Point(0, 240);
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Name = "ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture";
-            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Size = new System.Drawing.Size(933, 24);
+            this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Size = new System.Drawing.Size(474, 24);
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Text = "Nom/ prénom/ fonction du responsble de la steucture";
             this.ItemForNom_et_prenom_et_fonction_de_responsble_de_la_steucture.TextSize = new System.Drawing.Size(255, 13);
             // 
             // tabbedControlGroup1
             // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 432);
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 264);
             this.tabbedControlGroup1.Name = "autoGroupForTabs";
             this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup6;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(933, 151);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(950, 244);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3,
             this.layoutControlGroup4,
             this.layoutControlGroup5,
             this.layoutControlGroup6});
             this.tabbedControlGroup1.Text = "Tabs";
+            this.tabbedControlGroup1.TextLocation = DevExpress.Utils.Locations.Default;
             // 
             // layoutControlGroup6
             // 
@@ -1859,7 +1853,7 @@
             this.ItemForStagiairs});
             this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup6.Name = "autoGroupForStagiairs";
-            this.layoutControlGroup6.Size = new System.Drawing.Size(909, 104);
+            this.layoutControlGroup6.Size = new System.Drawing.Size(926, 197);
             this.layoutControlGroup6.Text = "Stagiaires";
             // 
             // ItemForStagiairs
@@ -1867,7 +1861,7 @@
             this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
             this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
             this.ItemForStagiairs.Name = "ItemForStagiairs";
-            this.ItemForStagiairs.Size = new System.Drawing.Size(909, 104);
+            this.ItemForStagiairs.Size = new System.Drawing.Size(926, 197);
             this.ItemForStagiairs.StartNewLine = true;
             this.ItemForStagiairs.Text = "Stagiairs";
             this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
@@ -1879,7 +1873,7 @@
             this.ItemForAvenant_contrat_prorogation});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForAvenant_contrat_prorogation";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(909, 104);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(926, 197);
             this.layoutControlGroup3.Text = "Avenant de contrat de prorogation";
             // 
             // ItemForAvenant_contrat_prorogation
@@ -1887,7 +1881,7 @@
             this.ItemForAvenant_contrat_prorogation.Control = this.Avenant_contrat_prorogationXtraUserControl;
             this.ItemForAvenant_contrat_prorogation.Location = new System.Drawing.Point(0, 0);
             this.ItemForAvenant_contrat_prorogation.Name = "ItemForAvenant_contrat_prorogation";
-            this.ItemForAvenant_contrat_prorogation.Size = new System.Drawing.Size(909, 104);
+            this.ItemForAvenant_contrat_prorogation.Size = new System.Drawing.Size(926, 197);
             this.ItemForAvenant_contrat_prorogation.StartNewLine = true;
             this.ItemForAvenant_contrat_prorogation.Text = "Avenant_contrat_prorogation";
             this.ItemForAvenant_contrat_prorogation.TextSize = new System.Drawing.Size(0, 0);
@@ -1899,7 +1893,7 @@
             this.ItemForContract_avenant_changement});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "autoGroupForContract_avenant_changement";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(909, 104);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(926, 197);
             this.layoutControlGroup4.Text = "Avenant de contract changement d\'employeur ";
             // 
             // ItemForContract_avenant_changement
@@ -1907,7 +1901,7 @@
             this.ItemForContract_avenant_changement.Control = this.Contract_avenant_changementXtraUserControl;
             this.ItemForContract_avenant_changement.Location = new System.Drawing.Point(0, 0);
             this.ItemForContract_avenant_changement.Name = "ItemForContract_avenant_changement";
-            this.ItemForContract_avenant_changement.Size = new System.Drawing.Size(909, 104);
+            this.ItemForContract_avenant_changement.Size = new System.Drawing.Size(926, 197);
             this.ItemForContract_avenant_changement.StartNewLine = true;
             this.ItemForContract_avenant_changement.Text = "Contract_avenant_changement";
             this.ItemForContract_avenant_changement.TextSize = new System.Drawing.Size(0, 0);
@@ -1919,7 +1913,7 @@
             this.ItemForMaitre_Apprentissage});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "autoGroupForMaitre_Apprentissage";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(909, 104);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(926, 197);
             this.layoutControlGroup5.Text = "Maitre Apprentissage";
             // 
             // ItemForMaitre_Apprentissage
@@ -1927,7 +1921,7 @@
             this.ItemForMaitre_Apprentissage.Control = this.Maitre_ApprentissageXtraUserControl;
             this.ItemForMaitre_Apprentissage.Location = new System.Drawing.Point(0, 0);
             this.ItemForMaitre_Apprentissage.Name = "ItemForMaitre_Apprentissage";
-            this.ItemForMaitre_Apprentissage.Size = new System.Drawing.Size(909, 104);
+            this.ItemForMaitre_Apprentissage.Size = new System.Drawing.Size(926, 197);
             this.ItemForMaitre_Apprentissage.StartNewLine = true;
             this.ItemForMaitre_Apprentissage.Text = "Maitre_Apprentissage";
             this.ItemForMaitre_Apprentissage.TextSize = new System.Drawing.Size(0, 0);
@@ -1938,7 +1932,7 @@
             this.ItemForID_Emp.Control = this.ID_EmpTextEdit;
             this.ItemForID_Emp.Location = new System.Drawing.Point(0, 0);
             this.ItemForID_Emp.Name = "ItemForID_Emp";
-            this.ItemForID_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForID_Emp.Size = new System.Drawing.Size(474, 24);
             this.ItemForID_Emp.Text = "Numéro de l\'employeur ";
             this.ItemForID_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
@@ -1947,34 +1941,34 @@
             this.ItemForNom_Emp.Control = this.Nom_EmpTextEdit;
             this.ItemForNom_Emp.Location = new System.Drawing.Point(0, 24);
             this.ItemForNom_Emp.Name = "ItemForNom_Emp";
-            this.ItemForNom_Emp.Size = new System.Drawing.Size(547, 24);
+            this.ItemForNom_Emp.Size = new System.Drawing.Size(611, 24);
             this.ItemForNom_Emp.Text = "Employeur ";
             this.ItemForNom_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForNature_Emp
             // 
             this.ItemForNature_Emp.Control = this.Nature_EmpTextEdit;
-            this.ItemForNature_Emp.Location = new System.Drawing.Point(0, 216);
+            this.ItemForNature_Emp.Location = new System.Drawing.Point(474, 96);
             this.ItemForNature_Emp.Name = "ItemForNature_Emp";
-            this.ItemForNature_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForNature_Emp.Size = new System.Drawing.Size(476, 24);
             this.ItemForNature_Emp.Text = "Nature de l\'employeur ";
             this.ItemForNature_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForStatut_Emp
             // 
             this.ItemForStatut_Emp.Control = this.Statut_EmpTextEdit;
-            this.ItemForStatut_Emp.Location = new System.Drawing.Point(0, 192);
+            this.ItemForStatut_Emp.Location = new System.Drawing.Point(0, 96);
             this.ItemForStatut_Emp.Name = "ItemForStatut_Emp";
-            this.ItemForStatut_Emp.Size = new System.Drawing.Size(933, 24);
+            this.ItemForStatut_Emp.Size = new System.Drawing.Size(474, 24);
             this.ItemForStatut_Emp.Text = "Statut de l\'employeur ";
             this.ItemForStatut_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForNom_Emp_ar
             // 
             this.ItemForNom_Emp_ar.Control = this.Nom_Emp_arTextEdit;
-            this.ItemForNom_Emp_ar.Location = new System.Drawing.Point(547, 24);
+            this.ItemForNom_Emp_ar.Location = new System.Drawing.Point(611, 24);
             this.ItemForNom_Emp_ar.Name = "ItemForNom_Emp_ar";
-            this.ItemForNom_Emp_ar.Size = new System.Drawing.Size(386, 24);
+            this.ItemForNom_Emp_ar.Size = new System.Drawing.Size(339, 24);
             this.ItemForNom_Emp_ar.Text = "المستخدم";
             this.ItemForNom_Emp_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.ItemForNom_Emp_ar.TextLocation = DevExpress.Utils.Locations.Right;
@@ -1986,30 +1980,21 @@
             this.ItemForAdresse_Emp.Control = this.Adresse_EmpTextEdit;
             this.ItemForAdresse_Emp.Location = new System.Drawing.Point(0, 48);
             this.ItemForAdresse_Emp.Name = "ItemForAdresse_Emp";
-            this.ItemForAdresse_Emp.Size = new System.Drawing.Size(547, 24);
+            this.ItemForAdresse_Emp.Size = new System.Drawing.Size(611, 24);
             this.ItemForAdresse_Emp.Text = "Adresse de l\'employeur ";
             this.ItemForAdresse_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForAdresse_Emp_ar
             // 
             this.ItemForAdresse_Emp_ar.Control = this.Adresse_Emp_arTextEdit;
-            this.ItemForAdresse_Emp_ar.Location = new System.Drawing.Point(547, 48);
+            this.ItemForAdresse_Emp_ar.Location = new System.Drawing.Point(611, 48);
             this.ItemForAdresse_Emp_ar.Name = "ItemForAdresse_Emp_ar";
-            this.ItemForAdresse_Emp_ar.Size = new System.Drawing.Size(386, 24);
+            this.ItemForAdresse_Emp_ar.Size = new System.Drawing.Size(339, 24);
             this.ItemForAdresse_Emp_ar.Text = " عنوان المستخدم";
             this.ItemForAdresse_Emp_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.ItemForAdresse_Emp_ar.TextLocation = DevExpress.Utils.Locations.Right;
             this.ItemForAdresse_Emp_ar.TextSize = new System.Drawing.Size(81, 13);
             this.ItemForAdresse_Emp_ar.TextToControlDistance = 5;
-            // 
-            // ItemForType_Emp
-            // 
-            this.ItemForType_Emp.Control = this.Type_EmpTextEdit;
-            this.ItemForType_Emp.Location = new System.Drawing.Point(0, 168);
-            this.ItemForType_Emp.Name = "ItemForType_Emp";
-            this.ItemForType_Emp.Size = new System.Drawing.Size(933, 24);
-            this.ItemForType_Emp.Text = "Type de l\'employeur ";
-            this.ItemForType_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // mvvmContext
             // 
@@ -2067,6 +2052,30 @@
             this.Contract_avenant_changementPopUpMenu.Manager = this.Contract_avenant_changementBarManager;
             this.Contract_avenant_changementPopUpMenu.Name = "Contract_avenant_changementPopUpMenu";
             // 
+            // comboBoxEdit1
+            // 
+            this.comboBoxEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.employeurViewBindingSource, "Type_Emp", true));
+            this.comboBoxEdit1.Location = new System.Drawing.Point(753, 12);
+            this.comboBoxEdit1.MenuManager = this.mainRibbonControl;
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            "Privé",
+            "Public"});
+            this.comboBoxEdit1.Size = new System.Drawing.Size(205, 20);
+            this.comboBoxEdit1.StyleController = this.dataLayoutControl1;
+            this.comboBoxEdit1.TabIndex = 28;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.comboBoxEdit1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(474, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(476, 24);
+            this.layoutControlItem1.Text = "Type de l\'employeur ";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(255, 13);
+            // 
             // EmployeurView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2075,13 +2084,12 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "EmployeurView";
-            this.Size = new System.Drawing.Size(970, 541);
+            this.Size = new System.Drawing.Size(970, 654);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ID_EmpTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeurViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Type_EmpTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nature_EmpTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nom_EmpTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nom_Emp_arTextEdit.Properties)).EndInit();
@@ -2156,12 +2164,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_Emp_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_Emp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_Emp_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForType_Emp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Avenant_contrat_prorogationPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissagePopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contract_avenant_changementPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2229,7 +2238,6 @@
         private DevExpress.XtraBars.BarButtonItem bbiClose;
         private DevExpress.XtraBars.BarButtonItem bbiSaveLayout;
         private DevExpress.XtraBars.BarButtonItem bbiResetLayout;
-        private DevExpress.XtraEditors.TextEdit Type_EmpTextEdit;
         private DevExpress.XtraEditors.TextEdit Nature_EmpTextEdit;
         private DevExpress.XtraEditors.TextEdit Nom_EmpTextEdit;
         private DevExpress.XtraEditors.TextEdit Nom_Emp_arTextEdit;
@@ -2306,7 +2314,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
-        private DevExpress.XtraLayout.LayoutControlItem ItemForType_Emp;
         private DevExpress.XtraLayout.LayoutControlItem ItemForNom_Emp;
         private DevExpress.XtraLayout.LayoutControlItem ItemForNom_Emp_ar;
         private DevExpress.XtraLayout.LayoutControlItem ItemForStatut_Emp;
@@ -2354,5 +2361,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPost_adresse;
         private DevExpress.XtraGrid.Columns.GridColumn colCommune_id;
         private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }

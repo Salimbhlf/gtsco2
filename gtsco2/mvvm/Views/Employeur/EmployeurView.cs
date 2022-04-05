@@ -124,5 +124,20 @@ namespace gtsco2.mvvm.Views.EmployeurView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void ID_EmpTextEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Effectif_aptTextEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Existance_une_structure_de_formationCheckEdit_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

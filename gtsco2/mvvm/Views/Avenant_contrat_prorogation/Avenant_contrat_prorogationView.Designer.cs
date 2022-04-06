@@ -29,9 +29,45 @@
             this.avenant_contrat_prorogationViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StagiairBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StagiairLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSexe = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Emp1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coloption = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colmodeformation = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EmployeurLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.EmployeurBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EmployeurLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colType_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNature_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_Emp_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStatut_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdresse_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdresse_Emp_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Postal_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTel_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFax_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMail_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFonction_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSecteur_Activité_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEffectif_Trv = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEffectif_apt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQuota_max = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQouta_MIN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colExistance_une_structure_de_formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_et_prenom_et_fonction_de_responsble_de_la_steucture = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAvenant_contrat_prorogation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Postal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colContract_avenant_changement = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMaitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiairs = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Num_validation_cont_proroTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.date_validation_cont_proroDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.DureeTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -57,11 +93,11 @@
             this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairLookUpEdit.Properties)).BeginInit();
@@ -135,10 +171,99 @@
             // 
             // StagiairLookUpEditView
             // 
+            this.StagiairLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colNum_STG,
+            this.colNom,
+            this.colPrenom,
+            this.colPromo,
+            this.colSection,
+            this.colSexe,
+            this.colNom_ar,
+            this.colPrenom_ar,
+            this.colID_Emp1,
+            this.coloption,
+            this.colmodeformation});
             this.StagiairLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.StagiairLookUpEditView.Name = "StagiairLookUpEditView";
             this.StagiairLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.StagiairLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colNum_STG
+            // 
+            this.colNum_STG.FieldName = "Num_STG";
+            this.colNum_STG.Name = "colNum_STG";
+            this.colNum_STG.Visible = true;
+            this.colNum_STG.VisibleIndex = 1;
+            // 
+            // colNom
+            // 
+            this.colNom.FieldName = "Nom";
+            this.colNom.Name = "colNom";
+            this.colNom.Visible = true;
+            this.colNom.VisibleIndex = 0;
+            // 
+            // colPrenom
+            // 
+            this.colPrenom.FieldName = "Prenom";
+            this.colPrenom.Name = "colPrenom";
+            this.colPrenom.Visible = true;
+            this.colPrenom.VisibleIndex = 2;
+            // 
+            // colPromo
+            // 
+            this.colPromo.FieldName = "Promo.Code_Promo";
+            this.colPromo.Name = "colPromo";
+            this.colPromo.Visible = true;
+            this.colPromo.VisibleIndex = 5;
+            // 
+            // colSection
+            // 
+            this.colSection.FieldName = "Section1.Code_Section";
+            this.colSection.Name = "colSection";
+            this.colSection.Visible = true;
+            this.colSection.VisibleIndex = 6;
+            // 
+            // colSexe
+            // 
+            this.colSexe.FieldName = "Sexe";
+            this.colSexe.Name = "colSexe";
+            // 
+            // colNom_ar
+            // 
+            this.colNom_ar.FieldName = "Nom_ar";
+            this.colNom_ar.Name = "colNom_ar";
+            this.colNom_ar.Visible = true;
+            this.colNom_ar.VisibleIndex = 7;
+            // 
+            // colPrenom_ar
+            // 
+            this.colPrenom_ar.FieldName = "Prenom_ar";
+            this.colPrenom_ar.Name = "colPrenom_ar";
+            this.colPrenom_ar.Visible = true;
+            this.colPrenom_ar.VisibleIndex = 8;
+            // 
+            // colID_Emp1
+            // 
+            this.colID_Emp1.FieldName = "ID_Emp";
+            this.colID_Emp1.Name = "colID_Emp1";
+            this.colID_Emp1.Visible = true;
+            this.colID_Emp1.VisibleIndex = 9;
+            // 
+            // coloption
+            // 
+            this.coloption.Caption = "option";
+            this.coloption.FieldName = "Promo.Option.Designation_Option";
+            this.coloption.Name = "coloption";
+            this.coloption.Visible = true;
+            this.coloption.VisibleIndex = 4;
+            // 
+            // colmodeformation
+            // 
+            this.colmodeformation.Caption = "mode formation";
+            this.colmodeformation.FieldName = "Promo.Mode_formation.Désignation_Mode_Formation";
+            this.colmodeformation.Name = "colmodeformation";
+            this.colmodeformation.Visible = true;
+            this.colmodeformation.VisibleIndex = 3;
             // 
             // EmployeurLookUpEdit
             // 
@@ -148,7 +273,7 @@
             this.EmployeurLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.EmployeurLookUpEdit.Properties.DataSource = this.EmployeurBindingSource;
-            this.EmployeurLookUpEdit.Properties.DisplayMember = "Type_Emp";
+            this.EmployeurLookUpEdit.Properties.DisplayMember = "Nom_Emp";
             this.EmployeurLookUpEdit.Properties.PopupView = this.EmployeurLookUpEditView;
             this.EmployeurLookUpEdit.Properties.ValueMember = "ID_Emp";
             this.EmployeurLookUpEdit.Size = new System.Drawing.Size(742, 20);
@@ -161,10 +286,180 @@
             // 
             // EmployeurLookUpEditView
             // 
+            this.EmployeurLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID_Emp,
+            this.colType_Emp,
+            this.colNature_Emp,
+            this.colNom_Emp,
+            this.colNom_Emp_ar,
+            this.colStatut_Emp,
+            this.colAdresse_Emp,
+            this.colAdresse_Emp_ar,
+            this.colCode_Postal_Emp,
+            this.colTel_Emp,
+            this.colFax_Emp,
+            this.colMail_Emp,
+            this.colFonction_Emp,
+            this.colSecteur_Activité_Emp,
+            this.colEffectif_Trv,
+            this.colEffectif_apt,
+            this.colQuota_max,
+            this.colQouta_MIN,
+            this.colExistance_une_structure_de_formation,
+            this.colNom_et_prenom_et_fonction_de_responsble_de_la_steucture,
+            this.colAvenant_contrat_prorogation,
+            this.colCode_Postal,
+            this.colContract_avenant_changement,
+            this.colMaitre_Apprentissage,
+            this.colStagiairs});
             this.EmployeurLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.EmployeurLookUpEditView.Name = "EmployeurLookUpEditView";
             this.EmployeurLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.EmployeurLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID_Emp
+            // 
+            this.colID_Emp.FieldName = "ID_Emp";
+            this.colID_Emp.Name = "colID_Emp";
+            this.colID_Emp.Visible = true;
+            this.colID_Emp.VisibleIndex = 0;
+            this.colID_Emp.Width = 97;
+            // 
+            // colType_Emp
+            // 
+            this.colType_Emp.FieldName = "Type_Emp";
+            this.colType_Emp.Name = "colType_Emp";
+            this.colType_Emp.Visible = true;
+            this.colType_Emp.VisibleIndex = 3;
+            this.colType_Emp.Width = 82;
+            // 
+            // colNature_Emp
+            // 
+            this.colNature_Emp.FieldName = "Nature_Emp";
+            this.colNature_Emp.Name = "colNature_Emp";
+            this.colNature_Emp.Visible = true;
+            this.colNature_Emp.VisibleIndex = 4;
+            this.colNature_Emp.Width = 82;
+            // 
+            // colNom_Emp
+            // 
+            this.colNom_Emp.FieldName = "Nom_Emp";
+            this.colNom_Emp.Name = "colNom_Emp";
+            this.colNom_Emp.Visible = true;
+            this.colNom_Emp.VisibleIndex = 1;
+            this.colNom_Emp.Width = 127;
+            // 
+            // colNom_Emp_ar
+            // 
+            this.colNom_Emp_ar.FieldName = "Nom_Emp_ar";
+            this.colNom_Emp_ar.Name = "colNom_Emp_ar";
+            this.colNom_Emp_ar.Visible = true;
+            this.colNom_Emp_ar.VisibleIndex = 2;
+            this.colNom_Emp_ar.Width = 126;
+            // 
+            // colStatut_Emp
+            // 
+            this.colStatut_Emp.FieldName = "Statut_Emp";
+            this.colStatut_Emp.Name = "colStatut_Emp";
+            this.colStatut_Emp.Visible = true;
+            this.colStatut_Emp.VisibleIndex = 5;
+            this.colStatut_Emp.Width = 82;
+            // 
+            // colAdresse_Emp
+            // 
+            this.colAdresse_Emp.FieldName = "Adresse_Emp";
+            this.colAdresse_Emp.Name = "colAdresse_Emp";
+            // 
+            // colAdresse_Emp_ar
+            // 
+            this.colAdresse_Emp_ar.FieldName = "Adresse_Emp_ar";
+            this.colAdresse_Emp_ar.Name = "colAdresse_Emp_ar";
+            // 
+            // colCode_Postal_Emp
+            // 
+            this.colCode_Postal_Emp.FieldName = "Code_Postal_Emp";
+            this.colCode_Postal_Emp.Name = "colCode_Postal_Emp";
+            // 
+            // colTel_Emp
+            // 
+            this.colTel_Emp.FieldName = "Tel_Emp";
+            this.colTel_Emp.Name = "colTel_Emp";
+            // 
+            // colFax_Emp
+            // 
+            this.colFax_Emp.FieldName = "Fax_Emp";
+            this.colFax_Emp.Name = "colFax_Emp";
+            // 
+            // colMail_Emp
+            // 
+            this.colMail_Emp.FieldName = "Mail_Emp";
+            this.colMail_Emp.Name = "colMail_Emp";
+            // 
+            // colFonction_Emp
+            // 
+            this.colFonction_Emp.FieldName = "Fonction_Emp";
+            this.colFonction_Emp.Name = "colFonction_Emp";
+            // 
+            // colSecteur_Activité_Emp
+            // 
+            this.colSecteur_Activité_Emp.FieldName = "Secteur_Activité_Emp";
+            this.colSecteur_Activité_Emp.Name = "colSecteur_Activité_Emp";
+            // 
+            // colEffectif_Trv
+            // 
+            this.colEffectif_Trv.FieldName = "Effectif_Trv";
+            this.colEffectif_Trv.Name = "colEffectif_Trv";
+            // 
+            // colEffectif_apt
+            // 
+            this.colEffectif_apt.FieldName = "Effectif_apt";
+            this.colEffectif_apt.Name = "colEffectif_apt";
+            // 
+            // colQuota_max
+            // 
+            this.colQuota_max.FieldName = "Quota_max";
+            this.colQuota_max.Name = "colQuota_max";
+            // 
+            // colQouta_MIN
+            // 
+            this.colQouta_MIN.FieldName = "Qouta_MIN";
+            this.colQouta_MIN.Name = "colQouta_MIN";
+            // 
+            // colExistance_une_structure_de_formation
+            // 
+            this.colExistance_une_structure_de_formation.FieldName = "Existance_une_structure_de_formation";
+            this.colExistance_une_structure_de_formation.Name = "colExistance_une_structure_de_formation";
+            // 
+            // colNom_et_prenom_et_fonction_de_responsble_de_la_steucture
+            // 
+            this.colNom_et_prenom_et_fonction_de_responsble_de_la_steucture.FieldName = "Nom_et_prenom_et_fonction_de_responsble_de_la_steucture";
+            this.colNom_et_prenom_et_fonction_de_responsble_de_la_steucture.Name = "colNom_et_prenom_et_fonction_de_responsble_de_la_steucture";
+            // 
+            // colAvenant_contrat_prorogation
+            // 
+            this.colAvenant_contrat_prorogation.FieldName = "Avenant_contrat_prorogation";
+            this.colAvenant_contrat_prorogation.Name = "colAvenant_contrat_prorogation";
+            // 
+            // colCode_Postal
+            // 
+            this.colCode_Postal.FieldName = "Code_Postal";
+            this.colCode_Postal.Name = "colCode_Postal";
+            // 
+            // colContract_avenant_changement
+            // 
+            this.colContract_avenant_changement.FieldName = "Contract_avenant_changement";
+            this.colContract_avenant_changement.Name = "colContract_avenant_changement";
+            // 
+            // colMaitre_Apprentissage
+            // 
+            this.colMaitre_Apprentissage.FieldName = "Maitre_Apprentissage";
+            this.colMaitre_Apprentissage.Name = "colMaitre_Apprentissage";
+            // 
+            // colStagiairs
+            // 
+            this.colStagiairs.FieldName = "Stagiairs";
+            this.colStagiairs.Name = "colStagiairs";
+            this.colStagiairs.Width = 89;
             // 
             // Num_validation_cont_proroTextEdit
             // 
@@ -437,6 +732,15 @@
             this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
             this.bbiCustomize.Name = "bbiCustomize";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "imprime pv prorgation";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // mainRibbonPage
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -474,15 +778,6 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "imprime pv prorgation";
-            this.barButtonItem1.Id = 10;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // Avenant_contrat_prorogationView
             // 
@@ -566,5 +861,41 @@
         private DevExpress.XtraBars.BarButtonItem bbiResetLayout;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom;
+        private DevExpress.XtraGrid.Columns.GridColumn colPromo;
+        private DevExpress.XtraGrid.Columns.GridColumn colSection;
+        private DevExpress.XtraGrid.Columns.GridColumn colSexe;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Emp1;
+        private DevExpress.XtraGrid.Columns.GridColumn coloption;
+        private DevExpress.XtraGrid.Columns.GridColumn colmodeformation;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colType_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colNature_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_Emp_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colStatut_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colAdresse_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colAdresse_Emp_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Postal_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colTel_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colFax_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colMail_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colFonction_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colSecteur_Activité_Emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colEffectif_Trv;
+        private DevExpress.XtraGrid.Columns.GridColumn colEffectif_apt;
+        private DevExpress.XtraGrid.Columns.GridColumn colQuota_max;
+        private DevExpress.XtraGrid.Columns.GridColumn colQouta_MIN;
+        private DevExpress.XtraGrid.Columns.GridColumn colExistance_une_structure_de_formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_et_prenom_et_fonction_de_responsble_de_la_steucture;
+        private DevExpress.XtraGrid.Columns.GridColumn colAvenant_contrat_prorogation;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Postal;
+        private DevExpress.XtraGrid.Columns.GridColumn colContract_avenant_changement;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiairs;
     }
 }

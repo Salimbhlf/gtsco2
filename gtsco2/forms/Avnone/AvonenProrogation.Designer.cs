@@ -602,22 +602,22 @@ namespace gtsco2.forms.Avnone
             // xrLabelNumCon
             // 
             this.xrLabelNumCon.Font = new System.Drawing.Font("Arial", 9.5F, System.Drawing.FontStyle.Bold);
-            this.xrLabelNumCon.LocationFloat = new DevExpress.Utils.PointFloat(456.8279F, 77.66449F);
+            this.xrLabelNumCon.LocationFloat = new DevExpress.Utils.PointFloat(468.58F, 77.66449F);
             this.xrLabelNumCon.Multiline = true;
             this.xrLabelNumCon.Name = "xrLabelNumCon";
             this.xrLabelNumCon.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabelNumCon.SizeF = new System.Drawing.SizeF(80.83429F, 19.0502F);
+            this.xrLabelNumCon.SizeF = new System.Drawing.SizeF(95.28842F, 19.0502F);
             this.xrLabelNumCon.StylePriority.UseFont = false;
             this.xrLabelNumCon.Text = "xrLabelNomEMp";
             // 
             // xrLabelDVCont
             // 
             this.xrLabelDVCont.Font = new System.Drawing.Font("Arial", 9.5F, System.Drawing.FontStyle.Bold);
-            this.xrLabelDVCont.LocationFloat = new DevExpress.Utils.PointFloat(279.1399F, 77.66449F);
+            this.xrLabelDVCont.LocationFloat = new DevExpress.Utils.PointFloat(318.0287F, 77.66449F);
             this.xrLabelDVCont.Multiline = true;
             this.xrLabelDVCont.Name = "xrLabelDVCont";
             this.xrLabelDVCont.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabelDVCont.SizeF = new System.Drawing.SizeF(128.1046F, 19.0502F);
+            this.xrLabelDVCont.SizeF = new System.Drawing.SizeF(116.2518F, 19.0502F);
             this.xrLabelDVCont.StylePriority.UseFont = false;
             this.xrLabelDVCont.Text = "xrLabelNomEMp";
             // 
@@ -630,7 +630,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelMal.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelMal.SizeF = new System.Drawing.SizeF(17.51311F, 24.33224F);
             this.xrLabelMal.StylePriority.UseFont = false;
-            this.xrLabelMal.Text = "X";
             // 
             // xrLabelFm
             // 
@@ -641,7 +640,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelFm.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelFm.SizeF = new System.Drawing.SizeF(17.51311F, 22.1955F);
             this.xrLabelFm.StylePriority.UseFont = false;
-            this.xrLabelFm.Text = "X";
             // 
             // xrLabelPR
             // 
@@ -660,7 +658,7 @@ namespace gtsco2.forms.Avnone
             this.xrLabelPU.Multiline = true;
             this.xrLabelPU.Name = "xrLabelPU";
             this.xrLabelPU.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabelPU.SizeF = new System.Drawing.SizeF(17.51311F, 24.33224F);
+            this.xrLabelPU.SizeF = new System.Drawing.SizeF(17.51312F, 16.85359F);
             this.xrLabelPU.StylePriority.UseFont = false;
             // 
             // AvonenProrogation

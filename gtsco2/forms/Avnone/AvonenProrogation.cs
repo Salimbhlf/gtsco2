@@ -58,6 +58,7 @@ namespace gtsco2.forms.Avnone
                            preNomTT = titure.prenom,
                            TlfTT = titure.telephone,
                            AdrassTT = titure.adresse,
+                           
 
                            // emploire
 
@@ -138,6 +139,8 @@ namespace gtsco2.forms.Avnone
                         xrLabelEmailEmp.Text = row.Mail_Emp;
                         xrLabelFAxEmp.Text = row.Fax_Emp;
                         xrLabelTLfEmp.Text = row.Tel_Emp;
+                        xrLabelCommunEmp.Text = row.communEmp;
+                        xrLabelCodePEMp.Text = row.codepostEmp;
                         if (row.Type_Emp == "Public")
                         {
                             xrLabelPU.Text = "X";

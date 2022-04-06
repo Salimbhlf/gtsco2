@@ -192,6 +192,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Avnone\AvonenProrogation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Avnone\AvonenProrogation.Designer.cs">
+      <DependentUpon>AvonenProrogation.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Bulletin Semestriel\Bulletin.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -725,6 +731,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Resources\image_viber_2022-03-23_19-13-58-552.png" />
+    <EmbeddedResource Include="forms\Avnone\AvonenProrogation.resx">
+      <DependentUpon>AvonenProrogation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Bulletin Semestriel\Bulletin.resx">
       <DependentUpon>Bulletin.cs</DependentUpon>
     </EmbeddedResource>

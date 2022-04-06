@@ -26,5 +26,14 @@ namespace gtsco2.mvvm.Views.Avenant_contrat_prorogationView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			string numro = StagiairLookUpEdit.EditValue.ToString();
+			int emp = int.Parse(EmployeurLookUpEdit.EditValue.ToString());
+
+			forms.Avnone.AvonenProrogation.printProro(numro, emp);
+			
+        }
     }
 }

@@ -63,7 +63,7 @@ namespace gtsco2.basededonne
         [StringLength(100)]
         public string Observation_handicape { get; set; }
 
-        public int? Telephone { get; set; }
+        public string Telephone { get; set; }
 
         [Column("E-Maile")]
         [StringLength(30)]

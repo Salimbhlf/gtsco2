@@ -20,7 +20,7 @@ namespace gtsco2.basededonne
         public int ID_Code_Postal { get; set; }
 
         [Column("Code_Postal")]
-        public int? Code_Postal1 { get; set; }
+        public string Code_Postal1 { get; set; }
 
         [StringLength(50)]
         public string post_Adresse_ar { get; set; }

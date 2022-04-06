@@ -18,7 +18,7 @@ namespace gtsco2.basededonne
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID_emp { get; set; }
 
-        public int? Num_validation_cont_proro { get; set; }
+        public string Num_validation_cont_proro { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? date_validation_cont_proro { get; set; }

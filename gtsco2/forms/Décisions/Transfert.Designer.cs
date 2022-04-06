@@ -152,7 +152,7 @@ namespace gtsco2.forms.Décisions
             this.label18.SizeF = new System.Drawing.SizeF(220.9162F, 29.91663F);
             this.label18.StylePriority.UseFont = false;
             this.label18.StylePriority.UseTextAlignment = false;
-            this.label18.Text = "تحت رقم  24/2021 ";
+            this.label18.Text = "تحت رقم   ";
             this.label18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label12
@@ -197,7 +197,7 @@ namespace gtsco2.forms.Décisions
             this.label17.SizeF = new System.Drawing.SizeF(228.0416F, 29.91663F);
             this.label17.StylePriority.UseFont = false;
             this.label17.StylePriority.UseTextAlignment = false;
-            this.label17.Text = "المـصــادق علـيـه في 28/03/2021   ";
+            this.label17.Text = "المـصــادق علـيـه في    ";
             this.label17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label20
@@ -289,7 +289,7 @@ namespace gtsco2.forms.Décisions
             this.label8.SizeF = new System.Drawing.SizeF(228.0416F, 29.91663F);
             this.label8.StylePriority.UseFont = false;
             this.label8.StylePriority.UseTextAlignment = false;
-            this.label8.Text = " إبـتـداءا مـن   27/09/2021";
+            this.label8.Text = " إبـتـداءا مـن   ";
             this.label8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label5

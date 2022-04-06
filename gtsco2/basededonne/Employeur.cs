@@ -44,9 +44,9 @@ namespace gtsco2.basededonne
 
         public int? Code_Postal_Emp { get; set; }
 
-        public int? Tel_Emp { get; set; }
+        public string Tel_Emp { get; set; }
 
-        public int? Fax_Emp { get; set; }
+        public string Fax_Emp { get; set; }
 
         [StringLength(30)]
         public string Mail_Emp { get; set; }

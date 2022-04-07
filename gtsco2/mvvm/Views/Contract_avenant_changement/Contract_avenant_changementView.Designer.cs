@@ -23,14 +23,32 @@
         /// </summary>
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contract_avenant_changementView));
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.EmployeurLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.contract_avenant_changementViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EmployeurBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EmployeurLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_Emp_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTel_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNature_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMail_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFonction_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStatut_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colType_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
             this.StagiairLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.StagiairBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.StagiairLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colE_Maile = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NUM_AV_CHANGTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.NUM_AV_VALID_CHANGTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.DATE_AV_VALID_CHANGDateEdit = new DevExpress.XtraEditors.DateEdit();
@@ -58,26 +76,11 @@
             this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colE_Maile = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_Emp_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTel_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNature_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMail_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFonction_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStatut_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colType_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeurLookUpEdit.Properties)).BeginInit();
@@ -127,7 +130,7 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(870, 229);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // EmployeurLookUpEdit
@@ -139,11 +142,11 @@
             this.EmployeurLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.EmployeurLookUpEdit.Properties.DataSource = this.EmployeurBindingSource;
-            this.EmployeurLookUpEdit.Properties.DisplayMember = "Type_Emp";
+            this.EmployeurLookUpEdit.Properties.DisplayMember = "Nom_Emp";
             this.EmployeurLookUpEdit.Properties.PopupView = this.EmployeurLookUpEditView;
             this.EmployeurLookUpEdit.Properties.ValueMember = "ID_Emp";
             this.EmployeurLookUpEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.EmployeurLookUpEdit.Size = new System.Drawing.Size(692, 20);
+            this.EmployeurLookUpEdit.Size = new System.Drawing.Size(538, 20);
             this.EmployeurLookUpEdit.StyleController = this.dataLayoutControl1;
             this.EmployeurLookUpEdit.TabIndex = 4;
             // 
@@ -172,6 +175,65 @@
             this.EmployeurLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.EmployeurLookUpEditView.OptionsView.ShowGroupPanel = false;
             // 
+            // colID_Emp
+            // 
+            this.colID_Emp.FieldName = "ID_Emp";
+            this.colID_Emp.Name = "colID_Emp";
+            // 
+            // colNom_Emp
+            // 
+            this.colNom_Emp.FieldName = "Nom_Emp";
+            this.colNom_Emp.Name = "colNom_Emp";
+            this.colNom_Emp.Visible = true;
+            this.colNom_Emp.VisibleIndex = 0;
+            // 
+            // colNom_Emp_ar
+            // 
+            this.colNom_Emp_ar.FieldName = "Nom_Emp_ar";
+            this.colNom_Emp_ar.Name = "colNom_Emp_ar";
+            // 
+            // colTel_Emp
+            // 
+            this.colTel_Emp.FieldName = "Tel_Emp";
+            this.colTel_Emp.Name = "colTel_Emp";
+            this.colTel_Emp.Visible = true;
+            this.colTel_Emp.VisibleIndex = 1;
+            // 
+            // colNature_Emp
+            // 
+            this.colNature_Emp.FieldName = "Nature_Emp";
+            this.colNature_Emp.Name = "colNature_Emp";
+            this.colNature_Emp.Visible = true;
+            this.colNature_Emp.VisibleIndex = 3;
+            // 
+            // colMail_Emp
+            // 
+            this.colMail_Emp.FieldName = "Mail_Emp";
+            this.colMail_Emp.Name = "colMail_Emp";
+            this.colMail_Emp.Visible = true;
+            this.colMail_Emp.VisibleIndex = 2;
+            // 
+            // colFonction_Emp
+            // 
+            this.colFonction_Emp.FieldName = "Fonction_Emp";
+            this.colFonction_Emp.Name = "colFonction_Emp";
+            this.colFonction_Emp.Visible = true;
+            this.colFonction_Emp.VisibleIndex = 4;
+            // 
+            // colStatut_Emp
+            // 
+            this.colStatut_Emp.FieldName = "Statut_Emp";
+            this.colStatut_Emp.Name = "colStatut_Emp";
+            this.colStatut_Emp.Visible = true;
+            this.colStatut_Emp.VisibleIndex = 5;
+            // 
+            // colType_Emp
+            // 
+            this.colType_Emp.FieldName = "Type_Emp";
+            this.colType_Emp.Name = "colType_Emp";
+            this.colType_Emp.Visible = true;
+            this.colType_Emp.VisibleIndex = 6;
+            // 
             // StagiairLookUpEdit
             // 
             this.StagiairLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.contract_avenant_changementViewBindingSource, "num_stg", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -187,7 +249,7 @@
             this.StagiairLookUpEdit.Properties.PopupView = this.StagiairLookUpEditView;
             this.StagiairLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.StagiairLookUpEdit.Properties.ValueMember = "Num_STG";
-            this.StagiairLookUpEdit.Size = new System.Drawing.Size(692, 20);
+            this.StagiairLookUpEdit.Size = new System.Drawing.Size(538, 20);
             this.StagiairLookUpEdit.StyleController = this.dataLayoutControl1;
             this.StagiairLookUpEdit.TabIndex = 5;
             // 
@@ -211,6 +273,58 @@
             this.StagiairLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.StagiairLookUpEditView.OptionsView.ShowGroupPanel = false;
             // 
+            // colNum_STG
+            // 
+            this.colNum_STG.FieldName = "Num_STG";
+            this.colNum_STG.Name = "colNum_STG";
+            this.colNum_STG.Visible = true;
+            this.colNum_STG.VisibleIndex = 0;
+            // 
+            // colNom
+            // 
+            this.colNom.FieldName = "Nom";
+            this.colNom.Name = "colNom";
+            this.colNom.Visible = true;
+            this.colNom.VisibleIndex = 1;
+            // 
+            // colNom_ar
+            // 
+            this.colNom_ar.FieldName = "Nom_ar";
+            this.colNom_ar.Name = "colNom_ar";
+            // 
+            // colPrenom
+            // 
+            this.colPrenom.FieldName = "Prenom";
+            this.colPrenom.Name = "colPrenom";
+            this.colPrenom.Visible = true;
+            this.colPrenom.VisibleIndex = 2;
+            // 
+            // colPrenom_ar
+            // 
+            this.colPrenom_ar.FieldName = "Prenom_ar";
+            this.colPrenom_ar.Name = "colPrenom_ar";
+            // 
+            // colCommune
+            // 
+            this.colCommune.FieldName = "Commune";
+            this.colCommune.Name = "colCommune";
+            this.colCommune.Visible = true;
+            this.colCommune.VisibleIndex = 3;
+            // 
+            // colTelephone
+            // 
+            this.colTelephone.FieldName = "Telephone";
+            this.colTelephone.Name = "colTelephone";
+            this.colTelephone.Visible = true;
+            this.colTelephone.VisibleIndex = 4;
+            // 
+            // colE_Maile
+            // 
+            this.colE_Maile.FieldName = "E_Maile";
+            this.colE_Maile.Name = "colE_Maile";
+            this.colE_Maile.Visible = true;
+            this.colE_Maile.VisibleIndex = 5;
+            // 
             // NUM_AV_CHANGTextEdit
             // 
             this.NUM_AV_CHANGTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.contract_avenant_changementViewBindingSource, "NUM_AV_CHANG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -223,7 +337,7 @@
             this.NUM_AV_CHANGTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.NUM_AV_CHANGTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.NUM_AV_CHANGTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.NUM_AV_CHANGTextEdit.Size = new System.Drawing.Size(692, 20);
+            this.NUM_AV_CHANGTextEdit.Size = new System.Drawing.Size(538, 20);
             this.NUM_AV_CHANGTextEdit.StyleController = this.dataLayoutControl1;
             this.NUM_AV_CHANGTextEdit.TabIndex = 6;
             // 
@@ -239,7 +353,7 @@
             this.NUM_AV_VALID_CHANGTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.NUM_AV_VALID_CHANGTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.NUM_AV_VALID_CHANGTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.NUM_AV_VALID_CHANGTextEdit.Size = new System.Drawing.Size(692, 20);
+            this.NUM_AV_VALID_CHANGTextEdit.Size = new System.Drawing.Size(538, 20);
             this.NUM_AV_VALID_CHANGTextEdit.StyleController = this.dataLayoutControl1;
             this.NUM_AV_VALID_CHANGTextEdit.TabIndex = 7;
             // 
@@ -256,7 +370,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_AV_VALID_CHANGDateEdit.Properties.NullValuePrompt = "Séléctionnez la date de validation";
             this.DATE_AV_VALID_CHANGDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.DATE_AV_VALID_CHANGDateEdit.Size = new System.Drawing.Size(692, 20);
+            this.DATE_AV_VALID_CHANGDateEdit.Size = new System.Drawing.Size(538, 20);
             this.DATE_AV_VALID_CHANGDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_AV_VALID_CHANGDateEdit.TabIndex = 8;
             // 
@@ -272,7 +386,7 @@
             this.DATE_DBT_FORMA_CHANGDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_DBT_FORMA_CHANGDateEdit.Properties.NullValuePrompt = "Séléctionnez la date du début de la formation aprés le changement";
-            this.DATE_DBT_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(692, 20);
+            this.DATE_DBT_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(538, 20);
             this.DATE_DBT_FORMA_CHANGDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_DBT_FORMA_CHANGDateEdit.TabIndex = 9;
             // 
@@ -288,7 +402,7 @@
             this.DATE_FIN_FORMA_CHANGDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_FIN_FORMA_CHANGDateEdit.Properties.NullValuePrompt = "Séléctionnez la date du début de la formation aprés le changement";
-            this.DATE_FIN_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(692, 20);
+            this.DATE_FIN_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(538, 20);
             this.DATE_FIN_FORMA_CHANGDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_FIN_FORMA_CHANGDateEdit.TabIndex = 10;
             // 
@@ -304,7 +418,7 @@
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Properties.NullValuePrompt = "Séléctionnez la date de fin de la formation avec l\'ancien employeur";
-            this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Size = new System.Drawing.Size(692, 20);
+            this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Size = new System.Drawing.Size(538, 20);
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.TabIndex = 11;
             // 
@@ -315,7 +429,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(870, 229);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -333,14 +447,14 @@
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(850, 209);
             // 
             // ItemForid_emp
             // 
             this.ItemForid_emp.Control = this.EmployeurLookUpEdit;
             this.ItemForid_emp.Location = new System.Drawing.Point(0, 0);
             this.ItemForid_emp.Name = "ItemForid_emp";
-            this.ItemForid_emp.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForid_emp.Size = new System.Drawing.Size(850, 24);
             this.ItemForid_emp.Text = "Numéro d\'employeur ";
             this.ItemForid_emp.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -349,7 +463,7 @@
             this.ItemFornum_stg.Control = this.StagiairLookUpEdit;
             this.ItemFornum_stg.Location = new System.Drawing.Point(0, 24);
             this.ItemFornum_stg.Name = "ItemFornum_stg";
-            this.ItemFornum_stg.Size = new System.Drawing.Size(1004, 24);
+            this.ItemFornum_stg.Size = new System.Drawing.Size(850, 24);
             this.ItemFornum_stg.Text = "Numéro du stagiaire";
             this.ItemFornum_stg.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -358,7 +472,7 @@
             this.ItemForNUM_AV_CHANG.Control = this.NUM_AV_CHANGTextEdit;
             this.ItemForNUM_AV_CHANG.Location = new System.Drawing.Point(0, 48);
             this.ItemForNUM_AV_CHANG.Name = "ItemForNUM_AV_CHANG";
-            this.ItemForNUM_AV_CHANG.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForNUM_AV_CHANG.Size = new System.Drawing.Size(850, 24);
             this.ItemForNUM_AV_CHANG.Text = "Numéro de l\'avenant de contrat  changement d\'employeur ";
             this.ItemForNUM_AV_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -367,7 +481,7 @@
             this.ItemForNUM_AV_VALID_CHANG.Control = this.NUM_AV_VALID_CHANGTextEdit;
             this.ItemForNUM_AV_VALID_CHANG.Location = new System.Drawing.Point(0, 72);
             this.ItemForNUM_AV_VALID_CHANG.Name = "ItemForNUM_AV_VALID_CHANG";
-            this.ItemForNUM_AV_VALID_CHANG.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForNUM_AV_VALID_CHANG.Size = new System.Drawing.Size(850, 24);
             this.ItemForNUM_AV_VALID_CHANG.Text = "Numéro de validation de l\'avenant de contrat de changement ";
             this.ItemForNUM_AV_VALID_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -376,7 +490,7 @@
             this.ItemForDATE_AV_VALID_CHANG.Control = this.DATE_AV_VALID_CHANGDateEdit;
             this.ItemForDATE_AV_VALID_CHANG.Location = new System.Drawing.Point(0, 96);
             this.ItemForDATE_AV_VALID_CHANG.Name = "ItemForDATE_AV_VALID_CHANG";
-            this.ItemForDATE_AV_VALID_CHANG.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForDATE_AV_VALID_CHANG.Size = new System.Drawing.Size(850, 24);
             this.ItemForDATE_AV_VALID_CHANG.Text = "Date de validation l\'avenant de contrat de changement";
             this.ItemForDATE_AV_VALID_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -385,7 +499,7 @@
             this.ItemForDATE_DBT_FORMA_CHANG.Control = this.DATE_DBT_FORMA_CHANGDateEdit;
             this.ItemForDATE_DBT_FORMA_CHANG.Location = new System.Drawing.Point(0, 120);
             this.ItemForDATE_DBT_FORMA_CHANG.Name = "ItemForDATE_DBT_FORMA_CHANG";
-            this.ItemForDATE_DBT_FORMA_CHANG.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForDATE_DBT_FORMA_CHANG.Size = new System.Drawing.Size(850, 24);
             this.ItemForDATE_DBT_FORMA_CHANG.Text = "Date début de formation aprés changement d\'employeur ";
             this.ItemForDATE_DBT_FORMA_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -394,7 +508,7 @@
             this.ItemForDATE_FIN_FORMA_CHANG.Control = this.DATE_FIN_FORMA_CHANGDateEdit;
             this.ItemForDATE_FIN_FORMA_CHANG.Location = new System.Drawing.Point(0, 144);
             this.ItemForDATE_FIN_FORMA_CHANG.Name = "ItemForDATE_FIN_FORMA_CHANG";
-            this.ItemForDATE_FIN_FORMA_CHANG.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForDATE_FIN_FORMA_CHANG.Size = new System.Drawing.Size(850, 24);
             this.ItemForDATE_FIN_FORMA_CHANG.Text = "Date fin de formation aprés changement d\'employeur ";
             this.ItemForDATE_FIN_FORMA_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -403,7 +517,7 @@
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Control = this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit;
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Location = new System.Drawing.Point(0, 168);
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Name = "ItemForDATE_FIN_FORMA_ANCIEN_EMP";
-            this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Size = new System.Drawing.Size(1004, 454);
+            this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Size = new System.Drawing.Size(850, 41);
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Text = "Date fin de formation avec l\'ancien employeur  ";
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -493,15 +607,16 @@
             this.bbiDelete,
             this.bbiClose,
             this.bbiSaveLayout,
-            this.bbiResetLayout});
+            this.bbiResetLayout,
+            this.barButtonItem1});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 10;
+            this.mainRibbonControl.MaxItemId = 11;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
+            this.mainRibbonControl.Size = new System.Drawing.Size(870, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -511,11 +626,21 @@
             this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
             this.bbiCustomize.Name = "bbiCustomize";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "impren raporte";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // mainRibbonPage
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
+            this.ribbonPageGroupLayout,
+            this.ribbonPageGroup1});
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
             this.mainRibbonPage.Text = "Fichier ";
@@ -542,116 +667,11 @@
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
             // 
-            // colNum_STG
+            // ribbonPageGroup1
             // 
-            this.colNum_STG.FieldName = "Num_STG";
-            this.colNum_STG.Name = "colNum_STG";
-            this.colNum_STG.Visible = true;
-            this.colNum_STG.VisibleIndex = 0;
-            // 
-            // colNom
-            // 
-            this.colNom.FieldName = "Nom";
-            this.colNom.Name = "colNom";
-            this.colNom.Visible = true;
-            this.colNom.VisibleIndex = 1;
-            // 
-            // colNom_ar
-            // 
-            this.colNom_ar.FieldName = "Nom_ar";
-            this.colNom_ar.Name = "colNom_ar";
-            // 
-            // colPrenom
-            // 
-            this.colPrenom.FieldName = "Prenom";
-            this.colPrenom.Name = "colPrenom";
-            this.colPrenom.Visible = true;
-            this.colPrenom.VisibleIndex = 2;
-            // 
-            // colPrenom_ar
-            // 
-            this.colPrenom_ar.FieldName = "Prenom_ar";
-            this.colPrenom_ar.Name = "colPrenom_ar";
-            // 
-            // colCommune
-            // 
-            this.colCommune.FieldName = "Commune";
-            this.colCommune.Name = "colCommune";
-            this.colCommune.Visible = true;
-            this.colCommune.VisibleIndex = 3;
-            // 
-            // colTelephone
-            // 
-            this.colTelephone.FieldName = "Telephone";
-            this.colTelephone.Name = "colTelephone";
-            this.colTelephone.Visible = true;
-            this.colTelephone.VisibleIndex = 4;
-            // 
-            // colE_Maile
-            // 
-            this.colE_Maile.FieldName = "E_Maile";
-            this.colE_Maile.Name = "colE_Maile";
-            this.colE_Maile.Visible = true;
-            this.colE_Maile.VisibleIndex = 5;
-            // 
-            // colID_Emp
-            // 
-            this.colID_Emp.FieldName = "ID_Emp";
-            this.colID_Emp.Name = "colID_Emp";
-            // 
-            // colNom_Emp
-            // 
-            this.colNom_Emp.FieldName = "Nom_Emp";
-            this.colNom_Emp.Name = "colNom_Emp";
-            this.colNom_Emp.Visible = true;
-            this.colNom_Emp.VisibleIndex = 0;
-            // 
-            // colNom_Emp_ar
-            // 
-            this.colNom_Emp_ar.FieldName = "Nom_Emp_ar";
-            this.colNom_Emp_ar.Name = "colNom_Emp_ar";
-            // 
-            // colTel_Emp
-            // 
-            this.colTel_Emp.FieldName = "Tel_Emp";
-            this.colTel_Emp.Name = "colTel_Emp";
-            this.colTel_Emp.Visible = true;
-            this.colTel_Emp.VisibleIndex = 1;
-            // 
-            // colNature_Emp
-            // 
-            this.colNature_Emp.FieldName = "Nature_Emp";
-            this.colNature_Emp.Name = "colNature_Emp";
-            this.colNature_Emp.Visible = true;
-            this.colNature_Emp.VisibleIndex = 3;
-            // 
-            // colMail_Emp
-            // 
-            this.colMail_Emp.FieldName = "Mail_Emp";
-            this.colMail_Emp.Name = "colMail_Emp";
-            this.colMail_Emp.Visible = true;
-            this.colMail_Emp.VisibleIndex = 2;
-            // 
-            // colFonction_Emp
-            // 
-            this.colFonction_Emp.FieldName = "Fonction_Emp";
-            this.colFonction_Emp.Name = "colFonction_Emp";
-            this.colFonction_Emp.Visible = true;
-            this.colFonction_Emp.VisibleIndex = 4;
-            // 
-            // colStatut_Emp
-            // 
-            this.colStatut_Emp.FieldName = "Statut_Emp";
-            this.colStatut_Emp.Name = "colStatut_Emp";
-            this.colStatut_Emp.Visible = true;
-            this.colStatut_Emp.VisibleIndex = 5;
-            // 
-            // colType_Emp
-            // 
-            this.colType_Emp.FieldName = "Type_Emp";
-            this.colType_Emp.Name = "colType_Emp";
-            this.colType_Emp.Visible = true;
-            this.colType_Emp.VisibleIndex = 6;
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // Contract_avenant_changementView
             // 
@@ -661,7 +681,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "Contract_avenant_changementView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(870, 355);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmployeurLookUpEdit.Properties)).EndInit();
@@ -755,5 +775,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colCommune;
         private DevExpress.XtraGrid.Columns.GridColumn colTelephone;
         private DevExpress.XtraGrid.Columns.GridColumn colE_Maile;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }

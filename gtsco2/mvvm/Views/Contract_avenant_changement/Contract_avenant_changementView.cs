@@ -26,5 +26,12 @@ namespace gtsco2.mvvm.Views.Contract_avenant_changementView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			string numstg = StagiairLookUpEdit.EditValue.ToString();
+			int emp =	int.Parse(EmployeurLookUpEdit.EditValue.ToString());
+			forms.Avnone.AvonenChanegement.printchongemint(numstg,emp);
+        }
     }
 }

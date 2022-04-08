@@ -59,7 +59,7 @@ namespace gtsco2.forms.CnxDataBase
             else { secr = "false"; }
 
             string Connection = string.Format("data source={0};initial catalog={4};integrated security={1};user id ={2}; password ={3};MultipleActiveResultSets=True;App=EntityFramework", comboBoxEdit1.Text, secr, textEdit3Nometu.Text, textEditPs.Text,textEdit3dATEBASE.Text);
-            try
+            try                            
             {
                
                 

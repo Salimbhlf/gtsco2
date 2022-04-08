@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
+
 namespace gtsco2.forms.CnxDataBase
 {
    public class AppSetting
@@ -23,7 +24,7 @@ namespace gtsco2.forms.CnxDataBase
         public void SeveConnectionString(string key, string valeu)
         {
             config.ConnectionStrings.ConnectionStrings[key].ConnectionString = valeu;
-            config.ConnectionStrings.ConnectionStrings[key].ProviderName = "System.Date.SqlClient";
+            config.ConnectionStrings.ConnectionStrings[key].ProviderName = "System.Data.SqlClient";
             config.Save(ConfigurationSaveMode.Modified);
         }
     }

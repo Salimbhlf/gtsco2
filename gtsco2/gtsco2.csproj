@@ -210,12 +210,14 @@
     <Compile Include="forms\Bulletin Semestriel\Bulletin.Designer.cs">
       <DependentUpon>Bulletin.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\CnxDataBase\AppSetting.cs" />
     <Compile Include="forms\CnxDataBase\FrmCnxDataBase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\CnxDataBase\FrmCnxDataBase.Designer.cs">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\CnxDataBase\Sqlhelper.cs" />
     <Compile Include="forms\Décisions\Redoublement.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -628,7 +628,7 @@
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "impren raporte";
+            this.barButtonItem1.Caption = "imprem raporte";
             this.barButtonItem1.Id = 10;
             this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
@@ -656,7 +656,6 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Contract_avenant_changement Tasks";
             // 
             // ribbonPageGroupLayout
             // 
@@ -671,7 +670,6 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // Contract_avenant_changementView
             // 

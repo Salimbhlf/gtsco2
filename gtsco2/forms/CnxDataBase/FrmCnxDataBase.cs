@@ -32,7 +32,7 @@ namespace gtsco2.forms.CnxDataBase
             if(comboBoxEditATH.Text== "Authentification Windows")
             { secr = "true"; }else { secr = "false"; }
 
-            string Connection = string.Format("data source={0};initial catalog=GTSCO27;integrated security={1};user id ={2}; password ={3};MultipleActiveResultSets=True;App=EntityFramework", comboBoxEdit1.Text,secr,textEdit3Nometu.Text,textEditPs.Text) ;
+            string Connection = string.Format("data source={0};initial catalog={4};integrated security={1};user id ={2}; password ={3};MultipleActiveResultSets=True;App=EntityFramework", comboBoxEdit1.Text,secr,textEdit3Nometu.Text,textEditPs.Text,textEdit3dATEBASE.Text) ;
             try { Sqlhelper helper = new Sqlhelper(Connection);
                 if (helper.IsConnection)
                     MessageBox.Show("test connection succeeded.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -58,7 +58,7 @@ namespace gtsco2.forms.CnxDataBase
             { secr = "true"; }
             else { secr = "false"; }
 
-            string Connection = string.Format("data source={0};initial catalog=GTSCO27;integrated security={1};user id ={2}; password ={3};MultipleActiveResultSets=True;App=EntityFramework", comboBoxEdit1.Text, secr, textEdit3Nometu.Text, textEditPs.Text);
+            string Connection = string.Format("data source={0};initial catalog={4};integrated security={1};user id ={2}; password ={3};MultipleActiveResultSets=True;App=EntityFramework", comboBoxEdit1.Text, secr, textEdit3Nometu.Text, textEditPs.Text,textEdit3dATEBASE.Text);
             try
             {
                

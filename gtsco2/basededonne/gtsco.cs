@@ -40,6 +40,7 @@ namespace gtsco2.basededonne
         public virtual DbSet<Transferer> Transferers { get; set; }
         public virtual DbSet<tuteur> tuteurs { get; set; }
         public virtual DbSet<Willaya> Willayas { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -104,6 +105,11 @@ namespace gtsco2.basededonne
                 .HasMany(e => e.Stagiairs)
                 .WithOptional(e => e.Code_Postal1)
                 .HasForeignKey(e => e.Code_postal);
+
+            modelBuilder.Entity<Code_Postal>()
+                .HasMany(e => e.tuteurs)
+                .WithOptional(e => e.Code_Postal1)
+                .HasForeignKey(e => e.code_postal);
 
             modelBuilder.Entity<Commune>()
                 .Property(e => e.Commune_name)
@@ -494,6 +500,10 @@ namespace gtsco2.basededonne
                 .HasMany(e => e.Communes)
                 .WithOptional(e => e.Willaya)
                 .HasForeignKey(e => e.Code_Willaya);
+
+            modelBuilder.Entity<User>()
+                .Property(e => e.Role)
+                .IsUnicode(false);
         }
     }
 }

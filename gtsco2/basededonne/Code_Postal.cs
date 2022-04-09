@@ -14,6 +14,7 @@ namespace gtsco2.basededonne
             Employeurs = new HashSet<Employeur>();
             Etablissements = new HashSet<Etablissement>();
             Stagiairs = new HashSet<Stagiair>();
+            tuteurs = new HashSet<tuteur>();
         }
 
         [Key]
@@ -40,5 +41,8 @@ namespace gtsco2.basededonne
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Stagiair> Stagiairs { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tuteur> tuteurs { get; set; }
     }
 }

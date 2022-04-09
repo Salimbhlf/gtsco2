@@ -184,6 +184,7 @@
     <Compile Include="basededonne\sysdiagram.cs" />
     <Compile Include="basededonne\Transferer.cs" />
     <Compile Include="basededonne\tuteur.cs" />
+    <Compile Include="basededonne\User.cs" />
     <Compile Include="basededonne\Willaya.cs" />
     <Compile Include="classe\shared.cs" />
     <Compile Include="Form1.cs">
@@ -351,6 +352,34 @@
     <Compile Include="mvvm\gtscoDataModel\gtscoUnitOfWork.cs" />
     <Compile Include="mvvm\gtscoDataModel\IgtscoUnitOfWork.cs" />
     <Compile Include="mvvm\gtscoDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="mvvm\user\Common\CollectionViewModel.cs" />
+    <Compile Include="mvvm\user\Common\EntitiesViewModel.cs" />
+    <Compile Include="mvvm\user\Common\ReadOnlyCollectionViewModel.cs" />
+    <Compile Include="mvvm\user\Common\SingleObjectViewModel.cs" />
+    <Compile Include="mvvm\user\gtscoDataModel\gtscoUnitOfWork.cs" />
+    <Compile Include="mvvm\user\gtscoDataModel\IgtscoUnitOfWork.cs" />
+    <Compile Include="mvvm\user\gtscoDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="mvvm\user\ViewModels\gtscoViewModel.cs" />
+    <Compile Include="mvvm\user\ViewModels\User\UserCollectionViewModel.cs" />
+    <Compile Include="mvvm\user\ViewModels\User\UserViewModel.cs" />
+    <Compile Include="mvvm\user\Views\gtscoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\user\Views\gtscoView.designer.cs">
+      <DependentUpon>gtscoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\user\Views\User\UserCollectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\user\Views\User\UserCollectionView.designer.cs">
+      <DependentUpon>UserCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\user\Views\User\UserView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mvvm\user\Views\User\UserView.designer.cs">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </Compile>
     <Compile Include="mvvm\ViewModels\Absence\AbsenceCollectionViewModel.cs" />
     <Compile Include="mvvm\ViewModels\Absence\AbsenceViewModel.cs" />
     <Compile Include="mvvm\ViewModels\annee_scolaire\annee_scolaireCollectionViewModel.cs" />
@@ -815,6 +844,9 @@
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="mvvm\user\Views\User\UserCollectionView.resx">
+      <DependentUpon>UserCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Absence\AbsenceCollectionView.resx">
       <DependentUpon>AbsenceCollectionView.cs</DependentUpon>
     </EmbeddedResource>

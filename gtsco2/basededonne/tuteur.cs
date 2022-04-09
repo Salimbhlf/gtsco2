@@ -32,6 +32,8 @@ namespace gtsco2.basededonne
         [StringLength(50)]
         public string telephone { get; set; }
 
+        public virtual Code_Postal Code_Postal1 { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Stagiair> Stagiairs { get; set; }
     }

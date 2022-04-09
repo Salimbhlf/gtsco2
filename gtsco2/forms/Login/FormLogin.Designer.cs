@@ -214,6 +214,7 @@ namespace gtsco2.forms.Login
             this.textEdit2.Properties.UseSystemPasswordChar = true;
             this.textEdit2.Size = new System.Drawing.Size(317, 26);
             this.textEdit2.TabIndex = 2;
+            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
             this.textEdit2.Enter += new System.EventHandler(this.textEdit2_Enter);
             this.textEdit2.MouseEnter += new System.EventHandler(this.textEdit2_MouseEnter);
             this.textEdit2.MouseLeave += new System.EventHandler(this.textEdit2_MouseLeave);
@@ -230,6 +231,7 @@ namespace gtsco2.forms.Login
             this.button2.TabIndex = 6;
             this.button2.Text = "Se Connectez";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -280,6 +282,7 @@ namespace gtsco2.forms.Login
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit1.Properties.EditValueChanged += new System.EventHandler(this.textEdit1_Properties_EditValueChanged);
             this.textEdit1.Size = new System.Drawing.Size(317, 26);
             this.textEdit1.TabIndex = 2;
             this.textEdit1.Enter += new System.EventHandler(this.textEdit1_Enter);

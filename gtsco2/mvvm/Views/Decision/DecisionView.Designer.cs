@@ -26,7 +26,6 @@
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.ID_DecisionTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.decisionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Type_DecisionTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Date_DecisionDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.Proce_verbal_delibationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.Proce_verbal_delibationBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,7 +68,6 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForID_Decision = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForType_Decision = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForDate_Decision = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForID_PV_Délibiration = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForID_Promo = new DevExpress.XtraLayout.LayoutControlItem();
@@ -93,7 +91,6 @@
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ID_DecisionTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.decisionViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Type_DecisionTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Date_DecisionDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Date_DecisionDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationLookUpEdit.Properties)).BeginInit();
@@ -111,7 +108,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Decision)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForType_Decision)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Decision)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_PV_Délibiration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).BeginInit();
@@ -125,7 +121,6 @@
             // 
             this.dataLayoutControl1.AllowCustomization = false;
             this.dataLayoutControl1.Controls.Add(this.ID_DecisionTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.Type_DecisionTextEdit);
             this.dataLayoutControl1.Controls.Add(this.Date_DecisionDateEdit);
             this.dataLayoutControl1.Controls.Add(this.Proce_verbal_delibationLookUpEdit);
             this.dataLayoutControl1.Controls.Add(this.PromoLookUpEdit);
@@ -158,20 +153,11 @@
             // 
             this.decisionViewBindingSource.DataSource = typeof(gtsco2.basededonne.Decision);
             // 
-            // Type_DecisionTextEdit
-            // 
-            this.Type_DecisionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.decisionViewBindingSource, "Type_Decision", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Type_DecisionTextEdit.Location = new System.Drawing.Point(169, 36);
-            this.Type_DecisionTextEdit.Name = "Type_DecisionTextEdit";
-            this.Type_DecisionTextEdit.Size = new System.Drawing.Size(1093, 20);
-            this.Type_DecisionTextEdit.StyleController = this.dataLayoutControl1;
-            this.Type_DecisionTextEdit.TabIndex = 5;
-            // 
             // Date_DecisionDateEdit
             // 
             this.Date_DecisionDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.decisionViewBindingSource, "Date_Decision", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Date_DecisionDateEdit.EditValue = null;
-            this.Date_DecisionDateEdit.Location = new System.Drawing.Point(169, 60);
+            this.Date_DecisionDateEdit.Location = new System.Drawing.Point(169, 36);
             this.Date_DecisionDateEdit.Name = "Date_DecisionDateEdit";
             this.Date_DecisionDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.Date_DecisionDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -188,12 +174,12 @@
             // 
             this.Proce_verbal_delibationLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.decisionViewBindingSource, "ID_PV_Délibiration", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Proce_verbal_delibationLookUpEdit.EditValue = "";
-            this.Proce_verbal_delibationLookUpEdit.Location = new System.Drawing.Point(169, 84);
+            this.Proce_verbal_delibationLookUpEdit.Location = new System.Drawing.Point(169, 60);
             this.Proce_verbal_delibationLookUpEdit.Name = "Proce_verbal_delibationLookUpEdit";
             this.Proce_verbal_delibationLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Proce_verbal_delibationLookUpEdit.Properties.DataSource = this.Proce_verbal_delibationBindingSource;
-            this.Proce_verbal_delibationLookUpEdit.Properties.DisplayMember = "ID_PV_Délibiration";
+            this.Proce_verbal_delibationLookUpEdit.Properties.DisplayMember = "Decisions";
             this.Proce_verbal_delibationLookUpEdit.Properties.NullText = "";
             this.Proce_verbal_delibationLookUpEdit.Properties.NullValuePrompt = "Saisir ou slectionner le numéro de PV  de delibération";
             this.Proce_verbal_delibationLookUpEdit.Properties.PopupView = this.Proce_verbal_delibationLookUpEditView;
@@ -241,7 +227,7 @@
             // 
             this.PromoLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.decisionViewBindingSource, "ID_Promo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.PromoLookUpEdit.EditValue = "";
-            this.PromoLookUpEdit.Location = new System.Drawing.Point(169, 108);
+            this.PromoLookUpEdit.Location = new System.Drawing.Point(169, 84);
             this.PromoLookUpEdit.Name = "PromoLookUpEdit";
             this.PromoLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -346,7 +332,7 @@
             // 
             this.SemestreLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.decisionViewBindingSource, "ID_Semestre", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.SemestreLookUpEdit.EditValue = "";
-            this.SemestreLookUpEdit.Location = new System.Drawing.Point(169, 132);
+            this.SemestreLookUpEdit.Location = new System.Drawing.Point(169, 108);
             this.SemestreLookUpEdit.Name = "SemestreLookUpEdit";
             this.SemestreLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -399,7 +385,7 @@
             // 
             this.StagiairLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.decisionViewBindingSource, "Num_STG", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.StagiairLookUpEdit.EditValue = "";
-            this.StagiairLookUpEdit.Location = new System.Drawing.Point(169, 156);
+            this.StagiairLookUpEdit.Location = new System.Drawing.Point(169, 132);
             this.StagiairLookUpEdit.Name = "StagiairLookUpEdit";
             this.StagiairLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -518,7 +504,6 @@
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForID_Decision,
-            this.ItemForType_Decision,
             this.ItemForDate_Decision,
             this.ItemForID_PV_Délibiration,
             this.ItemForID_Promo,
@@ -537,19 +522,10 @@
             this.ItemForID_Decision.Text = "Numéro de décision";
             this.ItemForID_Decision.TextSize = new System.Drawing.Size(145, 13);
             // 
-            // ItemForType_Decision
-            // 
-            this.ItemForType_Decision.Control = this.Type_DecisionTextEdit;
-            this.ItemForType_Decision.Location = new System.Drawing.Point(0, 24);
-            this.ItemForType_Decision.Name = "ItemForType_Decision";
-            this.ItemForType_Decision.Size = new System.Drawing.Size(1254, 24);
-            this.ItemForType_Decision.Text = "Type de décision";
-            this.ItemForType_Decision.TextSize = new System.Drawing.Size(145, 13);
-            // 
             // ItemForDate_Decision
             // 
             this.ItemForDate_Decision.Control = this.Date_DecisionDateEdit;
-            this.ItemForDate_Decision.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDate_Decision.Location = new System.Drawing.Point(0, 24);
             this.ItemForDate_Decision.Name = "ItemForDate_Decision";
             this.ItemForDate_Decision.Size = new System.Drawing.Size(1254, 24);
             this.ItemForDate_Decision.Text = "Date de décision";
@@ -558,7 +534,7 @@
             // ItemForID_PV_Délibiration
             // 
             this.ItemForID_PV_Délibiration.Control = this.Proce_verbal_delibationLookUpEdit;
-            this.ItemForID_PV_Délibiration.Location = new System.Drawing.Point(0, 72);
+            this.ItemForID_PV_Délibiration.Location = new System.Drawing.Point(0, 48);
             this.ItemForID_PV_Délibiration.Name = "ItemForID_PV_Délibiration";
             this.ItemForID_PV_Délibiration.Size = new System.Drawing.Size(1254, 24);
             this.ItemForID_PV_Délibiration.Text = "Numéro de P.V de délibération";
@@ -567,7 +543,7 @@
             // ItemForID_Promo
             // 
             this.ItemForID_Promo.Control = this.PromoLookUpEdit;
-            this.ItemForID_Promo.Location = new System.Drawing.Point(0, 96);
+            this.ItemForID_Promo.Location = new System.Drawing.Point(0, 72);
             this.ItemForID_Promo.Name = "ItemForID_Promo";
             this.ItemForID_Promo.Size = new System.Drawing.Size(1254, 24);
             this.ItemForID_Promo.Text = "Numéro de la promo";
@@ -576,7 +552,7 @@
             // ItemForID_Semestre
             // 
             this.ItemForID_Semestre.Control = this.SemestreLookUpEdit;
-            this.ItemForID_Semestre.Location = new System.Drawing.Point(0, 120);
+            this.ItemForID_Semestre.Location = new System.Drawing.Point(0, 96);
             this.ItemForID_Semestre.Name = "ItemForID_Semestre";
             this.ItemForID_Semestre.Size = new System.Drawing.Size(1254, 24);
             this.ItemForID_Semestre.Text = "Numéro du semestre";
@@ -585,9 +561,9 @@
             // ItemForNum_STG
             // 
             this.ItemForNum_STG.Control = this.StagiairLookUpEdit;
-            this.ItemForNum_STG.Location = new System.Drawing.Point(0, 144);
+            this.ItemForNum_STG.Location = new System.Drawing.Point(0, 120);
             this.ItemForNum_STG.Name = "ItemForNum_STG";
-            this.ItemForNum_STG.Size = new System.Drawing.Size(1254, 131);
+            this.ItemForNum_STG.Size = new System.Drawing.Size(1254, 155);
             this.ItemForNum_STG.Text = "Numéro du stagiaire ";
             this.ItemForNum_STG.TextSize = new System.Drawing.Size(145, 13);
             // 
@@ -739,7 +715,6 @@
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ID_DecisionTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.decisionViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Type_DecisionTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Date_DecisionDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Date_DecisionDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Proce_verbal_delibationLookUpEdit.Properties)).EndInit();
@@ -757,7 +732,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Decision)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForType_Decision)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Decision)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_PV_Délibiration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Promo)).EndInit();
@@ -790,7 +764,6 @@
 				private DevExpress.XtraEditors.GridLookUpEdit StagiairLookUpEdit;
 		private System.Windows.Forms.BindingSource StagiairBindingSource;
         private DevExpress.XtraEditors.TextEdit ID_DecisionTextEdit;
-        private DevExpress.XtraEditors.TextEdit Type_DecisionTextEdit;
         private DevExpress.XtraEditors.DateEdit Date_DecisionDateEdit;
         private DevExpress.XtraGrid.Views.Grid.GridView Proce_verbal_delibationLookUpEditView;
         private DevExpress.XtraGrid.Views.Grid.GridView PromoLookUpEditView;
@@ -798,7 +771,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView StagiairLookUpEditView;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraLayout.LayoutControlItem ItemForID_Decision;
-        private DevExpress.XtraLayout.LayoutControlItem ItemForType_Decision;
         private DevExpress.XtraLayout.LayoutControlItem ItemForDate_Decision;
         private DevExpress.XtraLayout.LayoutControlItem ItemForID_PV_Délibiration;
         private DevExpress.XtraLayout.LayoutControlItem ItemForID_Promo;

@@ -30,5 +30,14 @@ namespace gtsco2.mvvm.Views.DecisionView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			int idds = int.Parse(ID_DecisionTextEdit.Text.ToString());
+			//forms.Décisions.Redoublement.load(idds);
+			forms.Décisions.frmRodublomint.frmrdublomant fr = new forms.Décisions.frmRodublomint.frmrdublomant();
+			fr.STG(idds);
+			fr.Show();
+        }
     }
 }

@@ -87,6 +87,8 @@
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ID_DecisionTextEdit.Properties)).BeginInit();
@@ -131,7 +133,7 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1274, 295);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1004, 237);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // ID_DecisionTextEdit
@@ -145,7 +147,7 @@
             this.ID_DecisionTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_DecisionTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.ID_DecisionTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ID_DecisionTextEdit.Size = new System.Drawing.Size(1093, 20);
+            this.ID_DecisionTextEdit.Size = new System.Drawing.Size(823, 20);
             this.ID_DecisionTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_DecisionTextEdit.TabIndex = 4;
             // 
@@ -166,7 +168,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Date_DecisionDateEdit.Properties.NullValuePrompt = "Slectionner la date de la décision ";
             this.Date_DecisionDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.Date_DecisionDateEdit.Size = new System.Drawing.Size(1093, 20);
+            this.Date_DecisionDateEdit.Size = new System.Drawing.Size(823, 20);
             this.Date_DecisionDateEdit.StyleController = this.dataLayoutControl1;
             this.Date_DecisionDateEdit.TabIndex = 6;
             // 
@@ -185,7 +187,7 @@
             this.Proce_verbal_delibationLookUpEdit.Properties.PopupView = this.Proce_verbal_delibationLookUpEditView;
             this.Proce_verbal_delibationLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.Proce_verbal_delibationLookUpEdit.Properties.ValueMember = "ID_PV_Délibiration";
-            this.Proce_verbal_delibationLookUpEdit.Size = new System.Drawing.Size(1093, 20);
+            this.Proce_verbal_delibationLookUpEdit.Size = new System.Drawing.Size(823, 20);
             this.Proce_verbal_delibationLookUpEdit.StyleController = this.dataLayoutControl1;
             this.Proce_verbal_delibationLookUpEdit.TabIndex = 7;
             // 
@@ -238,7 +240,7 @@
             this.PromoLookUpEdit.Properties.PopupView = this.PromoLookUpEditView;
             this.PromoLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.PromoLookUpEdit.Properties.ValueMember = "ID_Promo";
-            this.PromoLookUpEdit.Size = new System.Drawing.Size(1093, 20);
+            this.PromoLookUpEdit.Size = new System.Drawing.Size(823, 20);
             this.PromoLookUpEdit.StyleController = this.dataLayoutControl1;
             this.PromoLookUpEdit.TabIndex = 8;
             // 
@@ -343,7 +345,7 @@
             this.SemestreLookUpEdit.Properties.PopupView = this.SemestreLookUpEditView;
             this.SemestreLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.SemestreLookUpEdit.Properties.ValueMember = "ID_Semestre";
-            this.SemestreLookUpEdit.Size = new System.Drawing.Size(1093, 20);
+            this.SemestreLookUpEdit.Size = new System.Drawing.Size(823, 20);
             this.SemestreLookUpEdit.StyleController = this.dataLayoutControl1;
             this.SemestreLookUpEdit.TabIndex = 9;
             // 
@@ -396,7 +398,7 @@
             this.StagiairLookUpEdit.Properties.PopupView = this.StagiairLookUpEditView;
             this.StagiairLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.StagiairLookUpEdit.Properties.ValueMember = "Num_STG";
-            this.StagiairLookUpEdit.Size = new System.Drawing.Size(1093, 20);
+            this.StagiairLookUpEdit.Size = new System.Drawing.Size(823, 20);
             this.StagiairLookUpEdit.StyleController = this.dataLayoutControl1;
             this.StagiairLookUpEdit.TabIndex = 10;
             // 
@@ -495,7 +497,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1274, 295);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1004, 237);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -511,14 +513,14 @@
             this.ItemForNum_STG});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1254, 275);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(984, 217);
             // 
             // ItemForID_Decision
             // 
             this.ItemForID_Decision.Control = this.ID_DecisionTextEdit;
             this.ItemForID_Decision.Location = new System.Drawing.Point(0, 0);
             this.ItemForID_Decision.Name = "ItemForID_Decision";
-            this.ItemForID_Decision.Size = new System.Drawing.Size(1254, 24);
+            this.ItemForID_Decision.Size = new System.Drawing.Size(984, 24);
             this.ItemForID_Decision.Text = "Numéro de décision";
             this.ItemForID_Decision.TextSize = new System.Drawing.Size(145, 13);
             // 
@@ -527,7 +529,7 @@
             this.ItemForDate_Decision.Control = this.Date_DecisionDateEdit;
             this.ItemForDate_Decision.Location = new System.Drawing.Point(0, 24);
             this.ItemForDate_Decision.Name = "ItemForDate_Decision";
-            this.ItemForDate_Decision.Size = new System.Drawing.Size(1254, 24);
+            this.ItemForDate_Decision.Size = new System.Drawing.Size(984, 24);
             this.ItemForDate_Decision.Text = "Date de décision";
             this.ItemForDate_Decision.TextSize = new System.Drawing.Size(145, 13);
             // 
@@ -536,7 +538,7 @@
             this.ItemForID_PV_Délibiration.Control = this.Proce_verbal_delibationLookUpEdit;
             this.ItemForID_PV_Délibiration.Location = new System.Drawing.Point(0, 48);
             this.ItemForID_PV_Délibiration.Name = "ItemForID_PV_Délibiration";
-            this.ItemForID_PV_Délibiration.Size = new System.Drawing.Size(1254, 24);
+            this.ItemForID_PV_Délibiration.Size = new System.Drawing.Size(984, 24);
             this.ItemForID_PV_Délibiration.Text = "Numéro de P.V de délibération";
             this.ItemForID_PV_Délibiration.TextSize = new System.Drawing.Size(145, 13);
             // 
@@ -545,7 +547,7 @@
             this.ItemForID_Promo.Control = this.PromoLookUpEdit;
             this.ItemForID_Promo.Location = new System.Drawing.Point(0, 72);
             this.ItemForID_Promo.Name = "ItemForID_Promo";
-            this.ItemForID_Promo.Size = new System.Drawing.Size(1254, 24);
+            this.ItemForID_Promo.Size = new System.Drawing.Size(984, 24);
             this.ItemForID_Promo.Text = "Numéro de la promo";
             this.ItemForID_Promo.TextSize = new System.Drawing.Size(145, 13);
             // 
@@ -554,7 +556,7 @@
             this.ItemForID_Semestre.Control = this.SemestreLookUpEdit;
             this.ItemForID_Semestre.Location = new System.Drawing.Point(0, 96);
             this.ItemForID_Semestre.Name = "ItemForID_Semestre";
-            this.ItemForID_Semestre.Size = new System.Drawing.Size(1254, 24);
+            this.ItemForID_Semestre.Size = new System.Drawing.Size(984, 24);
             this.ItemForID_Semestre.Text = "Numéro du semestre";
             this.ItemForID_Semestre.TextSize = new System.Drawing.Size(145, 13);
             // 
@@ -563,7 +565,7 @@
             this.ItemForNum_STG.Control = this.StagiairLookUpEdit;
             this.ItemForNum_STG.Location = new System.Drawing.Point(0, 120);
             this.ItemForNum_STG.Name = "ItemForNum_STG";
-            this.ItemForNum_STG.Size = new System.Drawing.Size(1254, 155);
+            this.ItemForNum_STG.Size = new System.Drawing.Size(984, 97);
             this.ItemForNum_STG.Text = "Numéro du stagiaire ";
             this.ItemForNum_STG.TextSize = new System.Drawing.Size(145, 13);
             // 
@@ -653,15 +655,16 @@
             this.bbiDelete,
             this.bbiClose,
             this.bbiSaveLayout,
-            this.bbiResetLayout});
+            this.bbiResetLayout,
+            this.barButtonItem1});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 10;
+            this.mainRibbonControl.MaxItemId = 11;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1274, 126);
+            this.mainRibbonControl.Size = new System.Drawing.Size(1004, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -675,7 +678,8 @@
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
+            this.ribbonPageGroupLayout,
+            this.ribbonPageGroup1});
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
             this.mainRibbonPage.Text = "Fichier";
@@ -702,6 +706,19 @@
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
             // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "barButtonItem1";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // DecisionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -710,7 +727,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "DecisionView";
-            this.Size = new System.Drawing.Size(1274, 421);
+            this.Size = new System.Drawing.Size(1004, 363);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ID_DecisionTextEdit.Properties)).EndInit();
@@ -810,5 +827,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTelephone;
         private DevExpress.XtraGrid.Columns.GridColumn colE_Maile;
         private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
     }
 }

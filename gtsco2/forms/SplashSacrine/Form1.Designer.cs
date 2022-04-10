@@ -1,5 +1,5 @@
 ﻿
-namespace gtsco2.forms.splachScrine
+namespace gtsco2.forms.SplashSacrine
 {
     partial class Form1
     {
@@ -32,14 +32,14 @@ namespace gtsco2.forms.splachScrine
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.marqueeProgressBarControl1 = new DevExpress.XtraEditors.MarqueeProgressBarControl();
             this.labelStatus = new DevExpress.XtraEditors.LabelControl();
             this.labelCopyright = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.marqueeProgressBarControl1 = new DevExpress.XtraEditors.MarqueeProgressBarControl();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,6 +54,14 @@ namespace gtsco2.forms.splachScrine
             this.panel1.Size = new System.Drawing.Size(749, 354);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // marqueeProgressBarControl1
+            // 
+            this.marqueeProgressBarControl1.EditValue = 0;
+            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(12, 278);
+            this.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1";
+            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(725, 18);
+            this.marqueeProgressBarControl1.TabIndex = 4;
             // 
             // labelStatus
             // 
@@ -88,13 +96,6 @@ namespace gtsco2.forms.splachScrine
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // marqueeProgressBarControl1
-            // 
-            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(12, 278);
-            this.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1";
-            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(725, 18);
-            this.marqueeProgressBarControl1.TabIndex = 4;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,11 +103,12 @@ namespace gtsco2.forms.splachScrine
             this.ClientSize = new System.Drawing.Size(749, 354);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

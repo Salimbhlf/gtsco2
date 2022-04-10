@@ -219,6 +219,12 @@
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\CnxDataBase\Sqlhelper.cs" />
+    <Compile Include="forms\Décisions\frmRodublomint\frmrdublomant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Décisions\frmRodublomint\frmrdublomant.Designer.cs">
+      <DependentUpon>frmrdublomant.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Décisions\Redoublement.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -351,6 +357,12 @@
     <Compile Include="forms\PVfinal\frmPVfinal.Designer.cs">
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\SplashSacrine\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SplashSacrine\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="mvvm\Common\CollectionViewModel.cs" />
     <Compile Include="mvvm\Common\EntitiesViewModel.cs" />
     <Compile Include="mvvm\Common\ReadOnlyCollectionViewModel.cs" />
@@ -373,6 +385,12 @@
     </Compile>
     <Compile Include="mvvm\user\Views\gtscoView.designer.cs">
       <DependentUpon>gtscoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mvvm\user\Views\User\adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mvvm\user\Views\User\adduser.Designer.cs">
+      <DependentUpon>adduser.cs</DependentUpon>
     </Compile>
     <Compile Include="mvvm\user\Views\User\UserCollectionView.cs">
       <SubType>Form</SubType>
@@ -786,6 +804,9 @@
     <EmbeddedResource Include="forms\CnxDataBase\FrmCnxDataBase.resx">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\Décisions\frmRodublomint\frmrdublomant.resx">
+      <DependentUpon>frmrdublomant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Décisions\Redoublement.resx">
       <DependentUpon>Redoublement.cs</DependentUpon>
     </EmbeddedResource>
@@ -853,6 +874,12 @@
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="forms\SplashSacrine\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\user\Views\User\adduser.resx">
+      <DependentUpon>adduser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\user\Views\User\UserCollectionView.resx">
       <DependentUpon>UserCollectionView.cs</DependentUpon>
     </EmbeddedResource>

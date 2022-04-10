@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace gtsco2.forms.splachScrine
+namespace gtsco2.forms.SplashSacrine
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
@@ -64,7 +64,7 @@ namespace gtsco2.forms.splachScrine
                 MessageBox.Show(ex.Message);
 
                 forms.CnxDataBase.FrmCnxDataBase d = new CnxDataBase.FrmCnxDataBase();
-                d.ShowDialog();
+                d.Show();
             }
 
 

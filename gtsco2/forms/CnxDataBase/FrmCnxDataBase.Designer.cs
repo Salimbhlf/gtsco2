@@ -31,10 +31,13 @@ namespace gtsco2.forms.CnxDataBase
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCnxDataBase));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit3Nometu = new DevExpress.XtraEditors.TextEdit();
             this.textEditPs = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.comboBoxEditATH = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEdit3dATEBASE = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -43,17 +46,16 @@ namespace gtsco2.forms.CnxDataBase
             this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator5 = new DevExpress.XtraLayout.SimpleSeparator();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.comboBoxEditATH = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEdit3dATEBASE = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3Nometu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditPs.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditATH.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3dATEBASE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
@@ -62,10 +64,8 @@ namespace gtsco2.forms.CnxDataBase
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditATH.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3dATEBASE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,9 +83,19 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(732, 0, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(425, 195);
+            this.layoutControl1.Size = new System.Drawing.Size(425, 202);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(214, 157);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(199, 22);
+            this.simpleButton2.StyleController = this.layoutControl1;
+            this.simpleButton2.TabIndex = 7;
+            this.simpleButton2.Text = "Enrigestres";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // comboBoxEdit1
             // 
@@ -124,6 +134,28 @@ namespace gtsco2.forms.CnxDataBase
             this.simpleButton1.Text = "Connecter ";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // comboBoxEditATH
+            // 
+            this.comboBoxEditATH.Location = new System.Drawing.Point(127, 84);
+            this.comboBoxEditATH.Name = "comboBoxEditATH";
+            this.comboBoxEditATH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEditATH.Properties.Items.AddRange(new object[] {
+            "Authentification Windows",
+            "Authentification SQL serveur"});
+            this.comboBoxEditATH.Size = new System.Drawing.Size(286, 20);
+            this.comboBoxEditATH.StyleController = this.layoutControl1;
+            this.comboBoxEditATH.TabIndex = 3;
+            // 
+            // textEdit3dATEBASE
+            // 
+            this.textEdit3dATEBASE.EditValue = "GTSCO22";
+            this.textEdit3dATEBASE.Location = new System.Drawing.Point(127, 60);
+            this.textEdit3dATEBASE.Name = "textEdit3dATEBASE";
+            this.textEdit3dATEBASE.Size = new System.Drawing.Size(286, 20);
+            this.textEdit3dATEBASE.StyleController = this.layoutControl1;
+            this.textEdit3dATEBASE.TabIndex = 2;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -140,7 +172,7 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControlItem1,
             this.layoutControlItem7});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(425, 195);
+            this.Root.Size = new System.Drawing.Size(425, 202);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem3
@@ -213,22 +245,9 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControlItem2.Control = this.simpleButton1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 145);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(202, 30);
+            this.layoutControlItem2.Size = new System.Drawing.Size(202, 37);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // comboBoxEditATH
-            // 
-            this.comboBoxEditATH.Location = new System.Drawing.Point(127, 84);
-            this.comboBoxEditATH.Name = "comboBoxEditATH";
-            this.comboBoxEditATH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEditATH.Properties.Items.AddRange(new object[] {
-            "Authentification Windows",
-            "Authentification SQL serveur"});
-            this.comboBoxEditATH.Size = new System.Drawing.Size(286, 20);
-            this.comboBoxEditATH.StyleController = this.layoutControl1;
-            this.comboBoxEditATH.TabIndex = 3;
             // 
             // layoutControlItem6
             // 
@@ -241,33 +260,14 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControlItem6.Text = "Authentification";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(103, 13);
             // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(214, 157);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(199, 22);
-            this.simpleButton2.StyleController = this.layoutControl1;
-            this.simpleButton2.TabIndex = 7;
-            this.simpleButton2.Text = "Enrigestres";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.simpleButton2;
             this.layoutControlItem1.Location = new System.Drawing.Point(202, 145);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(203, 30);
+            this.layoutControlItem1.Size = new System.Drawing.Size(203, 37);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
-            // 
-            // textEdit3dATEBASE
-            // 
-            this.textEdit3dATEBASE.EditValue = "GTSCO22";
-            this.textEdit3dATEBASE.Location = new System.Drawing.Point(127, 60);
-            this.textEdit3dATEBASE.Name = "textEdit3dATEBASE";
-            this.textEdit3dATEBASE.Size = new System.Drawing.Size(286, 20);
-            this.textEdit3dATEBASE.StyleController = this.layoutControl1;
-            this.textEdit3dATEBASE.TabIndex = 2;
             // 
             // layoutControlItem7
             // 
@@ -284,7 +284,7 @@ namespace gtsco2.forms.CnxDataBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 195);
+            this.ClientSize = new System.Drawing.Size(425, 202);
             this.Controls.Add(this.layoutControl1);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("FrmCnxDataBase.IconOptions.SvgImage")));
             this.Name = "FrmCnxDataBase";
@@ -296,6 +296,8 @@ namespace gtsco2.forms.CnxDataBase
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3Nometu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditPs.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditATH.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3dATEBASE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
@@ -304,10 +306,8 @@ namespace gtsco2.forms.CnxDataBase
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditATH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3dATEBASE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.ResumeLayout(false);
 

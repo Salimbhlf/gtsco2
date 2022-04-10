@@ -22,156 +22,411 @@
         /// the contents of this method with the code editor.
         /// </summary>
 		private void InitializeComponent() {
-			this.components = new System.ComponentModel.Container();
-			this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-			this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-			this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
-			this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-			this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.components = new System.ComponentModel.Container();
+            this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.userViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ID_userTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForID_user = new DevExpress.XtraLayout.LayoutControlItem();
+            this.NomTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForNom = new DevExpress.XtraLayout.LayoutControlItem();
+            this.PrenomTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForPrenom = new DevExpress.XtraLayout.LayoutControlItem();
+            this.NomeutlisatureTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForNomeutlisature = new DevExpress.XtraLayout.LayoutControlItem();
+            this.MotedePasseTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForMotedePasse = new DevExpress.XtraLayout.LayoutControlItem();
+            this.RoleTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ItemForRole = new DevExpress.XtraLayout.LayoutControlItem();
+            this.PhotoPictureEdit = new DevExpress.XtraEditors.PictureEdit();
+            this.ItemForPhoto = new DevExpress.XtraLayout.LayoutControlItem();
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
+            this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
-						 
-			this.SuspendLayout();
-			// 
+            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
+            this.dataLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ID_userTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_user)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NomTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrenomTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NomeutlisatureTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNomeutlisature)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MotedePasseTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMotedePasse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RoleTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForRole)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotoPictureEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataLayoutControl1
+            // 
+            this.dataLayoutControl1.AllowCustomization = false;
+            this.dataLayoutControl1.Controls.Add(this.ID_userTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.NomTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.PrenomTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.NomeutlisatureTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.MotedePasseTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.RoleTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.PhotoPictureEdit);
+            this.dataLayoutControl1.DataSource = this.userViewBindingSource;
+            this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
+            this.dataLayoutControl1.Name = "dataLayoutControl1";
+            this.dataLayoutControl1.Root = this.layoutControlGroup1;
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.TabIndex = 0;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // userViewBindingSource
+            // 
+            this.userViewBindingSource.DataSource = typeof(gtsco2.basededonne.User);
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForID_user,
+            this.ItemForNom,
+            this.ItemForPrenom,
+            this.ItemForNomeutlisature,
+            this.ItemForMotedePasse,
+            this.ItemForRole,
+            this.ItemForPhoto});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
+            // 
+            // ID_userTextEdit
+            // 
+            this.ID_userTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "ID_user", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ID_userTextEdit.Location = new System.Drawing.Point(96, 12);
+            this.ID_userTextEdit.Name = "ID_userTextEdit";
+            this.ID_userTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.ID_userTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.ID_userTextEdit.Properties.Mask.EditMask = "N0";
+            this.ID_userTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.ID_userTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_userTextEdit.Size = new System.Drawing.Size(916, 20);
+            this.ID_userTextEdit.StyleController = this.dataLayoutControl1;
+            this.ID_userTextEdit.TabIndex = 4;
+            // 
+            // ItemForID_user
+            // 
+            this.ItemForID_user.Control = this.ID_userTextEdit;
+            this.ItemForID_user.Location = new System.Drawing.Point(0, 0);
+            this.ItemForID_user.Name = "ItemForID_user";
+            this.ItemForID_user.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForID_user.Text = "ID_user";
+            this.ItemForID_user.TextSize = new System.Drawing.Size(72, 13);
+            // 
+            // NomTextEdit
+            // 
+            this.NomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "Nom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.NomTextEdit.Location = new System.Drawing.Point(96, 36);
+            this.NomTextEdit.Name = "NomTextEdit";
+            this.NomTextEdit.Size = new System.Drawing.Size(916, 20);
+            this.NomTextEdit.StyleController = this.dataLayoutControl1;
+            this.NomTextEdit.TabIndex = 5;
+            // 
+            // ItemForNom
+            // 
+            this.ItemForNom.Control = this.NomTextEdit;
+            this.ItemForNom.Location = new System.Drawing.Point(0, 24);
+            this.ItemForNom.Name = "ItemForNom";
+            this.ItemForNom.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForNom.Text = "Nom";
+            this.ItemForNom.TextSize = new System.Drawing.Size(72, 13);
+            // 
+            // PrenomTextEdit
+            // 
+            this.PrenomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "Prenom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.PrenomTextEdit.Location = new System.Drawing.Point(96, 60);
+            this.PrenomTextEdit.Name = "PrenomTextEdit";
+            this.PrenomTextEdit.Size = new System.Drawing.Size(916, 20);
+            this.PrenomTextEdit.StyleController = this.dataLayoutControl1;
+            this.PrenomTextEdit.TabIndex = 6;
+            // 
+            // ItemForPrenom
+            // 
+            this.ItemForPrenom.Control = this.PrenomTextEdit;
+            this.ItemForPrenom.Location = new System.Drawing.Point(0, 48);
+            this.ItemForPrenom.Name = "ItemForPrenom";
+            this.ItemForPrenom.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForPrenom.Text = "Prenom";
+            this.ItemForPrenom.TextSize = new System.Drawing.Size(72, 13);
+            // 
+            // NomeutlisatureTextEdit
+            // 
+            this.NomeutlisatureTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "Nomeutlisature", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.NomeutlisatureTextEdit.Location = new System.Drawing.Point(96, 84);
+            this.NomeutlisatureTextEdit.Name = "NomeutlisatureTextEdit";
+            this.NomeutlisatureTextEdit.Size = new System.Drawing.Size(916, 20);
+            this.NomeutlisatureTextEdit.StyleController = this.dataLayoutControl1;
+            this.NomeutlisatureTextEdit.TabIndex = 7;
+            // 
+            // ItemForNomeutlisature
+            // 
+            this.ItemForNomeutlisature.Control = this.NomeutlisatureTextEdit;
+            this.ItemForNomeutlisature.Location = new System.Drawing.Point(0, 72);
+            this.ItemForNomeutlisature.Name = "ItemForNomeutlisature";
+            this.ItemForNomeutlisature.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForNomeutlisature.Text = "Nomeutlisature";
+            this.ItemForNomeutlisature.TextSize = new System.Drawing.Size(72, 13);
+            // 
+            // MotedePasseTextEdit
+            // 
+            this.MotedePasseTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "MotedePasse", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.MotedePasseTextEdit.Location = new System.Drawing.Point(96, 108);
+            this.MotedePasseTextEdit.Name = "MotedePasseTextEdit";
+            this.MotedePasseTextEdit.Size = new System.Drawing.Size(916, 20);
+            this.MotedePasseTextEdit.StyleController = this.dataLayoutControl1;
+            this.MotedePasseTextEdit.TabIndex = 8;
+            // 
+            // ItemForMotedePasse
+            // 
+            this.ItemForMotedePasse.Control = this.MotedePasseTextEdit;
+            this.ItemForMotedePasse.Location = new System.Drawing.Point(0, 96);
+            this.ItemForMotedePasse.Name = "ItemForMotedePasse";
+            this.ItemForMotedePasse.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForMotedePasse.Text = "Motede Passe";
+            this.ItemForMotedePasse.TextSize = new System.Drawing.Size(72, 13);
+            // 
+            // RoleTextEdit
+            // 
+            this.RoleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "Role", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.RoleTextEdit.Location = new System.Drawing.Point(96, 132);
+            this.RoleTextEdit.Name = "RoleTextEdit";
+            this.RoleTextEdit.Size = new System.Drawing.Size(916, 20);
+            this.RoleTextEdit.StyleController = this.dataLayoutControl1;
+            this.RoleTextEdit.TabIndex = 9;
+            // 
+            // ItemForRole
+            // 
+            this.ItemForRole.Control = this.RoleTextEdit;
+            this.ItemForRole.Location = new System.Drawing.Point(0, 120);
+            this.ItemForRole.Name = "ItemForRole";
+            this.ItemForRole.Size = new System.Drawing.Size(1004, 24);
+            this.ItemForRole.Text = "Role";
+            this.ItemForRole.TextSize = new System.Drawing.Size(72, 13);
+            // 
+            // PhotoPictureEdit
+            // 
+            this.PhotoPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "Photo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.PhotoPictureEdit.Location = new System.Drawing.Point(96, 156);
+            this.PhotoPictureEdit.Name = "PhotoPictureEdit";
+            this.PhotoPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.PhotoPictureEdit.Size = new System.Drawing.Size(916, 474);
+            this.PhotoPictureEdit.StyleController = this.dataLayoutControl1;
+            this.PhotoPictureEdit.TabIndex = 10;
+            // 
+            // ItemForPhoto
+            // 
+            this.ItemForPhoto.Control = this.PhotoPictureEdit;
+            this.ItemForPhoto.Location = new System.Drawing.Point(0, 144);
+            this.ItemForPhoto.Name = "ItemForPhoto";
+            this.ItemForPhoto.Size = new System.Drawing.Size(1004, 478);
+            this.ItemForPhoto.StartNewLine = true;
+            this.ItemForPhoto.Text = "Photo";
+            this.ItemForPhoto.TextSize = new System.Drawing.Size(72, 13);
+            // 
+            // mvvmContext
+            // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Save", this.bbiSave),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "SaveAndClose", this.bbiSaveAndClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "SaveAndNew", this.bbiSaveAndNew),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Reset", this.bbiReset),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Delete", this.bbiDelete),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Close", this.bbiClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "SaveLayout", this.bbiSaveLayout),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "ResetLayout", this.bbiResetLayout)});
+            this.mvvmContext.ContainerControl = this;
+            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
+            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
+            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.user.ViewModels.UserViewModel);
+            // 
+            // bbiSave
+            // 
+            this.bbiSave.Caption = "Save";
+            this.bbiSave.Id = 2;
+            this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSave.Name = "bbiSave";
+            // 
+            // bbiSaveAndClose
+            // 
+            this.bbiSaveAndClose.Caption = "Save And Close";
+            this.bbiSaveAndClose.Id = 3;
+            this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
+            this.bbiSaveAndClose.Name = "bbiSaveAndClose";
+            // 
+            // bbiSaveAndNew
+            // 
+            this.bbiSaveAndNew.Caption = "Save And New";
+            this.bbiSaveAndNew.Id = 4;
+            this.bbiSaveAndNew.ImageOptions.ImageUri.Uri = "SaveAndNew";
+            this.bbiSaveAndNew.Name = "bbiSaveAndNew";
+            // 
+            // bbiReset
+            // 
+            this.bbiReset.Caption = "Reset Changes";
+            this.bbiReset.Id = 5;
+            this.bbiReset.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiReset.Name = "bbiReset";
+            // 
+            // bbiDelete
+            // 
+            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Id = 6;
+            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDelete.Name = "bbiDelete";
+            // 
+            // bbiClose
+            // 
+            this.bbiClose.Caption = "Close";
+            this.bbiClose.Id = 7;
+            this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
+            this.bbiClose.Name = "bbiClose";
+            // 
+            // bbiSaveLayout
+            // 
+            this.bbiSaveLayout.Caption = "Save Layout";
+            this.bbiSaveLayout.Id = 8;
+            this.bbiSaveLayout.ImageOptions.ImageUri.Uri = "Save";
+            this.bbiSaveLayout.Name = "bbiSaveLayout";
+            // 
+            // bbiResetLayout
+            // 
+            this.bbiResetLayout.Caption = "Reset Layout";
+            this.bbiResetLayout.Id = 9;
+            this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
+            this.bbiResetLayout.Name = "bbiResetLayout";
+            // 
             // mainRibbonControl
             // 
             this.mainRibbonControl.ExpandCollapseItem.Id = 0;
-			this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {this.bbiCustomize});
+            this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.mainRibbonControl.ExpandCollapseItem,
+            this.bbiCustomize,
+            this.bbiSave,
+            this.bbiSaveAndClose,
+            this.bbiSaveAndNew,
+            this.bbiReset,
+            this.bbiDelete,
+            this.bbiClose,
+            this.bbiSaveLayout,
+            this.bbiResetLayout,
+            this.mainRibbonControl.SearchEditItem});
+            this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.mainRibbonControl.MaxItemId = 10;
             this.mainRibbonControl.Name = "mainRibbonControl";
-			this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {this.mainRibbonPage});
+            this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-						DevExpress.XtraBars.BarButtonItem bbiSave = new DevExpress.XtraBars.BarButtonItem();
-			bbiSave.Caption = "Save";
-			bbiSave.Name = "bbiSave";
-			bbiSave.ImageUri.Uri = "Save";
-			this.mainRibbonControl.Items.Add(bbiSave);
-						DevExpress.XtraBars.BarButtonItem bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
-			bbiSaveAndClose.Caption = "Save And Close";
-			bbiSaveAndClose.Name = "bbiSaveAndClose";
-			bbiSaveAndClose.ImageUri.Uri = "SaveAndClose";
-			this.mainRibbonControl.Items.Add(bbiSaveAndClose);
-						DevExpress.XtraBars.BarButtonItem bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
-			bbiSaveAndNew.Caption = "Save And New";
-			bbiSaveAndNew.Name = "bbiSaveAndNew";
-			bbiSaveAndNew.ImageUri.Uri = "SaveAndNew";
-			this.mainRibbonControl.Items.Add(bbiSaveAndNew);
-						DevExpress.XtraBars.BarButtonItem bbiReset = new DevExpress.XtraBars.BarButtonItem();
-			bbiReset.Caption = "Reset Changes";
-			bbiReset.Name = "bbiReset";
-			bbiReset.ImageUri.Uri = "Reset";
-			this.mainRibbonControl.Items.Add(bbiReset);
-						DevExpress.XtraBars.BarButtonItem bbiDelete = new DevExpress.XtraBars.BarButtonItem();
-			bbiDelete.Caption = "Delete";
-			bbiDelete.Name = "bbiDelete";
-			bbiDelete.ImageUri.Uri = "Delete";
-			this.mainRibbonControl.Items.Add(bbiDelete);
-						DevExpress.XtraBars.BarButtonItem bbiClose = new DevExpress.XtraBars.BarButtonItem();
-			bbiClose.Caption = "Close";
-			bbiClose.Name = "bbiClose";
-			bbiClose.ImageUri.Uri = "Close";
-			this.mainRibbonControl.Items.Add(bbiClose);
-						DevExpress.XtraBars.BarButtonItem bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
-			bbiSaveLayout.Caption = "Save Layout";
-			bbiSaveLayout.Name = "bbiSaveLayout";
-			bbiSaveLayout.ImageUri.Uri = "Save";
-			this.mainRibbonControl.Items.Add(bbiSaveLayout);
-						DevExpress.XtraBars.BarButtonItem bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
-			bbiResetLayout.Caption = "Reset Layout";
-			bbiResetLayout.Name = "bbiResetLayout";
-			bbiResetLayout.ImageUri.Uri = "Reset";
-			this.mainRibbonControl.Items.Add(bbiResetLayout);
-			            // 
+            // 
+            // bbiCustomize
+            // 
+            this.bbiCustomize.Caption = "Customize";
+            this.bbiCustomize.Id = 1;
+            this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
+            this.bbiCustomize.Name = "bbiCustomize";
+            // 
             // mainRibbonPage
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
             this.ribbonPageGroupLayout});
+            this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
             this.mainRibbonPage.Text = "Home";
-			this.mainRibbonPage.MergeOrder = 0;
             // 
             // mainRibbonPageGroup
             // 
             this.mainRibbonPageGroup.AllowTextClipping = false;
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiSave);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiSaveAndClose);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiSaveAndNew);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiReset);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiDelete);
-						this.mainRibbonPageGroup.ItemLinks.Add(bbiClose);
-			            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.ShowCaptionButton = false;
+            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
+            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
             this.mainRibbonPageGroup.Text = "User Tasks";
-			// 
+            // 
             // ribbonPageGroupLayout
-            //
-			this.ribbonPageGroupLayout.AllowTextClipping = false; 
-			this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
-						this.ribbonPageGroupLayout.ItemLinks.Add(bbiSaveLayout);
-						this.ribbonPageGroupLayout.ItemLinks.Add(bbiResetLayout);
-			            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
+            // 
+            this.ribbonPageGroupLayout.AllowTextClipping = false;
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
+            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Layout";
-			// 
-            // bbiCustomize
             // 
-            this.bbiCustomize.Caption = "Customize";
-            this.bbiCustomize.ImageUri.Uri = "Customization";
-            this.bbiCustomize.Name = "bbiCustomize";
-			// 
-            // layoutControlGroup1
+            // UserView
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.TextVisible = false;
-			// 
-            // dataLayoutControl1
-            // 
-            this.dataLayoutControl1.AllowCustomization = false;
-			this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dataLayoutControl1.Root = this.layoutControlGroup1;
-			this.userViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.userViewBindingSource.DataSource = typeof(gtsco2.basededonne.User);
-			this.dataLayoutControl1.DataSource = userViewBindingSource;
-			//
-			//Create GridControls
-			//
-			DevExpress.XtraDataLayout.RetrieveFieldsParameters parameters = new DevExpress.XtraDataLayout.RetrieveFieldsParameters();
-			parameters.DataSourceUpdateMode = System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged;
-           				 
-			//
-			//call RetrieveFields
-			//
-            this.dataLayoutControl1.RetrieveFields(parameters);
-			// 
-            // mvvmContext
-            // 
-            this.mvvmContext.ContainerControl = this;
-            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.user.ViewModels.UserViewModel);
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Save", bbiSave));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "SaveAndClose", bbiSaveAndClose));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "SaveAndNew", bbiSaveAndNew));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Reset", bbiReset));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Delete", bbiDelete));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "Close", bbiClose));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "SaveLayout", bbiSaveLayout));
-						this.mvvmContext.BindingExpressions.Add(DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.user.ViewModels.UserViewModel), "ResetLayout", bbiResetLayout));
-						this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
-            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
-			//
-			//UserView
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.Controls.Add(this.dataLayoutControl1);
-			this.Controls.Add(this.mainRibbonControl);
-			this.Size = new System.Drawing.Size(1024, 768);
+            this.Controls.Add(this.mainRibbonControl);
             this.Name = "UserView";
-						this.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1024, 768);
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
+            this.dataLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ID_userTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_user)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NomTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrenomTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPrenom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NomeutlisatureTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNomeutlisature)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MotedePasseTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMotedePasse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RoleTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForRole)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotoPictureEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForPhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 		
         #endregion
@@ -185,6 +440,28 @@
 		private DevExpress.XtraBars.BarButtonItem bbiCustomize;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupLayout;
 		private System.Windows.Forms.BindingSource userViewBindingSource;
-				 
-	}
+        private DevExpress.XtraEditors.TextEdit ID_userTextEdit;
+        private DevExpress.XtraEditors.TextEdit NomTextEdit;
+        private DevExpress.XtraEditors.TextEdit PrenomTextEdit;
+        private DevExpress.XtraEditors.TextEdit NomeutlisatureTextEdit;
+        private DevExpress.XtraEditors.TextEdit MotedePasseTextEdit;
+        private DevExpress.XtraEditors.TextEdit RoleTextEdit;
+        private DevExpress.XtraEditors.PictureEdit PhotoPictureEdit;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForID_user;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForNom;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForPrenom;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForNomeutlisature;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForMotedePasse;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForRole;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForPhoto;
+        private DevExpress.XtraBars.BarButtonItem bbiSave;
+        private DevExpress.XtraBars.BarButtonItem bbiSaveAndClose;
+        private DevExpress.XtraBars.BarButtonItem bbiSaveAndNew;
+        private DevExpress.XtraBars.BarButtonItem bbiReset;
+        private DevExpress.XtraBars.BarButtonItem bbiDelete;
+        private DevExpress.XtraBars.BarButtonItem bbiClose;
+        private DevExpress.XtraBars.BarButtonItem bbiSaveLayout;
+        private DevExpress.XtraBars.BarButtonItem bbiResetLayout;
+    }
 }

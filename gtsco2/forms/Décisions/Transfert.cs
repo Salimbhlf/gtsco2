@@ -18,7 +18,7 @@ namespace gtsco2.forms.Décisions
         {
             Transfert rpt = new Transfert();
             rpt.load(stgP, idEmp);
-            rpt.ShowRibbonDesigner();
+            rpt.ShowRibbonPreview();
         }
 
         public void load(string stgP , int idEmp)

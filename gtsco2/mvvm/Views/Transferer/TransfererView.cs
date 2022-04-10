@@ -31,6 +31,7 @@ namespace gtsco2.mvvm.Views.TransfererView{
         {
 			int etb = int.Parse(EtablissementLookUpEdit.EditValue.ToString());
 			string stg = StagiairLookUpEdit.Text;
+			bbiSave.PerformClick();
 			forms.Décisions.Transfert.printtrnsfer(stg, etb);
         }
     }

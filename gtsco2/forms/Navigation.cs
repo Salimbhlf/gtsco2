@@ -88,7 +88,7 @@ namespace gtsco2.forms
 
         private void simpleButton11_Click(object sender, EventArgs e)
         {
-            forms.splachScrine.Form1 sa = new splachScrine.Form1();
+            forms.SplashSacrine.Form1 sa = new SplashSacrine.Form1();
             sa.Show();
             
            

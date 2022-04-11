@@ -204,5 +204,25 @@ namespace gtsco2.forms.Pageprancipel
         {
             opfrm(new mvvm.user.Views.UserCollectionView.UserCollectionView());
         }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.WillayaCollectionView.WillayaCollectionView());
+        }
+
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.CommuneCollectionView.CommuneCollectionView());
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new mvvm.Views.Code_PostalCollectionView.Code_PostalCollectionView());
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            opfrm(new GTSecetion.GTsectionfrm());
+        }
     }
 }

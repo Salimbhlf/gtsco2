@@ -287,5 +287,11 @@ namespace gtsco2.forms.Login
         {
             separatorControl2.BackColor = Color.FromArgb(041, 128, 185);
         }
+
+        private void imageSlider1_Click(object sender, EventArgs e)
+        {
+            forms.CnxDataBase.FrmCnxDataBase fr = new CnxDataBase.FrmCnxDataBase();
+            fr.ShowDialog();
+        }
     }
 }

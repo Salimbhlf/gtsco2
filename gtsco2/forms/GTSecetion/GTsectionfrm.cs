@@ -213,7 +213,7 @@ namespace gtsco2.forms.GTSecetion
                                 ab.Add(IndexLigne);
 
                             }
-                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de droite ");
+                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de droite ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 break;
                             }
                         }
@@ -229,7 +229,7 @@ namespace gtsco2.forms.GTSecetion
                                 gridView1.DeleteRow(IndexLigne);
 
                             }
-                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ");
+                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 break;
                             }
 
@@ -240,13 +240,13 @@ namespace gtsco2.forms.GTSecetion
                     else
                     {
 
-                        MessageBox.Show("Veuillez sélectionner la même promos sur les 2 tableaux");
+                        //MessageBox.Show("Veuillez sélectionner la même promos sur les 2 tableaux");
                         //MessageBox.Show("selection des section  de la meme promo sur le diex tablo");
 
                     }
                 }
                 else {
-                    MessageBox.Show("Veuillez selectionner les informations que vous souhaitez afficher ensuite affichez le tableau de droite puis cocher la case correspondante au stagiaire que vous voulez transferer");
+                    MessageBox.Show("Veuillez selectionner les informations que vous souhaitez afficher ensuite affichez le tableau de droite puis cocher la case correspondante au stagiaire que vous voulez transferer", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
 
             }
@@ -291,7 +291,7 @@ namespace gtsco2.forms.GTSecetion
                             }
                             else { 
                                 
-                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de gauche "); }
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de gauche ", "", MessageBoxButtons.OK, MessageBoxIcon.Information); }
                             //MessageBox.Show("selection la section donne que vous voule effactue le stg ");
                         }
                         for (int i = ab.Count() - 1; i >= 0; i--)
@@ -307,7 +307,7 @@ namespace gtsco2.forms.GTSecetion
                             }
                             else {
 
-                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ");
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ","",MessageBoxButtons.OK,MessageBoxIcon.Information);
                                 break;
 
                                 //MessageBox.Show("selection la section donne que vous voule effactue le stg ");
@@ -355,53 +355,59 @@ namespace gtsco2.forms.GTSecetion
                 {
                     if (pro1 == false && sec1 == true)
                     {
-                        DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ce (s) stagiaire (s) sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo);
-                        if (r == DialogResult.Yes)
+                        if (pro1 == false && sec1 == true)
                         {
-
-                            foreach (DataRow row in tbsv.Rows)
+                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ce (s) stagiaire (s) sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+                            if (r == DialogResult.Yes)
                             {
 
-                                string ab = row[0].ToString();
+                                foreach (DataRow row in tbsv.Rows)
+                                {
 
-                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
-                                stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
-                                shared.bd.Stagiairs.AddOrUpdate(stg);
-                                
-                            }shared.bd.SaveChanges();
+                                    string ab = row[0].ToString();
+
+                                    var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                    stg.Section = int.Parse(seccomboBox.SelectedValue.ToString());
+                                    shared.bd.Stagiairs.AddOrUpdate(stg);
+
+                                }
+                                shared.bd.SaveChanges();
+                            }
                         }
-                    }
-                    else if (pro1 == true && sec1 == false)
-                    {
+                        else if (pro1 == true && sec1 == false)
+                        {
 
 
-                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos  " + promocomboBox11.Text + "  mais sans section  ", "", MessageBoxButtons.YesNo);
-                    
+                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos  " + promocomboBox11.Text + "  mais sans section  ", "", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+
                             //DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo  " + promocomboBox11.Text + "  et un section anonim ", "", MessageBoxButtons.YesNo);
-                        if (r == DialogResult.Yes)
-                        {
-
-                            foreach (DataRow row in tbsv.Rows)
+                            if (r == DialogResult.Yes)
                             {
 
-                                string ab = row[0].ToString();
+                                foreach (DataRow row in tbsv.Rows)
+                                {
 
-                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
-                                stg.Section = null;
-                                shared.bd.Stagiairs.AddOrUpdate(stg);
-                                
-                            }shared.bd.SaveChanges();
+                                    string ab = row[0].ToString();
+
+                                    var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                    stg.Section = null;
+                                    shared.bd.Stagiairs.AddOrUpdate(stg);
+
+                                }
+                                shared.bd.SaveChanges();
+                            }
                         }
+                        MessageBox.Show("Données enregistrées avec succès");
                     }
                     else
                     {
-                        //MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' enregistrer uniquement les stagiaires sans section ou   ");
+                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' enregistrer  les stagiaires sans section ou la case section pour le enregistrer donne la section sélectioner  ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                         //MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
                     }
                 }
-                else { MessageBox.Show("Aucun changement à enregistrer"); }
-                MessageBox.Show("Données enregistrées avec succès");
+                else { MessageBox.Show("Aucun changement à enregistrer","",MessageBoxButtons.OK,MessageBoxIcon.Error); }
+               
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
@@ -417,49 +423,55 @@ namespace gtsco2.forms.GTSecetion
             DataTable tbsv = gridControl2.DataSource as DataTable;
                 if (tbsv != null)
                 {
-                    if (pro1 == false && sec1 == true)
+                    if (pro1 == true || sec1 == false)
                     {
-                        DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ces stagiaires sur la section: " + seccomboBox15.Text + " de la promo: " + promocomboBox114.Text + "", "", MessageBoxButtons.YesNo);
-                        if (r == DialogResult.Yes)
+                        if (pro1 == false && sec1 == true)
                         {
-
-                            foreach (DataRow row in tbsv.Rows)
+                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ces stagiaires sur la section: " + seccomboBox15.Text + " de la promo: " + promocomboBox114.Text + "", "", MessageBoxButtons.YesNo);
+                            if (r == DialogResult.Yes)
                             {
 
-                                string ab = row[0].ToString();
+                                foreach (DataRow row in tbsv.Rows)
+                                {
 
-                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
-                                stg.Section = int.Parse(seccomboBox15.SelectedValue.ToString());
-                                shared.bd.Stagiairs.AddOrUpdate(stg);
-                                
-                            }shared.bd.SaveChanges();
+                                    string ab = row[0].ToString();
+
+                                    var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                    stg.Section = int.Parse(seccomboBox15.SelectedValue.ToString());
+                                    shared.bd.Stagiairs.AddOrUpdate(stg);
+
+                                }
+                                shared.bd.SaveChanges();
+                            }
                         }
-                    }
-                    else if (pro1 == true && sec1 == false)
-                    {
-                        DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos" + promocomboBox114.Text + "et un section anonim ", "", MessageBoxButtons.YesNo);
-                        if (r == DialogResult.Yes)
+                        else if (pro1 == true && sec1 == false)
                         {
-
-                            foreach (DataRow row in tbsv.Rows)
+                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos" + promocomboBox114.Text + "et un section anonim ", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                            if (r == DialogResult.Yes)
                             {
 
-                                string ab = row[0].ToString();
+                                foreach (DataRow row in tbsv.Rows)
+                                {
 
-                                var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
-                                stg.Section = null;
-                                shared.bd.Stagiairs.AddOrUpdate(stg);
-                               
-                            } shared.bd.SaveChanges();
-                        }
+                                    string ab = row[0].ToString();
+
+                                    var stg = shared.bd.Stagiairs.First(a => a.Num_STG == ab);
+                                    stg.Section = null;
+                                    shared.bd.Stagiairs.AddOrUpdate(stg);
+
+                                }
+                                shared.bd.SaveChanges();
+
+                            }
+                        }MessageBox.Show("Données enregistrées avec succès");
                     }
                     else
                     {
-                        //MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section");
-                    }
+                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    } 
                 }
-                else { MessageBox.Show("Aucun changement à enregistrer"); }
-                MessageBox.Show("Données enregistrées avec succès");
+                else { MessageBox.Show("Aucun changement à enregistrer","",MessageBoxButtons.OK,MessageBoxIcon.Error); }
+                
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
@@ -573,6 +585,110 @@ namespace gtsco2.forms.GTSecetion
         private void simpleButton7_Click(object sender, EventArgs e)
         {
             gridView2.ShowRibbonPrintPreview ();
+        }
+
+        private void promocomboBox11_SelectedValueChanged(object sender, EventArgs e)
+        {try
+            {
+                if (promocomboBox11.Text != null)
+                {
+                    int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
+
+
+                    var qur3 = from sec in shared.bd.Sections
+                               join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
+                               join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
+                               where sec.ID_Promo == promo
+                               select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
+
+                    seccomboBox.DataSource = qur3.ToList();
+                    seccomboBox.DisplayMember = "nom";
+                    seccomboBox.ValueMember = "id";
+                }
+                else
+                {
+                    seccomboBox.DataSource = null;
+                    seccomboBox.Items.Clear();
+                }
+            }
+            catch
+            {
+                seccomboBox.DataSource = null;
+                seccomboBox.Items.Clear();
+            }
+
+        }
+
+        private void promocomboBox114_SelectedIndexChanged(object sender, EventArgs e)
+        {try { seccomboBox15.DataSource = null;
+                seccomboBox15.Items.Clear();
+                if (promocomboBox114.SelectedValue.ToString() != null) { 
+                    int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+
+                
+                var qur3 = from sec in shared.bd.Sections
+                       join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
+                       join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
+                       join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
+                       where sec.ID_Promo == promo
+                       select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
+
+            seccomboBox15.DataSource = qur3.ToList();
+            seccomboBox15.DisplayMember = "nom";
+            seccomboBox15.ValueMember = "id";}
+        }
+            catch
+            {
+               seccomboBox15.DataSource = null;
+                seccomboBox15.Items.Clear();
+            }
+        }
+
+        private void modecombobox17_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
+                int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
+                promocomboBox11.DataSource = null;
+                promocomboBox11.Items.Clear();
+                var qur1 = from pr in shared.bd.Promoes
+                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                           where pr.Mode_de_formation == mode && pr.ID_Option == sp
+                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+                
+                promocomboBox11.DataSource = qur1.ToList();
+                promocomboBox11.DisplayMember = "nom";
+                promocomboBox11.ValueMember = "id";
+            }
+            catch {
+                promocomboBox11.DataSource = null;
+                promocomboBox11.Items.Clear(); }
+        }
+
+        private void spcomboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try { 
+            int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
+            int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
+                promocomboBox11.DataSource = null;
+                promocomboBox11.Items.Clear();
+                var qur1 = from pr in shared.bd.Promoes
+                       join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                       join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                       where pr.Mode_de_formation == mode && pr.ID_Option == sp
+                       select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+
+            promocomboBox11.DataSource = qur1.ToList();
+            promocomboBox11.DisplayMember = "nom";
+            promocomboBox11.ValueMember = "id";
+            }
+            catch {
+                promocomboBox11.DataSource = null;
+                promocomboBox11.Items.Clear();
+            }
         }
     }
 }

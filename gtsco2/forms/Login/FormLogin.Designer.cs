@@ -49,6 +49,7 @@ namespace gtsco2.forms.Login
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -61,6 +62,7 @@ namespace gtsco2.forms.Login
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -135,6 +137,7 @@ namespace gtsco2.forms.Login
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.imageSlider1);
             this.panel2.Controls.Add(this.checkEdit1);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.button2);
@@ -313,6 +316,17 @@ namespace gtsco2.forms.Login
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // imageSlider1
+            // 
+            this.imageSlider1.CurrentImageIndex = 0;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.Location = new System.Drawing.Point(313, 3);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(40, 37);
+            this.imageSlider1.TabIndex = 9;
+            this.imageSlider1.Text = "imageSlider1";
+            this.imageSlider1.Click += new System.EventHandler(this.imageSlider1_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +354,7 @@ namespace gtsco2.forms.Login
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -365,6 +380,7 @@ namespace gtsco2.forms.Login
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.SeparatorControl separatorControl2;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
+        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
     }
 }
 

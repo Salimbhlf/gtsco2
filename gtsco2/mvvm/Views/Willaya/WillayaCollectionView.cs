@@ -44,5 +44,10 @@ namespace gtsco2.mvvm.Views.WillayaCollectionView{
                 }
             };
         }
+
+        private void ribbonControl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

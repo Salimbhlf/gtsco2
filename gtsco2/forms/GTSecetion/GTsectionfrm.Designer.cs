@@ -303,6 +303,7 @@ namespace gtsco2.forms.GTSecetion
             this.promocomboBox114.Name = "promocomboBox114";
             this.promocomboBox114.Size = new System.Drawing.Size(152, 21);
             this.promocomboBox114.TabIndex = 4;
+            this.promocomboBox114.SelectedIndexChanged += new System.EventHandler(this.promocomboBox114_SelectedIndexChanged);
             // 
             // seccomboBox15
             // 
@@ -638,6 +639,7 @@ namespace gtsco2.forms.GTSecetion
             this.spcomboBox1.Name = "spcomboBox1";
             this.spcomboBox1.Size = new System.Drawing.Size(167, 21);
             this.spcomboBox1.TabIndex = 4;
+            this.spcomboBox1.SelectedIndexChanged += new System.EventHandler(this.spcomboBox1_SelectedIndexChanged);
             // 
             // promocomboBox11
             // 
@@ -646,6 +648,7 @@ namespace gtsco2.forms.GTSecetion
             this.promocomboBox11.Name = "promocomboBox11";
             this.promocomboBox11.Size = new System.Drawing.Size(153, 21);
             this.promocomboBox11.TabIndex = 4;
+            this.promocomboBox11.SelectedValueChanged += new System.EventHandler(this.promocomboBox11_SelectedValueChanged);
             // 
             // seccomboBox
             // 
@@ -663,6 +666,7 @@ namespace gtsco2.forms.GTSecetion
             this.modecombobox17.Name = "modecombobox17";
             this.modecombobox17.Size = new System.Drawing.Size(153, 21);
             this.modecombobox17.TabIndex = 4;
+            this.modecombobox17.SelectedIndexChanged += new System.EventHandler(this.modecombobox17_SelectedIndexChanged);
             // 
             // Root
             // 

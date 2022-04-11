@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 
+
 namespace gtsco2.forms.Formulaire_d_inscription
 {
     public partial class Formulaire_d_inscription : DevExpress.XtraReports.UI.XtraReport
@@ -27,7 +28,7 @@ namespace gtsco2.forms.Formulaire_d_inscription
             var qure =
                        from stg in shared.bd.Stagiairs
                        from proro in shared.bd.Contract_avenant_changement.Where(x => x.num_stg == stg.Num_STG).DefaultIfEmpty()
-                       from emp in shared.bd.Employeurs.Where( x=> x.ID_Emp ==  proro.id_emp )
+                       from emp in shared.bd.Employeurs.Where( x=> x.ID_Emp ==  proro.id_emp ).DefaultIfEmpty()
                        from commlie in shared.bd.Communes.Where(x => x.Commune_id == stg.Lieu_Naissance).DefaultIfEmpty()
                        from post in shared.bd.Code_Postal.Where(x => x.ID_Code_Postal == stg.Code_postal).DefaultIfEmpty()
                        from titure in shared.bd.tuteurs.Where(x => x.id_tuteur == stg.id_tuteur).DefaultIfEmpty()
@@ -100,7 +101,7 @@ namespace gtsco2.forms.Formulaire_d_inscription
                            nomprenoMere = stg.Nom_Mère_STG + "  " + stg.Prenom_Mère_STG,
                            promo = promo.Mode_formation.Code_Mode_Formation+promo.Option.Code_Option+promo.Code_Promo,
                            branch = promo.Option.Specialite1.Branch.Code_Branche + promo.Option.Specialite1.Code_SP,
-                           
+                           image = stg.photo,
 
                        };
 
@@ -108,16 +109,19 @@ namespace gtsco2.forms.Formulaire_d_inscription
             {
                 xrLabelNumroInscerption.Text = row.numrostg;
                 xrLabelNumrodevalidation.Text = row.numrovalidation.ToString();
-                xrLabelDatedebutformation.Text = row.DATE_D_Formation.Value.ToString("dd/MM/yyyy");
-                xrLabeldatefine.Text = row.Date_F_Formation.Value.ToString("dd/MM/yyyy");
+               
                 xrLabelbronch.Text = row.branch;
                 xrLabelSP.Text = row.sp;
                 xrLabelOP.Text = row.Option;
                 xrLabelEMP.Text = row.NomEmpX;
                 xrLabelEmailEmp.Text = row.emilXEmp;
                 xrLabelSECTur.Text = row.stat;
-
-
+                xrLabelAderssEmp.Text = row.Adresse_Emp;
+                try
+                {
+                    xrPictureBox1.Image = Image.FromStream(new System.IO.MemoryStream(row.image));
+                }
+                catch { }
                 xrLabelEmpN.Text = row.NomEmp;
                 xrLabelSecturRmpN.Text = row.Type_Emp;
                 xrLabelAdersseEmpN.Text = row.Adresse_Emp;
@@ -125,7 +129,12 @@ namespace gtsco2.forms.Formulaire_d_inscription
 
                 xrLabelNomSTg.Text = row.nom;
                 xrLabelPrenoStg.Text = row.prenom;
+                try {  xrLabelDatedebutformation.Text = row.DATE_D_Formation.Value.ToString("dd/MM/yyyy");
+                    xrLabeldatefine.Text = row.Date_F_Formation.Value.ToString("dd/MM/yyyy");
                 xrlabelDateLieN.Text = row.Date_de_Naissance.Value.ToString("dd/MM/yyyy") + " A: " + row.lieuniss;
+                   
+                }
+                catch { }
                 xrLabelNiveu.Text = row.Niveu;
                 xrLabelNOmPREMere.Text = row.nomprenoMere;
                 xrLabelAderStg.Text = row.adersse;

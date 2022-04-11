@@ -59,7 +59,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.pictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.label14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
@@ -85,6 +84,7 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelMailSTG = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelNumroInscerption = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelNumrodevalidation = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -104,6 +104,7 @@ namespace gtsco2.forms.Formulaire_d_inscription
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPictureBox1,
             this.xrLabelNumrodevalidation,
             this.xrLabelNumroInscerption,
             this.xrLabelMailSTG,
@@ -150,7 +151,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel6,
             this.xrLabel5,
             this.xrLabel4,
-            this.xrLabel3,
             this.pictureBox1,
             this.label14,
             this.xrLabel2,
@@ -506,24 +506,10 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel4.Text = "INFORMATIONS CONCERNANT L\'APPRENTI (E)";
             this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel3
-            // 
-            this.xrLabel3.AutoWidth = true;
-            this.xrLabel3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(513.6245F, 129.1667F);
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(156.8616F, 135.5F);
-            this.xrLabel3.StylePriority.UseFont = false;
-            this.xrLabel3.StylePriority.UseTextAlignment = false;
-            this.xrLabel3.Text = "Photo";
-            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("pictureBox1.ImageSource"));
-            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(303.0422F, 167.7083F);
+            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(283.2505F, 164.5833F);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.SizeF = new System.Drawing.SizeF(173.4297F, 45.83334F);
             // 
@@ -582,7 +568,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelDatedebutformation.SizeF = new System.Drawing.SizeF(243.0556F, 33.41669F);
             this.xrLabelDatedebutformation.StylePriority.UseFont = false;
             this.xrLabelDatedebutformation.StylePriority.UseTextAlignment = false;
-            this.xrLabelDatedebutformation.Text = "Fin App:";
             this.xrLabelDatedebutformation.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabeldatefine
@@ -596,7 +581,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabeldatefine.SizeF = new System.Drawing.SizeF(247.9167F, 33.41669F);
             this.xrLabeldatefine.StylePriority.UseFont = false;
             this.xrLabeldatefine.StylePriority.UseTextAlignment = false;
-            this.xrLabeldatefine.Text = "Fin App:";
             this.xrLabeldatefine.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelbronch
@@ -610,7 +594,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelbronch.SizeF = new System.Drawing.SizeF(323.6112F, 33.41669F);
             this.xrLabelbronch.StylePriority.UseFont = false;
             this.xrLabelbronch.StylePriority.UseTextAlignment = false;
-            this.xrLabelbronch.Text = "Fin App:";
             this.xrLabelbronch.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelSP
@@ -624,7 +607,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelSP.SizeF = new System.Drawing.SizeF(243.0554F, 33.41672F);
             this.xrLabelSP.StylePriority.UseFont = false;
             this.xrLabelSP.StylePriority.UseTextAlignment = false;
-            this.xrLabelSP.Text = "Fin App:";
             this.xrLabelSP.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelOP
@@ -638,7 +620,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelOP.SizeF = new System.Drawing.SizeF(242.9722F, 33.41672F);
             this.xrLabelOP.StylePriority.UseFont = false;
             this.xrLabelOP.StylePriority.UseTextAlignment = false;
-            this.xrLabelOP.Text = "Fin App:";
             this.xrLabelOP.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelEMP
@@ -652,7 +633,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelEMP.SizeF = new System.Drawing.SizeF(388.1945F, 33.41675F);
             this.xrLabelEMP.StylePriority.UseFont = false;
             this.xrLabelEMP.StylePriority.UseTextAlignment = false;
-            this.xrLabelEMP.Text = "Fin App:";
             this.xrLabelEMP.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelAderssEmp
@@ -666,7 +646,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelAderssEmp.SizeF = new System.Drawing.SizeF(352.0834F, 33.41669F);
             this.xrLabelAderssEmp.StylePriority.UseFont = false;
             this.xrLabelAderssEmp.StylePriority.UseTextAlignment = false;
-            this.xrLabelAderssEmp.Text = "Fin App:";
             this.xrLabelAderssEmp.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelEmailEmp
@@ -680,7 +659,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelEmailEmp.SizeF = new System.Drawing.SizeF(184.9861F, 33.41669F);
             this.xrLabelEmailEmp.StylePriority.UseFont = false;
             this.xrLabelEmailEmp.StylePriority.UseTextAlignment = false;
-            this.xrLabelEmailEmp.Text = "Fin App:";
             this.xrLabelEmailEmp.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelEmpN
@@ -694,7 +672,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelEmpN.SizeF = new System.Drawing.SizeF(399.6528F, 33.41669F);
             this.xrLabelEmpN.StylePriority.UseFont = false;
             this.xrLabelEmpN.StylePriority.UseTextAlignment = false;
-            this.xrLabelEmpN.Text = "Fin App:";
             this.xrLabelEmpN.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelAdersseEmpN
@@ -708,7 +685,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelAdersseEmpN.SizeF = new System.Drawing.SizeF(352.0834F, 33.41669F);
             this.xrLabelAdersseEmpN.StylePriority.UseFont = false;
             this.xrLabelAdersseEmpN.StylePriority.UseTextAlignment = false;
-            this.xrLabelAdersseEmpN.Text = "Fin App:";
             this.xrLabelAdersseEmpN.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelmailEmpN
@@ -722,7 +698,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelmailEmpN.SizeF = new System.Drawing.SizeF(184.9861F, 33.41669F);
             this.xrLabelmailEmpN.StylePriority.UseFont = false;
             this.xrLabelmailEmpN.StylePriority.UseTextAlignment = false;
-            this.xrLabelmailEmpN.Text = "Fin App:";
             this.xrLabelmailEmpN.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelNomSTg
@@ -736,7 +711,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelNomSTg.SizeF = new System.Drawing.SizeF(563.1805F, 33.41669F);
             this.xrLabelNomSTg.StylePriority.UseFont = false;
             this.xrLabelNomSTg.StylePriority.UseTextAlignment = false;
-            this.xrLabelNomSTg.Text = "Fin App:";
             this.xrLabelNomSTg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelPrenoStg
@@ -750,7 +724,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelPrenoStg.SizeF = new System.Drawing.SizeF(563.1806F, 33.41669F);
             this.xrLabelPrenoStg.StylePriority.UseFont = false;
             this.xrLabelPrenoStg.StylePriority.UseTextAlignment = false;
-            this.xrLabelPrenoStg.Text = "Fin App:";
             this.xrLabelPrenoStg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrlabelDateLieN
@@ -764,7 +737,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrlabelDateLieN.SizeF = new System.Drawing.SizeF(436.0973F, 33.41669F);
             this.xrlabelDateLieN.StylePriority.UseFont = false;
             this.xrlabelDateLieN.StylePriority.UseTextAlignment = false;
-            this.xrlabelDateLieN.Text = "Fin App:";
             this.xrlabelDateLieN.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelNiveu
@@ -778,7 +750,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelNiveu.SizeF = new System.Drawing.SizeF(502.3473F, 33.41669F);
             this.xrLabelNiveu.StylePriority.UseFont = false;
             this.xrLabelNiveu.StylePriority.UseTextAlignment = false;
-            this.xrLabelNiveu.Text = "Fin App:";
             this.xrLabelNiveu.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelNOmPREMere
@@ -792,7 +763,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelNOmPREMere.SizeF = new System.Drawing.SizeF(446.0973F, 33.41669F);
             this.xrLabelNOmPREMere.StylePriority.UseFont = false;
             this.xrLabelNOmPREMere.StylePriority.UseTextAlignment = false;
-            this.xrLabelNOmPREMere.Text = "Fin App:";
             this.xrLabelNOmPREMere.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelAderStg
@@ -806,7 +776,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelAderStg.SizeF = new System.Drawing.SizeF(584.6389F, 33.41669F);
             this.xrLabelAderStg.StylePriority.UseFont = false;
             this.xrLabelAderStg.StylePriority.UseTextAlignment = false;
-            this.xrLabelAderStg.Text = "Fin App:";
             this.xrLabelAderStg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelTelfSTg
@@ -820,7 +789,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelTelfSTg.SizeF = new System.Drawing.SizeF(537.1389F, 33.41669F);
             this.xrLabelTelfSTg.StylePriority.UseFont = false;
             this.xrLabelTelfSTg.StylePriority.UseTextAlignment = false;
-            this.xrLabelTelfSTg.Text = "Fin App:";
             this.xrLabelTelfSTg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelMailSTG
@@ -834,7 +802,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelMailSTG.SizeF = new System.Drawing.SizeF(610.3335F, 33.41669F);
             this.xrLabelMailSTG.StylePriority.UseFont = false;
             this.xrLabelMailSTG.StylePriority.UseTextAlignment = false;
-            this.xrLabelMailSTG.Text = "Fin App:";
             this.xrLabelMailSTG.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelNumroInscerption
@@ -848,7 +815,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelNumroInscerption.SizeF = new System.Drawing.SizeF(511.0973F, 34.45834F);
             this.xrLabelNumroInscerption.StylePriority.UseFont = false;
             this.xrLabelNumroInscerption.StylePriority.UseTextAlignment = false;
-            this.xrLabelNumroInscerption.Text = "N° D\'Inscription :... ";
             this.xrLabelNumroInscerption.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelNumrodevalidation
@@ -862,8 +828,19 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelNumrodevalidation.SizeF = new System.Drawing.SizeF(514.5833F, 34.45834F);
             this.xrLabelNumrodevalidation.StylePriority.UseFont = false;
             this.xrLabelNumrodevalidation.StylePriority.UseTextAlignment = false;
-            this.xrLabelNumrodevalidation.Text = "N° D\'Inscription :... ";
             this.xrLabelNumrodevalidation.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrPictureBox1
+            // 
+            this.xrPictureBox1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(508.3333F, 129.1667F);
+            this.xrPictureBox1.Name = "xrPictureBox1";
+            this.xrPictureBox1.ProcessNullValues = DevExpress.XtraReports.UI.ValueSuppressType.SuppressAndShrink;
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(158.6666F, 151.7086F);
+            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            this.xrPictureBox1.StylePriority.UseBorders = false;
             // 
             // Formulaire_d_inscription
             // 
@@ -890,7 +867,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
         private DevExpress.XtraReports.UI.XRLabel label14;
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
@@ -939,5 +915,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
         private DevExpress.XtraReports.UI.XRLabel xrLabelbronch;
         private DevExpress.XtraReports.UI.XRLabel xrLabeldatefine;
         private DevExpress.XtraReports.UI.XRLabel xrLabelDatedebutformation;
+        private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
     }
 }

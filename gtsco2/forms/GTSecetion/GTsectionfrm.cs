@@ -25,6 +25,8 @@ namespace gtsco2.forms.GTSecetion
 
         public void load()
         {
+            //var qure =from form in  shared.bd.Mode_formation 
+            //          select new { form.ID_Mode_Formation}
             List<basededonne.Mode_formation> list = shared.bd.Mode_formation.ToList();
 
             DataTable dt = new DataTable();
@@ -33,19 +35,19 @@ namespace gtsco2.forms.GTSecetion
 
             foreach (basededonne.Mode_formation ro in list)
             {
-                dt.Rows.Add(ro.Code_Mode_Formation, ro.Désignation_Mode_Formation);
+                dt.Rows.Add(ro.ID_Mode_Formation, ro.Désignation_Mode_Formation);
             }
             modecomboBox117.DataSource = dt;
             modecomboBox117.DisplayMember = dt.Columns[1].ColumnName;
             modecomboBox117.ValueMember = dt.Columns[0].ColumnName;
-           
+
 
             modecombobox17.DataSource = dt;
             modecombobox17.DisplayMember = dt.Columns[1].ColumnName;
             modecombobox17.ValueMember = dt.Columns[0].ColumnName;
 
 
-            var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Code_Option };
+            var qur = from sp in shared.bd.Options select new { id = sp.ID_Option, nom = sp.Designation_Option };
 
             spcomboBox1.DataSource = qur.ToList();
             spcomboBox1.DisplayMember = "nom";
@@ -85,12 +87,12 @@ namespace gtsco2.forms.GTSecetion
             seccomboBox15.DisplayMember = "nom";
             seccomboBox15.ValueMember = "id";
 
-           
+
 
         }
 
 
-        public  DataTable refrach( int promo , int section,bool sec , bool pro)
+        public DataTable refrach(int promo, int section, bool sec, bool pro)
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("Numro_STG");
@@ -98,11 +100,11 @@ namespace gtsco2.forms.GTSecetion
             dt.Columns.Add("Date de Naissance");
             try
             {
-                
+
 
                 if (pro == false && sec == true)
                 {
-                    
+
                     var qurz = from stg in shared.bd.Stagiairs
                                where stg.ID_Promo == promo && stg.Section == section
                                select new
@@ -111,25 +113,25 @@ namespace gtsco2.forms.GTSecetion
                                    Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
                                    Date_de_Naissance = stg.Date_de_Naissance
                                };
-                    
-                    foreach ( var row in qurz.ToList())
+
+                    foreach (var row in qurz.ToList())
                     {
                         dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, row.Date_de_Naissance);
                     }
-                    
+
                     return dt;
-                    
+
                 }
                 else if (pro == false && sec == false)
                 {
-                   var qurf = (from stg in shared.bd.Stagiairs
-                            where stg.ID_Promo == promo
-                            select new
-                            {
-                                Numro_STG = stg.Num_STG,
-                                Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                Date_de_Naissance = stg.Date_de_Naissance
-                            } ).ToList();
+                    var qurf = (from stg in shared.bd.Stagiairs
+                                where stg.ID_Promo == promo
+                                select new
+                                {
+                                    Numro_STG = stg.Num_STG,
+                                    Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                    Date_de_Naissance = stg.Date_de_Naissance
+                                }).ToList();
                     foreach (var row in qurf.ToList())
                     {
                         dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, row.Date_de_Naissance);
@@ -140,13 +142,13 @@ namespace gtsco2.forms.GTSecetion
                 else if (pro == true)
                 {
                     var qure = from stg in shared.bd.Stagiairs
-                              where stg.ID_Promo == promo && stg.Section == null
-                              select new
-                              {
-                                  Numro_STG = stg.Num_STG,
-                                  Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
-                                  Date_de_Naissance = stg.Date_de_Naissance
-                              };
+                               where stg.ID_Promo == promo && stg.Section == null
+                               select new
+                               {
+                                   Numro_STG = stg.Num_STG,
+                                   Nom_et_Prenom = (stg.Nom + " " + stg.Prenom),
+                                   Date_de_Naissance = stg.Date_de_Naissance
+                               };
                     foreach (var row in qure.ToList())
                     {
                         dt.Rows.Add(row.Numro_STG, row.Nom_et_Prenom, row.Date_de_Naissance);
@@ -154,20 +156,20 @@ namespace gtsco2.forms.GTSecetion
 
                     return dt;
                 }
-                
+
             }
             catch (Exception EX) { MessageBox.Show(EX.Message); }
             var qur = (from stg in shared.bd.Stagiairs
 
-                           select new
-                           {
+                       select new
+                       {
 
-                           }) ;
-           
+                       });
+
 
             return dt;
 
-           
+
 
 
         }
@@ -186,7 +188,7 @@ namespace gtsco2.forms.GTSecetion
         {
 
         }
-      
+
 
         public void lefttoright()
         {
@@ -213,7 +215,9 @@ namespace gtsco2.forms.GTSecetion
                                 ab.Add(IndexLigne);
 
                             }
-                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de droite ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            else
+                            {
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de droite ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 break;
                             }
                         }
@@ -229,7 +233,9 @@ namespace gtsco2.forms.GTSecetion
                                 gridView1.DeleteRow(IndexLigne);
 
                             }
-                            else { MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            else
+                            {
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 break;
                             }
 
@@ -245,22 +251,24 @@ namespace gtsco2.forms.GTSecetion
 
                     }
                 }
-                else {
+                else
+                {
                     MessageBox.Show("Veuillez selectionner les informations que vous souhaitez afficher ensuite affichez le tableau de droite puis cocher la case correspondante au stagiaire que vous voulez transferer", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                }
 
             }
 
-            catch(NullReferenceException)
+            catch (NullReferenceException)
             {
-                
-            }catch(Exception ex)
+
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
 
-          
+
 
 
 
@@ -289,9 +297,11 @@ namespace gtsco2.forms.GTSecetion
                                 ab.Add(IndexLigne);
 
                             }
-                            else { 
-                                
-                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de gauche ", "", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+                            else
+                            {
+
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! puis affichez le teableau de gauche ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
                             //MessageBox.Show("selection la section donne que vous voule effactue le stg ");
                         }
                         for (int i = ab.Count() - 1; i >= 0; i--)
@@ -299,15 +309,16 @@ namespace gtsco2.forms.GTSecetion
                             //Recuperation de l'index de la ligne selectionnée
                             int IndexLigne = gridView2.GetRowHandle(ab[i]);
 
-                          
+
                             if (dt != null)
                             {
                                 gridView2.DeleteRow(IndexLigne);
 
                             }
-                            else {
+                            else
+                            {
 
-                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ","",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                                MessageBox.Show("Veuillez sélectionner la section dans laquelle vous voulez affectés les stagiaires (s)! ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 break;
 
                                 //MessageBox.Show("selection la section donne que vous voule effactue le stg ");
@@ -345,7 +356,8 @@ namespace gtsco2.forms.GTSecetion
 
         public void save1()
         {
-            try {
+            try
+            {
                 int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
                 int sec = int.Parse(seccomboBox.SelectedValue.ToString());
                 bool sec1 = Sec1checkEdit1.Checked;
@@ -357,7 +369,7 @@ namespace gtsco2.forms.GTSecetion
                     {
                         if (pro1 == false && sec1 == true)
                         {
-                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ce (s) stagiaire (s) sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ce (s) stagiaire (s) sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                             if (r == DialogResult.Yes)
                             {
 
@@ -378,7 +390,7 @@ namespace gtsco2.forms.GTSecetion
                         {
 
 
-                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos  " + promocomboBox11.Text + "  mais sans section  ", "", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos  " + promocomboBox11.Text + "  mais sans section  ", "", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                             //DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo  " + promocomboBox11.Text + "  et un section anonim ", "", MessageBoxButtons.YesNo);
                             if (r == DialogResult.Yes)
@@ -406,8 +418,8 @@ namespace gtsco2.forms.GTSecetion
                         //MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
                     }
                 }
-                else { MessageBox.Show("Aucun changement à enregistrer","",MessageBoxButtons.OK,MessageBoxIcon.Error); }
-               
+                else { MessageBox.Show("Aucun changement à enregistrer", "", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
@@ -417,10 +429,10 @@ namespace gtsco2.forms.GTSecetion
             try
             {
                 int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
-            int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
-            bool sec1 = Sec2checkEdit2.Checked;
-            bool pro1 = pro2checkEdit3.Checked;
-            DataTable tbsv = gridControl2.DataSource as DataTable;
+                int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
+                bool sec1 = Sec2checkEdit2.Checked;
+                bool pro1 = pro2checkEdit3.Checked;
+                DataTable tbsv = gridControl2.DataSource as DataTable;
                 if (tbsv != null)
                 {
                     if (pro1 == true || sec1 == false)
@@ -463,24 +475,25 @@ namespace gtsco2.forms.GTSecetion
                                 shared.bd.SaveChanges();
 
                             }
-                        }MessageBox.Show("Données enregistrées avec succès");
+                        }
+                        MessageBox.Show("Données enregistrées avec succès");
                     }
                     else
                     {
                         MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' si vous voulez afficher et transferer uniquement les stagiaires sans section", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    } 
+                    }
                 }
-                else { MessageBox.Show("Aucun changement à enregistrer","",MessageBoxButtons.OK,MessageBoxIcon.Error); }
-                
+                else { MessageBox.Show("Aucun changement à enregistrer", "", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-           
+
         }
-      
+
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
@@ -492,7 +505,7 @@ namespace gtsco2.forms.GTSecetion
             righttolet();
         }
 
-        
+
 
         private void simpleButton6_Click(object sender, EventArgs e)
         {
@@ -555,7 +568,7 @@ namespace gtsco2.forms.GTSecetion
 
         private void pro1checkEdit1_CheckedChanged(object sender, EventArgs e)
         {
-            if(pro1checkEdit1.Checked == true)
+            if (pro1checkEdit1.Checked == true)
             {
                 Sec1checkEdit1.Checked = false;
             }
@@ -571,7 +584,7 @@ namespace gtsco2.forms.GTSecetion
 
         private void Sec2checkEdit2_CheckedChanged(object sender, EventArgs e)
         {
-            if (Sec2checkEdit2.Checked ==true)
+            if (Sec2checkEdit2.Checked == true)
             {
                 pro2checkEdit3.Checked = false;
             }
@@ -579,21 +592,95 @@ namespace gtsco2.forms.GTSecetion
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
-            gridView1.ShowRibbonPrintPreview(); 
+            gridView1.ShowRibbonPrintPreview();
         }
 
         private void simpleButton7_Click(object sender, EventArgs e)
         {
-            gridView2.ShowRibbonPrintPreview ();
+            gridView2.ShowRibbonPrintPreview();
         }
 
         private void promocomboBox11_SelectedValueChanged(object sender, EventArgs e)
-        {try
+        {
+            
+
+        }
+
+
+
+        private void modecombobox17_SelectedValueChanged(object sender, EventArgs e)
+        {
+        }
+        private void spcomboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void seccomboBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+               
+                if (promocomboBox114.SelectedValue.ToString() != null)
+                {
+                    int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+                seccomboBox.DataSource = null;
+                seccomboBox.Items.Clear();
+
+                    var qur3 = from sec in shared.bd.Sections
+                               join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
+                               join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
+                               where sec.ID_Promo == promo
+                               select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
+
+                    seccomboBox15.DataSource = qur3.ToList();
+                    seccomboBox15.DisplayMember = "nom";
+                    seccomboBox15.ValueMember = "id";
+                }
+            }
+            catch
+            {
+                seccomboBox15.DataSource = null;
+                seccomboBox15.Items.Clear();
+            }
+        }
+
+        private void spcomboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int mode = int.Parse(modecombobox17.SelectedValue.ToString());
+                int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
+                promocomboBox11.DataSource = null;
+                promocomboBox11.Items.Clear();
+                var qur1 = from pr in shared.bd.Promoes
+                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                           where pr.Mode_de_formation == mode && pr.ID_Option == sp
+                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+
+                promocomboBox11.DataSource = qur1.ToList();
+                promocomboBox11.DisplayMember = "nom";
+                promocomboBox11.ValueMember = "id";
+            }
+            catch
+            {
+                promocomboBox11.DataSource = null;
+                promocomboBox11.Items.Clear();
+            }
+        }
+
+        private void promocomboBox11_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            try
             {
                 if (promocomboBox11.Text != null)
                 {
                     int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
-
+                    seccomboBox.DataSource = null;
+                    seccomboBox.Items.Clear();
 
                     var qur3 = from sec in shared.bd.Sections
                                join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
@@ -608,8 +695,7 @@ namespace gtsco2.forms.GTSecetion
                 }
                 else
                 {
-                    seccomboBox.DataSource = null;
-                    seccomboBox.Items.Clear();
+                    
                 }
             }
             catch
@@ -617,77 +703,108 @@ namespace gtsco2.forms.GTSecetion
                 seccomboBox.DataSource = null;
                 seccomboBox.Items.Clear();
             }
-
         }
 
-        private void promocomboBox114_SelectedIndexChanged(object sender, EventArgs e)
-        {try { seccomboBox15.DataSource = null;
-                seccomboBox15.Items.Clear();
-                if (promocomboBox114.SelectedValue.ToString() != null) { 
-                    int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
-
-                
-                var qur3 = from sec in shared.bd.Sections
-                       join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
-                       join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
-                       join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
-                       where sec.ID_Promo == promo
-                       select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
-
-            seccomboBox15.DataSource = qur3.ToList();
-            seccomboBox15.DisplayMember = "nom";
-            seccomboBox15.ValueMember = "id";}
-        }
-            catch
-            {
-               seccomboBox15.DataSource = null;
-                seccomboBox15.Items.Clear();
-            }
-        }
-
-        private void modecombobox17_SelectedIndexChanged(object sender, EventArgs e)
+        private void modecombobox17_SelectionChangeCommitted(object sender, EventArgs e)
         {
             try
             {
-                int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
-                int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
+                int mode = int.Parse(modecombobox17.SelectedValue.ToString());
+                int spe = int.Parse(spcomboBox1.SelectedValue.ToString());
                 promocomboBox11.DataSource = null;
                 promocomboBox11.Items.Clear();
                 var qur1 = from pr in shared.bd.Promoes
                            join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
                            join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
-                           where pr.Mode_de_formation == mode && pr.ID_Option == sp
+                           where pr.Mode_de_formation == mode && pr.ID_Option == spe
                            select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
-                
+
                 promocomboBox11.DataSource = qur1.ToList();
                 promocomboBox11.DisplayMember = "nom";
                 promocomboBox11.ValueMember = "id";
             }
-            catch {
-                promocomboBox11.DataSource = null;
-                promocomboBox11.Items.Clear(); }
+            catch
+            {
+
+            }
         }
 
-        private void spcomboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try { 
-            int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
-            int sp = int.Parse(spcomboBox1.SelectedValue.ToString());
-                promocomboBox11.DataSource = null;
-                promocomboBox11.Items.Clear();
-                var qur1 = from pr in shared.bd.Promoes
-                       join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
-                       join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
-                       where pr.Mode_de_formation == mode && pr.ID_Option == sp
-                       select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
 
-            promocomboBox11.DataSource = qur1.ToList();
-            promocomboBox11.DisplayMember = "nom";
-            promocomboBox11.ValueMember = "id";
+
+        private void promocomboBox114_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            try
+            {
+                if (promocomboBox114.Text != null)
+                {
+                    int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+                    seccomboBox15.DataSource = null;
+                    seccomboBox15.Items.Clear();
+
+                    var qur3 = from sec in shared.bd.Sections
+                               join po in shared.bd.Options on sec.ID_Option equals po.ID_Option
+                               join mo in shared.bd.Mode_formation on sec.ID_Mode_Formation equals mo.ID_Mode_Formation
+                               join pro in shared.bd.Promoes on sec.ID_Promo equals pro.ID_Promo
+                               where sec.ID_Promo == promo
+                               select new { id = sec.SectionID, nom = (mo.Code_Mode_Formation + po.Code_Option + pro.Code_Promo + " " + sec.Code_Section) };
+
+                    seccomboBox15.DataSource = qur3.ToList();
+                    seccomboBox15.DisplayMember = "nom";
+                    seccomboBox15.ValueMember = "id";
+                }
+                else
+                {
+
+                }
             }
-            catch {
-                promocomboBox11.DataSource = null;
-                promocomboBox11.Items.Clear();
+            catch { }
+        }
+
+        private void spcomboBox113_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            try
+            {
+                int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
+                int spe = int.Parse(spcomboBox113.SelectedValue.ToString());
+                promocomboBox114.DataSource = null;
+                promocomboBox114.Items.Clear();
+                var qur1 = from pr in shared.bd.Promoes
+                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                           where pr.Mode_de_formation == mode && pr.ID_Option == spe
+                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+
+                promocomboBox114.DataSource = qur1.ToList();
+                promocomboBox114.DisplayMember = "nom";
+                promocomboBox114.ValueMember = "id";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void modecomboBox117_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
+                int spe = int.Parse(spcomboBox113.SelectedValue.ToString());
+                promocomboBox114.DataSource = null;
+                promocomboBox114.Items.Clear();
+                var qur1 = from pr in shared.bd.Promoes
+                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                           where pr.Mode_de_formation == mode && pr.ID_Option == spe
+                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+
+                promocomboBox114.DataSource = qur1.ToList();
+                promocomboBox114.DisplayMember = "nom";
+                promocomboBox114.ValueMember = "id";
+            }
+            catch
+            {
+
             }
         }
     }

@@ -295,6 +295,7 @@ namespace gtsco2.forms.GTSecetion
             this.spcomboBox113.Name = "spcomboBox113";
             this.spcomboBox113.Size = new System.Drawing.Size(169, 21);
             this.spcomboBox113.TabIndex = 4;
+            this.spcomboBox113.SelectionChangeCommitted += new System.EventHandler(this.spcomboBox113_SelectionChangeCommitted);
             // 
             // promocomboBox114
             // 
@@ -303,7 +304,7 @@ namespace gtsco2.forms.GTSecetion
             this.promocomboBox114.Name = "promocomboBox114";
             this.promocomboBox114.Size = new System.Drawing.Size(152, 21);
             this.promocomboBox114.TabIndex = 4;
-            this.promocomboBox114.SelectedIndexChanged += new System.EventHandler(this.promocomboBox114_SelectedIndexChanged);
+            this.promocomboBox114.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox114_SelectionChangeCommitted);
             // 
             // seccomboBox15
             // 
@@ -320,6 +321,7 @@ namespace gtsco2.forms.GTSecetion
             this.modecomboBox117.Name = "modecomboBox117";
             this.modecomboBox117.Size = new System.Drawing.Size(152, 21);
             this.modecomboBox117.TabIndex = 4;
+            this.modecomboBox117.SelectedIndexChanged += new System.EventHandler(this.modecomboBox117_SelectedIndexChanged);
             // 
             // simpleButton71
             // 
@@ -639,7 +641,7 @@ namespace gtsco2.forms.GTSecetion
             this.spcomboBox1.Name = "spcomboBox1";
             this.spcomboBox1.Size = new System.Drawing.Size(167, 21);
             this.spcomboBox1.TabIndex = 4;
-            this.spcomboBox1.SelectedIndexChanged += new System.EventHandler(this.spcomboBox1_SelectedIndexChanged);
+            this.spcomboBox1.SelectedValueChanged += new System.EventHandler(this.spcomboBox1_SelectedValueChanged);
             // 
             // promocomboBox11
             // 
@@ -648,7 +650,7 @@ namespace gtsco2.forms.GTSecetion
             this.promocomboBox11.Name = "promocomboBox11";
             this.promocomboBox11.Size = new System.Drawing.Size(153, 21);
             this.promocomboBox11.TabIndex = 4;
-            this.promocomboBox11.SelectedValueChanged += new System.EventHandler(this.promocomboBox11_SelectedValueChanged);
+            this.promocomboBox11.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox11_SelectionChangeCommitted);
             // 
             // seccomboBox
             // 
@@ -657,7 +659,6 @@ namespace gtsco2.forms.GTSecetion
             this.seccomboBox.Name = "seccomboBox";
             this.seccomboBox.Size = new System.Drawing.Size(143, 21);
             this.seccomboBox.TabIndex = 4;
-            this.seccomboBox.SelectedIndexChanged += new System.EventHandler(this.seccomboBox_SelectedIndexChanged);
             // 
             // modecombobox17
             // 
@@ -666,7 +667,8 @@ namespace gtsco2.forms.GTSecetion
             this.modecombobox17.Name = "modecombobox17";
             this.modecombobox17.Size = new System.Drawing.Size(153, 21);
             this.modecombobox17.TabIndex = 4;
-            this.modecombobox17.SelectedIndexChanged += new System.EventHandler(this.modecombobox17_SelectedIndexChanged);
+            this.modecombobox17.SelectionChangeCommitted += new System.EventHandler(this.modecombobox17_SelectionChangeCommitted);
+            this.modecombobox17.SelectedValueChanged += new System.EventHandler(this.modecombobox17_SelectedValueChanged);
             // 
             // Root
             // 

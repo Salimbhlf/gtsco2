@@ -379,12 +379,6 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup2 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup12 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForNum_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDate_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDate_Resiliation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForID_Emp = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForID_Maitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForCode_postal = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForEtranger = new DevExpress.XtraLayout.LayoutControlItem();
@@ -411,6 +405,12 @@
             this.ItemForSituation_Familiale_Parents_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForSituation_Familiale_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForProfession_Mère_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup12 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForNum_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDate_Validation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDate_Resiliation_Contrat_STG = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForID_Emp = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForID_Maitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForSection = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -448,6 +448,11 @@
             this.Suiver_stagiairePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).BeginInit();
@@ -550,12 +555,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).BeginInit();
@@ -582,6 +581,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
@@ -708,9 +713,10 @@
             this.bbiClose,
             this.bbiSaveLayout,
             this.bbiResetLayout,
-            this.barButtonItem4});
+            this.barButtonItem4,
+            this.barButtonItem7});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 11;
+            this.mainRibbonControl.MaxItemId = 12;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.mainRibbonPage});
@@ -795,7 +801,8 @@
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
+            this.ribbonPageGroupLayout,
+            this.ribbonPageGroup1});
             this.mainRibbonPage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mainRibbonPage.ImageOptions.Image")));
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
@@ -3830,64 +3837,6 @@
             this.layoutControlGroup11,
             this.layoutControlGroup12});
             // 
-            // layoutControlGroup12
-            // 
-            this.layoutControlGroup12.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForNum_Validation_Contrat_STG,
-            this.ItemForDate_Validation_Contrat_STG,
-            this.ItemForDate_Resiliation_Contrat_STG,
-            this.ItemForID_Emp,
-            this.ItemForID_Maitre_Apprentissage});
-            this.layoutControlGroup12.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup12.Name = "layoutControlGroup12";
-            this.layoutControlGroup12.Size = new System.Drawing.Size(697, 168);
-            this.layoutControlGroup12.Text = "Employeur et Contrat";
-            // 
-            // ItemForNum_Validation_Contrat_STG
-            // 
-            this.ItemForNum_Validation_Contrat_STG.Control = this.Num_Validation_Contrat_STGTextEdit;
-            this.ItemForNum_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 24);
-            this.ItemForNum_Validation_Contrat_STG.Name = "ItemForNum_Validation_Contrat_STG";
-            this.ItemForNum_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
-            this.ItemForNum_Validation_Contrat_STG.Text = "Numéro de Validation du Contrat du stagiaire";
-            this.ItemForNum_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
-            // 
-            // ItemForDate_Validation_Contrat_STG
-            // 
-            this.ItemForDate_Validation_Contrat_STG.Control = this.Date_Validation_Contrat_STGDateEdit;
-            this.ItemForDate_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 48);
-            this.ItemForDate_Validation_Contrat_STG.Name = "ItemForDate_Validation_Contrat_STG";
-            this.ItemForDate_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
-            this.ItemForDate_Validation_Contrat_STG.Text = "Date de Validation du Contrat du stagiaire";
-            this.ItemForDate_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
-            // 
-            // ItemForDate_Resiliation_Contrat_STG
-            // 
-            this.ItemForDate_Resiliation_Contrat_STG.Control = this.Date_Resiliation_Contrat_STGDateEdit;
-            this.ItemForDate_Resiliation_Contrat_STG.Location = new System.Drawing.Point(0, 72);
-            this.ItemForDate_Resiliation_Contrat_STG.Name = "ItemForDate_Resiliation_Contrat_STG";
-            this.ItemForDate_Resiliation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
-            this.ItemForDate_Resiliation_Contrat_STG.Text = "Date de résiliation du Contrat du stagiaire";
-            this.ItemForDate_Resiliation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
-            // 
-            // ItemForID_Emp
-            // 
-            this.ItemForID_Emp.Control = this.EmployeurLookUpEdit;
-            this.ItemForID_Emp.Location = new System.Drawing.Point(0, 0);
-            this.ItemForID_Emp.Name = "ItemForID_Emp";
-            this.ItemForID_Emp.Size = new System.Drawing.Size(697, 24);
-            this.ItemForID_Emp.Text = "Employeur ";
-            this.ItemForID_Emp.TextSize = new System.Drawing.Size(218, 13);
-            // 
-            // ItemForID_Maitre_Apprentissage
-            // 
-            this.ItemForID_Maitre_Apprentissage.Control = this.Maitre_ApprentissageLookUpEdit;
-            this.ItemForID_Maitre_Apprentissage.Location = new System.Drawing.Point(0, 96);
-            this.ItemForID_Maitre_Apprentissage.Name = "ItemForID_Maitre_Apprentissage";
-            this.ItemForID_Maitre_Apprentissage.Size = new System.Drawing.Size(697, 72);
-            this.ItemForID_Maitre_Apprentissage.Text = "Maitre Apprentissage";
-            this.ItemForID_Maitre_Apprentissage.TextSize = new System.Drawing.Size(218, 13);
-            // 
             // layoutControlGroup10
             // 
             this.layoutControlGroup10.AppearanceGroup.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
@@ -4224,6 +4173,64 @@
             this.ItemForProfession_Mère_STG.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.ItemForProfession_Mère_STG.TextSize = new System.Drawing.Size(192, 13);
             this.ItemForProfession_Mère_STG.TextToControlDistance = 5;
+            // 
+            // layoutControlGroup12
+            // 
+            this.layoutControlGroup12.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForNum_Validation_Contrat_STG,
+            this.ItemForDate_Validation_Contrat_STG,
+            this.ItemForDate_Resiliation_Contrat_STG,
+            this.ItemForID_Emp,
+            this.ItemForID_Maitre_Apprentissage});
+            this.layoutControlGroup12.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup12.Name = "layoutControlGroup12";
+            this.layoutControlGroup12.Size = new System.Drawing.Size(697, 168);
+            this.layoutControlGroup12.Text = "Employeur et Contrat";
+            // 
+            // ItemForNum_Validation_Contrat_STG
+            // 
+            this.ItemForNum_Validation_Contrat_STG.Control = this.Num_Validation_Contrat_STGTextEdit;
+            this.ItemForNum_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 24);
+            this.ItemForNum_Validation_Contrat_STG.Name = "ItemForNum_Validation_Contrat_STG";
+            this.ItemForNum_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
+            this.ItemForNum_Validation_Contrat_STG.Text = "Numéro de Validation du Contrat du stagiaire";
+            this.ItemForNum_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForDate_Validation_Contrat_STG
+            // 
+            this.ItemForDate_Validation_Contrat_STG.Control = this.Date_Validation_Contrat_STGDateEdit;
+            this.ItemForDate_Validation_Contrat_STG.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDate_Validation_Contrat_STG.Name = "ItemForDate_Validation_Contrat_STG";
+            this.ItemForDate_Validation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
+            this.ItemForDate_Validation_Contrat_STG.Text = "Date de Validation du Contrat du stagiaire";
+            this.ItemForDate_Validation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForDate_Resiliation_Contrat_STG
+            // 
+            this.ItemForDate_Resiliation_Contrat_STG.Control = this.Date_Resiliation_Contrat_STGDateEdit;
+            this.ItemForDate_Resiliation_Contrat_STG.Location = new System.Drawing.Point(0, 72);
+            this.ItemForDate_Resiliation_Contrat_STG.Name = "ItemForDate_Resiliation_Contrat_STG";
+            this.ItemForDate_Resiliation_Contrat_STG.Size = new System.Drawing.Size(697, 24);
+            this.ItemForDate_Resiliation_Contrat_STG.Text = "Date de résiliation du Contrat du stagiaire";
+            this.ItemForDate_Resiliation_Contrat_STG.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForID_Emp
+            // 
+            this.ItemForID_Emp.Control = this.EmployeurLookUpEdit;
+            this.ItemForID_Emp.Location = new System.Drawing.Point(0, 0);
+            this.ItemForID_Emp.Name = "ItemForID_Emp";
+            this.ItemForID_Emp.Size = new System.Drawing.Size(697, 24);
+            this.ItemForID_Emp.Text = "Employeur ";
+            this.ItemForID_Emp.TextSize = new System.Drawing.Size(218, 13);
+            // 
+            // ItemForID_Maitre_Apprentissage
+            // 
+            this.ItemForID_Maitre_Apprentissage.Control = this.Maitre_ApprentissageLookUpEdit;
+            this.ItemForID_Maitre_Apprentissage.Location = new System.Drawing.Point(0, 96);
+            this.ItemForID_Maitre_Apprentissage.Name = "ItemForID_Maitre_Apprentissage";
+            this.ItemForID_Maitre_Apprentissage.Size = new System.Drawing.Size(697, 72);
+            this.ItemForID_Maitre_Apprentissage.Text = "Maitre Apprentissage";
+            this.ItemForID_Maitre_Apprentissage.TextSize = new System.Drawing.Size(218, 13);
             // 
             // ItemForSection
             // 
@@ -4626,6 +4633,45 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Imprimer le certificat \r\nde scolarité ";
+            this.barButtonItem5.Id = 10;
+            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Imprimer le certificat \r\nde scolarité ";
+            this.barButtonItem6.Id = 10;
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Imprimer fich D\'information";
+            this.barButtonItem7.Id = 11;
+            this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
+            this.barButtonItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Imprimer le certificat \r\nde scolarité ";
+            this.barButtonItem8.Id = 10;
+            this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
+            this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
             // StagiairView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4745,12 +4791,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_postal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEtranger)).EndInit();
@@ -4777,6 +4817,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_Parents_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSituation_Familiale_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForProfession_Mère_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_Validation_Contrat_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Validation_Contrat_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDate_Resiliation_Contrat_STG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Emp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
@@ -5243,5 +5289,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Maitre_Apprentissage;
         private DevExpress.XtraGrid.Columns.GridColumn colQualification_Maitre_Apprentissage;
         private DevExpress.XtraGrid.Columns.GridColumn colTel_Maitre_Apprentissage;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
     }
 }

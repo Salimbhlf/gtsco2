@@ -254,5 +254,10 @@ namespace gtsco2.mvvm.Views.StagiairView{
 
 			}
 		}
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			forms.Formulaire_d_inscription.Formulaire_d_inscription.print(Num_STGTextEdit.Text);
+        }
     }
 }

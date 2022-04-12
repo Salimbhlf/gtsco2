@@ -267,5 +267,10 @@ namespace gtsco2.mvvm.Views.StagiairView{
 			frm.Show();
 
         }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			forms.Page_de_garde.Pvinstalation.print(Num_STGTextEdit.Text);
+        }
     }
 }

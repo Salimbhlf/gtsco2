@@ -351,6 +351,12 @@
     <Compile Include="forms\Décisions\Transfert.Designer.cs">
       <DependentUpon>Transfert.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Page de garde\Pvinstalation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Page de garde\Pvinstalation.Designer.cs">
+      <DependentUpon>Pvinstalation.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Pageprancipel\FrmPrancipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -881,6 +887,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Décisions\Transfert.resx">
       <DependentUpon>Transfert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Page de garde\Pvinstalation.resx">
+      <DependentUpon>Pvinstalation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Pageprancipel\FrmPrancipal.resx">
       <DependentUpon>FrmPrancipal.cs</DependentUpon>

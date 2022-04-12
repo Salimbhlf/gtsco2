@@ -454,6 +454,7 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).BeginInit();
@@ -716,9 +717,10 @@
             this.bbiResetLayout,
             this.barButtonItem4,
             this.barButtonItem7,
-            this.barButtonItem9});
+            this.barButtonItem9,
+            this.barButtonItem10});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 13;
+            this.mainRibbonControl.MaxItemId = 14;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.mainRibbonPage});
@@ -853,10 +855,12 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup1.ImageOptions.Image")));
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "imprime";
             // 
             // NomTextEdit
             // 
@@ -4684,6 +4688,15 @@
             this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
             this.barButtonItem8.Name = "barButtonItem8";
             // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "Pv d\'inastalastion";
+            this.barButtonItem10.Id = 13;
+            this.barButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
+            this.barButtonItem10.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
+            this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
+            // 
             // StagiairView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5307,5 +5320,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
     }
 }

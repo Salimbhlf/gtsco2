@@ -237,6 +237,18 @@
     <Compile Include="forms\Décisions\Résiliation.Designer.cs">
       <DependentUpon>Résiliation.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Page de garde\autirisationDeatude.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Page de garde\autirisationDeatude.Designer.cs">
+      <DependentUpon>autirisationDeatude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Page de garde\forjour\frmforimolierdesabsonce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Page de garde\forjour\frmforimolierdesabsonce.Designer.cs">
+      <DependentUpon>frmforimolierdesabsonce.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Page de garde\Page de garde.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -812,6 +824,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Décisions\Résiliation.resx">
       <DependentUpon>Résiliation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Page de garde\autirisationDeatude.resx">
+      <DependentUpon>autirisationDeatude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Page de garde\forjour\frmforimolierdesabsonce.resx">
+      <DependentUpon>frmforimolierdesabsonce.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Page de garde\Page de garde.resx">
       <DependentUpon>Page de garde.cs</DependentUpon>

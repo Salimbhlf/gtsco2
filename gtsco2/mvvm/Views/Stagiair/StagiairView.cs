@@ -259,5 +259,13 @@ namespace gtsco2.mvvm.Views.StagiairView{
         {
 			forms.Formulaire_d_inscription.Formulaire_d_inscription.print(Num_STGTextEdit.Text);
         }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			forms.Page_de_garde.forjour.forjourETd frm = new forms.Page_de_garde.forjour.forjourETd();
+			frm.print(Num_STGTextEdit.Text);
+			frm.Show();
+
+        }
     }
 }

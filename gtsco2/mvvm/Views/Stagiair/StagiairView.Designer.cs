@@ -39,6 +39,7 @@
             this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -415,8 +416,8 @@
             this.ItemForID_Maitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForSection = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForAbsences = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -425,10 +426,10 @@
             this.ItemForContract_avenant_changement = new DevExpress.XtraLayout.LayoutControlItem();
             this.autoGroupForEvaluations = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForEvaluations = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForDecisions = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForSuiver_stagiaire = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNum_STG = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForphoto = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNom = new DevExpress.XtraLayout.LayoutControlItem();
@@ -589,8 +590,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
@@ -599,10 +600,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForContract_avenant_changement)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autoGroupForEvaluations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForphoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).BeginInit();
@@ -714,9 +715,10 @@
             this.bbiSaveLayout,
             this.bbiResetLayout,
             this.barButtonItem4,
-            this.barButtonItem7});
+            this.barButtonItem7,
+            this.barButtonItem9});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbonControl.MaxItemId = 12;
+            this.mainRibbonControl.MaxItemId = 13;
             this.mainRibbonControl.Name = "mainRibbonControl";
             this.mainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.mainRibbonPage});
@@ -806,6 +808,15 @@
             this.barButtonItem7.Name = "barButtonItem7";
             this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "Autrisation de etude";
+            this.barButtonItem9.Id = 12;
+            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
+            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
+            // 
             // mainRibbonPage
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -843,6 +854,7 @@
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
@@ -4274,25 +4286,25 @@
             this.layoutControlGroup9});
             this.tabbedControlGroup1.Text = "Tabs";
             // 
-            // layoutControlGroup6
+            // layoutControlGroup9
             // 
-            this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForDecisions});
-            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup6.Name = "autoGroupForDecisions";
-            this.layoutControlGroup6.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup6.Text = "Decisions";
+            this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForTransferers});
+            this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup9.Name = "autoGroupForTransferers";
+            this.layoutControlGroup9.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup9.Text = "Transferts";
             // 
-            // ItemForDecisions
+            // ItemForTransferers
             // 
-            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
-            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
-            this.ItemForDecisions.Name = "ItemForDecisions";
-            this.ItemForDecisions.Size = new System.Drawing.Size(978, 153);
-            this.ItemForDecisions.StartNewLine = true;
-            this.ItemForDecisions.Text = "Decisions";
-            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForDecisions.TextVisible = false;
+            this.ItemForTransferers.Control = this.TransferersXtraUserControl;
+            this.ItemForTransferers.Location = new System.Drawing.Point(0, 0);
+            this.ItemForTransferers.Name = "ItemForTransferers";
+            this.ItemForTransferers.Size = new System.Drawing.Size(978, 153);
+            this.ItemForTransferers.StartNewLine = true;
+            this.ItemForTransferers.Text = "Transferers";
+            this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForTransferers.TextVisible = false;
             // 
             // layoutControlGroup3
             // 
@@ -4374,6 +4386,26 @@
             this.ItemForEvaluations.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForEvaluations.TextVisible = false;
             // 
+            // layoutControlGroup6
+            // 
+            this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForDecisions});
+            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup6.Name = "autoGroupForDecisions";
+            this.layoutControlGroup6.Size = new System.Drawing.Size(978, 153);
+            this.layoutControlGroup6.Text = "Decisions";
+            // 
+            // ItemForDecisions
+            // 
+            this.ItemForDecisions.Control = this.DecisionsXtraUserControl;
+            this.ItemForDecisions.Location = new System.Drawing.Point(0, 0);
+            this.ItemForDecisions.Name = "ItemForDecisions";
+            this.ItemForDecisions.Size = new System.Drawing.Size(978, 153);
+            this.ItemForDecisions.StartNewLine = true;
+            this.ItemForDecisions.Text = "Decisions";
+            this.ItemForDecisions.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForDecisions.TextVisible = false;
+            // 
             // layoutControlGroup8
             // 
             this.layoutControlGroup8.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -4393,26 +4425,6 @@
             this.ItemForSuiver_stagiaire.Text = "Suiver_stagiaire";
             this.ItemForSuiver_stagiaire.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForSuiver_stagiaire.TextVisible = false;
-            // 
-            // layoutControlGroup9
-            // 
-            this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForTransferers});
-            this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup9.Name = "autoGroupForTransferers";
-            this.layoutControlGroup9.Size = new System.Drawing.Size(978, 153);
-            this.layoutControlGroup9.Text = "Transferts";
-            // 
-            // ItemForTransferers
-            // 
-            this.ItemForTransferers.Control = this.TransferersXtraUserControl;
-            this.ItemForTransferers.Location = new System.Drawing.Point(0, 0);
-            this.ItemForTransferers.Name = "ItemForTransferers";
-            this.ItemForTransferers.Size = new System.Drawing.Size(978, 153);
-            this.ItemForTransferers.StartNewLine = true;
-            this.ItemForTransferers.Text = "Transferers";
-            this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForTransferers.TextVisible = false;
             // 
             // ItemForNum_STG
             // 
@@ -4825,8 +4837,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForID_Maitre_Apprentissage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAbsences)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
@@ -4835,10 +4847,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForContract_avenant_changement)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.autoGroupForEvaluations)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForEvaluations)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDecisions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSuiver_stagiaire)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNum_STG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForphoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom)).EndInit();
@@ -5294,5 +5306,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
     }
 }

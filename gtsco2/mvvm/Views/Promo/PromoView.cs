@@ -101,5 +101,10 @@ namespace gtsco2.mvvm.Views.PromoView{
 			 
 			bbiCustomize.ItemClick += (s, e) => { dataLayoutControl1.ShowCustomizationForm(); };
        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			forms.Pv.Liste_pv_Overture.PvOverture.print(int.Parse(ID_PromoTextEdit.Text));
+        }
     }
 }

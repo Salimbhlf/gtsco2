@@ -14,17 +14,23 @@ namespace gtsco2.forms.GTSecetion.rpor_sction
         {
             InitializeComponent();
         }
-        public static void print(int sec)
+        public static void print(int sec, string section , string promo)
         {
             listsection rpt = new listsection();
             rpt.DataSource = rpt.load(sec);
-            rpt.databinding();
+            rpt.databinding(section,promo);
             rpt.ShowRibbonPreview();
 
         }
 
-        void databinding()
+        void databinding(string section , string promo )
         {
+            xrLabepromo.Text = promo;
+            xrLabel10Secttion.Text = section;
+            xrlabelsemstre.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "semastre"));
+            xrLabel6fille.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "nbrfille"));
+            xrLabel1gr.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "nbrhomme"));
+            xrLabel2sp.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "sp"));
             xrTableCell7code.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "code"));
             xrTableCell8nom.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "nom"));
             xrTableCell9Prenom.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "prenom"));
@@ -39,6 +45,14 @@ namespace gtsco2.forms.GTSecetion.rpor_sction
                           code = stg.Num_STG,
                           nom = stg.Nom,
                           prenom = stg.Prenom,
+                          semastre = stg.Section1.Semestre.Designation_Semestre,
+                          sp = stg.Promo.Option.Specialite1.Designation_SP+" Option "+stg.Promo.Option.Designation_Option,
+                          nbrfille = (shared.bd.Stagiairs.Where(x=> x.Section == sec && x.Sexe == "Femme").Count()),
+                          nbrhomme =(shared.bd.Stagiairs.Where(x => x.Section == sec && x.Sexe == "Homme").Count()),
+                          
+
+
+                          
 
 
                       };

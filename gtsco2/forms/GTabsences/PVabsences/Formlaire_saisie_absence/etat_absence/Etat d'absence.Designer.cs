@@ -83,7 +83,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 75F;
+            this.BottomMargin.HeightF = 76.66667F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -223,7 +223,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrLabel3,
             this.xrLabel4,
             this.xrLabel12});
-            this.ReportHeader.HeightF = 245.1149F;
+            this.ReportHeader.HeightF = 245.1148F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel2
@@ -515,7 +515,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrLabel11.Multiline = true;
             this.xrLabel11.Name = "xrLabel11";
             this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(467.6855F, 23F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(447.4287F, 23F);
             this.xrLabel11.StylePriority.UseFont = false;
             this.xrLabel11.StylePriority.UseTextAlignment = false;
             this.xrLabel11.Text = "Institut National Spécilaisé dans la formation professionel";
@@ -607,7 +607,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.Detail,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(75, 74, 75, 75);
+            this.Margins = new System.Drawing.Printing.Margins(75, 74, 75, 77);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

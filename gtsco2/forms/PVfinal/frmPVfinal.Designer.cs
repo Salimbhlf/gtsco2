@@ -34,8 +34,8 @@ namespace gtsco2.forms.PVfinal
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -105,6 +105,7 @@ namespace gtsco2.forms.PVfinal
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
@@ -149,23 +150,6 @@ namespace gtsco2.forms.PVfinal
             this.simpleButton5.Text = "Imprimer ";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
-            // closeButton7
-            // 
-            this.closeButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton7.Appearance.Options.UseFont = true;
-            this.closeButton7.AutoWidthInLayoutControl = true;
-            this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
-            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.closeButton7.Location = new System.Drawing.Point(524, 3);
-            this.closeButton7.Name = "closeButton7";
-            this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.closeButton7.ShowToolTips = false;
-            this.closeButton7.Size = new System.Drawing.Size(102, 69);
-            this.closeButton7.TabIndex = 10;
-            this.closeButton7.Text = "Fermer";
-            this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click);
-            // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,6 +167,23 @@ namespace gtsco2.forms.PVfinal
             this.simpleButton1.Text = "Imprimer le Bulltin\r\n semestriel";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // closeButton7
+            // 
+            this.closeButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton7.Appearance.Options.UseFont = true;
+            this.closeButton7.AutoWidthInLayoutControl = true;
+            this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
+            this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.closeButton7.Location = new System.Drawing.Point(524, 3);
+            this.closeButton7.Name = "closeButton7";
+            this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.closeButton7.ShowToolTips = false;
+            this.closeButton7.Size = new System.Drawing.Size(102, 69);
+            this.closeButton7.TabIndex = 10;
+            this.closeButton7.Text = "Fermer";
+            this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click);
+            // 
             // panelControl2
             // 
             this.panelControl2.Appearance.BackColor = System.Drawing.Color.White;
@@ -196,6 +197,7 @@ namespace gtsco2.forms.PVfinal
             // 
             // layoutControl1
             // 
+            this.layoutControl1.BackColor = System.Drawing.Color.Transparent;
             this.layoutControl1.Controls.Add(this.labelControl3);
             this.layoutControl1.Controls.Add(this.NUBEREF);
             this.layoutControl1.Controls.Add(this.chikdeavenrtp);

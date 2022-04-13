@@ -79,12 +79,23 @@ namespace gtsco2.forms.GTabsences.PVabsences
 
 
 
-                var qur5 = from ann in shared.bd.annee_scolaire
-                           select new { id = ann.ID_Année_SCO, nom = (ann.Designation +" " + ann.Session_Année_SCO) };
-                anneecomboBox141.DataSource = qur5.ToList();
-                anneecomboBox141.DisplayMember = "nom";
-                anneecomboBox141.ValueMember = "id";
+              
+                try
+                {
+                    var qur5 = (from ann in shared.bd.annee_scolaire
+                                select new { id = ann.ID_Année_SCO, nom = (ann.Designation + " " + ann.Session_Année_SCO) }).ToList();
+                    DataTable table = new DataTable();
+                    table.Columns.Add("nom");
+                    table.Columns.Add("id");
 
+                    for (int i = qur5.Count - 1; i >= 0; i--)
+                        table.Rows.Add(qur5[i].nom, qur5[i].id);
+
+                    anneecomboBox141.DataSource = table;
+                    anneecomboBox141.DisplayMember = "nom";
+                    anneecomboBox141.ValueMember = "id";
+                }
+                catch { }
 
 
             } catch (Exception ex)

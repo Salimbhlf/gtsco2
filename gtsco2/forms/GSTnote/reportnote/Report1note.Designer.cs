@@ -232,7 +232,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             // xrLabel11
             // 
             this.xrLabel11.Font = new System.Drawing.Font("Arial", 11F);
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(414.6432F, 106.3334F);
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(414.643F, 119.8751F);
             this.xrLabel11.Multiline = true;
             this.xrLabel11.Name = "xrLabel11";
             this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -247,7 +247,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?pEnseignant")});
             this.xrLabel12.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(507.9168F, 106.3333F);
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(507.9166F, 119.875F);
             this.xrLabel12.Multiline = true;
             this.xrLabel12.Name = "xrLabel12";
             this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
@@ -263,7 +263,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?pModule")});
             this.xrLabel13.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(250.6253F, 106.3334F);
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(250.6252F, 119.8751F);
             this.xrLabel13.Multiline = true;
             this.xrLabel13.Name = "xrLabel13";
             this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
@@ -295,7 +295,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?pPromo")});
             this.xrLabel9.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(68.33351F, 106.3333F);
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(68.33334F, 119.875F);
             this.xrLabel9.Multiline = true;
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
@@ -458,7 +458,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             // xrLabel6
             // 
             this.xrLabel6.Font = new System.Drawing.Font("Arial", 11F);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(188.1252F, 106.3334F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(188.125F, 119.8751F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -484,7 +484,7 @@ namespace gtsco2.forms.GSTnote.reportnote
             // xrLabel4
             // 
             this.xrLabel4.Font = new System.Drawing.Font("Arial", 11F);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(10.0002F, 106.3334F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 119.8751F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

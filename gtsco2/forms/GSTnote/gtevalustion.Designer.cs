@@ -128,6 +128,7 @@ namespace gtsco2.forms
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
@@ -336,6 +337,7 @@ namespace gtsco2.forms
             // 
             // layoutControl1
             // 
+            this.layoutControl1.BackColor = System.Drawing.Color.Transparent;
             this.layoutControl1.Controls.Add(this.radioapre);
             this.layoutControl1.Controls.Add(this.radio1avin);
             this.layoutControl1.Controls.Add(this.comboBox1Enseignant);

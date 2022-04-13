@@ -108,6 +108,7 @@ namespace gtsco2.forms.GTabsences
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
             this.flowLayoutPanel1.Controls.Add(this.removeButton1);
@@ -242,6 +243,7 @@ namespace gtsco2.forms.GTabsences
             // 
             // layoutControl1
             // 
+            this.layoutControl1.BackColor = System.Drawing.Color.Transparent;
             this.layoutControl1.Controls.Add(this.labelControl3);
             this.layoutControl1.Controls.Add(this.NUBEREF);
             this.layoutControl1.Controls.Add(this.simpleButton2);

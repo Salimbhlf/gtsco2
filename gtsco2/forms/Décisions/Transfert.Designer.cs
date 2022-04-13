@@ -34,6 +34,9 @@ namespace gtsco2.forms.Décisions
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label6 = new DevExpress.XtraReports.UI.XRLabel();
             this.label9 = new DevExpress.XtraReports.UI.XRLabel();
             this.label11 = new DevExpress.XtraReports.UI.XRLabel();
             this.label18 = new DevExpress.XtraReports.UI.XRLabel();
@@ -55,9 +58,6 @@ namespace gtsco2.forms.Décisions
             this.label13 = new DevExpress.XtraReports.UI.XRLabel();
             this.pictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.label1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
@@ -110,11 +110,57 @@ namespace gtsco2.forms.Décisions
             this.ReportHeader.HeightF = 961.75F;
             this.ReportHeader.Name = "ReportHeader";
             // 
+            // xrLabel2
+            // 
+            this.xrLabel2.AutoWidth = true;
+            this.xrLabel2.Font = new System.Drawing.Font("Arial", 12F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(10.91652F, 514.0416F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(677.0007F, 23.66666F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "- نـظرا لموافقة مدير المعهد الوطني المتخصص في التكوين المهني  حسين داي   – المحمد" +
+    "ية سابقا ";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.AutoWidth = true;
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 12F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(12.99936F, 490.3749F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(677.0007F, 23.66666F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "- نـظرا لموافقة مدير المعهد الوطني المتخصص في التكوين المهني بئر مراد رايس ";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.AutoWidth = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 579.4583F);
+            this.label6.Multiline = true;
+            this.label6.Name = "label6";
+            this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label6.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.label6.SizeF = new System.Drawing.SizeF(697.9166F, 29.91663F);
+            this.label6.StylePriority.UseFont = false;
+            this.label6.StylePriority.UseTextAlignment = false;
+            this.label6.Text = "المـادة الأولى :  يحول المتمهن  بن مبخوت ياسين ";
+            this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // label9
             // 
             this.label9.AutoWidth = true;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(547.4586F, 828.0834F);
+            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(537.459F, 798.9583F);
             this.label9.Multiline = true;
             this.label9.Name = "label9";
             this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -129,7 +175,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label11.AutoWidth = true;
             this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.LocationFloat = new DevExpress.Utils.PointFloat(63.9169F, 828.0834F);
+            this.label11.LocationFloat = new DevExpress.Utils.PointFloat(53.91747F, 798.9583F);
             this.label11.Multiline = true;
             this.label11.Name = "label11";
             this.label11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -144,7 +190,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label18.AutoWidth = true;
             this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(22.99992F, 668.4167F);
+            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(13.00048F, 639.2914F);
             this.label18.Multiline = true;
             this.label18.Name = "label18";
             this.label18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -159,7 +205,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label12.AutoWidth = true;
             this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(22.99992F, 638.5001F);
+            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(13.00048F, 609.3749F);
             this.label12.Multiline = true;
             this.label12.Name = "label12";
             this.label12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -174,7 +220,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label7.AutoWidth = true;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(243.9162F, 638.5001F);
+            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(233.9167F, 609.3749F);
             this.label7.Multiline = true;
             this.label7.Name = "label7";
             this.label7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -189,7 +235,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label17.AutoWidth = true;
             this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label17.LocationFloat = new DevExpress.Utils.PointFloat(243.9162F, 668.4167F);
+            this.label17.LocationFloat = new DevExpress.Utils.PointFloat(233.9167F, 639.2914F);
             this.label17.Multiline = true;
             this.label17.Name = "label17";
             this.label17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -204,7 +250,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label20.AutoWidth = true;
             this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(22.99941F, 701.75F);
+            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(12.99997F, 672.6248F);
             this.label20.Multiline = true;
             this.label20.Name = "label20";
             this.label20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -219,7 +265,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label10.AutoWidth = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(23.00068F, 757.4165F);
+            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(13.00124F, 728.2913F);
             this.label10.Multiline = true;
             this.label10.Name = "label10";
             this.label10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -236,7 +282,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label21.AutoWidth = true;
             this.label21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label21.LocationFloat = new DevExpress.Utils.PointFloat(471.9586F, 729.5833F);
+            this.label21.LocationFloat = new DevExpress.Utils.PointFloat(461.959F, 700.4582F);
             this.label21.Multiline = true;
             this.label21.Name = "label21";
             this.label21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -251,7 +297,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label19.AutoWidth = true;
             this.label19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label19.LocationFloat = new DevExpress.Utils.PointFloat(385.4162F, 701.75F);
+            this.label19.LocationFloat = new DevExpress.Utils.PointFloat(375.4167F, 672.6248F);
             this.label19.Multiline = true;
             this.label19.Name = "label19";
             this.label19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -266,7 +312,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label16.AutoWidth = true;
             this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label16.LocationFloat = new DevExpress.Utils.PointFloat(471.9586F, 671.8334F);
+            this.label16.LocationFloat = new DevExpress.Utils.PointFloat(461.959F, 642.7081F);
             this.label16.Multiline = true;
             this.label16.Name = "label16";
             this.label16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -281,7 +327,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label8.AutoWidth = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(471.9578F, 638.5001F);
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(461.9583F, 609.3749F);
             this.label8.Multiline = true;
             this.label8.Name = "label8";
             this.label8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -296,7 +342,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label5.AutoWidth = true;
             this.label5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(20.91656F, 558.9583F);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(10.91652F, 537.7083F);
             this.label5.Multiline = true;
             this.label5.Name = "label5";
             this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -310,7 +356,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label15.AutoWidth = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F);
-            this.label15.LocationFloat = new DevExpress.Utils.PointFloat(20.91564F, 487.9584F);
+            this.label15.LocationFloat = new DevExpress.Utils.PointFloat(10.91562F, 466.7084F);
             this.label15.Multiline = true;
             this.label15.Name = "label15";
             this.label15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -325,7 +371,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label4.AutoWidth = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F);
-            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(22.99941F, 211.1668F);
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(12.99936F, 189.9169F);
             this.label4.Multiline = true;
             this.label4.Name = "label4";
             this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -340,7 +386,7 @@ namespace gtsco2.forms.Décisions
             // 
             this.label3.AutoWidth = true;
             this.label3.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(20.91656F, 175.6667F);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(10.91652F, 154.4168F);
             this.label3.Multiline = true;
             this.label3.Name = "label3";
             this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -354,12 +400,12 @@ namespace gtsco2.forms.Décisions
             // 
             this.label2.AutoWidth = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 129.7501F);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 118.9167F);
             this.label2.Multiline = true;
             this.label2.Name = "label2";
             this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label2.SizeF = new System.Drawing.SizeF(697.9164F, 33.41669F);
+            this.label2.SizeF = new System.Drawing.SizeF(697.9164F, 25.08336F);
             this.label2.StylePriority.UseFont = false;
             this.label2.StylePriority.UseTextAlignment = false;
             this.label2.Text = "الرقم: ................./  م ع /....................                             " +
@@ -370,35 +416,36 @@ namespace gtsco2.forms.Décisions
             // 
             this.label14.AutoWidth = true;
             this.label14.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.label14.LocationFloat = new DevExpress.Utils.PointFloat(0F, 58.83338F);
+            this.label14.LocationFloat = new DevExpress.Utils.PointFloat(0F, 48F);
             this.label14.Multiline = true;
             this.label14.Name = "label14";
             this.label14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label14.SizeF = new System.Drawing.SizeF(275.0004F, 70.91669F);
             this.label14.StylePriority.UseFont = false;
             this.label14.StylePriority.UseTextAlignment = false;
-            this.label14.Text = "Institut National Spécialisé De La Formation Professionnelle. Hussein dey EX MOHA" +
-    "MMADIA";
+            this.label14.Text = "Institut National Spécialisé \r\nDe La Formation Professionnelle. Hussein dey EX MO" +
+    "HAMMADIA";
             this.label14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label13
             // 
             this.label13.AutoWidth = true;
             this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label13.LocationFloat = new DevExpress.Utils.PointFloat(442.3755F, 58.83338F);
+            this.label13.LocationFloat = new DevExpress.Utils.PointFloat(442.3752F, 48.00003F);
             this.label13.Multiline = true;
             this.label13.Name = "label13";
             this.label13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label13.SizeF = new System.Drawing.SizeF(255.5411F, 70.91669F);
             this.label13.StylePriority.UseFont = false;
             this.label13.StylePriority.UseTextAlignment = false;
-            this.label13.Text = "المعهد الوطني المتخصص في التكوين \r\nالمهني  حسين داي   – المحمدية سابقا –\r\n\r\n\r\n\r\n";
-            this.label13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomRight;
+            this.label13.Text = "المعهد الوطني المتخصص\r\n   في التكوين المهني \r\nحسين داي   – المحمدية سابقا\r\n\r\n\r\n\r\n" +
+    "";
+            this.label13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // pictureBox1
             // 
             this.pictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("pictureBox1.ImageSource"));
-            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(275.0004F, 71.33339F);
+            this.pictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(275.0004F, 60.5F);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.SizeF = new System.Drawing.SizeF(167.3751F, 45.83334F);
             // 
@@ -416,52 +463,6 @@ namespace gtsco2.forms.Décisions
             this.label1.Text = "الجمهوريـــــة الجزائريــــــة الديمقراطيـــــــــة الشعبيـــــــــــة\r\nوزارة الت" +
     "كويـــــــن والتعليـــــــم المهنــــــــي\r\n";
             this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoWidth = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 608.5835F);
-            this.label6.Multiline = true;
-            this.label6.Name = "label6";
-            this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.label6.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label6.SizeF = new System.Drawing.SizeF(697.9166F, 29.91663F);
-            this.label6.StylePriority.UseFont = false;
-            this.label6.StylePriority.UseTextAlignment = false;
-            this.label6.Text = "المـادة الأولى :  يحول المتمهن  بن مبخوت ياسين ";
-            this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.AutoWidth = true;
-            this.xrLabel1.Font = new System.Drawing.Font("Arial", 12F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(22.99941F, 511.6249F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(677.0007F, 23.66666F);
-            this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "- نـظرا لموافقة مدير المعهد الوطني المتخصص في التكوين المهني بئر مراد رايس ";
-            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.AutoWidth = true;
-            this.xrLabel2.Font = new System.Drawing.Font("Arial", 12F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(20.91656F, 535.2916F);
-            this.xrLabel2.Multiline = true;
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(677.0007F, 23.66666F);
-            this.xrLabel2.StylePriority.UseFont = false;
-            this.xrLabel2.StylePriority.UseTextAlignment = false;
-            this.xrLabel2.Text = "- نـظرا لموافقة مدير المعهد الوطني المتخصص في التكوين المهني  حسين داي   – المحمد" +
-    "ية سابقا ";
-            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // Transfert
             // 

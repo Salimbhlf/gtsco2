@@ -34,6 +34,7 @@ namespace gtsco2.forms.Décisions
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.label9 = new DevExpress.XtraReports.UI.XRLabel();
             this.label11 = new DevExpress.XtraReports.UI.XRLabel();
             this.label8 = new DevExpress.XtraReports.UI.XRLabel();
@@ -48,7 +49,6 @@ namespace gtsco2.forms.Décisions
             this.label14 = new DevExpress.XtraReports.UI.XRLabel();
             this.pictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.labe1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -85,6 +85,22 @@ namespace gtsco2.forms.Décisions
             this.labe1});
             this.ReportHeader.HeightF = 865.9167F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.AutoWidth = true;
+            this.xrLabel2.Font = new System.Drawing.Font("Arial", 12F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 539.3334F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(700F, 22.91656F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "- وتبـعـــا لقـــرار محضــر اجتمــاع مجلــس الأساتــذة المنعقد يوم 12 فيفري 2020\r" +
+    "\n";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label9
             // 
@@ -247,7 +263,8 @@ namespace gtsco2.forms.Décisions
             this.label13.SizeF = new System.Drawing.SizeF(234.791F, 70.91668F);
             this.label13.StylePriority.UseFont = false;
             this.label13.StylePriority.UseTextAlignment = false;
-            this.label13.Text = "المعهد الوطني المتخصص في التكوين \r\nالمهني  حسين داي   – المحمدية سابقا –\r\n\r\n\r\n\r\n";
+            this.label13.Text = "المعهد الوطني المتخصص\r\n   في التكوين المهني \r\nحسين داي   – المحمدية سابقا\r\n\r\n\r\n\r\n" +
+    "";
             this.label13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomRight;
             // 
             // label14
@@ -261,8 +278,8 @@ namespace gtsco2.forms.Décisions
             this.label14.SizeF = new System.Drawing.SizeF(264.5005F, 70.91667F);
             this.label14.StylePriority.UseFont = false;
             this.label14.StylePriority.UseTextAlignment = false;
-            this.label14.Text = "Institut National Spécialisé De La Formation Professionnelle. Hussein dey EX MOHA" +
-    "MMADIA";
+            this.label14.Text = "Institut National Spécialisé \r\nDe La Formation Professionnelle. Hussein dey EX MO" +
+    "HAMMADIA";
             this.label14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // pictureBox1
@@ -287,22 +304,6 @@ namespace gtsco2.forms.Décisions
             this.labe1.Text = "-نـظرا للمحضـر المـــؤرخ يـوم 17/03/2019 تحت رقـــم 01/2019 والمتضمـن فتــح فــرع" +
     " تـقنـي ســامي فــي اختصــاص ألمعلوماتية خيار قاعدة المعطيات  ";
             this.labe1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.AutoWidth = true;
-            this.xrLabel2.Font = new System.Drawing.Font("Arial", 12F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 539.3334F);
-            this.xrLabel2.Multiline = true;
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(700F, 22.91656F);
-            this.xrLabel2.StylePriority.UseFont = false;
-            this.xrLabel2.StylePriority.UseTextAlignment = false;
-            this.xrLabel2.Text = "- وتبـعـــا لقـــرار محضــر اجتمــاع مجلــس الأساتــذة المنعقد يوم 12 فيفري 2020\r" +
-    "\n";
-            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // Redoublement
             // 

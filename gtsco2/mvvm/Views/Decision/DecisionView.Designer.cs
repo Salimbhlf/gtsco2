@@ -23,6 +23,7 @@
         /// </summary>
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DecisionView));
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.ID_DecisionTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.decisionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -84,11 +85,11 @@
             this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ID_DecisionTextEdit.Properties)).BeginInit();
@@ -181,12 +182,12 @@
             this.Proce_verbal_delibationLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Proce_verbal_delibationLookUpEdit.Properties.DataSource = this.Proce_verbal_delibationBindingSource;
-            this.Proce_verbal_delibationLookUpEdit.Properties.DisplayMember = "Decisions";
+            this.Proce_verbal_delibationLookUpEdit.Properties.DisplayMember = "Num_PV_Délibiraiton";
             this.Proce_verbal_delibationLookUpEdit.Properties.NullText = "";
             this.Proce_verbal_delibationLookUpEdit.Properties.NullValuePrompt = "Saisir ou slectionner le numéro de PV  de delibération";
             this.Proce_verbal_delibationLookUpEdit.Properties.PopupView = this.Proce_verbal_delibationLookUpEditView;
             this.Proce_verbal_delibationLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.Proce_verbal_delibationLookUpEdit.Properties.ValueMember = "ID_PV_Délibiration";
+            this.Proce_verbal_delibationLookUpEdit.Properties.ValueMember = "Num_PV_Délibiraiton";
             this.Proce_verbal_delibationLookUpEdit.Size = new System.Drawing.Size(823, 20);
             this.Proce_verbal_delibationLookUpEdit.StyleController = this.dataLayoutControl1;
             this.Proce_verbal_delibationLookUpEdit.TabIndex = 7;
@@ -485,7 +486,7 @@
             // 
             // colCommune
             // 
-            this.colCommune.FieldName = "Commune";
+            this.colCommune.FieldName = "Commune.Commune_name";
             this.colCommune.Name = "colCommune";
             this.colCommune.Visible = true;
             this.colCommune.VisibleIndex = 7;
@@ -674,6 +675,15 @@
             this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
             this.bbiCustomize.Name = "bbiCustomize";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Imprimer la décision de redoubelement";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // mainRibbonPage
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -710,14 +720,6 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "barButtonItem1";
-            this.barButtonItem1.Id = 10;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // DecisionView
             // 

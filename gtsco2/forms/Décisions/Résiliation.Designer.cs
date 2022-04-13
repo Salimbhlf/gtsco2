@@ -249,7 +249,8 @@ namespace gtsco2.forms.Décisions
             this.label13.SizeF = new System.Drawing.SizeF(245.1243F, 70.91667F);
             this.label13.StylePriority.UseFont = false;
             this.label13.StylePriority.UseTextAlignment = false;
-            this.label13.Text = "المعهد الوطني المتخصص في التكوين \r\nالمهني  حسين داي   – المحمدية سابقا –\r\n\r\n\r\n\r\n";
+            this.label13.Text = "المعهد الوطني المتخصص\r\n   في التكوين المهني \r\nحسين داي   – المحمدية سابقا\r\n\r\n\r\n\r\n" +
+    "";
             this.label13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomRight;
             // 
             // pictureBox1
@@ -300,8 +301,8 @@ namespace gtsco2.forms.Décisions
             this.label14.SizeF = new System.Drawing.SizeF(264.5005F, 70.91667F);
             this.label14.StylePriority.UseFont = false;
             this.label14.StylePriority.UseTextAlignment = false;
-            this.label14.Text = "Institut National Spécialisé De La Formation Professionnelle. Hussein dey EX MOHA" +
-    "MMADIA";
+            this.label14.Text = "Institut National Spécialisé \r\nDe La Formation Professionnelle. Hussein dey EX MO" +
+    "HAMMADIA";
             this.label14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label7

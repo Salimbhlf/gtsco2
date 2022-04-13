@@ -223,7 +223,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrLabel3,
             this.xrLabel4,
             this.xrLabel12});
-            this.ReportHeader.HeightF = 245.1148F;
+            this.ReportHeader.HeightF = 245.1149F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel2
@@ -515,7 +515,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrLabel11.Multiline = true;
             this.xrLabel11.Name = "xrLabel11";
             this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(447.4287F, 23F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(467.6855F, 23F);
             this.xrLabel11.StylePriority.UseFont = false;
             this.xrLabel11.StylePriority.UseTextAlignment = false;
             this.xrLabel11.Text = "Institut National Spécilaisé dans la formation professionel";

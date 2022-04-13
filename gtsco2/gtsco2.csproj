@@ -237,6 +237,12 @@
     <Compile Include="forms\Décisions\Résiliation.Designer.cs">
       <DependentUpon>Résiliation.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\GTSecetion\rpor sction\listsection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\GTSecetion\rpor sction\listsection.Designer.cs">
+      <DependentUpon>listsection.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Page de garde\autirisationDeatude.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -830,6 +836,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Décisions\Résiliation.resx">
       <DependentUpon>Résiliation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\GTSecetion\rpor sction\listsection.resx">
+      <DependentUpon>listsection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Page de garde\autirisationDeatude.resx">
       <DependentUpon>autirisationDeatude.cs</DependentUpon>

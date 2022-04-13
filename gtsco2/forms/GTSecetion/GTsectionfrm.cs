@@ -807,5 +807,10 @@ namespace gtsco2.forms.GTSecetion
 
             }
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            GTSecetion.rpor_sction.listsection.print(int.Parse(seccomboBox.SelectedValue.ToString()));
+        }
     }
 }

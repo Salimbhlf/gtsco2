@@ -46,7 +46,7 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
                       {
                           code = stg.Num_STG,
                           nom = stg.Nom_ar + " " + stg.Prenom_ar,
-                          //dataniss = stg.Date_de_Naissance.Value.ToString("dd/MM/yyyy")+" "+    stg.Commune.Commune_name_ar  ,     
+                          dataniss = stg.Date_de_Naissance+" "+    stg.Commune.Commune_name_ar  ,     
                           
                         
                           niveu = stg.Nivo_SCO_ar,

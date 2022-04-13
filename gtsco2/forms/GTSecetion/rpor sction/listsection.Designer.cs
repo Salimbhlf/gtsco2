@@ -284,6 +284,7 @@ namespace gtsco2.forms.GTSecetion.rpor_sction
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLine1});
+            this.GroupFooter1.HeightF = 2.833335F;
             this.GroupFooter1.Name = "GroupFooter1";
             // 
             // xrLabel7

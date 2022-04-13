@@ -810,10 +810,25 @@ namespace gtsco2.forms.GTSecetion
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            
             var sec = seccomboBox.Text;
             string promo = promocomboBox11.Text;
+            try {
 
-            GTSecetion.rpor_sction.listsection.print(int.Parse(seccomboBox.SelectedValue.ToString()),sec,promo);
+                GTSecetion.rpor_sction.listsection.print(int.Parse(seccomboBox.SelectedValue.ToString()), sec, promo);
+            }
+            catch { }
+        }
+
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+            var sec = seccomboBox15.Text;
+            string promo = promocomboBox114.Text;
+            try { 
+
+            GTSecetion.rpor_sction.listsection.print(int.Parse(seccomboBox15.SelectedValue.ToString()), sec, promo);
+            }
+            catch { }
         }
     }
 }

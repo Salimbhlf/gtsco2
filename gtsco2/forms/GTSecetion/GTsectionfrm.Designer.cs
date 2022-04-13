@@ -60,6 +60,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
@@ -84,6 +85,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -99,8 +101,8 @@ namespace gtsco2.forms.GTSecetion
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -142,6 +144,7 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -158,7 +161,7 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -206,6 +209,7 @@ namespace gtsco2.forms.GTSecetion
             // 
             // layoutControl4
             // 
+            this.layoutControl4.Controls.Add(this.simpleButton8);
             this.layoutControl4.Controls.Add(this.simpleButton7);
             this.layoutControl4.Controls.Add(this.pro2checkEdit3);
             this.layoutControl4.Controls.Add(this.Sec2checkEdit2);
@@ -235,7 +239,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
             this.simpleButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton7.Location = new System.Drawing.Point(317, 79);
+            this.simpleButton7.Location = new System.Drawing.Point(273, 48);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton7.ShowToolTips = false;
@@ -247,10 +251,10 @@ namespace gtsco2.forms.GTSecetion
             // 
             // pro2checkEdit3
             // 
-            this.pro2checkEdit3.Location = new System.Drawing.Point(107, 55);
+            this.pro2checkEdit3.Location = new System.Drawing.Point(63, 24);
             this.pro2checkEdit3.Name = "pro2checkEdit3";
             this.pro2checkEdit3.Properties.Caption = "Affichez uniquement les stagiaires sans section";
-            this.pro2checkEdit3.Size = new System.Drawing.Size(428, 20);
+            this.pro2checkEdit3.Size = new System.Drawing.Size(455, 20);
             this.pro2checkEdit3.StyleController = this.layoutControl4;
             this.pro2checkEdit3.TabIndex = 13;
             this.pro2checkEdit3.CheckedChanged += new System.EventHandler(this.pro2checkEdit3_CheckedChanged);
@@ -258,10 +262,10 @@ namespace gtsco2.forms.GTSecetion
             // Sec2checkEdit2
             // 
             this.Sec2checkEdit2.EditValue = true;
-            this.Sec2checkEdit2.Location = new System.Drawing.Point(262, 29);
+            this.Sec2checkEdit2.Location = new System.Drawing.Point(210, -2);
             this.Sec2checkEdit2.Name = "Sec2checkEdit2";
             this.Sec2checkEdit2.Properties.Caption = "";
-            this.Sec2checkEdit2.Size = new System.Drawing.Size(23, 20);
+            this.Sec2checkEdit2.Size = new System.Drawing.Size(22, 20);
             this.Sec2checkEdit2.StyleController = this.layoutControl4;
             this.Sec2checkEdit2.TabIndex = 12;
             this.Sec2checkEdit2.ToolTip = "Décochez cette case pour afficher les stagiaires de toute la promo";
@@ -273,7 +277,7 @@ namespace gtsco2.forms.GTSecetion
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(4, 55);
+            this.labelControl6.Location = new System.Drawing.Point(-40, 24);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(75, 19);
             this.labelControl6.StyleController = this.layoutControl4;
@@ -284,7 +288,7 @@ namespace gtsco2.forms.GTSecetion
             // 
             this.NUBEREF2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NUBEREF2.Appearance.Options.UseFont = true;
-            this.NUBEREF2.Location = new System.Drawing.Point(83, 55);
+            this.NUBEREF2.Location = new System.Drawing.Point(39, 24);
             this.NUBEREF2.Name = "NUBEREF2";
             this.NUBEREF2.Size = new System.Drawing.Size(20, 19);
             this.NUBEREF2.StyleController = this.layoutControl4;
@@ -294,35 +298,35 @@ namespace gtsco2.forms.GTSecetion
             // spcomboBox113
             // 
             this.spcomboBox113.FormattingEnabled = true;
-            this.spcomboBox113.Location = new System.Drawing.Point(349, 4);
+            this.spcomboBox113.Location = new System.Drawing.Point(297, -27);
             this.spcomboBox113.Name = "spcomboBox113";
-            this.spcomboBox113.Size = new System.Drawing.Size(186, 21);
+            this.spcomboBox113.Size = new System.Drawing.Size(221, 21);
             this.spcomboBox113.TabIndex = 4;
             this.spcomboBox113.SelectionChangeCommitted += new System.EventHandler(this.spcomboBox113_SelectionChangeCommitted);
             // 
             // promocomboBox114
             // 
             this.promocomboBox114.FormattingEnabled = true;
-            this.promocomboBox114.Location = new System.Drawing.Point(91, 29);
+            this.promocomboBox114.Location = new System.Drawing.Point(47, -2);
             this.promocomboBox114.Name = "promocomboBox114";
-            this.promocomboBox114.Size = new System.Drawing.Size(167, 21);
+            this.promocomboBox114.Size = new System.Drawing.Size(159, 21);
             this.promocomboBox114.TabIndex = 4;
             this.promocomboBox114.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox114_SelectionChangeCommitted);
             // 
             // seccomboBox15
             // 
             this.seccomboBox15.FormattingEnabled = true;
-            this.seccomboBox15.Location = new System.Drawing.Point(376, 29);
+            this.seccomboBox15.Location = new System.Drawing.Point(323, -2);
             this.seccomboBox15.Name = "seccomboBox15";
-            this.seccomboBox15.Size = new System.Drawing.Size(159, 21);
+            this.seccomboBox15.Size = new System.Drawing.Size(195, 21);
             this.seccomboBox15.TabIndex = 4;
             // 
             // modecomboBox117
             // 
             this.modecomboBox117.FormattingEnabled = true;
-            this.modecomboBox117.Location = new System.Drawing.Point(91, 4);
+            this.modecomboBox117.Location = new System.Drawing.Point(47, -27);
             this.modecomboBox117.Name = "modecomboBox117";
-            this.modecomboBox117.Size = new System.Drawing.Size(167, 21);
+            this.modecomboBox117.Size = new System.Drawing.Size(159, 21);
             this.modecomboBox117.TabIndex = 4;
             this.modecomboBox117.SelectedIndexChanged += new System.EventHandler(this.modecomboBox117_SelectedIndexChanged);
             // 
@@ -334,7 +338,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton71.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton71.ImageOptions.Image")));
             this.simpleButton71.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton71.Location = new System.Drawing.Point(4, 79);
+            this.simpleButton71.Location = new System.Drawing.Point(-40, 48);
             this.simpleButton71.Name = "simpleButton71";
             this.simpleButton71.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton71.ShowToolTips = false;
@@ -352,7 +356,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton72.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton72.ImageOptions.Image")));
             this.simpleButton72.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton72.Location = new System.Drawing.Point(123, 79);
+            this.simpleButton72.Location = new System.Drawing.Point(79, 48);
             this.simpleButton72.Name = "simpleButton72";
             this.simpleButton72.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton72.ShowToolTips = false;
@@ -378,10 +382,11 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem9,
             this.layoutControlItem16,
             this.layoutControlItem20,
-            this.layoutControlItem21});
+            this.layoutControlItem21,
+            this.layoutControlItem14});
             this.layoutControlGroup3.Name = "Root";
             this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(539, 141);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(566, 155);
             this.layoutControlGroup3.TextVisible = false;
             // 
             // layoutControlItem28
@@ -391,7 +396,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem28.CustomizationFormText = "sepcialite";
             this.layoutControlItem28.Location = new System.Drawing.Point(0, 25);
             this.layoutControlItem28.Name = "layoutControlItem2";
-            this.layoutControlItem28.Size = new System.Drawing.Size(258, 25);
+            this.layoutControlItem28.Size = new System.Drawing.Size(250, 25);
             this.layoutControlItem28.Text = "Promo";
             this.layoutControlItem28.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -402,7 +407,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem29.CustomizationFormText = "sepcialite";
             this.layoutControlItem29.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem29.Name = "layoutControlItem6";
-            this.layoutControlItem29.Size = new System.Drawing.Size(258, 25);
+            this.layoutControlItem29.Size = new System.Drawing.Size(250, 25);
             this.layoutControlItem29.Text = "Mode formation";
             this.layoutControlItem29.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -411,7 +416,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleSeparator4.AllowHotTrack = false;
             this.simpleSeparator4.Location = new System.Drawing.Point(0, 50);
             this.simpleSeparator4.Name = "simpleSeparator1";
-            this.simpleSeparator4.Size = new System.Drawing.Size(535, 1);
+            this.simpleSeparator4.Size = new System.Drawing.Size(562, 1);
             // 
             // layoutControlItem31
             // 
@@ -434,9 +439,9 @@ namespace gtsco2.forms.GTSecetion
             // layoutControlItem33
             // 
             this.layoutControlItem33.Control = this.spcomboBox113;
-            this.layoutControlItem33.Location = new System.Drawing.Point(258, 0);
+            this.layoutControlItem33.Location = new System.Drawing.Point(250, 0);
             this.layoutControlItem33.Name = "layoutControlItem1";
-            this.layoutControlItem33.Size = new System.Drawing.Size(277, 25);
+            this.layoutControlItem33.Size = new System.Drawing.Size(312, 25);
             this.layoutControlItem33.Text = "Spécialité";
             this.layoutControlItem33.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -445,20 +450,20 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem34.Control = this.seccomboBox15;
             this.layoutControlItem34.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem34.CustomizationFormText = "sepcialite";
-            this.layoutControlItem34.Location = new System.Drawing.Point(285, 25);
+            this.layoutControlItem34.Location = new System.Drawing.Point(276, 25);
             this.layoutControlItem34.Name = "layoutControlItem3";
             this.layoutControlItem34.OptionsToolTip.ToolTip = "Décochez cette case pour afficher les stagiaires de toute la promo";
             this.layoutControlItem34.OptionsToolTip.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
-            this.layoutControlItem34.Size = new System.Drawing.Size(250, 25);
+            this.layoutControlItem34.Size = new System.Drawing.Size(286, 25);
             this.layoutControlItem34.Text = "Section";
             this.layoutControlItem34.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.Sec2checkEdit2;
-            this.layoutControlItem8.Location = new System.Drawing.Point(258, 25);
+            this.layoutControlItem8.Location = new System.Drawing.Point(250, 25);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(27, 25);
+            this.layoutControlItem8.Size = new System.Drawing.Size(26, 25);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
@@ -467,7 +472,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem9.Control = this.pro2checkEdit3;
             this.layoutControlItem9.Location = new System.Drawing.Point(103, 51);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(432, 24);
+            this.layoutControlItem9.Size = new System.Drawing.Size(459, 24);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
@@ -476,7 +481,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem16.Control = this.simpleButton7;
             this.layoutControlItem16.Location = new System.Drawing.Point(313, 75);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(222, 62);
+            this.layoutControlItem16.Size = new System.Drawing.Size(104, 76);
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
             // 
@@ -487,7 +492,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem20.CustomizationFormText = "layoutControlItem16";
             this.layoutControlItem20.Location = new System.Drawing.Point(0, 75);
             this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(119, 62);
+            this.layoutControlItem20.Size = new System.Drawing.Size(119, 76);
             this.layoutControlItem20.Text = "layoutControlItem16";
             this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem20.TextVisible = false;
@@ -499,7 +504,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem21.CustomizationFormText = "layoutControlItem16";
             this.layoutControlItem21.Location = new System.Drawing.Point(119, 75);
             this.layoutControlItem21.Name = "layoutControlItem21";
-            this.layoutControlItem21.Size = new System.Drawing.Size(194, 62);
+            this.layoutControlItem21.Size = new System.Drawing.Size(194, 76);
             this.layoutControlItem21.Text = "layoutControlItem16";
             this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem21.TextVisible = false;
@@ -538,6 +543,24 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.AutoWidthInLayoutControl = true;
+            this.simpleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton1.Location = new System.Drawing.Point(421, 48);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton1.ShowToolTips = false;
+            this.simpleButton1.Size = new System.Drawing.Size(141, 72);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 17;
+            this.simpleButton1.Text = "Imprimer Lister\r\n des Stagiaire";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
             // simpleButton6
             // 
             this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -546,7 +569,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
             this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton6.Location = new System.Drawing.Point(4, 79);
+            this.simpleButton6.Location = new System.Drawing.Point(4, 48);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton6.ShowToolTips = false;
@@ -564,7 +587,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
             this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton4.Location = new System.Drawing.Point(317, 79);
+            this.simpleButton4.Location = new System.Drawing.Point(317, 48);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton4.ShowToolTips = false;
@@ -582,7 +605,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(123, 79);
+            this.simpleButton2.Location = new System.Drawing.Point(123, 48);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton2.ShowToolTips = false;
@@ -594,10 +617,10 @@ namespace gtsco2.forms.GTSecetion
             // 
             // pro1checkEdit1
             // 
-            this.pro1checkEdit1.Location = new System.Drawing.Point(107, 55);
+            this.pro1checkEdit1.Location = new System.Drawing.Point(107, 24);
             this.pro1checkEdit1.Name = "pro1checkEdit1";
             this.pro1checkEdit1.Properties.Caption = "Affichez uniquement les stagiaires sans section";
-            this.pro1checkEdit1.Size = new System.Drawing.Size(428, 20);
+            this.pro1checkEdit1.Size = new System.Drawing.Size(455, 20);
             this.pro1checkEdit1.StyleController = this.layoutControl1;
             this.pro1checkEdit1.TabIndex = 13;
             this.pro1checkEdit1.CheckedChanged += new System.EventHandler(this.pro1checkEdit1_CheckedChanged);
@@ -605,10 +628,10 @@ namespace gtsco2.forms.GTSecetion
             // Sec1checkEdit1
             // 
             this.Sec1checkEdit1.EditValue = true;
-            this.Sec1checkEdit1.Location = new System.Drawing.Point(263, 29);
+            this.Sec1checkEdit1.Location = new System.Drawing.Point(276, -2);
             this.Sec1checkEdit1.Name = "Sec1checkEdit1";
             this.Sec1checkEdit1.Properties.Caption = "";
-            this.Sec1checkEdit1.Size = new System.Drawing.Size(22, 20);
+            this.Sec1checkEdit1.Size = new System.Drawing.Size(23, 20);
             this.Sec1checkEdit1.StyleController = this.layoutControl1;
             this.Sec1checkEdit1.TabIndex = 12;
             this.Sec1checkEdit1.ToolTip = "Décochez cette case pour afficher les stagiaires de toute la promo\r\n";
@@ -620,7 +643,7 @@ namespace gtsco2.forms.GTSecetion
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(4, 55);
+            this.labelControl3.Location = new System.Drawing.Point(4, 24);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(75, 19);
             this.labelControl3.StyleController = this.layoutControl1;
@@ -631,7 +654,7 @@ namespace gtsco2.forms.GTSecetion
             // 
             this.NUBEREF.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NUBEREF.Appearance.Options.UseFont = true;
-            this.NUBEREF.Location = new System.Drawing.Point(83, 55);
+            this.NUBEREF.Location = new System.Drawing.Point(83, 24);
             this.NUBEREF.Name = "NUBEREF";
             this.NUBEREF.Size = new System.Drawing.Size(20, 19);
             this.NUBEREF.StyleController = this.layoutControl1;
@@ -641,35 +664,35 @@ namespace gtsco2.forms.GTSecetion
             // spcomboBox1
             // 
             this.spcomboBox1.FormattingEnabled = true;
-            this.spcomboBox1.Location = new System.Drawing.Point(350, 4);
+            this.spcomboBox1.Location = new System.Drawing.Point(363, -27);
             this.spcomboBox1.Name = "spcomboBox1";
-            this.spcomboBox1.Size = new System.Drawing.Size(185, 21);
+            this.spcomboBox1.Size = new System.Drawing.Size(199, 21);
             this.spcomboBox1.TabIndex = 4;
             this.spcomboBox1.SelectedValueChanged += new System.EventHandler(this.spcomboBox1_SelectedValueChanged);
             // 
             // promocomboBox11
             // 
             this.promocomboBox11.FormattingEnabled = true;
-            this.promocomboBox11.Location = new System.Drawing.Point(91, 29);
+            this.promocomboBox11.Location = new System.Drawing.Point(91, -2);
             this.promocomboBox11.Name = "promocomboBox11";
-            this.promocomboBox11.Size = new System.Drawing.Size(168, 21);
+            this.promocomboBox11.Size = new System.Drawing.Size(181, 21);
             this.promocomboBox11.TabIndex = 4;
             this.promocomboBox11.SelectionChangeCommitted += new System.EventHandler(this.promocomboBox11_SelectionChangeCommitted);
             // 
             // seccomboBox
             // 
             this.seccomboBox.FormattingEnabled = true;
-            this.seccomboBox.Location = new System.Drawing.Point(376, 29);
+            this.seccomboBox.Location = new System.Drawing.Point(390, -2);
             this.seccomboBox.Name = "seccomboBox";
-            this.seccomboBox.Size = new System.Drawing.Size(159, 21);
+            this.seccomboBox.Size = new System.Drawing.Size(172, 21);
             this.seccomboBox.TabIndex = 4;
             // 
             // modecombobox17
             // 
             this.modecombobox17.FormattingEnabled = true;
-            this.modecombobox17.Location = new System.Drawing.Point(91, 4);
+            this.modecombobox17.Location = new System.Drawing.Point(91, -27);
             this.modecombobox17.Name = "modecombobox17";
-            this.modecombobox17.Size = new System.Drawing.Size(168, 21);
+            this.modecombobox17.Size = new System.Drawing.Size(181, 21);
             this.modecombobox17.TabIndex = 4;
             this.modecombobox17.SelectionChangeCommitted += new System.EventHandler(this.modecombobox17_SelectionChangeCommitted);
             this.modecombobox17.SelectedValueChanged += new System.EventHandler(this.modecombobox17_SelectedValueChanged);
@@ -694,7 +717,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem7});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(539, 141);
+            this.Root.Size = new System.Drawing.Size(566, 155);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem2
@@ -704,7 +727,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem2.CustomizationFormText = "sepcialite";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 25);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(259, 25);
+            this.layoutControlItem2.Size = new System.Drawing.Size(272, 25);
             this.layoutControlItem2.Text = "Promo";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -715,7 +738,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem6.CustomizationFormText = "sepcialite";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(259, 25);
+            this.layoutControlItem6.Size = new System.Drawing.Size(272, 25);
             this.layoutControlItem6.Text = "Mode formation";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -724,7 +747,7 @@ namespace gtsco2.forms.GTSecetion
             this.simpleSeparator1.AllowHotTrack = false;
             this.simpleSeparator1.Location = new System.Drawing.Point(0, 50);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(535, 1);
+            this.simpleSeparator1.Size = new System.Drawing.Size(562, 1);
             // 
             // layoutControlItem12
             // 
@@ -747,9 +770,9 @@ namespace gtsco2.forms.GTSecetion
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.spcomboBox1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(259, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(272, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(276, 25);
+            this.layoutControlItem1.Size = new System.Drawing.Size(290, 25);
             this.layoutControlItem1.Text = "Spécialité";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -758,20 +781,20 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem3.Control = this.seccomboBox;
             this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem3.CustomizationFormText = "sepcialite";
-            this.layoutControlItem3.Location = new System.Drawing.Point(285, 25);
+            this.layoutControlItem3.Location = new System.Drawing.Point(299, 25);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.OptionsToolTip.ToolTip = "Décochez cette case pour afficher les stagiaires de toute la promo";
             this.layoutControlItem3.OptionsToolTip.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
-            this.layoutControlItem3.Size = new System.Drawing.Size(250, 25);
+            this.layoutControlItem3.Size = new System.Drawing.Size(263, 25);
             this.layoutControlItem3.Text = "Section";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.Sec1checkEdit1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(259, 25);
+            this.layoutControlItem4.Location = new System.Drawing.Point(272, 25);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(26, 25);
+            this.layoutControlItem4.Size = new System.Drawing.Size(27, 25);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -780,7 +803,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem5.Control = this.pro1checkEdit1;
             this.layoutControlItem5.Location = new System.Drawing.Point(103, 51);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(432, 24);
+            this.layoutControlItem5.Size = new System.Drawing.Size(459, 24);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
@@ -789,7 +812,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem17.Control = this.simpleButton2;
             this.layoutControlItem17.Location = new System.Drawing.Point(119, 75);
             this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(194, 62);
+            this.layoutControlItem17.Size = new System.Drawing.Size(194, 76);
             this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem17.TextVisible = false;
             // 
@@ -798,7 +821,7 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem18.Control = this.simpleButton4;
             this.layoutControlItem18.Location = new System.Drawing.Point(313, 75);
             this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(104, 62);
+            this.layoutControlItem18.Size = new System.Drawing.Size(104, 76);
             this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem18.TextVisible = false;
             // 
@@ -807,9 +830,18 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem19.Control = this.simpleButton6;
             this.layoutControlItem19.Location = new System.Drawing.Point(0, 75);
             this.layoutControlItem19.Name = "layoutControlItem19";
-            this.layoutControlItem19.Size = new System.Drawing.Size(119, 62);
+            this.layoutControlItem19.Size = new System.Drawing.Size(119, 76);
             this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem19.TextVisible = false;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.simpleButton1;
+            this.layoutControlItem7.Location = new System.Drawing.Point(417, 75);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(145, 76);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem7.TextVisible = false;
             // 
             // panelControl4
             // 
@@ -964,32 +996,32 @@ namespace gtsco2.forms.GTSecetion
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem13.TextVisible = false;
             // 
-            // simpleButton1
+            // simpleButton8
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.AutoWidthInLayoutControl = true;
-            this.simpleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(421, 79);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton1.ShowToolTips = false;
-            this.simpleButton1.Size = new System.Drawing.Size(100, 56);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 17;
-            this.simpleButton1.Text = "Imprimer";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton8.Appearance.Options.UseFont = true;
+            this.simpleButton8.AutoWidthInLayoutControl = true;
+            this.simpleButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
+            this.simpleButton8.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton8.Location = new System.Drawing.Point(377, 48);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton8.ShowToolTips = false;
+            this.simpleButton8.Size = new System.Drawing.Size(141, 72);
+            this.simpleButton8.StyleController = this.layoutControl4;
+            this.simpleButton8.TabIndex = 18;
+            this.simpleButton8.Text = "Imprimer Lister\r\n des Stagiaire";
+            this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
             // 
-            // layoutControlItem7
+            // layoutControlItem14
             // 
-            this.layoutControlItem7.Control = this.simpleButton1;
-            this.layoutControlItem7.Location = new System.Drawing.Point(417, 75);
-            this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(118, 62);
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem7.TextVisible = false;
+            this.layoutControlItem14.Control = this.simpleButton8;
+            this.layoutControlItem14.Location = new System.Drawing.Point(417, 75);
+            this.layoutControlItem14.Name = "layoutControlItem14";
+            this.layoutControlItem14.Size = new System.Drawing.Size(145, 76);
+            this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem14.TextVisible = false;
             // 
             // GTsectionfrm
             // 
@@ -1044,6 +1076,7 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -1060,7 +1093,7 @@ namespace gtsco2.forms.GTSecetion
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1138,5 +1171,7 @@ namespace gtsco2.forms.GTSecetion
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
     }
 }

@@ -96,8 +96,8 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StagiairLookUpEdit.Properties)).BeginInit();
@@ -155,7 +155,10 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.StagiairLookUpEdit.Properties.DataSource = this.StagiairBindingSource;
             this.StagiairLookUpEdit.Properties.DisplayMember = "Num_STG";
+            this.StagiairLookUpEdit.Properties.NullText = "";
+            this.StagiairLookUpEdit.Properties.NullValuePrompt = "Saisir ou sélectionnez le numéro stagiaire";
             this.StagiairLookUpEdit.Properties.PopupView = this.StagiairLookUpEditView;
+            this.StagiairLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.StagiairLookUpEdit.Properties.ValueMember = "Num_STG";
             this.StagiairLookUpEdit.Size = new System.Drawing.Size(742, 20);
             this.StagiairLookUpEdit.StyleController = this.dataLayoutControl1;
@@ -274,7 +277,10 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.EmployeurLookUpEdit.Properties.DataSource = this.EmployeurBindingSource;
             this.EmployeurLookUpEdit.Properties.DisplayMember = "Nom_Emp";
+            this.EmployeurLookUpEdit.Properties.NullText = "";
+            this.EmployeurLookUpEdit.Properties.NullValuePrompt = "Saisir ou séléctionner l\'employeur";
             this.EmployeurLookUpEdit.Properties.PopupView = this.EmployeurLookUpEditView;
+            this.EmployeurLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.EmployeurLookUpEdit.Properties.ValueMember = "ID_Emp";
             this.EmployeurLookUpEdit.Size = new System.Drawing.Size(742, 20);
             this.EmployeurLookUpEdit.StyleController = this.dataLayoutControl1;
@@ -474,6 +480,7 @@
             this.Num_validation_cont_proroTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
             this.Num_validation_cont_proroTextEdit.Properties.MaskSettings.Set("mask", "0000/9999");
             this.Num_validation_cont_proroTextEdit.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.Num_validation_cont_proroTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Num_validation_cont_proroTextEdit.Size = new System.Drawing.Size(742, 20);
             this.Num_validation_cont_proroTextEdit.StyleController = this.dataLayoutControl1;
             this.Num_validation_cont_proroTextEdit.TabIndex = 6;
@@ -489,6 +496,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.date_validation_cont_proroDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_validation_cont_proroDateEdit.Properties.NullValuePrompt = "Séléctionnez la date de validation de l\'avenant du contrat";
+            this.date_validation_cont_proroDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.date_validation_cont_proroDateEdit.Size = new System.Drawing.Size(742, 20);
             this.date_validation_cont_proroDateEdit.StyleController = this.dataLayoutControl1;
             this.date_validation_cont_proroDateEdit.TabIndex = 7;
@@ -504,6 +513,7 @@
             this.DureeTextEdit.Properties.Mask.EditMask = "N0";
             this.DureeTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.DureeTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.DureeTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DureeTextEdit.Size = new System.Drawing.Size(742, 20);
             this.DureeTextEdit.StyleController = this.dataLayoutControl1;
             this.DureeTextEdit.TabIndex = 8;
@@ -519,6 +529,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.date_dbt_proroDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_dbt_proroDateEdit.Properties.NullValuePrompt = "Séléctionnez la date du début de la prorogation";
+            this.date_dbt_proroDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.date_dbt_proroDateEdit.Size = new System.Drawing.Size(742, 20);
             this.date_dbt_proroDateEdit.StyleController = this.dataLayoutControl1;
             this.date_dbt_proroDateEdit.TabIndex = 9;
@@ -534,6 +546,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.date_fin_proroDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.date_fin_proroDateEdit.Properties.NullValuePrompt = "Séléctionnez la date de fin de la prorogation";
+            this.date_fin_proroDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.date_fin_proroDateEdit.Size = new System.Drawing.Size(742, 20);
             this.date_fin_proroDateEdit.StyleController = this.dataLayoutControl1;
             this.date_fin_proroDateEdit.TabIndex = 10;
@@ -579,7 +593,7 @@
             this.ItemForID_emp.Location = new System.Drawing.Point(0, 24);
             this.ItemForID_emp.Name = "ItemForID_emp";
             this.ItemForID_emp.Size = new System.Drawing.Size(992, 24);
-            this.ItemForID_emp.Text = "Numéro de l\'employeur ";
+            this.ItemForID_emp.Text = "Dénomination de l\'employeur ";
             this.ItemForID_emp.TextSize = new System.Drawing.Size(234, 13);
             // 
             // ItemForNum_validation_cont_proro
@@ -597,7 +611,7 @@
             this.ItemFordate_validation_cont_proro.Location = new System.Drawing.Point(0, 72);
             this.ItemFordate_validation_cont_proro.Name = "ItemFordate_validation_cont_proro";
             this.ItemFordate_validation_cont_proro.Size = new System.Drawing.Size(992, 24);
-            this.ItemFordate_validation_cont_proro.Text = "Date de validation du contrat de prorogation";
+            this.ItemFordate_validation_cont_proro.Text = "Date de validation de l\'avenant du contrat";
             this.ItemFordate_validation_cont_proro.TextSize = new System.Drawing.Size(234, 13);
             // 
             // ItemForDuree
@@ -606,7 +620,7 @@
             this.ItemForDuree.Location = new System.Drawing.Point(0, 96);
             this.ItemForDuree.Name = "ItemForDuree";
             this.ItemForDuree.Size = new System.Drawing.Size(992, 24);
-            this.ItemForDuree.Text = "Durée de prorogation du contrat ";
+            this.ItemForDuree.Text = "Durée de prorogation du contrat (mois)";
             this.ItemForDuree.TextSize = new System.Drawing.Size(234, 13);
             // 
             // ItemFordate_dbt_proro
@@ -734,7 +748,7 @@
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "imprime pv prorgation";
+            this.barButtonItem1.Caption = "Imprimer l\'avenant de prorogation de la durée du contrat";
             this.barButtonItem1.Id = 10;
             this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
@@ -745,8 +759,8 @@
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout,
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroupLayout});
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
             this.mainRibbonPage.Text = "Fichier";
@@ -764,6 +778,11 @@
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
             this.mainRibbonPageGroup.Text = "Gestion des Avenants de contrat de prorogation";
             // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1, true);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
             // ribbonPageGroupLayout
             // 
             this.ribbonPageGroupLayout.AllowTextClipping = false;
@@ -772,12 +791,6 @@
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // Avenant_contrat_prorogationView
             // 

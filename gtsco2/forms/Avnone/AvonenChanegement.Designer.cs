@@ -168,7 +168,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelDateDube.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelDateDube.SizeF = new System.Drawing.SizeF(100.852F, 19.05017F);
             this.xrLabelDateDube.StylePriority.UseFont = false;
-            this.xrLabelDateDube.Text = "xrLabel3";
             // 
             // xrLabel5
             // 
@@ -190,7 +189,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelDateFin.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelDateFin.SizeF = new System.Drawing.SizeF(113.1901F, 19.05017F);
             this.xrLabelDateFin.StylePriority.UseFont = false;
-            this.xrLabelDateFin.Text = "xrLabel3";
             // 
             // xrLabelNomEmp1
             // 
@@ -201,7 +199,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelNomEmp1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelNomEmp1.SizeF = new System.Drawing.SizeF(576.8102F, 19.05017F);
             this.xrLabelNomEmp1.StylePriority.UseFont = false;
-            this.xrLabelNomEmp1.Text = "xrLabelNomEmp1";
             // 
             // xrLabelNomEmpX1
             // 
@@ -212,7 +209,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelNomEmpX1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelNomEmpX1.SizeF = new System.Drawing.SizeF(505.8824F, 19.0502F);
             this.xrLabelNomEmpX1.StylePriority.UseFont = false;
-            this.xrLabelNomEmpX1.Text = "xrLabelNomEMp";
             // 
             // xrLabelPU
             // 
@@ -285,7 +281,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelDEplome.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelDEplome.SizeF = new System.Drawing.SizeF(662.0547F, 19.05017F);
             this.xrLabelDEplome.StylePriority.UseFont = false;
-            this.xrLabelDEplome.Text = "xrLabel3";
             // 
             // xrLabelDateFinX
             // 
@@ -296,7 +291,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelDateFinX.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelDateFinX.SizeF = new System.Drawing.SizeF(113.1901F, 19.05017F);
             this.xrLabelDateFinX.StylePriority.UseFont = false;
-            this.xrLabelDateFinX.Text = "xrLabel3";
             // 
             // xrLabelDateDubX
             // 
@@ -307,7 +301,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelDateDubX.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelDateDubX.SizeF = new System.Drawing.SizeF(100.852F, 19.05017F);
             this.xrLabelDateDubX.StylePriority.UseFont = false;
-            this.xrLabelDateDubX.Text = "xrLabel3";
             // 
             // xrLabel29
             // 
@@ -329,7 +322,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelNomEmpX.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelNomEmpX.SizeF = new System.Drawing.SizeF(576.8102F, 19.05017F);
             this.xrLabelNomEmpX.StylePriority.UseFont = false;
-            this.xrLabelNomEmpX.Text = "xrLabel3";
             // 
             // xrLabelSpecialiter
             // 
@@ -340,7 +332,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelSpecialiter.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelSpecialiter.SizeF = new System.Drawing.SizeF(568.9625F, 19.05017F);
             this.xrLabelSpecialiter.StylePriority.UseFont = false;
-            this.xrLabelSpecialiter.Text = "xrLabel3";
             // 
             // xrLabel26
             // 
@@ -351,7 +342,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel26.SizeF = new System.Drawing.SizeF(384.0858F, 19.05017F);
             this.xrLabel26.StylePriority.UseFont = false;
-            this.xrLabel26.Text = "xrLabel3";
             // 
             // xrLabel25
             // 
@@ -362,7 +352,7 @@ namespace gtsco2.forms.Avnone
             this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel25.SizeF = new System.Drawing.SizeF(143.0618F, 19.05017F);
             this.xrLabel25.StylePriority.UseFont = false;
-            this.xrLabel25.Text = "xrLabel3";
+            this.xrLabel25.Text = "HUSSEIN DEY";
             // 
             // xrLabel24
             // 
@@ -373,7 +363,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel24.SizeF = new System.Drawing.SizeF(127.4083F, 19.05017F);
             this.xrLabel24.StylePriority.UseFont = false;
-            this.xrLabel24.Text = "xrLabel3";
             // 
             // xrLabel1
             // 
@@ -384,7 +373,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel1.SizeF = new System.Drawing.SizeF(129.2157F, 19.05017F);
             this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.Text = "xrLabel3";
             // 
             // xrLabel23
             // 
@@ -395,7 +383,7 @@ namespace gtsco2.forms.Avnone
             this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel23.SizeF = new System.Drawing.SizeF(89.2157F, 19.05029F);
             this.xrLabel23.StylePriority.UseFont = false;
-            this.xrLabel23.Text = "xrLabel3";
+            this.xrLabel23.Text = "16005";
             // 
             // xrLabel
             // 
@@ -411,13 +399,13 @@ namespace gtsco2.forms.Avnone
             // xrLabel21
             // 
             this.xrLabel21.Font = new System.Drawing.Font("Arial", 9.5F, System.Drawing.FontStyle.Bold);
-            this.xrLabel21.LocationFloat = new DevExpress.Utils.PointFloat(318.0288F, 669.0278F);
+            this.xrLabel21.LocationFloat = new DevExpress.Utils.PointFloat(304.4843F, 669.0278F);
             this.xrLabel21.Multiline = true;
             this.xrLabel21.Name = "xrLabel21";
             this.xrLabel21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel21.SizeF = new System.Drawing.SizeF(166.0341F, 19.05023F);
+            this.xrLabel21.SizeF = new System.Drawing.SizeF(179.5758F, 19.05023F);
             this.xrLabel21.StylePriority.UseFont = false;
-            this.xrLabel21.Text = "xrLabel3";
+            this.xrLabel21.Text = "Mohamed Tayeb Boucenna";
             // 
             // xrLabel20
             // 
@@ -428,18 +416,17 @@ namespace gtsco2.forms.Avnone
             this.xrLabel20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel20.SizeF = new System.Drawing.SizeF(609.9964F, 19.05023F);
             this.xrLabel20.StylePriority.UseFont = false;
-            this.xrLabel20.Text = "xrLabel3";
+            this.xrLabel20.Text = "1 rue tripoli -HUSSEIN DEY - ALGER";
             // 
             // xrLabelEmaileTuteur
             // 
             this.xrLabelEmaileTuteur.Font = new System.Drawing.Font("Arial", 9.5F, System.Drawing.FontStyle.Bold);
-            this.xrLabelEmaileTuteur.LocationFloat = new DevExpress.Utils.PointFloat(302.5945F, 594.9006F);
+            this.xrLabelEmaileTuteur.LocationFloat = new DevExpress.Utils.PointFloat(304.4843F, 594.9006F);
             this.xrLabelEmaileTuteur.Multiline = true;
             this.xrLabelEmaileTuteur.Name = "xrLabelEmaileTuteur";
             this.xrLabelEmaileTuteur.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelEmaileTuteur.SizeF = new System.Drawing.SizeF(206.966F, 19.05023F);
             this.xrLabelEmaileTuteur.StylePriority.UseFont = false;
-            this.xrLabelEmaileTuteur.Text = "xrLabel3";
             // 
             // xrLabelTlfTutuer
             // 
@@ -450,7 +437,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelTlfTutuer.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelTlfTutuer.SizeF = new System.Drawing.SizeF(130.2841F, 19.05023F);
             this.xrLabelTlfTutuer.StylePriority.UseFont = false;
-            this.xrLabelTlfTutuer.Text = "xrLabel3";
             // 
             // xrLabelCodepostTuteur
             // 
@@ -461,7 +447,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelCodepostTuteur.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelCodepostTuteur.SizeF = new System.Drawing.SizeF(89.2157F, 19.05011F);
             this.xrLabelCodepostTuteur.StylePriority.UseFont = false;
-            this.xrLabelCodepostTuteur.Text = "xrLabel3";
             // 
             // xrLabelComuneTuteur
             // 
@@ -472,7 +457,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelComuneTuteur.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelComuneTuteur.SizeF = new System.Drawing.SizeF(298.6174F, 19.05011F);
             this.xrLabelComuneTuteur.StylePriority.UseFont = false;
-            this.xrLabelComuneTuteur.Text = "xrLabel3";
             // 
             // xrLabelAdressTutur
             // 
@@ -483,7 +467,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelAdressTutur.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelAdressTutur.SizeF = new System.Drawing.SizeF(383.019F, 19.05023F);
             this.xrLabelAdressTutur.StylePriority.UseFont = false;
-            this.xrLabelAdressTutur.Text = "xrLabel3";
             // 
             // xrLabelPrenomTutur
             // 
@@ -494,7 +477,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelPrenomTutur.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelPrenomTutur.SizeF = new System.Drawing.SizeF(246.6695F, 19.05023F);
             this.xrLabelPrenomTutur.StylePriority.UseFont = false;
-            this.xrLabelPrenomTutur.Text = "xrLabel3";
             // 
             // xrLabelNomTuture
             // 
@@ -505,18 +487,16 @@ namespace gtsco2.forms.Avnone
             this.xrLabelNomTuture.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelNomTuture.SizeF = new System.Drawing.SizeF(167.5926F, 19.05023F);
             this.xrLabelNomTuture.StylePriority.UseFont = false;
-            this.xrLabelNomTuture.Text = "xrLabel3";
             // 
             // xrLabelNiveuSTg
             // 
             this.xrLabelNiveuSTg.Font = new System.Drawing.Font("Arial", 9.5F, System.Drawing.FontStyle.Bold);
-            this.xrLabelNiveuSTg.LocationFloat = new DevExpress.Utils.PointFloat(134.02F, 478.73F);
+            this.xrLabelNiveuSTg.LocationFloat = new DevExpress.Utils.PointFloat(108.5196F, 478.7299F);
             this.xrLabelNiveuSTg.Multiline = true;
             this.xrLabelNiveuSTg.Name = "xrLabelNiveuSTg";
             this.xrLabelNiveuSTg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelNiveuSTg.SizeF = new System.Drawing.SizeF(375.5405F, 19.0502F);
             this.xrLabelNiveuSTg.StylePriority.UseFont = false;
-            this.xrLabelNiveuSTg.Text = "xrLabel3";
             // 
             // xrLabelTlfStg
             // 
@@ -527,7 +507,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelTlfStg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelTlfStg.SizeF = new System.Drawing.SizeF(141.5916F, 19.05023F);
             this.xrLabelTlfStg.StylePriority.UseFont = false;
-            this.xrLabelTlfStg.Text = "xrLabel3";
             // 
             // xrLabelEmailSTg
             // 
@@ -538,7 +517,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelEmailSTg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelEmailSTg.SizeF = new System.Drawing.SizeF(232.1283F, 19.05023F);
             this.xrLabelEmailSTg.StylePriority.UseFont = false;
-            this.xrLabelEmailSTg.Text = "xrLabel3";
             // 
             // xrLabelCodepostStg
             // 
@@ -549,7 +527,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelCodepostStg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelCodepostStg.SizeF = new System.Drawing.SizeF(89.2157F, 19.05023F);
             this.xrLabelCodepostStg.StylePriority.UseFont = false;
-            this.xrLabelCodepostStg.Text = "xrLabel3";
             // 
             // xrLabelPrenomSTg
             // 
@@ -560,7 +537,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelPrenomSTg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelPrenomSTg.SizeF = new System.Drawing.SizeF(235.8053F, 19.05023F);
             this.xrLabelPrenomSTg.StylePriority.UseFont = false;
-            this.xrLabelPrenomSTg.Text = "xrLabel3";
             // 
             // xrLabelCommunSTG
             // 
@@ -571,7 +547,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelCommunSTG.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelCommunSTG.SizeF = new System.Drawing.SizeF(298.6174F, 19.05023F);
             this.xrLabelCommunSTG.StylePriority.UseFont = false;
-            this.xrLabelCommunSTG.Text = "xrLabel3";
             // 
             // xrLabelDATEnStg
             // 
@@ -582,7 +557,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelDATEnStg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelDATEnStg.SizeF = new System.Drawing.SizeF(131.8294F, 19.0502F);
             this.xrLabelDATEnStg.StylePriority.UseFont = false;
-            this.xrLabelDATEnStg.Text = "xrLabel3";
             // 
             // xrLabelADrssStg
             // 
@@ -604,7 +578,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelLeusNStg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelLeusNStg.SizeF = new System.Drawing.SizeF(266.5661F, 19.0502F);
             this.xrLabelLeusNStg.StylePriority.UseFont = false;
-            this.xrLabelLeusNStg.Text = "xrLabel3";
             // 
             // xrLabelNomStg
             // 
@@ -615,7 +588,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelNomStg.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelNomStg.SizeF = new System.Drawing.SizeF(167.5926F, 19.0502F);
             this.xrLabelNomStg.StylePriority.UseFont = false;
-            this.xrLabelNomStg.Text = "xrLabelNomStg";
             // 
             // xrLabelEmailEmp
             // 
@@ -626,7 +598,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelEmailEmp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelEmailEmp.SizeF = new System.Drawing.SizeF(312.5046F, 19.05026F);
             this.xrLabelEmailEmp.StylePriority.UseFont = false;
-            this.xrLabelEmailEmp.Text = "xrLabel3";
             // 
             // xrLabelFAxEmp
             // 
@@ -637,7 +608,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelFAxEmp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelFAxEmp.SizeF = new System.Drawing.SizeF(143.0602F, 19.05023F);
             this.xrLabelFAxEmp.StylePriority.UseFont = false;
-            this.xrLabelFAxEmp.Text = "xrLabel3";
             // 
             // xrLabelTLfEmp
             // 
@@ -648,7 +618,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelTLfEmp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelTLfEmp.SizeF = new System.Drawing.SizeF(125.9917F, 19.05023F);
             this.xrLabelTLfEmp.StylePriority.UseFont = false;
-            this.xrLabelTLfEmp.Text = "xrLabel3";
             // 
             // xrLabelCodePEMp
             // 
@@ -659,7 +628,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelCodePEMp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelCodePEMp.SizeF = new System.Drawing.SizeF(109.5133F, 19.0502F);
             this.xrLabelCodePEMp.StylePriority.UseFont = false;
-            this.xrLabelCodePEMp.Text = "xrLabel3";
             // 
             // xrLabelCommunEmp
             // 
@@ -670,7 +638,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelCommunEmp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelCommunEmp.SizeF = new System.Drawing.SizeF(200.0563F, 19.0502F);
             this.xrLabelCommunEmp.StylePriority.UseFont = false;
-            this.xrLabelCommunEmp.Text = "xrLabel3";
             // 
             // xrLabelSTatuEmp
             // 
@@ -681,7 +648,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelSTatuEmp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelSTatuEmp.SizeF = new System.Drawing.SizeF(439.5945F, 19.0502F);
             this.xrLabelSTatuEmp.StylePriority.UseFont = false;
-            this.xrLabelSTatuEmp.Text = "xrLabel3";
             // 
             // xrLabelAdressEMp
             // 
@@ -692,7 +658,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelAdressEMp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelAdressEMp.SizeF = new System.Drawing.SizeF(648.7482F, 19.0502F);
             this.xrLabelAdressEMp.StylePriority.UseFont = false;
-            this.xrLabelAdressEMp.Text = "xrLabel3";
             // 
             // xrLabelNomEMp
             // 
@@ -703,7 +668,6 @@ namespace gtsco2.forms.Avnone
             this.xrLabelNomEMp.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabelNomEMp.SizeF = new System.Drawing.SizeF(505.8824F, 19.0502F);
             this.xrLabelNomEMp.StylePriority.UseFont = false;
-            this.xrLabelNomEMp.Text = "xrLabelNomEMp";
             // 
             // xrPictureBox1
             // 

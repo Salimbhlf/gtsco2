@@ -31,18 +31,18 @@ namespace gtsco2.forms.Page_de_garde.forjour
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(forjourETd));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.comboBoxjour1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxjour2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxjour1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxjour2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
@@ -61,18 +61,6 @@ namespace gtsco2.forms.Page_de_garde.forjour
             this.layoutControl1.Size = new System.Drawing.Size(486, 145);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem3,
-            this.layoutControlItem4,
-            this.layoutControlItem5});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(486, 145);
-            this.Root.TextVisible = false;
             // 
             // comboBoxjour1
             // 
@@ -116,8 +104,20 @@ namespace gtsco2.forms.Page_de_garde.forjour
             this.simpleButton1.Size = new System.Drawing.Size(230, 36);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 8;
-            this.simpleButton1.Text = "Imprime";
+            this.simpleButton1.Text = "Imprimer l\'autorisation ";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem5});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(486, 145);
+            this.Root.TextVisible = false;
             // 
             // layoutControlItem3
             // 
@@ -125,9 +125,9 @@ namespace gtsco2.forms.Page_de_garde.forjour
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(232, 125);
-            this.layoutControlItem3.Text = "jour1";
+            this.layoutControlItem3.Text = "Jour 1";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(25, 13);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(30, 13);
             // 
             // layoutControlItem4
             // 
@@ -135,9 +135,9 @@ namespace gtsco2.forms.Page_de_garde.forjour
             this.layoutControlItem4.Location = new System.Drawing.Point(232, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(234, 40);
-            this.layoutControlItem4.Text = "jour2";
+            this.layoutControlItem4.Text = "Jour 2";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(25, 13);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(30, 13);
             // 
             // layoutControlItem5
             // 
@@ -159,13 +159,13 @@ namespace gtsco2.forms.Page_de_garde.forjour
             this.MinimizeBox = false;
             this.Name = "forjourETd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmforimolierdesabsonce";
+            this.Text = "Jours de cours en milieu F.T.T.C";
             this.Load += new System.EventHandler(this.forjourETd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxjour1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxjour2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
@@ -177,11 +177,11 @@ namespace gtsco2.forms.Page_de_garde.forjour
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxjour1;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxjour2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxjour1;
     }
 }

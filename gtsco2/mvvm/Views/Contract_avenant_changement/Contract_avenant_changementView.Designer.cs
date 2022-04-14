@@ -130,7 +130,7 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(870, 229);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1012, 229);
             this.dataLayoutControl1.TabIndex = 0;
             // 
             // EmployeurLookUpEdit
@@ -146,7 +146,7 @@
             this.EmployeurLookUpEdit.Properties.PopupView = this.EmployeurLookUpEditView;
             this.EmployeurLookUpEdit.Properties.ValueMember = "ID_Emp";
             this.EmployeurLookUpEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.EmployeurLookUpEdit.Size = new System.Drawing.Size(538, 20);
+            this.EmployeurLookUpEdit.Size = new System.Drawing.Size(680, 20);
             this.EmployeurLookUpEdit.StyleController = this.dataLayoutControl1;
             this.EmployeurLookUpEdit.TabIndex = 4;
             // 
@@ -249,7 +249,7 @@
             this.StagiairLookUpEdit.Properties.PopupView = this.StagiairLookUpEditView;
             this.StagiairLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.StagiairLookUpEdit.Properties.ValueMember = "Num_STG";
-            this.StagiairLookUpEdit.Size = new System.Drawing.Size(538, 20);
+            this.StagiairLookUpEdit.Size = new System.Drawing.Size(680, 20);
             this.StagiairLookUpEdit.StyleController = this.dataLayoutControl1;
             this.StagiairLookUpEdit.TabIndex = 5;
             // 
@@ -337,7 +337,7 @@
             this.NUM_AV_CHANGTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.NUM_AV_CHANGTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.NUM_AV_CHANGTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.NUM_AV_CHANGTextEdit.Size = new System.Drawing.Size(538, 20);
+            this.NUM_AV_CHANGTextEdit.Size = new System.Drawing.Size(680, 20);
             this.NUM_AV_CHANGTextEdit.StyleController = this.dataLayoutControl1;
             this.NUM_AV_CHANGTextEdit.TabIndex = 6;
             // 
@@ -353,7 +353,7 @@
             this.NUM_AV_VALID_CHANGTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.NUM_AV_VALID_CHANGTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.NUM_AV_VALID_CHANGTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.NUM_AV_VALID_CHANGTextEdit.Size = new System.Drawing.Size(538, 20);
+            this.NUM_AV_VALID_CHANGTextEdit.Size = new System.Drawing.Size(680, 20);
             this.NUM_AV_VALID_CHANGTextEdit.StyleController = this.dataLayoutControl1;
             this.NUM_AV_VALID_CHANGTextEdit.TabIndex = 7;
             // 
@@ -370,7 +370,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_AV_VALID_CHANGDateEdit.Properties.NullValuePrompt = "Séléctionnez la date de validation";
             this.DATE_AV_VALID_CHANGDateEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.DATE_AV_VALID_CHANGDateEdit.Size = new System.Drawing.Size(538, 20);
+            this.DATE_AV_VALID_CHANGDateEdit.Size = new System.Drawing.Size(680, 20);
             this.DATE_AV_VALID_CHANGDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_AV_VALID_CHANGDateEdit.TabIndex = 8;
             // 
@@ -386,7 +386,7 @@
             this.DATE_DBT_FORMA_CHANGDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_DBT_FORMA_CHANGDateEdit.Properties.NullValuePrompt = "Séléctionnez la date du début de la formation aprés le changement";
-            this.DATE_DBT_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(538, 20);
+            this.DATE_DBT_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(680, 20);
             this.DATE_DBT_FORMA_CHANGDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_DBT_FORMA_CHANGDateEdit.TabIndex = 9;
             // 
@@ -402,7 +402,7 @@
             this.DATE_FIN_FORMA_CHANGDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_FIN_FORMA_CHANGDateEdit.Properties.NullValuePrompt = "Séléctionnez la date du début de la formation aprés le changement";
-            this.DATE_FIN_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(538, 20);
+            this.DATE_FIN_FORMA_CHANGDateEdit.Size = new System.Drawing.Size(680, 20);
             this.DATE_FIN_FORMA_CHANGDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_FIN_FORMA_CHANGDateEdit.TabIndex = 10;
             // 
@@ -418,7 +418,7 @@
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Properties.NullValuePrompt = "Séléctionnez la date de fin de la formation avec l\'ancien employeur";
-            this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Size = new System.Drawing.Size(538, 20);
+            this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.Size = new System.Drawing.Size(680, 20);
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.StyleController = this.dataLayoutControl1;
             this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit.TabIndex = 11;
             // 
@@ -429,7 +429,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(870, 229);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1012, 229);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -447,15 +447,15 @@
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(850, 209);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(992, 209);
             // 
             // ItemForid_emp
             // 
             this.ItemForid_emp.Control = this.EmployeurLookUpEdit;
             this.ItemForid_emp.Location = new System.Drawing.Point(0, 0);
             this.ItemForid_emp.Name = "ItemForid_emp";
-            this.ItemForid_emp.Size = new System.Drawing.Size(850, 24);
-            this.ItemForid_emp.Text = "Numéro d\'employeur ";
+            this.ItemForid_emp.Size = new System.Drawing.Size(992, 24);
+            this.ItemForid_emp.Text = "Dénomination de l\'employeur nouveau";
             this.ItemForid_emp.TextSize = new System.Drawing.Size(296, 13);
             // 
             // ItemFornum_stg
@@ -463,7 +463,7 @@
             this.ItemFornum_stg.Control = this.StagiairLookUpEdit;
             this.ItemFornum_stg.Location = new System.Drawing.Point(0, 24);
             this.ItemFornum_stg.Name = "ItemFornum_stg";
-            this.ItemFornum_stg.Size = new System.Drawing.Size(850, 24);
+            this.ItemFornum_stg.Size = new System.Drawing.Size(992, 24);
             this.ItemFornum_stg.Text = "Numéro du stagiaire";
             this.ItemFornum_stg.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -472,7 +472,7 @@
             this.ItemForNUM_AV_CHANG.Control = this.NUM_AV_CHANGTextEdit;
             this.ItemForNUM_AV_CHANG.Location = new System.Drawing.Point(0, 48);
             this.ItemForNUM_AV_CHANG.Name = "ItemForNUM_AV_CHANG";
-            this.ItemForNUM_AV_CHANG.Size = new System.Drawing.Size(850, 24);
+            this.ItemForNUM_AV_CHANG.Size = new System.Drawing.Size(992, 24);
             this.ItemForNUM_AV_CHANG.Text = "Numéro de l\'avenant de contrat  changement d\'employeur ";
             this.ItemForNUM_AV_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -481,7 +481,7 @@
             this.ItemForNUM_AV_VALID_CHANG.Control = this.NUM_AV_VALID_CHANGTextEdit;
             this.ItemForNUM_AV_VALID_CHANG.Location = new System.Drawing.Point(0, 72);
             this.ItemForNUM_AV_VALID_CHANG.Name = "ItemForNUM_AV_VALID_CHANG";
-            this.ItemForNUM_AV_VALID_CHANG.Size = new System.Drawing.Size(850, 24);
+            this.ItemForNUM_AV_VALID_CHANG.Size = new System.Drawing.Size(992, 24);
             this.ItemForNUM_AV_VALID_CHANG.Text = "Numéro de validation de l\'avenant de contrat de changement ";
             this.ItemForNUM_AV_VALID_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -490,7 +490,7 @@
             this.ItemForDATE_AV_VALID_CHANG.Control = this.DATE_AV_VALID_CHANGDateEdit;
             this.ItemForDATE_AV_VALID_CHANG.Location = new System.Drawing.Point(0, 96);
             this.ItemForDATE_AV_VALID_CHANG.Name = "ItemForDATE_AV_VALID_CHANG";
-            this.ItemForDATE_AV_VALID_CHANG.Size = new System.Drawing.Size(850, 24);
+            this.ItemForDATE_AV_VALID_CHANG.Size = new System.Drawing.Size(992, 24);
             this.ItemForDATE_AV_VALID_CHANG.Text = "Date de validation l\'avenant de contrat de changement";
             this.ItemForDATE_AV_VALID_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -499,7 +499,7 @@
             this.ItemForDATE_DBT_FORMA_CHANG.Control = this.DATE_DBT_FORMA_CHANGDateEdit;
             this.ItemForDATE_DBT_FORMA_CHANG.Location = new System.Drawing.Point(0, 120);
             this.ItemForDATE_DBT_FORMA_CHANG.Name = "ItemForDATE_DBT_FORMA_CHANG";
-            this.ItemForDATE_DBT_FORMA_CHANG.Size = new System.Drawing.Size(850, 24);
+            this.ItemForDATE_DBT_FORMA_CHANG.Size = new System.Drawing.Size(992, 24);
             this.ItemForDATE_DBT_FORMA_CHANG.Text = "Date début de formation aprés changement d\'employeur ";
             this.ItemForDATE_DBT_FORMA_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -508,7 +508,7 @@
             this.ItemForDATE_FIN_FORMA_CHANG.Control = this.DATE_FIN_FORMA_CHANGDateEdit;
             this.ItemForDATE_FIN_FORMA_CHANG.Location = new System.Drawing.Point(0, 144);
             this.ItemForDATE_FIN_FORMA_CHANG.Name = "ItemForDATE_FIN_FORMA_CHANG";
-            this.ItemForDATE_FIN_FORMA_CHANG.Size = new System.Drawing.Size(850, 24);
+            this.ItemForDATE_FIN_FORMA_CHANG.Size = new System.Drawing.Size(992, 24);
             this.ItemForDATE_FIN_FORMA_CHANG.Text = "Date fin de formation aprés changement d\'employeur ";
             this.ItemForDATE_FIN_FORMA_CHANG.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -517,7 +517,7 @@
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Control = this.DATE_FIN_FORMA_ANCIEN_EMPDateEdit;
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Location = new System.Drawing.Point(0, 168);
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Name = "ItemForDATE_FIN_FORMA_ANCIEN_EMP";
-            this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Size = new System.Drawing.Size(850, 41);
+            this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Size = new System.Drawing.Size(992, 41);
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.Text = "Date fin de formation avec l\'ancien employeur  ";
             this.ItemForDATE_FIN_FORMA_ANCIEN_EMP.TextSize = new System.Drawing.Size(296, 13);
             // 
@@ -616,7 +616,7 @@
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(870, 126);
+            this.mainRibbonControl.Size = new System.Drawing.Size(1012, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -628,7 +628,7 @@
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "imprem raporte";
+            this.barButtonItem1.Caption = "Imprimer l\'avenant de contrat changement d\'employeur";
             this.barButtonItem1.Id = 10;
             this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
@@ -639,8 +639,8 @@
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout,
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroupLayout});
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
             this.mainRibbonPage.Text = "Fichier ";
@@ -679,7 +679,7 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "Contract_avenant_changementView";
-            this.Size = new System.Drawing.Size(870, 355);
+            this.Size = new System.Drawing.Size(1012, 355);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmployeurLookUpEdit.Properties)).EndInit();

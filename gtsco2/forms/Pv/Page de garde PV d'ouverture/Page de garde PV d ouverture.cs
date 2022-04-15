@@ -37,6 +37,7 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
                           nbrstg = (shared.bd.Stagiairs.Where(x => x.ID_Promo == promo)).Count(),
                           nbrStgFille = (shared.bd.Stagiairs.Where(x => x.ID_Promo == promo && x.Sexe == "Femme")).Count(),
                           nberStgHond = (shared.bd.Stagiairs.Where(x => x.ID_Promo == promo && x.Handicape == true)).Count(),
+                          mode = pro.Mode_formation.Désignation_Mode_Formation_ar,
                       };
 
             foreach (var row in qur.ToList()) {
@@ -44,8 +45,12 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
                 xrLabel31branch.Text = row.bronch;
                 xrLabel10niveu.Text = "........" + row.niveu + ".......";
                 xrLabel24codesp.Text = row.code_sp        ;
+                try { 
                 xrLabel25dateDube.Text = row.dateDube.Value.ToString("dd/MM/yyyy");
                 xrLabel28Datefin.Text = row.dateFin.Value.ToString("dd/MM/yyyy");
+                }
+                catch { }
+                xrLabel6mode.Text = "( " + row.mode + " )";
                 if(row.nbrstg!=0)
                 xrLabel26Nstg.Text = "........" + row.nbrstg + ".......";
 

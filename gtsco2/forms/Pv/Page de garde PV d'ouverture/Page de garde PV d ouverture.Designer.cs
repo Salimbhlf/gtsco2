@@ -33,6 +33,15 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.xrLabel10niveu = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel31branch = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel30NstgHond = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel29 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel28Datefin = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel27NstgFille = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel26Nstg = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel25dateDube = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel24codesp = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel22 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel21 = new DevExpress.XtraReports.UI.XRLabel();
@@ -50,21 +59,12 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6mode = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel24codesp = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel25dateDube = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel26Nstg = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel27NstgFille = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel28Datefin = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel29 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel30NstgHond = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel31branch = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel10niveu = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -110,7 +110,7 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
             this.xrLabel9,
             this.xrLabel8,
             this.xrLabel7,
-            this.xrLabel6,
+            this.xrLabel6mode,
             this.xrLabel5,
             this.xrLabel1,
             this.xrLabel2,
@@ -118,6 +118,112 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
             this.xrLabel4});
             this.PageHeader.HeightF = 1070.833F;
             this.PageHeader.Name = "PageHeader";
+            // 
+            // xrLabel10niveu
+            // 
+            this.xrLabel10niveu.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel10niveu.LocationFloat = new DevExpress.Utils.PointFloat(0F, 574.9999F);
+            this.xrLabel10niveu.Name = "xrLabel10niveu";
+            this.xrLabel10niveu.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel10niveu.SizeF = new System.Drawing.SizeF(176.0418F, 33.33337F);
+            this.xrLabel10niveu.StylePriority.UseFont = false;
+            this.xrLabel10niveu.StylePriority.UseTextAlignment = false;
+            this.xrLabel10niveu.Text = ".......5.......";
+            this.xrLabel10niveu.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel31branch
+            // 
+            this.xrLabel31branch.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel31branch.LocationFloat = new DevExpress.Utils.PointFloat(0F, 538.5417F);
+            this.xrLabel31branch.Name = "xrLabel31branch";
+            this.xrLabel31branch.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel31branch.SizeF = new System.Drawing.SizeF(530.2083F, 33.33331F);
+            this.xrLabel31branch.StylePriority.UseFont = false;
+            this.xrLabel31branch.StylePriority.UseTextAlignment = false;
+            this.xrLabel31branch.Text = "     اعلام آلي - الرقمنة - الإتصلات";
+            this.xrLabel31branch.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel30NstgHond
+            // 
+            this.xrLabel30NstgHond.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel30NstgHond.LocationFloat = new DevExpress.Utils.PointFloat(373.9585F, 677.0833F);
+            this.xrLabel30NstgHond.Name = "xrLabel30NstgHond";
+            this.xrLabel30NstgHond.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel30NstgHond.SizeF = new System.Drawing.SizeF(206.25F, 33.33337F);
+            this.xrLabel30NstgHond.StylePriority.UseFont = false;
+            this.xrLabel30NstgHond.StylePriority.UseTextAlignment = false;
+            this.xrLabel30NstgHond.Text = " ......./.........";
+            this.xrLabel30NstgHond.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel29
+            // 
+            this.xrLabel29.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(373.9583F, 710.4167F);
+            this.xrLabel29.Name = "xrLabel29";
+            this.xrLabel29.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel29.SizeF = new System.Drawing.SizeF(156.25F, 33.33337F);
+            this.xrLabel29.StylePriority.UseFont = false;
+            this.xrLabel29.StylePriority.UseTextAlignment = false;
+            this.xrLabel29.Text = " ......./.........";
+            this.xrLabel29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel28Datefin
+            // 
+            this.xrLabel28Datefin.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel28Datefin.LocationFloat = new DevExpress.Utils.PointFloat(0F, 608.3334F);
+            this.xrLabel28Datefin.Name = "xrLabel28Datefin";
+            this.xrLabel28Datefin.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel28Datefin.SizeF = new System.Drawing.SizeF(144.7918F, 33.33337F);
+            this.xrLabel28Datefin.StylePriority.UseFont = false;
+            this.xrLabel28Datefin.StylePriority.UseTextAlignment = false;
+            this.xrLabel28Datefin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel27NstgFille
+            // 
+            this.xrLabel27NstgFille.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel27NstgFille.LocationFloat = new DevExpress.Utils.PointFloat(0F, 641.6667F);
+            this.xrLabel27NstgFille.Name = "xrLabel27NstgFille";
+            this.xrLabel27NstgFille.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel27NstgFille.SizeF = new System.Drawing.SizeF(206.2501F, 33.33337F);
+            this.xrLabel27NstgFille.StylePriority.UseFont = false;
+            this.xrLabel27NstgFille.StylePriority.UseTextAlignment = false;
+            this.xrLabel27NstgFille.Text = "......./.........";
+            this.xrLabel27NstgFille.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel26Nstg
+            // 
+            this.xrLabel26Nstg.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel26Nstg.LocationFloat = new DevExpress.Utils.PointFloat(373.9586F, 641.6667F);
+            this.xrLabel26Nstg.Name = "xrLabel26Nstg";
+            this.xrLabel26Nstg.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel26Nstg.SizeF = new System.Drawing.SizeF(194.708F, 33.33337F);
+            this.xrLabel26Nstg.StylePriority.UseFont = false;
+            this.xrLabel26Nstg.StylePriority.UseTextAlignment = false;
+            this.xrLabel26Nstg.Text = "......./.........";
+            this.xrLabel26Nstg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel25dateDube
+            // 
+            this.xrLabel25dateDube.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel25dateDube.LocationFloat = new DevExpress.Utils.PointFloat(373.9583F, 608.3334F);
+            this.xrLabel25dateDube.Name = "xrLabel25dateDube";
+            this.xrLabel25dateDube.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel25dateDube.SizeF = new System.Drawing.SizeF(156.2501F, 33.33337F);
+            this.xrLabel25dateDube.StylePriority.UseFont = false;
+            this.xrLabel25dateDube.StylePriority.UseTextAlignment = false;
+            this.xrLabel25dateDube.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel24codesp
+            // 
+            this.xrLabel24codesp.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel24codesp.LocationFloat = new DevExpress.Utils.PointFloat(373.9586F, 574.9999F);
+            this.xrLabel24codesp.Name = "xrLabel24codesp";
+            this.xrLabel24codesp.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            this.xrLabel24codesp.SizeF = new System.Drawing.SizeF(173.9579F, 33.33337F);
+            this.xrLabel24codesp.StylePriority.UseFont = false;
+            this.xrLabel24codesp.StylePriority.UseTextAlignment = false;
+            this.xrLabel24codesp.Text = " INT0703";
+            this.xrLabel24codesp.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel23
             // 
@@ -334,16 +440,16 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
             this.xrLabel7.Text = "الشعبة المهنية:     ";
             this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel6
+            // xrLabel6mode
             // 
-            this.xrLabel6.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(286.4583F, 303.125F);
-            this.xrLabel6.Name = "xrLabel6";
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(87.5F, 33.33334F);
-            this.xrLabel6.StylePriority.UseFont = false;
-            this.xrLabel6.StylePriority.UseTextAlignment = false;
-            this.xrLabel6.Text = "(التمهين)";
-            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.xrLabel6mode.Font = new System.Drawing.Font("Arial", 16F);
+            this.xrLabel6mode.LocationFloat = new DevExpress.Utils.PointFloat(247.9167F, 303.125F);
+            this.xrLabel6mode.Name = "xrLabel6mode";
+            this.xrLabel6mode.SizeF = new System.Drawing.SizeF(180.2083F, 33.33334F);
+            this.xrLabel6mode.StylePriority.UseFont = false;
+            this.xrLabel6mode.StylePriority.UseTextAlignment = false;
+            this.xrLabel6mode.Text = "(التمهين)";
+            this.xrLabel6mode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrLabel5
             // 
@@ -411,112 +517,6 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
             this.xrLabel4.Text = "المعهد الوطني المتخصص في التكوين المهني\r\n محمد الطيب بوسنة";
             this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel24codesp
-            // 
-            this.xrLabel24codesp.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel24codesp.LocationFloat = new DevExpress.Utils.PointFloat(373.9586F, 574.9999F);
-            this.xrLabel24codesp.Name = "xrLabel24codesp";
-            this.xrLabel24codesp.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel24codesp.SizeF = new System.Drawing.SizeF(173.9579F, 33.33337F);
-            this.xrLabel24codesp.StylePriority.UseFont = false;
-            this.xrLabel24codesp.StylePriority.UseTextAlignment = false;
-            this.xrLabel24codesp.Text = " INT0703";
-            this.xrLabel24codesp.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel25dateDube
-            // 
-            this.xrLabel25dateDube.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel25dateDube.LocationFloat = new DevExpress.Utils.PointFloat(373.9583F, 608.3334F);
-            this.xrLabel25dateDube.Name = "xrLabel25dateDube";
-            this.xrLabel25dateDube.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel25dateDube.SizeF = new System.Drawing.SizeF(156.2501F, 33.33337F);
-            this.xrLabel25dateDube.StylePriority.UseFont = false;
-            this.xrLabel25dateDube.StylePriority.UseTextAlignment = false;
-            this.xrLabel25dateDube.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel26Nstg
-            // 
-            this.xrLabel26Nstg.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel26Nstg.LocationFloat = new DevExpress.Utils.PointFloat(373.9586F, 641.6667F);
-            this.xrLabel26Nstg.Name = "xrLabel26Nstg";
-            this.xrLabel26Nstg.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel26Nstg.SizeF = new System.Drawing.SizeF(194.708F, 33.33337F);
-            this.xrLabel26Nstg.StylePriority.UseFont = false;
-            this.xrLabel26Nstg.StylePriority.UseTextAlignment = false;
-            this.xrLabel26Nstg.Text = "......./.........";
-            this.xrLabel26Nstg.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel27NstgFille
-            // 
-            this.xrLabel27NstgFille.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel27NstgFille.LocationFloat = new DevExpress.Utils.PointFloat(0F, 641.6667F);
-            this.xrLabel27NstgFille.Name = "xrLabel27NstgFille";
-            this.xrLabel27NstgFille.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel27NstgFille.SizeF = new System.Drawing.SizeF(206.2501F, 33.33337F);
-            this.xrLabel27NstgFille.StylePriority.UseFont = false;
-            this.xrLabel27NstgFille.StylePriority.UseTextAlignment = false;
-            this.xrLabel27NstgFille.Text = "......./.........";
-            this.xrLabel27NstgFille.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel28Datefin
-            // 
-            this.xrLabel28Datefin.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel28Datefin.LocationFloat = new DevExpress.Utils.PointFloat(0F, 608.3334F);
-            this.xrLabel28Datefin.Name = "xrLabel28Datefin";
-            this.xrLabel28Datefin.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel28Datefin.SizeF = new System.Drawing.SizeF(144.7918F, 33.33337F);
-            this.xrLabel28Datefin.StylePriority.UseFont = false;
-            this.xrLabel28Datefin.StylePriority.UseTextAlignment = false;
-            this.xrLabel28Datefin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel29
-            // 
-            this.xrLabel29.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(373.9583F, 710.4167F);
-            this.xrLabel29.Name = "xrLabel29";
-            this.xrLabel29.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel29.SizeF = new System.Drawing.SizeF(156.25F, 33.33337F);
-            this.xrLabel29.StylePriority.UseFont = false;
-            this.xrLabel29.StylePriority.UseTextAlignment = false;
-            this.xrLabel29.Text = " ......./.........";
-            this.xrLabel29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel30NstgHond
-            // 
-            this.xrLabel30NstgHond.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel30NstgHond.LocationFloat = new DevExpress.Utils.PointFloat(373.9585F, 677.0833F);
-            this.xrLabel30NstgHond.Name = "xrLabel30NstgHond";
-            this.xrLabel30NstgHond.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel30NstgHond.SizeF = new System.Drawing.SizeF(206.25F, 33.33337F);
-            this.xrLabel30NstgHond.StylePriority.UseFont = false;
-            this.xrLabel30NstgHond.StylePriority.UseTextAlignment = false;
-            this.xrLabel30NstgHond.Text = " ......./.........";
-            this.xrLabel30NstgHond.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel31branch
-            // 
-            this.xrLabel31branch.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel31branch.LocationFloat = new DevExpress.Utils.PointFloat(0F, 538.5417F);
-            this.xrLabel31branch.Name = "xrLabel31branch";
-            this.xrLabel31branch.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel31branch.SizeF = new System.Drawing.SizeF(530.2083F, 33.33331F);
-            this.xrLabel31branch.StylePriority.UseFont = false;
-            this.xrLabel31branch.StylePriority.UseTextAlignment = false;
-            this.xrLabel31branch.Text = "     اعلام آلي - الرقمنة - الإتصلات";
-            this.xrLabel31branch.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel10niveu
-            // 
-            this.xrLabel10niveu.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel10niveu.LocationFloat = new DevExpress.Utils.PointFloat(0F, 574.9999F);
-            this.xrLabel10niveu.Name = "xrLabel10niveu";
-            this.xrLabel10niveu.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel10niveu.SizeF = new System.Drawing.SizeF(176.0418F, 33.33337F);
-            this.xrLabel10niveu.StylePriority.UseFont = false;
-            this.xrLabel10niveu.StylePriority.UseTextAlignment = false;
-            this.xrLabel10niveu.Text = ".......5.......";
-            this.xrLabel10niveu.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // Page_de_garde_PV_d_ouverture
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -561,7 +561,7 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
         private DevExpress.XtraReports.UI.XRLabel xrLabel9;
         private DevExpress.XtraReports.UI.XRLabel xrLabel8;
         private DevExpress.XtraReports.UI.XRLabel xrLabel7;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6mode;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel31branch;
         private DevExpress.XtraReports.UI.XRLabel xrLabel30NstgHond;

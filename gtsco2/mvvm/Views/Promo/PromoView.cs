@@ -6,6 +6,7 @@ using DevExpress.Utils.MVVM;
 using DevExpress.Utils.MVVM.Services;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraGrid;
 
 namespace gtsco2.mvvm.Views.PromoView{
     public partial class PromoView : XtraUserControl {
@@ -111,5 +112,10 @@ namespace gtsco2.mvvm.Views.PromoView{
         {
 			forms.Pv.Page_de_garde_PV_d_ouverture.Page_de_garde_PV_d_ouverture.print(int.Parse(ID_PromoTextEdit.Text));
         }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+			 StagiairsGridControl.ShowRibbonPrintPreview();
+		}
     }
 }

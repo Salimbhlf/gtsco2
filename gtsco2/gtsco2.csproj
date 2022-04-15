@@ -393,6 +393,12 @@
     <Compile Include="forms\Pv\Liste pv Overture\PvOverture.Designer.cs">
       <DependentUpon>PvOverture.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Pv\Page de garde PV d%27ouverture\Page de garde PV d ouverture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\Pv\Page de garde PV d%27ouverture\Page de garde PV d ouverture.Designer.cs">
+      <DependentUpon>Page de garde PV d ouverture.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\SplashSacrine\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -928,6 +934,9 @@
     <EmbeddedResource Include="forms\Pv\Liste pv Overture\PvOverture.resx">
       <DependentUpon>PvOverture.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\Pv\Page de garde PV d%27ouverture\Page de garde PV d ouverture.resx">
+      <DependentUpon>Page de garde PV d ouverture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\SplashSacrine\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -1139,6 +1148,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="forms\PV d%27ouverture\" />
     <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

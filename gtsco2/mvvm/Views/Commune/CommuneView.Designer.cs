@@ -24,27 +24,35 @@
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.Commune_idTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.communeViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.StagiairsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
-            this.StagiairsGridControl = new DevExpress.XtraGrid.GridControl();
-            this.StagiairsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiCustomize = new DevExpress.XtraBars.BarButtonItem();
-            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSaveAndClose = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSaveAndNew = new DevExpress.XtraBars.BarButtonItem();
             this.bbiReset = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
             this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.bbiSaveLayout = new DevExpress.XtraBars.BarButtonItem();
             this.bbiResetLayout = new DevExpress.XtraBars.BarButtonItem();
-            this.StagiairsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Commune_nameTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.Commune_name_arTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.Daira_nameTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.Daira_name_arTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.WillayaLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.WillayaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.WillayaLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colWilaya_Code = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWilaya_name__ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWilaya_name__fr_ = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommunes = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Code_PostalXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.Code_PostalGridControl = new DevExpress.XtraGrid.GridControl();
+            this.Code_PostalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Code_PostalGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_Code_Postal = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode_Postal11 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,9 +63,19 @@
             this.colEmployeurs = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEtablissements = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiairs = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Code_PostalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
+            this.Code_PostalBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.Code_PostalBar = new DevExpress.XtraBars.Bar();
+            this.bbiCode_PostalNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiCode_PostalEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiCode_PostalDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiCode_PostalRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
             this.Maitre_ApprentissageXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
             this.Maitre_ApprentissageGridControl = new DevExpress.XtraGrid.GridControl();
+            this.Maitre_ApprentissageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Maitre_ApprentissageGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_Maitre_Apprentissage1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID_Emp1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -77,120 +95,106 @@
             this.colCommune2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEmployeur1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStagiairs1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Maitre_ApprentissageBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.WillayaLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
-            this.WillayaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.Commune_idTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForCommune_id = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Commune_nameTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForCommune_name = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Commune_name_arTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForCommune_name_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Daira_nameTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDaira_name = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Daira_name_arTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForDaira_name_ar = new DevExpress.XtraLayout.LayoutControlItem();
-            this.WillayaLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ItemForCode_Willaya = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForCode_Postal = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForMaitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
-            this.StagiairsBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiStagiairsNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiStagiairsEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiStagiairsDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiStagiairsRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.StagiairsBar = new DevExpress.XtraBars.Bar();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.Code_PostalBarManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bbiCode_PostalNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiCode_PostalEdit = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiCode_PostalDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiCode_PostalRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.Code_PostalBar = new DevExpress.XtraBars.Bar();
-            this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
-            this.Code_PostalPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             this.Maitre_ApprentissageBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.Maitre_ApprentissageBar = new DevExpress.XtraBars.Bar();
             this.bbiMaitre_ApprentissageNew = new DevExpress.XtraBars.BarButtonItem();
             this.bbiMaitre_ApprentissageEdit = new DevExpress.XtraBars.BarButtonItem();
             this.bbiMaitre_ApprentissageDelete = new DevExpress.XtraBars.BarButtonItem();
             this.bbiMaitre_ApprentissageRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.Maitre_ApprentissageBar = new DevExpress.XtraBars.Bar();
             this.barDockControl5 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            this.Maitre_ApprentissagePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.StagiairsXtraUserControl = new DevExpress.XtraEditors.XtraUserControl();
+            this.StagiairsGridControl = new DevExpress.XtraGrid.GridControl();
+            this.StagiairsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.StagiairsGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colE_Maile = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAdresse = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAdresse_ar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.StagiairsBarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.StagiairsBar = new DevExpress.XtraBars.Bar();
+            this.bbiStagiairsNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiStagiairsEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiStagiairsDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiStagiairsRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForCommune_id = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForCommune_name = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDaira_name = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForCode_Willaya = new DevExpress.XtraLayout.LayoutControlItem();
+            this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForCode_Postal = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForMaitre_Apprentissage = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForCommune_name_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDaira_name_ar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.Code_PostalPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.Maitre_ApprentissagePopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commune_idTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.communeViewBindingSource)).BeginInit();
-            this.StagiairsXtraUserControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).BeginInit();
-            this.Code_PostalXtraUserControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalBindingSource)).BeginInit();
-            this.Maitre_ApprentissageXtraUserControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commune_nameTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commune_name_arTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Daira_nameTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Daira_name_arTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WillayaLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WillayaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commune_idTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_id)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commune_nameTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commune_name_arTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name_ar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Daira_nameTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Daira_name_arTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WillayaLookUpEditView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Willaya)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Postal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaitre_Apprentissage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).BeginInit();
+            this.Code_PostalXtraUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Code_PostalBarManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalPopUpMenu)).BeginInit();
+            this.Maitre_ApprentissageXtraUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageBarManager)).BeginInit();
+            this.StagiairsXtraUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_id)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Willaya)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Postal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaitre_Apprentissage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name_ar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalPopUpMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissagePopUpMenu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,74 +215,35 @@
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 126);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1024, 642);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1248, 336);
             this.dataLayoutControl1.TabIndex = 0;
             // 
-            // layoutControlGroup1
+            // Commune_idTextEdit
             // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2});
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1024, 642);
-            this.layoutControlGroup1.TextVisible = false;
+            this.Commune_idTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Commune_id", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Commune_idTextEdit.Location = new System.Drawing.Point(154, 12);
+            this.Commune_idTextEdit.MenuManager = this.mainRibbonControl;
+            this.Commune_idTextEdit.Name = "Commune_idTextEdit";
+            this.Commune_idTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.Commune_idTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.Commune_idTextEdit.Properties.Mask.EditMask = "N0";
+            this.Commune_idTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.Commune_idTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.Commune_idTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Commune_idTextEdit.Size = new System.Drawing.Size(1082, 20);
+            this.Commune_idTextEdit.StyleController = this.dataLayoutControl1;
+            this.Commune_idTextEdit.TabIndex = 4;
             // 
             // communeViewBindingSource
             // 
             this.communeViewBindingSource.DataSource = typeof(gtsco2.basededonne.Commune);
-            // 
-            // StagiairsXtraUserControl
-            // 
-            this.StagiairsXtraUserControl.Controls.Add(this.StagiairsGridControl);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlLeft);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlRight);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlBottom);
-            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlTop);
-            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 191);
-            this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
-            this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
-            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(976, 427);
-            this.StagiairsXtraUserControl.TabIndex = 12;
-            // 
-            // StagiairsGridControl
-            // 
-            this.StagiairsGridControl.DataSource = this.StagiairsBindingSource;
-            this.StagiairsGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.StagiairsGridControl.Location = new System.Drawing.Point(0, 24);
-            this.StagiairsGridControl.MainView = this.StagiairsGridView;
-            this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
-            this.StagiairsGridControl.Name = "StagiairsGridControl";
-            this.StagiairsGridControl.Size = new System.Drawing.Size(976, 403);
-            this.StagiairsGridControl.TabIndex = 0;
-            this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.StagiairsGridView});
-            // 
-            // StagiairsGridView
-            // 
-            this.StagiairsGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colNum_STG,
-            this.colNom,
-            this.colNom_ar,
-            this.colPrenom,
-            this.colPrenom_ar,
-            this.colPromo,
-            this.colSection,
-            this.colTelephone,
-            this.colE_Maile,
-            this.colAdresse,
-            this.colAdresse_ar,
-            this.colCommune});
-            this.StagiairsGridView.GridControl = this.StagiairsGridControl;
-            this.StagiairsGridView.Name = "StagiairsGridView";
-            this.StagiairsGridView.OptionsBehavior.Editable = false;
-            this.StagiairsGridView.OptionsBehavior.ReadOnly = true;
             // 
             // mainRibbonControl
             // 
             this.mainRibbonControl.ExpandCollapseItem.Id = 0;
             this.mainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.mainRibbonControl.ExpandCollapseItem,
+            this.mainRibbonControl.SearchEditItem,
             this.bbiCustomize,
             this.bbiSave,
             this.bbiSaveAndClose,
@@ -287,8 +252,7 @@
             this.bbiDelete,
             this.bbiClose,
             this.bbiSaveLayout,
-            this.bbiResetLayout,
-            this.mainRibbonControl.SearchEditItem});
+            this.bbiResetLayout});
             this.mainRibbonControl.Location = new System.Drawing.Point(0, 0);
             this.mainRibbonControl.MaxItemId = 10;
             this.mainRibbonControl.Name = "mainRibbonControl";
@@ -296,7 +260,7 @@
             this.mainRibbonPage});
             this.mainRibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.mainRibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonControl.Size = new System.Drawing.Size(1024, 126);
+            this.mainRibbonControl.Size = new System.Drawing.Size(1248, 126);
             this.mainRibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // bbiCustomize
@@ -305,28 +269,6 @@
             this.bbiCustomize.Id = 1;
             this.bbiCustomize.ImageOptions.ImageUri.Uri = "Customization";
             this.bbiCustomize.Name = "bbiCustomize";
-            // 
-            // mainRibbonPage
-            // 
-            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout});
-            this.mainRibbonPage.MergeOrder = 0;
-            this.mainRibbonPage.Name = "mainRibbonPage";
-            this.mainRibbonPage.Text = "Fichier";
-            // 
-            // mainRibbonPageGroup
-            // 
-            this.mainRibbonPageGroup.AllowTextClipping = false;
-            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
-            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Gestion des Communes";
             // 
             // bbiSave
             // 
@@ -370,15 +312,6 @@
             this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
             this.bbiClose.Name = "bbiClose";
             // 
-            // ribbonPageGroupLayout
-            // 
-            this.ribbonPageGroupLayout.AllowTextClipping = false;
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
-            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
-            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
-            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
-            // 
             // bbiSaveLayout
             // 
             this.bbiSaveLayout.Caption = "Enregistrer la personnalisation";
@@ -393,9 +326,142 @@
             this.bbiResetLayout.ImageOptions.ImageUri.Uri = "Reset";
             this.bbiResetLayout.Name = "bbiResetLayout";
             // 
-            // StagiairsBindingSource
+            // mainRibbonPage
             // 
-            this.StagiairsBindingSource.DataSource = typeof(gtsco2.basededonne.Stagiair);
+            this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.mainRibbonPageGroup,
+            this.ribbonPageGroupLayout});
+            this.mainRibbonPage.MergeOrder = 0;
+            this.mainRibbonPage.Name = "mainRibbonPage";
+            this.mainRibbonPage.Text = "Fichier";
+            // 
+            // mainRibbonPageGroup
+            // 
+            this.mainRibbonPageGroup.AllowTextClipping = false;
+            this.mainRibbonPageGroup.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSave);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
+            this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
+            this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
+            this.mainRibbonPageGroup.Text = "Gestion des Communes";
+            // 
+            // ribbonPageGroupLayout
+            // 
+            this.ribbonPageGroupLayout.AllowTextClipping = false;
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiCustomize);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiSaveLayout);
+            this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
+            this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
+            this.ribbonPageGroupLayout.Text = "Personnalisation de la fenêtre";
+            // 
+            // Commune_nameTextEdit
+            // 
+            this.Commune_nameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Commune_name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Commune_nameTextEdit.Location = new System.Drawing.Point(154, 36);
+            this.Commune_nameTextEdit.MenuManager = this.mainRibbonControl;
+            this.Commune_nameTextEdit.Name = "Commune_nameTextEdit";
+            this.Commune_nameTextEdit.Size = new System.Drawing.Size(468, 20);
+            this.Commune_nameTextEdit.StyleController = this.dataLayoutControl1;
+            this.Commune_nameTextEdit.TabIndex = 5;
+            // 
+            // Commune_name_arTextEdit
+            // 
+            this.Commune_name_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Commune_name_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Commune_name_arTextEdit.Location = new System.Drawing.Point(626, 36);
+            this.Commune_name_arTextEdit.MenuManager = this.mainRibbonControl;
+            this.Commune_name_arTextEdit.Name = "Commune_name_arTextEdit";
+            this.Commune_name_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Commune_name_arTextEdit.Size = new System.Drawing.Size(551, 20);
+            this.Commune_name_arTextEdit.StyleController = this.dataLayoutControl1;
+            this.Commune_name_arTextEdit.TabIndex = 6;
+            // 
+            // Daira_nameTextEdit
+            // 
+            this.Daira_nameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Daira_name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Daira_nameTextEdit.Location = new System.Drawing.Point(154, 60);
+            this.Daira_nameTextEdit.MenuManager = this.mainRibbonControl;
+            this.Daira_nameTextEdit.Name = "Daira_nameTextEdit";
+            this.Daira_nameTextEdit.Size = new System.Drawing.Size(468, 20);
+            this.Daira_nameTextEdit.StyleController = this.dataLayoutControl1;
+            this.Daira_nameTextEdit.TabIndex = 7;
+            // 
+            // Daira_name_arTextEdit
+            // 
+            this.Daira_name_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Daira_name_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Daira_name_arTextEdit.Location = new System.Drawing.Point(626, 60);
+            this.Daira_name_arTextEdit.MenuManager = this.mainRibbonControl;
+            this.Daira_name_arTextEdit.Name = "Daira_name_arTextEdit";
+            this.Daira_name_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Daira_name_arTextEdit.Size = new System.Drawing.Size(552, 20);
+            this.Daira_name_arTextEdit.StyleController = this.dataLayoutControl1;
+            this.Daira_name_arTextEdit.TabIndex = 8;
+            // 
+            // WillayaLookUpEdit
+            // 
+            this.WillayaLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Code_Willaya", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.WillayaLookUpEdit.EditValue = "";
+            this.WillayaLookUpEdit.Location = new System.Drawing.Point(154, 84);
+            this.WillayaLookUpEdit.MenuManager = this.mainRibbonControl;
+            this.WillayaLookUpEdit.Name = "WillayaLookUpEdit";
+            this.WillayaLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.WillayaLookUpEdit.Properties.DataSource = this.WillayaBindingSource;
+            this.WillayaLookUpEdit.Properties.DisplayMember = "Wilaya_name__fr_";
+            this.WillayaLookUpEdit.Properties.NullText = "";
+            this.WillayaLookUpEdit.Properties.NullValuePrompt = "Saisir ou sélectionnez la wilaya";
+            this.WillayaLookUpEdit.Properties.PopupView = this.WillayaLookUpEditView;
+            this.WillayaLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.WillayaLookUpEdit.Properties.ValueMember = "Wilaya_Code";
+            this.WillayaLookUpEdit.Size = new System.Drawing.Size(1082, 20);
+            this.WillayaLookUpEdit.StyleController = this.dataLayoutControl1;
+            this.WillayaLookUpEdit.TabIndex = 9;
+            // 
+            // WillayaBindingSource
+            // 
+            this.WillayaBindingSource.DataSource = typeof(gtsco2.basededonne.Willaya);
+            // 
+            // WillayaLookUpEditView
+            // 
+            this.WillayaLookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colWilaya_Code,
+            this.colWilaya_name__ar,
+            this.colWilaya_name__fr_,
+            this.colCommunes});
+            this.WillayaLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.WillayaLookUpEditView.Name = "WillayaLookUpEditView";
+            this.WillayaLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.WillayaLookUpEditView.OptionsView.ShowGroupPanel = false;
+            // 
+            // colWilaya_Code
+            // 
+            this.colWilaya_Code.FieldName = "Wilaya_Code";
+            this.colWilaya_Code.Name = "colWilaya_Code";
+            this.colWilaya_Code.Visible = true;
+            this.colWilaya_Code.VisibleIndex = 0;
+            // 
+            // colWilaya_name__ar
+            // 
+            this.colWilaya_name__ar.FieldName = "Wilaya_name__ar";
+            this.colWilaya_name__ar.Name = "colWilaya_name__ar";
+            this.colWilaya_name__ar.Visible = true;
+            this.colWilaya_name__ar.VisibleIndex = 2;
+            // 
+            // colWilaya_name__fr_
+            // 
+            this.colWilaya_name__fr_.FieldName = "Wilaya_name__fr_";
+            this.colWilaya_name__fr_.Name = "colWilaya_name__fr_";
+            this.colWilaya_name__fr_.Visible = true;
+            this.colWilaya_name__fr_.VisibleIndex = 1;
+            // 
+            // colCommunes
+            // 
+            this.colCommunes.FieldName = "Communes";
+            this.colCommunes.Name = "colCommunes";
+            this.colCommunes.Visible = true;
+            this.colCommunes.VisibleIndex = 3;
             // 
             // Code_PostalXtraUserControl
             // 
@@ -404,10 +470,10 @@
             this.Code_PostalXtraUserControl.Controls.Add(this.barDockControl4);
             this.Code_PostalXtraUserControl.Controls.Add(this.barDockControl2);
             this.Code_PostalXtraUserControl.Controls.Add(this.barDockControl1);
-            this.Code_PostalXtraUserControl.Location = new System.Drawing.Point(24, 191);
+            this.Code_PostalXtraUserControl.Location = new System.Drawing.Point(24, 143);
             this.Code_PostalXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Code_PostalXtraUserControl.Name = "Code_PostalXtraUserControl";
-            this.Code_PostalXtraUserControl.Size = new System.Drawing.Size(976, 427);
+            this.Code_PostalXtraUserControl.Size = new System.Drawing.Size(1200, 169);
             this.Code_PostalXtraUserControl.TabIndex = 10;
             // 
             // Code_PostalGridControl
@@ -418,10 +484,14 @@
             this.Code_PostalGridControl.MainView = this.Code_PostalGridView;
             this.Code_PostalGridControl.MenuManager = this.mainRibbonControl;
             this.Code_PostalGridControl.Name = "Code_PostalGridControl";
-            this.Code_PostalGridControl.Size = new System.Drawing.Size(976, 403);
+            this.Code_PostalGridControl.Size = new System.Drawing.Size(1200, 145);
             this.Code_PostalGridControl.TabIndex = 0;
             this.Code_PostalGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Code_PostalGridView});
+            // 
+            // Code_PostalBindingSource
+            // 
+            this.Code_PostalBindingSource.DataSource = typeof(gtsco2.basededonne.Code_Postal);
             // 
             // Code_PostalGridView
             // 
@@ -495,9 +565,102 @@
             this.colStagiairs.FieldName = "Stagiairs";
             this.colStagiairs.Name = "colStagiairs";
             // 
-            // Code_PostalBindingSource
+            // barDockControl3
             // 
-            this.Code_PostalBindingSource.DataSource = typeof(gtsco2.basededonne.Code_Postal);
+            this.barDockControl3.CausesValidation = false;
+            this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl3.Manager = this.Code_PostalBarManager;
+            this.barDockControl3.Size = new System.Drawing.Size(0, 145);
+            // 
+            // Code_PostalBarManager
+            // 
+            this.Code_PostalBarManager.AllowCustomization = false;
+            this.Code_PostalBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.Code_PostalBar});
+            this.Code_PostalBarManager.DockControls.Add(this.barDockControl1);
+            this.Code_PostalBarManager.DockControls.Add(this.barDockControl2);
+            this.Code_PostalBarManager.DockControls.Add(this.barDockControl3);
+            this.Code_PostalBarManager.DockControls.Add(this.barDockControl4);
+            this.Code_PostalBarManager.Form = this.Code_PostalXtraUserControl;
+            this.Code_PostalBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiCode_PostalNew,
+            this.bbiCode_PostalEdit,
+            this.bbiCode_PostalDelete,
+            this.bbiCode_PostalRefresh});
+            this.Code_PostalBarManager.MainMenu = this.Code_PostalBar;
+            this.Code_PostalBarManager.MaxItemId = 4;
+            // 
+            // Code_PostalBar
+            // 
+            this.Code_PostalBar.BarName = "Code_Postal";
+            this.Code_PostalBar.DockCol = 0;
+            this.Code_PostalBar.DockRow = 0;
+            this.Code_PostalBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.Code_PostalBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalRefresh)});
+            this.Code_PostalBar.OptionsBar.AllowQuickCustomization = false;
+            this.Code_PostalBar.OptionsBar.DrawDragBorder = false;
+            this.Code_PostalBar.Text = "Code_Postal";
+            // 
+            // bbiCode_PostalNew
+            // 
+            this.bbiCode_PostalNew.Caption = "Ajouter";
+            this.bbiCode_PostalNew.Id = 0;
+            this.bbiCode_PostalNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiCode_PostalNew.Name = "bbiCode_PostalNew";
+            this.bbiCode_PostalNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiCode_PostalEdit
+            // 
+            this.bbiCode_PostalEdit.Caption = "Modifier ";
+            this.bbiCode_PostalEdit.Id = 1;
+            this.bbiCode_PostalEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiCode_PostalEdit.Name = "bbiCode_PostalEdit";
+            this.bbiCode_PostalEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiCode_PostalDelete
+            // 
+            this.bbiCode_PostalDelete.Caption = "Delete";
+            this.bbiCode_PostalDelete.Id = 2;
+            this.bbiCode_PostalDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiCode_PostalDelete.Name = "bbiCode_PostalDelete";
+            this.bbiCode_PostalDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiCode_PostalRefresh
+            // 
+            this.bbiCode_PostalRefresh.Caption = "Actualiser ";
+            this.bbiCode_PostalRefresh.Id = 3;
+            this.bbiCode_PostalRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiCode_PostalRefresh.Name = "bbiCode_PostalRefresh";
+            this.bbiCode_PostalRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barDockControl1
+            // 
+            this.barDockControl1.CausesValidation = false;
+            this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl1.Manager = this.Code_PostalBarManager;
+            this.barDockControl1.Size = new System.Drawing.Size(1200, 24);
+            // 
+            // barDockControl2
+            // 
+            this.barDockControl2.CausesValidation = false;
+            this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControl2.Location = new System.Drawing.Point(0, 169);
+            this.barDockControl2.Manager = this.Code_PostalBarManager;
+            this.barDockControl2.Size = new System.Drawing.Size(1200, 0);
+            // 
+            // barDockControl4
+            // 
+            this.barDockControl4.CausesValidation = false;
+            this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControl4.Location = new System.Drawing.Point(1200, 24);
+            this.barDockControl4.Manager = this.Code_PostalBarManager;
+            this.barDockControl4.Size = new System.Drawing.Size(0, 145);
             // 
             // Maitre_ApprentissageXtraUserControl
             // 
@@ -506,10 +669,10 @@
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl8);
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl6);
             this.Maitre_ApprentissageXtraUserControl.Controls.Add(this.barDockControl5);
-            this.Maitre_ApprentissageXtraUserControl.Location = new System.Drawing.Point(24, 191);
+            this.Maitre_ApprentissageXtraUserControl.Location = new System.Drawing.Point(24, 143);
             this.Maitre_ApprentissageXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
             this.Maitre_ApprentissageXtraUserControl.Name = "Maitre_ApprentissageXtraUserControl";
-            this.Maitre_ApprentissageXtraUserControl.Size = new System.Drawing.Size(976, 427);
+            this.Maitre_ApprentissageXtraUserControl.Size = new System.Drawing.Size(1200, 169);
             this.Maitre_ApprentissageXtraUserControl.TabIndex = 11;
             // 
             // Maitre_ApprentissageGridControl
@@ -520,10 +683,14 @@
             this.Maitre_ApprentissageGridControl.MainView = this.Maitre_ApprentissageGridView;
             this.Maitre_ApprentissageGridControl.MenuManager = this.mainRibbonControl;
             this.Maitre_ApprentissageGridControl.Name = "Maitre_ApprentissageGridControl";
-            this.Maitre_ApprentissageGridControl.Size = new System.Drawing.Size(976, 403);
+            this.Maitre_ApprentissageGridControl.Size = new System.Drawing.Size(1200, 145);
             this.Maitre_ApprentissageGridControl.TabIndex = 0;
             this.Maitre_ApprentissageGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.Maitre_ApprentissageGridView});
+            // 
+            // Maitre_ApprentissageBindingSource
+            // 
+            this.Maitre_ApprentissageBindingSource.DataSource = typeof(gtsco2.basededonne.Maitre_Apprentissage);
             // 
             // Maitre_ApprentissageGridView
             // 
@@ -671,464 +838,13 @@
             this.colStagiairs1.FieldName = "Stagiairs";
             this.colStagiairs1.Name = "colStagiairs1";
             // 
-            // Maitre_ApprentissageBindingSource
-            // 
-            this.Maitre_ApprentissageBindingSource.DataSource = typeof(gtsco2.basededonne.Maitre_Apprentissage);
-            // 
-            // WillayaLookUpEdit
-            // 
-            this.WillayaLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Code_Willaya", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.WillayaLookUpEdit.EditValue = "";
-            this.WillayaLookUpEdit.Location = new System.Drawing.Point(200, 132);
-            this.WillayaLookUpEdit.MenuManager = this.mainRibbonControl;
-            this.WillayaLookUpEdit.Name = "WillayaLookUpEdit";
-            this.WillayaLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.WillayaLookUpEdit.Properties.DataSource = this.WillayaBindingSource;
-            this.WillayaLookUpEdit.Properties.DisplayMember = "Wilaya_name__ar";
-            this.WillayaLookUpEdit.Properties.PopupView = this.WillayaLookUpEditView;
-            this.WillayaLookUpEdit.Properties.ValueMember = "Wilaya_Code";
-            this.WillayaLookUpEdit.Size = new System.Drawing.Size(812, 20);
-            this.WillayaLookUpEdit.StyleController = this.dataLayoutControl1;
-            this.WillayaLookUpEdit.TabIndex = 9;
-            // 
-            // WillayaBindingSource
-            // 
-            this.WillayaBindingSource.DataSource = typeof(gtsco2.basededonne.Willaya);
-            // 
-            // layoutControlGroup2
-            // 
-            this.layoutControlGroup2.AllowDrawBackground = false;
-            this.layoutControlGroup2.GroupBordersVisible = false;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForCommune_id,
-            this.ItemForCommune_name,
-            this.ItemForCommune_name_ar,
-            this.ItemForDaira_name,
-            this.ItemForDaira_name_ar,
-            this.ItemForCode_Willaya,
-            this.tabbedControlGroup1});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1004, 622);
-            // 
-            // Commune_idTextEdit
-            // 
-            this.Commune_idTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Commune_id", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Commune_idTextEdit.Location = new System.Drawing.Point(200, 12);
-            this.Commune_idTextEdit.MenuManager = this.mainRibbonControl;
-            this.Commune_idTextEdit.Name = "Commune_idTextEdit";
-            this.Commune_idTextEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.Commune_idTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Commune_idTextEdit.Properties.Mask.EditMask = "N0";
-            this.Commune_idTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.Commune_idTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Commune_idTextEdit.Size = new System.Drawing.Size(812, 20);
-            this.Commune_idTextEdit.StyleController = this.dataLayoutControl1;
-            this.Commune_idTextEdit.TabIndex = 4;
-            // 
-            // ItemForCommune_id
-            // 
-            this.ItemForCommune_id.Control = this.Commune_idTextEdit;
-            this.ItemForCommune_id.Location = new System.Drawing.Point(0, 0);
-            this.ItemForCommune_id.Name = "ItemForCommune_id";
-            this.ItemForCommune_id.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForCommune_id.Text = "Numéro de la commune";
-            this.ItemForCommune_id.TextSize = new System.Drawing.Size(176, 13);
-            // 
-            // Commune_nameTextEdit
-            // 
-            this.Commune_nameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Commune_name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Commune_nameTextEdit.Location = new System.Drawing.Point(200, 36);
-            this.Commune_nameTextEdit.MenuManager = this.mainRibbonControl;
-            this.Commune_nameTextEdit.Name = "Commune_nameTextEdit";
-            this.Commune_nameTextEdit.Size = new System.Drawing.Size(812, 20);
-            this.Commune_nameTextEdit.StyleController = this.dataLayoutControl1;
-            this.Commune_nameTextEdit.TabIndex = 5;
-            // 
-            // ItemForCommune_name
-            // 
-            this.ItemForCommune_name.Control = this.Commune_nameTextEdit;
-            this.ItemForCommune_name.Location = new System.Drawing.Point(0, 24);
-            this.ItemForCommune_name.Name = "ItemForCommune_name";
-            this.ItemForCommune_name.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForCommune_name.Text = "Désignation de la commune";
-            this.ItemForCommune_name.TextSize = new System.Drawing.Size(176, 13);
-            // 
-            // Commune_name_arTextEdit
-            // 
-            this.Commune_name_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Commune_name_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Commune_name_arTextEdit.Location = new System.Drawing.Point(200, 60);
-            this.Commune_name_arTextEdit.MenuManager = this.mainRibbonControl;
-            this.Commune_name_arTextEdit.Name = "Commune_name_arTextEdit";
-            this.Commune_name_arTextEdit.Size = new System.Drawing.Size(812, 20);
-            this.Commune_name_arTextEdit.StyleController = this.dataLayoutControl1;
-            this.Commune_name_arTextEdit.TabIndex = 6;
-            // 
-            // ItemForCommune_name_ar
-            // 
-            this.ItemForCommune_name_ar.Control = this.Commune_name_arTextEdit;
-            this.ItemForCommune_name_ar.Location = new System.Drawing.Point(0, 48);
-            this.ItemForCommune_name_ar.Name = "ItemForCommune_name_ar";
-            this.ItemForCommune_name_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForCommune_name_ar.Text = "Désignation de la commune en arabe";
-            this.ItemForCommune_name_ar.TextSize = new System.Drawing.Size(176, 13);
-            // 
-            // Daira_nameTextEdit
-            // 
-            this.Daira_nameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Daira_name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Daira_nameTextEdit.Location = new System.Drawing.Point(200, 84);
-            this.Daira_nameTextEdit.MenuManager = this.mainRibbonControl;
-            this.Daira_nameTextEdit.Name = "Daira_nameTextEdit";
-            this.Daira_nameTextEdit.Size = new System.Drawing.Size(812, 20);
-            this.Daira_nameTextEdit.StyleController = this.dataLayoutControl1;
-            this.Daira_nameTextEdit.TabIndex = 7;
-            // 
-            // ItemForDaira_name
-            // 
-            this.ItemForDaira_name.Control = this.Daira_nameTextEdit;
-            this.ItemForDaira_name.Location = new System.Drawing.Point(0, 72);
-            this.ItemForDaira_name.Name = "ItemForDaira_name";
-            this.ItemForDaira_name.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDaira_name.Text = "Désignation de la daira";
-            this.ItemForDaira_name.TextSize = new System.Drawing.Size(176, 13);
-            // 
-            // Daira_name_arTextEdit
-            // 
-            this.Daira_name_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.communeViewBindingSource, "Daira_name_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Daira_name_arTextEdit.Location = new System.Drawing.Point(200, 108);
-            this.Daira_name_arTextEdit.MenuManager = this.mainRibbonControl;
-            this.Daira_name_arTextEdit.Name = "Daira_name_arTextEdit";
-            this.Daira_name_arTextEdit.Size = new System.Drawing.Size(812, 20);
-            this.Daira_name_arTextEdit.StyleController = this.dataLayoutControl1;
-            this.Daira_name_arTextEdit.TabIndex = 8;
-            // 
-            // ItemForDaira_name_ar
-            // 
-            this.ItemForDaira_name_ar.Control = this.Daira_name_arTextEdit;
-            this.ItemForDaira_name_ar.Location = new System.Drawing.Point(0, 96);
-            this.ItemForDaira_name_ar.Name = "ItemForDaira_name_ar";
-            this.ItemForDaira_name_ar.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForDaira_name_ar.Text = "Désignation de la daira en arabe";
-            this.ItemForDaira_name_ar.TextSize = new System.Drawing.Size(176, 13);
-            // 
-            // WillayaLookUpEditView
-            // 
-            this.WillayaLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.WillayaLookUpEditView.Name = "WillayaLookUpEditView";
-            this.WillayaLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.WillayaLookUpEditView.OptionsView.ShowGroupPanel = false;
-            // 
-            // ItemForCode_Willaya
-            // 
-            this.ItemForCode_Willaya.Control = this.WillayaLookUpEdit;
-            this.ItemForCode_Willaya.Location = new System.Drawing.Point(0, 120);
-            this.ItemForCode_Willaya.Name = "ItemForCode_Willaya";
-            this.ItemForCode_Willaya.Size = new System.Drawing.Size(1004, 24);
-            this.ItemForCode_Willaya.Text = "Code de la Willaya";
-            this.ItemForCode_Willaya.TextSize = new System.Drawing.Size(176, 13);
-            // 
-            // ItemForCode_Postal
-            // 
-            this.ItemForCode_Postal.Control = this.Code_PostalXtraUserControl;
-            this.ItemForCode_Postal.Location = new System.Drawing.Point(0, 0);
-            this.ItemForCode_Postal.Name = "ItemForCode_Postal";
-            this.ItemForCode_Postal.Size = new System.Drawing.Size(980, 431);
-            this.ItemForCode_Postal.StartNewLine = true;
-            this.ItemForCode_Postal.Text = "Code_Postal";
-            this.ItemForCode_Postal.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForCode_Postal.TextVisible = false;
-            // 
-            // tabbedControlGroup1
-            // 
-            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 144);
-            this.tabbedControlGroup1.Name = "autoGroupForTabs";
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup3;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1004, 478);
-            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup3,
-            this.layoutControlGroup4,
-            this.layoutControlGroup5});
-            this.tabbedControlGroup1.Text = "Tabs";
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForCode_Postal});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "autoGroupForCode_Postal";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(980, 431);
-            this.layoutControlGroup3.Text = "Code postal";
-            // 
-            // ItemForMaitre_Apprentissage
-            // 
-            this.ItemForMaitre_Apprentissage.Control = this.Maitre_ApprentissageXtraUserControl;
-            this.ItemForMaitre_Apprentissage.Location = new System.Drawing.Point(0, 0);
-            this.ItemForMaitre_Apprentissage.Name = "ItemForMaitre_Apprentissage";
-            this.ItemForMaitre_Apprentissage.Size = new System.Drawing.Size(980, 431);
-            this.ItemForMaitre_Apprentissage.StartNewLine = true;
-            this.ItemForMaitre_Apprentissage.Text = "Maitre_Apprentissage";
-            this.ItemForMaitre_Apprentissage.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForMaitre_Apprentissage.TextVisible = false;
-            // 
-            // layoutControlGroup4
-            // 
-            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForMaitre_Apprentissage});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup4.Name = "autoGroupForMaitre_Apprentissage";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(980, 431);
-            this.layoutControlGroup4.Text = "Maitre apprentissage";
-            // 
-            // ItemForStagiairs
-            // 
-            this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
-            this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
-            this.ItemForStagiairs.Name = "ItemForStagiairs";
-            this.ItemForStagiairs.Size = new System.Drawing.Size(980, 431);
-            this.ItemForStagiairs.StartNewLine = true;
-            this.ItemForStagiairs.Text = "Stagiairs";
-            this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForStagiairs.TextVisible = false;
-            // 
-            // layoutControlGroup5
-            // 
-            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForStagiairs});
-            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup5.Name = "autoGroupForStagiairs";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(980, 431);
-            this.layoutControlGroup5.Text = "Stagiaires";
-            // 
-            // mvvmContext
-            // 
-            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Save", this.bbiSave),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "SaveAndClose", this.bbiSaveAndClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "SaveAndNew", this.bbiSaveAndNew),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Reset", this.bbiReset),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Delete", this.bbiDelete),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Close", this.bbiClose),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "SaveLayout", this.bbiSaveLayout),
-            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "ResetLayout", this.bbiResetLayout)});
-            this.mvvmContext.ContainerControl = this;
-            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
-            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
-            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.CommuneViewModel);
-            // 
-            // StagiairsBarManager
-            // 
-            this.StagiairsBarManager.AllowCustomization = false;
-            this.StagiairsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.StagiairsBar});
-            this.StagiairsBarManager.DockControls.Add(this.barDockControlTop);
-            this.StagiairsBarManager.DockControls.Add(this.barDockControlBottom);
-            this.StagiairsBarManager.DockControls.Add(this.barDockControlLeft);
-            this.StagiairsBarManager.DockControls.Add(this.barDockControlRight);
-            this.StagiairsBarManager.Form = this.StagiairsXtraUserControl;
-            this.StagiairsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiStagiairsNew,
-            this.bbiStagiairsEdit,
-            this.bbiStagiairsDelete,
-            this.bbiStagiairsRefresh});
-            this.StagiairsBarManager.MainMenu = this.StagiairsBar;
-            this.StagiairsBarManager.MaxItemId = 4;
-            // 
-            // bbiStagiairsNew
-            // 
-            this.bbiStagiairsNew.Caption = "Ajouter ";
-            this.bbiStagiairsNew.Id = 0;
-            this.bbiStagiairsNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiStagiairsNew.Name = "bbiStagiairsNew";
-            this.bbiStagiairsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiStagiairsEdit
-            // 
-            this.bbiStagiairsEdit.Caption = "Modifier ";
-            this.bbiStagiairsEdit.Id = 1;
-            this.bbiStagiairsEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiStagiairsEdit.Name = "bbiStagiairsEdit";
-            this.bbiStagiairsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiStagiairsDelete
-            // 
-            this.bbiStagiairsDelete.Caption = "Supprimer";
-            this.bbiStagiairsDelete.Id = 2;
-            this.bbiStagiairsDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiStagiairsDelete.Name = "bbiStagiairsDelete";
-            this.bbiStagiairsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiStagiairsRefresh
-            // 
-            this.bbiStagiairsRefresh.Caption = "Actualiser ";
-            this.bbiStagiairsRefresh.Id = 3;
-            this.bbiStagiairsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiStagiairsRefresh.Name = "bbiStagiairsRefresh";
-            this.bbiStagiairsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // StagiairsBar
-            // 
-            this.StagiairsBar.BarName = "Stagiairs";
-            this.StagiairsBar.DockCol = 0;
-            this.StagiairsBar.DockRow = 0;
-            this.StagiairsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.StagiairsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh)});
-            this.StagiairsBar.OptionsBar.AllowQuickCustomization = false;
-            this.StagiairsBar.OptionsBar.DrawDragBorder = false;
-            this.StagiairsBar.Text = "Stagiairs";
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.StagiairsBarManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 427);
-            this.barDockControlBottom.Manager = this.StagiairsBarManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
-            this.barDockControlLeft.Manager = this.StagiairsBarManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 403);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(976, 24);
-            this.barDockControlRight.Manager = this.StagiairsBarManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 403);
-            // 
-            // StagiairsPopUpMenu
-            // 
-            this.StagiairsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh)});
-            this.StagiairsPopUpMenu.Manager = this.StagiairsBarManager;
-            this.StagiairsPopUpMenu.Name = "StagiairsPopUpMenu";
-            // 
-            // Code_PostalBarManager
-            // 
-            this.Code_PostalBarManager.AllowCustomization = false;
-            this.Code_PostalBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.Code_PostalBar});
-            this.Code_PostalBarManager.DockControls.Add(this.barDockControl1);
-            this.Code_PostalBarManager.DockControls.Add(this.barDockControl2);
-            this.Code_PostalBarManager.DockControls.Add(this.barDockControl3);
-            this.Code_PostalBarManager.DockControls.Add(this.barDockControl4);
-            this.Code_PostalBarManager.Form = this.Code_PostalXtraUserControl;
-            this.Code_PostalBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbiCode_PostalNew,
-            this.bbiCode_PostalEdit,
-            this.bbiCode_PostalDelete,
-            this.bbiCode_PostalRefresh});
-            this.Code_PostalBarManager.MainMenu = this.Code_PostalBar;
-            this.Code_PostalBarManager.MaxItemId = 4;
-            // 
-            // bbiCode_PostalNew
-            // 
-            this.bbiCode_PostalNew.Caption = "Ajouter";
-            this.bbiCode_PostalNew.Id = 0;
-            this.bbiCode_PostalNew.ImageOptions.ImageUri.Uri = "New";
-            this.bbiCode_PostalNew.Name = "bbiCode_PostalNew";
-            this.bbiCode_PostalNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiCode_PostalEdit
-            // 
-            this.bbiCode_PostalEdit.Caption = "Modifier ";
-            this.bbiCode_PostalEdit.Id = 1;
-            this.bbiCode_PostalEdit.ImageOptions.ImageUri.Uri = "Edit";
-            this.bbiCode_PostalEdit.Name = "bbiCode_PostalEdit";
-            this.bbiCode_PostalEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiCode_PostalDelete
-            // 
-            this.bbiCode_PostalDelete.Caption = "Delete";
-            this.bbiCode_PostalDelete.Id = 2;
-            this.bbiCode_PostalDelete.ImageOptions.ImageUri.Uri = "Delete";
-            this.bbiCode_PostalDelete.Name = "bbiCode_PostalDelete";
-            this.bbiCode_PostalDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // bbiCode_PostalRefresh
-            // 
-            this.bbiCode_PostalRefresh.Caption = "Actualiser ";
-            this.bbiCode_PostalRefresh.Id = 3;
-            this.bbiCode_PostalRefresh.ImageOptions.ImageUri.Uri = "Refresh";
-            this.bbiCode_PostalRefresh.Name = "bbiCode_PostalRefresh";
-            this.bbiCode_PostalRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // Code_PostalBar
-            // 
-            this.Code_PostalBar.BarName = "Code_Postal";
-            this.Code_PostalBar.DockCol = 0;
-            this.Code_PostalBar.DockRow = 0;
-            this.Code_PostalBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.Code_PostalBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalRefresh)});
-            this.Code_PostalBar.OptionsBar.AllowQuickCustomization = false;
-            this.Code_PostalBar.OptionsBar.DrawDragBorder = false;
-            this.Code_PostalBar.Text = "Code_Postal";
-            // 
-            // barDockControl1
-            // 
-            this.barDockControl1.CausesValidation = false;
-            this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl1.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl1.Manager = this.Code_PostalBarManager;
-            this.barDockControl1.Size = new System.Drawing.Size(976, 24);
-            // 
-            // barDockControl2
-            // 
-            this.barDockControl2.CausesValidation = false;
-            this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 427);
-            this.barDockControl2.Manager = this.Code_PostalBarManager;
-            this.barDockControl2.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControl3
-            // 
-            this.barDockControl3.CausesValidation = false;
-            this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl3.Manager = this.Code_PostalBarManager;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 403);
-            // 
-            // barDockControl4
-            // 
-            this.barDockControl4.CausesValidation = false;
-            this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(976, 24);
-            this.barDockControl4.Manager = this.Code_PostalBarManager;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 403);
-            // 
-            // Code_PostalPopUpMenu
-            // 
-            this.Code_PostalPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalRefresh)});
-            this.Code_PostalPopUpMenu.Manager = this.Code_PostalBarManager;
-            this.Code_PostalPopUpMenu.Name = "Code_PostalPopUpMenu";
+            // barDockControl7
+            // 
+            this.barDockControl7.CausesValidation = false;
+            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
+            this.barDockControl7.Manager = this.Maitre_ApprentissageBarManager;
+            this.barDockControl7.Size = new System.Drawing.Size(0, 145);
             // 
             // Maitre_ApprentissageBarManager
             // 
@@ -1147,6 +863,21 @@
             this.bbiMaitre_ApprentissageRefresh});
             this.Maitre_ApprentissageBarManager.MainMenu = this.Maitre_ApprentissageBar;
             this.Maitre_ApprentissageBarManager.MaxItemId = 4;
+            // 
+            // Maitre_ApprentissageBar
+            // 
+            this.Maitre_ApprentissageBar.BarName = "Maitre_Apprentissage";
+            this.Maitre_ApprentissageBar.DockCol = 0;
+            this.Maitre_ApprentissageBar.DockRow = 0;
+            this.Maitre_ApprentissageBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.Maitre_ApprentissageBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageRefresh)});
+            this.Maitre_ApprentissageBar.OptionsBar.AllowQuickCustomization = false;
+            this.Maitre_ApprentissageBar.OptionsBar.DrawDragBorder = false;
+            this.Maitre_ApprentissageBar.Text = "Maitre_Apprentissage";
             // 
             // bbiMaitre_ApprentissageNew
             // 
@@ -1180,62 +911,79 @@
             this.bbiMaitre_ApprentissageRefresh.Name = "bbiMaitre_ApprentissageRefresh";
             this.bbiMaitre_ApprentissageRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // Maitre_ApprentissageBar
-            // 
-            this.Maitre_ApprentissageBar.BarName = "Maitre_Apprentissage";
-            this.Maitre_ApprentissageBar.DockCol = 0;
-            this.Maitre_ApprentissageBar.DockRow = 0;
-            this.Maitre_ApprentissageBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.Maitre_ApprentissageBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageRefresh)});
-            this.Maitre_ApprentissageBar.OptionsBar.AllowQuickCustomization = false;
-            this.Maitre_ApprentissageBar.OptionsBar.DrawDragBorder = false;
-            this.Maitre_ApprentissageBar.Text = "Maitre_Apprentissage";
-            // 
             // barDockControl5
             // 
             this.barDockControl5.CausesValidation = false;
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl5.Size = new System.Drawing.Size(976, 24);
+            this.barDockControl5.Size = new System.Drawing.Size(1200, 24);
             // 
             // barDockControl6
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 427);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 169);
             this.barDockControl6.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl6.Size = new System.Drawing.Size(976, 0);
-            // 
-            // barDockControl7
-            // 
-            this.barDockControl7.CausesValidation = false;
-            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 24);
-            this.barDockControl7.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 403);
+            this.barDockControl6.Size = new System.Drawing.Size(1200, 0);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(976, 24);
+            this.barDockControl8.Location = new System.Drawing.Point(1200, 24);
             this.barDockControl8.Manager = this.Maitre_ApprentissageBarManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 403);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 145);
             // 
-            // Maitre_ApprentissagePopUpMenu
+            // StagiairsXtraUserControl
             // 
-            this.Maitre_ApprentissagePopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageNew),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageEdit),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageDelete),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageRefresh)});
-            this.Maitre_ApprentissagePopUpMenu.Manager = this.Maitre_ApprentissageBarManager;
-            this.Maitre_ApprentissagePopUpMenu.Name = "Maitre_ApprentissagePopUpMenu";
+            this.StagiairsXtraUserControl.Controls.Add(this.StagiairsGridControl);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlLeft);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlRight);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlBottom);
+            this.StagiairsXtraUserControl.Controls.Add(this.barDockControlTop);
+            this.StagiairsXtraUserControl.Location = new System.Drawing.Point(24, 143);
+            this.StagiairsXtraUserControl.MinimumSize = new System.Drawing.Size(100, 100);
+            this.StagiairsXtraUserControl.Name = "StagiairsXtraUserControl";
+            this.StagiairsXtraUserControl.Size = new System.Drawing.Size(1200, 169);
+            this.StagiairsXtraUserControl.TabIndex = 12;
+            // 
+            // StagiairsGridControl
+            // 
+            this.StagiairsGridControl.DataSource = this.StagiairsBindingSource;
+            this.StagiairsGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StagiairsGridControl.Location = new System.Drawing.Point(0, 24);
+            this.StagiairsGridControl.MainView = this.StagiairsGridView;
+            this.StagiairsGridControl.MenuManager = this.mainRibbonControl;
+            this.StagiairsGridControl.Name = "StagiairsGridControl";
+            this.StagiairsGridControl.Size = new System.Drawing.Size(1200, 145);
+            this.StagiairsGridControl.TabIndex = 0;
+            this.StagiairsGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.StagiairsGridView});
+            // 
+            // StagiairsBindingSource
+            // 
+            this.StagiairsBindingSource.DataSource = typeof(gtsco2.basededonne.Stagiair);
+            // 
+            // StagiairsGridView
+            // 
+            this.StagiairsGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colNum_STG,
+            this.colNom,
+            this.colNom_ar,
+            this.colPrenom,
+            this.colPrenom_ar,
+            this.colPromo,
+            this.colSection,
+            this.colTelephone,
+            this.colE_Maile,
+            this.colAdresse,
+            this.colAdresse_ar,
+            this.colCommune});
+            this.StagiairsGridView.GridControl = this.StagiairsGridControl;
+            this.StagiairsGridView.Name = "StagiairsGridView";
+            this.StagiairsGridView.OptionsBehavior.Editable = false;
+            this.StagiairsGridView.OptionsBehavior.ReadOnly = true;
             // 
             // colNum_STG
             // 
@@ -1272,19 +1020,19 @@
             this.colPrenom_ar.Visible = true;
             this.colPrenom_ar.VisibleIndex = 4;
             // 
-            // colSection
-            // 
-            this.colSection.FieldName = "Section";
-            this.colSection.Name = "colSection";
-            this.colSection.Visible = true;
-            this.colSection.VisibleIndex = 5;
-            // 
             // colPromo
             // 
             this.colPromo.FieldName = "Promo";
             this.colPromo.Name = "colPromo";
             this.colPromo.Visible = true;
             this.colPromo.VisibleIndex = 6;
+            // 
+            // colSection
+            // 
+            this.colSection.FieldName = "Section";
+            this.colSection.Name = "colSection";
+            this.colSection.Visible = true;
+            this.colSection.VisibleIndex = 5;
             // 
             // colTelephone
             // 
@@ -1321,6 +1069,307 @@
             this.colCommune.Visible = true;
             this.colCommune.VisibleIndex = 11;
             // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Manager = this.StagiairsBarManager;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 145);
+            // 
+            // StagiairsBarManager
+            // 
+            this.StagiairsBarManager.AllowCustomization = false;
+            this.StagiairsBarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.StagiairsBar});
+            this.StagiairsBarManager.DockControls.Add(this.barDockControlTop);
+            this.StagiairsBarManager.DockControls.Add(this.barDockControlBottom);
+            this.StagiairsBarManager.DockControls.Add(this.barDockControlLeft);
+            this.StagiairsBarManager.DockControls.Add(this.barDockControlRight);
+            this.StagiairsBarManager.Form = this.StagiairsXtraUserControl;
+            this.StagiairsBarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbiStagiairsNew,
+            this.bbiStagiairsEdit,
+            this.bbiStagiairsDelete,
+            this.bbiStagiairsRefresh});
+            this.StagiairsBarManager.MainMenu = this.StagiairsBar;
+            this.StagiairsBarManager.MaxItemId = 4;
+            // 
+            // StagiairsBar
+            // 
+            this.StagiairsBar.BarName = "Stagiairs";
+            this.StagiairsBar.DockCol = 0;
+            this.StagiairsBar.DockRow = 0;
+            this.StagiairsBar.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.StagiairsBar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh)});
+            this.StagiairsBar.OptionsBar.AllowQuickCustomization = false;
+            this.StagiairsBar.OptionsBar.DrawDragBorder = false;
+            this.StagiairsBar.Text = "Stagiairs";
+            // 
+            // bbiStagiairsNew
+            // 
+            this.bbiStagiairsNew.Caption = "Ajouter ";
+            this.bbiStagiairsNew.Id = 0;
+            this.bbiStagiairsNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiStagiairsNew.Name = "bbiStagiairsNew";
+            this.bbiStagiairsNew.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiStagiairsEdit
+            // 
+            this.bbiStagiairsEdit.Caption = "Modifier ";
+            this.bbiStagiairsEdit.Id = 1;
+            this.bbiStagiairsEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiStagiairsEdit.Name = "bbiStagiairsEdit";
+            this.bbiStagiairsEdit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiStagiairsDelete
+            // 
+            this.bbiStagiairsDelete.Caption = "Supprimer";
+            this.bbiStagiairsDelete.Id = 2;
+            this.bbiStagiairsDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiStagiairsDelete.Name = "bbiStagiairsDelete";
+            this.bbiStagiairsDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // bbiStagiairsRefresh
+            // 
+            this.bbiStagiairsRefresh.Caption = "Actualiser ";
+            this.bbiStagiairsRefresh.Id = 3;
+            this.bbiStagiairsRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiStagiairsRefresh.Name = "bbiStagiairsRefresh";
+            this.bbiStagiairsRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.StagiairsBarManager;
+            this.barDockControlTop.Size = new System.Drawing.Size(1200, 24);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 169);
+            this.barDockControlBottom.Manager = this.StagiairsBarManager;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1200, 0);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1200, 24);
+            this.barDockControlRight.Manager = this.StagiairsBarManager;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 145);
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1248, 336);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForCommune_id,
+            this.ItemForCommune_name,
+            this.ItemForDaira_name,
+            this.ItemForCode_Willaya,
+            this.tabbedControlGroup1,
+            this.ItemForCommune_name_ar,
+            this.ItemForDaira_name_ar});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1228, 316);
+            // 
+            // ItemForCommune_id
+            // 
+            this.ItemForCommune_id.Control = this.Commune_idTextEdit;
+            this.ItemForCommune_id.Location = new System.Drawing.Point(0, 0);
+            this.ItemForCommune_id.Name = "ItemForCommune_id";
+            this.ItemForCommune_id.Size = new System.Drawing.Size(1228, 24);
+            this.ItemForCommune_id.Text = "Numéro de la commune";
+            this.ItemForCommune_id.TextSize = new System.Drawing.Size(130, 13);
+            // 
+            // ItemForCommune_name
+            // 
+            this.ItemForCommune_name.Control = this.Commune_nameTextEdit;
+            this.ItemForCommune_name.Location = new System.Drawing.Point(0, 24);
+            this.ItemForCommune_name.Name = "ItemForCommune_name";
+            this.ItemForCommune_name.Size = new System.Drawing.Size(614, 24);
+            this.ItemForCommune_name.Text = "Désignation de la commune";
+            this.ItemForCommune_name.TextSize = new System.Drawing.Size(130, 13);
+            // 
+            // ItemForDaira_name
+            // 
+            this.ItemForDaira_name.Control = this.Daira_nameTextEdit;
+            this.ItemForDaira_name.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDaira_name.Name = "ItemForDaira_name";
+            this.ItemForDaira_name.Size = new System.Drawing.Size(614, 24);
+            this.ItemForDaira_name.Text = "Désignation de la daira";
+            this.ItemForDaira_name.TextSize = new System.Drawing.Size(130, 13);
+            // 
+            // ItemForCode_Willaya
+            // 
+            this.ItemForCode_Willaya.Control = this.WillayaLookUpEdit;
+            this.ItemForCode_Willaya.Location = new System.Drawing.Point(0, 72);
+            this.ItemForCode_Willaya.Name = "ItemForCode_Willaya";
+            this.ItemForCode_Willaya.Size = new System.Drawing.Size(1228, 24);
+            this.ItemForCode_Willaya.Text = "Wilaya";
+            this.ItemForCode_Willaya.TextSize = new System.Drawing.Size(130, 13);
+            // 
+            // tabbedControlGroup1
+            // 
+            this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 96);
+            this.tabbedControlGroup1.Name = "autoGroupForTabs";
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup5;
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(1228, 220);
+            this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup3,
+            this.layoutControlGroup4,
+            this.layoutControlGroup5});
+            this.tabbedControlGroup1.Text = "Tabs";
+            // 
+            // layoutControlGroup5
+            // 
+            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForStagiairs});
+            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup5.Name = "autoGroupForStagiairs";
+            this.layoutControlGroup5.Size = new System.Drawing.Size(1204, 173);
+            this.layoutControlGroup5.Text = "Stagiaires";
+            // 
+            // ItemForStagiairs
+            // 
+            this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
+            this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
+            this.ItemForStagiairs.Name = "ItemForStagiairs";
+            this.ItemForStagiairs.Size = new System.Drawing.Size(1204, 173);
+            this.ItemForStagiairs.StartNewLine = true;
+            this.ItemForStagiairs.Text = "Stagiairs";
+            this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForStagiairs.TextVisible = false;
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForCode_Postal});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "autoGroupForCode_Postal";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(1204, 173);
+            this.layoutControlGroup3.Text = "Code postal";
+            // 
+            // ItemForCode_Postal
+            // 
+            this.ItemForCode_Postal.Control = this.Code_PostalXtraUserControl;
+            this.ItemForCode_Postal.Location = new System.Drawing.Point(0, 0);
+            this.ItemForCode_Postal.Name = "ItemForCode_Postal";
+            this.ItemForCode_Postal.Size = new System.Drawing.Size(1204, 173);
+            this.ItemForCode_Postal.StartNewLine = true;
+            this.ItemForCode_Postal.Text = "Code_Postal";
+            this.ItemForCode_Postal.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForCode_Postal.TextVisible = false;
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForMaitre_Apprentissage});
+            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup4.Name = "autoGroupForMaitre_Apprentissage";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(1204, 173);
+            this.layoutControlGroup4.Text = "Maitre apprentissage";
+            // 
+            // ItemForMaitre_Apprentissage
+            // 
+            this.ItemForMaitre_Apprentissage.Control = this.Maitre_ApprentissageXtraUserControl;
+            this.ItemForMaitre_Apprentissage.Location = new System.Drawing.Point(0, 0);
+            this.ItemForMaitre_Apprentissage.Name = "ItemForMaitre_Apprentissage";
+            this.ItemForMaitre_Apprentissage.Size = new System.Drawing.Size(1204, 173);
+            this.ItemForMaitre_Apprentissage.StartNewLine = true;
+            this.ItemForMaitre_Apprentissage.Text = "Maitre_Apprentissage";
+            this.ItemForMaitre_Apprentissage.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForMaitre_Apprentissage.TextVisible = false;
+            // 
+            // ItemForCommune_name_ar
+            // 
+            this.ItemForCommune_name_ar.Control = this.Commune_name_arTextEdit;
+            this.ItemForCommune_name_ar.Location = new System.Drawing.Point(614, 24);
+            this.ItemForCommune_name_ar.Name = "ItemForCommune_name_ar";
+            this.ItemForCommune_name_ar.Size = new System.Drawing.Size(614, 24);
+            this.ItemForCommune_name_ar.Text = "اسم البلدية";
+            this.ItemForCommune_name_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForCommune_name_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForCommune_name_ar.TextSize = new System.Drawing.Size(54, 13);
+            this.ItemForCommune_name_ar.TextToControlDistance = 5;
+            // 
+            // ItemForDaira_name_ar
+            // 
+            this.ItemForDaira_name_ar.Control = this.Daira_name_arTextEdit;
+            this.ItemForDaira_name_ar.Location = new System.Drawing.Point(614, 48);
+            this.ItemForDaira_name_ar.Name = "ItemForDaira_name_ar";
+            this.ItemForDaira_name_ar.Size = new System.Drawing.Size(614, 24);
+            this.ItemForDaira_name_ar.Text = "اسم الدائرة";
+            this.ItemForDaira_name_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForDaira_name_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForDaira_name_ar.TextSize = new System.Drawing.Size(53, 13);
+            this.ItemForDaira_name_ar.TextToControlDistance = 5;
+            // 
+            // mvvmContext
+            // 
+            this.mvvmContext.BindingExpressions.AddRange(new DevExpress.Utils.MVVM.BindingExpression[] {
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Save", this.bbiSave),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "SaveAndClose", this.bbiSaveAndClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "SaveAndNew", this.bbiSaveAndNew),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Reset", this.bbiReset),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Delete", this.bbiDelete),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "Close", this.bbiClose),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "SaveLayout", this.bbiSaveLayout),
+            DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(gtsco2.mvvm.ViewModels.CommuneViewModel), "ResetLayout", this.bbiResetLayout)});
+            this.mvvmContext.ContainerControl = this;
+            this.mvvmContext.RegistrationExpressions.AddRange(new DevExpress.Utils.MVVM.RegistrationExpression[] {
+            DevExpress.Utils.MVVM.RegistrationExpression.RegisterLayoutSerializationService(null, false, DevExpress.Utils.DefaultBoolean.True, this.dataLayoutControl1)});
+            this.mvvmContext.ViewModelType = typeof(gtsco2.mvvm.ViewModels.CommuneViewModel);
+            // 
+            // StagiairsPopUpMenu
+            // 
+            this.StagiairsPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiStagiairsRefresh)});
+            this.StagiairsPopUpMenu.Manager = this.StagiairsBarManager;
+            this.StagiairsPopUpMenu.Name = "StagiairsPopUpMenu";
+            // 
+            // Code_PostalPopUpMenu
+            // 
+            this.Code_PostalPopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiCode_PostalRefresh)});
+            this.Code_PostalPopUpMenu.Manager = this.Code_PostalBarManager;
+            this.Code_PostalPopUpMenu.Name = "Code_PostalPopUpMenu";
+            // 
+            // Maitre_ApprentissagePopUpMenu
+            // 
+            this.Maitre_ApprentissagePopUpMenu.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageNew),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageEdit),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageDelete),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiMaitre_ApprentissageRefresh)});
+            this.Maitre_ApprentissagePopUpMenu.Manager = this.Maitre_ApprentissageBarManager;
+            this.Maitre_ApprentissagePopUpMenu.Name = "Maitre_ApprentissagePopUpMenu";
+            // 
             // CommuneView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1329,55 +1378,55 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "CommuneView";
-            this.Size = new System.Drawing.Size(1024, 768);
+            this.Size = new System.Drawing.Size(1248, 462);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commune_idTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.communeViewBindingSource)).EndInit();
-            this.StagiairsXtraUserControl.ResumeLayout(false);
-            this.StagiairsXtraUserControl.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commune_nameTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commune_name_arTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Daira_nameTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Daira_name_arTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WillayaLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WillayaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WillayaLookUpEditView)).EndInit();
             this.Code_PostalXtraUserControl.ResumeLayout(false);
             this.Code_PostalXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Code_PostalGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Code_PostalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalBarManager)).EndInit();
             this.Maitre_ApprentissageXtraUserControl.ResumeLayout(false);
             this.Maitre_ApprentissageXtraUserControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WillayaLookUpEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WillayaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commune_idTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_id)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commune_nameTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Commune_name_arTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Daira_nameTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Daira_name_arTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name_ar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WillayaLookUpEditView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Willaya)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Postal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaitre_Apprentissage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalBarManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissageBarManager)).EndInit();
+            this.StagiairsXtraUserControl.ResumeLayout(false);
+            this.StagiairsXtraUserControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsBarManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_id)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Willaya)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Postal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaitre_Apprentissage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCommune_name_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDaira_name_ar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StagiairsPopUpMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Code_PostalPopUpMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maitre_ApprentissagePopUpMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1509,5 +1558,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colAdresse;
         private DevExpress.XtraGrid.Columns.GridColumn colAdresse_ar;
         private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraGrid.Columns.GridColumn colWilaya_Code;
+        private DevExpress.XtraGrid.Columns.GridColumn colWilaya_name__ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colWilaya_name__fr_;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommunes;
     }
 }

@@ -110,8 +110,8 @@ namespace gtsco2.forms.PVfinal
             this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton1);
-            this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
+            this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -177,7 +177,7 @@ namespace gtsco2.forms.PVfinal
             this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
             this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.closeButton7.Location = new System.Drawing.Point(524, 3);
+            this.closeButton7.Location = new System.Drawing.Point(720, 3);
             this.closeButton7.Name = "closeButton7";
             this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.closeButton7.ShowToolTips = false;
@@ -194,7 +194,7 @@ namespace gtsco2.forms.PVfinal
             this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(632, 3);
+            this.simpleButton3.Location = new System.Drawing.Point(524, 3);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.simpleButton3.ShowToolTips = false;

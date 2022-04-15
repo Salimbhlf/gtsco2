@@ -36,6 +36,7 @@ namespace gtsco2.forms.PVfinal
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.closeButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -64,7 +65,6 @@ namespace gtsco2.forms.PVfinal
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -185,6 +185,23 @@ namespace gtsco2.forms.PVfinal
             this.closeButton7.TabIndex = 10;
             this.closeButton7.Text = "Fermer";
             this.closeButton7.Click += new System.EventHandler(this.closeButton7_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.AutoWidthInLayoutControl = true;
+            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.simpleButton3.Location = new System.Drawing.Point(632, 3);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton3.ShowToolTips = false;
+            this.simpleButton3.Size = new System.Drawing.Size(190, 69);
+            this.simpleButton3.TabIndex = 12;
+            this.simpleButton3.Text = "Imprimer le PV de \r\nfin de semestre";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // panelControl2
             // 
@@ -497,23 +514,6 @@ namespace gtsco2.forms.PVfinal
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gridView1_CustomDrawCell);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.AutoWidthInLayoutControl = true;
-            this.simpleButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(632, 3);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.simpleButton3.ShowToolTips = false;
-            this.simpleButton3.Size = new System.Drawing.Size(102, 69);
-            this.simpleButton3.TabIndex = 12;
-            this.simpleButton3.Text = "Fermer";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // FrmPVfinal
             // 

@@ -697,8 +697,7 @@
             this.Tel_Maitre_ApprentissageTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.Tel_Maitre_ApprentissageTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.Tel_Maitre_ApprentissageTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Tel_Maitre_ApprentissageTextEdit.Properties.Mask.EditMask = "N0";
-            this.Tel_Maitre_ApprentissageTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.Tel_Maitre_ApprentissageTextEdit.Properties.BeepOnError = false;
             this.Tel_Maitre_ApprentissageTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Tel_Maitre_ApprentissageTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Tel_Maitre_ApprentissageTextEdit.Size = new System.Drawing.Size(678, 20);

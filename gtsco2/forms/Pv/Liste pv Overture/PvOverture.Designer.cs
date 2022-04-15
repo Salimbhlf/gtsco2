@@ -48,7 +48,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -58,6 +57,7 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -127,7 +127,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell12Adress.Name = "xrTableCell12Adress";
             this.xrTableCell12Adress.StylePriority.UseBorders = false;
             this.xrTableCell12Adress.StylePriority.UseBorderWidth = false;
-            this.xrTableCell12Adress.Text = "xrTableCell2";
             this.xrTableCell12Adress.Weight = 1.4824562474300986D;
             // 
             // xrTableCell13Emp
@@ -140,8 +139,7 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell13Emp.Name = "xrTableCell13Emp";
             this.xrTableCell13Emp.StylePriority.UseBorders = false;
             this.xrTableCell13Emp.StylePriority.UseBorderWidth = false;
-            this.xrTableCell13Emp.Text = "xrTableCell3";
-            this.xrTableCell13Emp.Weight = 2.2719293694747122D;
+            this.xrTableCell13Emp.Weight = 1.7855382818924754D;
             // 
             // xrTableCell14NOmMre
             // 
@@ -152,7 +150,7 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell14NOmMre.Name = "xrTableCell14NOmMre";
             this.xrTableCell14NOmMre.StylePriority.UseBorders = false;
             this.xrTableCell14NOmMre.StylePriority.UseBorderWidth = false;
-            this.xrTableCell14NOmMre.Weight = 0.74780658922697385D;
+            this.xrTableCell14NOmMre.Weight = 1.2341976768092107D;
             // 
             // xrTableCell15Prenompare
             // 
@@ -164,7 +162,7 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell15Prenompare.Name = "xrTableCell15Prenompare";
             this.xrTableCell15Prenompare.StylePriority.UseBorders = false;
             this.xrTableCell15Prenompare.StylePriority.UseBorderWidth = false;
-            this.xrTableCell15Prenompare.Weight = 0.846494654605263D;
+            this.xrTableCell15Prenompare.Weight = 0.70581440172697352D;
             // 
             // xrTableCell16Niveu
             // 
@@ -176,7 +174,7 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell16Niveu.Name = "xrTableCell16Niveu";
             this.xrTableCell16Niveu.StylePriority.UseBorders = false;
             this.xrTableCell16Niveu.StylePriority.UseBorderWidth = false;
-            this.xrTableCell16Niveu.Weight = 0.66008493523848688D;
+            this.xrTableCell16Niveu.Weight = 0.80076518811677633D;
             // 
             // xrTableCell17datelieuNas
             // 
@@ -190,7 +188,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell17datelieuNas.StylePriority.UseBorders = false;
             this.xrTableCell17datelieuNas.StylePriority.UseBorderWidth = false;
             this.xrTableCell17datelieuNas.StylePriority.UseFont = false;
-            this.xrTableCell17datelieuNas.Text = "xrTableCell7";
             this.xrTableCell17datelieuNas.Weight = 1.6469289679276313D;
             // 
             // xrTableCell18nom
@@ -203,7 +200,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell18nom.Name = "xrTableCell18nom";
             this.xrTableCell18nom.StylePriority.UseBorders = false;
             this.xrTableCell18nom.StylePriority.UseBorderWidth = false;
-            this.xrTableCell18nom.Text = "xrTableCell8";
             this.xrTableCell18nom.Weight = 1.263158537212171D;
             // 
             // xrTableCell19numro
@@ -216,7 +212,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell19numro.Name = "xrTableCell19numro";
             this.xrTableCell19numro.StylePriority.UseBorders = false;
             this.xrTableCell19numro.StylePriority.UseBorderWidth = false;
-            this.xrTableCell19numro.Text = "xrTableCell9";
             this.xrTableCell19numro.Weight = 0.98903615851151339D;
             // 
             // xrTableCell20
@@ -257,11 +252,13 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTable1.SizeF = new System.Drawing.SizeF(1019F, 25F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
+            this.xrTable1.StylePriority.UseTextAlignment = false;
+            this.xrTable1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableRow1
             // 
             this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell1,
+            this.xrTableCell11,
             this.xrTableCell2,
             this.xrTableCell3,
             this.xrTableCell4,
@@ -274,19 +271,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
             // 
-            // xrTableCell1
-            // 
-            this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell1.BorderWidth = 1F;
-            this.xrTableCell1.Multiline = true;
-            this.xrTableCell1.Name = "xrTableCell1";
-            this.xrTableCell1.StylePriority.UseBorders = false;
-            this.xrTableCell1.StylePriority.UseBorderWidth = false;
-            this.xrTableCell1.Text = "xrTableCell1";
-            this.xrTableCell1.Weight = 0.51754399349814961D;
-            // 
             // xrTableCell2
             // 
             this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
@@ -297,8 +281,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StylePriority.UseBorders = false;
             this.xrTableCell2.StylePriority.UseBorderWidth = false;
-            this.xrTableCell2.Text = "xrTableCell2";
-            this.xrTableCell2.Weight = 1.4824560065018504D;
+            this.xrTableCell2.Text = "العنوان";
+            this.xrTableCell2.Weight = 1.6158144341966103D;
             // 
             // xrTableCell3
             // 
@@ -310,8 +294,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.StylePriority.UseBorders = false;
             this.xrTableCell3.StylePriority.UseBorderWidth = false;
-            this.xrTableCell3.Text = "xrTableCell3";
-            this.xrTableCell3.Weight = 2.2719296104029603D;
+            this.xrTableCell3.Text = "االمستخدم و العنوان";
+            this.xrTableCell3.Weight = 1.9461597962310286D;
             // 
             // xrTableCell4
             // 
@@ -323,8 +307,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.StylePriority.UseBorders = false;
             this.xrTableCell4.StylePriority.UseBorderWidth = false;
-            this.xrTableCell4.Text = "xrTableCell4";
-            this.xrTableCell4.Weight = 0.74780658922697385D;
+            this.xrTableCell4.Text = "اسم و لقب الأم";
+            this.xrTableCell4.Weight = 1.3452243467233955D;
             // 
             // xrTableCell5
             // 
@@ -336,8 +320,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.StylePriority.UseBorders = false;
             this.xrTableCell5.StylePriority.UseBorderWidth = false;
-            this.xrTableCell5.Text = "xrTableCell5";
-            this.xrTableCell5.Weight = 0.84649369089226956D;
+            this.xrTableCell5.Text = "اسم الأب";
+            this.xrTableCell5.Weight = 0.76930765816329372D;
             // 
             // xrTableCell6
             // 
@@ -349,8 +333,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.StylePriority.UseBorders = false;
             this.xrTableCell6.StylePriority.UseBorderWidth = false;
-            this.xrTableCell6.Text = "xrTableCell6";
-            this.xrTableCell6.Weight = 0.66008589895148029D;
+            this.xrTableCell6.Text = "مستوى الدراسي ";
+            this.xrTableCell6.Weight = 0.87279858941890243D;
             // 
             // xrTableCell7
             // 
@@ -362,8 +346,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.StylePriority.UseBorders = false;
             this.xrTableCell7.StylePriority.UseBorderWidth = false;
-            this.xrTableCell7.Text = "xrTableCell7";
-            this.xrTableCell7.Weight = 1.6469289679276322D;
+            this.xrTableCell7.Text = "تاريخ و مكان الإزدياد";
+            this.xrTableCell7.Weight = 1.7950838815107311D;
             // 
             // xrTableCell8
             // 
@@ -375,8 +359,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.StylePriority.UseBorders = false;
             this.xrTableCell8.StylePriority.UseBorderWidth = false;
-            this.xrTableCell8.Text = "xrTableCell8";
-            this.xrTableCell8.Weight = 1.2631585372121705D;
+            this.xrTableCell8.Text = "القب   الإسم";
+            this.xrTableCell8.Weight = 1.3767890242793477D;
             // 
             // xrTableCell9
             // 
@@ -388,8 +372,8 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.StylePriority.UseBorders = false;
             this.xrTableCell9.StylePriority.UseBorderWidth = false;
-            this.xrTableCell9.Text = "رق";
-            this.xrTableCell9.Weight = 0.98903615851151327D;
+            this.xrTableCell9.Text = "رقم التسجيل";
+            this.xrTableCell9.Weight = 1.0780080109184465D;
             // 
             // xrTableCell10
             // 
@@ -402,7 +386,20 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
             this.xrTableCell10.StylePriority.UseBorders = false;
             this.xrTableCell10.StylePriority.UseBorderWidth = false;
             this.xrTableCell10.Text = "رقم";
-            this.xrTableCell10.Weight = 0.30087633634868427D;
+            this.xrTableCell10.Weight = 0.32794145151356963D;
+            // 
+            // xrTableCell11
+            // 
+            this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell11.BorderWidth = 1F;
+            this.xrTableCell11.Multiline = true;
+            this.xrTableCell11.Name = "xrTableCell11";
+            this.xrTableCell11.StylePriority.UseBorders = false;
+            this.xrTableCell11.StylePriority.UseBorderWidth = false;
+            this.xrTableCell11.Text = "ملاحظات";
+            this.xrTableCell11.Weight = 0.56410060952205954D;
             // 
             // PvOverture
             // 
@@ -432,7 +429,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
@@ -454,5 +450,6 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell18nom;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell19numro;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell20;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell11;
     }
 }

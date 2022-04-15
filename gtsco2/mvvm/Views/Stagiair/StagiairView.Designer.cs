@@ -43,8 +43,8 @@
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupLayout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.NomTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.Nom_arTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.PrenomTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -833,8 +833,8 @@
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.mainRibbonPageGroup,
-            this.ribbonPageGroupLayout,
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroupLayout});
             this.mainRibbonPage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("mainRibbonPage.ImageOptions.Image")));
             this.mainRibbonPage.MergeOrder = 0;
             this.mainRibbonPage.Name = "mainRibbonPage";
@@ -848,11 +848,20 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndNew);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiReset);
-            this.mainRibbonPageGroup.ItemLinks.Add(this.barButtonItem4);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
             this.mainRibbonPageGroup.Text = "Gestion du stagiaire";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup1.ImageOptions.Image")));
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Impréssion ";
             // 
             // ribbonPageGroupLayout
             // 
@@ -862,15 +871,6 @@
             this.ribbonPageGroupLayout.ItemLinks.Add(this.bbiResetLayout);
             this.ribbonPageGroupLayout.Name = "ribbonPageGroupLayout";
             this.ribbonPageGroupLayout.Text = "Personnalisation la fenêtre";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup1.ImageOptions.Image")));
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10, true);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Impréssion ";
             // 
             // NomTextEdit
             // 
@@ -1150,11 +1150,6 @@
             this.TelephoneTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.TelephoneTextEdit.Properties.BeepOnError = false;
             this.TelephoneTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.TelephoneTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.TelephoneTextEdit.Properties.MaskSettings.Set("mask", "d");
-            this.TelephoneTextEdit.Properties.MaskSettings.Set("hideInsignificantZeros", false);
-            this.TelephoneTextEdit.Properties.MaskSettings.Set("valueType", typeof(string));
-            this.TelephoneTextEdit.Properties.MaskSettings.Set("autoHideDecimalSeparator", false);
             this.TelephoneTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TelephoneTextEdit.Size = new System.Drawing.Size(260, 20);
             this.TelephoneTextEdit.StyleController = this.dataLayoutControl1;

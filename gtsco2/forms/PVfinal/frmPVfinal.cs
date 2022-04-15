@@ -512,9 +512,19 @@ namespace gtsco2.forms.PVfinal
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
+            try {
+            string mode = modecombobox.Text;
+            string sp = spcomboBox1.Text;
+            string sem = smstcomboBox13.Text;
+            string sec = seccomboBox.Text;
+                string ef = NUBEREF.Text;
+                string av = "";
+                if (chikdeavenrtp.Checked == true)
+                    av = "(Avant Rattrapage)";
 
-
-            raporetPv.relver_final_globale.print(gridControl1.DataSource as DataTable);
+            raporetPv.relver_final_globale.print(gridControl1.DataSource as DataTable,mode,sp,sec,sem,ef,av);
+            }
+            catch { }
         }
 
         private void gridControl1_Click(object sender, EventArgs e)

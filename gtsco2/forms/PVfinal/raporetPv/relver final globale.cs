@@ -14,19 +14,31 @@ namespace gtsco2.forms.PVfinal.raporetPv
         {
             InitializeComponent();
         }
-        public static void print  (DataTable dt){
+        public static void print  (DataTable dt, string mode, string sp, string section, string semestre,string ef,string av)
+        {
             relver_final_globale rpt = new relver_final_globale();
             rpt.DataSource = dt;
 
-            rpt.load(dt);
+            rpt.load(dt,mode,sp,section,semestre,ef,av);
 
             rpt.ShowRibbonPreview();
             }
 
-        public void load(DataTable dt)
+        public void load(DataTable dt, string mode,string sp, string section,string semestre ,string ef,string av)
         {
             try
             {
+
+                try {
+                    xrLabel10Section.Text = section;
+                    labelsp.Text = sp;
+                    xrLabel8Mode.Text = mode;
+                    lblsemestrSemestre.Text = semestre;
+                    xrLabel6eff.Text = ef;
+                    xrLabel6av.Text = av;
+
+
+                } catch { }
                 try
                 {
                     xrTableCell4.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "OPS"));
@@ -86,5 +98,7 @@ namespace gtsco2.forms.PVfinal.raporetPv
                 }
             }catch(Exception ex) { MessageBox.Show(ex.Message); }
         }
+       
+        
     }
 }

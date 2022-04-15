@@ -381,6 +381,12 @@
     <Compile Include="forms\PVfinal\frmPVfinal.Designer.cs">
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\PVfinal\raporetPv\relver final globale.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\PVfinal\raporetPv\relver final globale.Designer.cs">
+      <DependentUpon>relver final globale.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\Pv\Liste pv Overture\PvOverture.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -916,6 +922,9 @@
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="forms\PVfinal\raporetPv\relver final globale.resx">
+      <DependentUpon>relver final globale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Pv\Liste pv Overture\PvOverture.resx">
       <DependentUpon>PvOverture.cs</DependentUpon>
     </EmbeddedResource>

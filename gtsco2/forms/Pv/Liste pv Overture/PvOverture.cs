@@ -16,7 +16,7 @@ namespace gtsco2.forms.Pv.Liste_pv_Overture
         }
         public void databinding()
         {
-            xrTableCell19numro.ExpressionBindings.Add(new ExpressionBinding("Text", "code"));
+            xrTableCell19numro.ExpressionBindings.Add(new ExpressionBinding("BeforePrint","Text", "code"));
             xrTableCell18nom.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "nom"));
             xrTableCell17datelieuNas.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "dataniss"));
             xrTableCell16Niveu.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "niveu"));

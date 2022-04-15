@@ -374,7 +374,7 @@ namespace gtsco2.forms.PVfinal
                     }
                     catch { }
                 }
-                rowstg["MG"] = (moyne / cooff);
+                rowstg["MG"] = (moyne / cooff).ToString("#0.00");
                 if ( rat==true ||float.Parse(rowstg["MG"].ToString())<10)
                 {
                     if (chikdeavenrtp.Checked == true)
@@ -508,6 +508,18 @@ namespace gtsco2.forms.PVfinal
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             print();
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+
+
+            raporetPv.relver_final_globale.print(gridControl1.DataSource as DataTable);
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

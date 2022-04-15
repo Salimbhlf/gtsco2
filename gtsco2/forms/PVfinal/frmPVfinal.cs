@@ -298,18 +298,18 @@ namespace gtsco2.forms.PVfinal
                         {
                             if (chikdeavenrtp.Checked == true)
                             {
-                                dro[qres.module] = qres.mynav;
+                                dro[qres.module] = (qres.mynav).Value.ToString("#0.00");
                                 r += 1;
                             }
                             else
                             {
                                 
                                 if (qres.mynap != null)
-                                    dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                                    dro[qres.module] = (Math.Max((double)qres.mynav, (double)qres.mynap)).ToString("#0.00");
                                 else
                                 {
                                     if (qres.mynav != null)
-                                        dro[qres.module] = qres.mynav;
+                                        dro[qres.module] = qres.mynav.Value.ToString("#0.00");
                                     else MessageBox.Show("pas de moy de d'exmaine");
                                 }
                                 r += 1;
@@ -330,18 +330,18 @@ namespace gtsco2.forms.PVfinal
                     if (chikdeavenrtp.Checked == true)
                     {
                         if ( qres.mynav != null)
-                        dro[qres.module] = qres.mynav;
+                        dro[qres.module] = qres.mynav.Value.ToString("#0.00");
                         else MessageBox.Show("pas de moy de d'exmaine");
 
                     }
                     else
                     {
                         if (qres.mynap != null)
-                            dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap);
+                            dro[qres.module] = Math.Max((double)qres.mynav, (double)qres.mynap).ToString("#0.00");
                         else
                         {
                             if (qres.mynav != null)
-                                dro[qres.module] = qres.mynav;
+                                dro[qres.module] = qres.mynav.Value.ToString("#0.00");
                             else MessageBox.Show("pas de moy de d'exmaine");
                         }
                         

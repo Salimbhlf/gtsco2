@@ -946,6 +946,9 @@
     <EmbeddedResource Include="mvvm\user\Views\User\UserCollectionView.resx">
       <DependentUpon>UserCollectionView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mvvm\user\Views\User\UserView.resx">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mvvm\Views\Absence\AbsenceCollectionView.resx">
       <DependentUpon>AbsenceCollectionView.cs</DependentUpon>
     </EmbeddedResource>

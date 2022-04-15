@@ -76,7 +76,7 @@
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4});
-            this.gridView.CustomizationFormBounds = new System.Drawing.Rectangle(998, 586, 252, 266);
+            this.gridView.CustomizationFormBounds = new System.Drawing.Rectangle(998, 320, 252, 266);
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
@@ -191,7 +191,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Gestion des Willayas";
+            this.ribbonPageGroup1.Text = "Gestion des Wilayas";
             // 
             // ribbonPageGroup2
             // 

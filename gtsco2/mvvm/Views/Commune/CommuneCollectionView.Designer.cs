@@ -238,7 +238,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Gesstion des Communes";
+            this.ribbonPageGroup1.Text = "Gestion des Communes";
             // 
             // ribbonPageGroup2
             // 

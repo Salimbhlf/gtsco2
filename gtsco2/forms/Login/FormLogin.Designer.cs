@@ -33,10 +33,10 @@ namespace gtsco2.forms.Login
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.panel5 = new System.Windows.Forms.Panel();
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
@@ -49,10 +49,10 @@ namespace gtsco2.forms.Login
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
@@ -62,7 +62,6 @@ namespace gtsco2.forms.Login
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,7 +69,6 @@ namespace gtsco2.forms.Login
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -84,45 +82,38 @@ namespace gtsco2.forms.Login
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(29, 331);
+            this.label5.Location = new System.Drawing.Point(46, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(270, 48);
+            this.label5.Size = new System.Drawing.Size(263, 48);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Assure Des Formations De\r\n Technicien Supérieur";
+            this.label5.Text = "Assure des formations de\r\n Technicien Supérieur";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 289);
+            this.label4.Location = new System.Drawing.Point(3, 274);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(335, 24);
             this.label4.TabIndex = 8;
             this.label4.Text = " « Boucenna Mohamed Tayeb »";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 246);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(304, 24);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "De Formation Professionnelle";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(29, 197);
+            this.label1.Location = new System.Drawing.Point(46, 210);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 24);
+            this.label1.Size = new System.Drawing.Size(268, 48);
             this.label1.TabIndex = 1;
-            this.label1.Text = "L’Institut National Spécialisé";
+            this.label1.Text = "L’Institut National de \r\nFormation Professionnelle";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -151,6 +142,17 @@ namespace gtsco2.forms.Login
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(399, 530);
             this.panel2.TabIndex = 1;
+            // 
+            // imageSlider1
+            // 
+            this.imageSlider1.CurrentImageIndex = 0;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.Location = new System.Drawing.Point(313, 3);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(40, 37);
+            this.imageSlider1.TabIndex = 9;
+            this.imageSlider1.Text = "imageSlider1";
+            this.imageSlider1.Click += new System.EventHandler(this.imageSlider1_Click);
             // 
             // checkEdit1
             // 
@@ -204,7 +206,7 @@ namespace gtsco2.forms.Login
             // 
             // textEdit2
             // 
-            this.textEdit2.EditValue = "Mote de passe";
+            this.textEdit2.EditValue = "";
             this.textEdit2.Location = new System.Drawing.Point(42, 7);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
@@ -214,6 +216,7 @@ namespace gtsco2.forms.Login
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
             this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit2.Properties.NullValuePrompt = "Mot de passe";
             this.textEdit2.Properties.UseSystemPasswordChar = true;
             this.textEdit2.Size = new System.Drawing.Size(317, 26);
             this.textEdit2.TabIndex = 2;
@@ -274,7 +277,7 @@ namespace gtsco2.forms.Login
             // 
             // textEdit1
             // 
-            this.textEdit1.EditValue = "Nom D\'Utillisateur";
+            this.textEdit1.EditValue = "";
             this.textEdit1.Location = new System.Drawing.Point(42, 7);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.AccessibleDescription = "";
@@ -285,9 +288,11 @@ namespace gtsco2.forms.Login
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit1.Properties.NullValuePrompt = "Nom d\'utilisateur";
             this.textEdit1.Properties.EditValueChanged += new System.EventHandler(this.textEdit1_Properties_EditValueChanged);
             this.textEdit1.Size = new System.Drawing.Size(317, 26);
             this.textEdit1.TabIndex = 2;
+            this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             this.textEdit1.Enter += new System.EventHandler(this.textEdit1_Enter);
             this.textEdit1.MouseEnter += new System.EventHandler(this.textEdit1_MouseEnter);
             this.textEdit1.MouseLeave += new System.EventHandler(this.textEdit1_MouseLeave);
@@ -316,17 +321,6 @@ namespace gtsco2.forms.Login
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // imageSlider1
-            // 
-            this.imageSlider1.CurrentImageIndex = 0;
-            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
-            this.imageSlider1.Location = new System.Drawing.Point(313, 3);
-            this.imageSlider1.Name = "imageSlider1";
-            this.imageSlider1.Size = new System.Drawing.Size(40, 37);
-            this.imageSlider1.TabIndex = 9;
-            this.imageSlider1.Text = "imageSlider1";
-            this.imageSlider1.Click += new System.EventHandler(this.imageSlider1_Click);
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,6 +339,7 @@ namespace gtsco2.forms.Login
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
@@ -354,7 +349,6 @@ namespace gtsco2.forms.Login
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -374,7 +368,6 @@ namespace gtsco2.forms.Login
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;

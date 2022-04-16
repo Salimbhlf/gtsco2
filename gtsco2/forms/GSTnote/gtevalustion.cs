@@ -414,20 +414,20 @@ namespace gtsco2.forms
 
                             if (row["Control1"].ToString() != "" )
                             {
-                                ev.Control_1 = float.Parse(row["Control1"].ToString());
+                                ev.Control_1 = double.Parse(row["Control1"].ToString());
                             }
                             if (row["Control2"].ToString() != "")
                             {
-                                ev.Control_2 = float.Parse(row["Control2"].ToString());
+                                ev.Control_2 = double.Parse(row["Control2"].ToString());
                             }
                             if (row["Exam"].ToString() != "")
                             {
-                                ev.Exam = float.Parse(row["Exam"].ToString());
+                                ev.Exam = double.Parse(row["Exam"].ToString());
                             }
                             
                                 if (row["Rattrapage"].ToString() != "")
                                 {
-                                    ev.Rattrapage = float.Parse(row["Rattrapage"].ToString());
+                                    ev.Rattrapage = double.Parse(row["Rattrapage"].ToString());
                                 }
 
                             //calcule de la moyenne de module

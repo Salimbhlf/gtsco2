@@ -16,9 +16,21 @@ namespace gtsco2.forms.Pageprancipel
         {
             InitializeComponent();
             //opfrm(new forms.navigation.Form1());
+            user();
               
         }
-        
+        public void user()
+        {
+            try { 
+            int valuer = int.Parse(Properties.Settings.Default.iduser);
+           basededonne.User val = classe.shared.bd.Users.First(x => x.ID_user == valuer);
+
+                MessageBox.Show(val.Role);
+            if (val.Role != "Admen")
+                barButtonItem11user.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            }
+            catch { }
+        }
 
         public void opfrm(Form fs)
         {
@@ -223,6 +235,11 @@ namespace gtsco2.forms.Pageprancipel
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             opfrm(new GTSecetion.GTsectionfrm());
+        }
+
+        private void FrmPrancipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

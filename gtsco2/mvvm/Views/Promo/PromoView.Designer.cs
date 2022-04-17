@@ -285,9 +285,10 @@
             this.ID_PromoTextEdit.Name = "ID_PromoTextEdit";
             this.ID_PromoTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_PromoTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_PromoTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_PromoTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_PromoTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_PromoTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_PromoTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_PromoTextEdit.Properties.ReadOnly = true;
             this.ID_PromoTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_PromoTextEdit.Size = new System.Drawing.Size(777, 20);
             this.ID_PromoTextEdit.StyleController = this.dataLayoutControl1;

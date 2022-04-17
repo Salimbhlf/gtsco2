@@ -8,7 +8,7 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Base;
 
 namespace gtsco2.mvvm.Views.DecisionView{
-    public partial class DecisionView : XtraUserControl {
+    public partial class DecisionView : XtraForm {
         public DecisionView() {
             InitializeComponent();
 			if(!mvvmContext.IsDesignMode)

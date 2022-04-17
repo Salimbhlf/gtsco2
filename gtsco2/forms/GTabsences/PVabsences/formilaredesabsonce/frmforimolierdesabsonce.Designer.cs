@@ -41,6 +41,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -55,6 +56,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,12 +109,12 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.comboBoxjour1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxjour1.Properties.Items.AddRange(new object[] {
-            "sam",
-            "dim",
-            "lind",
-            "marc",
-            "land",
-            "Jud"});
+            "Sam",
+            "Dim",
+            "Lun",
+            "Mar",
+            "Mer",
+            "Jeu"});
             this.comboBoxjour1.Size = new System.Drawing.Size(228, 20);
             this.comboBoxjour1.StyleController = this.layoutControl1;
             this.comboBoxjour1.TabIndex = 6;
@@ -124,12 +126,12 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.comboBoxjour2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxjour2.Properties.Items.AddRange(new object[] {
-            "sam",
-            "dim",
-            "lind",
-            "marc",
-            "land",
-            "Jud"});
+            "Sam",
+            "Dim",
+            "Lun",
+            "Mar",
+            "Mer",
+            "Jeu"});
             this.comboBoxjour2.Size = new System.Drawing.Size(230, 20);
             this.comboBoxjour2.StyleController = this.layoutControl1;
             this.comboBoxjour2.TabIndex = 7;
@@ -137,12 +139,12 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(244, 92);
+            this.simpleButton1.Location = new System.Drawing.Point(12, 93);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(230, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(462, 36);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 8;
-            this.simpleButton1.Text = "Imprime";
+            this.simpleButton1.Text = "Imprimer le formulaire";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // Root
@@ -154,6 +156,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.layoutControlItem3,
             this.layoutControlItem4,
             this.layoutControlItem2,
+            this.simpleSeparator1,
             this.layoutControlItem5});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(486, 145);
@@ -165,17 +168,19 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(232, 40);
+            this.layoutControlItem1.Text = "Date début de comptabilisation";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(148, 13);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.comboBoxjour1;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 40);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(232, 85);
+            this.layoutControlItem3.Size = new System.Drawing.Size(232, 40);
+            this.layoutControlItem3.Text = "1er jour de la semaine";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(93, 13);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(148, 13);
             // 
             // layoutControlItem4
             // 
@@ -183,8 +188,9 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.layoutControlItem4.Location = new System.Drawing.Point(232, 40);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(234, 40);
+            this.layoutControlItem4.Text = " 2 eme jour de la semaine";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(93, 13);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(148, 13);
             // 
             // layoutControlItem2
             // 
@@ -192,15 +198,23 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.layoutControlItem2.Location = new System.Drawing.Point(232, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(234, 40);
+            this.layoutControlItem2.Text = "Date fin de comptabilisation";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(93, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(148, 13);
+            // 
+            // simpleSeparator1
+            // 
+            this.simpleSeparator1.AllowHotTrack = false;
+            this.simpleSeparator1.Location = new System.Drawing.Point(0, 80);
+            this.simpleSeparator1.Name = "simpleSeparator1";
+            this.simpleSeparator1.Size = new System.Drawing.Size(466, 1);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.simpleButton1;
-            this.layoutControlItem5.Location = new System.Drawing.Point(232, 80);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 81);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(234, 45);
+            this.layoutControlItem5.Size = new System.Drawing.Size(466, 44);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
@@ -215,7 +229,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             this.MinimizeBox = false;
             this.Name = "frmforimolierdesabsonce";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmforimolierdesabsonce";
+            this.Text = "Données du fomulaire de saisie des absences ";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dateDEdit1.Properties.CalendarTimeProperties)).EndInit();
@@ -229,6 +243,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             this.ResumeLayout(false);
 
@@ -248,5 +263,6 @@ namespace gtsco2.forms.GTabsences.PVabsences.formilaredesabsonce
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
     }
 }

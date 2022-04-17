@@ -147,9 +147,10 @@
             this.ID_ModuleTextEdit.Name = "ID_ModuleTextEdit";
             this.ID_ModuleTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_ModuleTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_ModuleTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_ModuleTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_ModuleTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_ModuleTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_ModuleTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_ModuleTextEdit.Properties.ReadOnly = true;
             this.ID_ModuleTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_ModuleTextEdit.Size = new System.Drawing.Size(786, 20);
             this.ID_ModuleTextEdit.StyleController = this.dataLayoutControl1;

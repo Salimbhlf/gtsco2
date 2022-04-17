@@ -234,7 +234,7 @@ namespace gtsco2.forms.Pv.Page_de_garde_PV_d_ouverture
             this.xrLabel23.SizeF = new System.Drawing.SizeF(303.0416F, 33.33337F);
             this.xrLabel23.StylePriority.UseFont = false;
             this.xrLabel23.StylePriority.UseTextAlignment = false;
-            this.xrLabel23.Text = "رقم:..09....";
+            this.xrLabel23.Text = "رقم:........";
             this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel22

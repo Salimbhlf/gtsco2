@@ -226,9 +226,10 @@
             this.Commune_idTextEdit.Name = "Commune_idTextEdit";
             this.Commune_idTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.Commune_idTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Commune_idTextEdit.Properties.Mask.EditMask = "N0";
-            this.Commune_idTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Commune_idTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.Commune_idTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.Commune_idTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.Commune_idTextEdit.Properties.ReadOnly = true;
             this.Commune_idTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Commune_idTextEdit.Size = new System.Drawing.Size(1082, 20);
             this.Commune_idTextEdit.StyleController = this.dataLayoutControl1;

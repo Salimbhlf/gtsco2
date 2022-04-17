@@ -164,6 +164,7 @@
             this.ID_AbsenceTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.ID_AbsenceTextEdit.Properties.MaskSettings.Set("mask", "d");
             this.ID_AbsenceTextEdit.Properties.MaskSettings.Set("hideInsignificantZeros", false);
+            this.ID_AbsenceTextEdit.Properties.ReadOnly = true;
             this.ID_AbsenceTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_AbsenceTextEdit.Size = new System.Drawing.Size(894, 20);
             this.ID_AbsenceTextEdit.StyleController = this.dataLayoutControl1;

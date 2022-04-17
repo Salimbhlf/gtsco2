@@ -335,9 +335,10 @@
             this.ID_EmpTextEdit.Name = "ID_EmpTextEdit";
             this.ID_EmpTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_EmpTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_EmpTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_EmpTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_EmpTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_EmpTextEdit.Properties.ReadOnly = true;
             this.ID_EmpTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_EmpTextEdit.Size = new System.Drawing.Size(203, 20);
             this.ID_EmpTextEdit.StyleController = this.dataLayoutControl1;

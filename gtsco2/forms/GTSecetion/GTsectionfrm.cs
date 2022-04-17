@@ -664,6 +664,8 @@ namespace gtsco2.forms.GTSecetion
                 promocomboBox11.DataSource = qur1.ToList();
                 promocomboBox11.DisplayMember = "nom";
                 promocomboBox11.ValueMember = "id";
+                seccomboBox.DataSource = null;
+                seccomboBox.Items.Clear();
             }
             catch
             {
@@ -722,6 +724,9 @@ namespace gtsco2.forms.GTSecetion
                 promocomboBox11.DataSource = qur1.ToList();
                 promocomboBox11.DisplayMember = "nom";
                 promocomboBox11.ValueMember = "id";
+
+                seccomboBox.DataSource = null;
+                seccomboBox.Items.Clear();
             }
             catch
             {
@@ -760,29 +765,7 @@ namespace gtsco2.forms.GTSecetion
             catch { }
         }
 
-        private void spcomboBox113_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            try
-            {
-                int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
-                int spe = int.Parse(spcomboBox113.SelectedValue.ToString());
-                promocomboBox114.DataSource = null;
-                promocomboBox114.Items.Clear();
-                var qur1 = from pr in shared.bd.Promoes
-                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
-                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
-                           where pr.Mode_de_formation == mode && pr.ID_Option == spe
-                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
-
-                promocomboBox114.DataSource = qur1.ToList();
-                promocomboBox114.DisplayMember = "nom";
-                promocomboBox114.ValueMember = "id";
-            }
-            catch
-            {
-
-            }
-        }
+      
 
         private void modecomboBox117_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -801,6 +784,8 @@ namespace gtsco2.forms.GTSecetion
                 promocomboBox114.DataSource = qur1.ToList();
                 promocomboBox114.DisplayMember = "nom";
                 promocomboBox114.ValueMember = "id";
+                seccomboBox15.DataSource = null;
+                seccomboBox15.Items.Clear();
             }
             catch
             {
@@ -829,6 +814,32 @@ namespace gtsco2.forms.GTSecetion
             GTSecetion.rpor_sction.listsection.print(int.Parse(seccomboBox15.SelectedValue.ToString()), sec, promo);
             }
             catch { }
+        }
+
+        private void spcomboBox113_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int mode = int.Parse(modecomboBox117.SelectedValue.ToString());
+                int spe = int.Parse(spcomboBox113.SelectedValue.ToString());
+                promocomboBox114.DataSource = null;
+                promocomboBox114.Items.Clear();
+                var qur1 = from pr in shared.bd.Promoes
+                           join po in shared.bd.Options on pr.ID_Option equals po.ID_Option
+                           join mo in shared.bd.Mode_formation on pr.Mode_de_formation equals mo.ID_Mode_Formation
+                           where pr.Mode_de_formation == mode && pr.ID_Option == spe
+                           select new { id = pr.ID_Promo, nom = (mo.Code_Mode_Formation + po.Code_Option + pr.Code_Promo) };
+
+                promocomboBox114.DataSource = qur1.ToList();
+                promocomboBox114.DisplayMember = "nom";
+                promocomboBox114.ValueMember = "id";
+                seccomboBox15.DataSource = null;
+                seccomboBox15.Items.Clear();
+            }
+            catch
+            {
+
+            }
         }
     }
 }

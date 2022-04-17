@@ -187,9 +187,10 @@
             this.ID_Année_SCOTextEdit.Name = "ID_Année_SCOTextEdit";
             this.ID_Année_SCOTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_Année_SCOTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_Année_SCOTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_Année_SCOTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_Année_SCOTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_Année_SCOTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_Année_SCOTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_Année_SCOTextEdit.Properties.ReadOnly = true;
             this.ID_Année_SCOTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_Année_SCOTextEdit.Size = new System.Drawing.Size(796, 20);
             this.ID_Année_SCOTextEdit.StyleController = this.dataLayoutControl1;

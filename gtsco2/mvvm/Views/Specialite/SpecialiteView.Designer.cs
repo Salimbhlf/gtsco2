@@ -144,9 +144,10 @@
             this.ID_SpecialitéTextEdit.Name = "ID_SpecialitéTextEdit";
             this.ID_SpecialitéTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_SpecialitéTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_SpecialitéTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_SpecialitéTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_SpecialitéTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_SpecialitéTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_SpecialitéTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_SpecialitéTextEdit.Properties.ReadOnly = true;
             this.ID_SpecialitéTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_SpecialitéTextEdit.Size = new System.Drawing.Size(849, 20);
             this.ID_SpecialitéTextEdit.StyleController = this.dataLayoutControl1;

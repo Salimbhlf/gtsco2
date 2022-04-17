@@ -235,6 +235,7 @@
             this.SectionIDTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.SectionIDTextEdit.Properties.BeepOnError = false;
             this.SectionIDTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.SectionIDTextEdit.Properties.ReadOnly = true;
             this.SectionIDTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.SectionIDTextEdit.Size = new System.Drawing.Size(805, 20);
             this.SectionIDTextEdit.StyleController = this.dataLayoutControl1;

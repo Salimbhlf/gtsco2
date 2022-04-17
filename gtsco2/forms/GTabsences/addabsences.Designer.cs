@@ -66,6 +66,7 @@ namespace gtsco2.forms.GTabsences
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -102,7 +103,7 @@ namespace gtsco2.forms.GTabsences
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(904, 79);
+            this.panelControl1.Size = new System.Drawing.Size(1180, 79);
             this.panelControl1.TabIndex = 0;
             this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
@@ -114,11 +115,12 @@ namespace gtsco2.forms.GTabsences
             this.flowLayoutPanel1.Controls.Add(this.removeButton1);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton6);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
             this.flowLayoutPanel1.Controls.Add(this.closeButton7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(900, 75);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 75);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // simpleButton1
@@ -221,7 +223,7 @@ namespace gtsco2.forms.GTabsences
             this.closeButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.closeButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("closeButton7.ImageOptions.Image")));
             this.closeButton7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.closeButton7.Location = new System.Drawing.Point(747, 3);
+            this.closeButton7.Location = new System.Drawing.Point(946, 3);
             this.closeButton7.Name = "closeButton7";
             this.closeButton7.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
             this.closeButton7.ShowToolTips = false;
@@ -238,7 +240,7 @@ namespace gtsco2.forms.GTabsences
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl2.Location = new System.Drawing.Point(0, 79);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(326, 518);
+            this.panelControl2.Size = new System.Drawing.Size(326, 319);
             this.panelControl2.TabIndex = 1;
             // 
             // layoutControl1
@@ -259,7 +261,7 @@ namespace gtsco2.forms.GTabsences
             this.layoutControl1.Margin = new System.Windows.Forms.Padding(1);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(322, 514);
+            this.layoutControl1.Size = new System.Drawing.Size(322, 315);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -267,7 +269,7 @@ namespace gtsco2.forms.GTabsences
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(4, 491);
+            this.labelControl3.Location = new System.Drawing.Point(4, 292);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(75, 19);
             this.labelControl3.StyleController = this.layoutControl1;
@@ -278,7 +280,7 @@ namespace gtsco2.forms.GTabsences
             // 
             this.NUBEREF.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NUBEREF.Appearance.Options.UseFont = true;
-            this.NUBEREF.Location = new System.Drawing.Point(83, 491);
+            this.NUBEREF.Location = new System.Drawing.Point(83, 292);
             this.NUBEREF.Name = "NUBEREF";
             this.NUBEREF.Size = new System.Drawing.Size(10, 19);
             this.NUBEREF.StyleController = this.layoutControl1;
@@ -382,7 +384,7 @@ namespace gtsco2.forms.GTabsences
             this.layoutControlItem8});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(322, 514);
+            this.Root.Size = new System.Drawing.Size(322, 315);
             this.Root.TextVisible = false;
             // 
             // emptySpaceItem1
@@ -390,7 +392,7 @@ namespace gtsco2.forms.GTabsences
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 215);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(318, 272);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(318, 73);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
@@ -475,7 +477,7 @@ namespace gtsco2.forms.GTabsences
             // layoutControlItem12
             // 
             this.layoutControlItem12.Control = this.labelControl3;
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 487);
+            this.layoutControlItem12.Location = new System.Drawing.Point(0, 288);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.Size = new System.Drawing.Size(79, 23);
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
@@ -484,7 +486,7 @@ namespace gtsco2.forms.GTabsences
             // layoutControlItem11
             // 
             this.layoutControlItem11.Control = this.NUBEREF;
-            this.layoutControlItem11.Location = new System.Drawing.Point(79, 487);
+            this.layoutControlItem11.Location = new System.Drawing.Point(79, 288);
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.Size = new System.Drawing.Size(239, 23);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
@@ -522,7 +524,7 @@ namespace gtsco2.forms.GTabsences
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(326, 79);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(578, 518);
+            this.panelControl3.Size = new System.Drawing.Size(854, 319);
             this.panelControl3.TabIndex = 2;
             // 
             // gridControl1
@@ -531,7 +533,7 @@ namespace gtsco2.forms.GTabsences
             this.gridControl1.Location = new System.Drawing.Point(2, 2);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(574, 514);
+            this.gridControl1.Size = new System.Drawing.Size(850, 315);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -542,13 +544,30 @@ namespace gtsco2.forms.GTabsences
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.AutoWidthInLayoutControl = true;
+            this.simpleButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.simpleButton5.Location = new System.Drawing.Point(747, 3);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+            this.simpleButton5.ShowToolTips = false;
+            this.simpleButton5.Size = new System.Drawing.Size(193, 69);
+            this.simpleButton5.TabIndex = 14;
+            this.simpleButton5.Text = "Formulaire de \r\nsaisie des absences\r\n";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
             // addabsences
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 597);
+            this.ClientSize = new System.Drawing.Size(1180, 398);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
@@ -622,5 +641,6 @@ namespace gtsco2.forms.GTabsences
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton closeButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
     }
 }

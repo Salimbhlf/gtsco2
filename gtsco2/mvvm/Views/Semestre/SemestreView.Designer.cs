@@ -283,9 +283,10 @@
             this.ID_SemestreTextEdit.Name = "ID_SemestreTextEdit";
             this.ID_SemestreTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_SemestreTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_SemestreTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_SemestreTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_SemestreTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_SemestreTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_SemestreTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_SemestreTextEdit.Properties.ReadOnly = true;
             this.ID_SemestreTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_SemestreTextEdit.Size = new System.Drawing.Size(832, 20);
             this.ID_SemestreTextEdit.StyleController = this.dataLayoutControl1;

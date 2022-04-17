@@ -82,6 +82,8 @@
             this.colnom_directeur = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colprenom_directeur = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldate_transfert = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEtablissement = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnum_stg2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.TransferersBarManager = new DevExpress.XtraBars.BarManager(this.components);
             this.TransferersBar = new DevExpress.XtraBars.Bar();
@@ -98,10 +100,10 @@
             this.ItemForNom_ETAB = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForTél_ETAB = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForTransferers = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForStagiairs = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForNom_ETAB_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForFax_ETAB = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForAdresse_ETAB = new DevExpress.XtraLayout.LayoutControlItem();
@@ -111,8 +113,6 @@
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.TransferersPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.colEtablissement = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colnum_stg2 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ID_ETABTextEdit.Properties)).BeginInit();
@@ -144,10 +144,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ETAB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTél_ETAB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ETAB_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFax_ETAB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ETAB)).BeginInit();
@@ -194,6 +194,7 @@
             this.ID_ETABTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.ID_ETABTextEdit.Properties.MaskSettings.Set("mask", "d");
             this.ID_ETABTextEdit.Properties.MaskSettings.Set("hideInsignificantZeros", true);
+            this.ID_ETABTextEdit.Properties.ReadOnly = true;
             this.ID_ETABTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_ETABTextEdit.Size = new System.Drawing.Size(775, 20);
             this.ID_ETABTextEdit.StyleController = this.dataLayoutControl1;
@@ -734,6 +735,20 @@
             this.coldate_transfert.Visible = true;
             this.coldate_transfert.VisibleIndex = 1;
             // 
+            // colEtablissement
+            // 
+            this.colEtablissement.FieldName = "Etablissement.Nom_ETAB";
+            this.colEtablissement.Name = "colEtablissement";
+            this.colEtablissement.Visible = true;
+            this.colEtablissement.VisibleIndex = 2;
+            // 
+            // colnum_stg2
+            // 
+            this.colnum_stg2.FieldName = "Stagiair.Num_STG";
+            this.colnum_stg2.Name = "colnum_stg2";
+            this.colnum_stg2.Visible = true;
+            this.colnum_stg2.VisibleIndex = 0;
+            // 
             // barDockControl3
             // 
             this.barDockControl3.CausesValidation = false;
@@ -898,26 +913,6 @@
             this.layoutControlGroup4});
             this.tabbedControlGroup1.Text = "Tabs";
             // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForStagiairs});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup3.Name = "autoGroupForStagiairs";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(932, 184);
-            this.layoutControlGroup3.Text = "Stagiaires";
-            // 
-            // ItemForStagiairs
-            // 
-            this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
-            this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
-            this.ItemForStagiairs.Name = "ItemForStagiairs";
-            this.ItemForStagiairs.Size = new System.Drawing.Size(932, 184);
-            this.ItemForStagiairs.StartNewLine = true;
-            this.ItemForStagiairs.Text = "Stagiairs";
-            this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForStagiairs.TextVisible = false;
-            // 
             // layoutControlGroup4
             // 
             this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -937,6 +932,26 @@
             this.ItemForTransferers.Text = "Transferers";
             this.ItemForTransferers.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForTransferers.TextVisible = false;
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForStagiairs});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "autoGroupForStagiairs";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(932, 184);
+            this.layoutControlGroup3.Text = "Stagiaires";
+            // 
+            // ItemForStagiairs
+            // 
+            this.ItemForStagiairs.Control = this.StagiairsXtraUserControl;
+            this.ItemForStagiairs.Location = new System.Drawing.Point(0, 0);
+            this.ItemForStagiairs.Name = "ItemForStagiairs";
+            this.ItemForStagiairs.Size = new System.Drawing.Size(932, 184);
+            this.ItemForStagiairs.StartNewLine = true;
+            this.ItemForStagiairs.Text = "Stagiairs";
+            this.ItemForStagiairs.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForStagiairs.TextVisible = false;
             // 
             // ItemForNom_ETAB_ar
             // 
@@ -1034,20 +1049,6 @@
             this.TransferersPopUpMenu.Manager = this.TransferersBarManager;
             this.TransferersPopUpMenu.Name = "TransferersPopUpMenu";
             // 
-            // colEtablissement
-            // 
-            this.colEtablissement.FieldName = "Etablissement.Nom_ETAB";
-            this.colEtablissement.Name = "colEtablissement";
-            this.colEtablissement.Visible = true;
-            this.colEtablissement.VisibleIndex = 2;
-            // 
-            // colnum_stg2
-            // 
-            this.colnum_stg2.FieldName = "Stagiair.Num_STG";
-            this.colnum_stg2.Name = "colnum_stg2";
-            this.colnum_stg2.Visible = true;
-            this.colnum_stg2.VisibleIndex = 0;
-            // 
             // EtablissementView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1090,10 +1091,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ETAB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTél_ETAB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForTransferers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForStagiairs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForNom_ETAB_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFax_ETAB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdresse_ETAB)).EndInit();

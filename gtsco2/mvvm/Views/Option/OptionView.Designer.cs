@@ -218,9 +218,10 @@
             this.ID_OptionTextEdit.Name = "ID_OptionTextEdit";
             this.ID_OptionTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_OptionTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_OptionTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_OptionTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_OptionTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_OptionTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_OptionTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_OptionTextEdit.Properties.ReadOnly = true;
             this.ID_OptionTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_OptionTextEdit.Size = new System.Drawing.Size(762, 20);
             this.ID_OptionTextEdit.StyleController = this.dataLayoutControl1;

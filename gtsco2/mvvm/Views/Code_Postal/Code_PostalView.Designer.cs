@@ -235,9 +235,10 @@
             this.ID_Code_PostalTextEdit.Name = "ID_Code_PostalTextEdit";
             this.ID_Code_PostalTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_Code_PostalTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_Code_PostalTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_Code_PostalTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_Code_PostalTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_Code_PostalTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_Code_PostalTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_Code_PostalTextEdit.Properties.ReadOnly = true;
             this.ID_Code_PostalTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_Code_PostalTextEdit.Size = new System.Drawing.Size(1087, 20);
             this.ID_Code_PostalTextEdit.StyleController = this.dataLayoutControl1;

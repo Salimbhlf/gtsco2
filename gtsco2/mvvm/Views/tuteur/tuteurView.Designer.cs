@@ -144,6 +144,7 @@
             this.id_tuteurTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.id_tuteurTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.id_tuteurTextEdit.Properties.MaskSettings.Set("mask", "d");
+            this.id_tuteurTextEdit.Properties.ReadOnly = true;
             this.id_tuteurTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.id_tuteurTextEdit.Size = new System.Drawing.Size(805, 20);
             this.id_tuteurTextEdit.StyleController = this.dataLayoutControl1;

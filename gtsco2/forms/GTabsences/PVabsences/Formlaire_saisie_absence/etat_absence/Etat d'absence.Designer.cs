@@ -162,7 +162,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrseance.StylePriority.UseTextAlignment = false;
             this.xrseance.Text = "xrabs";
             this.xrseance.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrseance.Weight = 1.2016695134274142D;
+            this.xrseance.Weight = 1.2219229533415821D;
             // 
             // xrabsoncenj
             // 
@@ -175,7 +175,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrabsoncenj.StylePriority.UseTextAlignment = false;
             this.xrabsoncenj.Text = "Absences justifiées en jours";
             this.xrabsoncenj.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrabsoncenj.Weight = 1.230792089165154D;
+            this.xrabsoncenj.Weight = 1.2219229533415821D;
             // 
             // xrabsjourJ
             // 
@@ -188,7 +188,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrabsjourJ.StylePriority.UseTextAlignment = false;
             this.xrabsjourJ.Text = "Absences injustifiées en jours";
             this.xrabsjourJ.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrabsjourJ.Weight = 1.2333072574321782D;
+            this.xrabsjourJ.Weight = 1.2219229533415821D;
             // 
             // XROPS
             // 
@@ -406,7 +406,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.Text = "Nombre d\'absences par séance";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell1.Weight = 1.1960832194502171D;
+            this.xrTableCell1.Weight = 1.2162425171812243D;
             // 
             // xrTableCell13
             // 
@@ -419,7 +419,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.Text = "Absences justifiées en jours";
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell13.Weight = 1.2250701248206029D;
+            this.xrTableCell13.Weight = 1.2162425171812243D;
             // 
             // xrTableCell17
             // 
@@ -432,7 +432,7 @@ namespace gtsco2.forms.GTabsences.PVabsences.Formlaire_saisie_absence.etat_absen
             this.xrTableCell17.StylePriority.UseTextAlignment = false;
             this.xrTableCell17.Text = "Absences injustifiées en jours";
             this.xrTableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell17.Weight = 1.2275742072728531D;
+            this.xrTableCell17.Weight = 1.2162425171812243D;
             // 
             // xrTableCell15
             // 

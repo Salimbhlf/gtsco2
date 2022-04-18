@@ -25,7 +25,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
             
             rpt.banding();
 
-            rpt.ShowPreviewDialog();
+            rpt.ShowRibbonPreview();
 
         }
         public void banding()

@@ -136,12 +136,12 @@ namespace gtsco2.forms.Décisions
             // 
             this.label10.AutoWidth = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(28.0007F, 754.9165F);
+            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(0F, 754.9165F);
             this.label10.Multiline = true;
             this.label10.Name = "label10";
             this.label10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label10.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label10.SizeF = new System.Drawing.SizeF(676.9995F, 58.3335F);
+            this.label10.SizeF = new System.Drawing.SizeF(705.0002F, 58.3335F);
             this.label10.StylePriority.UseFont = false;
             this.label10.StylePriority.UseTextAlignment = false;
             this.label10.Text = "\r\nالـمـادة الثـانيـة : يكلف كل من المديـر الفرعي للتكوين المتواصل والتمهين  والمد" +
@@ -168,15 +168,15 @@ namespace gtsco2.forms.Décisions
             // 
             this.label6.AutoWidth = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(27.99943F, 608.1669F);
+            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 608.1669F);
             this.label6.Multiline = true;
             this.label6.Name = "label6";
             this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label6.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label6.SizeF = new System.Drawing.SizeF(677F, 27.83325F);
+            this.label6.SizeF = new System.Drawing.SizeF(704.9995F, 27.83325F);
             this.label6.StylePriority.UseFont = false;
             this.label6.StylePriority.UseTextAlignment = false;
-            this.label6.Text = "المـادة الأولى :  يفـسـخ عقـد السـيـد (ة)  بن مبخوت ياسين ";
+            this.label6.Text = "المـادة الأولى :  يفـسـخ عقـد السـيـد (ة)  ";
             this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label5
@@ -324,12 +324,12 @@ namespace gtsco2.forms.Décisions
             // 
             this.label12.AutoWidth = true;
             this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(27.99994F, 636.0001F);
+            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(0F, 636.0001F);
             this.label12.Multiline = true;
             this.label12.Name = "label12";
             this.label12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label12.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label12.SizeF = new System.Drawing.SizeF(220.9162F, 29.91663F);
+            this.label12.SizeF = new System.Drawing.SizeF(248.9161F, 29.91663F);
             this.label12.StylePriority.UseFont = false;
             this.label12.StylePriority.UseTextAlignment = false;
             this.label12.Text = "بتاريخ 28/03/2021";
@@ -369,12 +369,12 @@ namespace gtsco2.forms.Décisions
             // 
             this.label18.AutoWidth = true;
             this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(27.99994F, 665.9166F);
+            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(0F, 665.9166F);
             this.label18.Multiline = true;
             this.label18.Name = "label18";
             this.label18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label18.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label18.SizeF = new System.Drawing.SizeF(220.9162F, 29.91663F);
+            this.label18.SizeF = new System.Drawing.SizeF(248.9161F, 29.91663F);
             this.label18.StylePriority.UseFont = false;
             this.label18.StylePriority.UseTextAlignment = false;
             this.label18.Text = "تحت رقم  24/2021 ";
@@ -399,12 +399,12 @@ namespace gtsco2.forms.Décisions
             // 
             this.label20.AutoWidth = true;
             this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(27.99943F, 699.2499F);
+            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(0F, 699.2499F);
             this.label20.Multiline = true;
             this.label20.Name = "label20";
             this.label20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label20.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label20.SizeF = new System.Drawing.SizeF(339.5F, 27.83325F);
+            this.label20.SizeF = new System.Drawing.SizeF(367.4994F, 27.83325F);
             this.label20.StylePriority.UseFont = false;
             this.label20.StylePriority.UseTextAlignment = false;
             this.label20.Text = "بالمـسـتـخـدم المؤسسة الوطنية للدهن";
@@ -429,12 +429,12 @@ namespace gtsco2.forms.Décisions
             // 
             this.label22.AutoWidth = true;
             this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label22.LocationFloat = new DevExpress.Utils.PointFloat(27.99943F, 727.0833F);
+            this.label22.LocationFloat = new DevExpress.Utils.PointFloat(0F, 727.0833F);
             this.label22.Multiline = true;
             this.label22.Name = "label22";
             this.label22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.label22.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.label22.SizeF = new System.Drawing.SizeF(448.9583F, 27.83325F);
+            this.label22.SizeF = new System.Drawing.SizeF(476.9577F, 27.83325F);
             this.label22.StylePriority.UseFont = false;
             this.label22.StylePriority.UseTextAlignment = false;
             this.label22.Text = "اختصاص تقني سـام في الــمــعــلـومـاتيـة \"قــاعــدة الـمعطيـات\"";

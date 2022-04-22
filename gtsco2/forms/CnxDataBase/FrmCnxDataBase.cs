@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace gtsco2.forms.CnxDataBase
 {
@@ -44,7 +45,14 @@ namespace gtsco2.forms.CnxDataBase
 
         private void FrmCnxDataBase_Load(object sender, EventArgs e)
         {
-            comboBoxEdit1.Properties.Items.Add("sa");
+            AppSetting satting = new AppSetting();
+
+
+            SqlConnection sa = new SqlConnection(satting.GetConnectionString("gtsco"));
+            comboBoxEdit1.Text = sa.DataSource;
+            textEdit3dATEBASE.Text = sa.Database;
+            
+            comboBoxEdit1.Properties.Items.Add(sa.DataSource);
             comboBoxEdit1.Properties.Items.Add("(local)");
             comboBoxEdit1.Properties.Items.Add(Environment.MachineName);
             comboBoxEditATH.SelectedIndex = 0;

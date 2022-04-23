@@ -70,6 +70,9 @@
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>image_viber_2022-03-23_19-13-58-552.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
@@ -936,6 +939,7 @@
     <EmbeddedResource Include="forms\PVfinal\frmPVfinal.resx">
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="image_viber_2022-03-23_19-13-58-552.ico" />
     <Content Include="Properties\licenses.licx" />
     <EmbeddedResource Include="forms\PVfinal\raporetPv\relver final globale.resx">
       <DependentUpon>relver final globale.cs</DependentUpon>

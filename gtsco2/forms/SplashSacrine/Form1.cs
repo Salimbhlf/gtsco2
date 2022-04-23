@@ -85,6 +85,7 @@ namespace gtsco2.forms.SplashSacrine
                 }
                 else
                 {
+                    this.Hide();
                     forms.Login.FormLogin fr = new Login.FormLogin();
                     fr.ShowDialog();
                     
@@ -110,7 +111,9 @@ namespace gtsco2.forms.SplashSacrine
             {
                 load();
                 test();
-                Close();
+                this.Close();
+
+
             }
         }
     }

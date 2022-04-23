@@ -20,7 +20,7 @@ namespace gtsco2
             Application.SetCompatibleTextRenderingDefault(false);
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
 
-            Application.Run(new forms.Navigation()) ;
+            Application.Run(new forms.SplashSacrine.Form1()) ;
         }
         
     }

@@ -19,13 +19,20 @@ namespace gtsco2.forms.Pageprancipel
             user();
               
         }
+
+        public static void open()
+        {
+            FrmPrancipal p = new FrmPrancipal();
+            p.ShowDialog();
+            
+        }
         public void user()
         {
             try { 
             int valuer = int.Parse(Properties.Settings.Default.iduser);
            basededonne.User val = classe.shared.bd.Users.First(x => x.ID_user == valuer);
 
-                MessageBox.Show(val.Role);
+               
             if (val.Role != "Admen")
                 barButtonItem11user.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
@@ -240,6 +247,12 @@ namespace gtsco2.forms.Pageprancipel
         private void FrmPrancipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem11_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            forms.coupe_de_la_base_de_donne.FrmfrmcoupeBD frmfrmcoupeBD = new coupe_de_la_base_de_donne.FrmfrmcoupeBD();
+            frmfrmcoupeBD.ShowDialog();
         }
     }
 }

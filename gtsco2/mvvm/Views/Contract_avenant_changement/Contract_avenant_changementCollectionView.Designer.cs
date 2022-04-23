@@ -26,16 +26,6 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.contract_avenant_changementCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -49,6 +39,17 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.colNUM_AV_CHANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNUM_AV_VALID_CHANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnum_stg = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDATE_AV_VALID_CHANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colid_emp = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDATE_DBT_FORMA_CHANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDATE_FIN_FORMA_ANCIEN_EMP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDATE_FIN_FORMA_CHANG = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contract_avenant_changementCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -78,86 +79,21 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10});
+            this.colNUM_AV_CHANG,
+            this.colNUM_AV_VALID_CHANG,
+            this.colnum_stg,
+            this.colStagiair,
+            this.colStagiair1,
+            this.colDATE_AV_VALID_CHANG,
+            this.colid_emp,
+            this.colEmployeur,
+            this.colDATE_DBT_FORMA_CHANG,
+            this.colDATE_FIN_FORMA_ANCIEN_EMP,
+            this.colDATE_FIN_FORMA_CHANG});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "id_emp";
-            this.gridColumn1.Name = "gridColumn1";
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.FieldName = "num_stg";
-            this.gridColumn2.Name = "gridColumn2";
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.FieldName = "NUM_AV_CHANG";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 0;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.FieldName = "NUM_AV_VALID_CHANG";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 1;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.FieldName = "DATE_AV_VALID_CHANG";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 2;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.FieldName = "DATE_DBT_FORMA_CHANG";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 3;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "DATE_FIN_FORMA_CHANG";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 4;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.FieldName = "DATE_FIN_FORMA_ANCIEN_EMP";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 5;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.FieldName = "Employeur.Type_Emp";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 6;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.FieldName = "Stagiair.Num_STG";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 7;
             // 
             // ribbonControl
             // 
@@ -280,6 +216,83 @@
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
+            // colNUM_AV_CHANG
+            // 
+            this.colNUM_AV_CHANG.FieldName = "NUM_AV_CHANG";
+            this.colNUM_AV_CHANG.Name = "colNUM_AV_CHANG";
+            this.colNUM_AV_CHANG.Visible = true;
+            this.colNUM_AV_CHANG.VisibleIndex = 0;
+            // 
+            // colNUM_AV_VALID_CHANG
+            // 
+            this.colNUM_AV_VALID_CHANG.FieldName = "NUM_AV_VALID_CHANG";
+            this.colNUM_AV_VALID_CHANG.Name = "colNUM_AV_VALID_CHANG";
+            this.colNUM_AV_VALID_CHANG.Visible = true;
+            this.colNUM_AV_VALID_CHANG.VisibleIndex = 1;
+            // 
+            // colnum_stg
+            // 
+            this.colnum_stg.FieldName = "num_stg";
+            this.colnum_stg.Name = "colnum_stg";
+            this.colnum_stg.Visible = true;
+            this.colnum_stg.VisibleIndex = 2;
+            // 
+            // colStagiair
+            // 
+            this.colStagiair.Caption = "Nom stagiaire ";
+            this.colStagiair.FieldName = "Stagiair.Nom";
+            this.colStagiair.Name = "colStagiair";
+            this.colStagiair.Visible = true;
+            this.colStagiair.VisibleIndex = 3;
+            // 
+            // colStagiair1
+            // 
+            this.colStagiair1.Caption = "Prénom stagiaire";
+            this.colStagiair1.FieldName = "Stagiair.Prenom";
+            this.colStagiair1.Name = "colStagiair1";
+            this.colStagiair1.Visible = true;
+            this.colStagiair1.VisibleIndex = 4;
+            // 
+            // colDATE_AV_VALID_CHANG
+            // 
+            this.colDATE_AV_VALID_CHANG.FieldName = "DATE_AV_VALID_CHANG";
+            this.colDATE_AV_VALID_CHANG.Name = "colDATE_AV_VALID_CHANG";
+            this.colDATE_AV_VALID_CHANG.Visible = true;
+            this.colDATE_AV_VALID_CHANG.VisibleIndex = 6;
+            // 
+            // colEmployeur
+            // 
+            this.colEmployeur.FieldName = "Employeur";
+            this.colEmployeur.Name = "colEmployeur";
+            this.colEmployeur.Visible = true;
+            this.colEmployeur.VisibleIndex = 5;
+            // 
+            // colid_emp
+            // 
+            this.colid_emp.FieldName = "id_emp";
+            this.colid_emp.Name = "colid_emp";
+            // 
+            // colDATE_DBT_FORMA_CHANG
+            // 
+            this.colDATE_DBT_FORMA_CHANG.FieldName = "DATE_DBT_FORMA_CHANG";
+            this.colDATE_DBT_FORMA_CHANG.Name = "colDATE_DBT_FORMA_CHANG";
+            this.colDATE_DBT_FORMA_CHANG.Visible = true;
+            this.colDATE_DBT_FORMA_CHANG.VisibleIndex = 7;
+            // 
+            // colDATE_FIN_FORMA_ANCIEN_EMP
+            // 
+            this.colDATE_FIN_FORMA_ANCIEN_EMP.FieldName = "DATE_FIN_FORMA_ANCIEN_EMP";
+            this.colDATE_FIN_FORMA_ANCIEN_EMP.Name = "colDATE_FIN_FORMA_ANCIEN_EMP";
+            this.colDATE_FIN_FORMA_ANCIEN_EMP.Visible = true;
+            this.colDATE_FIN_FORMA_ANCIEN_EMP.VisibleIndex = 8;
+            // 
+            // colDATE_FIN_FORMA_CHANG
+            // 
+            this.colDATE_FIN_FORMA_CHANG.FieldName = "DATE_FIN_FORMA_CHANG";
+            this.colDATE_FIN_FORMA_CHANG.Name = "colDATE_FIN_FORMA_CHANG";
+            this.colDATE_FIN_FORMA_CHANG.Visible = true;
+            this.colDATE_FIN_FORMA_CHANG.VisibleIndex = 9;
+            // 
             // Contract_avenant_changementCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,19 +328,20 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colNUM_AV_CHANG;
+        private DevExpress.XtraGrid.Columns.GridColumn colNUM_AV_VALID_CHANG;
+        private DevExpress.XtraGrid.Columns.GridColumn colnum_stg;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_AV_VALID_CHANG;
+        private DevExpress.XtraGrid.Columns.GridColumn colid_emp;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeur;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_DBT_FORMA_CHANG;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_FIN_FORMA_ANCIEN_EMP;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_FIN_FORMA_CHANG;
     }
 }

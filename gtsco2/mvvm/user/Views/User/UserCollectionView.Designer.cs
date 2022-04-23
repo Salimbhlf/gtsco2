@@ -26,13 +26,12 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.userCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_user = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNomeutlisature = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMotedePasse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRole = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -46,6 +45,8 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -76,66 +77,60 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.colID_user,
+            this.colNomeutlisature,
+            this.colNom,
+            this.colPrenom,
+            this.colMotedePasse,
+            this.colRole});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colID_user
             // 
-            this.gridColumn1.FieldName = "ID_user";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colID_user.FieldName = "ID_user";
+            this.colID_user.Name = "colID_user";
             // 
-            // gridColumn2
+            // colNomeutlisature
             // 
-            this.gridColumn2.FieldName = "Nom";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.colNomeutlisature.Caption = "Nom d\'utilisateur";
+            this.colNomeutlisature.FieldName = "Nomeutlisature";
+            this.colNomeutlisature.Name = "colNomeutlisature";
+            this.colNomeutlisature.Visible = true;
+            this.colNomeutlisature.VisibleIndex = 2;
             // 
-            // gridColumn3
+            // colNom
             // 
-            this.gridColumn3.FieldName = "Prenom";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.colNom.FieldName = "Nom";
+            this.colNom.Name = "colNom";
+            this.colNom.Visible = true;
+            this.colNom.VisibleIndex = 0;
             // 
-            // gridColumn4
+            // colPrenom
             // 
-            this.gridColumn4.FieldName = "Nomeutlisature";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.colPrenom.Caption = "Prénom";
+            this.colPrenom.FieldName = "Prenom";
+            this.colPrenom.Name = "colPrenom";
+            this.colPrenom.Visible = true;
+            this.colPrenom.VisibleIndex = 1;
             // 
-            // gridColumn5
+            // colMotedePasse
             // 
-            this.gridColumn5.FieldName = "MotedePasse";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.colMotedePasse.Caption = "Mot de passe";
+            this.colMotedePasse.FieldName = "MotedePasse";
+            this.colMotedePasse.Name = "colMotedePasse";
+            this.colMotedePasse.Visible = true;
+            this.colMotedePasse.VisibleIndex = 3;
             // 
-            // gridColumn6
+            // colRole
             // 
-            this.gridColumn6.FieldName = "Role";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Photo";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
+            this.colRole.Caption = "Rôle";
+            this.colRole.FieldName = "Role";
+            this.colRole.Name = "colRole";
+            this.colRole.Visible = true;
+            this.colRole.VisibleIndex = 4;
             // 
             // ribbonControl
             // 
@@ -162,7 +157,7 @@
             // 
             // bbiPrintPreview
             // 
-            this.bbiPrintPreview.Caption = "Imprimer";
+            this.bbiPrintPreview.Caption = "Exporter et imprimer";
             this.bbiPrintPreview.Id = 14;
             this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
             this.bbiPrintPreview.Name = "bbiPrintPreview";
@@ -228,7 +223,7 @@
             this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Imprimer";
+            this.ribbonPageGroup2.Text = "Exporter et imprimer";
             // 
             // ribbonStatusBar
             // 
@@ -259,6 +254,20 @@
             this.popupMenu.ItemLinks.Add(this.bbiRefresh);
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Exporter et imprimer";
+            this.barButtonItem1.Id = 14;
+            this.barButtonItem1.ImageOptions.ImageUri.Uri = "Preview";
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Exporter et imprimer";
+            this.barButtonItem2.Id = 14;
+            this.barButtonItem2.ImageOptions.ImageUri.Uri = "Preview";
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // UserCollectionView
             // 
@@ -295,16 +304,17 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_user;
+        private DevExpress.XtraGrid.Columns.GridColumn colNomeutlisature;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom;
+        private DevExpress.XtraGrid.Columns.GridColumn colMotedePasse;
+        private DevExpress.XtraGrid.Columns.GridColumn colRole;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }

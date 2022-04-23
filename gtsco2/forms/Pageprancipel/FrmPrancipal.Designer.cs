@@ -186,7 +186,6 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage3,
             this.ribbonPage6,
             this.ribbonPage4});
-            this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem1);
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemFontEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;

@@ -26,13 +26,12 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.transfererCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ID_etb = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.num_stg = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnum_stg = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEtablissement = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldate_transfert = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_etb = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -75,65 +74,59 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ID_etb,
-            this.num_stg,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.colnum_stg,
+            this.colStagiair,
+            this.colStagiair1,
+            this.colEtablissement,
+            this.coldate_transfert,
+            this.colID_etb});
             this.gridView.CustomizationFormBounds = new System.Drawing.Rectangle(1097, 320, 252, 266);
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // ID_etb
+            // colnum_stg
             // 
-            this.ID_etb.FieldName = "ID_etb";
-            this.ID_etb.Name = "ID_etb";
+            this.colnum_stg.FieldName = "num_stg";
+            this.colnum_stg.Name = "colnum_stg";
+            this.colnum_stg.Visible = true;
+            this.colnum_stg.VisibleIndex = 0;
             // 
-            // num_stg
+            // colStagiair
             // 
-            this.num_stg.FieldName = "num_stg";
-            this.num_stg.Name = "num_stg";
-            this.num_stg.Visible = true;
-            this.num_stg.VisibleIndex = 5;
+            this.colStagiair.Caption = "Nom stagiaire";
+            this.colStagiair.FieldName = "Stagiair.Nom";
+            this.colStagiair.Name = "colStagiair";
+            this.colStagiair.Visible = true;
+            this.colStagiair.VisibleIndex = 1;
             // 
-            // gridColumn3
+            // colStagiair1
             // 
-            this.gridColumn3.FieldName = "nom_directeur";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 0;
+            this.colStagiair1.Caption = "Prénom stagiaire ";
+            this.colStagiair1.FieldName = "Stagiair.Prenom";
+            this.colStagiair1.Name = "colStagiair1";
+            this.colStagiair1.Visible = true;
+            this.colStagiair1.VisibleIndex = 2;
             // 
-            // gridColumn4
+            // colEtablissement
             // 
-            this.gridColumn4.FieldName = "prenom_directeur";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 1;
+            this.colEtablissement.FieldName = "Etablissement.Nom_ETAB";
+            this.colEtablissement.Name = "colEtablissement";
+            this.colEtablissement.Visible = true;
+            this.colEtablissement.VisibleIndex = 3;
             // 
-            // gridColumn5
+            // coldate_transfert
             // 
-            this.gridColumn5.FieldName = "date_transfert";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 2;
+            this.coldate_transfert.FieldName = "date_transfert";
+            this.coldate_transfert.Name = "coldate_transfert";
+            this.coldate_transfert.Visible = true;
+            this.coldate_transfert.VisibleIndex = 4;
             // 
-            // gridColumn6
+            // colID_etb
             // 
-            this.gridColumn6.FieldName = "Etablissement.Nom_ETAB";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Stagiair.Num_STG";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 3;
+            this.colID_etb.FieldName = "ID_etb";
+            this.colID_etb.Name = "colID_etb";
             // 
             // ribbonControl
             // 
@@ -265,7 +258,7 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "TransfererCollectionView";
-            this.Text = "Transferer";
+            this.Text = "Decision de transfert";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transfererCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
@@ -291,16 +284,15 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn ID_etb;
-        private DevExpress.XtraGrid.Columns.GridColumn num_stg;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colnum_stg;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair1;
+        private DevExpress.XtraGrid.Columns.GridColumn colEtablissement;
+        private DevExpress.XtraGrid.Columns.GridColumn coldate_transfert;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_etb;
     }
 }

@@ -26,15 +26,12 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.code_PostalCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Code_Postal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Postal1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune_id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPost_adresse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colpost_Adresse_ar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -77,74 +74,52 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9});
+            this.colID_Code_Postal,
+            this.colCode_Postal1,
+            this.colCommune_id,
+            this.colCommune,
+            this.colPost_adresse,
+            this.colpost_Adresse_ar});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colID_Code_Postal
             // 
-            this.gridColumn1.FieldName = "ID_Code_Postal";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colID_Code_Postal.FieldName = "ID_Code_Postal";
+            this.colID_Code_Postal.Name = "colID_Code_Postal";
             // 
-            // gridColumn2
+            // colCode_Postal1
             // 
-            this.gridColumn2.FieldName = "Code_Postal1";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.colCode_Postal1.Caption = "Code postal ";
+            this.colCode_Postal1.FieldName = "Code_Postal1";
+            this.colCode_Postal1.Name = "colCode_Postal1";
+            this.colCode_Postal1.Visible = true;
+            this.colCode_Postal1.VisibleIndex = 0;
             // 
-            // gridColumn3
+            // colCommune_id
             // 
-            this.gridColumn3.FieldName = "post_Adresse_ar";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.colCommune_id.FieldName = "Commune_id";
+            this.colCommune_id.Name = "colCommune_id";
             // 
-            // gridColumn4
+            // colCommune
             // 
-            this.gridColumn4.FieldName = "Post_adresse";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.colCommune.Caption = "Désignation communes";
+            this.colCommune.FieldName = "Commune.Commune_name";
+            this.colCommune.Name = "colCommune";
+            this.colCommune.Visible = true;
+            this.colCommune.VisibleIndex = 1;
             // 
-            // gridColumn5
+            // colPost_adresse
             // 
-            this.gridColumn5.FieldName = "Commune_id";
-            this.gridColumn5.Name = "gridColumn5";
+            this.colPost_adresse.FieldName = "Post_adresse";
+            this.colPost_adresse.Name = "colPost_adresse";
             // 
-            // gridColumn6
+            // colpost_Adresse_ar
             // 
-            this.gridColumn6.FieldName = "Commune.Commune_name";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Employeurs";
-            this.gridColumn7.Name = "gridColumn7";
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.FieldName = "Etablissements";
-            this.gridColumn8.Name = "gridColumn8";
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.FieldName = "Stagiairs";
-            this.gridColumn9.Name = "gridColumn9";
+            this.colpost_Adresse_ar.FieldName = "post_Adresse_ar";
+            this.colpost_Adresse_ar.Name = "colpost_Adresse_ar";
             // 
             // ribbonControl
             // 
@@ -302,18 +277,15 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Code_Postal;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Postal1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_id;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraGrid.Columns.GridColumn colPost_adresse;
+        private DevExpress.XtraGrid.Columns.GridColumn colpost_Adresse_ar;
     }
 }

@@ -26,17 +26,16 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.decisionCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Decision = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProce_verbal_delibation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSemestre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_PV_Délibiration = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Semestre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -79,90 +78,84 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11});
+            this.colID_Decision,
+            this.colNum_STG,
+            this.colStagiair,
+            this.colStagiair1,
+            this.colProce_verbal_delibation,
+            this.colPromo,
+            this.colSemestre,
+            this.colID_Promo,
+            this.colID_PV_Délibiration,
+            this.colID_Semestre});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colID_Decision
             // 
-            this.gridColumn1.FieldName = "ID_Decision";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colID_Decision.FieldName = "ID_Decision";
+            this.colID_Decision.Name = "colID_Decision";
             // 
-            // gridColumn2
+            // colNum_STG
             // 
-            this.gridColumn2.FieldName = "Type_Decision";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.colNum_STG.FieldName = "Num_STG";
+            this.colNum_STG.Name = "colNum_STG";
+            this.colNum_STG.Visible = true;
+            this.colNum_STG.VisibleIndex = 1;
             // 
-            // gridColumn3
+            // colStagiair
             // 
-            this.gridColumn3.FieldName = "Date_Decision";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.colStagiair.Caption = "Nom stagiaire ";
+            this.colStagiair.FieldName = "Stagiair.Nom";
+            this.colStagiair.Name = "colStagiair";
+            this.colStagiair.Visible = true;
+            this.colStagiair.VisibleIndex = 2;
             // 
-            // gridColumn4
+            // colStagiair1
             // 
-            this.gridColumn4.FieldName = "ID_PV_Délibiration";
-            this.gridColumn4.Name = "gridColumn4";
+            this.colStagiair1.Caption = "Prenom stagiaire";
+            this.colStagiair1.FieldName = "Stagiair.Prenom";
+            this.colStagiair1.Name = "colStagiair1";
+            this.colStagiair1.Visible = true;
+            this.colStagiair1.VisibleIndex = 3;
             // 
-            // gridColumn5
+            // colProce_verbal_delibation
             // 
-            this.gridColumn5.FieldName = "ID_Promo";
-            this.gridColumn5.Name = "gridColumn5";
+            this.colProce_verbal_delibation.FieldName = "Proce_verbal_delibation.Num_PV_Délibiraiton";
+            this.colProce_verbal_delibation.Name = "colProce_verbal_delibation";
+            this.colProce_verbal_delibation.Visible = true;
+            this.colProce_verbal_delibation.VisibleIndex = 0;
             // 
-            // gridColumn6
+            // colPromo
             // 
-            this.gridColumn6.FieldName = "ID_Semestre";
-            this.gridColumn6.Name = "gridColumn6";
+            this.colPromo.FieldName = "Promo.Code_Promo";
+            this.colPromo.Name = "colPromo";
+            this.colPromo.Visible = true;
+            this.colPromo.VisibleIndex = 4;
             // 
-            // gridColumn7
+            // colSemestre
             // 
-            this.gridColumn7.FieldName = "Num_STG";
-            this.gridColumn7.Name = "gridColumn7";
+            this.colSemestre.FieldName = "Semestre.Designation_Semestre";
+            this.colSemestre.Name = "colSemestre";
+            this.colSemestre.Visible = true;
+            this.colSemestre.VisibleIndex = 5;
             // 
-            // gridColumn8
+            // colID_Promo
             // 
-            this.gridColumn8.FieldName = "Proce_verbal_delibation.ID_PV_Délibiration";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 3;
+            this.colID_Promo.FieldName = "ID_Promo";
+            this.colID_Promo.Name = "colID_Promo";
             // 
-            // gridColumn9
+            // colID_PV_Délibiration
             // 
-            this.gridColumn9.FieldName = "Promo.Code_Promo";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 4;
+            this.colID_PV_Délibiration.FieldName = "ID_PV_Délibiration";
+            this.colID_PV_Délibiration.Name = "colID_PV_Délibiration";
             // 
-            // gridColumn10
+            // colID_Semestre
             // 
-            this.gridColumn10.FieldName = "Semestre.Designation_Semestre";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 5;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.FieldName = "Stagiair.Num_STG";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 6;
+            this.colID_Semestre.FieldName = "ID_Semestre";
+            this.colID_Semestre.Name = "colID_Semestre";
             // 
             // ribbonControl
             // 
@@ -294,7 +287,7 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "DecisionCollectionView";
-            this.Text = "Decision";
+            this.Text = "Decision de redoublement ";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.decisionCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
@@ -320,20 +313,19 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Decision;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair1;
+        private DevExpress.XtraGrid.Columns.GridColumn colProce_verbal_delibation;
+        private DevExpress.XtraGrid.Columns.GridColumn colPromo;
+        private DevExpress.XtraGrid.Columns.GridColumn colSemestre;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Promo;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_PV_Délibiration;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Semestre;
     }
 }

@@ -27,14 +27,6 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.specialiteCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -48,6 +40,14 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.colID_Specialité = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_SP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_SP = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_SP_AR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colBranch = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colBranch1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Branche = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNiveau_qualification = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.specialiteCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -77,70 +77,18 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8});
+            this.colID_Specialité,
+            this.colCode_SP,
+            this.colDesignation_SP,
+            this.colDesignation_SP_AR,
+            this.colBranch,
+            this.colBranch1,
+            this.colID_Branche,
+            this.colNiveau_qualification});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "ID_Specialité";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.FieldName = "Code_SP";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.FieldName = "Designation_SP";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.FieldName = "Designation_SP_AR";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.FieldName = "Niveau_qualification";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.FieldName = "ID_Branche";
-            this.gridColumn6.Name = "gridColumn6";
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Branch.Code_Branche";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 5;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.FieldName = "Options";
-            this.gridColumn8.Name = "gridColumn8";
             // 
             // ribbonControl
             // 
@@ -263,6 +211,58 @@
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
+            // colID_Specialité
+            // 
+            this.colID_Specialité.FieldName = "ID_Specialité";
+            this.colID_Specialité.Name = "colID_Specialité";
+            // 
+            // colCode_SP
+            // 
+            this.colCode_SP.FieldName = "Code_SP";
+            this.colCode_SP.Name = "colCode_SP";
+            this.colCode_SP.Visible = true;
+            this.colCode_SP.VisibleIndex = 0;
+            // 
+            // colDesignation_SP
+            // 
+            this.colDesignation_SP.FieldName = "Designation_SP";
+            this.colDesignation_SP.Name = "colDesignation_SP";
+            this.colDesignation_SP.Visible = true;
+            this.colDesignation_SP.VisibleIndex = 1;
+            // 
+            // colDesignation_SP_AR
+            // 
+            this.colDesignation_SP_AR.FieldName = "Designation_SP_AR";
+            this.colDesignation_SP_AR.Name = "colDesignation_SP_AR";
+            // 
+            // colBranch
+            // 
+            this.colBranch.Caption = "Branche";
+            this.colBranch.FieldName = "Branch.Designation_Branche";
+            this.colBranch.Name = "colBranch";
+            this.colBranch.Visible = true;
+            this.colBranch.VisibleIndex = 3;
+            // 
+            // colBranch1
+            // 
+            this.colBranch1.Caption = "code branche";
+            this.colBranch1.FieldName = "Branch.Code_Branche";
+            this.colBranch1.Name = "colBranch1";
+            this.colBranch1.Visible = true;
+            this.colBranch1.VisibleIndex = 4;
+            // 
+            // colID_Branche
+            // 
+            this.colID_Branche.FieldName = "ID_Branche";
+            this.colID_Branche.Name = "colID_Branche";
+            // 
+            // colNiveau_qualification
+            // 
+            this.colNiveau_qualification.FieldName = "Niveau_qualification";
+            this.colNiveau_qualification.Name = "colNiveau_qualification";
+            this.colNiveau_qualification.Visible = true;
+            this.colNiveau_qualification.VisibleIndex = 2;
+            // 
             // SpecialiteCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,17 +299,17 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Specialité;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_SP;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP_AR;
+        private DevExpress.XtraGrid.Columns.GridColumn colBranch;
+        private DevExpress.XtraGrid.Columns.GridColumn colBranch1;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Branche;
+        private DevExpress.XtraGrid.Columns.GridColumn colNiveau_qualification;
     }
 }

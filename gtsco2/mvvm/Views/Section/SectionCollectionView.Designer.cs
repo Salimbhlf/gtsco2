@@ -27,17 +27,21 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.sectionCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSectionID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Section = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMode_formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMode_formation1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colannee_scolaire = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAnnee_secolir_en_coure = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSemestre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSemestre_en_coure = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Mode_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Option = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -80,88 +84,124 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11});
+            this.colSectionID,
+            this.colCode_Section,
+            this.colPromo,
+            this.colOption,
+            this.colOption1,
+            this.colOption2,
+            this.colMode_formation,
+            this.colMode_formation1,
+            this.colannee_scolaire,
+            this.colAnnee_secolir_en_coure,
+            this.colSemestre,
+            this.colSemestre_en_coure,
+            this.colID_Mode_Formation,
+            this.colID_Option,
+            this.colID_Promo});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colSectionID
             // 
-            this.gridColumn1.FieldName = "SectionID";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colSectionID.FieldName = "SectionID";
+            this.colSectionID.Name = "colSectionID";
             // 
-            // gridColumn2
+            // colCode_Section
             // 
-            this.gridColumn2.FieldName = "Code_Section";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.colCode_Section.FieldName = "Code_Section";
+            this.colCode_Section.Name = "colCode_Section";
+            this.colCode_Section.Visible = true;
+            this.colCode_Section.VisibleIndex = 0;
             // 
-            // gridColumn3
+            // colPromo
             // 
-            this.gridColumn3.FieldName = "ID_Promo";
-            this.gridColumn3.Name = "gridColumn3";
+            this.colPromo.FieldName = "Promo.Code_Promo";
+            this.colPromo.Name = "colPromo";
+            this.colPromo.Visible = true;
+            this.colPromo.VisibleIndex = 1;
             // 
-            // gridColumn4
+            // colOption
             // 
-            this.gridColumn4.FieldName = "ID_Mode_Formation";
-            this.gridColumn4.Name = "gridColumn4";
+            this.colOption.FieldName = "Option.Designation_Option";
+            this.colOption.Name = "colOption";
+            this.colOption.Visible = true;
+            this.colOption.VisibleIndex = 2;
             // 
-            // gridColumn5
+            // colOption1
             // 
-            this.gridColumn5.FieldName = "ID_Option";
-            this.gridColumn5.Name = "gridColumn5";
+            this.colOption1.Caption = "Code option";
+            this.colOption1.FieldName = "Option.Code_Option";
+            this.colOption1.Name = "colOption1";
+            this.colOption1.Visible = true;
+            this.colOption1.VisibleIndex = 3;
             // 
-            // gridColumn6
+            // colOption2
             // 
-            this.gridColumn6.FieldName = "Semestre_en_coure";
-            this.gridColumn6.Name = "gridColumn6";
+            this.colOption2.Caption = "Désignation option";
+            this.colOption2.FieldName = "Option.Designation_Option";
+            this.colOption2.Name = "colOption2";
+            this.colOption2.Visible = true;
+            this.colOption2.VisibleIndex = 4;
             // 
-            // gridColumn7
+            // colMode_formation
             // 
-            this.gridColumn7.FieldName = "Mode_formation.Code_Mode_Formation";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 2;
+            this.colMode_formation.Caption = "Code mode formation";
+            this.colMode_formation.FieldName = "Mode_formation.Code_Mode_Formation";
+            this.colMode_formation.Name = "colMode_formation";
+            this.colMode_formation.Visible = true;
+            this.colMode_formation.VisibleIndex = 7;
             // 
-            // gridColumn8
+            // colMode_formation1
             // 
-            this.gridColumn8.FieldName = "Option.Code_Option";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 3;
+            this.colMode_formation1.Caption = "mode formation";
+            this.colMode_formation1.FieldName = "Mode_formation.Désignation_Mode_Formation";
+            this.colMode_formation1.Name = "colMode_formation1";
+            this.colMode_formation1.Visible = true;
+            this.colMode_formation1.VisibleIndex = 8;
             // 
-            // gridColumn9
+            // colannee_scolaire
             // 
-            this.gridColumn9.FieldName = "Promo.Code_Promo";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 4;
+            this.colannee_scolaire.FieldName = "annee_scolaire";
+            this.colannee_scolaire.Name = "colannee_scolaire";
             // 
-            // gridColumn10
+            // colAnnee_secolir_en_coure
             // 
-            this.gridColumn10.FieldName = "Stagiairs";
-            this.gridColumn10.Name = "gridColumn10";
+            this.colAnnee_secolir_en_coure.Caption = "Année scolaire en cours";
+            this.colAnnee_secolir_en_coure.FieldName = "Annee_secolir_en_coure";
+            this.colAnnee_secolir_en_coure.Name = "colAnnee_secolir_en_coure";
+            this.colAnnee_secolir_en_coure.Visible = true;
+            this.colAnnee_secolir_en_coure.VisibleIndex = 6;
             // 
-            // gridColumn11
+            // colSemestre
             // 
-            this.gridColumn11.FieldName = "Semestre.Designation_Semestre";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 5;
+            this.colSemestre.FieldName = "Semestre.Designation_Semestre";
+            this.colSemestre.Name = "colSemestre";
+            // 
+            // colSemestre_en_coure
+            // 
+            this.colSemestre_en_coure.Caption = "Semestre en cours";
+            this.colSemestre_en_coure.FieldName = "Semestre_en_coure";
+            this.colSemestre_en_coure.Name = "colSemestre_en_coure";
+            this.colSemestre_en_coure.Visible = true;
+            this.colSemestre_en_coure.VisibleIndex = 5;
+            // 
+            // colID_Mode_Formation
+            // 
+            this.colID_Mode_Formation.FieldName = "ID_Mode_Formation";
+            this.colID_Mode_Formation.Name = "colID_Mode_Formation";
+            // 
+            // colID_Option
+            // 
+            this.colID_Option.FieldName = "ID_Option";
+            this.colID_Option.Name = "colID_Option";
+            // 
+            // colID_Promo
+            // 
+            this.colID_Promo.FieldName = "ID_Promo";
+            this.colID_Promo.Name = "colID_Promo";
             // 
             // ribbonControl
             // 
@@ -320,20 +360,24 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colSectionID;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Section;
+        private DevExpress.XtraGrid.Columns.GridColumn colPromo;
+        private DevExpress.XtraGrid.Columns.GridColumn colOption;
+        private DevExpress.XtraGrid.Columns.GridColumn colOption1;
+        private DevExpress.XtraGrid.Columns.GridColumn colOption2;
+        private DevExpress.XtraGrid.Columns.GridColumn colMode_formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colMode_formation1;
+        private DevExpress.XtraGrid.Columns.GridColumn colannee_scolaire;
+        private DevExpress.XtraGrid.Columns.GridColumn colAnnee_secolir_en_coure;
+        private DevExpress.XtraGrid.Columns.GridColumn colSemestre;
+        private DevExpress.XtraGrid.Columns.GridColumn colSemestre_en_coure;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Mode_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Option;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Promo;
     }
 }

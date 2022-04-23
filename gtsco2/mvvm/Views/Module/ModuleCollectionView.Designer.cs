@@ -27,13 +27,6 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.moduleCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -47,6 +40,12 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.colID_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcoefficient_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNote_Elim_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Option = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moduleCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -76,62 +75,16 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.colID_Module,
+            this.colDesignation_Module,
+            this.colcoefficient_Module,
+            this.colNote_Elim_Module,
+            this.colOption,
+            this.colID_Option});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "ID_Module";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.FieldName = "Designation_Module";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.FieldName = "Note_Elim_Module";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.FieldName = "coefficient_Module";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.FieldName = "ID_Option";
-            this.gridColumn5.Name = "gridColumn5";
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.FieldName = "Evaluations";
-            this.gridColumn6.Name = "gridColumn6";
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Option.Code_Option";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 4;
             // 
             // ribbonControl
             // 
@@ -254,6 +207,44 @@
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
+            // colID_Module
+            // 
+            this.colID_Module.FieldName = "ID_Module";
+            this.colID_Module.Name = "colID_Module";
+            // 
+            // colDesignation_Module
+            // 
+            this.colDesignation_Module.FieldName = "Designation_Module";
+            this.colDesignation_Module.Name = "colDesignation_Module";
+            this.colDesignation_Module.Visible = true;
+            this.colDesignation_Module.VisibleIndex = 0;
+            // 
+            // colcoefficient_Module
+            // 
+            this.colcoefficient_Module.FieldName = "coefficient_Module";
+            this.colcoefficient_Module.Name = "colcoefficient_Module";
+            this.colcoefficient_Module.Visible = true;
+            this.colcoefficient_Module.VisibleIndex = 1;
+            // 
+            // colNote_Elim_Module
+            // 
+            this.colNote_Elim_Module.FieldName = "Note_Elim_Module";
+            this.colNote_Elim_Module.Name = "colNote_Elim_Module";
+            this.colNote_Elim_Module.Visible = true;
+            this.colNote_Elim_Module.VisibleIndex = 2;
+            // 
+            // colOption
+            // 
+            this.colOption.FieldName = "Option.Designation_Option";
+            this.colOption.Name = "colOption";
+            this.colOption.Visible = true;
+            this.colOption.VisibleIndex = 3;
+            // 
+            // colID_Option
+            // 
+            this.colID_Option.FieldName = "ID_Option";
+            this.colID_Option.Name = "colID_Option";
+            // 
             // ModuleCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,16 +281,15 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Module;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Module;
+        private DevExpress.XtraGrid.Columns.GridColumn colcoefficient_Module;
+        private DevExpress.XtraGrid.Columns.GridColumn colNote_Elim_Module;
+        private DevExpress.XtraGrid.Columns.GridColumn colOption;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Option;
     }
 }

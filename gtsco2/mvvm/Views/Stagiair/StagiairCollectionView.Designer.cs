@@ -26,62 +26,47 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.stagiairCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn20 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn23 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn26 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn27 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn28 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn32 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn33 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn35 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn36 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn37 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn38 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn39 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn40 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn41 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn42 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn43 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn44 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn45 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn46 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn47 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn48 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn49 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn50 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn51 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn52 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn53 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn54 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn55 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn56 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_de_Naissance = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTelephone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colE_Maile = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdresse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdresse_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLieu_Naissance = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHandicape = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEtranger = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMaitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNationalité_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNivo_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_Mère_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_Mère_STG_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_Diplome_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_Validation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colObservation_handicape = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colphoto = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_Mère_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_Mère_STG_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_Père_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_Père_STG_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProfession_Mère_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProfession_Père_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPromo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSection = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSexe = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSituation_Familiale_Parents_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSituation_Familiale_Parents_STG1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSituation_Familiale_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAvenant_contrat_prorogation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_postal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colContract_avenant_changement = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_Resiliation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_Validation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -124,410 +109,287 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.gridColumn13,
-            this.gridColumn14,
-            this.gridColumn15,
-            this.gridColumn16,
-            this.gridColumn17,
-            this.gridColumn18,
-            this.gridColumn19,
-            this.gridColumn20,
-            this.gridColumn21,
-            this.gridColumn22,
-            this.gridColumn23,
-            this.gridColumn24,
-            this.gridColumn25,
-            this.gridColumn26,
-            this.gridColumn27,
-            this.gridColumn28,
-            this.gridColumn29,
-            this.gridColumn30,
-            this.gridColumn31,
-            this.gridColumn32,
-            this.gridColumn33,
-            this.gridColumn34,
-            this.gridColumn35,
-            this.gridColumn36,
-            this.gridColumn37,
-            this.gridColumn38,
-            this.gridColumn39,
-            this.gridColumn40,
-            this.gridColumn41,
-            this.gridColumn42,
-            this.gridColumn43,
-            this.gridColumn44,
-            this.gridColumn45,
-            this.gridColumn46,
-            this.gridColumn47,
-            this.gridColumn48,
-            this.gridColumn49,
-            this.gridColumn50,
-            this.gridColumn51,
-            this.gridColumn52,
-            this.gridColumn53,
-            this.gridColumn54,
-            this.gridColumn55,
-            this.gridColumn56});
+            this.colNum_STG,
+            this.colNom,
+            this.colPrenom,
+            this.colDate_de_Naissance,
+            this.colTelephone,
+            this.colE_Maile,
+            this.colCommune,
+            this.colAdresse,
+            this.colAdresse_ar,
+            this.colEmployeur,
+            this.colLieu_Naissance,
+            this.colHandicape,
+            this.colEtranger,
+            this.colMaitre_Apprentissage,
+            this.colNationalité_STG,
+            this.colNivo_SCO,
+            this.colNom_ar,
+            this.colNom_Mère_STG,
+            this.colNom_Mère_STG_ar,
+            this.colNum_Diplome_STG,
+            this.colNum_Validation_Contrat_STG,
+            this.colObservation_handicape,
+            this.colphoto,
+            this.colPrenom_ar,
+            this.colPrenom_Mère_STG,
+            this.colPrenom_Mère_STG_ar,
+            this.colPrenom_Père_STG,
+            this.colPrenom_Père_STG_ar,
+            this.colProfession_Mère_STG,
+            this.colProfession_Père_STG,
+            this.colPromo,
+            this.colSection,
+            this.colSexe,
+            this.colSituation_Familiale_Parents_STG,
+            this.colSituation_Familiale_Parents_STG1,
+            this.colSituation_Familiale_STG,
+            this.colAvenant_contrat_prorogation,
+            this.colCode_postal,
+            this.colContract_avenant_changement,
+            this.colDate_Resiliation_Contrat_STG,
+            this.colDate_Validation_Contrat_STG});
             this.gridView.CustomizationFormBounds = new System.Drawing.Rectangle(1045, 320, 252, 266);
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colNum_STG
             // 
-            this.gridColumn1.FieldName = "Num_STG";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 89;
+            this.colNum_STG.FieldName = "Num_STG";
+            this.colNum_STG.Name = "colNum_STG";
+            this.colNum_STG.Visible = true;
+            this.colNum_STG.VisibleIndex = 0;
             // 
-            // gridColumn2
+            // colNom
             // 
-            this.gridColumn2.FieldName = "Nom";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 89;
+            this.colNom.FieldName = "Nom";
+            this.colNom.Name = "colNom";
+            this.colNom.Visible = true;
+            this.colNom.VisibleIndex = 1;
             // 
-            // gridColumn3
+            // colPrenom
             // 
-            this.gridColumn3.FieldName = "Nom_ar";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 89;
+            this.colPrenom.FieldName = "Prenom";
+            this.colPrenom.Name = "colPrenom";
+            this.colPrenom.Visible = true;
+            this.colPrenom.VisibleIndex = 2;
             // 
-            // gridColumn4
+            // colDate_de_Naissance
             // 
-            this.gridColumn4.FieldName = "Prenom";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 89;
+            this.colDate_de_Naissance.FieldName = "Date_de_Naissance";
+            this.colDate_de_Naissance.Name = "colDate_de_Naissance";
+            this.colDate_de_Naissance.Visible = true;
+            this.colDate_de_Naissance.VisibleIndex = 8;
             // 
-            // gridColumn5
+            // colTelephone
             // 
-            this.gridColumn5.FieldName = "Prenom_ar";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 89;
+            this.colTelephone.FieldName = "Telephone";
+            this.colTelephone.Name = "colTelephone";
+            this.colTelephone.Visible = true;
+            this.colTelephone.VisibleIndex = 5;
             // 
-            // gridColumn6
+            // colE_Maile
             // 
-            this.gridColumn6.FieldName = "Date_de_Naissance";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 134;
+            this.colE_Maile.Caption = "E-mail";
+            this.colE_Maile.FieldName = "E_Maile";
+            this.colE_Maile.Name = "colE_Maile";
+            this.colE_Maile.Visible = true;
+            this.colE_Maile.VisibleIndex = 6;
             // 
-            // gridColumn7
+            // colCommune
             // 
-            this.gridColumn7.FieldName = "Lieu_Naissance";
-            this.gridColumn7.Name = "gridColumn7";
+            this.colCommune.Caption = "Commune ";
+            this.colCommune.FieldName = "Commune.Commune_name";
+            this.colCommune.Name = "colCommune";
+            this.colCommune.Visible = true;
+            this.colCommune.VisibleIndex = 10;
             // 
-            // gridColumn8
+            // colAdresse
             // 
-            this.gridColumn8.FieldName = "Adresse";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 6;
-            this.gridColumn8.Width = 89;
+            this.colAdresse.FieldName = "Adresse";
+            this.colAdresse.Name = "colAdresse";
+            this.colAdresse.Visible = true;
+            this.colAdresse.VisibleIndex = 7;
             // 
-            // gridColumn9
+            // colAdresse_ar
             // 
-            this.gridColumn9.FieldName = "Adresse_ar";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Width = 47;
+            this.colAdresse_ar.FieldName = "Adresse_ar";
+            this.colAdresse_ar.Name = "colAdresse_ar";
             // 
-            // gridColumn10
+            // colEmployeur
             // 
-            this.gridColumn10.FieldName = "Code_postal";
-            this.gridColumn10.Name = "gridColumn10";
+            this.colEmployeur.FieldName = "Employeur.Nom_Emp";
+            this.colEmployeur.Name = "colEmployeur";
+            this.colEmployeur.Visible = true;
+            this.colEmployeur.VisibleIndex = 11;
             // 
-            // gridColumn11
+            // colLieu_Naissance
             // 
-            this.gridColumn11.FieldName = "Sexe";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Width = 47;
+            this.colLieu_Naissance.FieldName = "Lieu_Naissance";
+            this.colLieu_Naissance.Name = "colLieu_Naissance";
             // 
-            // gridColumn12
+            // colHandicape
             // 
-            this.gridColumn12.FieldName = "Etranger";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Width = 20;
+            this.colHandicape.FieldName = "Handicape";
+            this.colHandicape.Name = "colHandicape";
             // 
-            // gridColumn13
+            // colEtranger
             // 
-            this.gridColumn13.FieldName = "Nationalité_STG";
-            this.gridColumn13.Name = "gridColumn13";
-            this.gridColumn13.Width = 25;
+            this.colEtranger.FieldName = "Etranger";
+            this.colEtranger.Name = "colEtranger";
             // 
-            // gridColumn14
+            // colMaitre_Apprentissage
             // 
-            this.gridColumn14.FieldName = "Handicape";
-            this.gridColumn14.Name = "gridColumn14";
+            this.colMaitre_Apprentissage.FieldName = "Maitre_Apprentissage.Nom_Maitre_Apprentissage";
+            this.colMaitre_Apprentissage.Name = "colMaitre_Apprentissage";
+            this.colMaitre_Apprentissage.Visible = true;
+            this.colMaitre_Apprentissage.VisibleIndex = 12;
             // 
-            // gridColumn15
+            // colNationalité_STG
             // 
-            this.gridColumn15.FieldName = "Observation_handicape";
-            this.gridColumn15.Name = "gridColumn15";
-            this.gridColumn15.Width = 137;
+            this.colNationalité_STG.FieldName = "Nationalité_STG";
+            this.colNationalité_STG.Name = "colNationalité_STG";
             // 
-            // gridColumn16
+            // colNivo_SCO
             // 
-            this.gridColumn16.FieldName = "Telephone";
-            this.gridColumn16.Name = "gridColumn16";
-            this.gridColumn16.Width = 20;
+            this.colNivo_SCO.FieldName = "Nivo_SCO";
+            this.colNivo_SCO.Name = "colNivo_SCO";
             // 
-            // gridColumn17
+            // colNom_ar
             // 
-            this.gridColumn17.FieldName = "E_Maile";
-            this.gridColumn17.Name = "gridColumn17";
+            this.colNom_ar.FieldName = "Nom_ar";
+            this.colNom_ar.Name = "colNom_ar";
             // 
-            // gridColumn18
+            // colNom_Mère_STG
             // 
-            this.gridColumn18.FieldName = "Nivo_SCO";
-            this.gridColumn18.Name = "gridColumn18";
-            this.gridColumn18.Width = 117;
+            this.colNom_Mère_STG.FieldName = "Nom_Mère_STG";
+            this.colNom_Mère_STG.Name = "colNom_Mère_STG";
             // 
-            // gridColumn19
+            // colNom_Mère_STG_ar
             // 
-            this.gridColumn19.FieldName = "Nivo_SCO_ar";
-            this.gridColumn19.Name = "gridColumn19";
-            this.gridColumn19.Width = 87;
+            this.colNom_Mère_STG_ar.FieldName = "Nom_Mère_STG_ar";
+            this.colNom_Mère_STG_ar.Name = "colNom_Mère_STG_ar";
             // 
-            // gridColumn20
+            // colNum_Diplome_STG
             // 
-            this.gridColumn20.FieldName = "Prenom_Père_STG";
-            this.gridColumn20.Name = "gridColumn20";
-            this.gridColumn20.Width = 25;
+            this.colNum_Diplome_STG.FieldName = "Num_Diplome_STG";
+            this.colNum_Diplome_STG.Name = "colNum_Diplome_STG";
             // 
-            // gridColumn21
+            // colNum_Validation_Contrat_STG
             // 
-            this.gridColumn21.FieldName = "Prenom_Père_STG_ar";
-            this.gridColumn21.Name = "gridColumn21";
-            this.gridColumn21.Width = 28;
+            this.colNum_Validation_Contrat_STG.FieldName = "Num_Validation_Contrat_STG";
+            this.colNum_Validation_Contrat_STG.Name = "colNum_Validation_Contrat_STG";
             // 
-            // gridColumn22
+            // colObservation_handicape
             // 
-            this.gridColumn22.FieldName = "Nom_Mère_STG";
-            this.gridColumn22.Name = "gridColumn22";
-            this.gridColumn22.Width = 21;
+            this.colObservation_handicape.FieldName = "Observation_handicape";
+            this.colObservation_handicape.Name = "colObservation_handicape";
             // 
-            // gridColumn23
+            // colphoto
             // 
-            this.gridColumn23.FieldName = "Nom_Mère_STG_ar";
-            this.gridColumn23.Name = "gridColumn23";
-            this.gridColumn23.Width = 25;
+            this.colphoto.FieldName = "photo";
+            this.colphoto.Name = "colphoto";
+            this.colphoto.Visible = true;
+            this.colphoto.VisibleIndex = 13;
             // 
-            // gridColumn24
+            // colPrenom_ar
             // 
-            this.gridColumn24.FieldName = "Prenom_Mère_STG";
-            this.gridColumn24.Name = "gridColumn24";
-            this.gridColumn24.Width = 25;
+            this.colPrenom_ar.FieldName = "Prenom_ar";
+            this.colPrenom_ar.Name = "colPrenom_ar";
             // 
-            // gridColumn25
+            // colPrenom_Mère_STG
             // 
-            this.gridColumn25.FieldName = "Prenom_Mère_STG_ar";
-            this.gridColumn25.Name = "gridColumn25";
-            this.gridColumn25.Width = 28;
+            this.colPrenom_Mère_STG.FieldName = "Prenom_Mère_STG";
+            this.colPrenom_Mère_STG.Name = "colPrenom_Mère_STG";
             // 
-            // gridColumn26
+            // colPrenom_Mère_STG_ar
             // 
-            this.gridColumn26.FieldName = "Nbr_Frère_STG";
-            this.gridColumn26.Name = "gridColumn26";
-            this.gridColumn26.Width = 21;
+            this.colPrenom_Mère_STG_ar.FieldName = "Prenom_Mère_STG_ar";
+            this.colPrenom_Mère_STG_ar.Name = "colPrenom_Mère_STG_ar";
             // 
-            // gridColumn27
+            // colPrenom_Père_STG
             // 
-            this.gridColumn27.FieldName = "Situation_Familiale_STG";
-            this.gridColumn27.Name = "gridColumn27";
-            this.gridColumn27.Width = 30;
+            this.colPrenom_Père_STG.FieldName = "Prenom_Père_STG";
+            this.colPrenom_Père_STG.Name = "colPrenom_Père_STG";
             // 
-            // gridColumn28
+            // colPrenom_Père_STG_ar
             // 
-            this.gridColumn28.FieldName = "Situation_Familiale_Parents_STG";
-            this.gridColumn28.Name = "gridColumn28";
-            this.gridColumn28.Width = 39;
+            this.colPrenom_Père_STG_ar.FieldName = "Prenom_Père_STG_ar";
+            this.colPrenom_Père_STG_ar.Name = "colPrenom_Père_STG_ar";
             // 
-            // gridColumn29
+            // colProfession_Mère_STG
             // 
-            this.gridColumn29.FieldName = "Profession_Père_STG";
-            this.gridColumn29.Name = "gridColumn29";
-            this.gridColumn29.Width = 27;
+            this.colProfession_Mère_STG.FieldName = "Profession_Mère_STG";
+            this.colProfession_Mère_STG.Name = "colProfession_Mère_STG";
             // 
-            // gridColumn30
+            // colProfession_Père_STG
             // 
-            this.gridColumn30.FieldName = "Profession_Mère_STG";
-            this.gridColumn30.Name = "gridColumn30";
-            this.gridColumn30.Width = 28;
+            this.colProfession_Père_STG.FieldName = "Profession_Père_STG";
+            this.colProfession_Père_STG.Name = "colProfession_Père_STG";
             // 
-            // gridColumn31
+            // colPromo
             // 
-            this.gridColumn31.FieldName = "Num_Diplome_STG";
-            this.gridColumn31.Name = "gridColumn31";
-            this.gridColumn31.Width = 25;
+            this.colPromo.FieldName = "Promo.Code_Promo";
+            this.colPromo.Name = "colPromo";
+            this.colPromo.Visible = true;
+            this.colPromo.VisibleIndex = 3;
             // 
-            // gridColumn32
+            // colSection
             // 
-            this.gridColumn32.FieldName = "ID_Emp";
-            this.gridColumn32.Name = "gridColumn32";
+            this.colSection.FieldName = "Section";
+            this.colSection.Name = "colSection";
+            this.colSection.Visible = true;
+            this.colSection.VisibleIndex = 4;
             // 
-            // gridColumn33
+            // colSexe
             // 
-            this.gridColumn33.FieldName = "Num_Validation_Contrat_STG";
-            this.gridColumn33.Name = "gridColumn33";
-            this.gridColumn33.Width = 36;
+            this.colSexe.FieldName = "Sexe";
+            this.colSexe.Name = "colSexe";
             // 
-            // gridColumn34
+            // colSituation_Familiale_Parents_STG
             // 
-            this.gridColumn34.FieldName = "Date_Validation_Contrat_STG";
-            this.gridColumn34.Name = "gridColumn34";
-            this.gridColumn34.Width = 37;
+            this.colSituation_Familiale_Parents_STG.FieldName = "Situation_Familiale_Parents_STG";
+            this.colSituation_Familiale_Parents_STG.Name = "colSituation_Familiale_Parents_STG";
             // 
-            // gridColumn35
+            // colSituation_Familiale_Parents_STG1
             // 
-            this.gridColumn35.FieldName = "Date_Resiliation_Contrat_STG";
-            this.gridColumn35.Name = "gridColumn35";
-            this.gridColumn35.Width = 234;
+            this.colSituation_Familiale_Parents_STG1.FieldName = "Situation_Familiale_Parents_STG";
+            this.colSituation_Familiale_Parents_STG1.Name = "colSituation_Familiale_Parents_STG1";
             // 
-            // gridColumn36
+            // colSituation_Familiale_STG
             // 
-            this.gridColumn36.FieldName = "ID_Maitre_Apprentissage";
-            this.gridColumn36.Name = "gridColumn36";
+            this.colSituation_Familiale_STG.FieldName = "Situation_Familiale_STG";
+            this.colSituation_Familiale_STG.Name = "colSituation_Familiale_STG";
             // 
-            // gridColumn37
+            // colAvenant_contrat_prorogation
             // 
-            this.gridColumn37.FieldName = "ID_ETAB";
-            this.gridColumn37.Name = "gridColumn37";
+            this.colAvenant_contrat_prorogation.FieldName = "Avenant_contrat_prorogation";
+            this.colAvenant_contrat_prorogation.Name = "colAvenant_contrat_prorogation";
             // 
-            // gridColumn38
+            // colCode_postal
             // 
-            this.gridColumn38.FieldName = "Section";
-            this.gridColumn38.Name = "gridColumn38";
+            this.colCode_postal.FieldName = "Code_postal";
+            this.colCode_postal.Name = "colCode_postal";
+            this.colCode_postal.Visible = true;
+            this.colCode_postal.VisibleIndex = 9;
             // 
-            // gridColumn39
+            // colContract_avenant_changement
             // 
-            this.gridColumn39.FieldName = "id_tuteur";
-            this.gridColumn39.Name = "gridColumn39";
+            this.colContract_avenant_changement.FieldName = "Contract_avenant_changement";
+            this.colContract_avenant_changement.Name = "colContract_avenant_changement";
             // 
-            // gridColumn40
+            // colDate_Resiliation_Contrat_STG
             // 
-            this.gridColumn40.FieldName = "ID_Promo";
-            this.gridColumn40.Name = "gridColumn40";
+            this.colDate_Resiliation_Contrat_STG.FieldName = "Date_Resiliation_Contrat_STG";
+            this.colDate_Resiliation_Contrat_STG.Name = "colDate_Resiliation_Contrat_STG";
             // 
-            // gridColumn41
+            // colDate_Validation_Contrat_STG
             // 
-            this.gridColumn41.FieldName = "photo";
-            this.gridColumn41.Name = "gridColumn41";
-            this.gridColumn41.Width = 32;
-            // 
-            // gridColumn42
-            // 
-            this.gridColumn42.FieldName = "Absences";
-            this.gridColumn42.Name = "gridColumn42";
-            // 
-            // gridColumn43
-            // 
-            this.gridColumn43.FieldName = "Avenant_contrat_prorogation";
-            this.gridColumn43.Name = "gridColumn43";
-            // 
-            // gridColumn44
-            // 
-            this.gridColumn44.FieldName = "Code_Postal1.post_Adresse_ar";
-            this.gridColumn44.Name = "gridColumn44";
-            this.gridColumn44.Visible = true;
-            this.gridColumn44.VisibleIndex = 7;
-            this.gridColumn44.Width = 68;
-            // 
-            // gridColumn45
-            // 
-            this.gridColumn45.FieldName = "Commune.Commune_name";
-            this.gridColumn45.Name = "gridColumn45";
-            this.gridColumn45.Visible = true;
-            this.gridColumn45.VisibleIndex = 8;
-            this.gridColumn45.Width = 66;
-            // 
-            // gridColumn46
-            // 
-            this.gridColumn46.FieldName = "Contract_avenant_changement";
-            this.gridColumn46.Name = "gridColumn46";
-            // 
-            // gridColumn47
-            // 
-            this.gridColumn47.FieldName = "Decisions";
-            this.gridColumn47.Name = "gridColumn47";
-            // 
-            // gridColumn48
-            // 
-            this.gridColumn48.FieldName = "Employeur.Type_Emp";
-            this.gridColumn48.Name = "gridColumn48";
-            this.gridColumn48.Visible = true;
-            this.gridColumn48.VisibleIndex = 9;
-            this.gridColumn48.Width = 20;
-            // 
-            // gridColumn49
-            // 
-            this.gridColumn49.FieldName = "Etablissement.Nom_ETAB";
-            this.gridColumn49.Name = "gridColumn49";
-            this.gridColumn49.Visible = true;
-            this.gridColumn49.VisibleIndex = 10;
-            this.gridColumn49.Width = 49;
-            // 
-            // gridColumn50
-            // 
-            this.gridColumn50.FieldName = "Evaluations";
-            this.gridColumn50.Name = "gridColumn50";
-            // 
-            // gridColumn51
-            // 
-            this.gridColumn51.FieldName = "Maitre_Apprentissage.Nom_Maitre_Apprentissage";
-            this.gridColumn51.Name = "gridColumn51";
-            this.gridColumn51.Width = 48;
-            // 
-            // gridColumn52
-            // 
-            this.gridColumn52.FieldName = "Promo.Code_Promo";
-            this.gridColumn52.Name = "gridColumn52";
-            this.gridColumn52.Width = 32;
-            // 
-            // gridColumn53
-            // 
-            this.gridColumn53.FieldName = "Section1.Code_Section";
-            this.gridColumn53.Name = "gridColumn53";
-            this.gridColumn53.Width = 32;
-            // 
-            // gridColumn54
-            // 
-            this.gridColumn54.FieldName = "tuteur.nom";
-            this.gridColumn54.Name = "gridColumn54";
-            this.gridColumn54.Visible = true;
-            this.gridColumn54.VisibleIndex = 11;
-            this.gridColumn54.Width = 117;
-            // 
-            // gridColumn55
-            // 
-            this.gridColumn55.FieldName = "Suiver_stagiaire";
-            this.gridColumn55.Name = "gridColumn55";
-            // 
-            // gridColumn56
-            // 
-            this.gridColumn56.FieldName = "Transferers";
-            this.gridColumn56.Name = "gridColumn56";
+            this.colDate_Validation_Contrat_STG.FieldName = "Date_Validation_Contrat_STG";
+            this.colDate_Validation_Contrat_STG.Name = "colDate_Validation_Contrat_STG";
             // 
             // ribbonControl
             // 
@@ -687,65 +549,50 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn25;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn26;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn27;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn28;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn29;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn30;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn31;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn32;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn33;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn34;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn35;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn36;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn37;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn38;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn39;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn40;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn41;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn42;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn43;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn44;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn45;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn46;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn47;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn48;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn49;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn50;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn51;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn52;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn53;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn54;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn55;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn56;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_de_Naissance;
+        private DevExpress.XtraGrid.Columns.GridColumn colTelephone;
+        private DevExpress.XtraGrid.Columns.GridColumn colE_Maile;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraGrid.Columns.GridColumn colAdresse;
+        private DevExpress.XtraGrid.Columns.GridColumn colAdresse_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeur;
+        private DevExpress.XtraGrid.Columns.GridColumn colLieu_Naissance;
+        private DevExpress.XtraGrid.Columns.GridColumn colHandicape;
+        private DevExpress.XtraGrid.Columns.GridColumn colEtranger;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colNationalité_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colNivo_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_Mère_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_Mère_STG_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_Diplome_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_Validation_Contrat_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colObservation_handicape;
+        private DevExpress.XtraGrid.Columns.GridColumn colphoto;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Mère_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Mère_STG_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Père_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Père_STG_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colProfession_Mère_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colProfession_Père_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colPromo;
+        private DevExpress.XtraGrid.Columns.GridColumn colSection;
+        private DevExpress.XtraGrid.Columns.GridColumn colSexe;
+        private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_Parents_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_Parents_STG1;
+        private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colAvenant_contrat_prorogation;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_postal;
+        private DevExpress.XtraGrid.Columns.GridColumn colContract_avenant_changement;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_Resiliation_Contrat_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_Validation_Contrat_STG;
     }
 }

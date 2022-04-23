@@ -26,13 +26,6 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.annee_scolaireCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -46,6 +39,11 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.colDATE_D_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_F_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSession_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.annee_scolaireCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -75,62 +73,15 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.colID_Année_SCO,
+            this.colDesignation,
+            this.colSession_Année_SCO,
+            this.colDATE_D_Année_SCO,
+            this.colDate_F_Année_SCO});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "ID_Année_SCO";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.FieldName = "Designation";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.FieldName = "DATE_D_Année_SCO";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.FieldName = "Date_F_Année_SCO";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.FieldName = "Session_Année_SCO";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.FieldName = "Absences";
-            this.gridColumn6.Name = "gridColumn6";
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Evaluations";
-            this.gridColumn7.Name = "gridColumn7";
             // 
             // ribbonControl
             // 
@@ -253,6 +204,39 @@
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
+            // colDATE_D_Année_SCO
+            // 
+            this.colDATE_D_Année_SCO.FieldName = "DATE_D_Année_SCO";
+            this.colDATE_D_Année_SCO.Name = "colDATE_D_Année_SCO";
+            this.colDATE_D_Année_SCO.Visible = true;
+            this.colDATE_D_Année_SCO.VisibleIndex = 2;
+            // 
+            // colDate_F_Année_SCO
+            // 
+            this.colDate_F_Année_SCO.FieldName = "Date_F_Année_SCO";
+            this.colDate_F_Année_SCO.Name = "colDate_F_Année_SCO";
+            this.colDate_F_Année_SCO.Visible = true;
+            this.colDate_F_Année_SCO.VisibleIndex = 3;
+            // 
+            // colDesignation
+            // 
+            this.colDesignation.FieldName = "Designation";
+            this.colDesignation.Name = "colDesignation";
+            this.colDesignation.Visible = true;
+            this.colDesignation.VisibleIndex = 0;
+            // 
+            // colID_Année_SCO
+            // 
+            this.colID_Année_SCO.FieldName = "ID_Année_SCO";
+            this.colID_Année_SCO.Name = "colID_Année_SCO";
+            // 
+            // colSession_Année_SCO
+            // 
+            this.colSession_Année_SCO.FieldName = "Session_Année_SCO";
+            this.colSession_Année_SCO.Name = "colSession_Année_SCO";
+            this.colSession_Année_SCO.Visible = true;
+            this.colSession_Année_SCO.VisibleIndex = 1;
+            // 
             // annee_scolaireCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,16 +272,14 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Année_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation;
+        private DevExpress.XtraGrid.Columns.GridColumn colSession_Année_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_D_Année_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_F_Année_SCO;
     }
 }

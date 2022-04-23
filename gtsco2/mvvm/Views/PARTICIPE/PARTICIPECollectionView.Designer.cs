@@ -26,12 +26,14 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.pARTICIPECollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colid_Enseignant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEnseignant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQualite = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQualite_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProce_verbal_delibation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_PV_Délibiration = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProce_verbal_delibation1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_PV_Délibiration1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -74,54 +76,73 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6});
+            this.colid_Enseignant,
+            this.colEnseignant,
+            this.colQualite,
+            this.colQualite_ar,
+            this.colProce_verbal_delibation,
+            this.colID_PV_Délibiration,
+            this.colProce_verbal_delibation1,
+            this.colID_PV_Délibiration1});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colid_Enseignant
             // 
-            this.gridColumn1.FieldName = "id_Enseignant";
-            this.gridColumn1.Name = "gridColumn1";
+            this.colid_Enseignant.Caption = "Qualité enseignant ";
+            this.colid_Enseignant.FieldName = "id_Enseignant";
+            this.colid_Enseignant.Name = "colid_Enseignant";
             // 
-            // gridColumn2
+            // colEnseignant
             // 
-            this.gridColumn2.FieldName = "ID_PV_Délibiration";
-            this.gridColumn2.Name = "gridColumn2";
+            this.colEnseignant.Caption = "Nom enseignant ";
+            this.colEnseignant.FieldName = "Enseignant.Nom";
+            this.colEnseignant.FieldNameSortGroup = "Nom enseignant";
+            this.colEnseignant.Name = "colEnseignant";
+            this.colEnseignant.Visible = true;
+            this.colEnseignant.VisibleIndex = 0;
             // 
-            // gridColumn3
+            // colQualite
             // 
-            this.gridColumn3.FieldName = "Qualite";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 0;
+            this.colQualite.Caption = "Qualité enseignant ";
+            this.colQualite.FieldName = "Qualite";
+            this.colQualite.Name = "colQualite";
+            this.colQualite.Visible = true;
+            this.colQualite.VisibleIndex = 1;
             // 
-            // gridColumn4
+            // colQualite_ar
             // 
-            this.gridColumn4.FieldName = "Qualite_ar";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 1;
+            this.colQualite_ar.Caption = "Qualité enseignant (ar)";
+            this.colQualite_ar.FieldName = "Qualite_ar";
+            this.colQualite_ar.Name = "colQualite_ar";
+            this.colQualite_ar.Visible = true;
+            this.colQualite_ar.VisibleIndex = 2;
             // 
-            // gridColumn5
+            // colProce_verbal_delibation
             // 
-            this.gridColumn5.FieldName = "Enseignant.Nom";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 2;
+            this.colProce_verbal_delibation.FieldName = "Proce_verbal_delibation.Num_PV_Délibiraiton";
+            this.colProce_verbal_delibation.Name = "colProce_verbal_delibation";
+            this.colProce_verbal_delibation.Visible = true;
+            this.colProce_verbal_delibation.VisibleIndex = 3;
             // 
-            // gridColumn6
+            // colID_PV_Délibiration
             // 
-            this.gridColumn6.FieldName = "Proce_verbal_delibation.ID_PV_Délibiration";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 3;
+            this.colID_PV_Délibiration.FieldName = "Proce_verbal_delibation.Num_PV_Délibiraiton";
+            this.colID_PV_Délibiration.Name = "colID_PV_Délibiration";
+            // 
+            // colProce_verbal_delibation1
+            // 
+            this.colProce_verbal_delibation1.FieldName = "Proce_verbal_delibation.Date_PV_Délibiration";
+            this.colProce_verbal_delibation1.Name = "colProce_verbal_delibation1";
+            this.colProce_verbal_delibation1.Visible = true;
+            this.colProce_verbal_delibation1.VisibleIndex = 4;
+            // 
+            // colID_PV_Délibiration1
+            // 
+            this.colID_PV_Délibiration1.FieldName = "ID_PV_Délibiration";
+            this.colID_PV_Délibiration1.Name = "colID_PV_Délibiration1";
             // 
             // ribbonControl
             // 
@@ -279,15 +300,17 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colid_Enseignant;
+        private DevExpress.XtraGrid.Columns.GridColumn colEnseignant;
+        private DevExpress.XtraGrid.Columns.GridColumn colQualite;
+        private DevExpress.XtraGrid.Columns.GridColumn colQualite_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colProce_verbal_delibation;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_PV_Délibiration;
+        private DevExpress.XtraGrid.Columns.GridColumn colProce_verbal_delibation1;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_PV_Délibiration1;
     }
 }

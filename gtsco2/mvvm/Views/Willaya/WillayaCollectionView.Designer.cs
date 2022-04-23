@@ -26,10 +26,6 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.willayaCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -43,6 +39,9 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.colWilaya_Code = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWilaya_name__ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWilaya_name__fr_ = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.willayaCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -72,41 +71,14 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4});
+            this.colWilaya_Code,
+            this.colWilaya_name__fr_,
+            this.colWilaya_name__ar});
             this.gridView.CustomizationFormBounds = new System.Drawing.Rectangle(998, 320, 252, 266);
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "Wilaya_Code";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.FieldName = "Wilaya_name__ar";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.FieldName = "Wilaya_name__fr_";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.FieldName = "Communes";
-            this.gridColumn4.Name = "gridColumn4";
             // 
             // ribbonControl
             // 
@@ -230,6 +202,30 @@
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
+            // colWilaya_Code
+            // 
+            this.colWilaya_Code.Caption = "Code Wilayas";
+            this.colWilaya_Code.FieldName = "Wilaya_name__fr_";
+            this.colWilaya_Code.Name = "colWilaya_Code";
+            this.colWilaya_Code.Visible = true;
+            this.colWilaya_Code.VisibleIndex = 0;
+            // 
+            // colWilaya_name__ar
+            // 
+            this.colWilaya_name__ar.Caption = "Désignation Wilayas (ar)";
+            this.colWilaya_name__ar.FieldName = "Wilaya_name__ar";
+            this.colWilaya_name__ar.Name = "colWilaya_name__ar";
+            this.colWilaya_name__ar.Visible = true;
+            this.colWilaya_name__ar.VisibleIndex = 2;
+            // 
+            // colWilaya_name__fr_
+            // 
+            this.colWilaya_name__fr_.Caption = "Désignation Wilayas";
+            this.colWilaya_name__fr_.FieldName = "Wilaya_name__fr_";
+            this.colWilaya_name__fr_.Name = "colWilaya_name__fr_";
+            this.colWilaya_name__fr_.Visible = true;
+            this.colWilaya_name__fr_.VisibleIndex = 1;
+            // 
             // WillayaCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,7 +237,7 @@
             this.Name = "WillayaCollectionView";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Willaya";
+            this.Text = "Wilayas";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.willayaCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
@@ -267,13 +263,12 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colWilaya_Code;
+        private DevExpress.XtraGrid.Columns.GridColumn colWilaya_name__fr_;
+        private DevExpress.XtraGrid.Columns.GridColumn colWilaya_name__ar;
     }
 }

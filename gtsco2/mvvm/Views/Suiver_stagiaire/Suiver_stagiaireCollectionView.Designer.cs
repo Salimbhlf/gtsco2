@@ -26,14 +26,13 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.suiver_stagiaireCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEnseignant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnum_stg = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNBR__VISITE_FORMATEUR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOBSERV_FORMAT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colsemestre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -76,68 +75,68 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8});
+            this.colEnseignant,
+            this.colnum_stg,
+            this.colStagiair,
+            this.colStagiair1,
+            this.colNBR__VISITE_FORMATEUR,
+            this.colOBSERV_FORMAT,
+            this.colsemestre});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colEnseignant
             // 
-            this.gridColumn1.FieldName = "num_stg";
-            this.gridColumn1.Name = "gridColumn1";
+            this.colEnseignant.FieldName = "Enseignant1.Nom";
+            this.colEnseignant.Name = "colEnseignant";
+            this.colEnseignant.Visible = true;
+            this.colEnseignant.VisibleIndex = 0;
             // 
-            // gridColumn2
+            // colnum_stg
             // 
-            this.gridColumn2.FieldName = "Enseignant";
-            this.gridColumn2.Name = "gridColumn2";
+            this.colnum_stg.FieldName = "num_stg";
+            this.colnum_stg.Name = "colnum_stg";
+            this.colnum_stg.Visible = true;
+            this.colnum_stg.VisibleIndex = 2;
             // 
-            // gridColumn3
+            // colStagiair
             // 
-            this.gridColumn3.FieldName = "semestre";
-            this.gridColumn3.Name = "gridColumn3";
+            this.colStagiair.Caption = "Nom stagiaire";
+            this.colStagiair.FieldName = "Stagiair.Nom";
+            this.colStagiair.Name = "colStagiair";
+            this.colStagiair.Visible = true;
+            this.colStagiair.VisibleIndex = 3;
             // 
-            // gridColumn4
+            // colStagiair1
             // 
-            this.gridColumn4.FieldName = "NBR__VISITE_FORMATEUR";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 0;
+            this.colStagiair1.Caption = "Prénom stagiaire ";
+            this.colStagiair1.FieldName = "Stagiair.Prenom";
+            this.colStagiair1.Name = "colStagiair1";
+            this.colStagiair1.Visible = true;
+            this.colStagiair1.VisibleIndex = 4;
             // 
-            // gridColumn5
+            // colNBR__VISITE_FORMATEUR
             // 
-            this.gridColumn5.FieldName = "OBSERV_FORMAT";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 1;
+            this.colNBR__VISITE_FORMATEUR.FieldName = "NBR__VISITE_FORMATEUR";
+            this.colNBR__VISITE_FORMATEUR.Name = "colNBR__VISITE_FORMATEUR";
+            this.colNBR__VISITE_FORMATEUR.Visible = true;
+            this.colNBR__VISITE_FORMATEUR.VisibleIndex = 1;
             // 
-            // gridColumn6
+            // colOBSERV_FORMAT
             // 
-            this.gridColumn6.FieldName = "Enseignant1.Nom";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 2;
+            this.colOBSERV_FORMAT.FieldName = "OBSERV_FORMAT";
+            this.colOBSERV_FORMAT.Name = "colOBSERV_FORMAT";
+            this.colOBSERV_FORMAT.Visible = true;
+            this.colOBSERV_FORMAT.VisibleIndex = 6;
             // 
-            // gridColumn7
+            // colsemestre
             // 
-            this.gridColumn7.FieldName = "Semestre1.Designation_Semestre";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 3;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.FieldName = "Stagiair.Num_STG";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 4;
+            this.colsemestre.FieldName = "Semestre1.Designation_Semestre";
+            this.colsemestre.Name = "colsemestre";
+            this.colsemestre.Visible = true;
+            this.colsemestre.VisibleIndex = 5;
             // 
             // ribbonControl
             // 
@@ -269,7 +268,7 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "Suiver_stagiaireCollectionView";
-            this.Text = "Soiver";
+            this.Text = "Suivie du stagiaire ";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suiver_stagiaireCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
@@ -295,17 +294,16 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colEnseignant;
+        private DevExpress.XtraGrid.Columns.GridColumn colnum_stg;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair1;
+        private DevExpress.XtraGrid.Columns.GridColumn colNBR__VISITE_FORMATEUR;
+        private DevExpress.XtraGrid.Columns.GridColumn colOBSERV_FORMAT;
+        private DevExpress.XtraGrid.Columns.GridColumn colsemestre;
     }
 }

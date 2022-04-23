@@ -26,16 +26,13 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.communeCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune_id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune_name_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDaira_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDaira_name_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Willaya = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWillaya = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -78,82 +75,68 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10});
+            this.colCommune_id,
+            this.colCommune_name,
+            this.colCommune_name_ar,
+            this.colDaira_name,
+            this.colDaira_name_ar,
+            this.colCode_Willaya,
+            this.colWillaya});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colCommune_id
             // 
-            this.gridColumn1.FieldName = "Commune_id";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colCommune_id.FieldName = "Commune_id";
+            this.colCommune_id.Name = "colCommune_id";
             // 
-            // gridColumn2
+            // colCommune_name
             // 
-            this.gridColumn2.FieldName = "Commune_name";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.colCommune_name.Caption = "Désignation communes";
+            this.colCommune_name.FieldName = "Commune_name";
+            this.colCommune_name.Name = "colCommune_name";
+            this.colCommune_name.Visible = true;
+            this.colCommune_name.VisibleIndex = 0;
             // 
-            // gridColumn3
+            // colCommune_name_ar
             // 
-            this.gridColumn3.FieldName = "Commune_name_ar";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.colCommune_name_ar.Caption = "Désignation communes (ar)";
+            this.colCommune_name_ar.FieldName = "Commune_name_ar";
+            this.colCommune_name_ar.Name = "colCommune_name_ar";
+            this.colCommune_name_ar.Visible = true;
+            this.colCommune_name_ar.VisibleIndex = 1;
             // 
-            // gridColumn4
+            // colDaira_name
             // 
-            this.gridColumn4.FieldName = "Daira_name";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.colDaira_name.Caption = "Désignation daira";
+            this.colDaira_name.FieldName = "Daira_name";
+            this.colDaira_name.Name = "colDaira_name";
+            this.colDaira_name.Visible = true;
+            this.colDaira_name.VisibleIndex = 2;
             // 
-            // gridColumn5
+            // colDaira_name_ar
             // 
-            this.gridColumn5.FieldName = "Daira_name_ar";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.colDaira_name_ar.Caption = "Désignation daira (ar)";
+            this.colDaira_name_ar.FieldName = "Daira_name_ar";
+            this.colDaira_name_ar.Name = "colDaira_name_ar";
             // 
-            // gridColumn6
+            // colCode_Willaya
             // 
-            this.gridColumn6.FieldName = "Code_Willaya";
-            this.gridColumn6.Name = "gridColumn6";
+            this.colCode_Willaya.Caption = "Code wilayas";
+            this.colCode_Willaya.FieldName = "Code_Willaya";
+            this.colCode_Willaya.Name = "colCode_Willaya";
+            this.colCode_Willaya.Visible = true;
+            this.colCode_Willaya.VisibleIndex = 3;
             // 
-            // gridColumn7
+            // colWillaya
             // 
-            this.gridColumn7.FieldName = "Code_Postal";
-            this.gridColumn7.Name = "gridColumn7";
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.FieldName = "Willaya.Wilaya_name__ar";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 5;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.FieldName = "Maitre_Apprentissage";
-            this.gridColumn9.Name = "gridColumn9";
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.FieldName = "Stagiairs";
-            this.gridColumn10.Name = "gridColumn10";
+            this.colWillaya.Caption = "Désignation wilayas";
+            this.colWillaya.FieldName = "Willaya.Wilaya_name__fr_";
+            this.colWillaya.Name = "colWillaya";
+            this.colWillaya.Visible = true;
+            this.colWillaya.VisibleIndex = 4;
             // 
             // ribbonControl
             // 
@@ -286,7 +269,7 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "CommuneCollectionView";
-            this.Text = "Commune";
+            this.Text = "Communes";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.communeCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
@@ -312,19 +295,16 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_id;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_name_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colDaira_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colDaira_name_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Willaya;
+        private DevExpress.XtraGrid.Columns.GridColumn colWillaya;
     }
 }

@@ -232,7 +232,7 @@
             // id_EnseignantTextEdit
             // 
             this.id_EnseignantTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "id_Enseignant", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.id_EnseignantTextEdit.Location = new System.Drawing.Point(181, 12);
+            this.id_EnseignantTextEdit.Location = new System.Drawing.Point(144, 12);
             this.id_EnseignantTextEdit.MenuManager = this.mainRibbonControl;
             this.id_EnseignantTextEdit.Name = "id_EnseignantTextEdit";
             this.id_EnseignantTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -242,7 +242,7 @@
             this.id_EnseignantTextEdit.Properties.MaskSettings.Set("mask", "N0");
             this.id_EnseignantTextEdit.Properties.ReadOnly = true;
             this.id_EnseignantTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.id_EnseignantTextEdit.Size = new System.Drawing.Size(803, 20);
+            this.id_EnseignantTextEdit.Size = new System.Drawing.Size(840, 20);
             this.id_EnseignantTextEdit.StyleController = this.dataLayoutControl1;
             this.id_EnseignantTextEdit.TabIndex = 4;
             // 
@@ -372,10 +372,10 @@
             // NomTextEdit
             // 
             this.NomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Nom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.NomTextEdit.Location = new System.Drawing.Point(181, 36);
+            this.NomTextEdit.Location = new System.Drawing.Point(144, 36);
             this.NomTextEdit.MenuManager = this.mainRibbonControl;
             this.NomTextEdit.Name = "NomTextEdit";
-            this.NomTextEdit.Size = new System.Drawing.Size(386, 20);
+            this.NomTextEdit.Size = new System.Drawing.Size(423, 20);
             this.NomTextEdit.StyleController = this.dataLayoutControl1;
             this.NomTextEdit.TabIndex = 5;
             // 
@@ -393,42 +393,43 @@
             // prenomTextEdit
             // 
             this.prenomTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "prenom", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.prenomTextEdit.Location = new System.Drawing.Point(571, 60);
+            this.prenomTextEdit.Location = new System.Drawing.Point(144, 60);
             this.prenomTextEdit.MenuManager = this.mainRibbonControl;
             this.prenomTextEdit.Name = "prenomTextEdit";
-            this.prenomTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.prenomTextEdit.Size = new System.Drawing.Size(331, 20);
+            this.prenomTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.prenomTextEdit.Size = new System.Drawing.Size(423, 20);
             this.prenomTextEdit.StyleController = this.dataLayoutControl1;
             this.prenomTextEdit.TabIndex = 7;
             // 
             // Prenom_arTextEdit
             // 
             this.Prenom_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Prenom_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Prenom_arTextEdit.Location = new System.Drawing.Point(181, 60);
+            this.Prenom_arTextEdit.Location = new System.Drawing.Point(571, 60);
             this.Prenom_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Prenom_arTextEdit.Name = "Prenom_arTextEdit";
-            this.Prenom_arTextEdit.Size = new System.Drawing.Size(386, 20);
+            this.Prenom_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Prenom_arTextEdit.Size = new System.Drawing.Size(331, 20);
             this.Prenom_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Prenom_arTextEdit.TabIndex = 8;
             // 
             // NiveauTextEdit
             // 
             this.NiveauTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Niveau", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.NiveauTextEdit.Location = new System.Drawing.Point(181, 108);
+            this.NiveauTextEdit.Location = new System.Drawing.Point(144, 108);
             this.NiveauTextEdit.MenuManager = this.mainRibbonControl;
             this.NiveauTextEdit.Name = "NiveauTextEdit";
             this.NiveauTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NiveauTextEdit.Size = new System.Drawing.Size(803, 20);
+            this.NiveauTextEdit.Size = new System.Drawing.Size(840, 20);
             this.NiveauTextEdit.StyleController = this.dataLayoutControl1;
             this.NiveauTextEdit.TabIndex = 9;
             // 
             // PosteTextEdit
             // 
             this.PosteTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Poste", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.PosteTextEdit.Location = new System.Drawing.Point(181, 84);
+            this.PosteTextEdit.Location = new System.Drawing.Point(144, 84);
             this.PosteTextEdit.MenuManager = this.mainRibbonControl;
             this.PosteTextEdit.Name = "PosteTextEdit";
-            this.PosteTextEdit.Size = new System.Drawing.Size(386, 20);
+            this.PosteTextEdit.Size = new System.Drawing.Size(423, 20);
             this.PosteTextEdit.StyleController = this.dataLayoutControl1;
             this.PosteTextEdit.TabIndex = 10;
             // 
@@ -446,10 +447,10 @@
             // SpecialiteTextEdit
             // 
             this.SpecialiteTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Specialite", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.SpecialiteTextEdit.Location = new System.Drawing.Point(181, 132);
+            this.SpecialiteTextEdit.Location = new System.Drawing.Point(144, 132);
             this.SpecialiteTextEdit.MenuManager = this.mainRibbonControl;
             this.SpecialiteTextEdit.Name = "SpecialiteTextEdit";
-            this.SpecialiteTextEdit.Size = new System.Drawing.Size(803, 20);
+            this.SpecialiteTextEdit.Size = new System.Drawing.Size(840, 20);
             this.SpecialiteTextEdit.StyleController = this.dataLayoutControl1;
             this.SpecialiteTextEdit.TabIndex = 12;
             // 
@@ -457,7 +458,7 @@
             // 
             this.Mode_formation1LookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.enseignantViewBindingSource, "Mode_Formation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Mode_formation1LookUpEdit.EditValue = "";
-            this.Mode_formation1LookUpEdit.Location = new System.Drawing.Point(181, 156);
+            this.Mode_formation1LookUpEdit.Location = new System.Drawing.Point(144, 156);
             this.Mode_formation1LookUpEdit.MenuManager = this.mainRibbonControl;
             this.Mode_formation1LookUpEdit.Name = "Mode_formation1LookUpEdit";
             this.Mode_formation1LookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -469,7 +470,7 @@
             this.Mode_formation1LookUpEdit.Properties.PopupView = this.Mode_formation1LookUpEditView;
             this.Mode_formation1LookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.Mode_formation1LookUpEdit.Properties.ValueMember = "ID_Mode_Formation";
-            this.Mode_formation1LookUpEdit.Size = new System.Drawing.Size(803, 20);
+            this.Mode_formation1LookUpEdit.Size = new System.Drawing.Size(840, 20);
             this.Mode_formation1LookUpEdit.StyleController = this.dataLayoutControl1;
             this.Mode_formation1LookUpEdit.TabIndex = 13;
             // 
@@ -1157,15 +1158,15 @@
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForid_Enseignant,
             this.ItemForNom,
-            this.ItemForPrenom_ar,
             this.ItemForPoste,
             this.ItemForSpecialite,
             this.ItemForMode_Formation,
             this.tabbedControlGroup1,
             this.ItemForNom_ar,
-            this.ItemForprenom,
             this.ItemForPoste_ar,
-            this.ItemForNiveau});
+            this.ItemForNiveau,
+            this.ItemForprenom,
+            this.ItemForPrenom_ar});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
             this.layoutControlGroup2.Size = new System.Drawing.Size(976, 414);
@@ -1177,7 +1178,7 @@
             this.ItemForid_Enseignant.Name = "ItemForid_Enseignant";
             this.ItemForid_Enseignant.Size = new System.Drawing.Size(976, 24);
             this.ItemForid_Enseignant.Text = "Numéro de l\'enseignant";
-            this.ItemForid_Enseignant.TextSize = new System.Drawing.Size(157, 13);
+            this.ItemForid_Enseignant.TextSize = new System.Drawing.Size(120, 13);
             // 
             // ItemForNom
             // 
@@ -1186,16 +1187,19 @@
             this.ItemForNom.Name = "ItemForNom";
             this.ItemForNom.Size = new System.Drawing.Size(559, 24);
             this.ItemForNom.Text = "Nom de l\'enseignant";
-            this.ItemForNom.TextSize = new System.Drawing.Size(157, 13);
+            this.ItemForNom.TextSize = new System.Drawing.Size(120, 13);
             // 
             // ItemForPrenom_ar
             // 
             this.ItemForPrenom_ar.Control = this.Prenom_arTextEdit;
-            this.ItemForPrenom_ar.Location = new System.Drawing.Point(0, 48);
+            this.ItemForPrenom_ar.Location = new System.Drawing.Point(559, 48);
             this.ItemForPrenom_ar.Name = "ItemForPrenom_ar";
-            this.ItemForPrenom_ar.Size = new System.Drawing.Size(559, 24);
-            this.ItemForPrenom_ar.Text = "Prenom de l\'enseignant en arabe";
-            this.ItemForPrenom_ar.TextSize = new System.Drawing.Size(157, 13);
+            this.ItemForPrenom_ar.Size = new System.Drawing.Size(417, 24);
+            this.ItemForPrenom_ar.Text = " اسم الأستاذ (ة)";
+            this.ItemForPrenom_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForPrenom_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForPrenom_ar.TextSize = new System.Drawing.Size(77, 13);
+            this.ItemForPrenom_ar.TextToControlDistance = 5;
             // 
             // ItemForPoste
             // 
@@ -1204,7 +1208,7 @@
             this.ItemForPoste.Name = "ItemForPoste";
             this.ItemForPoste.Size = new System.Drawing.Size(559, 24);
             this.ItemForPoste.Text = "Poste de l\'enseignant";
-            this.ItemForPoste.TextSize = new System.Drawing.Size(157, 13);
+            this.ItemForPoste.TextSize = new System.Drawing.Size(120, 13);
             // 
             // ItemForSpecialite
             // 
@@ -1213,7 +1217,7 @@
             this.ItemForSpecialite.Name = "ItemForSpecialite";
             this.ItemForSpecialite.Size = new System.Drawing.Size(976, 24);
             this.ItemForSpecialite.Text = "Spécialité de l\'enseignant";
-            this.ItemForSpecialite.TextSize = new System.Drawing.Size(157, 13);
+            this.ItemForSpecialite.TextSize = new System.Drawing.Size(120, 13);
             // 
             // ItemForMode_Formation
             // 
@@ -1222,7 +1226,7 @@
             this.ItemForMode_Formation.Name = "ItemForMode_Formation";
             this.ItemForMode_Formation.Size = new System.Drawing.Size(976, 24);
             this.ItemForMode_Formation.Text = "Mode de formation";
-            this.ItemForMode_Formation.TextSize = new System.Drawing.Size(157, 13);
+            this.ItemForMode_Formation.TextSize = new System.Drawing.Size(120, 13);
             // 
             // tabbedControlGroup1
             // 
@@ -1311,14 +1315,12 @@
             // ItemForprenom
             // 
             this.ItemForprenom.Control = this.prenomTextEdit;
-            this.ItemForprenom.Location = new System.Drawing.Point(559, 48);
+            this.ItemForprenom.Location = new System.Drawing.Point(0, 48);
             this.ItemForprenom.Name = "ItemForprenom";
-            this.ItemForprenom.Size = new System.Drawing.Size(417, 24);
-            this.ItemForprenom.Text = " اسم الأستاذ (ة)";
-            this.ItemForprenom.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForprenom.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForprenom.TextSize = new System.Drawing.Size(77, 13);
-            this.ItemForprenom.TextToControlDistance = 5;
+            this.ItemForprenom.Size = new System.Drawing.Size(559, 24);
+            this.ItemForprenom.Text = "Prénom de l\'enseignant";
+            this.ItemForprenom.TextLocation = DevExpress.Utils.Locations.Left;
+            this.ItemForprenom.TextSize = new System.Drawing.Size(120, 13);
             // 
             // ItemForPoste_ar
             // 
@@ -1339,7 +1341,7 @@
             this.ItemForNiveau.Name = "ItemForNiveau";
             this.ItemForNiveau.Size = new System.Drawing.Size(976, 24);
             this.ItemForNiveau.Text = "Niveau de l\'enseignant";
-            this.ItemForNiveau.TextSize = new System.Drawing.Size(157, 13);
+            this.ItemForNiveau.TextSize = new System.Drawing.Size(120, 13);
             // 
             // mvvmContext
             // 

@@ -26,13 +26,6 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.tuteurCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -49,6 +42,12 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.colid_tuteur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colprenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coladresse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcode_postal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coltelephone = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tuteurCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -78,64 +77,16 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.colid_tuteur,
+            this.colnom,
+            this.colprenom,
+            this.coltelephone,
+            this.colcode_postal,
+            this.coladresse});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "id_tuteur";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.FieldName = "nom";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.FieldName = "prenom";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.FieldName = "adresse";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.FieldName = "code_postal";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.FieldName = "telephone";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Stagiairs";
-            this.gridColumn7.Name = "gridColumn7";
             // 
             // ribbonControl
             // 
@@ -279,6 +230,46 @@
             this.barButtonItem3.ImageOptions.ImageUri.Uri = "Preview";
             this.barButtonItem3.Name = "barButtonItem3";
             // 
+            // colid_tuteur
+            // 
+            this.colid_tuteur.FieldName = "id_tuteur";
+            this.colid_tuteur.Name = "colid_tuteur";
+            // 
+            // colnom
+            // 
+            this.colnom.FieldName = "nom";
+            this.colnom.Name = "colnom";
+            this.colnom.Visible = true;
+            this.colnom.VisibleIndex = 0;
+            // 
+            // colprenom
+            // 
+            this.colprenom.FieldName = "prenom";
+            this.colprenom.Name = "colprenom";
+            this.colprenom.Visible = true;
+            this.colprenom.VisibleIndex = 1;
+            // 
+            // coladresse
+            // 
+            this.coladresse.FieldName = "adresse";
+            this.coladresse.Name = "coladresse";
+            this.coladresse.Visible = true;
+            this.coladresse.VisibleIndex = 3;
+            // 
+            // colcode_postal
+            // 
+            this.colcode_postal.FieldName = "code_postal";
+            this.colcode_postal.Name = "colcode_postal";
+            this.colcode_postal.Visible = true;
+            this.colcode_postal.VisibleIndex = 4;
+            // 
+            // coltelephone
+            // 
+            this.coltelephone.FieldName = "telephone";
+            this.coltelephone.Name = "coltelephone";
+            this.coltelephone.Visible = true;
+            this.coltelephone.VisibleIndex = 2;
+            // 
             // tuteurCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,7 +279,7 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "tuteurCollectionView";
-            this.Text = "Tuteur";
+            this.Text = "Tuteurs";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tuteurCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
@@ -314,13 +305,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
@@ -328,5 +312,11 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraGrid.Columns.GridColumn colid_tuteur;
+        private DevExpress.XtraGrid.Columns.GridColumn colnom;
+        private DevExpress.XtraGrid.Columns.GridColumn colprenom;
+        private DevExpress.XtraGrid.Columns.GridColumn coltelephone;
+        private DevExpress.XtraGrid.Columns.GridColumn colcode_postal;
+        private DevExpress.XtraGrid.Columns.GridColumn coladresse;
     }
 }

@@ -27,19 +27,6 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.promoCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -53,6 +40,14 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.colID_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCode_Promo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDATE_D_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDate_F_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMode_formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMode_formation1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.promoCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -82,104 +77,18 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.gridColumn13});
+            this.colID_Promo,
+            this.colCode_Promo,
+            this.colDATE_D_Formation,
+            this.colDate_F_Formation,
+            this.colMode_formation,
+            this.colMode_formation1,
+            this.colOption,
+            this.colOption1});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "ID_Promo";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.FieldName = "Code_Promo";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.FieldName = "Diplome";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.FieldName = "Diplome_ar";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.FieldName = "DATE_D_Formation";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.FieldName = "Date_F_Formation";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "ID_Option";
-            this.gridColumn7.Name = "gridColumn7";
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.FieldName = "Mode_de_formation";
-            this.gridColumn8.Name = "gridColumn8";
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.FieldName = "Decisions";
-            this.gridColumn9.Name = "gridColumn9";
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.FieldName = "Mode_formation.Code_Mode_Formation";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 6;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.FieldName = "Option.Code_Option";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 7;
-            // 
-            // gridColumn12
-            // 
-            this.gridColumn12.FieldName = "Sections";
-            this.gridColumn12.Name = "gridColumn12";
-            // 
-            // gridColumn13
-            // 
-            this.gridColumn13.FieldName = "Stagiairs";
-            this.gridColumn13.Name = "gridColumn13";
             // 
             // ribbonControl
             // 
@@ -302,6 +211,62 @@
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
+            // colID_Promo
+            // 
+            this.colID_Promo.FieldName = "ID_Promo";
+            this.colID_Promo.Name = "colID_Promo";
+            // 
+            // colCode_Promo
+            // 
+            this.colCode_Promo.FieldName = "Code_Promo";
+            this.colCode_Promo.Name = "colCode_Promo";
+            this.colCode_Promo.Visible = true;
+            this.colCode_Promo.VisibleIndex = 0;
+            // 
+            // colDATE_D_Formation
+            // 
+            this.colDATE_D_Formation.FieldName = "DATE_D_Formation";
+            this.colDATE_D_Formation.Name = "colDATE_D_Formation";
+            this.colDATE_D_Formation.Visible = true;
+            this.colDATE_D_Formation.VisibleIndex = 5;
+            // 
+            // colDate_F_Formation
+            // 
+            this.colDate_F_Formation.FieldName = "Date_F_Formation";
+            this.colDate_F_Formation.Name = "colDate_F_Formation";
+            this.colDate_F_Formation.Visible = true;
+            this.colDate_F_Formation.VisibleIndex = 6;
+            // 
+            // colMode_formation
+            // 
+            this.colMode_formation.FieldName = "Mode_formation.Désignation_Mode_Formation";
+            this.colMode_formation.Name = "colMode_formation";
+            this.colMode_formation.Visible = true;
+            this.colMode_formation.VisibleIndex = 3;
+            // 
+            // colMode_formation1
+            // 
+            this.colMode_formation1.Caption = "Code mode formation";
+            this.colMode_formation1.FieldName = "Mode_formation.Code_Mode_Formation";
+            this.colMode_formation1.Name = "colMode_formation1";
+            this.colMode_formation1.Visible = true;
+            this.colMode_formation1.VisibleIndex = 4;
+            // 
+            // colOption
+            // 
+            this.colOption.FieldName = "Option.Designation_Option";
+            this.colOption.Name = "colOption";
+            this.colOption.Visible = true;
+            this.colOption.VisibleIndex = 1;
+            // 
+            // colOption1
+            // 
+            this.colOption1.Caption = "Code option";
+            this.colOption1.FieldName = "Option.Code_Option";
+            this.colOption1.Name = "colOption1";
+            this.colOption1.Visible = true;
+            this.colOption1.VisibleIndex = 2;
+            // 
             // PromoCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,22 +303,17 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Promo;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Promo;
+        private DevExpress.XtraGrid.Columns.GridColumn colDATE_D_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colDate_F_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colMode_formation;
+        private DevExpress.XtraGrid.Columns.GridColumn colMode_formation1;
+        private DevExpress.XtraGrid.Columns.GridColumn colOption;
+        private DevExpress.XtraGrid.Columns.GridColumn colOption1;
     }
 }

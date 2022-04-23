@@ -26,15 +26,15 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.avenant_contrat_prorogationCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_validation_cont_proro = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_stg = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldate_dbt_proro = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldate_fin_proro = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDuree = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldate_validation_cont_proro = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -77,78 +77,97 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9});
+            this.colNum_validation_cont_proro,
+            this.colNum_stg,
+            this.colStagiair,
+            this.colStagiair1,
+            this.colEmployeur,
+            this.coldate_dbt_proro,
+            this.coldate_fin_proro,
+            this.colDuree,
+            this.coldate_validation_cont_proro});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colNum_validation_cont_proro
             // 
-            this.gridColumn1.FieldName = "Num_stg";
-            this.gridColumn1.Name = "gridColumn1";
+            this.colNum_validation_cont_proro.Caption = "Numéro validation contrat prorogation";
+            this.colNum_validation_cont_proro.FieldName = "Num_validation_cont_proro";
+            this.colNum_validation_cont_proro.Name = "colNum_validation_cont_proro";
+            this.colNum_validation_cont_proro.Visible = true;
+            this.colNum_validation_cont_proro.VisibleIndex = 3;
+            this.colNum_validation_cont_proro.Width = 203;
             // 
-            // gridColumn2
+            // colNum_stg
             // 
-            this.gridColumn2.FieldName = "ID_emp";
-            this.gridColumn2.Name = "gridColumn2";
+            this.colNum_stg.FieldName = "Num_stg";
+            this.colNum_stg.Name = "colNum_stg";
+            this.colNum_stg.Visible = true;
+            this.colNum_stg.VisibleIndex = 0;
+            this.colNum_stg.Width = 102;
             // 
-            // gridColumn3
+            // colStagiair
             // 
-            this.gridColumn3.FieldName = "Num_validation_cont_proro";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 0;
+            this.colStagiair.FieldName = "Stagiair.Nom";
+            this.colStagiair.Name = "colStagiair";
+            this.colStagiair.Visible = true;
+            this.colStagiair.VisibleIndex = 1;
+            this.colStagiair.Width = 119;
             // 
-            // gridColumn4
+            // colStagiair1
             // 
-            this.gridColumn4.FieldName = "date_validation_cont_proro";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 1;
+            this.colStagiair1.Caption = "Prénom";
+            this.colStagiair1.FieldName = "Stagiair.Prenom";
+            this.colStagiair1.Name = "colStagiair1";
+            this.colStagiair1.Visible = true;
+            this.colStagiair1.VisibleIndex = 2;
+            this.colStagiair1.Width = 119;
             // 
-            // gridColumn5
+            // colEmployeur
             // 
-            this.gridColumn5.FieldName = "Duree";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 2;
+            this.colEmployeur.FieldName = "Employeur.Nom_Emp";
+            this.colEmployeur.Name = "colEmployeur";
+            this.colEmployeur.Visible = true;
+            this.colEmployeur.VisibleIndex = 4;
+            this.colEmployeur.Width = 98;
             // 
-            // gridColumn6
+            // coldate_dbt_proro
             // 
-            this.gridColumn6.FieldName = "date_dbt_proro";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 3;
+            this.coldate_dbt_proro.Caption = "Date début prorogation ";
+            this.coldate_dbt_proro.FieldName = "date_dbt_proro";
+            this.coldate_dbt_proro.Name = "coldate_dbt_proro";
+            this.coldate_dbt_proro.Visible = true;
+            this.coldate_dbt_proro.VisibleIndex = 6;
+            this.coldate_dbt_proro.Width = 103;
             // 
-            // gridColumn7
+            // coldate_fin_proro
             // 
-            this.gridColumn7.FieldName = "date_fin_proro";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 4;
+            this.coldate_fin_proro.Caption = "Date fin prorogation ";
+            this.coldate_fin_proro.FieldName = "date_fin_proro";
+            this.coldate_fin_proro.Name = "coldate_fin_proro";
+            this.coldate_fin_proro.Visible = true;
+            this.coldate_fin_proro.VisibleIndex = 7;
+            this.coldate_fin_proro.Width = 93;
             // 
-            // gridColumn8
+            // colDuree
             // 
-            this.gridColumn8.FieldName = "Employeur.Type_Emp";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 5;
+            this.colDuree.Caption = "Durée (mois)";
+            this.colDuree.FieldName = "Duree";
+            this.colDuree.Name = "colDuree";
+            this.colDuree.Visible = true;
+            this.colDuree.VisibleIndex = 8;
+            this.colDuree.Width = 82;
             // 
-            // gridColumn9
+            // coldate_validation_cont_proro
             // 
-            this.gridColumn9.FieldName = "Stagiair.Num_STG";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 6;
+            this.coldate_validation_cont_proro.Caption = "Date validation contrat prorogation";
+            this.coldate_validation_cont_proro.FieldName = "date_validation_cont_proro";
+            this.coldate_validation_cont_proro.Name = "coldate_validation_cont_proro";
+            this.coldate_validation_cont_proro.Visible = true;
+            this.coldate_validation_cont_proro.VisibleIndex = 5;
+            this.coldate_validation_cont_proro.Width = 144;
             // 
             // ribbonControl
             // 
@@ -306,18 +325,18 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_validation_cont_proro;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_stg;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair1;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeur;
+        private DevExpress.XtraGrid.Columns.GridColumn coldate_dbt_proro;
+        private DevExpress.XtraGrid.Columns.GridColumn coldate_fin_proro;
+        private DevExpress.XtraGrid.Columns.GridColumn colDuree;
+        private DevExpress.XtraGrid.Columns.GridColumn coldate_validation_cont_proro;
     }
 }

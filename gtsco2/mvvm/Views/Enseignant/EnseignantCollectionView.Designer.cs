@@ -26,20 +26,15 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.enseignantCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colid_Enseignant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colprenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPoste = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPoste_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNiveau = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMode_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -82,114 +77,74 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.gridColumn13,
-            this.gridColumn14});
+            this.colid_Enseignant,
+            this.colNom,
+            this.colNom_ar,
+            this.colprenom,
+            this.colPrenom_ar,
+            this.colPoste,
+            this.colPoste_ar,
+            this.colNiveau,
+            this.colMode_Formation});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colid_Enseignant
             // 
-            this.gridColumn1.FieldName = "id_Enseignant";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colid_Enseignant.FieldName = "id_Enseignant";
+            this.colid_Enseignant.Name = "colid_Enseignant";
             // 
-            // gridColumn2
+            // colNom
             // 
-            this.gridColumn2.FieldName = "Nom";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.colNom.FieldName = "Nom";
+            this.colNom.Name = "colNom";
+            this.colNom.Visible = true;
+            this.colNom.VisibleIndex = 0;
             // 
-            // gridColumn3
+            // colNom_ar
             // 
-            this.gridColumn3.FieldName = "Nom_ar";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.colNom_ar.FieldName = "Nom_ar";
+            this.colNom_ar.Name = "colNom_ar";
             // 
-            // gridColumn4
+            // colprenom
             // 
-            this.gridColumn4.FieldName = "prenom";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.colprenom.FieldName = "prenom";
+            this.colprenom.Name = "colprenom";
+            this.colprenom.Visible = true;
+            this.colprenom.VisibleIndex = 1;
             // 
-            // gridColumn5
+            // colPrenom_ar
             // 
-            this.gridColumn5.FieldName = "Prenom_ar";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.colPrenom_ar.FieldName = "Prenom_ar";
+            this.colPrenom_ar.Name = "colPrenom_ar";
             // 
-            // gridColumn6
+            // colPoste
             // 
-            this.gridColumn6.FieldName = "Niveau";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
+            this.colPoste.FieldName = "Poste";
+            this.colPoste.Name = "colPoste";
+            this.colPoste.Visible = true;
+            this.colPoste.VisibleIndex = 2;
             // 
-            // gridColumn7
+            // colPoste_ar
             // 
-            this.gridColumn7.FieldName = "Poste";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
+            this.colPoste_ar.FieldName = "Poste_ar";
+            this.colPoste_ar.Name = "colPoste_ar";
             // 
-            // gridColumn8
+            // colNiveau
             // 
-            this.gridColumn8.FieldName = "Poste_ar";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 7;
+            this.colNiveau.FieldName = "Niveau";
+            this.colNiveau.Name = "colNiveau";
+            this.colNiveau.Visible = true;
+            this.colNiveau.VisibleIndex = 3;
             // 
-            // gridColumn9
+            // colMode_Formation
             // 
-            this.gridColumn9.FieldName = "Specialite";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.FieldName = "Mode_Formation";
-            this.gridColumn10.Name = "gridColumn10";
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.FieldName = "Mode_formation1.Code_Mode_Formation";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 9;
-            // 
-            // gridColumn12
-            // 
-            this.gridColumn12.FieldName = "Evaluations";
-            this.gridColumn12.Name = "gridColumn12";
-            // 
-            // gridColumn13
-            // 
-            this.gridColumn13.FieldName = "Suiver_stagiaire";
-            this.gridColumn13.Name = "gridColumn13";
-            // 
-            // gridColumn14
-            // 
-            this.gridColumn14.FieldName = "PARTICIPEs";
-            this.gridColumn14.Name = "gridColumn14";
+            this.colMode_Formation.FieldName = "Mode_formation1.Code_Mode_Formation";
+            this.colMode_Formation.Name = "colMode_Formation";
+            this.colMode_Formation.Visible = true;
+            this.colMode_Formation.VisibleIndex = 4;
             // 
             // ribbonControl
             // 
@@ -347,23 +302,18 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colid_Enseignant;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colprenom;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colPoste;
+        private DevExpress.XtraGrid.Columns.GridColumn colPoste_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colNiveau;
+        private DevExpress.XtraGrid.Columns.GridColumn colMode_Formation;
     }
 }

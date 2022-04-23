@@ -26,24 +26,23 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.maitre_ApprentissageCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrenom_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQualification_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProfil_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTel_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPoste_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colE_Mail_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdresse_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAnciennté_Entriprise_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAnciennté_Métier_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAyant_Suivie_Stage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune_Maitre_Apprentissage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNbr_Stagiaire_Former = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Emp = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -86,148 +85,136 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.gridColumn13,
-            this.gridColumn14,
-            this.gridColumn15,
-            this.gridColumn16,
-            this.gridColumn17,
-            this.gridColumn18});
+            this.colID_Maitre_Apprentissage,
+            this.colNom_Maitre_Apprentissage,
+            this.colPrenom_Maitre_Apprentissage,
+            this.colQualification_Maitre_Apprentissage,
+            this.colProfil_Maitre_Apprentissage,
+            this.colTel_Maitre_Apprentissage,
+            this.colPoste_Maitre_Apprentissage,
+            this.colE_Mail_Maitre_Apprentissage,
+            this.colEmployeur,
+            this.colAdresse_Maitre_Apprentissage,
+            this.colAnciennté_Entriprise_Maitre_Apprentissage,
+            this.colAnciennté_Métier_Maitre_Apprentissage,
+            this.colAyant_Suivie_Stage,
+            this.colCommune,
+            this.colCommune_Maitre_Apprentissage,
+            this.colNbr_Stagiaire_Former,
+            this.colID_Emp});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colID_Maitre_Apprentissage
             // 
-            this.gridColumn1.FieldName = "ID_Maitre_Apprentissage";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colID_Maitre_Apprentissage.FieldName = "ID_Maitre_Apprentissage";
+            this.colID_Maitre_Apprentissage.Name = "colID_Maitre_Apprentissage";
             // 
-            // gridColumn2
+            // colNom_Maitre_Apprentissage
             // 
-            this.gridColumn2.FieldName = "ID_Emp";
-            this.gridColumn2.Name = "gridColumn2";
+            this.colNom_Maitre_Apprentissage.FieldName = "Nom_Maitre_Apprentissage";
+            this.colNom_Maitre_Apprentissage.Name = "colNom_Maitre_Apprentissage";
+            this.colNom_Maitre_Apprentissage.Visible = true;
+            this.colNom_Maitre_Apprentissage.VisibleIndex = 0;
             // 
-            // gridColumn3
+            // colPrenom_Maitre_Apprentissage
             // 
-            this.gridColumn3.FieldName = "Nom_Maitre_Apprentissage";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 1;
+            this.colPrenom_Maitre_Apprentissage.FieldName = "Prenom_Maitre_Apprentissage";
+            this.colPrenom_Maitre_Apprentissage.Name = "colPrenom_Maitre_Apprentissage";
+            this.colPrenom_Maitre_Apprentissage.Visible = true;
+            this.colPrenom_Maitre_Apprentissage.VisibleIndex = 1;
             // 
-            // gridColumn4
+            // colQualification_Maitre_Apprentissage
             // 
-            this.gridColumn4.FieldName = "Prenom_Maitre_Apprentissage";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 2;
+            this.colQualification_Maitre_Apprentissage.FieldName = "Qualification_Maitre_Apprentissage";
+            this.colQualification_Maitre_Apprentissage.Name = "colQualification_Maitre_Apprentissage";
+            this.colQualification_Maitre_Apprentissage.Visible = true;
+            this.colQualification_Maitre_Apprentissage.VisibleIndex = 4;
             // 
-            // gridColumn5
+            // colProfil_Maitre_Apprentissage
             // 
-            this.gridColumn5.FieldName = "Qualification_Maitre_Apprentissage";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
+            this.colProfil_Maitre_Apprentissage.FieldName = "Profil_Maitre_Apprentissage";
+            this.colProfil_Maitre_Apprentissage.Name = "colProfil_Maitre_Apprentissage";
+            this.colProfil_Maitre_Apprentissage.Visible = true;
+            this.colProfil_Maitre_Apprentissage.VisibleIndex = 6;
             // 
-            // gridColumn6
+            // colTel_Maitre_Apprentissage
             // 
-            this.gridColumn6.FieldName = "Profil_Maitre_Apprentissage";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
+            this.colTel_Maitre_Apprentissage.FieldName = "Tel_Maitre_Apprentissage";
+            this.colTel_Maitre_Apprentissage.Name = "colTel_Maitre_Apprentissage";
+            this.colTel_Maitre_Apprentissage.Visible = true;
+            this.colTel_Maitre_Apprentissage.VisibleIndex = 2;
             // 
-            // gridColumn7
+            // colPoste_Maitre_Apprentissage
             // 
-            this.gridColumn7.FieldName = "Poste_Maitre_Apprentissage";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 5;
+            this.colPoste_Maitre_Apprentissage.FieldName = "Poste_Maitre_Apprentissage";
+            this.colPoste_Maitre_Apprentissage.Name = "colPoste_Maitre_Apprentissage";
+            this.colPoste_Maitre_Apprentissage.Visible = true;
+            this.colPoste_Maitre_Apprentissage.VisibleIndex = 7;
             // 
-            // gridColumn8
+            // colE_Mail_Maitre_Apprentissage
             // 
-            this.gridColumn8.FieldName = "Anciennté_Métier_Maitre_Apprentissage";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 6;
+            this.colE_Mail_Maitre_Apprentissage.FieldName = "E_Mail_Maitre_Apprentissage";
+            this.colE_Mail_Maitre_Apprentissage.Name = "colE_Mail_Maitre_Apprentissage";
+            this.colE_Mail_Maitre_Apprentissage.Visible = true;
+            this.colE_Mail_Maitre_Apprentissage.VisibleIndex = 3;
             // 
-            // gridColumn9
+            // colEmployeur
             // 
-            this.gridColumn9.FieldName = "Anciennté_Entriprise_Maitre_Apprentissage";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 7;
+            this.colEmployeur.FieldName = "Employeur.Nom_Emp";
+            this.colEmployeur.Name = "colEmployeur";
+            this.colEmployeur.Visible = true;
+            this.colEmployeur.VisibleIndex = 8;
             // 
-            // gridColumn10
+            // colAdresse_Maitre_Apprentissage
             // 
-            this.gridColumn10.FieldName = "Ayant_Suivie_Stage";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 8;
+            this.colAdresse_Maitre_Apprentissage.FieldName = "Adresse_Maitre_Apprentissage";
+            this.colAdresse_Maitre_Apprentissage.Name = "colAdresse_Maitre_Apprentissage";
             // 
-            // gridColumn11
+            // colAnciennté_Entriprise_Maitre_Apprentissage
             // 
-            this.gridColumn11.FieldName = "Nbr_Stagiaire_Former";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 9;
+            this.colAnciennté_Entriprise_Maitre_Apprentissage.FieldName = "Anciennté_Entriprise_Maitre_Apprentissage";
+            this.colAnciennté_Entriprise_Maitre_Apprentissage.Name = "colAnciennté_Entriprise_Maitre_Apprentissage";
+            this.colAnciennté_Entriprise_Maitre_Apprentissage.Visible = true;
+            this.colAnciennté_Entriprise_Maitre_Apprentissage.VisibleIndex = 9;
             // 
-            // gridColumn12
+            // colAnciennté_Métier_Maitre_Apprentissage
             // 
-            this.gridColumn12.FieldName = "Adresse_Maitre_Apprentissage";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 10;
+            this.colAnciennté_Métier_Maitre_Apprentissage.FieldName = "Anciennté_Métier_Maitre_Apprentissage";
+            this.colAnciennté_Métier_Maitre_Apprentissage.Name = "colAnciennté_Métier_Maitre_Apprentissage";
+            this.colAnciennté_Métier_Maitre_Apprentissage.Visible = true;
+            this.colAnciennté_Métier_Maitre_Apprentissage.VisibleIndex = 10;
             // 
-            // gridColumn13
+            // colAyant_Suivie_Stage
             // 
-            this.gridColumn13.FieldName = "Commune_Maitre_Apprentissage";
-            this.gridColumn13.Name = "gridColumn13";
+            this.colAyant_Suivie_Stage.FieldName = "Ayant_Suivie_Stage";
+            this.colAyant_Suivie_Stage.Name = "colAyant_Suivie_Stage";
+            this.colAyant_Suivie_Stage.Visible = true;
+            this.colAyant_Suivie_Stage.VisibleIndex = 5;
             // 
-            // gridColumn14
+            // colCommune
             // 
-            this.gridColumn14.FieldName = "E_Mail_Maitre_Apprentissage";
-            this.gridColumn14.Name = "gridColumn14";
-            this.gridColumn14.Visible = true;
-            this.gridColumn14.VisibleIndex = 11;
+            this.colCommune.FieldName = "Commune";
+            this.colCommune.Name = "colCommune";
             // 
-            // gridColumn15
+            // colCommune_Maitre_Apprentissage
             // 
-            this.gridColumn15.FieldName = "Tel_Maitre_Apprentissage";
-            this.gridColumn15.Name = "gridColumn15";
-            this.gridColumn15.Visible = true;
-            this.gridColumn15.VisibleIndex = 12;
+            this.colCommune_Maitre_Apprentissage.FieldName = "Commune_Maitre_Apprentissage";
+            this.colCommune_Maitre_Apprentissage.Name = "colCommune_Maitre_Apprentissage";
             // 
-            // gridColumn16
+            // colNbr_Stagiaire_Former
             // 
-            this.gridColumn16.FieldName = "Commune.Commune_name";
-            this.gridColumn16.Name = "gridColumn16";
-            this.gridColumn16.Visible = true;
-            this.gridColumn16.VisibleIndex = 13;
+            this.colNbr_Stagiaire_Former.FieldName = "Nbr_Stagiaire_Former";
+            this.colNbr_Stagiaire_Former.Name = "colNbr_Stagiaire_Former";
+            this.colNbr_Stagiaire_Former.Visible = true;
+            this.colNbr_Stagiaire_Former.VisibleIndex = 11;
             // 
-            // gridColumn17
+            // colID_Emp
             // 
-            this.gridColumn17.FieldName = "Employeur.Type_Emp";
-            this.gridColumn17.Name = "gridColumn17";
-            this.gridColumn17.Visible = true;
-            this.gridColumn17.VisibleIndex = 14;
-            // 
-            // gridColumn18
-            // 
-            this.gridColumn18.FieldName = "Stagiairs";
-            this.gridColumn18.Name = "gridColumn18";
+            this.colID_Emp.FieldName = "ID_Emp";
+            this.colID_Emp.Name = "colID_Emp";
             // 
             // ribbonControl
             // 
@@ -385,27 +372,26 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colNom_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrenom_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colQualification_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colProfil_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colTel_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colPoste_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colE_Mail_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeur;
+        private DevExpress.XtraGrid.Columns.GridColumn colAdresse_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colAnciennté_Entriprise_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colAnciennté_Métier_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colAyant_Suivie_Stage;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_Maitre_Apprentissage;
+        private DevExpress.XtraGrid.Columns.GridColumn colNbr_Stagiaire_Former;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Emp;
     }
 }

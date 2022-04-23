@@ -26,30 +26,22 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.evaluationCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn20 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn23 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNum_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiair1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSemestre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colannee_scolaire = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colControl_1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colControl_2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colExam = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRattrapage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEnseignant = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colModule = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Année_SCO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Semestre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMoyenne_Module_ApRt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMoyenne_Module_AvRt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -92,216 +84,137 @@
             // 
             this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12,
-            this.gridColumn13,
-            this.gridColumn14,
-            this.gridColumn15,
-            this.gridColumn16,
-            this.gridColumn17,
-            this.gridColumn18,
-            this.gridColumn19,
-            this.gridColumn20,
-            this.gridColumn21,
-            this.gridColumn22,
-            this.gridColumn23,
-            this.gridColumn24});
+            this.colNum_STG,
+            this.colStagiair,
+            this.colStagiair1,
+            this.colSemestre,
+            this.colannee_scolaire,
+            this.colControl_1,
+            this.colControl_2,
+            this.colExam,
+            this.colRattrapage,
+            this.colEnseignant,
+            this.colModule,
+            this.colID_Année_SCO,
+            this.colID_Module,
+            this.colID_Semestre,
+            this.colMoyenne_Module_ApRt,
+            this.colMoyenne_Module_AvRt});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
             // 
-            // gridColumn1
+            // colNum_STG
             // 
-            this.gridColumn1.FieldName = "Num_STG";
-            this.gridColumn1.Name = "gridColumn1";
+            this.colNum_STG.FieldName = "Num_STG";
+            this.colNum_STG.Name = "colNum_STG";
+            this.colNum_STG.Visible = true;
+            this.colNum_STG.VisibleIndex = 0;
             // 
-            // gridColumn2
+            // colStagiair
             // 
-            this.gridColumn2.FieldName = "ID_Semestre";
-            this.gridColumn2.Name = "gridColumn2";
+            this.colStagiair.Caption = "Nom stagiaire";
+            this.colStagiair.FieldName = "Stagiair.Nom";
+            this.colStagiair.Name = "colStagiair";
+            this.colStagiair.Visible = true;
+            this.colStagiair.VisibleIndex = 1;
             // 
-            // gridColumn3
+            // colStagiair1
             // 
-            this.gridColumn3.FieldName = "ID_Année_SCO";
-            this.gridColumn3.Name = "gridColumn3";
+            this.colStagiair1.Caption = "Prenom stagiaire";
+            this.colStagiair1.FieldName = "Stagiair.Prenom";
+            this.colStagiair1.Name = "colStagiair1";
+            this.colStagiair1.Visible = true;
+            this.colStagiair1.VisibleIndex = 2;
             // 
-            // gridColumn4
+            // colSemestre
             // 
-            this.gridColumn4.FieldName = "ID_Module";
-            this.gridColumn4.Name = "gridColumn4";
+            this.colSemestre.Caption = "Semestre";
+            this.colSemestre.FieldName = "Semestre.Designation_Semestre";
+            this.colSemestre.Name = "colSemestre";
+            this.colSemestre.Visible = true;
+            this.colSemestre.VisibleIndex = 3;
             // 
-            // gridColumn5
+            // colannee_scolaire
             // 
-            this.gridColumn5.FieldName = "Enseignant";
-            this.gridColumn5.Name = "gridColumn5";
+            this.colannee_scolaire.Caption = "Année scolaire";
+            this.colannee_scolaire.FieldName = "annee_scolaire.Designation";
+            this.colannee_scolaire.FieldNameSortGroup = "Année scolaire";
+            this.colannee_scolaire.Name = "colannee_scolaire";
+            this.colannee_scolaire.Visible = true;
+            this.colannee_scolaire.VisibleIndex = 4;
             // 
-            // gridColumn6
+            // colControl_1
             // 
-            this.gridColumn6.FieldName = "Control_1";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 10;
-            this.gridColumn6.Width = 58;
+            this.colControl_1.FieldName = "Control_1";
+            this.colControl_1.Name = "colControl_1";
+            this.colControl_1.Visible = true;
+            this.colControl_1.VisibleIndex = 6;
             // 
-            // gridColumn7
+            // colControl_2
             // 
-            this.gridColumn7.FieldName = "Control_2";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 11;
-            this.gridColumn7.Width = 62;
+            this.colControl_2.FieldName = "Control_2";
+            this.colControl_2.Name = "colControl_2";
+            this.colControl_2.Visible = true;
+            this.colControl_2.VisibleIndex = 7;
             // 
-            // gridColumn8
+            // colExam
             // 
-            this.gridColumn8.FieldName = "Exam";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 12;
-            this.gridColumn8.Width = 53;
+            this.colExam.FieldName = "Exam";
+            this.colExam.Name = "colExam";
+            this.colExam.Visible = true;
+            this.colExam.VisibleIndex = 8;
             // 
-            // gridColumn9
+            // colRattrapage
             // 
-            this.gridColumn9.FieldName = "Rattrapage";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 13;
-            this.gridColumn9.Width = 76;
+            this.colRattrapage.FieldName = "Rattrapage";
+            this.colRattrapage.Name = "colRattrapage";
+            this.colRattrapage.Visible = true;
+            this.colRattrapage.VisibleIndex = 10;
             // 
-            // gridColumn10
+            // colEnseignant
             // 
-            this.gridColumn10.FieldName = "Moyenne_Module_AvRt";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 14;
-            this.gridColumn10.Width = 63;
+            this.colEnseignant.FieldName = "Enseignant1.Nom";
+            this.colEnseignant.Name = "colEnseignant";
+            this.colEnseignant.Visible = true;
+            this.colEnseignant.VisibleIndex = 12;
             // 
-            // gridColumn11
+            // colModule
             // 
-            this.gridColumn11.FieldName = "Moyenne_Module_ApRt";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 15;
-            this.gridColumn11.Width = 122;
+            this.colModule.FieldName = "Module.Designation_Module";
+            this.colModule.Name = "colModule";
+            this.colModule.Visible = true;
+            this.colModule.VisibleIndex = 5;
             // 
-            // gridColumn12
+            // colID_Année_SCO
             // 
-            this.gridColumn12.Caption = "Annee Scolaire";
-            this.gridColumn12.FieldName = "annee_scolaire.Designation";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 6;
-            this.gridColumn12.Width = 68;
+            this.colID_Année_SCO.FieldName = "ID_Année_SCO";
+            this.colID_Année_SCO.Name = "colID_Année_SCO";
             // 
-            // gridColumn13
+            // colID_Module
             // 
-            this.gridColumn13.Caption = "Nom Enseignant";
-            this.gridColumn13.FieldName = "Enseignant1.Nom";
-            this.gridColumn13.Name = "gridColumn13";
-            this.gridColumn13.Visible = true;
-            this.gridColumn13.VisibleIndex = 4;
-            this.gridColumn13.Width = 76;
+            this.colID_Module.FieldName = "ID_Module";
+            this.colID_Module.Name = "colID_Module";
             // 
-            // gridColumn14
+            // colID_Semestre
             // 
-            this.gridColumn14.Caption = "Module";
-            this.gridColumn14.FieldName = "Module.Designation_Module";
-            this.gridColumn14.Name = "gridColumn14";
-            this.gridColumn14.Visible = true;
-            this.gridColumn14.VisibleIndex = 3;
-            this.gridColumn14.Width = 57;
+            this.colID_Semestre.FieldName = "ID_Semestre";
+            this.colID_Semestre.Name = "colID_Semestre";
             // 
-            // gridColumn15
+            // colMoyenne_Module_ApRt
             // 
-            this.gridColumn15.Caption = "Semestre";
-            this.gridColumn15.FieldName = "Semestre.Designation_Semestre";
-            this.gridColumn15.Name = "gridColumn15";
-            this.gridColumn15.Visible = true;
-            this.gridColumn15.VisibleIndex = 5;
+            this.colMoyenne_Module_ApRt.FieldName = "Moyenne_Module_ApRt";
+            this.colMoyenne_Module_ApRt.Name = "colMoyenne_Module_ApRt";
+            this.colMoyenne_Module_ApRt.Visible = true;
+            this.colMoyenne_Module_ApRt.VisibleIndex = 11;
             // 
-            // gridColumn16
+            // colMoyenne_Module_AvRt
             // 
-            this.gridColumn16.FieldName = "Stagiair.Num_STG";
-            this.gridColumn16.Name = "gridColumn16";
-            this.gridColumn16.Visible = true;
-            this.gridColumn16.VisibleIndex = 0;
-            this.gridColumn16.Width = 53;
-            // 
-            // gridColumn17
-            // 
-            this.gridColumn17.Caption = "Prenom ensenant";
-            this.gridColumn17.FieldName = "Enseignant1.prenom";
-            this.gridColumn17.Name = "gridColumn17";
-            this.gridColumn17.Width = 72;
-            // 
-            // gridColumn18
-            // 
-            this.gridColumn18.Caption = " Nom";
-            this.gridColumn18.FieldName = "Stagiair.Nom";
-            this.gridColumn18.Name = "gridColumn18";
-            this.gridColumn18.Visible = true;
-            this.gridColumn18.VisibleIndex = 1;
-            this.gridColumn18.Width = 36;
-            // 
-            // gridColumn19
-            // 
-            this.gridColumn19.Caption = "Prenom";
-            this.gridColumn19.FieldName = "Stagiair.Prenom";
-            this.gridColumn19.Name = "gridColumn19";
-            this.gridColumn19.Visible = true;
-            this.gridColumn19.VisibleIndex = 2;
-            this.gridColumn19.Width = 45;
-            // 
-            // gridColumn20
-            // 
-            this.gridColumn20.Caption = "Code promo";
-            this.gridColumn20.FieldName = "Stagiair.Promo.Code_Promo";
-            this.gridColumn20.Name = "gridColumn20";
-            this.gridColumn20.Width = 25;
-            // 
-            // gridColumn21
-            // 
-            this.gridColumn21.Caption = "Option";
-            this.gridColumn21.FieldName = "Stagiair.Promo.Option.Designation_Option";
-            this.gridColumn21.Name = "gridColumn21";
-            this.gridColumn21.Visible = true;
-            this.gridColumn21.VisibleIndex = 9;
-            this.gridColumn21.Width = 37;
-            // 
-            // gridColumn22
-            // 
-            this.gridColumn22.Caption = "Spesalite";
-            this.gridColumn22.FieldName = "Stagiair.Promo.Option.Specialite1.Designation_SP";
-            this.gridColumn22.Name = "gridColumn22";
-            this.gridColumn22.Visible = true;
-            this.gridColumn22.VisibleIndex = 8;
-            this.gridColumn22.Width = 46;
-            // 
-            // gridColumn23
-            // 
-            this.gridColumn23.Caption = "Code Section";
-            this.gridColumn23.FieldName = "Stagiair.Section1.Code_Section";
-            this.gridColumn23.Name = "gridColumn23";
-            this.gridColumn23.Width = 55;
-            // 
-            // gridColumn24
-            // 
-            this.gridColumn24.Caption = "Mode formation";
-            this.gridColumn24.FieldName = "Stagiair.Promo.Mode_formation.Désignation_Mode_Formation";
-            this.gridColumn24.Name = "gridColumn24";
-            this.gridColumn24.Visible = true;
-            this.gridColumn24.VisibleIndex = 7;
-            this.gridColumn24.Width = 72;
+            this.colMoyenne_Module_AvRt.FieldName = "Moyenne_Module_AvRt";
+            this.colMoyenne_Module_AvRt.Name = "colMoyenne_Module_AvRt";
+            this.colMoyenne_Module_AvRt.Visible = true;
+            this.colMoyenne_Module_AvRt.VisibleIndex = 9;
             // 
             // ribbonControl
             // 
@@ -459,33 +372,25 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
 		private DevExpress.XtraBars.PopupMenu popupMenu;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
         private DevExpress.XtraBars.BarButtonItem bbiNew;
         private DevExpress.XtraBars.BarButtonItem bbiEdit;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.BarButtonItem bbiRefresh;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
+        private DevExpress.XtraGrid.Columns.GridColumn colNum_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiair1;
+        private DevExpress.XtraGrid.Columns.GridColumn colSemestre;
+        private DevExpress.XtraGrid.Columns.GridColumn colannee_scolaire;
+        private DevExpress.XtraGrid.Columns.GridColumn colControl_1;
+        private DevExpress.XtraGrid.Columns.GridColumn colControl_2;
+        private DevExpress.XtraGrid.Columns.GridColumn colExam;
+        private DevExpress.XtraGrid.Columns.GridColumn colRattrapage;
+        private DevExpress.XtraGrid.Columns.GridColumn colEnseignant;
+        private DevExpress.XtraGrid.Columns.GridColumn colModule;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Année_SCO;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Module;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Semestre;
+        private DevExpress.XtraGrid.Columns.GridColumn colMoyenne_Module_ApRt;
+        private DevExpress.XtraGrid.Columns.GridColumn colMoyenne_Module_AvRt;
     }
 }

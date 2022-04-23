@@ -140,7 +140,7 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
                 string dbname = db.Database.Connection.Database;
                 string sqlCommand = @"Use master;Restore DATABASE [{0}] From  DISK = '" + con.ToString() + "'";
                 int path = db.Database.ExecuteSqlCommand(System.Data.Entity.TransactionalBehavior.DoNotEnsureTransaction, string.Format(sqlCommand, dbname));
-                MessageBox.Show("database backup done successfuly", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Base de données réstaurée avec succés", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //return true;
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error); }
@@ -190,7 +190,7 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             var fullpath = con.ToString() + dbBackUp + ".bak";
             string sqlCommand = @"BACKUP DATABASE [{0}] TO  DISK = '" + fullpath + "' WITH NOFORMAT, NOINIT,  NAME = N'DBMDD', SKIP, NOREWIND, NOUNLOAD,  STATS = 10";
             int path = db.Database.ExecuteSqlCommand(System.Data.Entity.TransactionalBehavior.DoNotEnsureTransaction, string.Format(sqlCommand, dbname, dbBackUp));
-                MessageBox.Show("database backup done successfuly", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Base de données copié avec succés", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //return true;
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error); }
@@ -207,6 +207,11 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
         private void simpleButtonsave_Click(object sender, EventArgs e)
         {
             restore();
+        }
+
+        private void textEditfilediloge_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

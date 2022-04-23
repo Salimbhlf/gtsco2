@@ -88,7 +88,7 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(732, 0, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(790, 297);
+            this.layoutControl1.Size = new System.Drawing.Size(725, 377);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -98,57 +98,58 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.simpleButton2save.Appearance.Options.UseFont = true;
             this.simpleButton2save.Enabled = false;
             this.simpleButton2save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2save.ImageOptions.SvgImage")));
-            this.simpleButton2save.Location = new System.Drawing.Point(396, 95);
+            this.simpleButton2save.Location = new System.Drawing.Point(24, 135);
             this.simpleButton2save.Name = "simpleButton2save";
-            this.simpleButton2save.Size = new System.Drawing.Size(370, 36);
+            this.simpleButton2save.Size = new System.Drawing.Size(677, 36);
             this.simpleButton2save.StyleController = this.layoutControl1;
             this.simpleButton2save.TabIndex = 4;
-            this.simpleButton2save.Text = "Enregistrer ";
+            this.simpleButton2save.Text = "Enregistrer une copie";
             this.simpleButton2save.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // textEditconxtionstring
             // 
-            this.textEditconxtionstring.Location = new System.Drawing.Point(230, 47);
+            this.textEditconxtionstring.Location = new System.Drawing.Point(276, 47);
             this.textEditconxtionstring.Name = "textEditconxtionstring";
             this.textEditconxtionstring.Properties.ReadOnly = true;
-            this.textEditconxtionstring.Size = new System.Drawing.Size(536, 20);
+            this.textEditconxtionstring.Size = new System.Drawing.Size(425, 20);
             this.textEditconxtionstring.StyleController = this.layoutControl1;
             this.textEditconxtionstring.TabIndex = 0;
             // 
             // textEditfilediloge
             // 
-            this.textEditfilediloge.Location = new System.Drawing.Point(230, 71);
+            this.textEditfilediloge.Location = new System.Drawing.Point(276, 111);
             this.textEditfilediloge.Name = "textEditfilediloge";
-            this.textEditfilediloge.Size = new System.Drawing.Size(536, 20);
+            this.textEditfilediloge.Size = new System.Drawing.Size(425, 20);
             this.textEditfilediloge.StyleController = this.layoutControl1;
             this.textEditfilediloge.TabIndex = 2;
+            this.textEditfilediloge.EditValueChanged += new System.EventHandler(this.textEditfilediloge_EditValueChanged);
             // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(24, 95);
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(24, 71);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(368, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(677, 36);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "Selection le ficher";
+            this.simpleButton1.Text = "Séléctionner l\'emplacement de la copie  ";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // textEditPs1Url
             // 
-            this.textEditPs1Url.Location = new System.Drawing.Point(230, 204);
+            this.textEditPs1Url.Location = new System.Drawing.Point(276, 284);
             this.textEditPs1Url.Name = "textEditPs1Url";
-            this.textEditPs1Url.Size = new System.Drawing.Size(536, 20);
+            this.textEditPs1Url.Size = new System.Drawing.Size(425, 20);
             this.textEditPs1Url.StyleController = this.layoutControl1;
             this.textEditPs1Url.TabIndex = 6;
             // 
             // textEdit3conniction2
             // 
-            this.textEdit3conniction2.Location = new System.Drawing.Point(230, 180);
+            this.textEdit3conniction2.Location = new System.Drawing.Point(276, 220);
             this.textEdit3conniction2.Name = "textEdit3conniction2";
-            this.textEdit3conniction2.Size = new System.Drawing.Size(536, 20);
+            this.textEdit3conniction2.Size = new System.Drawing.Size(425, 20);
             this.textEdit3conniction2.StyleController = this.layoutControl1;
             this.textEdit3conniction2.TabIndex = 5;
             // 
@@ -156,13 +157,13 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             // 
             this.simpleButton11openfill.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.simpleButton11openfill.Appearance.Options.UseFont = true;
-            this.simpleButton11openfill.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton11openfill.ImageOptions.SvgImage")));
-            this.simpleButton11openfill.Location = new System.Drawing.Point(24, 228);
+            this.simpleButton11openfill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11openfill.ImageOptions.Image")));
+            this.simpleButton11openfill.Location = new System.Drawing.Point(24, 244);
             this.simpleButton11openfill.Name = "simpleButton11openfill";
-            this.simpleButton11openfill.Size = new System.Drawing.Size(368, 36);
+            this.simpleButton11openfill.Size = new System.Drawing.Size(677, 36);
             this.simpleButton11openfill.StyleController = this.layoutControl1;
             this.simpleButton11openfill.TabIndex = 7;
-            this.simpleButton11openfill.Text = "Selection le ficher ";
+            this.simpleButton11openfill.Text = "Séléctionner la copie à réstaurer ";
             this.simpleButton11openfill.Click += new System.EventHandler(this.simpleButton11openfill_Click);
             // 
             // simpleButtonsave
@@ -171,12 +172,12 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.simpleButtonsave.Appearance.Options.UseFont = true;
             this.simpleButtonsave.Enabled = false;
             this.simpleButtonsave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButtonsave.ImageOptions.SvgImage")));
-            this.simpleButtonsave.Location = new System.Drawing.Point(396, 228);
+            this.simpleButtonsave.Location = new System.Drawing.Point(24, 308);
             this.simpleButtonsave.Name = "simpleButtonsave";
-            this.simpleButtonsave.Size = new System.Drawing.Size(370, 36);
+            this.simpleButtonsave.Size = new System.Drawing.Size(677, 36);
             this.simpleButtonsave.StyleController = this.layoutControl1;
             this.simpleButtonsave.TabIndex = 7;
-            this.simpleButtonsave.Text = "Restore";
+            this.simpleButtonsave.Text = "Réstaurer à partir d\' une copie";
             this.simpleButtonsave.Click += new System.EventHandler(this.simpleButtonsave_Click);
             // 
             // Root
@@ -189,7 +190,7 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.layoutControlGroup1,
             this.layoutControlGroup3});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(790, 297);
+            this.Root.Size = new System.Drawing.Size(725, 377);
             this.Root.TextVisible = false;
             // 
             // simpleSeparator3
@@ -197,7 +198,7 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.simpleSeparator3.AllowHotTrack = false;
             this.simpleSeparator3.Location = new System.Drawing.Point(0, 0);
             this.simpleSeparator3.Name = "simpleSeparator3";
-            this.simpleSeparator3.Size = new System.Drawing.Size(770, 1);
+            this.simpleSeparator3.Size = new System.Drawing.Size(705, 1);
             // 
             // simpleSeparator5
             // 
@@ -213,53 +214,53 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.simpleSeparator5.AppearanceItemCaptionDisabled.Options.UseBorderColor = true;
             this.simpleSeparator5.Location = new System.Drawing.Point(0, 1);
             this.simpleSeparator5.Name = "simpleSeparator5";
-            this.simpleSeparator5.Size = new System.Drawing.Size(770, 1);
+            this.simpleSeparator5.Size = new System.Drawing.Size(705, 1);
             // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem5,
             this.layoutControlItem4,
             this.layoutControlItem2,
+            this.layoutControlItem5,
             this.layoutControlItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 2);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(770, 133);
-            this.layoutControlGroup1.Text = "Criation d\'une coupe de la base de donne ";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(705, 173);
+            this.layoutControlGroup1.Text = "Créer une copie de la base de données";
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.textEditfilediloge;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(746, 24);
-            this.layoutControlItem5.Text = "URL ";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(194, 13);
+            this.layoutControlItem5.Size = new System.Drawing.Size(681, 24);
+            this.layoutControlItem5.Text = "Emplacement de la copie de base de données";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(240, 13);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.textEditconxtionstring;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(746, 24);
-            this.layoutControlItem4.Text = "Chine de connection a la base de donne ";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(194, 13);
+            this.layoutControlItem4.Size = new System.Drawing.Size(681, 24);
+            this.layoutControlItem4.Text = "Chaîne de connexion de la base de données";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(240, 13);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.simpleButton1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(372, 40);
+            this.layoutControlItem2.Size = new System.Drawing.Size(681, 40);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.simpleButton2save;
-            this.layoutControlItem1.Location = new System.Drawing.Point(372, 48);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 88);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(374, 40);
+            this.layoutControlItem1.Size = new System.Drawing.Size(681, 40);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -267,26 +268,26 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             // 
             this.layoutControlGroup3.CustomizationFormText = "layoutControlGroup1";
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem3,
             this.layoutControlItem6,
             this.layoutControlItem7,
+            this.layoutControlItem3,
             this.layoutControlItem8});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 135);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 175);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.OptionsItemText.TextToControlDistance = 3;
-            this.layoutControlGroup3.Size = new System.Drawing.Size(770, 142);
-            this.layoutControlGroup3.Text = "Restore la base de donne ";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(705, 182);
+            this.layoutControlGroup3.Text = "Réstaurer la base de données à partir d\'une copie";
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.textEditPs1Url;
             this.layoutControlItem3.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem3.CustomizationFormText = "        Mot de passe";
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(746, 24);
-            this.layoutControlItem3.Text = "URL";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(194, 13);
+            this.layoutControlItem3.Size = new System.Drawing.Size(681, 24);
+            this.layoutControlItem3.Text = "Emplacement de restauration de base de données";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(240, 13);
             // 
             // layoutControlItem6
             // 
@@ -295,18 +296,18 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.layoutControlItem6.CustomizationFormText = "        Nom d\'utilisateur";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(746, 24);
-            this.layoutControlItem6.Text = "Chine de connection a la base de donne ";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(194, 13);
+            this.layoutControlItem6.Size = new System.Drawing.Size(681, 24);
+            this.layoutControlItem6.Text = "Chaîne de connexion de la base de données";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(240, 13);
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.simpleButton11openfill;
             this.layoutControlItem7.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem7.CustomizationFormText = "layoutControlItem2";
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(372, 49);
+            this.layoutControlItem7.Size = new System.Drawing.Size(681, 40);
             this.layoutControlItem7.Text = "layoutControlItem2";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
@@ -316,9 +317,9 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             this.layoutControlItem8.Control = this.simpleButtonsave;
             this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem8.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem8.Location = new System.Drawing.Point(372, 48);
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 88);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(374, 49);
+            this.layoutControlItem8.Size = new System.Drawing.Size(681, 49);
             this.layoutControlItem8.Text = "layoutControlItem1";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
@@ -327,7 +328,7 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 297);
+            this.ClientSize = new System.Drawing.Size(725, 377);
             this.Controls.Add(this.layoutControl1);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("FrmfrmcoupeBD.IconOptions.SvgImage")));
             this.Name = "FrmfrmcoupeBD";

@@ -33,7 +33,7 @@ namespace gtsco2.forms.Pageprancipel
            basededonne.User val = classe.shared.bd.Users.First(x => x.ID_user == valuer);
 
                
-            if (val.Role != "Admen")
+            if (val.Role != "Admin")
                 barButtonItem11user.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
             catch { }

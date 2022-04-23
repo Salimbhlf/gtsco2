@@ -69,9 +69,9 @@ namespace gtsco2.forms.SplashSacrine
             this.labelStatus.AppearancePressed.Options.UseFont = true;
             this.labelStatus.Location = new System.Drawing.Point(26, 252);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(20, 13);
+            this.labelStatus.Size = new System.Drawing.Size(268, 13);
             this.labelStatus.TabIndex = 3;
-            this.labelStatus.Text = "load";
+            this.labelStatus.Text = "Chargement des données en cours, veuillez patienter...";
             // 
             // labelCopyright
             // 

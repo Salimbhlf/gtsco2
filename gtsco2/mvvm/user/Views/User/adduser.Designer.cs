@@ -105,7 +105,7 @@ namespace gtsco2.mvvm.user.Views.User
             // 
             // bbiSave
             // 
-            this.bbiSave.Caption = "Save";
+            this.bbiSave.Caption = "Enregistrer ";
             this.bbiSave.Id = 2;
             this.bbiSave.ImageOptions.ImageUri.Uri = "Save";
             this.bbiSave.Name = "bbiSave";
@@ -113,7 +113,7 @@ namespace gtsco2.mvvm.user.Views.User
             // 
             // bbiSaveAndClose
             // 
-            this.bbiSaveAndClose.Caption = "Save And Close";
+            this.bbiSaveAndClose.Caption = "Enregistrer et fermer ";
             this.bbiSaveAndClose.Id = 3;
             this.bbiSaveAndClose.ImageOptions.ImageUri.Uri = "SaveAndClose";
             this.bbiSaveAndClose.Name = "bbiSaveAndClose";
@@ -128,7 +128,7 @@ namespace gtsco2.mvvm.user.Views.User
             // 
             // bbiClose
             // 
-            this.bbiClose.Caption = "Close";
+            this.bbiClose.Caption = "Fermer";
             this.bbiClose.Id = 7;
             this.bbiClose.ImageOptions.ImageUri.Uri = "Close";
             this.bbiClose.Name = "bbiClose";
@@ -164,7 +164,7 @@ namespace gtsco2.mvvm.user.Views.User
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiSaveAndClose);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "User Tasks";
+            this.mainRibbonPageGroup.Text = "Gestion des utilisateur ";
             // 
             // layoutControl1
             // 
@@ -183,47 +183,48 @@ namespace gtsco2.mvvm.user.Views.User
             // 
             // NomTextEdit
             // 
-            this.NomTextEdit.Location = new System.Drawing.Point(161, 39);
+            this.NomTextEdit.Location = new System.Drawing.Point(157, 39);
             this.NomTextEdit.Name = "NomTextEdit";
-            this.NomTextEdit.Size = new System.Drawing.Size(468, 20);
+            this.NomTextEdit.Size = new System.Drawing.Size(472, 20);
             this.NomTextEdit.StyleController = this.layoutControl1;
             this.NomTextEdit.TabIndex = 5;
             // 
             // PrenomTextEdit
             // 
-            this.PrenomTextEdit.Location = new System.Drawing.Point(161, 63);
+            this.PrenomTextEdit.Location = new System.Drawing.Point(157, 63);
             this.PrenomTextEdit.Name = "PrenomTextEdit";
-            this.PrenomTextEdit.Size = new System.Drawing.Size(468, 20);
+            this.PrenomTextEdit.Size = new System.Drawing.Size(472, 20);
             this.PrenomTextEdit.StyleController = this.layoutControl1;
             this.PrenomTextEdit.TabIndex = 6;
             // 
             // NomeutlisatureTextEdit
             // 
-            this.NomeutlisatureTextEdit.Location = new System.Drawing.Point(161, 87);
+            this.NomeutlisatureTextEdit.Location = new System.Drawing.Point(157, 87);
             this.NomeutlisatureTextEdit.Name = "NomeutlisatureTextEdit";
-            this.NomeutlisatureTextEdit.Size = new System.Drawing.Size(468, 20);
+            this.NomeutlisatureTextEdit.Size = new System.Drawing.Size(472, 20);
             this.NomeutlisatureTextEdit.StyleController = this.layoutControl1;
             this.NomeutlisatureTextEdit.TabIndex = 7;
             // 
             // MotedePasseTextEdit
             // 
-            this.MotedePasseTextEdit.Location = new System.Drawing.Point(161, 111);
+            this.MotedePasseTextEdit.Location = new System.Drawing.Point(157, 111);
             this.MotedePasseTextEdit.Name = "MotedePasseTextEdit";
-            this.MotedePasseTextEdit.Size = new System.Drawing.Size(468, 20);
+            this.MotedePasseTextEdit.Size = new System.Drawing.Size(472, 20);
             this.MotedePasseTextEdit.StyleController = this.layoutControl1;
             this.MotedePasseTextEdit.TabIndex = 8;
             // 
             // comboBoxEdit1
             // 
             this.comboBoxEdit1.EditValue = "Admin";
-            this.comboBoxEdit1.Location = new System.Drawing.Point(161, 135);
+            this.comboBoxEdit1.Location = new System.Drawing.Point(157, 135);
             this.comboBoxEdit1.MenuManager = this.mainRibbonControl;
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
-            "Admin"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(468, 20);
+            "Admin",
+            " "});
+            this.comboBoxEdit1.Size = new System.Drawing.Size(472, 20);
             this.comboBoxEdit1.StyleController = this.layoutControl1;
             this.comboBoxEdit1.TabIndex = 11;
             // 
@@ -278,7 +279,7 @@ namespace gtsco2.mvvm.user.Views.User
             this.ItemForNom.Name = "ItemForNom";
             this.ItemForNom.Size = new System.Drawing.Size(611, 24);
             this.ItemForNom.Text = "Nom";
-            this.ItemForNom.TextSize = new System.Drawing.Size(127, 13);
+            this.ItemForNom.TextSize = new System.Drawing.Size(123, 13);
             // 
             // ItemForPrenom
             // 
@@ -288,8 +289,8 @@ namespace gtsco2.mvvm.user.Views.User
             this.ItemForPrenom.Location = new System.Drawing.Point(0, 41);
             this.ItemForPrenom.Name = "ItemForPrenom";
             this.ItemForPrenom.Size = new System.Drawing.Size(611, 24);
-            this.ItemForPrenom.Text = "Prenom";
-            this.ItemForPrenom.TextSize = new System.Drawing.Size(127, 13);
+            this.ItemForPrenom.Text = "Prénom";
+            this.ItemForPrenom.TextSize = new System.Drawing.Size(123, 13);
             // 
             // ItemForNomeutlisature
             // 
@@ -299,8 +300,8 @@ namespace gtsco2.mvvm.user.Views.User
             this.ItemForNomeutlisature.Location = new System.Drawing.Point(0, 65);
             this.ItemForNomeutlisature.Name = "ItemForNomeutlisature";
             this.ItemForNomeutlisature.Size = new System.Drawing.Size(611, 24);
-            this.ItemForNomeutlisature.Text = "Nom eutlisature";
-            this.ItemForNomeutlisature.TextSize = new System.Drawing.Size(127, 13);
+            this.ItemForNomeutlisature.Text = "Nom d\'utilisateur";
+            this.ItemForNomeutlisature.TextSize = new System.Drawing.Size(123, 13);
             // 
             // ItemForMotedePasse
             // 
@@ -310,8 +311,8 @@ namespace gtsco2.mvvm.user.Views.User
             this.ItemForMotedePasse.Location = new System.Drawing.Point(0, 89);
             this.ItemForMotedePasse.Name = "ItemForMotedePasse";
             this.ItemForMotedePasse.Size = new System.Drawing.Size(611, 24);
-            this.ItemForMotedePasse.Text = "Mote de Passe";
-            this.ItemForMotedePasse.TextSize = new System.Drawing.Size(127, 13);
+            this.ItemForMotedePasse.Text = "Mot de Passe";
+            this.ItemForMotedePasse.TextSize = new System.Drawing.Size(123, 13);
             // 
             // layoutControlItem1
             // 
@@ -319,8 +320,8 @@ namespace gtsco2.mvvm.user.Views.User
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 113);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(611, 58);
-            this.layoutControlItem1.Text = "Role";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(127, 13);
+            this.layoutControlItem1.Text = "Rôle";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(123, 13);
             // 
             // simpleLabelItem1
             // 
@@ -328,8 +329,8 @@ namespace gtsco2.mvvm.user.Views.User
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Size = new System.Drawing.Size(611, 17);
-            this.simpleLabelItem1.Text = "Ajouter un adminastrature";
-            this.simpleLabelItem1.TextSize = new System.Drawing.Size(127, 13);
+            this.simpleLabelItem1.Text = "Ajouter un administrateur";
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(123, 13);
             // 
             // adduser
             // 
@@ -339,7 +340,7 @@ namespace gtsco2.mvvm.user.Views.User
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.mainRibbonControl);
             this.Name = "adduser";
-            this.Text = "adduser";
+            this.Text = "Ajouter un utilisateur ";
             this.Load += new System.EventHandler(this.adduser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mainRibbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

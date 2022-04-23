@@ -94,7 +94,7 @@ namespace gtsco2.forms.CnxDataBase
             this.simpleButton2.Size = new System.Drawing.Size(199, 22);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 7;
-            this.simpleButton2.Text = "Enregistrer les informations";
+            this.simpleButton2.Text = "Se Connecter \r\n";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // comboBoxEdit1
@@ -131,7 +131,7 @@ namespace gtsco2.forms.CnxDataBase
             this.simpleButton1.Size = new System.Drawing.Size(198, 22);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Text = "Se Connecter ";
+            this.simpleButton1.Text = "Test de connexion";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // comboBoxEditATH

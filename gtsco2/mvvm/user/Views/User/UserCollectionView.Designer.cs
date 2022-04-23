@@ -162,7 +162,7 @@
             // 
             // bbiPrintPreview
             // 
-            this.bbiPrintPreview.Caption = "Imrpimer et et enregistrer ";
+            this.bbiPrintPreview.Caption = "Imprimer";
             this.bbiPrintPreview.Id = 14;
             this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
             this.bbiPrintPreview.Name = "bbiPrintPreview";
@@ -193,6 +193,7 @@
             this.bbiDelete.Id = 18;
             this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
             this.bbiDelete.Name = "bbiDelete";
+            this.bbiDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiDelete_ItemClick);
             // 
             // bbiRefresh
             // 
@@ -219,7 +220,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Option";
+            this.ribbonPageGroup1.Text = "Gestion des utilisateurs ";
             // 
             // ribbonPageGroup2
             // 
@@ -268,7 +269,7 @@
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "UserCollectionView";
-            this.Text = "Utilisateur";
+            this.Text = "Liste des utilisateurs";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userCollectionViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();

@@ -188,7 +188,7 @@
             // 
             // bbiPrintPreview
             // 
-            this.bbiPrintPreview.Caption = "Enregistrer et imprimer ";
+            this.bbiPrintPreview.Caption = "Exporter et imprimer";
             this.bbiPrintPreview.Id = 14;
             this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
             this.bbiPrintPreview.Name = "bbiPrintPreview";
@@ -253,7 +253,7 @@
             this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Enregistrer et imprimer ";
+            this.ribbonPageGroup2.Text = "Exporter et imprimer";
             // 
             // ribbonStatusBar
             // 

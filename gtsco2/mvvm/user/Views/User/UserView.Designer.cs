@@ -102,13 +102,15 @@
             // ID_userTextEdit
             // 
             this.ID_userTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.userViewBindingSource, "ID_user", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ID_userTextEdit.EditValue = "";
             this.ID_userTextEdit.Location = new System.Drawing.Point(122, 12);
             this.ID_userTextEdit.Name = "ID_userTextEdit";
             this.ID_userTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.ID_userTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.ID_userTextEdit.Properties.Mask.EditMask = "N0";
-            this.ID_userTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.ID_userTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.ID_userTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.ID_userTextEdit.Properties.MaskSettings.Set("mask", "N0");
+            this.ID_userTextEdit.Properties.ReadOnly = true;
             this.ID_userTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ID_userTextEdit.Size = new System.Drawing.Size(598, 20);
             this.ID_userTextEdit.StyleController = this.dataLayoutControl1;
@@ -159,6 +161,7 @@
             this.PhotoPictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.userViewBindingSource, "Photo", true));
             this.PhotoPictureEdit.Location = new System.Drawing.Point(122, 156);
             this.PhotoPictureEdit.Name = "PhotoPictureEdit";
+            this.PhotoPictureEdit.Properties.NullText = "Cliquer avec le bouton droit pour ajouter une image";
             this.PhotoPictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.PhotoPictureEdit.Size = new System.Drawing.Size(598, 150);
             this.PhotoPictureEdit.StyleController = this.dataLayoutControl1;
@@ -173,8 +176,8 @@
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
-            "Utilisateur",
-            "Admen"});
+            "Admin",
+            "Utilisateur"});
             this.comboBoxEdit1.Size = new System.Drawing.Size(598, 20);
             this.comboBoxEdit1.StyleController = this.dataLayoutControl1;
             this.comboBoxEdit1.TabIndex = 11;

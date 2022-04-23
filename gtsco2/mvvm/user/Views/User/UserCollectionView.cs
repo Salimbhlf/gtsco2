@@ -44,5 +44,10 @@ namespace gtsco2.mvvm.user.Views.UserCollectionView{
                 }
             };
         }
+
+        private void bbiDelete_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace gtsco2.forms.CnxDataBase
             string Connection = string.Format("data source={0};initial catalog={4};integrated security={1};user id ={2}; password ={3};MultipleActiveResultSets=True;App=EntityFramework", comboBoxEdit1.Text,secr,textEdit3Nometu.Text,textEditPs.Text,textEdit3dATEBASE.Text) ;
             try { Sqlhelper helper = new Sqlhelper(Connection);
                 if (helper.IsConnection)
-                    MessageBox.Show("test connection succeeded.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Test de connexion effectué avec succès." + "  ", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch(Exception ex ) { MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
@@ -74,9 +74,9 @@ namespace gtsco2.forms.CnxDataBase
                     AppSetting satting = new AppSetting();
                 satting.SeveConnectionString("gtsco", Connection);
 
-                
 
-                    MessageBox.Show("La connection a eter bien enrgistre ."+satting.GetConnectionString("gtsco"), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                MessageBox.Show("Connexion effectué avec succès." + "  \nL'application va maintenant redémarrer. " + "\nVos informations de connexion sont:\n" + satting.GetConnectionString("gtsco"), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Application.Restart();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }

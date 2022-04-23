@@ -43,6 +43,7 @@ namespace gtsco2.forms
             this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -71,6 +72,7 @@ namespace gtsco2.forms
             this.flowLayoutPanel1.Controls.Add(this.simpleButton10);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton11);
             this.flowLayoutPanel1.Controls.Add(this.simpleButton12);
+            this.flowLayoutPanel1.Controls.Add(this.simpleButton2);
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
@@ -346,6 +348,25 @@ namespace gtsco2.forms
             this.simpleButton12.Text = "login";
             this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.Blue;
+            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.White;
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseBorderColor = true;
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.Location = new System.Drawing.Point(627, 189);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(202, 87);
+            this.simpleButton2.TabIndex = 12;
+            this.simpleButton2.Text = "login";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click_1);
+            // 
             // Navigation
             // 
             this.Appearance.BackColor = System.Drawing.Color.Black;
@@ -378,5 +399,6 @@ namespace gtsco2.forms
         private DevExpress.XtraEditors.SimpleButton simpleButton10;
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

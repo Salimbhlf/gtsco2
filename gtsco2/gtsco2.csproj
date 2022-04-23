@@ -70,6 +70,9 @@
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>image_viber_2022-03-23_19-13-58-552.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
@@ -217,6 +220,12 @@
     </Compile>
     <Compile Include="forms\CnxDataBase\FrmCnxDataBase.Designer.cs">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\coupe de la base de donne\FrmfrmcoupeBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\coupe de la base de donne\FrmfrmcoupeBD.Designer.cs">
+      <DependentUpon>FrmfrmcoupeBD.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\CnxDataBase\Sqlhelper.cs" />
     <Compile Include="forms\Décisions\frmRodublomint\frmrdublomant.cs">
@@ -592,7 +601,7 @@
       <DependentUpon>DecisionCollectionView.cs</DependentUpon>
     </Compile>
     <Compile Include="mvvm\Views\Decision\DecisionView.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="mvvm\Views\Decision\DecisionView.designer.cs">
       <DependentUpon>DecisionView.cs</DependentUpon>
@@ -846,6 +855,9 @@
     <EmbeddedResource Include="forms\CnxDataBase\FrmCnxDataBase.resx">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\coupe de la base de donne\FrmfrmcoupeBD.resx">
+      <DependentUpon>FrmfrmcoupeBD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\Décisions\frmRodublomint\frmrdublomant.resx">
       <DependentUpon>frmrdublomant.cs</DependentUpon>
     </EmbeddedResource>
@@ -927,6 +939,7 @@
     <EmbeddedResource Include="forms\PVfinal\frmPVfinal.resx">
       <DependentUpon>frmPVfinal.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="image_viber_2022-03-23_19-13-58-552.ico" />
     <Content Include="Properties\licenses.licx" />
     <EmbeddedResource Include="forms\PVfinal\raporetPv\relver final globale.resx">
       <DependentUpon>relver final globale.cs</DependentUpon>

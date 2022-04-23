@@ -218,6 +218,12 @@
     <Compile Include="forms\CnxDataBase\FrmCnxDataBase.Designer.cs">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\coupe de la base de donne\FrmfrmcoupeBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\coupe de la base de donne\FrmfrmcoupeBD.Designer.cs">
+      <DependentUpon>FrmfrmcoupeBD.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\CnxDataBase\Sqlhelper.cs" />
     <Compile Include="forms\Décisions\frmRodublomint\frmrdublomant.cs">
       <SubType>Form</SubType>
@@ -592,7 +598,7 @@
       <DependentUpon>DecisionCollectionView.cs</DependentUpon>
     </Compile>
     <Compile Include="mvvm\Views\Decision\DecisionView.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="mvvm\Views\Decision\DecisionView.designer.cs">
       <DependentUpon>DecisionView.cs</DependentUpon>
@@ -845,6 +851,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\CnxDataBase\FrmCnxDataBase.resx">
       <DependentUpon>FrmCnxDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\coupe de la base de donne\FrmfrmcoupeBD.resx">
+      <DependentUpon>FrmfrmcoupeBD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Décisions\frmRodublomint\frmrdublomant.resx">
       <DependentUpon>frmrdublomant.cs</DependentUpon>

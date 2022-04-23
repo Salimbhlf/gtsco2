@@ -114,5 +114,11 @@ namespace gtsco2.forms
             fr.refrech();
             fr.ShowDialog();
         }
+
+        private void simpleButton2_Click_1(object sender, EventArgs e)
+        {
+            forms.coupe_de_la_base_de_donne.FrmfrmcoupeBD d = new coupe_de_la_base_de_donne.FrmfrmcoupeBD();
+            d.Show();
+        }
     }
 }

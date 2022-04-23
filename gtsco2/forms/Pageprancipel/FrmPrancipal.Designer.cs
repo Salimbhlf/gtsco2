@@ -127,6 +127,7 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
@@ -176,9 +177,10 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem12,
             this.barButtonItem13,
             this.barButtonItem14,
-            this.barButtonItem15});
+            this.barButtonItem15,
+            this.barButtonItem11});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 43;
+            this.ribbonControl1.MaxItemId = 44;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage2,
@@ -851,6 +853,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             this.ribbonPageGroup14.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup14.ImageOptions.SvgImage")));
             this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
             this.ribbonPageGroup14.Text = "Base de données ";
             // 
@@ -965,6 +968,15 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem7.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem7.Name = "barButtonItem7";
             // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "Sauvegarder et restaurer la base de données";
+            this.barButtonItem11.Id = 43;
+            this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.barButtonItem11.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem11.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
             // FrmPrancipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1064,5 +1076,6 @@ namespace gtsco2.forms.Pageprancipel
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
     }
 }

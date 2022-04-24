@@ -186,7 +186,7 @@ namespace gtsco2.forms.coupe_de_la_base_de_donne
             var db = new basededonne. gtsco ();
 
             string dbname = db.Database.Connection.Database;
-            string dbBackUp = "DMMback" + DateTime.Now.ToString("yyyyMMddHHmm");
+            string dbBackUp = "\\DMMback" + DateTime.Now.ToString("yyyyMMddHHmm");
             var fullpath = con.ToString() + dbBackUp + ".bak";
             string sqlCommand = @"BACKUP DATABASE [{0}] TO  DISK = '" + fullpath + "' WITH NOFORMAT, NOINIT,  NAME = N'DBMDD', SKIP, NOREWIND, NOUNLOAD,  STATS = 10";
             int path = db.Database.ExecuteSqlCommand(System.Data.Entity.TransactionalBehavior.DoNotEnsureTransaction, string.Format(sqlCommand, dbname, dbBackUp));

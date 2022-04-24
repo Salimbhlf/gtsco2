@@ -76,24 +76,23 @@ namespace gtsco2.forms.SplashSacrine
             {
                 if (shared.bd.Users.Count() == 0)
                 {
-                    MessageBox.Show("bienveun", " meesage", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    mvvm.user.Views.User.adduser d = new mvvm.user.Views.User.adduser();
                     
+                    mvvm.user.Views.User.adduser d = new mvvm.user.Views.User.adduser();
 
-
-                    d.Show();
+                    this.Hide();
+                    d.ShowDialog();
                 }
                 else
                 {
-                    this.Hide();
+                    
                     forms.Login.FormLogin fr = new Login.FormLogin();
-                    fr.ShowDialog();
+                   this.Hide(); fr.ShowDialog();
                     
 
 
                 }
             }
-            catch (Exception ex) { MessageBox.Show(ex.Message); this.Close(); }
+            catch (Exception ex) { MessageBox.Show(ex.Message); Close(); }
         }
 
 

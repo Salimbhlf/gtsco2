@@ -29,17 +29,22 @@ namespace gtsco2.mvvm.user.Views.User
         }
         public void save()
         {
-            basededonne.User us = new basededonne.User();
-            us.Nom = NomTextEdit.Text;
-            us.Prenom = PrenomTextEdit.Text;
-            us.Nomeutlisature = NomeutlisatureTextEdit.Text;
-            us.MotedePasse = MotedePasseTextEdit.Text;
-            us.Role = comboBoxEdit1.Text;
-            shared.bd.Users.Add(us);
+            try
+            {
+                basededonne.User us = new basededonne.User();
+                us.Nom = NomTextEdit.Text;
+                us.Prenom = PrenomTextEdit.Text;
+                us.Nomeutlisature = NomeutlisatureTextEdit.Text;
+                us.MotedePasse = MotedePasseTextEdit.Text;
+                us.Role = comboBoxEdit1.Text;
+                shared.bd.Users.Add(us);
+            }
+            catch { }
+            
             shared.bd.SaveChanges();
-
+            this.Hide();
             forms.Pageprancipel.FrmPrancipal fr = new forms.Pageprancipel.FrmPrancipal();
-            fr.Show();
+            fr.ShowDialog();
             this.Close();
         }
 

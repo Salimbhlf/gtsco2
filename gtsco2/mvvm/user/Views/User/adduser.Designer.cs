@@ -224,6 +224,7 @@ namespace gtsco2.mvvm.user.Views.User
             this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
             "Admin",
             " "});
+            this.comboBoxEdit1.Properties.ReadOnly = true;
             this.comboBoxEdit1.Size = new System.Drawing.Size(472, 20);
             this.comboBoxEdit1.StyleController = this.layoutControl1;
             this.comboBoxEdit1.TabIndex = 11;

@@ -216,7 +216,7 @@ namespace gtsco2.forms.Login
             else
                 textEdit2.Properties.UseSystemPasswordChar = true;
         }
-        string a = "z"; 
+     
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -280,10 +280,7 @@ namespace gtsco2.forms.Login
         private void button2_Click(object sender, EventArgs e)
         {
             Login();
-            if (a == "b")
-            {
-                this.Close();
-            }
+          
         }
 
         private void textEdit1_Properties_EditValueChanged(object sender, EventArgs e)

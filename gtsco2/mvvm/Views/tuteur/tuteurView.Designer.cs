@@ -68,6 +68,13 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.code_postalTextEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colCode_Postal1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCommune_id = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Code_Postal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPost_adresse = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colpost_Adresse_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStagiairs = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForid_tuteur = new DevExpress.XtraLayout.LayoutControlItem();
@@ -82,6 +89,8 @@
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.StagiairsPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.colCommune1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWalia = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.id_tuteurTextEdit.Properties)).BeginInit();
@@ -525,20 +534,81 @@
             this.code_postalTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.code_postalTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.code_postalTextEdit.Properties.DataSource = this.StagiairsBindingSource;
+            this.code_postalTextEdit.Properties.DataSource = typeof(gtsco2.basededonne.Code_Postal);
+            this.code_postalTextEdit.Properties.DisplayMember = "Code_Postal1";
             this.code_postalTextEdit.Properties.NullText = "";
             this.code_postalTextEdit.Properties.PopupSizeable = false;
             this.code_postalTextEdit.Properties.PopupView = this.gridLookUpEdit1View;
+            this.code_postalTextEdit.Properties.ValueMember = "ID_Code_Postal";
             this.code_postalTextEdit.Size = new System.Drawing.Size(805, 20);
             this.code_postalTextEdit.StyleController = this.dataLayoutControl1;
             this.code_postalTextEdit.TabIndex = 8;
             // 
             // gridLookUpEdit1View
             // 
+            this.gridLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCode_Postal1,
+            this.colCommune,
+            this.colCommune_id,
+            this.colID_Code_Postal,
+            this.colPost_adresse,
+            this.colpost_Adresse_ar,
+            this.colStagiairs,
+            this.colCommune1,
+            this.colWalia});
             this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
             this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // colCode_Postal1
+            // 
+            this.colCode_Postal1.FieldName = "Code_Postal1";
+            this.colCode_Postal1.Name = "colCode_Postal1";
+            this.colCode_Postal1.Visible = true;
+            this.colCode_Postal1.VisibleIndex = 0;
+            // 
+            // colCommune
+            // 
+            this.colCommune.FieldName = "Commune.Commune_name";
+            this.colCommune.Name = "colCommune";
+            this.colCommune.Visible = true;
+            this.colCommune.VisibleIndex = 1;
+            // 
+            // colCommune_id
+            // 
+            this.colCommune_id.FieldName = "Commune_id";
+            this.colCommune_id.Name = "colCommune_id";
+            this.colCommune_id.Visible = true;
+            this.colCommune_id.VisibleIndex = 2;
+            // 
+            // colID_Code_Postal
+            // 
+            this.colID_Code_Postal.FieldName = "ID_Code_Postal";
+            this.colID_Code_Postal.Name = "colID_Code_Postal";
+            this.colID_Code_Postal.Visible = true;
+            this.colID_Code_Postal.VisibleIndex = 3;
+            // 
+            // colPost_adresse
+            // 
+            this.colPost_adresse.FieldName = "Post_adresse";
+            this.colPost_adresse.Name = "colPost_adresse";
+            this.colPost_adresse.Visible = true;
+            this.colPost_adresse.VisibleIndex = 4;
+            // 
+            // colpost_Adresse_ar
+            // 
+            this.colpost_Adresse_ar.FieldName = "post_Adresse_ar";
+            this.colpost_Adresse_ar.Name = "colpost_Adresse_ar";
+            this.colpost_Adresse_ar.Visible = true;
+            this.colpost_Adresse_ar.VisibleIndex = 5;
+            // 
+            // colStagiairs
+            // 
+            this.colStagiairs.FieldName = "Stagiairs";
+            this.colStagiairs.Name = "colStagiairs";
+            this.colStagiairs.Visible = true;
+            this.colStagiairs.VisibleIndex = 6;
             // 
             // layoutControlGroup1
             // 
@@ -676,6 +746,22 @@
             this.StagiairsPopUpMenu.Manager = this.StagiairsBarManager;
             this.StagiairsPopUpMenu.Name = "StagiairsPopUpMenu";
             // 
+            // colCommune1
+            // 
+            this.colCommune1.Caption = "Commune";
+            this.colCommune1.FieldName = "Commune.Commune_name";
+            this.colCommune1.Name = "colCommune1";
+            this.colCommune1.Visible = true;
+            this.colCommune1.VisibleIndex = 7;
+            // 
+            // colWalia
+            // 
+            this.colWalia.Caption = "Willaya";
+            this.colWalia.FieldName = "Commune.Willaya.Wilaya_name__fr_";
+            this.colWalia.Name = "colWalia";
+            this.colWalia.Visible = true;
+            this.colWalia.VisibleIndex = 8;
+            // 
             // tuteurView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -781,5 +867,14 @@
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.GridLookUpEdit code_postalTextEdit;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode_Postal1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune_id;
+        private DevExpress.XtraGrid.Columns.GridColumn colID_Code_Postal;
+        private DevExpress.XtraGrid.Columns.GridColumn colPost_adresse;
+        private DevExpress.XtraGrid.Columns.GridColumn colpost_Adresse_ar;
+        private DevExpress.XtraGrid.Columns.GridColumn colStagiairs;
+        private DevExpress.XtraGrid.Columns.GridColumn colCommune1;
+        private DevExpress.XtraGrid.Columns.GridColumn colWalia;
     }
 }

@@ -612,7 +612,7 @@
             this.CommuneLookUpEdit.Properties.NullValuePrompt = "Saisir ou séléctionnez la commune ";
             this.CommuneLookUpEdit.Properties.PopupView = this.CommuneLookUpEditView;
             this.CommuneLookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.CommuneLookUpEdit.Properties.ValueMember = "Code_Postal";
+            this.CommuneLookUpEdit.Properties.ValueMember = "Commune_id";
             this.CommuneLookUpEdit.Size = new System.Drawing.Size(678, 20);
             this.CommuneLookUpEdit.StyleController = this.dataLayoutControl1;
             this.CommuneLookUpEdit.TabIndex = 16;
@@ -970,7 +970,7 @@
             this.ItemForID_Emp.Location = new System.Drawing.Point(0, 24);
             this.ItemForID_Emp.Name = "ItemForID_Emp";
             this.ItemForID_Emp.Size = new System.Drawing.Size(949, 24);
-            this.ItemForID_Emp.Text = "Numéro de l\'employeur";
+            this.ItemForID_Emp.Text = "Employeur";
             this.ItemForID_Emp.TextSize = new System.Drawing.Size(255, 13);
             // 
             // ItemForNom_Maitre_Apprentissage

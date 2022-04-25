@@ -26,6 +26,12 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.tuteurCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colid_tuteur = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colnom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colprenom = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coltelephone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcode_postal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coladresse = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -42,12 +48,6 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.colid_tuteur = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colnom = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colprenom = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coladresse = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colcode_postal = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coltelephone = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tuteurCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -87,6 +87,47 @@
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
+            // 
+            // colid_tuteur
+            // 
+            this.colid_tuteur.FieldName = "id_tuteur";
+            this.colid_tuteur.Name = "colid_tuteur";
+            // 
+            // colnom
+            // 
+            this.colnom.FieldName = "nom";
+            this.colnom.Name = "colnom";
+            this.colnom.Visible = true;
+            this.colnom.VisibleIndex = 0;
+            // 
+            // colprenom
+            // 
+            this.colprenom.FieldName = "prenom";
+            this.colprenom.Name = "colprenom";
+            this.colprenom.Visible = true;
+            this.colprenom.VisibleIndex = 1;
+            // 
+            // coltelephone
+            // 
+            this.coltelephone.FieldName = "telephone";
+            this.coltelephone.Name = "coltelephone";
+            this.coltelephone.Visible = true;
+            this.coltelephone.VisibleIndex = 2;
+            // 
+            // colcode_postal
+            // 
+            this.colcode_postal.Caption = "Code postal";
+            this.colcode_postal.FieldName = "Code_Postal1.Code_Postal1";
+            this.colcode_postal.Name = "colcode_postal";
+            this.colcode_postal.Visible = true;
+            this.colcode_postal.VisibleIndex = 4;
+            // 
+            // coladresse
+            // 
+            this.coladresse.FieldName = "adresse";
+            this.coladresse.Name = "coladresse";
+            this.coladresse.Visible = true;
+            this.coladresse.VisibleIndex = 3;
             // 
             // ribbonControl
             // 
@@ -229,46 +270,6 @@
             this.barButtonItem3.Id = 14;
             this.barButtonItem3.ImageOptions.ImageUri.Uri = "Preview";
             this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // colid_tuteur
-            // 
-            this.colid_tuteur.FieldName = "id_tuteur";
-            this.colid_tuteur.Name = "colid_tuteur";
-            // 
-            // colnom
-            // 
-            this.colnom.FieldName = "nom";
-            this.colnom.Name = "colnom";
-            this.colnom.Visible = true;
-            this.colnom.VisibleIndex = 0;
-            // 
-            // colprenom
-            // 
-            this.colprenom.FieldName = "prenom";
-            this.colprenom.Name = "colprenom";
-            this.colprenom.Visible = true;
-            this.colprenom.VisibleIndex = 1;
-            // 
-            // coladresse
-            // 
-            this.coladresse.FieldName = "adresse";
-            this.coladresse.Name = "coladresse";
-            this.coladresse.Visible = true;
-            this.coladresse.VisibleIndex = 3;
-            // 
-            // colcode_postal
-            // 
-            this.colcode_postal.FieldName = "code_postal";
-            this.colcode_postal.Name = "colcode_postal";
-            this.colcode_postal.Visible = true;
-            this.colcode_postal.VisibleIndex = 4;
-            // 
-            // coltelephone
-            // 
-            this.coltelephone.FieldName = "telephone";
-            this.coltelephone.Name = "coltelephone";
-            this.coltelephone.Visible = true;
-            this.coltelephone.VisibleIndex = 2;
             // 
             // tuteurCollectionView
             // 

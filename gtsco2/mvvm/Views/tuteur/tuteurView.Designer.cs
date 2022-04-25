@@ -526,9 +526,11 @@
             this.code_postalTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.code_postalTextEdit.Properties.DataSource = this.StagiairsBindingSource;
+            this.code_postalTextEdit.Properties.DisplayMember = "code_postal";
             this.code_postalTextEdit.Properties.NullText = "";
             this.code_postalTextEdit.Properties.PopupSizeable = false;
             this.code_postalTextEdit.Properties.PopupView = this.gridLookUpEdit1View;
+            this.code_postalTextEdit.Properties.ValueMember = "code_postal";
             this.code_postalTextEdit.Size = new System.Drawing.Size(805, 20);
             this.code_postalTextEdit.StyleController = this.dataLayoutControl1;
             this.code_postalTextEdit.TabIndex = 8;

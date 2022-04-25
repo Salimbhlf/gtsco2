@@ -627,8 +627,7 @@
             this.Fax_EmpTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.Fax_EmpTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.Fax_EmpTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Fax_EmpTextEdit.Properties.Mask.EditMask = "N0";
-            this.Fax_EmpTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.Fax_EmpTextEdit.Properties.BeepOnError = false;
             this.Fax_EmpTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Fax_EmpTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Fax_EmpTextEdit.Size = new System.Drawing.Size(205, 20);

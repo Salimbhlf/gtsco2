@@ -339,7 +339,7 @@
             // 
             // colSection
             // 
-            this.colSection.FieldName = "Section";
+            this.colSection.FieldName = "Section1.Code_Section";
             this.colSection.Name = "colSection";
             this.colSection.Visible = true;
             this.colSection.VisibleIndex = 4;
@@ -371,7 +371,8 @@
             // 
             // colCode_postal
             // 
-            this.colCode_postal.FieldName = "Code_postal";
+            this.colCode_postal.Caption = "Code postal";
+            this.colCode_postal.FieldName = "Code_Postal1.Code_Postal1";
             this.colCode_postal.Name = "colCode_postal";
             this.colCode_postal.Visible = true;
             this.colCode_postal.VisibleIndex = 9;

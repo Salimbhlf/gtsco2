@@ -83,7 +83,7 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(732, 0, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(425, 202);
+            this.layoutControl1.Size = new System.Drawing.Size(425, 191);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -149,7 +149,7 @@ namespace gtsco2.forms.CnxDataBase
             // 
             // textEdit3dATEBASE
             // 
-            this.textEdit3dATEBASE.EditValue = "GTSCO22";
+            this.textEdit3dATEBASE.EditValue = "GTSCO25";
             this.textEdit3dATEBASE.Location = new System.Drawing.Point(157, 60);
             this.textEdit3dATEBASE.Name = "textEdit3dATEBASE";
             this.textEdit3dATEBASE.Size = new System.Drawing.Size(256, 20);
@@ -172,7 +172,7 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControlItem1,
             this.layoutControlItem7});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(425, 202);
+            this.Root.Size = new System.Drawing.Size(425, 191);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem3
@@ -245,7 +245,7 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControlItem2.Control = this.simpleButton1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 145);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(202, 37);
+            this.layoutControlItem2.Size = new System.Drawing.Size(202, 26);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -265,7 +265,7 @@ namespace gtsco2.forms.CnxDataBase
             this.layoutControlItem1.Control = this.simpleButton2;
             this.layoutControlItem1.Location = new System.Drawing.Point(202, 145);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(203, 37);
+            this.layoutControlItem1.Size = new System.Drawing.Size(203, 26);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -284,7 +284,7 @@ namespace gtsco2.forms.CnxDataBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 202);
+            this.ClientSize = new System.Drawing.Size(425, 191);
             this.Controls.Add(this.layoutControl1);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("FrmCnxDataBase.IconOptions.SvgImage")));
             this.Name = "FrmCnxDataBase";

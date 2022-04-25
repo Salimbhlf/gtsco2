@@ -26,6 +26,13 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.etablissementCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTél_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMail_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNom_ETAB_ar = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdresse_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdresse_ETAB_ar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -39,14 +46,6 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.colID_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNom_ETAB_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCode_Postal_EATB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTél_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAdresse_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAdresse_ETAB_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMail_ETAB = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.etablissementCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -81,13 +80,58 @@
             this.colTél_ETAB,
             this.colMail_ETAB,
             this.colNom_ETAB_ar,
-            this.colCode_Postal_EATB,
             this.colAdresse_ETAB,
             this.colAdresse_ETAB_ar});
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
+            // 
+            // colID_ETAB
+            // 
+            this.colID_ETAB.FieldName = "ID_ETAB";
+            this.colID_ETAB.Name = "colID_ETAB";
+            // 
+            // colNom_ETAB
+            // 
+            this.colNom_ETAB.FieldName = "Nom_ETAB";
+            this.colNom_ETAB.Name = "colNom_ETAB";
+            this.colNom_ETAB.Visible = true;
+            this.colNom_ETAB.VisibleIndex = 0;
+            // 
+            // colTél_ETAB
+            // 
+            this.colTél_ETAB.FieldName = "Tél_ETAB";
+            this.colTél_ETAB.Name = "colTél_ETAB";
+            // 
+            // colMail_ETAB
+            // 
+            this.colMail_ETAB.Caption = "E-mail ";
+            this.colMail_ETAB.FieldName = "Mail_ETAB";
+            this.colMail_ETAB.Name = "colMail_ETAB";
+            this.colMail_ETAB.Visible = true;
+            this.colMail_ETAB.VisibleIndex = 2;
+            // 
+            // colNom_ETAB_ar
+            // 
+            this.colNom_ETAB_ar.FieldName = "Nom_ETAB_ar";
+            this.colNom_ETAB_ar.Name = "colNom_ETAB_ar";
+            this.colNom_ETAB_ar.Visible = true;
+            this.colNom_ETAB_ar.VisibleIndex = 1;
+            // 
+            // colAdresse_ETAB
+            // 
+            this.colAdresse_ETAB.FieldName = "Adresse_ETAB";
+            this.colAdresse_ETAB.Name = "colAdresse_ETAB";
+            this.colAdresse_ETAB.Visible = true;
+            this.colAdresse_ETAB.VisibleIndex = 3;
+            // 
+            // colAdresse_ETAB_ar
+            // 
+            this.colAdresse_ETAB_ar.FieldName = "Adresse_ETAB_ar";
+            this.colAdresse_ETAB_ar.Name = "colAdresse_ETAB_ar";
+            this.colAdresse_ETAB_ar.Visible = true;
+            this.colAdresse_ETAB_ar.VisibleIndex = 4;
             // 
             // ribbonControl
             // 
@@ -210,60 +254,6 @@
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
-            // colID_ETAB
-            // 
-            this.colID_ETAB.FieldName = "ID_ETAB";
-            this.colID_ETAB.Name = "colID_ETAB";
-            // 
-            // colNom_ETAB
-            // 
-            this.colNom_ETAB.FieldName = "Nom_ETAB";
-            this.colNom_ETAB.Name = "colNom_ETAB";
-            this.colNom_ETAB.Visible = true;
-            this.colNom_ETAB.VisibleIndex = 0;
-            // 
-            // colNom_ETAB_ar
-            // 
-            this.colNom_ETAB_ar.FieldName = "Nom_ETAB_ar";
-            this.colNom_ETAB_ar.Name = "colNom_ETAB_ar";
-            this.colNom_ETAB_ar.Visible = true;
-            this.colNom_ETAB_ar.VisibleIndex = 1;
-            // 
-            // colCode_Postal_EATB
-            // 
-            this.colCode_Postal_EATB.FieldName = "Code_Postal_EATB";
-            this.colCode_Postal_EATB.Name = "colCode_Postal_EATB";
-            this.colCode_Postal_EATB.Visible = true;
-            this.colCode_Postal_EATB.VisibleIndex = 2;
-            // 
-            // colTél_ETAB
-            // 
-            this.colTél_ETAB.FieldName = "Tél_ETAB";
-            this.colTél_ETAB.Name = "colTél_ETAB";
-            this.colTél_ETAB.Visible = true;
-            this.colTél_ETAB.VisibleIndex = 3;
-            // 
-            // colAdresse_ETAB
-            // 
-            this.colAdresse_ETAB.FieldName = "Adresse_ETAB";
-            this.colAdresse_ETAB.Name = "colAdresse_ETAB";
-            this.colAdresse_ETAB.Visible = true;
-            this.colAdresse_ETAB.VisibleIndex = 5;
-            // 
-            // colAdresse_ETAB_ar
-            // 
-            this.colAdresse_ETAB_ar.FieldName = "Adresse_ETAB_ar";
-            this.colAdresse_ETAB_ar.Name = "colAdresse_ETAB_ar";
-            this.colAdresse_ETAB_ar.Visible = true;
-            this.colAdresse_ETAB_ar.VisibleIndex = 6;
-            // 
-            // colMail_ETAB
-            // 
-            this.colMail_ETAB.FieldName = "Mail_ETAB";
-            this.colMail_ETAB.Name = "colMail_ETAB";
-            this.colMail_ETAB.Visible = true;
-            this.colMail_ETAB.VisibleIndex = 4;
-            // 
             // EtablissementCollectionView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,7 +298,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTél_ETAB;
         private DevExpress.XtraGrid.Columns.GridColumn colMail_ETAB;
         private DevExpress.XtraGrid.Columns.GridColumn colNom_ETAB_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colCode_Postal_EATB;
         private DevExpress.XtraGrid.Columns.GridColumn colAdresse_ETAB;
         private DevExpress.XtraGrid.Columns.GridColumn colAdresse_ETAB_ar;
     }

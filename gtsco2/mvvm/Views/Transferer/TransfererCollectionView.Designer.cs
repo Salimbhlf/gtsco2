@@ -210,7 +210,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
             this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Transferer Tasks";
+            this.ribbonPageGroup1.Text = "Gestion des transferts ";
             // 
             // ribbonPageGroup2
             // 

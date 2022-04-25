@@ -170,7 +170,7 @@
             // colAnnee_secolir_en_coure
             // 
             this.colAnnee_secolir_en_coure.Caption = "Année scolaire en cours";
-            this.colAnnee_secolir_en_coure.FieldName = "Annee_secolir_en_coure";
+            this.colAnnee_secolir_en_coure.FieldName = "annee_scolaire.Designation";
             this.colAnnee_secolir_en_coure.Name = "colAnnee_secolir_en_coure";
             this.colAnnee_secolir_en_coure.Visible = true;
             this.colAnnee_secolir_en_coure.VisibleIndex = 6;
@@ -183,7 +183,7 @@
             // colSemestre_en_coure
             // 
             this.colSemestre_en_coure.Caption = "Semestre en cours";
-            this.colSemestre_en_coure.FieldName = "Semestre_en_coure";
+            this.colSemestre_en_coure.FieldName = "Semestre.Designation_Semestre";
             this.colSemestre_en_coure.Name = "colSemestre_en_coure";
             this.colSemestre_en_coure.Visible = true;
             this.colSemestre_en_coure.VisibleIndex = 5;

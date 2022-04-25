@@ -706,7 +706,7 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiDelete);
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiClose);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
-            this.mainRibbonPageGroup.Text = "Gestion des Décisions";
+            this.mainRibbonPageGroup.Text = "Gestion de la décision de redoublement";
             // 
             // ribbonPageGroupLayout
             // 

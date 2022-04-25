@@ -353,9 +353,10 @@
             this.Tél_ETABTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.Tél_ETABTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.Tél_ETABTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Tél_ETABTextEdit.Properties.Mask.EditMask = "N0";
-            this.Tél_ETABTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.Tél_ETABTextEdit.Properties.BeepOnError = false;
             this.Tél_ETABTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.Tél_ETABTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.Tél_ETABTextEdit.Properties.MaskSettings.Set("mask", "d");
             this.Tél_ETABTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Tél_ETABTextEdit.Size = new System.Drawing.Size(775, 20);
             this.Tél_ETABTextEdit.StyleController = this.dataLayoutControl1;
@@ -370,8 +371,7 @@
             this.Fax_ETABTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.Fax_ETABTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.Fax_ETABTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Fax_ETABTextEdit.Properties.Mask.EditMask = "N0";
-            this.Fax_ETABTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.Fax_ETABTextEdit.Properties.BeepOnError = false;
             this.Fax_ETABTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Fax_ETABTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Fax_ETABTextEdit.Size = new System.Drawing.Size(775, 20);
@@ -1000,6 +1000,7 @@
             this.ItemForCode_Postal_EATB.Size = new System.Drawing.Size(956, 24);
             this.ItemForCode_Postal_EATB.Text = "Code postal de l\'établissement ";
             this.ItemForCode_Postal_EATB.TextSize = new System.Drawing.Size(165, 13);
+            this.ItemForCode_Postal_EATB.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // ItemForAdresse_ETAB_ar
             // 

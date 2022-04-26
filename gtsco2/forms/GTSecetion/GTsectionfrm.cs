@@ -525,13 +525,24 @@ namespace gtsco2.forms.GTSecetion
         {
             try
             {
-                int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
-                int sec = int.Parse(seccomboBox.SelectedValue.ToString());
-                bool sec1 = Sec1checkEdit1.Checked;
-                bool pro1 = pro1checkEdit1.Checked;
-                gridControl1.DataSource = refrach(promo, sec, sec1, pro1);
-                gridView1.OptionsBehavior.ReadOnly = true;
-                NUBEREF.Text = gridView1.RowCount.ToString();
+                if (promocomboBox11.Text.ToString() != "")
+                {
+                    int promo = int.Parse(promocomboBox11.SelectedValue.ToString());
+                    if (seccomboBox.Text.ToString() != "")
+                    {
+                        int sec = int.Parse(seccomboBox.SelectedValue.ToString());
+                        bool sec1 = Sec1checkEdit1.Checked;
+                        bool pro1 = pro1checkEdit1.Checked;
+                        gridControl1.DataSource = refrach(promo, sec, sec1, pro1);
+                        gridView1.OptionsBehavior.ReadOnly = true;
+                        NUBEREF.Text = gridView1.RowCount.ToString();
+                    }
+                    else { MessageBox.Show("vous dovez selectionnerse un section vallide", "", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
+                }
+                else
+                {
+                    MessageBox.Show("vous dovez selectionnerse un promo vallide", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (Exception EX) { MessageBox.Show(EX.Message); }
 
@@ -541,13 +552,25 @@ namespace gtsco2.forms.GTSecetion
         {
             try
             {
-                int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
-                int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
-                bool sec2 = Sec2checkEdit2.Checked;
-                bool pro2 = pro2checkEdit3.Checked;
-                gridControl2.DataSource = refrach(promo, sec, sec2, pro2);
-                gridView2.OptionsBehavior.ReadOnly = true;
-                NUBEREF2.Text = gridView2.RowCount.ToString();
+                if (promocomboBox114.Text.ToString() != "")
+                {
+
+                    int promo = int.Parse(promocomboBox114.SelectedValue.ToString());
+                    if (seccomboBox15.Text.ToString() != "")
+                    {
+                        int sec = int.Parse(seccomboBox15.SelectedValue.ToString());
+                        bool sec2 = Sec2checkEdit2.Checked;
+                        bool pro2 = pro2checkEdit3.Checked;
+                        gridControl2.DataSource = refrach(promo, sec, sec2, pro2);
+                        gridView2.OptionsBehavior.ReadOnly = true;
+                        NUBEREF2.Text = gridView2.RowCount.ToString();
+                    }
+                    else { MessageBox.Show("vous dovez selectionnerse un section vallide", "", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
+                }
+                else
+                {
+                    MessageBox.Show("vous dovez selectionnerse un promo vallide", "", MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
+                }
             }
             catch (Exception EX) { MessageBox.Show(EX.Message); }
         }

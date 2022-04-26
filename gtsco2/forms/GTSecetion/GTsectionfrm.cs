@@ -365,11 +365,11 @@ namespace gtsco2.forms.GTSecetion
                 DataTable tbsv = gridControl1.DataSource as DataTable;
                 if (tbsv != null)
                 {
-                    if (pro1 == false && sec1 == true)
+                    if (pro1 == true || sec1 == true)
                     {
                         if (pro1 == false && sec1 == true)
                         {
-                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ce (s) stagiaire (s) sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ce (s) stagiaire (s) sur la section:  " + seccomboBox.Text + " de la promo: " + promocomboBox11.Text + "", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                             if (r == DialogResult.Yes)
                             {
 
@@ -384,13 +384,14 @@ namespace gtsco2.forms.GTSecetion
 
                                 }
                                 shared.bd.SaveChanges();
+                                MessageBox.Show("Données enregistrées avec succès");
                             }
                         }
                         else if (pro1 == true && sec1 == false)
                         {
 
 
-                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos  " + promocomboBox11.Text + "  mais sans section  ", "", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur sa promos  " + " INITIALE " + "  et sans section  ", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                             //DialogResult r = MessageBox.Show("attinstion vous ete sur de que vous voulez que la list des stgaire tu le svagred juste avic la promo  " + promocomboBox11.Text + "  et un section anonim ", "", MessageBoxButtons.YesNo);
                             if (r == DialogResult.Yes)
@@ -407,13 +408,14 @@ namespace gtsco2.forms.GTSecetion
 
                                 }
                                 shared.bd.SaveChanges();
+                                MessageBox.Show("Données enregistrées avec succès");
                             }
                         }
-                        MessageBox.Show("Données enregistrées avec succès");
+                       
                     }
                     else
                     {
-                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' enregistrer  les stagiaires sans section ou la case section pour le enregistrer donne la section sélectioner  ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Veuillez cocher la case 'Afficher uniquement les stagiaire sans section' enregistrer  les stagiaires sans section ou la case section pour le enregistrer donne la section sélectioner  ", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                         //MessageBox.Show("stp coche la case de la section et decoche la cse de affiche juster le stg son section pour enrgistre les stg avic la section sinon fi le conntrare pour garede les satgire son section");
                     }
@@ -435,11 +437,11 @@ namespace gtsco2.forms.GTSecetion
                 DataTable tbsv = gridControl2.DataSource as DataTable;
                 if (tbsv != null)
                 {
-                    if (pro1 == true || sec1 == false)
+                    if (pro1 == true || sec1 == true)
                     {
                         if (pro1 == false && sec1 == true)
                         {
-                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ces stagiaires sur la section: " + seccomboBox15.Text + " de la promo: " + promocomboBox114.Text + "", "", MessageBoxButtons.YesNo);
+                            DialogResult r = MessageBox.Show("Etes-vous sure de vouloir enregistrer ces stagiaires sur la section: " + seccomboBox15.Text + " de la promo: " + promocomboBox114.Text + "", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ;
                             if (r == DialogResult.Yes)
                             {
 
@@ -454,11 +456,12 @@ namespace gtsco2.forms.GTSecetion
 
                                 }
                                 shared.bd.SaveChanges();
+                                MessageBox.Show("Données enregistrées avec succès");
                             }
                         }
                         else if (pro1 == true && sec1 == false)
                         {
-                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos" + promocomboBox114.Text + "et un section anonim ", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                            DialogResult r = MessageBox.Show("Attention vous etes sur le point d'enregistrer ce (s) stagiaire (s) sur la promos" + " INITIALE " + "et un section anonim ", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                             if (r == DialogResult.Yes)
                             {
 
@@ -474,9 +477,10 @@ namespace gtsco2.forms.GTSecetion
                                 }
                                 shared.bd.SaveChanges();
 
+                                MessageBox.Show("Données enregistrées avec succès");
                             }
                         }
-                        MessageBox.Show("Données enregistrées avec succès");
+                       
                     }
                     else
                     {

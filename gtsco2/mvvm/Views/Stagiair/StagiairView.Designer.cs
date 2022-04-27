@@ -456,6 +456,7 @@
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Num_STGTextEdit.Properties)).BeginInit();
@@ -1150,7 +1151,8 @@
             this.TelephoneTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.TelephoneTextEdit.Properties.BeepOnError = false;
             this.TelephoneTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.TelephoneTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TelephoneTextEdit.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.TelephoneTextEdit.Properties.MaskSettings.Set("mask", "0 \\d\\d\\d-\\d\\d \\d\\d \\d\\d");
             this.TelephoneTextEdit.Size = new System.Drawing.Size(260, 20);
             this.TelephoneTextEdit.StyleController = this.dataLayoutControl1;
             this.TelephoneTextEdit.TabIndex = 19;
@@ -1747,6 +1749,7 @@
             // Section1LookUpEditView
             // 
             this.Section1LookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn5,
             this.colCodePromo,
             this.colCode_Section,
             this.colSectionID,
@@ -1774,14 +1777,14 @@
             this.colCodePromo.FieldName = "Promo.Code_Promo";
             this.colCodePromo.Name = "colCodePromo";
             this.colCodePromo.Visible = true;
-            this.colCodePromo.VisibleIndex = 2;
+            this.colCodePromo.VisibleIndex = 3;
             // 
             // colCode_Section
             // 
             this.colCode_Section.FieldName = "Code_Section";
             this.colCode_Section.Name = "colCode_Section";
             this.colCode_Section.Visible = true;
-            this.colCode_Section.VisibleIndex = 3;
+            this.colCode_Section.VisibleIndex = 4;
             // 
             // colSectionID
             // 
@@ -1794,7 +1797,7 @@
             this.colCodeModeFormation.FieldName = "Mode_formation.Code_Mode_Formation";
             this.colCodeModeFormation.Name = "colCodeModeFormation";
             this.colCodeModeFormation.Visible = true;
-            this.colCodeModeFormation.VisibleIndex = 0;
+            this.colCodeModeFormation.VisibleIndex = 1;
             // 
             // Code_Option
             // 
@@ -1802,7 +1805,7 @@
             this.Code_Option.FieldName = "Option.Code_Option";
             this.Code_Option.Name = "Code_Option";
             this.Code_Option.Visible = true;
-            this.Code_Option.VisibleIndex = 1;
+            this.Code_Option.VisibleIndex = 2;
             // 
             // colID_Promo2
             // 
@@ -4701,6 +4704,14 @@
             this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
             this.barButtonItem11.Name = "barButtonItem11";
             // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Effictife";
+            this.gridColumn5.FieldName = "Stagiairs.Count";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 0;
+            // 
             // StagiairView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5326,5 +5337,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
     }
 }

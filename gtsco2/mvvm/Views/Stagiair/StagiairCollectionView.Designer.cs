@@ -61,12 +61,14 @@
             this.colSexe = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSituation_Familiale_Parents_STG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSituation_Familiale_Parents_STG1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSituation_Familiale_STG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAvenant_contrat_prorogation = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode_postal = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colContract_avenant_changement = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDate_Resiliation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDate_Validation_Contrat_STG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Mode_Formation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Option = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Specialite = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Employeur_Type = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -144,12 +146,14 @@
             this.colSexe,
             this.colSituation_Familiale_Parents_STG,
             this.colSituation_Familiale_Parents_STG1,
-            this.colSituation_Familiale_STG,
-            this.colAvenant_contrat_prorogation,
             this.colCode_postal,
             this.colContract_avenant_changement,
             this.colDate_Resiliation_Contrat_STG,
-            this.colDate_Validation_Contrat_STG});
+            this.colDate_Validation_Contrat_STG,
+            this.Mode_Formation,
+            this.Option,
+            this.Specialite,
+            this.Employeur_Type});
             this.gridView.CustomizationFormBounds = new System.Drawing.Rectangle(1045, 320, 252, 266);
             this.gridView.GridControl = this.gridControl;
             this.gridView.Name = "gridView";
@@ -182,14 +186,14 @@
             this.colDate_de_Naissance.FieldName = "Date_de_Naissance";
             this.colDate_de_Naissance.Name = "colDate_de_Naissance";
             this.colDate_de_Naissance.Visible = true;
-            this.colDate_de_Naissance.VisibleIndex = 8;
+            this.colDate_de_Naissance.VisibleIndex = 11;
             // 
             // colTelephone
             // 
             this.colTelephone.FieldName = "Telephone";
             this.colTelephone.Name = "colTelephone";
             this.colTelephone.Visible = true;
-            this.colTelephone.VisibleIndex = 5;
+            this.colTelephone.VisibleIndex = 8;
             // 
             // colE_Maile
             // 
@@ -197,7 +201,7 @@
             this.colE_Maile.FieldName = "E_Maile";
             this.colE_Maile.Name = "colE_Maile";
             this.colE_Maile.Visible = true;
-            this.colE_Maile.VisibleIndex = 6;
+            this.colE_Maile.VisibleIndex = 9;
             // 
             // colCommune
             // 
@@ -205,14 +209,14 @@
             this.colCommune.FieldName = "Commune.Commune_name";
             this.colCommune.Name = "colCommune";
             this.colCommune.Visible = true;
-            this.colCommune.VisibleIndex = 10;
+            this.colCommune.VisibleIndex = 13;
             // 
             // colAdresse
             // 
             this.colAdresse.FieldName = "Adresse";
             this.colAdresse.Name = "colAdresse";
             this.colAdresse.Visible = true;
-            this.colAdresse.VisibleIndex = 7;
+            this.colAdresse.VisibleIndex = 10;
             // 
             // colAdresse_ar
             // 
@@ -221,10 +225,11 @@
             // 
             // colEmployeur
             // 
+            this.colEmployeur.Caption = "Employeur";
             this.colEmployeur.FieldName = "Employeur.Nom_Emp";
             this.colEmployeur.Name = "colEmployeur";
             this.colEmployeur.Visible = true;
-            this.colEmployeur.VisibleIndex = 11;
+            this.colEmployeur.VisibleIndex = 14;
             // 
             // colLieu_Naissance
             // 
@@ -243,10 +248,11 @@
             // 
             // colMaitre_Apprentissage
             // 
+            this.colMaitre_Apprentissage.Caption = "Nom Maitre Apprentissage";
             this.colMaitre_Apprentissage.FieldName = "Maitre_Apprentissage.Nom_Maitre_Apprentissage";
             this.colMaitre_Apprentissage.Name = "colMaitre_Apprentissage";
             this.colMaitre_Apprentissage.Visible = true;
-            this.colMaitre_Apprentissage.VisibleIndex = 12;
+            this.colMaitre_Apprentissage.VisibleIndex = 16;
             // 
             // colNationalité_STG
             // 
@@ -293,7 +299,7 @@
             this.colphoto.FieldName = "photo";
             this.colphoto.Name = "colphoto";
             this.colphoto.Visible = true;
-            this.colphoto.VisibleIndex = 13;
+            this.colphoto.VisibleIndex = 17;
             // 
             // colPrenom_ar
             // 
@@ -332,17 +338,19 @@
             // 
             // colPromo
             // 
+            this.colPromo.Caption = "Promo";
             this.colPromo.FieldName = "Promo.Code_Promo";
             this.colPromo.Name = "colPromo";
             this.colPromo.Visible = true;
-            this.colPromo.VisibleIndex = 3;
+            this.colPromo.VisibleIndex = 6;
             // 
             // colSection
             // 
+            this.colSection.Caption = "Section";
             this.colSection.FieldName = "Section1.Code_Section";
             this.colSection.Name = "colSection";
             this.colSection.Visible = true;
-            this.colSection.VisibleIndex = 4;
+            this.colSection.VisibleIndex = 7;
             // 
             // colSexe
             // 
@@ -359,23 +367,13 @@
             this.colSituation_Familiale_Parents_STG1.FieldName = "Situation_Familiale_Parents_STG";
             this.colSituation_Familiale_Parents_STG1.Name = "colSituation_Familiale_Parents_STG1";
             // 
-            // colSituation_Familiale_STG
-            // 
-            this.colSituation_Familiale_STG.FieldName = "Situation_Familiale_STG";
-            this.colSituation_Familiale_STG.Name = "colSituation_Familiale_STG";
-            // 
-            // colAvenant_contrat_prorogation
-            // 
-            this.colAvenant_contrat_prorogation.FieldName = "Avenant_contrat_prorogation";
-            this.colAvenant_contrat_prorogation.Name = "colAvenant_contrat_prorogation";
-            // 
             // colCode_postal
             // 
             this.colCode_postal.Caption = "Code postal";
             this.colCode_postal.FieldName = "Code_Postal1.Code_Postal1";
             this.colCode_postal.Name = "colCode_postal";
             this.colCode_postal.Visible = true;
-            this.colCode_postal.VisibleIndex = 9;
+            this.colCode_postal.VisibleIndex = 12;
             // 
             // colContract_avenant_changement
             // 
@@ -391,6 +389,38 @@
             // 
             this.colDate_Validation_Contrat_STG.FieldName = "Date_Validation_Contrat_STG";
             this.colDate_Validation_Contrat_STG.Name = "colDate_Validation_Contrat_STG";
+            // 
+            // Mode_Formation
+            // 
+            this.Mode_Formation.Caption = "Mode Formation";
+            this.Mode_Formation.FieldName = "Promo.Mode_formation.Désignation_Mode_Formation";
+            this.Mode_Formation.Name = "Mode_Formation";
+            this.Mode_Formation.Visible = true;
+            this.Mode_Formation.VisibleIndex = 3;
+            // 
+            // Option
+            // 
+            this.Option.Caption = "Option";
+            this.Option.FieldName = "Promo.Option.Designation_Option";
+            this.Option.Name = "Option";
+            this.Option.Visible = true;
+            this.Option.VisibleIndex = 5;
+            // 
+            // Specialite
+            // 
+            this.Specialite.Caption = "Specialite";
+            this.Specialite.FieldName = "Promo.Option.Specialite1.Designation_SP";
+            this.Specialite.Name = "Specialite";
+            this.Specialite.Visible = true;
+            this.Specialite.VisibleIndex = 4;
+            // 
+            // Employeur_Type
+            // 
+            this.Employeur_Type.Caption = "Type Employeur";
+            this.Employeur_Type.FieldName = "Employeur.Type_Emp";
+            this.Employeur_Type.Name = "Employeur_Type";
+            this.Employeur_Type.Visible = true;
+            this.Employeur_Type.VisibleIndex = 15;
             // 
             // ribbonControl
             // 
@@ -469,10 +499,11 @@
             // 
             this.ribbonPageGroup1.AllowTextClipping = false;
             this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiNew);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiEdit);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiNew, "AJ");
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiEdit, "M");
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete, "S");
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh, "AC");
+            this.ribbonPageGroup1.KeyTip = "G";
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Gestion des Stagiaires";
             // 
@@ -480,7 +511,8 @@
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
             this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview, "EP");
+            this.ribbonPageGroup2.KeyTip = "EX";
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Exporter et imprimer";
             // 
@@ -506,10 +538,10 @@
             // 
             // popupMenu
             // 
-            this.popupMenu.ItemLinks.Add(this.bbiNew);
-            this.popupMenu.ItemLinks.Add(this.bbiEdit);
-            this.popupMenu.ItemLinks.Add(this.bbiDelete);
-            this.popupMenu.ItemLinks.Add(this.bbiRefresh);
+            this.popupMenu.ItemLinks.Add(this.bbiNew, "AJ");
+            this.popupMenu.ItemLinks.Add(this.bbiEdit, "M");
+            this.popupMenu.ItemLinks.Add(this.bbiDelete, "S");
+            this.popupMenu.ItemLinks.Add(this.bbiRefresh, "AC");
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
             // 
@@ -589,11 +621,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn colSexe;
         private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_Parents_STG;
         private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_Parents_STG1;
-        private DevExpress.XtraGrid.Columns.GridColumn colSituation_Familiale_STG;
-        private DevExpress.XtraGrid.Columns.GridColumn colAvenant_contrat_prorogation;
         private DevExpress.XtraGrid.Columns.GridColumn colCode_postal;
         private DevExpress.XtraGrid.Columns.GridColumn colContract_avenant_changement;
         private DevExpress.XtraGrid.Columns.GridColumn colDate_Resiliation_Contrat_STG;
         private DevExpress.XtraGrid.Columns.GridColumn colDate_Validation_Contrat_STG;
+        private DevExpress.XtraGrid.Columns.GridColumn Mode_Formation;
+        private DevExpress.XtraGrid.Columns.GridColumn Option;
+        private DevExpress.XtraGrid.Columns.GridColumn Specialite;
+        private DevExpress.XtraGrid.Columns.GridColumn Employeur_Type;
     }
 }

@@ -688,7 +688,6 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.ribbonPage2.Appearance.Options.UseFont = true;
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup16,
             this.ribbonPageGroup22,
             this.ribbonPageGroup5,
             this.ribbonPageGroup6,
@@ -846,6 +845,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup15,
             this.ribbonPageGroup14,
+            this.ribbonPageGroup16,
             this.ribbonPageGroup12});
             this.ribbonPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
             this.ribbonPage4.Name = "ribbonPage4";

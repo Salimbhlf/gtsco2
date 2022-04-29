@@ -85,6 +85,8 @@ namespace gtsco2.forms.Avnone
                            proro.date_fin_proro,
                            proro.date_validation_cont_proro,
                            proro.Num_validation_cont_proro,
+
+                           code_sp = promo.Option.Specialite1.Branch.Code_Branche +promo.Option.Specialite1.Code_SP
                            
 
 
@@ -165,11 +167,12 @@ namespace gtsco2.forms.Avnone
                     catch { }
                     try
                     {
-                        xrLabelDVCont.Text = row.date_validation_cont_proro.Value.ToString("dd/MM/yyyy");
                         xrLabelDateDub.Text = row.DATE_D_Formation.Value.ToString("dd/MM/yyyy");
                         xrLabelDateFin.Text = row.Date_F_Formation.Value.ToString("dd/MM/yyyy");
+                        xrLabelDVCont.Text = row.date_validation_cont_proro.Value.ToString("dd/MM/yyyy");
                     }
                     catch { }
+                    xrLabelCodeFo.Text = row.code_sp;
 
 
 

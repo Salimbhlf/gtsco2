@@ -20,9 +20,10 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             xrTabletoutal_preve.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_prive"));
             xrTableprive_fill.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_prive_fill"));
             xrTablepublic_t.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_public"));
+            xrTablpublic_fill.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_public_fill"));
             xrTablepublic_epa.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_public_epa"));
             xrTablepublic_epa_fill.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_public_epa_fill"));
-            xrTablpublic_fill.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_public"));
+           
             xrTable_toutal_g.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture2"));
             xrTabletoutal_g_fill.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture2_fill"));
 
@@ -31,6 +32,8 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             xrTableCellcodesp.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "codespeclite"));
             xrTableCellsection.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "codesection"));
             xrTableCelldatadube.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "datedube"));
+            xrTableCell22.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "semestre"));
+
 
 
 
@@ -43,9 +46,46 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             object dt = rpt.load();
             rpt.DataSource = dt;
 
+
+
+            rpt.TOUTAL(dt as DataTable) ;
             rpt.bandingdata();
 
             rpt.ShowRibbonPreview();
+
+        }
+
+        public void TOUTAL(DataTable AB)
+        { int secture_prive = 0;
+            int secture_prive_fill = 0;
+            int secture_public = 0;
+            int secture_public_fill = 0;
+            int secture_public_Epa = 0;
+            int secture_public_epa_fill = 0;
+            int secture2 = 0;
+            int secture2_fill = 0;
+            foreach (DataRow ROW in AB.Rows )
+                    {
+                secture_prive += int.Parse(ROW["secture_prive"].ToString());
+                secture_prive_fill += int.Parse(ROW["secture_prive_fill"].ToString());
+                secture_public += int.Parse(ROW["secture_public"].ToString());
+                secture_public_fill += int.Parse(ROW["secture_public_fill"].ToString());
+                secture_public_Epa += int.Parse(ROW["secture_public_Epa"].ToString());
+                secture_public_epa_fill += int.Parse(ROW["secture_public_epa_fill"].ToString());
+
+                secture2 += int.Parse(ROW["secture2"].ToString());
+                secture2_fill += int.Parse(ROW["secture2_fill"].ToString());
+            }
+            xrTableCell27.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture_prive.ToString()));
+            xrTableCell28.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture_prive_fill.ToString()));
+            xrTableCell29.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture_public.ToString())); 
+            xrTableCell30.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture_public_fill.ToString()));
+            xrTableCell31.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture_public_Epa.ToString()));
+            xrTableCell32.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture_public_epa_fill.ToString()));
+            xrTableCell33.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture2.ToString()));
+            xrTableCell34.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", secture2_fill.ToString()));
+
+
 
         }
         public  object load()
@@ -64,9 +104,10 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             tb1.Columns.Add("secture_prive_fill");
             tb1.Columns.Add("secture_public");
             tb1.Columns.Add("secture_public_fill");
+            tb1.Columns.Add("secture_public_Epa");
             tb1.Columns.Add("secture_public_epa_fill");
             tb1.Columns.Add("naive");
-            tb1.Columns.Add("secture_public_Epa");
+            
             tb1.Columns.Add("secture2");
             tb1.Columns.Add("secture2_fill");
 

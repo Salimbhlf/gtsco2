@@ -23,6 +23,7 @@
         /// </summary>
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StagiairCollectionView));
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.stagiairCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -82,6 +83,7 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stagiairCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -433,9 +435,10 @@
             this.bbiNew,
             this.bbiEdit,
             this.bbiDelete,
-            this.bbiRefresh});
+            this.bbiRefresh,
+            this.barButtonItem1});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 20;
+            this.ribbonControl.MaxItemId = 21;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -512,6 +515,7 @@
             this.ribbonPageGroup2.AllowTextClipping = false;
             this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview, "EP");
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup2.KeyTip = "EX";
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Exporter et imprimer";
@@ -544,6 +548,15 @@
             this.popupMenu.ItemLinks.Add(this.bbiRefresh, "AC");
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "sutation des effictife";
+            this.barButtonItem1.Id = 20;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // StagiairCollectionView
             // 
@@ -629,5 +642,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn Option;
         private DevExpress.XtraGrid.Columns.GridColumn Specialite;
         private DevExpress.XtraGrid.Columns.GridColumn Employeur_Type;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }

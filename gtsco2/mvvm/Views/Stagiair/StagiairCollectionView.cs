@@ -43,5 +43,10 @@ namespace gtsco2.mvvm.Views.StagiairCollectionView{
                 }
             };
         }
+
+        private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            gtsco2.forms.SUTATION_DES_EFFICTIFE.Sutatuin_Effictife.printsutation_effictife();
+        }
     }
 }

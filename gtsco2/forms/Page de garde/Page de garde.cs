@@ -114,7 +114,7 @@ namespace gtsco2.forms.Formulaire_d_inscription
                     xrLabelNumrodevalidation.Text = row.numrovalidation.ToString();
 
                     xrLabelbronch.Text = row.branch;
-                    xrLabelSP.Text = row.sp;
+                
                     xrLabelOP.Text = row.Option;
                     xrLabelEMP.Text = row.NomEmpX;
                     xrLabelEmailEmp.Text = row.emilXEmp;

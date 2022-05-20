@@ -30,7 +30,21 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
                             where op.Specialite == row.id
                             select new
                             {
-                                
+                                codesection = section.Promo.Mode_formation.Code_Mode_Formation+section.Option.Code_Option+section.Promo.Code_Promo +section.Code_Section,
+                                semestre = section.Semestre.Designation_Semestre,
+                                date_dube = section.Promo.DATE_D_Formation,
+                                secture_prive = (shared.bd.Stagiairs.Where(x=> x.Employeur.Type_Emp=="Privé"&&x.Section ==section.SectionID).Count()),
+                                secture_prive_fill = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "Privé" && x.Section == section.SectionID&&x.Sexe=="Femme").Count()),
+                                secture_public =      (shared.bd.Stagiairs.Where(x => (x.Employeur.Type_Emp == "Public" || x.Employeur.Type_Emp == "E.P.A" )&& x.Section == section.SectionID).Count()),
+                                secture_public_fill = (shared.bd.Stagiairs.Where(x => (x.Employeur.Type_Emp == "Public" || x.Employeur.Type_Emp == "E.P.A" )&&x.Section == section.SectionID&&x.Sexe=="Femme").Count()),
+                                secture_public_Epa = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "E.P.A" && x.Section == section.SectionID).Count()),
+                                secture_public_epa_fill= (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "E.P.A" && x.Section == section.SectionID&&x.Sexe =="Femme").Count()),
+                                secture2 = (shared.bd.Stagiairs.Where(x =>  x.Section == section.SectionID).Count()),
+                                secture2_fill= (shared.bd.Stagiairs.Where(x =>  x.Section == section.SectionID && x.Sexe=="Femme").Count())
+
+
+
+
 
                             };
                 

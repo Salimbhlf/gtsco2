@@ -22,10 +22,10 @@ namespace gtsco2.basededonne
         [StringLength(10)]
         public string Code_Option { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string Designation_Option { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string Designation_Option_ar { get; set; }
 
         public int? Specialite { get; set; }

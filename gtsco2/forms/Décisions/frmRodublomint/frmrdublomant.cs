@@ -32,7 +32,7 @@ namespace gtsco2.forms.Décisions.frmRodublomint
                       select new
                       {
                           nom = (stg.Nom_ar + " " + stg.Prenom_ar),
-                          sps = sp.Designation_SP_AR + " اختصاص " + ops.Designation_Option_ar,
+                          sps = sp.Designation_SP_AR  + ops.Designation_Option_ar,
                           smstr = sem.Designation_Semestre_ar,
                           datepv = pv.Date_PV_Délibiration,
                           numcont = stg.Num_Validation_Contrat_STG,

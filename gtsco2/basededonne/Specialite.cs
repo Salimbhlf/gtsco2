@@ -21,10 +21,10 @@ namespace gtsco2.basededonne
         [StringLength(10)]
         public string Code_SP { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string Designation_SP { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string Designation_SP_AR { get; set; }
 
         public int? Niveau_qualification { get; set; }

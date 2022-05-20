@@ -80,7 +80,7 @@ namespace gtsco2.forms.Avnone
                        promo.Date_F_Formation,
                        promo.Diplome,
                        promo.Diplome_ar,
-                       sp = promo.Option.Specialite1.Designation_SP + " Option " + promo.Option.Designation_Option,
+                       sp = promo.Option.Specialite1.Designation_SP +" " + promo.Option.Designation_Option,
                       
                        proro.DATE_AV_VALID_CHANG,
 

@@ -46,7 +46,7 @@ namespace gtsco2.forms.GTSecetion.rpor_sction
                           nom = stg.Nom,
                           prenom = stg.Prenom,
                           semastre = stg.Section1.Semestre.Designation_Semestre,
-                          sp = stg.Promo.Option.Specialite1.Designation_SP+" Option "+stg.Promo.Option.Designation_Option,
+                          sp = stg.Promo.Option.Specialite1.Designation_SP+" "+stg.Promo.Option.Designation_Option,
                           nbrfille = (shared.bd.Stagiairs.Where(x=> x.Section == sec && x.Sexe == "Femme").Count()),
                           nbrhomme =(shared.bd.Stagiairs.Where(x => x.Section == sec && x.Sexe == "Homme").Count()),
                           

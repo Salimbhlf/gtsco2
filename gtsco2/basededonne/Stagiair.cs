@@ -25,16 +25,16 @@ namespace gtsco2.basededonne
         [StringLength(12)]
         public string Num_STG { get; set; }
 
-        [StringLength(25)]
+        
         public string Nom { get; set; }
 
-        [StringLength(25)]
+        [StringLength(100)]
         public string Nom_ar { get; set; }
 
-        [StringLength(25)]
+        [StringLength(100)]
         public string Prenom { get; set; }
 
-        [StringLength(25)]
+        [StringLength(100)]
         public string Prenom_ar { get; set; }
 
         [Column(TypeName = "date")]
@@ -42,15 +42,15 @@ namespace gtsco2.basededonne
 
         public int? Lieu_Naissance { get; set; }
 
-        [StringLength(80)]
+        
         public string Adresse { get; set; }
 
-        [StringLength(80)]
+        [StringLength(500)]
         public string Adresse_ar { get; set; }
 
         public int? Code_postal { get; set; }
 
-        [StringLength(5)]
+        [StringLength(10)]
         public string Sexe { get; set; }
 
         public bool? Etranger { get; set; }
@@ -66,22 +66,22 @@ namespace gtsco2.basededonne
         public string Telephone { get; set; }
 
         [Column("E-Maile")]
-        [StringLength(30)]
+        
         public string E_Maile { get; set; }
 
-        [StringLength(25)]
+        
         public string Nivo_SCO { get; set; }
 
-        [StringLength(25)]
+        
         public string Nivo_SCO_ar { get; set; }
 
-        [StringLength(25)]
+        [StringLength(50)]
         public string Prenom_Père_STG { get; set; }
 
-        [StringLength(25)]
+        [StringLength(50)]
         public string Prenom_Père_STG_ar { get; set; }
 
-        [StringLength(25)]
+        [StringLength(50)]
         public string Nom_Mère_STG { get; set; }
 
         [StringLength(25)]

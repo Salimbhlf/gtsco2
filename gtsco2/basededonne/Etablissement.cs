@@ -20,7 +20,7 @@ namespace gtsco2.basededonne
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID_ETAB { get; set; }
 
-        [StringLength(100)]
+        
         public string Nom_ETAB { get; set; }
 
         [StringLength(100)]
@@ -30,7 +30,7 @@ namespace gtsco2.basededonne
 
         public int? Fax_ETAB { get; set; }
 
-        [StringLength(30)]
+       
         public string Mail_ETAB { get; set; }
 
         public int? Code_Postal_EATB { get; set; }

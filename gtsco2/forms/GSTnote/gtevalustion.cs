@@ -40,7 +40,7 @@ namespace gtsco2.forms
                     var  qur = from op in shared.bd.Options
                                    join sp in shared.bd.Specialites on op.Specialite equals sp.ID_Specialité
 
-                                   select new { id = op.ID_Option, nom = (sp.Designation_SP + " option: " + op.Designation_Option) };
+                                   select new { id = op.ID_Option, nom = (sp.Designation_SP + " " + op.Designation_Option) };
 
                     spcomboBox1.DataSource = qur.ToList();
                     spcomboBox1.DisplayMember = "nom";
@@ -584,7 +584,7 @@ namespace gtsco2.forms
                 var qure = (from op in shared.bd.Options
                             join sp in shared.bd.Specialites on op.Specialite equals sp.ID_Specialité
                             where op.ID_Option == spd
-                            select new { spelite = (sp.Designation_SP + " option: " + op.Designation_Option) });
+                            select new { spelite = (sp.Designation_SP + " " + op.Designation_Option) });
                 string spe = "";
                 foreach (var qur in qure.ToList())
                 {

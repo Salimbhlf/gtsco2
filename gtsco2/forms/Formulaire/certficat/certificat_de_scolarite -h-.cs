@@ -55,7 +55,7 @@ namespace gtsco2.forms.Formulaire.certficat
                            prenom = stg.Prenom_ar,
                            date_niss = stg.Date_de_Naissance,
                            lieu_niss = comun.Commune_name_ar,
-                           sp = (sp.Designation_SP_AR + "  تخصص " + ops.Designation_Option_ar),
+                           sp = (sp.Designation_SP_AR + " " + ops.Designation_Option_ar),
                            date_dF = promo.DATE_D_Formation,
                            date_finF = promo.Date_F_Formation,
                            semestre = sem.Designation_Semestre_ar,

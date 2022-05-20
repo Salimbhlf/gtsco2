@@ -18,7 +18,7 @@ namespace gtsco2.basededonne
         [Key]
         public int ID_Module { get; set; }
 
-        [StringLength(30)]
+        
         public string Designation_Module { get; set; }
 
         public double? Note_Elim_Module { get; set; }

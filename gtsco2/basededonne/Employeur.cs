@@ -27,19 +27,19 @@ namespace gtsco2.basededonne
         [StringLength(6)]
         public string Nature_Emp { get; set; }
 
-        [StringLength(80)]
+        
         public string Nom_Emp { get; set; }
 
-        [StringLength(80)]
+        [StringLength(500)]
         public string Nom_Emp_ar { get; set; }
 
         [StringLength(25)]
         public string Statut_Emp { get; set; }
 
-        [StringLength(80)]
+        
         public string Adresse_Emp { get; set; }
 
-        [StringLength(80)]
+        [StringLength(500)]
         public string Adresse_Emp_ar { get; set; }
 
         public int? Code_Postal_Emp { get; set; }
@@ -48,13 +48,13 @@ namespace gtsco2.basededonne
 
         public string Fax_Emp { get; set; }
 
-        [StringLength(30)]
+        [StringLength(150)]
         public string Mail_Emp { get; set; }
 
         [StringLength(30)]
         public string Fonction_Emp { get; set; }
 
-        [StringLength(50)]
+        
         public string Secteur_Activité_Emp { get; set; }
 
         public int? Effectif_Trv { get; set; }

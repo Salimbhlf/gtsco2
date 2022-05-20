@@ -48,7 +48,6 @@ namespace gtsco2.basededonne
 
         public int? Commune_Maitre_Apprentissage { get; set; }
 
-        [StringLength(30)]
         public string E_Mail_Maitre_Apprentissage { get; set; }
 
         public int? Tel_Maitre_Apprentissage { get; set; }

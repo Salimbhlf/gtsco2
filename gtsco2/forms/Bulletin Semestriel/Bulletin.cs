@@ -59,7 +59,7 @@ namespace gtsco2.forms.Bulletin_Semestriel
                            datedeube = stg.Promo.DATE_D_Formation,
                            datefin = stg.Promo.Date_F_Formation,
 
-                           sp = stg.Section1.Option.Specialite1.Designation_SP+" Option "+stg.Section1.Option.Designation_Option,
+                           sp = stg.Section1.Option.Specialite1.Designation_SP+" "+stg.Section1.Option.Designation_Option,
                            section = stg.Section1.Mode_formation.Code_Mode_Formation+stg.Section1.Option.Code_Option+stg.Section1.Promo.Code_Promo+" "+stg.Section1.Code_Section,
                            modeformation = stg.Section1.Mode_formation.Désignation_Mode_Formation,
 

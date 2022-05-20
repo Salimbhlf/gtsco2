@@ -34,6 +34,8 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLabelNumrodevalidation = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelNumroInscerption = new DevExpress.XtraReports.UI.XRLabel();
@@ -52,7 +54,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelAderssEmp = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelEMP = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelOP = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabelSP = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelbronch = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabeldatefine = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelDatedebutformation = new DevExpress.XtraReports.UI.XRLabel();
@@ -73,7 +74,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabelSECTur = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
@@ -85,8 +85,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.label14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -126,7 +124,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelAderssEmp,
             this.xrLabelEMP,
             this.xrLabelOP,
-            this.xrLabelSP,
             this.xrLabelbronch,
             this.xrLabeldatefine,
             this.xrLabelDatedebutformation,
@@ -147,7 +144,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel14,
             this.xrLabelSECTur,
             this.xrLabel12,
-            this.xrLabel11,
             this.xrLabel10,
             this.xrLabel9,
             this.xrLabel8,
@@ -161,6 +157,34 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel1});
             this.ReportHeader.HeightF = 1029.167F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrLabel13
+            // 
+            this.xrLabel13.AutoWidth = true;
+            this.xrLabel13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(434.0279F, 591.4447F);
+            this.xrLabel13.Multiline = true;
+            this.xrLabel13.Name = "xrLabel13";
+            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel13.SizeF = new System.Drawing.SizeF(57.98615F, 33.41675F);
+            this.xrLabel13.StylePriority.UseFont = false;
+            this.xrLabel13.StylePriority.UseTextAlignment = false;
+            this.xrLabel13.Text = "TYPE : ";
+            this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.AutoWidth = true;
+            this.xrLabel3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(434.0279F, 524.6115F);
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(57.98615F, 33.41675F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.Text = "TYPE : ";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrPictureBox1
             // 
@@ -386,27 +410,14 @@ namespace gtsco2.forms.Formulaire_d_inscription
             // 
             this.xrLabelOP.AutoWidth = true;
             this.xrLabelOP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabelOP.LocationFloat = new DevExpress.Utils.PointFloat(434.0279F, 491.1949F);
+            this.xrLabelOP.LocationFloat = new DevExpress.Utils.PointFloat(103.8194F, 491.1949F);
             this.xrLabelOP.Multiline = true;
             this.xrLabelOP.Name = "xrLabelOP";
             this.xrLabelOP.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabelOP.SizeF = new System.Drawing.SizeF(242.9722F, 33.41672F);
+            this.xrLabelOP.SizeF = new System.Drawing.SizeF(573.1807F, 33.41678F);
             this.xrLabelOP.StylePriority.UseFont = false;
             this.xrLabelOP.StylePriority.UseTextAlignment = false;
             this.xrLabelOP.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabelSP
-            // 
-            this.xrLabelSP.AutoWidth = true;
-            this.xrLabelSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabelSP.LocationFloat = new DevExpress.Utils.PointFloat(103.8194F, 491.1949F);
-            this.xrLabelSP.Multiline = true;
-            this.xrLabelSP.Name = "xrLabelSP";
-            this.xrLabelSP.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabelSP.SizeF = new System.Drawing.SizeF(243.0554F, 33.41672F);
-            this.xrLabelSP.StylePriority.UseFont = false;
-            this.xrLabelSP.StylePriority.UseTextAlignment = false;
-            this.xrLabelSP.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabelbronch
             // 
@@ -416,7 +427,7 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabelbronch.Multiline = true;
             this.xrLabelbronch.Name = "xrLabelbronch";
             this.xrLabelbronch.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabelbronch.SizeF = new System.Drawing.SizeF(323.6112F, 33.41669F);
+            this.xrLabelbronch.SizeF = new System.Drawing.SizeF(330.2084F, 33.41669F);
             this.xrLabelbronch.StylePriority.UseFont = false;
             this.xrLabelbronch.StylePriority.UseTextAlignment = false;
             this.xrLabelbronch.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -684,20 +695,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel12.Text = "Entreprise : ";
             this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // xrLabel11
-            // 
-            this.xrLabel11.AutoWidth = true;
-            this.xrLabel11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(346.8748F, 491.1947F);
-            this.xrLabel11.Multiline = true;
-            this.xrLabel11.Name = "xrLabel11";
-            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(87.15308F, 33.41666F);
-            this.xrLabel11.StylePriority.UseFont = false;
-            this.xrLabel11.StylePriority.UseTextAlignment = false;
-            this.xrLabel11.Text = "OPTION : ";
-            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // xrLabel10
             // 
             this.xrLabel10.AutoWidth = true;
@@ -846,34 +843,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
             this.xrLabel1.Text = "BD59";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel3
-            // 
-            this.xrLabel3.AutoWidth = true;
-            this.xrLabel3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(434.0279F, 524.6115F);
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(57.98615F, 33.41675F);
-            this.xrLabel3.StylePriority.UseFont = false;
-            this.xrLabel3.StylePriority.UseTextAlignment = false;
-            this.xrLabel3.Text = "TYPE : ";
-            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel13
-            // 
-            this.xrLabel13.AutoWidth = true;
-            this.xrLabel13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(434.0279F, 591.4447F);
-            this.xrLabel13.Multiline = true;
-            this.xrLabel13.Name = "xrLabel13";
-            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel13.SizeF = new System.Drawing.SizeF(57.98615F, 33.41675F);
-            this.xrLabel13.StylePriority.UseFont = false;
-            this.xrLabel13.StylePriority.UseTextAlignment = false;
-            this.xrLabel13.Text = "TYPE : ";
-            this.xrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // Formulaire_d_inscription
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -921,7 +890,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
         private DevExpress.XtraReports.UI.XRLabel xrLabel14;
         private DevExpress.XtraReports.UI.XRLabel xrLabelSECTur;
         private DevExpress.XtraReports.UI.XRLabel xrLabel12;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
         private DevExpress.XtraReports.UI.XRLabel xrLabel10;
         private DevExpress.XtraReports.UI.XRLabel xrLabel9;
         private DevExpress.XtraReports.UI.XRLabel xrLabel8;
@@ -943,7 +911,6 @@ namespace gtsco2.forms.Formulaire_d_inscription
         private DevExpress.XtraReports.UI.XRLabel xrLabelAderssEmp;
         private DevExpress.XtraReports.UI.XRLabel xrLabelEMP;
         private DevExpress.XtraReports.UI.XRLabel xrLabelOP;
-        private DevExpress.XtraReports.UI.XRLabel xrLabelSP;
         private DevExpress.XtraReports.UI.XRLabel xrLabelbronch;
         private DevExpress.XtraReports.UI.XRLabel xrLabeldatefine;
         private DevExpress.XtraReports.UI.XRLabel xrLabelDatedebutformation;

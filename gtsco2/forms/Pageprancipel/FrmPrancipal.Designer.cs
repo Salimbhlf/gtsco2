@@ -97,15 +97,15 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -184,8 +184,8 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage2,
-            this.ribbonPage1,
             this.ribbonPage3,
+            this.ribbonPage1,
             this.ribbonPage6,
             this.ribbonPage4});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -267,7 +267,7 @@ namespace gtsco2.forms.Pageprancipel
             // barButtonItem5Specailite
             // 
             this.barButtonItem5Specailite.AllowRightClickInMenu = false;
-            this.barButtonItem5Specailite.Caption = "Code\r\nSpécialités";
+            this.barButtonItem5Specailite.Caption = "Codes\r\nSpécialités";
             this.barButtonItem5Specailite.Id = 7;
             this.barButtonItem5Specailite.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.Image")));
             this.barButtonItem5Specailite.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.LargeImage")));
@@ -278,7 +278,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem6Option
             // 
-            this.barButtonItem6Option.Caption = "Spécialité ";
+            this.barButtonItem6Option.Caption = "Spécialités ";
             this.barButtonItem6Option.Id = 8;
             this.barButtonItem6Option.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.Image")));
             this.barButtonItem6Option.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.LargeImage")));
@@ -722,6 +722,35 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem8Section, true);
             this.ribbonPageGroup20.Name = "ribbonPageGroup20";
             // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ribbonPage3.Appearance.Options.UseFont = true;
+            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup7,
+            this.ribbonPageGroup11,
+            this.ribbonPageGroup18});
+            this.ribbonPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.ImageOptions.Image")));
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "Employeurs ";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem1Employeur);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItemMaitre);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            // 
+            // ribbonPageGroup18
+            // 
+            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem8ContractAvnCHongment);
+            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem9AvenantProrgation);
+            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
+            this.ribbonPageGroup18.Text = "Avenants de contrat ";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -765,35 +794,6 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem1ABS);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Gestion des absences";
-            // 
-            // ribbonPage3
-            // 
-            this.ribbonPage3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ribbonPage3.Appearance.Options.UseFont = true;
-            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup7,
-            this.ribbonPageGroup11,
-            this.ribbonPageGroup18});
-            this.ribbonPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.ImageOptions.Image")));
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "Employeurs ";
-            // 
-            // ribbonPageGroup7
-            // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem1Employeur);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            // 
-            // ribbonPageGroup11
-            // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItemMaitre);
-            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            // 
-            // ribbonPageGroup18
-            // 
-            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem8ContractAvnCHongment);
-            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem9AvenantProrgation);
-            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
-            this.ribbonPageGroup18.Text = "Avenants de contrat ";
             // 
             // ribbonPage6
             // 

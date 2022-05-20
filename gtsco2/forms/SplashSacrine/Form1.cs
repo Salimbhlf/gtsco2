@@ -64,7 +64,7 @@ namespace gtsco2.forms.SplashSacrine
                 MessageBox.Show(ex.Message);
 
                 forms.CnxDataBase.FrmCnxDataBase d = new CnxDataBase.FrmCnxDataBase();
-                d.Show();
+                d.ShowDialog();
             }
 
 

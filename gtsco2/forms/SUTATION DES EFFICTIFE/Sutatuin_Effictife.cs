@@ -15,7 +15,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
         {
             InitializeComponent();
         }
-        public void bandingdata()
+        public void bandingdata(string sm)
         {
             xrTabletoutal_preve.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_prive"));
             xrTableprive_fill.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "secture_prive_fill"));
@@ -33,23 +33,28 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             xrTableCellsection.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "codesection"));
             xrTableCelldatadube.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "datedube"));
             xrTableCell22.ExpressionBindings.Add(new ExpressionBinding("BeforePrint", "Text", "semestre"));
+            xrLabel3annee.Text = sm + " SEMESTRE " + anneee;
+
+            xrLabel4mode.Text = "SERVICE " + modee;
 
 
 
 
 
         }
+        public string anneee= "";
+        public string modee= "";
 
-        public static void printsutation_effictife()
+        public static void printsutation_effictife(int annne, string sm,int mode)
         {
             Sutatuin_Effictife rpt = new Sutatuin_Effictife();
-            object dt = rpt.load();
+            object dt = rpt.load(annne, mode);
             rpt.DataSource = dt;
 
 
 
             rpt.TOUTAL(dt as DataTable) ;
-            rpt.bandingdata();
+            rpt.bandingdata(sm);
 
             rpt.ShowRibbonPreview();
 
@@ -88,98 +93,114 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
 
 
         }
-        public  object load()
+        public object load(int annee, int mode)
         {
-            var qure = from sp in shared.bd.Specialites select new { codesp = sp.Code_SP , id = sp.ID_Specialité  ,naive = sp.Niveau_qualification};
-
-            DataTable tb1 = new DataTable();
-
-            tb1.Columns.Add("codespeclite");
-            tb1.Columns.Add("speclite");
-            tb1.Columns.Add("codesection");
-            tb1.Columns.Add("semestre");
-            
-            tb1.Columns.Add("datedube");
-            tb1.Columns.Add("secture_prive");
-            tb1.Columns.Add("secture_prive_fill");
-            tb1.Columns.Add("secture_public");
-            tb1.Columns.Add("secture_public_fill");
-            tb1.Columns.Add("secture_public_Epa");
-            tb1.Columns.Add("secture_public_epa_fill");
-            tb1.Columns.Add("naive");
-            
-            tb1.Columns.Add("secture2");
-            tb1.Columns.Add("secture2_fill");
-
-            foreach (var row in qure.ToList())
+            try
             {
-                var qures = from section in shared.bd.Sections
-                            from op in shared.bd.Options.Where(x => x.ID_Option == section.ID_Option).DefaultIfEmpty()
-                            where op.Specialite == row.id
-                            select new
-                            {
-                                codesection = section.Promo.Mode_formation.Code_Mode_Formation+section.Option.Code_Option+section.Promo.Code_Promo +section.Code_Section,
-                                semestre = section.Semestre.Designation_Semestre,
-                                date_dube = section.Promo.DATE_D_Formation,
-                                secture_prive = (shared.bd.Stagiairs.Where(x=> x.Employeur.Type_Emp=="Privé"&&x.Section ==section.SectionID).Count()),
-                                secture_prive_fill = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "Privé" && x.Section == section.SectionID&&x.Sexe=="Femme").Count()),
-                                secture_public =      (shared.bd.Stagiairs.Where(x => (x.Employeur.Type_Emp == "Public" || x.Employeur.Type_Emp == "E.P.A" )&& x.Section == section.SectionID).Count()),
-                                secture_public_fill = (shared.bd.Stagiairs.Where(x => (x.Employeur.Type_Emp == "Public" || x.Employeur.Type_Emp == "E.P.A" )&&x.Section == section.SectionID&&x.Sexe=="Femme").Count()),
-                                secture_public_Epa = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "E.P.A" && x.Section == section.SectionID).Count()),
-                                secture_public_epa_fill= (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "E.P.A" && x.Section == section.SectionID&&x.Sexe =="Femme").Count()),
-                                secture2 = (shared.bd.Stagiairs.Where(x =>  x.Section == section.SectionID).Count()),
-                                secture2_fill= (shared.bd.Stagiairs.Where(x =>  x.Section == section.SectionID && x.Sexe=="Femme").Count()),
-                                sp =op.Designation_Option
+
+                var qure = from sp in shared.bd.Options
+                           select new { codesp = sp.Specialite1.Branch.Code_Branche + sp.Specialite1.Code_SP, id = sp.ID_Option, sp.Designation_Option, naive = sp.Specialite1.Niveau_qualification };
+
+                DataTable tb1 = new DataTable();
+
+                tb1.Columns.Add("codespeclite");
+                tb1.Columns.Add("speclite");
+                tb1.Columns.Add("codesection");
+                tb1.Columns.Add("semestre");
+
+                tb1.Columns.Add("datedube");
+                tb1.Columns.Add("secture_prive");
+                tb1.Columns.Add("secture_prive_fill");
+                tb1.Columns.Add("secture_public");
+                tb1.Columns.Add("secture_public_fill");
+                tb1.Columns.Add("secture_public_Epa");
+                tb1.Columns.Add("secture_public_epa_fill");
+                tb1.Columns.Add("naive");
+
+                tb1.Columns.Add("secture2");
+                tb1.Columns.Add("secture2_fill");
 
 
-
-
-
-                            };
-
-
-                foreach (var row1 in qures.ToList())
+                foreach (var row in qure.ToList())
                 {
-                    DataRow datarow = tb1.NewRow();
-                    datarow["codespeclite"] = row.codesp;
-                    datarow["codespeclite"] = row1.sp;
-                    datarow["codesection"] = row1.codesection;
-                    datarow["semestre"] = row1.semestre;
-                    try { 
-                    datarow["datedube"] = row1.date_dube.Value.ToString("MM/dd/yyyy");
+                    var qures = from section in shared.bd.Sections
+                                from op in shared.bd.Options.Where(x => x.ID_Option == section.ID_Option).DefaultIfEmpty()
+                                where op.ID_Option == row.id && section.Annee_secolir_en_coure == annee && section.Promo.Mode_de_formation == mode
+                                select new
+                                {
+                                    codesection = section.Promo.Mode_formation.Code_Mode_Formation + section.Option.Code_Option + section.Promo.Code_Promo + section.Code_Section,
+                                    semestre = section.Semestre.Designation_Semestre,
+                                    date_dube = section.Promo.DATE_D_Formation,
+                                    secture_prive = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "Privé" && x.Section == section.SectionID).Count()),
+                                    secture_prive_fill = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "Privé" && x.Section == section.SectionID && x.Sexe == "Femme").Count()),
+                                    secture_public = (shared.bd.Stagiairs.Where(x => (x.Employeur.Type_Emp == "Public" || x.Employeur.Type_Emp == "E.P.A") && x.Section == section.SectionID).Count()),
+                                    secture_public_fill = (shared.bd.Stagiairs.Where(x => (x.Employeur.Type_Emp == "Public" || x.Employeur.Type_Emp == "E.P.A") && x.Section == section.SectionID && x.Sexe == "Femme").Count()),
+                                    secture_public_Epa = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "E.P.A" && x.Section == section.SectionID).Count()),
+                                    secture_public_epa_fill = (shared.bd.Stagiairs.Where(x => x.Employeur.Type_Emp == "E.P.A" && x.Section == section.SectionID && x.Sexe == "Femme").Count()),
+                                    secture2 = (shared.bd.Stagiairs.Where(x => x.Section == section.SectionID).Count()),
+                                    secture2_fill = (shared.bd.Stagiairs.Where(x => x.Section == section.SectionID && x.Sexe == "Femme").Count()),
+                                    anne = section.annee_scolaire.DATE_D_Année_SCO,
+                                    mode = section.Promo.Mode_formation.Désignation_Mode_Formation
+
+
+
+
+
+                                };
+
+
+                    foreach (var row1 in qures.ToList())
+                    {
+                        DataRow datarow = tb1.NewRow();
+                        datarow["codespeclite"] = row.codesp;
+                        datarow["speclite"] = row.Designation_Option;
+                        datarow["codesection"] = row1.codesection;
+                        datarow["semestre"] = row1.semestre;
+                        try
+                        {
+                            datarow["datedube"] = row1.date_dube.Value.ToString("dd/MM/yyyy");
+                        }
+                        catch { }
+                        datarow["secture_prive"] = row1.secture_prive;
+                        datarow["naive"] = row.naive;
+                        datarow["secture_prive_fill"] = row1.secture_prive_fill;
+
+                        datarow["secture_public"] = row1.secture_public;
+                        datarow["secture_public_fill"] = row1.secture_public_fill;
+
+                        datarow["secture_public_Epa"] = row1.secture_public_Epa;
+
+                        datarow["secture_public_epa_fill"] = row1.secture_public_epa_fill;
+                        datarow["secture2"] = row1.secture2;
+                        datarow["secture2_fill"] = row1.secture2_fill;
+                        modee = row1.mode;
+
+                        tb1.Rows.Add(datarow);
+                        try
+                        {
+                            anneee = row1.anne.Value.ToString("yyyy");
+                        }
+                        catch { }
+
+
+
+
+
                     }
-                    catch { }
-                    datarow["secture_prive"] = row1.secture_prive;
-                    datarow["naive"] = row.naive;
-                    datarow["secture_prive_fill"] = row1.secture_prive_fill;
 
-                    datarow["secture_public"] = row1.secture_public;
-                    datarow["secture_public_fill"] = row1.secture_public_fill;
 
-                    datarow["secture_public_Epa"] = row1.secture_public_Epa;
 
-                    datarow["secture_public_epa_fill"] = row1.secture_public_epa_fill;
-                    datarow["secture2"] = row1.secture2;
-                    datarow["secture2_fill"] = row1.secture2_fill;
 
-                    tb1.Rows.Add(datarow);
-                       
 
 
 
 
                 }
-
-                
-
-
-
-
-
-
+                return tb1;
             }
+            catch { return annee; }
 
-            return tb1;
+            
         }
 
 

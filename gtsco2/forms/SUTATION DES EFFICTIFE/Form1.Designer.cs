@@ -33,6 +33,8 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -65,24 +67,49 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(26, 97);
+            this.labelControl1.Location = new System.Drawing.Point(29, 83);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(63, 13);
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "labelControl1";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1er",
+            "2eme"});
+            this.comboBox2.Location = new System.Drawing.Point(241, 48);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(231, 21);
+            this.comboBox2.TabIndex = 4;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1er",
+            "2eme"});
+            this.comboBox3.Location = new System.Drawing.Point(241, 21);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(231, 21);
+            this.comboBox3.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 210);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,5 +121,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

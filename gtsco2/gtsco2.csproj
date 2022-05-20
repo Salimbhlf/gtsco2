@@ -414,6 +414,12 @@
     <Compile Include="forms\SplashSacrine\Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\SUTATION DES EFFICTIFE\Sutatuin_Effictife.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="forms\SUTATION DES EFFICTIFE\Sutatuin_Effictife.Designer.cs">
+      <DependentUpon>Sutatuin_Effictife.cs</DependentUpon>
+    </Compile>
     <Compile Include="mvvm\Common\CollectionViewModel.cs" />
     <Compile Include="mvvm\Common\EntitiesViewModel.cs" />
     <Compile Include="mvvm\Common\ReadOnlyCollectionViewModel.cs" />
@@ -952,6 +958,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\SplashSacrine\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SUTATION DES EFFICTIFE\Sutatuin_Effictife.resx">
+      <DependentUpon>Sutatuin_Effictife.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mvvm\user\Views\User\adduser.resx">
       <DependentUpon>adduser.cs</DependentUpon>

@@ -141,7 +141,7 @@ namespace gtsco2.forms.Login
             this.panel2.Location = new System.Drawing.Point(351, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(399, 530);
-            this.panel2.TabIndex = 1;
+            this.panel2.TabIndex = 0;
             // 
             // imageSlider1
             // 
@@ -176,7 +176,7 @@ namespace gtsco2.forms.Login
             this.panel5.Location = new System.Drawing.Point(7, 268);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(380, 45);
-            this.panel5.TabIndex = 7;
+            this.panel5.TabIndex = 2;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             this.panel5.MouseEnter += new System.EventHandler(this.panel5_MouseEnter);
             this.panel5.MouseLeave += new System.EventHandler(this.panel5_MouseLeave);
@@ -234,7 +234,7 @@ namespace gtsco2.forms.Login
             this.button2.Location = new System.Drawing.Point(13, 412);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(374, 35);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Se Connectez";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -248,7 +248,7 @@ namespace gtsco2.forms.Login
             this.panel3.Location = new System.Drawing.Point(7, 210);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(381, 45);
-            this.panel3.TabIndex = 5;
+            this.panel3.TabIndex = 1;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
             this.panel3.MouseEnter += new System.EventHandler(this.panel3_MouseEnter);
             this.panel3.MouseLeave += new System.EventHandler(this.panel3_MouseLeave);
@@ -291,7 +291,7 @@ namespace gtsco2.forms.Login
             this.textEdit1.Properties.NullValuePrompt = "Nom d\'utilisateur";
             this.textEdit1.Properties.EditValueChanged += new System.EventHandler(this.textEdit1_Properties_EditValueChanged);
             this.textEdit1.Size = new System.Drawing.Size(317, 26);
-            this.textEdit1.TabIndex = 2;
+            this.textEdit1.TabIndex = 0;
             this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             this.textEdit1.Enter += new System.EventHandler(this.textEdit1_Enter);
             this.textEdit1.MouseEnter += new System.EventHandler(this.textEdit1_MouseEnter);
@@ -316,7 +316,7 @@ namespace gtsco2.forms.Login
             this.button1.Location = new System.Drawing.Point(359, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 40);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 5;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);

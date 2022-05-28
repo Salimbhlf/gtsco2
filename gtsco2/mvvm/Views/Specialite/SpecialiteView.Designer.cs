@@ -669,7 +669,7 @@
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForOptions";
             this.layoutControlGroup3.Size = new System.Drawing.Size(960, 233);
-            this.layoutControlGroup3.Text = "Options";
+            this.layoutControlGroup3.Text = "Spéciaité ";
             // 
             // ItemForOptions
             // 

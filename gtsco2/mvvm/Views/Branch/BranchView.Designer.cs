@@ -47,8 +47,6 @@
             this.SpecialitesGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_Specialité = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode_SP = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDesignation_SP = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDesignation_SP_AR = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNiveau_qualification = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID_Branche = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBranch = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -67,10 +65,10 @@
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForCode_Branche = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForDesignation_Branche = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForDesignation_Branche_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForSpecialites = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForDesignation_Branche_ar = new DevExpress.XtraLayout.LayoutControlItem();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.SpecialitesPopUpMenu = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
@@ -89,10 +87,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Branche)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialites)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche_ar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesPopUpMenu)).BeginInit();
             this.SuspendLayout();
@@ -301,8 +299,6 @@
             this.SpecialitesGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID_Specialité,
             this.colCode_SP,
-            this.colDesignation_SP,
-            this.colDesignation_SP_AR,
             this.colNiveau_qualification,
             this.colID_Branche,
             this.colBranch,
@@ -316,43 +312,27 @@
             // 
             this.colID_Specialité.FieldName = "ID_Specialité";
             this.colID_Specialité.Name = "colID_Specialité";
-            this.colID_Specialité.Visible = true;
-            this.colID_Specialité.VisibleIndex = 0;
             // 
             // colCode_SP
             // 
             this.colCode_SP.FieldName = "Code_SP";
             this.colCode_SP.Name = "colCode_SP";
             this.colCode_SP.Visible = true;
-            this.colCode_SP.VisibleIndex = 1;
-            // 
-            // colDesignation_SP
-            // 
-            this.colDesignation_SP.FieldName = "Designation_SP";
-            this.colDesignation_SP.Name = "colDesignation_SP";
-            this.colDesignation_SP.Visible = true;
-            this.colDesignation_SP.VisibleIndex = 2;
-            // 
-            // colDesignation_SP_AR
-            // 
-            this.colDesignation_SP_AR.FieldName = "Designation_SP_AR";
-            this.colDesignation_SP_AR.Name = "colDesignation_SP_AR";
-            this.colDesignation_SP_AR.Visible = true;
-            this.colDesignation_SP_AR.VisibleIndex = 3;
+            this.colCode_SP.VisibleIndex = 0;
             // 
             // colNiveau_qualification
             // 
             this.colNiveau_qualification.FieldName = "Niveau_qualification";
             this.colNiveau_qualification.Name = "colNiveau_qualification";
             this.colNiveau_qualification.Visible = true;
-            this.colNiveau_qualification.VisibleIndex = 4;
+            this.colNiveau_qualification.VisibleIndex = 1;
             // 
             // colID_Branche
             // 
             this.colID_Branche.FieldName = "ID_Branche";
             this.colID_Branche.Name = "colID_Branche";
             this.colID_Branche.Visible = true;
-            this.colID_Branche.VisibleIndex = 5;
+            this.colID_Branche.VisibleIndex = 2;
             // 
             // colBranch
             // 
@@ -502,18 +482,6 @@
             this.ItemForDesignation_Branche.Text = "Designation des Branches";
             this.ItemForDesignation_Branche.TextSize = new System.Drawing.Size(123, 13);
             // 
-            // ItemForDesignation_Branche_ar
-            // 
-            this.ItemForDesignation_Branche_ar.Control = this.Designation_Branche_arTextEdit;
-            this.ItemForDesignation_Branche_ar.Location = new System.Drawing.Point(588, 24);
-            this.ItemForDesignation_Branche_ar.Name = "ItemForDesignation_Branche_ar";
-            this.ItemForDesignation_Branche_ar.Size = new System.Drawing.Size(415, 24);
-            this.ItemForDesignation_Branche_ar.Text = "اسم الفرع";
-            this.ItemForDesignation_Branche_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.ItemForDesignation_Branche_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForDesignation_Branche_ar.TextSize = new System.Drawing.Size(49, 13);
-            this.ItemForDesignation_Branche_ar.TextToControlDistance = 5;
-            // 
             // tabbedControlGroup1
             // 
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 48);
@@ -531,7 +499,7 @@
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGroupForSpecialites";
             this.layoutControlGroup3.Size = new System.Drawing.Size(979, 287);
-            this.layoutControlGroup3.Text = "Spécialités";
+            this.layoutControlGroup3.Text = "Code Spécialités";
             // 
             // ItemForSpecialites
             // 
@@ -543,6 +511,18 @@
             this.ItemForSpecialites.Text = "Specialites";
             this.ItemForSpecialites.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForSpecialites.TextVisible = false;
+            // 
+            // ItemForDesignation_Branche_ar
+            // 
+            this.ItemForDesignation_Branche_ar.Control = this.Designation_Branche_arTextEdit;
+            this.ItemForDesignation_Branche_ar.Location = new System.Drawing.Point(588, 24);
+            this.ItemForDesignation_Branche_ar.Name = "ItemForDesignation_Branche_ar";
+            this.ItemForDesignation_Branche_ar.Size = new System.Drawing.Size(415, 24);
+            this.ItemForDesignation_Branche_ar.Text = "اسم الفرع";
+            this.ItemForDesignation_Branche_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.ItemForDesignation_Branche_ar.TextLocation = DevExpress.Utils.Locations.Right;
+            this.ItemForDesignation_Branche_ar.TextSize = new System.Drawing.Size(49, 13);
+            this.ItemForDesignation_Branche_ar.TextToControlDistance = 5;
             // 
             // mvvmContext
             // 
@@ -596,10 +576,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCode_Branche)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSpecialites)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForDesignation_Branche_ar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mvvmContext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpecialitesPopUpMenu)).EndInit();
             this.ResumeLayout(false);
@@ -642,8 +622,6 @@
         private System.Windows.Forms.BindingSource SpecialitesBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Specialité;
         private DevExpress.XtraGrid.Columns.GridColumn colCode_SP;
-        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP;
-        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP_AR;
         private DevExpress.XtraGrid.Columns.GridColumn colNiveau_qualification;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Branche;
         private DevExpress.XtraGrid.Columns.GridColumn colBranch;

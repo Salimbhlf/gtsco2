@@ -1693,7 +1693,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
             "Privé",
-            "Public"});
+            "Public",
+            "E.P.A"});
             this.comboBoxEdit1.Size = new System.Drawing.Size(205, 20);
             this.comboBoxEdit1.StyleController = this.dataLayoutControl1;
             this.comboBoxEdit1.TabIndex = 28;

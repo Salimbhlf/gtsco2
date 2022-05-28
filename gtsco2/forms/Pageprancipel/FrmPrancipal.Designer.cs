@@ -184,8 +184,8 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage2,
-            this.ribbonPage1,
             this.ribbonPage3,
+            this.ribbonPage1,
             this.ribbonPage6,
             this.ribbonPage4});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {

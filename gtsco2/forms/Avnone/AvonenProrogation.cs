@@ -143,15 +143,16 @@ namespace gtsco2.forms.Avnone
                         xrLabelTLfEmp.Text = row.Tel_Emp;
                         xrLabelCommunEmp.Text = row.communEmp;
                         xrLabelCodePEMp.Text = row.codepostEmp;
-                        if (row.Type_Emp == "Public")
-                        {
-                            xrLabelPU.Text = "X";
-                            xrLabelPR.Text = "";
-                        }
-                        else
+
+                        if (row.Type_Emp == "Privé")
                         {
                             xrLabelPU.Text = "";
                             xrLabelPR.Text = "X";
+                        }
+                        else
+                        {
+                            xrLabelPU.Text = "X";
+                            xrLabelPR.Text = "";
                         }
                     }
                     catch { }

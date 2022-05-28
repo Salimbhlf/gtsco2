@@ -142,7 +142,7 @@
             // ID_ModuleTextEdit
             // 
             this.ID_ModuleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.moduleViewBindingSource, "ID_Module", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ID_ModuleTextEdit.Location = new System.Drawing.Point(164, 12);
+            this.ID_ModuleTextEdit.Location = new System.Drawing.Point(156, 12);
             this.ID_ModuleTextEdit.MenuManager = this.mainRibbonControl;
             this.ID_ModuleTextEdit.Name = "ID_ModuleTextEdit";
             this.ID_ModuleTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -152,7 +152,7 @@
             this.ID_ModuleTextEdit.Properties.MaskSettings.Set("mask", "N0");
             this.ID_ModuleTextEdit.Properties.ReadOnly = true;
             this.ID_ModuleTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ID_ModuleTextEdit.Size = new System.Drawing.Size(786, 20);
+            this.ID_ModuleTextEdit.Size = new System.Drawing.Size(794, 20);
             this.ID_ModuleTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_ModuleTextEdit.TabIndex = 4;
             // 
@@ -282,17 +282,17 @@
             // Designation_ModuleTextEdit
             // 
             this.Designation_ModuleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.moduleViewBindingSource, "Designation_Module", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_ModuleTextEdit.Location = new System.Drawing.Point(164, 36);
+            this.Designation_ModuleTextEdit.Location = new System.Drawing.Point(156, 36);
             this.Designation_ModuleTextEdit.MenuManager = this.mainRibbonControl;
             this.Designation_ModuleTextEdit.Name = "Designation_ModuleTextEdit";
-            this.Designation_ModuleTextEdit.Size = new System.Drawing.Size(786, 20);
+            this.Designation_ModuleTextEdit.Size = new System.Drawing.Size(794, 20);
             this.Designation_ModuleTextEdit.StyleController = this.dataLayoutControl1;
             this.Designation_ModuleTextEdit.TabIndex = 5;
             // 
             // Note_Elim_ModuleTextEdit
             // 
             this.Note_Elim_ModuleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.moduleViewBindingSource, "Note_Elim_Module", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Note_Elim_ModuleTextEdit.Location = new System.Drawing.Point(164, 60);
+            this.Note_Elim_ModuleTextEdit.Location = new System.Drawing.Point(156, 60);
             this.Note_Elim_ModuleTextEdit.MenuManager = this.mainRibbonControl;
             this.Note_Elim_ModuleTextEdit.Name = "Note_Elim_ModuleTextEdit";
             this.Note_Elim_ModuleTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -302,14 +302,14 @@
             this.Note_Elim_ModuleTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Note_Elim_ModuleTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.Note_Elim_ModuleTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Note_Elim_ModuleTextEdit.Size = new System.Drawing.Size(786, 20);
+            this.Note_Elim_ModuleTextEdit.Size = new System.Drawing.Size(794, 20);
             this.Note_Elim_ModuleTextEdit.StyleController = this.dataLayoutControl1;
             this.Note_Elim_ModuleTextEdit.TabIndex = 6;
             // 
             // coefficient_ModuleTextEdit
             // 
             this.coefficient_ModuleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.moduleViewBindingSource, "coefficient_Module", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.coefficient_ModuleTextEdit.Location = new System.Drawing.Point(164, 84);
+            this.coefficient_ModuleTextEdit.Location = new System.Drawing.Point(156, 84);
             this.coefficient_ModuleTextEdit.MenuManager = this.mainRibbonControl;
             this.coefficient_ModuleTextEdit.Name = "coefficient_ModuleTextEdit";
             this.coefficient_ModuleTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -319,7 +319,7 @@
             this.coefficient_ModuleTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.coefficient_ModuleTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.coefficient_ModuleTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.coefficient_ModuleTextEdit.Size = new System.Drawing.Size(786, 20);
+            this.coefficient_ModuleTextEdit.Size = new System.Drawing.Size(794, 20);
             this.coefficient_ModuleTextEdit.StyleController = this.dataLayoutControl1;
             this.coefficient_ModuleTextEdit.TabIndex = 7;
             // 
@@ -327,7 +327,7 @@
             // 
             this.OptionLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.moduleViewBindingSource, "ID_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.OptionLookUpEdit.EditValue = "";
-            this.OptionLookUpEdit.Location = new System.Drawing.Point(164, 108);
+            this.OptionLookUpEdit.Location = new System.Drawing.Point(156, 108);
             this.OptionLookUpEdit.MenuManager = this.mainRibbonControl;
             this.OptionLookUpEdit.Name = "OptionLookUpEdit";
             this.OptionLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -338,7 +338,7 @@
             this.OptionLookUpEdit.Properties.NullValuePrompt = "Saisir ou slectionner le code de l\'option ";
             this.OptionLookUpEdit.Properties.PopupView = this.OptionLookUpEditView;
             this.OptionLookUpEdit.Properties.ValueMember = "ID_Option";
-            this.OptionLookUpEdit.Size = new System.Drawing.Size(786, 20);
+            this.OptionLookUpEdit.Size = new System.Drawing.Size(794, 20);
             this.OptionLookUpEdit.StyleController = this.dataLayoutControl1;
             this.OptionLookUpEdit.TabIndex = 8;
             // 
@@ -677,7 +677,7 @@
             this.ItemForID_Module.Name = "ItemForID_Module";
             this.ItemForID_Module.Size = new System.Drawing.Size(942, 24);
             this.ItemForID_Module.Text = "Numéro du module";
-            this.ItemForID_Module.TextSize = new System.Drawing.Size(140, 13);
+            this.ItemForID_Module.TextSize = new System.Drawing.Size(132, 13);
             // 
             // ItemForDesignation_Module
             // 
@@ -686,7 +686,7 @@
             this.ItemForDesignation_Module.Name = "ItemForDesignation_Module";
             this.ItemForDesignation_Module.Size = new System.Drawing.Size(942, 24);
             this.ItemForDesignation_Module.Text = "Désignation du module";
-            this.ItemForDesignation_Module.TextSize = new System.Drawing.Size(140, 13);
+            this.ItemForDesignation_Module.TextSize = new System.Drawing.Size(132, 13);
             // 
             // ItemForNote_Elim_Module
             // 
@@ -695,7 +695,7 @@
             this.ItemForNote_Elim_Module.Name = "ItemForNote_Elim_Module";
             this.ItemForNote_Elim_Module.Size = new System.Drawing.Size(942, 24);
             this.ItemForNote_Elim_Module.Text = "Note éliminatoire du module";
-            this.ItemForNote_Elim_Module.TextSize = new System.Drawing.Size(140, 13);
+            this.ItemForNote_Elim_Module.TextSize = new System.Drawing.Size(132, 13);
             // 
             // ItemForcoefficient_Module
             // 
@@ -704,7 +704,7 @@
             this.ItemForcoefficient_Module.Name = "ItemForcoefficient_Module";
             this.ItemForcoefficient_Module.Size = new System.Drawing.Size(942, 24);
             this.ItemForcoefficient_Module.Text = "Coefficient du module";
-            this.ItemForcoefficient_Module.TextSize = new System.Drawing.Size(140, 13);
+            this.ItemForcoefficient_Module.TextSize = new System.Drawing.Size(132, 13);
             // 
             // ItemForID_Option
             // 
@@ -712,8 +712,8 @@
             this.ItemForID_Option.Location = new System.Drawing.Point(0, 96);
             this.ItemForID_Option.Name = "ItemForID_Option";
             this.ItemForID_Option.Size = new System.Drawing.Size(942, 24);
-            this.ItemForID_Option.Text = "Numéro d\'option de spécialité";
-            this.ItemForID_Option.TextSize = new System.Drawing.Size(140, 13);
+            this.ItemForID_Option.Text = "Code option de spécialité";
+            this.ItemForID_Option.TextSize = new System.Drawing.Size(132, 13);
             // 
             // tabbedControlGroup1
             // 

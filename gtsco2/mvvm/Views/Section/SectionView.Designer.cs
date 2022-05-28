@@ -67,7 +67,6 @@
             this.colCode_Option = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDesignation_Option = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDesignation_Option_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSpecialite = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SemestreLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.SemestreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SemestreLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -571,8 +570,7 @@
             this.colID_Option1,
             this.colCode_Option,
             this.colDesignation_Option,
-            this.colDesignation_Option_ar,
-            this.colSpecialite});
+            this.colDesignation_Option_ar});
             this.OptionLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.OptionLookUpEditView.Name = "OptionLookUpEditView";
             this.OptionLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -603,13 +601,6 @@
             this.colDesignation_Option_ar.Name = "colDesignation_Option_ar";
             this.colDesignation_Option_ar.Visible = true;
             this.colDesignation_Option_ar.VisibleIndex = 2;
-            // 
-            // colSpecialite
-            // 
-            this.colSpecialite.FieldName = "Specialite";
-            this.colSpecialite.Name = "colSpecialite";
-            this.colSpecialite.Visible = true;
-            this.colSpecialite.VisibleIndex = 3;
             // 
             // SemestreLookUpEdit
             // 
@@ -1579,7 +1570,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colCode_Option;
         private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option;
         private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colSpecialite;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Semestre;
         private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Semestre;
         private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Semestre_ar;

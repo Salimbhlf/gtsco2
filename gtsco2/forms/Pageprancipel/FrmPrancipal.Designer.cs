@@ -93,7 +93,6 @@ namespace gtsco2.forms.Pageprancipel
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -114,6 +113,7 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -267,7 +267,7 @@ namespace gtsco2.forms.Pageprancipel
             // barButtonItem5Specailite
             // 
             this.barButtonItem5Specailite.AllowRightClickInMenu = false;
-            this.barButtonItem5Specailite.Caption = "Spécialités";
+            this.barButtonItem5Specailite.Caption = "Code\r\nSpécialités";
             this.barButtonItem5Specailite.Id = 7;
             this.barButtonItem5Specailite.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.Image")));
             this.barButtonItem5Specailite.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5Specailite.ImageOptions.LargeImage")));
@@ -278,7 +278,7 @@ namespace gtsco2.forms.Pageprancipel
             // 
             // barButtonItem6Option
             // 
-            this.barButtonItem6Option.Caption = "Options";
+            this.barButtonItem6Option.Caption = "Spécialité ";
             this.barButtonItem6Option.Id = 8;
             this.barButtonItem6Option.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.Image")));
             this.barButtonItem6Option.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6Option.ImageOptions.LargeImage")));
@@ -696,14 +696,6 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "Structure ";
             // 
-            // ribbonPageGroup16
-            // 
-            this.ribbonPageGroup16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup16.ImageOptions.Image")));
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem14);
-            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
-            // 
             // ribbonPageGroup22
             // 
             this.ribbonPageGroup22.ItemLinks.Add(this.barButtonItem9Etablissement);
@@ -865,6 +857,14 @@ namespace gtsco2.forms.Pageprancipel
             this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
             this.ribbonPageGroup14.Text = "Base de données ";
+            // 
+            // ribbonPageGroup16
+            // 
+            this.ribbonPageGroup16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup16.ImageOptions.Image")));
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem13);
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             // 
             // ribbonPageGroup12
             // 

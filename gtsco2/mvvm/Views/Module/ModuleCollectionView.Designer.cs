@@ -27,6 +27,12 @@
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.moduleCollectionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcoefficient_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNote_Elim_Module = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colOption = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID_Option = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -40,12 +46,6 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mvvmContext = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.colID_Module = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDesignation_Module = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colcoefficient_Module = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNote_Elim_Module = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOption = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colID_Option = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moduleCollectionViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
@@ -85,6 +85,45 @@
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.Editable = false;
             this.gridView.OptionsBehavior.ReadOnly = true;
+            // 
+            // colID_Module
+            // 
+            this.colID_Module.FieldName = "ID_Module";
+            this.colID_Module.Name = "colID_Module";
+            // 
+            // colDesignation_Module
+            // 
+            this.colDesignation_Module.FieldName = "Designation_Module";
+            this.colDesignation_Module.Name = "colDesignation_Module";
+            this.colDesignation_Module.Visible = true;
+            this.colDesignation_Module.VisibleIndex = 0;
+            // 
+            // colcoefficient_Module
+            // 
+            this.colcoefficient_Module.FieldName = "coefficient_Module";
+            this.colcoefficient_Module.Name = "colcoefficient_Module";
+            this.colcoefficient_Module.Visible = true;
+            this.colcoefficient_Module.VisibleIndex = 1;
+            // 
+            // colNote_Elim_Module
+            // 
+            this.colNote_Elim_Module.FieldName = "Note_Elim_Module";
+            this.colNote_Elim_Module.Name = "colNote_Elim_Module";
+            this.colNote_Elim_Module.Visible = true;
+            this.colNote_Elim_Module.VisibleIndex = 2;
+            // 
+            // colOption
+            // 
+            this.colOption.Caption = "Désignation spécialité ";
+            this.colOption.FieldName = "Option.Designation_Option";
+            this.colOption.Name = "colOption";
+            this.colOption.Visible = true;
+            this.colOption.VisibleIndex = 3;
+            // 
+            // colID_Option
+            // 
+            this.colID_Option.FieldName = "ID_Option";
+            this.colID_Option.Name = "colID_Option";
             // 
             // ribbonControl
             // 
@@ -206,44 +245,6 @@
             this.popupMenu.ItemLinks.Add(this.bbiRefresh);
             this.popupMenu.Name = "popupMenu";
             this.popupMenu.Ribbon = this.ribbonControl;
-            // 
-            // colID_Module
-            // 
-            this.colID_Module.FieldName = "ID_Module";
-            this.colID_Module.Name = "colID_Module";
-            // 
-            // colDesignation_Module
-            // 
-            this.colDesignation_Module.FieldName = "Designation_Module";
-            this.colDesignation_Module.Name = "colDesignation_Module";
-            this.colDesignation_Module.Visible = true;
-            this.colDesignation_Module.VisibleIndex = 0;
-            // 
-            // colcoefficient_Module
-            // 
-            this.colcoefficient_Module.FieldName = "coefficient_Module";
-            this.colcoefficient_Module.Name = "colcoefficient_Module";
-            this.colcoefficient_Module.Visible = true;
-            this.colcoefficient_Module.VisibleIndex = 1;
-            // 
-            // colNote_Elim_Module
-            // 
-            this.colNote_Elim_Module.FieldName = "Note_Elim_Module";
-            this.colNote_Elim_Module.Name = "colNote_Elim_Module";
-            this.colNote_Elim_Module.Visible = true;
-            this.colNote_Elim_Module.VisibleIndex = 2;
-            // 
-            // colOption
-            // 
-            this.colOption.FieldName = "Option.Designation_Option";
-            this.colOption.Name = "colOption";
-            this.colOption.Visible = true;
-            this.colOption.VisibleIndex = 3;
-            // 
-            // colID_Option
-            // 
-            this.colID_Option.FieldName = "ID_Option";
-            this.colID_Option.Name = "colID_Option";
             // 
             // ModuleCollectionView
             // 

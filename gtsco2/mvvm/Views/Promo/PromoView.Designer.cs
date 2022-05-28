@@ -55,7 +55,6 @@
             this.colCode_Option = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDesignation_Option = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDesignation_Option_ar = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSpecialite1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Mode_formationLookUpEdit = new DevExpress.XtraEditors.GridLookUpEdit();
             this.Mode_formationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Mode_formationLookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -544,8 +543,7 @@
             this.colID_Option1,
             this.colCode_Option,
             this.colDesignation_Option,
-            this.colDesignation_Option_ar,
-            this.colSpecialite1});
+            this.colDesignation_Option_ar});
             this.OptionLookUpEditView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.OptionLookUpEditView.Name = "OptionLookUpEditView";
             this.OptionLookUpEditView.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -576,13 +574,6 @@
             this.colDesignation_Option_ar.Name = "colDesignation_Option_ar";
             this.colDesignation_Option_ar.Visible = true;
             this.colDesignation_Option_ar.VisibleIndex = 2;
-            // 
-            // colSpecialite1
-            // 
-            this.colSpecialite1.FieldName = "Specialite1.Designation_SP";
-            this.colSpecialite1.Name = "colSpecialite1";
-            this.colSpecialite1.Visible = true;
-            this.colSpecialite1.VisibleIndex = 3;
             // 
             // Mode_formationLookUpEdit
             // 
@@ -1974,7 +1965,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colCode_Option;
         private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option;
         private DevExpress.XtraGrid.Columns.GridColumn colDesignation_Option_ar;
-        private DevExpress.XtraGrid.Columns.GridColumn colSpecialite1;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Mode_Formation1;
         private DevExpress.XtraGrid.Columns.GridColumn colCode_Mode_Formation;
         private DevExpress.XtraGrid.Columns.GridColumn colDésignation_Mode_Formation;

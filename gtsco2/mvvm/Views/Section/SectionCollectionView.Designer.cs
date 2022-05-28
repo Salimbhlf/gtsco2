@@ -125,6 +125,7 @@
             // 
             // colOption
             // 
+            this.colOption.Caption = "Désignation spécialité ";
             this.colOption.FieldName = "Option.Designation_Option";
             this.colOption.Name = "colOption";
             this.colOption.Visible = true;
@@ -140,7 +141,7 @@
             // 
             // colOption2
             // 
-            this.colOption2.Caption = "Désignation option";
+            this.colOption2.Caption = "Désignation spécialité ";
             this.colOption2.FieldName = "Option.Designation_Option";
             this.colOption2.Name = "colOption2";
             this.colOption2.Visible = true;

@@ -47,8 +47,6 @@
             this.Specialite1LookUpEditView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_Specialité = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode_SP = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDesignation_SP = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDesignation_SP_AR = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNiveau_qualification = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID_Branche = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBranch = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -213,7 +211,7 @@
             // ID_OptionTextEdit
             // 
             this.ID_OptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "ID_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ID_OptionTextEdit.Location = new System.Drawing.Point(190, 12);
+            this.ID_OptionTextEdit.Location = new System.Drawing.Point(164, 12);
             this.ID_OptionTextEdit.MenuManager = this.mainRibbonControl;
             this.ID_OptionTextEdit.Name = "ID_OptionTextEdit";
             this.ID_OptionTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -223,7 +221,7 @@
             this.ID_OptionTextEdit.Properties.MaskSettings.Set("mask", "N0");
             this.ID_OptionTextEdit.Properties.ReadOnly = true;
             this.ID_OptionTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ID_OptionTextEdit.Size = new System.Drawing.Size(762, 20);
+            this.ID_OptionTextEdit.Size = new System.Drawing.Size(788, 20);
             this.ID_OptionTextEdit.StyleController = this.dataLayoutControl1;
             this.ID_OptionTextEdit.TabIndex = 4;
             // 
@@ -353,31 +351,31 @@
             // Code_OptionTextEdit
             // 
             this.Code_OptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Code_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Code_OptionTextEdit.Location = new System.Drawing.Point(190, 36);
+            this.Code_OptionTextEdit.Location = new System.Drawing.Point(164, 60);
             this.Code_OptionTextEdit.MenuManager = this.mainRibbonControl;
             this.Code_OptionTextEdit.Name = "Code_OptionTextEdit";
-            this.Code_OptionTextEdit.Size = new System.Drawing.Size(762, 20);
+            this.Code_OptionTextEdit.Size = new System.Drawing.Size(788, 20);
             this.Code_OptionTextEdit.StyleController = this.dataLayoutControl1;
             this.Code_OptionTextEdit.TabIndex = 5;
             // 
             // Designation_OptionTextEdit
             // 
             this.Designation_OptionTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Designation_Option", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_OptionTextEdit.Location = new System.Drawing.Point(190, 60);
+            this.Designation_OptionTextEdit.Location = new System.Drawing.Point(164, 36);
             this.Designation_OptionTextEdit.MenuManager = this.mainRibbonControl;
             this.Designation_OptionTextEdit.Name = "Designation_OptionTextEdit";
-            this.Designation_OptionTextEdit.Size = new System.Drawing.Size(389, 20);
+            this.Designation_OptionTextEdit.Size = new System.Drawing.Size(415, 20);
             this.Designation_OptionTextEdit.StyleController = this.dataLayoutControl1;
             this.Designation_OptionTextEdit.TabIndex = 6;
             // 
             // Designation_Option_arTextEdit
             // 
             this.Designation_Option_arTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Designation_Option_ar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.Designation_Option_arTextEdit.Location = new System.Drawing.Point(583, 60);
+            this.Designation_Option_arTextEdit.Location = new System.Drawing.Point(583, 36);
             this.Designation_Option_arTextEdit.MenuManager = this.mainRibbonControl;
             this.Designation_Option_arTextEdit.Name = "Designation_Option_arTextEdit";
             this.Designation_Option_arTextEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Designation_Option_arTextEdit.Size = new System.Drawing.Size(339, 20);
+            this.Designation_Option_arTextEdit.Size = new System.Drawing.Size(300, 20);
             this.Designation_Option_arTextEdit.StyleController = this.dataLayoutControl1;
             this.Designation_Option_arTextEdit.TabIndex = 7;
             // 
@@ -385,7 +383,7 @@
             // 
             this.Specialite1LookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.optionViewBindingSource, "Specialite", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Specialite1LookUpEdit.EditValue = "";
-            this.Specialite1LookUpEdit.Location = new System.Drawing.Point(190, 84);
+            this.Specialite1LookUpEdit.Location = new System.Drawing.Point(164, 84);
             this.Specialite1LookUpEdit.MenuManager = this.mainRibbonControl;
             this.Specialite1LookUpEdit.Name = "Specialite1LookUpEdit";
             this.Specialite1LookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -396,7 +394,7 @@
             this.Specialite1LookUpEdit.Properties.NullValuePrompt = "Saisir ou séléctionnez la spécialité";
             this.Specialite1LookUpEdit.Properties.PopupView = this.Specialite1LookUpEditView;
             this.Specialite1LookUpEdit.Properties.ValueMember = "ID_Specialité";
-            this.Specialite1LookUpEdit.Size = new System.Drawing.Size(762, 20);
+            this.Specialite1LookUpEdit.Size = new System.Drawing.Size(788, 20);
             this.Specialite1LookUpEdit.StyleController = this.dataLayoutControl1;
             this.Specialite1LookUpEdit.TabIndex = 8;
             // 
@@ -409,8 +407,6 @@
             this.Specialite1LookUpEditView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID_Specialité,
             this.colCode_SP,
-            this.colDesignation_SP,
-            this.colDesignation_SP_AR,
             this.colNiveau_qualification,
             this.colID_Branche,
             this.colBranch});
@@ -429,28 +425,14 @@
             this.colCode_SP.FieldName = "Code_SP";
             this.colCode_SP.Name = "colCode_SP";
             this.colCode_SP.Visible = true;
-            this.colCode_SP.VisibleIndex = 0;
-            // 
-            // colDesignation_SP
-            // 
-            this.colDesignation_SP.FieldName = "Branch";
-            this.colDesignation_SP.Name = "colDesignation_SP";
-            this.colDesignation_SP.Visible = true;
-            this.colDesignation_SP.VisibleIndex = 3;
-            // 
-            // colDesignation_SP_AR
-            // 
-            this.colDesignation_SP_AR.FieldName = "Designation_SP_AR";
-            this.colDesignation_SP_AR.Name = "colDesignation_SP_AR";
-            this.colDesignation_SP_AR.Visible = true;
-            this.colDesignation_SP_AR.VisibleIndex = 1;
+            this.colCode_SP.VisibleIndex = 1;
             // 
             // colNiveau_qualification
             // 
             this.colNiveau_qualification.FieldName = "Niveau_qualification";
             this.colNiveau_qualification.Name = "colNiveau_qualification";
             this.colNiveau_qualification.Visible = true;
-            this.colNiveau_qualification.VisibleIndex = 4;
+            this.colNiveau_qualification.VisibleIndex = 2;
             // 
             // colID_Branche
             // 
@@ -462,7 +444,7 @@
             this.colBranch.FieldName = "Branch.Code_Branche";
             this.colBranch.Name = "colBranch";
             this.colBranch.Visible = true;
-            this.colBranch.VisibleIndex = 2;
+            this.colBranch.VisibleIndex = 0;
             // 
             // ModulesXtraUserControl
             // 
@@ -1125,11 +1107,11 @@
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.ItemForID_Option,
-            this.ItemForCode_Option,
             this.ItemForDesignation_Option,
             this.ItemForSpecialite,
             this.tabbedControlGroup1,
-            this.ItemForDesignation_Option_ar});
+            this.ItemForDesignation_Option_ar,
+            this.ItemForCode_Option});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
             this.layoutControlGroup2.Size = new System.Drawing.Size(944, 313);
@@ -1141,25 +1123,25 @@
             this.ItemForID_Option.Name = "ItemForID_Option";
             this.ItemForID_Option.Size = new System.Drawing.Size(944, 24);
             this.ItemForID_Option.Text = "Numéro d\'option de spécialité";
-            this.ItemForID_Option.TextSize = new System.Drawing.Size(166, 13);
+            this.ItemForID_Option.TextSize = new System.Drawing.Size(140, 13);
             // 
             // ItemForCode_Option
             // 
             this.ItemForCode_Option.Control = this.Code_OptionTextEdit;
-            this.ItemForCode_Option.Location = new System.Drawing.Point(0, 24);
+            this.ItemForCode_Option.Location = new System.Drawing.Point(0, 48);
             this.ItemForCode_Option.Name = "ItemForCode_Option";
             this.ItemForCode_Option.Size = new System.Drawing.Size(944, 24);
             this.ItemForCode_Option.Text = "Code option de spécialité";
-            this.ItemForCode_Option.TextSize = new System.Drawing.Size(166, 13);
+            this.ItemForCode_Option.TextSize = new System.Drawing.Size(140, 13);
             // 
             // ItemForDesignation_Option
             // 
             this.ItemForDesignation_Option.Control = this.Designation_OptionTextEdit;
-            this.ItemForDesignation_Option.Location = new System.Drawing.Point(0, 48);
+            this.ItemForDesignation_Option.Location = new System.Drawing.Point(0, 24);
             this.ItemForDesignation_Option.Name = "ItemForDesignation_Option";
             this.ItemForDesignation_Option.Size = new System.Drawing.Size(571, 24);
-            this.ItemForDesignation_Option.Text = "Designation de option de spécialité";
-            this.ItemForDesignation_Option.TextSize = new System.Drawing.Size(166, 13);
+            this.ItemForDesignation_Option.Text = "Designation de spécialité";
+            this.ItemForDesignation_Option.TextSize = new System.Drawing.Size(140, 13);
             // 
             // ItemForSpecialite
             // 
@@ -1167,8 +1149,8 @@
             this.ItemForSpecialite.Location = new System.Drawing.Point(0, 72);
             this.ItemForSpecialite.Name = "ItemForSpecialite";
             this.ItemForSpecialite.Size = new System.Drawing.Size(944, 24);
-            this.ItemForSpecialite.Text = "Spécialité";
-            this.ItemForSpecialite.TextSize = new System.Drawing.Size(166, 13);
+            this.ItemForSpecialite.Text = "Code de Spécialité";
+            this.ItemForSpecialite.TextSize = new System.Drawing.Size(140, 13);
             // 
             // tabbedControlGroup1
             // 
@@ -1245,13 +1227,13 @@
             // ItemForDesignation_Option_ar
             // 
             this.ItemForDesignation_Option_ar.Control = this.Designation_Option_arTextEdit;
-            this.ItemForDesignation_Option_ar.Location = new System.Drawing.Point(571, 48);
+            this.ItemForDesignation_Option_ar.Location = new System.Drawing.Point(571, 24);
             this.ItemForDesignation_Option_ar.Name = "ItemForDesignation_Option_ar";
             this.ItemForDesignation_Option_ar.Size = new System.Drawing.Size(373, 24);
-            this.ItemForDesignation_Option_ar.Text = "اختيار";
+            this.ItemForDesignation_Option_ar.Text = "اسم التخصص";
             this.ItemForDesignation_Option_ar.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.ItemForDesignation_Option_ar.TextLocation = DevExpress.Utils.Locations.Right;
-            this.ItemForDesignation_Option_ar.TextSize = new System.Drawing.Size(25, 13);
+            this.ItemForDesignation_Option_ar.TextSize = new System.Drawing.Size(64, 13);
             this.ItemForDesignation_Option_ar.TextToControlDistance = 5;
             // 
             // mvvmContext
@@ -1480,8 +1462,6 @@
         private DevExpress.XtraLayout.LayoutControlItem ItemForPromoes;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Specialité;
         private DevExpress.XtraGrid.Columns.GridColumn colCode_SP;
-        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP;
-        private DevExpress.XtraGrid.Columns.GridColumn colDesignation_SP_AR;
         private DevExpress.XtraGrid.Columns.GridColumn colNiveau_qualification;
         private DevExpress.XtraGrid.Columns.GridColumn colID_Branche;
         private DevExpress.XtraGrid.Columns.GridColumn colBranch;

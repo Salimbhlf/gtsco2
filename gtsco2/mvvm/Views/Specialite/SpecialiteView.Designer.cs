@@ -632,6 +632,7 @@
             this.ItemForDesignation_SP.Size = new System.Drawing.Size(548, 24);
             this.ItemForDesignation_SP.Text = "Designation de Specialité";
             this.ItemForDesignation_SP.TextSize = new System.Drawing.Size(119, 13);
+            this.ItemForDesignation_SP.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInCustomization;
             // 
             // ItemForNiveau_qualification
             // 
@@ -692,6 +693,7 @@
             this.ItemForDesignation_SP_AR.TextLocation = DevExpress.Utils.Locations.Right;
             this.ItemForDesignation_SP_AR.TextSize = new System.Drawing.Size(64, 13);
             this.ItemForDesignation_SP_AR.TextToControlDistance = 5;
+            this.ItemForDesignation_SP_AR.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInCustomization;
             // 
             // mvvmContext
             // 

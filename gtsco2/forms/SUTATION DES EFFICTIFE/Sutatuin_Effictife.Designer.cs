@@ -94,6 +94,14 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             this.xrTableCell32 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell33 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell34 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
@@ -124,7 +132,9 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTable5
             // 
-            this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable5.Name = "xrTable5";
@@ -163,44 +173,54 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCellsp
             // 
+            this.xrTableCellsp.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTableCellsp.Multiline = true;
             this.xrTableCellsp.Name = "xrTableCellsp";
+            this.xrTableCellsp.StylePriority.UseBorders = false;
             this.xrTableCellsp.Weight = 1.2854170227050781D;
             // 
             // xrTableCellniveua
             // 
+            this.xrTableCellniveua.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCellniveua.Multiline = true;
             this.xrTableCellniveua.Name = "xrTableCellniveua";
+            this.xrTableCellniveua.StylePriority.UseBorders = false;
             this.xrTableCellniveua.Weight = 0.20416641235351563D;
             // 
             // xrTableCell22
             // 
+            this.xrTableCell22.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
+            this.xrTableCell22.StylePriority.UseBorders = false;
             this.xrTableCell22.Weight = 0.26041671752929696D;
             // 
             // xrTableCellcodesp
             // 
+            this.xrTableCellcodesp.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCellcodesp.Name = "xrTableCellcodesp";
+            this.xrTableCellcodesp.StylePriority.UseBorders = false;
             this.xrTableCellcodesp.Weight = 0.99999984741210945D;
             // 
             // xrTableCellsection
             // 
+            this.xrTableCellsection.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCellsection.Multiline = true;
             this.xrTableCellsection.Name = "xrTableCellsection";
+            this.xrTableCellsection.StylePriority.UseBorders = false;
             this.xrTableCellsection.Weight = 0.9166665649414063D;
             // 
             // xrTableCelldatadube
             // 
+            this.xrTableCelldatadube.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCelldatadube.Multiline = true;
             this.xrTableCelldatadube.Name = "xrTableCelldatadube";
+            this.xrTableCelldatadube.StylePriority.UseBorders = false;
             this.xrTableCelldatadube.Weight = 1.4048725242661195D;
             // 
             // xrTabletoutal_preve
             // 
-            this.xrTabletoutal_preve.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTabletoutal_preve.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTabletoutal_preve.Multiline = true;
             this.xrTabletoutal_preve.Name = "xrTabletoutal_preve";
             this.xrTabletoutal_preve.StylePriority.UseBorders = false;
@@ -208,48 +228,71 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableprive_fill
             // 
+            this.xrTableprive_fill.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableprive_fill.Multiline = true;
             this.xrTableprive_fill.Name = "xrTableprive_fill";
+            this.xrTableprive_fill.StylePriority.UseBorders = false;
             this.xrTableprive_fill.Weight = 0.67343474330528408D;
             // 
             // xrTablepublic_t
             // 
+            this.xrTablepublic_t.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTablepublic_t.Multiline = true;
             this.xrTablepublic_t.Name = "xrTablepublic_t";
+            this.xrTablepublic_t.StylePriority.UseBorders = false;
             this.xrTablepublic_t.Weight = 0.67343474330528408D;
             // 
             // xrTablpublic_fill
             // 
+            this.xrTablpublic_fill.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTablpublic_fill.Multiline = true;
             this.xrTablpublic_fill.Name = "xrTablpublic_fill";
+            this.xrTablpublic_fill.StylePriority.UseBorders = false;
             this.xrTablpublic_fill.Weight = 0.67343474330528408D;
             // 
             // xrTablepublic_epa
             // 
+            this.xrTablepublic_epa.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTablepublic_epa.Multiline = true;
             this.xrTablepublic_epa.Name = "xrTablepublic_epa";
+            this.xrTablepublic_epa.StylePriority.UseBorders = false;
             this.xrTablepublic_epa.Weight = 0.67343474330528408D;
             // 
             // xrTablepublic_epa_fill
             // 
+            this.xrTablepublic_epa_fill.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTablepublic_epa_fill.Multiline = true;
             this.xrTablepublic_epa_fill.Name = "xrTablepublic_epa_fill";
+            this.xrTablepublic_epa_fill.StylePriority.UseBorders = false;
             this.xrTablepublic_epa_fill.Weight = 0.67343474330528408D;
             // 
             // xrTable_toutal_g
             // 
+            this.xrTable_toutal_g.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTable_toutal_g.Multiline = true;
             this.xrTable_toutal_g.Name = "xrTable_toutal_g";
+            this.xrTable_toutal_g.StylePriority.UseBorders = false;
             this.xrTable_toutal_g.Weight = 0.67343474330528408D;
             // 
             // xrTabletoutal_g_fill
             // 
+            this.xrTabletoutal_g_fill.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTabletoutal_g_fill.Multiline = true;
             this.xrTabletoutal_g_fill.Name = "xrTabletoutal_g_fill";
+            this.xrTabletoutal_g_fill.StylePriority.UseBorders = false;
             this.xrTabletoutal_g_fill.Weight = 0.67343474330528408D;
             // 
             // ReportHeader
             // 
+            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel8,
+            this.xrLabel6,
+            this.xrLabel5,
+            this.xrLabel4,
+            this.xrLabel3,
+            this.xrLabel2,
+            this.xrLabel1});
+            this.ReportHeader.HeightF = 224.0044F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // GroupHeader1
@@ -267,8 +310,10 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTable8
             // 
-            this.xrTable8.BackColor = System.Drawing.Color.Silver;
-            this.xrTable8.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrTable8.BackColor = System.Drawing.Color.LightGray;
+            this.xrTable8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(896.4896F, 31.24994F);
             this.xrTable8.Name = "xrTable8";
@@ -292,7 +337,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell13
             // 
-            this.xrTableCell13.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell13.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell13.Multiline = true;
             this.xrTableCell13.Name = "xrTableCell13";
             this.xrTableCell13.StylePriority.UseBorders = false;
@@ -301,8 +346,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell18
             // 
-            this.xrTableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.StylePriority.UseBorders = false;
@@ -311,15 +355,17 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTable7
             // 
-            this.xrTable7.BackColor = System.Drawing.Color.Silver;
-            this.xrTable7.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrTable7.BackColor = System.Drawing.Color.LightGray;
+            this.xrTable7.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(763.9792F, 56.45823F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(763.9792F, 56.24994F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(132.5104F, 25.00001F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(132.5104F, 25.20833F);
             this.xrTable7.StylePriority.UseBackColor = false;
             this.xrTable7.StylePriority.UseBorders = false;
             this.xrTable7.StylePriority.UseFont = false;
@@ -335,7 +381,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell12
             // 
-            this.xrTableCell12.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell12.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.StylePriority.UseBorders = false;
@@ -344,8 +390,10 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTable6
             // 
-            this.xrTable6.BackColor = System.Drawing.Color.Silver;
-            this.xrTable6.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrTable6.BackColor = System.Drawing.Color.LightGray;
+            this.xrTable6.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(498.9583F, 31.24997F);
             this.xrTable6.Name = "xrTable6";
@@ -369,7 +417,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell10
             // 
-            this.xrTableCell10.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell10.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
             this.xrTableCell10.StylePriority.UseBorders = false;
@@ -378,7 +426,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell11
             // 
-            this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.StylePriority.UseBorders = false;
@@ -387,8 +435,10 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTable4
             // 
-            this.xrTable4.BackColor = System.Drawing.Color.Silver;
-            this.xrTable4.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable4.BackColor = System.Drawing.Color.LightGray;
+            this.xrTable4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(498.9583F, 56.24994F);
             this.xrTable4.Name = "xrTable4";
@@ -414,7 +464,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell14
             // 
-            this.xrTableCell14.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell14.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.StylePriority.UseBorders = false;
@@ -423,29 +473,37 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell15
             // 
+            this.xrTableCell15.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell15.Multiline = true;
             this.xrTableCell15.Name = "xrTableCell15";
+            this.xrTableCell15.StylePriority.UseBorders = false;
             this.xrTableCell15.Text = "dont filles";
             this.xrTableCell15.Weight = 0.71486578095605091D;
             // 
             // xrTableCell16
             // 
+            this.xrTableCell16.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";
+            this.xrTableCell16.StylePriority.UseBorders = false;
             this.xrTableCell16.Text = "Total";
             this.xrTableCell16.Weight = 0.71486450502732479D;
             // 
             // xrTableCell17
             // 
+            this.xrTableCell17.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
+            this.xrTableCell17.StylePriority.UseBorders = false;
             this.xrTableCell17.Text = "dont filles";
             this.xrTableCell17.Weight = 0.71486520473017456D;
             // 
             // xrTable3
             // 
-            this.xrTable3.BackColor = System.Drawing.Color.Silver;
-            this.xrTable3.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrTable3.BackColor = System.Drawing.Color.LightGray;
+            this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(763.9791F, 81.45822F);
             this.xrTable3.Name = "xrTable3";
@@ -469,7 +527,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell8
             // 
-            this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.StylePriority.UseBorders = false;
@@ -478,7 +536,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell9
             // 
-            this.xrTableCell9.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell9.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.StylePriority.UseBorders = false;
             this.xrTableCell9.Text = "dont filles";
@@ -486,15 +544,17 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTable2
             // 
-            this.xrTable2.BackColor = System.Drawing.Color.Silver;
-            this.xrTable2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrTable2.BackColor = System.Drawing.Color.LightGray;
+            this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(498.9583F, 8.958308F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(498.9583F, 10.00001F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(530.0417F, 22.29163F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(530.0417F, 21.24993F);
             this.xrTable2.StylePriority.UseBackColor = false;
             this.xrTable2.StylePriority.UseBorders = false;
             this.xrTable2.StylePriority.UseFont = false;
@@ -520,7 +580,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTable1
             // 
-            this.xrTable1.BackColor = System.Drawing.Color.Silver;
+            this.xrTable1.BackColor = System.Drawing.Color.LightGray;
             this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -563,8 +623,11 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // xrTableCell2
             // 
             this.xrTableCell2.Angle = -90F;
+            this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
+            this.xrTableCell2.StylePriority.UseBorders = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "Niveau";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -573,8 +636,11 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // xrTableCell3
             // 
             this.xrTableCell3.Angle = -90F;
+            this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
+            this.xrTableCell3.StylePriority.UseBorders = false;
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.Text = "Semestre";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -582,30 +648,40 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell4
             // 
+            this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
+            this.xrTableCell4.StylePriority.UseBorders = false;
             this.xrTableCell4.Text = "code Spécialité";
             this.xrTableCell4.Weight = 0.98384006401406754D;
             // 
             // xrTableCell5
             // 
+            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
+            this.xrTableCell5.StylePriority.UseBorders = false;
             this.xrTableCell5.Text = "Code section";
             this.xrTableCell5.Weight = 0.90185363678931563D;
             // 
             // xrTableCell6
             // 
+            this.xrTableCell6.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
+            this.xrTableCell6.StylePriority.UseBorders = false;
             this.xrTableCell6.Text = "Date  de mise en formation";
             this.xrTableCell6.Weight = 1.3821698034287495D;
             // 
             // GroupFooter1
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel7,
             this.xrTable9});
-            this.GroupFooter1.HeightF = 68.33344F;
+            this.GroupFooter1.HeightF = 136.5331F;
             this.GroupFooter1.Name = "GroupFooter1";
             // 
             // xrTable9
@@ -646,16 +722,20 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell19
             // 
+            this.xrTableCell19.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
+            this.xrTableCell19.StylePriority.UseBorders = false;
             this.xrTableCell19.StylePriority.UseFont = false;
             this.xrTableCell19.Text = "TOTAUX";
             this.xrTableCell19.Weight = 3.91688000871176D;
             // 
             // xrTableCell27
             // 
-            this.xrTableCell27.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell27.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
             this.xrTableCell27.StylePriority.UseBackColor = false;
@@ -663,7 +743,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell28
             // 
-            this.xrTableCell28.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell28.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell28.Multiline = true;
             this.xrTableCell28.Name = "xrTableCell28";
             this.xrTableCell28.StylePriority.UseBackColor = false;
@@ -671,7 +751,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell29
             // 
-            this.xrTableCell29.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell29.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
             this.xrTableCell29.StylePriority.UseBackColor = false;
@@ -679,7 +759,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell30
             // 
-            this.xrTableCell30.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell30.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
             this.xrTableCell30.StylePriority.UseBackColor = false;
@@ -687,7 +767,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell31
             // 
-            this.xrTableCell31.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell31.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
             this.xrTableCell31.StylePriority.UseBackColor = false;
@@ -695,7 +775,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell32
             // 
-            this.xrTableCell32.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell32.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
             this.xrTableCell32.StylePriority.UseBackColor = false;
@@ -703,7 +783,7 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell33
             // 
-            this.xrTableCell33.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell33.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell33.Multiline = true;
             this.xrTableCell33.Name = "xrTableCell33";
             this.xrTableCell33.StylePriority.UseBackColor = false;
@@ -711,11 +791,103 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
             // 
             // xrTableCell34
             // 
-            this.xrTableCell34.BackColor = System.Drawing.Color.Silver;
+            this.xrTableCell34.BackColor = System.Drawing.Color.LightGray;
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
             this.xrTableCell34.StylePriority.UseBackColor = false;
             this.xrTableCell34.Weight = 0.52011074051504425D;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(1029F, 34.5238F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "REPUBLIQUE ALGERIENNE DEMOCRATIQUE ET POPULAIRE ";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 34.5238F);
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(1029F, 34.5238F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "MINISTERE DE LA FORMATION ET DE L\'ENSEIGNEMENT PROFESSIONNEL";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(296.6103F, 189.4806F);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(217.5594F, 34.5238F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.Text = "Semestre";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrLabel4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(745.7628F, 105.7143F);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(283.2372F, 34.52381F);
+            this.xrLabel4.StylePriority.UseBackColor = false;
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "mode de formation";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrLabel5.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 152.0028F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(1029F, 34.5238F);
+            this.xrLabel5.StylePriority.UseBackColor = false;
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "SITUATION DES EFFECTIFS APPRENTIS EN FORMATION";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(527.5031F, 189.4806F);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(204.2261F, 34.5238F);
+            this.xrLabel6.StylePriority.UseFont = false;
+            this.xrLabel6.StylePriority.UseTextAlignment = false;
+            this.xrLabel6.Text = "Année scolaire";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(712.3124F, 57.10597F);
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(235.8927F, 34.52381F);
+            this.xrLabel7.StylePriority.UseFont = false;
+            this.xrLabel7.StylePriority.UseTextAlignment = false;
+            this.xrLabel7.Text = "LE RESPONSABLE PEDAGOGIQUE";
+            this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(5.086263E-05F, 71.19047F);
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(1029F, 34.5238F);
+            this.xrLabel8.StylePriority.UseFont = false;
+            this.xrLabel8.StylePriority.UseTextAlignment = false;
+            this.xrLabel8.Text = "ETABLISSEMENT: INSFP Mohamed Tayeb Boucenna";
+            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // Sutatuin_Effictife
             // 
@@ -813,5 +985,13 @@ namespace gtsco2.forms.SUTATION_DES_EFFICTIFE
         private DevExpress.XtraReports.UI.XRTableCell xrTablepublic_epa_fill;
         private DevExpress.XtraReports.UI.XRTableCell xrTable_toutal_g;
         private DevExpress.XtraReports.UI.XRTableCell xrTabletoutal_g_fill;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
     }
 }
